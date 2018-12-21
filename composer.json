@@ -1,0 +1,38 @@
+{
+    "name": "calderawp/caldera",
+    "license": "GPL-2.0",
+    "require": {
+        "php": "^7.2",
+        "mockery/mockery": "^1.2",
+        "psr/container": "^1.0"
+    },
+    "require-dev": {
+        "php": "^7.2",
+        "calderawp/caldera-containers": "^0.2",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.3",
+        "symplify/monorepo-builder": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "calderawp\\interop\\": "php-packages/interop/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "calderawp\\interop\\Tests\\": "php-packages/interop/tests"
+        }
+    },
+    "scripts": {
+        "merge": "vendor/bin/monorepo-builder merge",
+        "test": "composer test:packages",
+        "test:packages": "cd php-packages/interop && composer test"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        },
+        "sort-packages": true
+    }
+}
