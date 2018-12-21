@@ -17,10 +17,15 @@ All PHP code is organzied into packages in the `php-packages` directory.
 * If a package depends on something, define that dependency in it's composer.json.
 * The command `composer merge` updates root composer.json 
 
-### Testing
-Tests should go in the sub-packages, and be run with `composer test`
+Each package should have these commands:
+* `composer test` 
+* `composer fixes`
 
-From root directory `composer test` will run all tests.
+### Testing
+Tests should go in the sub-packages.
+
+* From root directory `composer test` will run all tests of all packages.
+* From root directory `composer fixes` will run phpcs fixes on all packages.
 
 ### JavaScript
 https://github.com/nareshbhatia/lerna-workspaces-react-es6
