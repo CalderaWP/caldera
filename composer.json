@@ -32,7 +32,9 @@
         "merge": "vendor/bin/monorepo-builder merge && composer update",
         "test": "composer test:packages",
         "fixes": "composer fixes:packages",
-        "test:packages": "cd php-packages/interop && composer test && cd ../ && pwd && cd forms && composer test",
+        "test:packages": "composer test:packages-interop && composer test:packages-forms",
+        "test:packages-interop": "cd php-packages/interop && composer test ",
+        "test:packages-forms": "cd php-packages/forms && composer test ",
         "fixes:packages": "cd php-packages/interop && composer fixes && cd ../ && pwd && cd forms && composer fixes"
     },
     "config": {

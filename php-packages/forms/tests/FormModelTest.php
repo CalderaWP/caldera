@@ -1,8 +1,8 @@
 <?php
 
-namespace calderawp\interop\Tests\CalderaForms;
+namespace calderawp\caldera\Forms\Tests;
 
-use calderawp\interop\CalderaForms\FormModel;
+use calderawp\caldera\Forms\FormModel;
 use calderawp\interop\Tests\TestCase;
 use calderawp\interop\Contracts\CalderaForms\HasField;
 use calderawp\interop\Contracts\CalderaForms\HasForm;
@@ -14,7 +14,7 @@ class FormModelTest extends TestCase
 	use EntityFactory;
 
 	/**
-	 * @covers \calderawp\interop\CalderaForms\FormModel::fromArray()
+	 * @covers FormModel::fromArray()
 	 */
 	public function testFromArray()
 	{
@@ -32,7 +32,7 @@ class FormModelTest extends TestCase
 	}
 
 	/**
-	 * @covers \calderawp\interop\CalderaForms\FormModel::toArray()
+	 * @covers FormModel::toArray()
 	 * @covers \calderawp\interop\Traits\ConvertsInteropModelToArray::toArray()
 	 */
 	public function testToArray()
@@ -52,15 +52,7 @@ class FormModelTest extends TestCase
 
 	}
 
-	public function testToResponse()
-	{
 
-	}
-
-	public function testFromRequest()
-	{
-
-	}
 
 
 
