@@ -27,12 +27,14 @@
         "psr-4": {
             "calderawp\\caldera\\Cli\\Tests\\": "php-packages/cli/tests",
             "calderawp\\caldera\\Forms\\Tests\\": "php-packages/forms/tests",
-            "calderawp\\interop\\Tests\\": "php-packages/interop/tests"
+            "calderawp\\interop\\Tests\\": "php-packages/interop/tests",
+            "calderawp\\caldera\\Tests\\Integration\\": "tests"
         }
     },
     "scripts": {
         "merge": "vendor/bin/monorepo-builder merge && composer update",
         "test": "composer test:packages && composer fixes",
+        "test:integration": "phpunit tests/",
         "fixes": "composer fixes:packages",
         "test:packages": "calderawp\\caldera\\Cli\\TestPackages::callback",
         "test:package": "calderawp\\caldera\\Cli\\TestPackage::callback",

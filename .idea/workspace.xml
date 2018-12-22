@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldCollectionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Traits/PreparesFieldsFromArray.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Integration/FormModelTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Integration/SomethingTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Integration/TestCase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestResponseContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestResponseContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/MockRestResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/MockRestResponseTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockRestResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockRestResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Contracts/Interoperable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Contracts/Interoperable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestRequestContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestRequestContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/CollectsModels.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/CollectsModels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/CreatesInteropModelFromArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/CreatesInteropModelFromArray.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/ModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/ModelTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/SomethingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/SomethingTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,137 +50,169 @@
           <entry key="dist" value="3" />
           <entry key="editorconfig" value="1" />
           <entry key="inc" value="1" />
-          <entry key="json" value="13" />
+          <entry key="json" value="14" />
           <entry key="md" value="5" />
-          <entry key="php" value="237" />
+          <entry key="php" value="308" />
           <entry key="php_cs" value="1" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="13" />
+          <entry key="JSON" value="14" />
           <entry key="Markdown" value="5" />
-          <entry key="PHP" value="238" />
+          <entry key="PHP" value="309" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="713" />
+          <entry key="json" value="786" />
           <entry key="md" value="1010" />
-          <entry key="php" value="19152" />
-          <entry key="txt" value="223" />
+          <entry key="php" value="23407" />
+          <entry key="txt" value="248" />
           <entry key="yml" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="713" />
+          <entry key="JSON" value="786" />
           <entry key="Markdown" value="1010" />
-          <entry key="PHP" value="19152" />
-          <entry key="PLAIN_TEXT" value="223" />
+          <entry key="PHP" value="23407" />
+          <entry key="PLAIN_TEXT" value="248" />
           <entry key="YAML" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="26" />
-          <entry key="PHP Interface.type" value="10" />
-          <entry key="PHP Trait.type" value="3" />
+          <entry key="PHP Class.type" value="27" />
+          <entry key="PHP Interface.type" value="11" />
+          <entry key="PHP Trait.type" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test">
         <counts>
-          <entry key="source.empty" value="17" />
+          <entry key="source.empty" value="18" />
           <entry key="with.framework.PHPUnit" value="14" />
-          <entry key="with.framework.PHPUnit 6+" value="2" />
+          <entry key="with.framework.PHPUnit 6+" value="3" />
           <entry key="with.framework.PHPUnit.without.selected.methods" value="1" />
-          <entry key="without.target.element" value="17" />
+          <entry key="without.target.element" value="18" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43864805">
+    <splitter split-orientation="horizontal" split-proportion="0.8595588">
       <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasField.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockRequest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#49#106#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/MockRequestTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="18" selection-start-line="18" selection-end-line="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesHttpHeaders.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockProvidesSettingsAndSettings.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="6" selection-start-line="4" selection-end-line="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.8619892">
+          <split-first>
+            <leaf>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CollectsModels.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="329">
+                      <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasFields.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="105">
+                      <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldModel.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="232">
+                      <caret line="57" selection-start-line="57" selection-end-line="57" />
+                      <folding>
+                        <element signature="e#44#90#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/tests/Integration/FormModelTest.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="204">
+                      <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+                      <folding>
+                        <element signature="e#55#94#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Model.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="127">
+                      <caret line="26" selection-start-line="26" selection-end-line="26" />
+                      <folding>
+                        <element signature="e#38#95#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="293">
+                      <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+                      <folding>
+                        <element signature="e#44#110#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="51">
+                      <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+                      <folding>
+                        <element signature="e#45#84#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-268">
+                      <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+                      <folding>
+                        <element signature="e#49#88#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestRequestContract.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="50" column="6" lean-forward="true" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+                <state relative-caret-position="109">
+                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
@@ -177,7 +226,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/MockRestResponseTest.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="200">
@@ -218,10 +267,7 @@
       <find>setEntryValues</find>
       <find>getForm</find>
       <find>setForm</find>
-      <find>toA</find>
       <find>var_du</find>
-      <find>va</find>
-      <find>var_</find>
       <find>toArray</find>
       <find>PackageName</find>
       <find>toArr</find>
@@ -229,7 +275,14 @@
       <find>time</find>
       <find>setSlug</find>
       <find>toArra</find>
+      <find>var_dum</find>
       <find>dir</find>
+      <find>fr</find>
+      <find>removeField</find>
+      <find>va</find>
+      <find>hasField</find>
+      <find>toA</find>
+      <find>var_</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -241,6 +294,8 @@
       <dir>$PROJECT_DIR$/php-packages/interop/src/Contracts</dir>
       <dir>$PROJECT_DIR$/php-packages/interop/tests</dir>
       <dir>$PROJECT_DIR$/php-packages/cli</dir>
+      <dir>$PROJECT_DIR$/tests/Integration</dir>
+      <dir>$PROJECT_DIR$/php-packages</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -249,29 +304,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldOption.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesIdGeneric.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldOptions.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionsTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockEntryValue.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/tests/MockEntryValueTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasEntryValue.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/EntryValue.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesEntryFieldValue.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/FormModelContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldModelContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasFields.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/CollectsEntries.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/CollectsEntryValues.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php" />
@@ -287,19 +319,42 @@
         <option value="$PROJECT_DIR$/php-packages/cli/src/FixPackage.php" />
         <option value="$PROJECT_DIR$/php-packages/cli/src/TestPackages.php" />
         <option value="$PROJECT_DIR$/php-packages/cli/src/TestPackage.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesRestParams.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/RestRequestContract.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockRequest.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestRequestContract.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesHttpHeaders.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/tests/MockRequestTest.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestResponseContract.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockRestResponse.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/tests/MockRestResponseTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/Interoperable.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/tests/SomethingTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestRequestContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Model.php" />
+        <option value="$PROJECT_DIR$/tests/TestCase.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/tests/SomethingTest.php" />
+        <option value="$PROJECT_DIR$/tests/Integration/TestCase.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/tests/ModelTest.php" />
+        <option value="$PROJECT_DIR$/tests/Integration/TestToResponse.php" />
+        <option value="$PROJECT_DIR$/tests/Integration/SomethingTest.php" />
+        <option value="$PROJECT_DIR$/tests/Integration/TestModelsToResponse.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/CreatesInteropModelFromArray.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasFields.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldCollectionInterface.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Traits/PreparesFieldsFromArray.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/CollectsModels.php" />
+        <option value="$PROJECT_DIR$/tests/Integration/FormModelTest.php" />
       </list>
     </option>
   </component>
@@ -411,31 +466,13 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Contracts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Integration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -457,23 +494,23 @@
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
+              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="php-package" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
+              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="php-package" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -481,8 +518,8 @@
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
+              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="php-package" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -491,9 +528,47 @@
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="interop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Mocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Integration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -512,18 +587,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/php-packages/cli/src" />
       <recent name="$PROJECT_DIR$/php-packages" />
       <recent name="$PROJECT_DIR$/php-packages/interop/src/Traits" />
       <recent name="$PROJECT_DIR$/php-packages/interop/src/Contracts" />
-      <recent name="$PROJECT_DIR$/php-packages/forms/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Integration" />
       <recent name="$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest" />
       <recent name="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest" />
       <recent name="$PROJECT_DIR$/php-packages/forms/src/Contracts" />
       <recent name="$PROJECT_DIR$/php-packages/forms/src/Entry" />
-      <recent name="$PROJECT_DIR$/boilerplate/php-package" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -538,14 +613,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="EntryValuesTest.testFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\EntryValuesTest" file="$PROJECT_DIR$/php-packages/forms/tests/EntryValuesTest.php" method="testFromArray" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.FormModelTest.testToResponse">
+    <configuration name="FormModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Tests\Integration\FormModelTest" file="$PROJECT_DIR$/tests/Integration/FormModelTest.php" scope="Class" />
       <method v="2" />
     </configuration>
+    <configuration name="FormModelTest.testFromRequestWithFields" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Tests\Integration\FormModelTest" file="$PROJECT_DIR$/tests/Integration/FormModelTest.php" method="testFromRequestWithFields" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FormModelTest.testToArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Tests\Integration\FormModelTest" file="$PROJECT_DIR$/tests/Integration/FormModelTest.php" method="testToArray" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FormModelTest.testToArrayWithArrayOfField" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Tests\Integration\FormModelTest" file="$PROJECT_DIR$/tests/Integration/FormModelTest.php" method="testToArrayWithArrayOfField" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FormModelTest.testToResponse" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Tests\Integration\FormModelTest" file="$PROJECT_DIR$/tests/Integration/FormModelTest.php" method="testToResponse" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHPUnit.FormModelTest.testFromRequestWithFields" />
+      <item itemvalue="PHPUnit.FormModelTest" />
+      <item itemvalue="PHPUnit.FormModelTest.testToArray" />
+      <item itemvalue="PHPUnit.FormModelTest.testToArrayWithArrayOfField" />
+      <item itemvalue="PHPUnit.FormModelTest.testToResponse" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.EntryValuesTest.testFromArray" />
+        <item itemvalue="PHPUnit.FormModelTest.testToResponse" />
+        <item itemvalue="PHPUnit.FormModelTest.testFromRequestWithFields" />
+        <item itemvalue="PHPUnit.FormModelTest" />
+        <item itemvalue="PHPUnit.FormModelTest.testToArrayWithArrayOfField" />
+        <item itemvalue="PHPUnit.FormModelTest.testToArray" />
       </list>
     </recent_temporary>
   </component>
@@ -560,57 +662,63 @@
       <option name="presentableId" value="Default" />
       <updated>1545406860420</updated>
       <workItem from="1545406861569" duration="7802000" />
-      <workItem from="1545416235667" duration="26200000" />
+      <workItem from="1545416235667" duration="34790000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 27m 44s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 02m 27s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 27m 51s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 02m 43s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 27m 57s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 03m 34s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 28m 09s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 03m 50s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 28m 15s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 05m 05s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 28m 23s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 05m 19s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 28m 25s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 05m 34s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryValuesTest_testFromArray - 2018.12.22 at 10h 28m 33s.xml">
-      <configuration name="EntryValuesTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 06m 04s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 06m 20s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="FormModelTest_testToResponse - 2018.12.22 at 15h 06m 29s.xml">
+      <configuration name="FormModelTest.testToResponse" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34002000" />
+    <option name="totallyTimeSpent" value="42592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="77" y="81" width="1843" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.24430871" />
-      <window_info id="Structure" order="1" sideWeight="0.50165564" side_tool="true" visible="true" weight="0.24430871" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8333333" visible="true" weight="0.1604664" />
+      <window_info id="Structure" order="1" sideWeight="0.16666667" side_tool="true" visible="true" weight="0.1604664" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" visible="true" weight="0.33406836" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21343283" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" weight="0.33406836" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5237045" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39911798" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" x="28" y="592" width="1662" height="322" id="Terminal" order="10" type="WINDOWED" visible="true" weight="0.32686567" />
+      <window_info active="true" anchor="bottom" x="12" y="678" width="1662" height="358" id="Terminal" order="10" type="WINDOWED" visible="true" weight="0.32686567" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50027764" side_tool="true" weight="0.014925373" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -650,7 +758,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-packages/forms/src/FieldModel.php</url>
-          <line>35</line>
+          <line>45</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -663,229 +771,25 @@
           <line>30</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Integration/FormModelTest.php</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/Integration/FormModelTest.php</url>
+          <line>21</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php</url>
+          <line>39</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FormModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#44#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/FunctionDeclarationUnitTest.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/CollectsEntries.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryCollection.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="291" column="9" selection-start-line="291" selection-start-column="9" selection-end-line="291" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#44#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/HasValue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasEntryValue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="e#61#115#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesName.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Arrayable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/CollectsEntryValues.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="547" column="17" selection-start-line="547" selection-start-column="17" selection-end-line="547" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/EntryValuesTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="106" column="87" selection-start-line="106" selection-start-column="87" selection-end-line="106" selection-end-column="87" />
-          <folding>
-            <element signature="e#49#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1434">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="e#50#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/getPackageNames.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/composer/src/Composer/Composer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/BaseCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/RunScriptCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boilerplate/php-package/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/cli/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/EntryTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="101" column="35" lean-forward="true" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
-          <folding>
-            <element signature="e#49#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="118" column="30" lean-forward="true" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#50#108#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/cli/src/FixPackage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#42#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -924,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/EntryContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/HasId.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -945,13 +842,6 @@
           <folding>
             <element signature="e#42#68#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="40" column="116" lean-forward="true" selection-start-line="40" selection-start-column="116" selection-end-line="40" selection-end-column="116" />
         </state>
       </provider>
     </entry>
@@ -989,48 +879,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasField.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="e#49#106#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesHttpHeaders.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/MockRequestTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestRequestContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="50" column="6" lean-forward="true" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1051,17 +903,309 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/MockRestResponseTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/EntryContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/MockRequestTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/SomethingTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="e#49#106#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestRequestContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/TestModelsToResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#57#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Arrayable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/ModelTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#43#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasField.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockProvidesHasFields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding>
+            <element signature="e#49#104#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FormModelTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-301">
+          <folding>
+            <element signature="e#49#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CreatesCollectionFromArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/SomethingTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#58#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesSlug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CreatesInteropModelFromArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268">
+          <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+          <folding>
+            <element signature="e#49#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/CalderaForms/HasFields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Traits/PreparesFieldsFromArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#51#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FormModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="e#44#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldCollectionInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#54#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Interoperable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#48#106#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#38#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#44#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#45#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#44#110#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CollectsModels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/FormModelTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding>
+            <element signature="e#55#94#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
