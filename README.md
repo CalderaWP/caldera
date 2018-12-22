@@ -21,6 +21,13 @@ Each package should have these commands:
 * `composer test` 
 * `composer fixes`
 
+### Add A Packge
+* Copy the `boilerplate/php-packages` to `php-packages`
+* Change name of new directory name
+* Change the library name to `calderawp/<name>` where <name> is the same name as the directory.
+* Find and replace `packageName` in new directory replacing with new package's namespace;
+* From root directory, register new package by running `composer merge`
+
 ### Testing
 Tests should go in the sub-packages.
 
