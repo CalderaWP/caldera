@@ -1,5 +1,5 @@
 {
-  "name": "calderawp/php-boilerplate",
+  "name": "calderawp/caldera-cli",
   "description": "A boilerplate for new composer based PHP projects.",
   "license": "GPL-2.0",
   "require": {
@@ -20,12 +20,12 @@
   },
   "autoload": {
     "psr-4": {
-      "calderawp\\caldera\\PackageName\\": "src"
+      "calderawp\\caldera\\Cli\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "calderawp\\caldera\\PackageName\\Tests\\": "tests"
+      "calderawp\\caldera\\Cli\\Tests\\": "tests"
     }
   },
   "scripts": {

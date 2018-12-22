@@ -24,8 +24,9 @@ Each package should have these commands:
 ### Testing
 Tests should go in the sub-packages.
 
-* From root directory `composer test` will run all tests of all packages.
+* From root directory `composer test` will run all tests and all fixes of all packages.
 * From root directory `composer fixes` will run phpcs fixes on all packages.
+* From root directory `composer test <package>` will run tests for <package> where <package> is the directory name of a package.
 
 ### JavaScript
 https://github.com/nareshbhatia/lerna-workspaces-react-es6

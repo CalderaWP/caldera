@@ -18,21 +18,24 @@
     },
     "autoload": {
         "psr-4": {
+            "calderawp\\caldera\\Cli\\": "php-packages/cli/src",
             "calderawp\\caldera\\Forms\\": "php-packages/forms/src",
             "calderawp\\interop\\": "php-packages/interop/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
+            "calderawp\\caldera\\Cli\\Tests\\": "php-packages/cli/tests",
             "calderawp\\caldera\\Forms\\Tests\\": "php-packages/forms/tests",
             "calderawp\\interop\\Tests\\": "php-packages/interop/tests"
         }
     },
     "scripts": {
         "merge": "vendor/bin/monorepo-builder merge && composer update",
-        "test": "composer test:packages",
+        "test": "composer test:packages && composer fixes",
         "fixes": "composer fixes:packages",
-        "test:packages": "composer test:packages-interop && composer test:packages-forms",
+        "test:packages": "calderawp\\caldera\\Cli\\TestPackages::callback",
+        "test:package": "calderawp\\caldera\\Cli\\TestPackage::callback",
         "test:packages-interop": "cd php-packages/interop && composer test ",
         "test:packages-forms": "cd php-packages/forms && composer test ",
         "fixes:packages": "cd php-packages/interop && composer fixes && cd ../ && pwd && cd forms && composer fixes"
