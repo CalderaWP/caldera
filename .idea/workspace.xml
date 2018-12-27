@@ -2,52 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php-packages/db/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/phpcs.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/src/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/src/Contracts/Crud.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/src/Contracts/FormsDb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/src/Contracts/Query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/src/Something.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/tests/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/db/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Controllers/FormsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Integration/Forms/SnapshotTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caldera.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caldera.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldModelContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldModelContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Contracts/FormModelContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Contracts/FormModelContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldOption.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRoute.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRoute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/RespondsForForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/RespondsForForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Routes/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Routes/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Integration/FormModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Integration/FormModelTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Integration/SomethingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/db/tests/SomethingTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Integration/Forms/__snapshots__/ContactFormTest__testContactFormToArray__1.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Integration/Forms/__snapshots__/ContactFormTest__testContactFormToArray__1.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,18 +35,18 @@
           <entry key="dist" value="3" />
           <entry key="editorconfig" value="1" />
           <entry key="inc" value="1" />
-          <entry key="json" value="24" />
-          <entry key="md" value="13" />
-          <entry key="php" value="561" />
+          <entry key="json" value="25" />
+          <entry key="md" value="14" />
+          <entry key="php" value="571" />
           <entry key="php_cs" value="1" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="24" />
-          <entry key="Markdown" value="13" />
-          <entry key="PHP" value="562" />
+          <entry key="JSON" value="25" />
+          <entry key="Markdown" value="14" />
+          <entry key="PHP" value="572" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="YAML" value="2" />
         </counts>
@@ -93,18 +54,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="json" value="968" />
-          <entry key="md" value="1464" />
-          <entry key="php" value="37776" />
+          <entry key="json" value="990" />
+          <entry key="md" value="2001" />
+          <entry key="php" value="38347" />
           <entry key="txt" value="516" />
           <entry key="yml" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="968" />
-          <entry key="Markdown" value="1464" />
-          <entry key="PHP" value="37776" />
+          <entry key="JSON" value="990" />
+          <entry key="Markdown" value="2001" />
+          <entry key="PHP" value="38347" />
           <entry key="PLAIN_TEXT" value="537" />
           <entry key="YAML" value="24" />
         </counts>
@@ -129,169 +90,95 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.1567759">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="321">
-                  <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FormModel.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#44#103#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/Integration/FormModelTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7">
-                  <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="144" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#55#94#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="105" selection-start-line="105" selection-end-line="105" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldOptionsTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/__snapshots__/ContactFormTest__testContactFormToArray__1.json">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FormModelTest.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/SnapshotTestCase.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" selection-start-line="13" selection-end-line="13" />
-                  <folding>
-                    <element signature="e#63#112#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="328">
-                  <caret line="180" column="101" selection-start-line="180" selection-start-column="101" selection-end-line="180" selection-end-column="101" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldModel.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="71">
-                  <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Field/FieldOption.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
-                  <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="335">
-                  <caret line="84" column="72" selection-start-line="84" selection-start-column="72" selection-end-line="84" selection-end-column="72" />
-                  <folding>
-                    <element signature="e#61#102#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/composer.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="16">
-                  <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FormModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding>
+                <element signature="e#44#103#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Integration/FormModelTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+              <folding>
+                <element signature="e#55#94#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding>
+                <element signature="e#50#89#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="464">
+                <caret line="48" column="115" selection-start-line="48" selection-start-column="115" selection-end-line="48" selection-end-column="115" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/SnapshotTestCase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1290">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getFieldS</find>
-      <find>array_key</find>
       <find>addV</find>
       <find>getFor</find>
       <find>setEntryVal</find>
@@ -317,8 +204,10 @@
       <find>toArra</find>
       <find>h</find>
       <find>PackageName</find>
-      <find>toJ</find>
+      <find>testFromArray</find>
+      <find>var_d</find>
       <find>getId(</find>
+      <find>toJ</find>
       <find>toArray</find>
     </findStrings>
     <replaceStrings>
@@ -335,10 +224,10 @@
       <dir>$PROJECT_DIR$/php-packages/interop/tests</dir>
       <dir>$PROJECT_DIR$/php-packages/cli</dir>
       <dir>$PROJECT_DIR$/tests/Integration</dir>
-      <dir>$PROJECT_DIR$/php-packages</dir>
       <dir>$PROJECT_DIR$/php-packages/rest-api</dir>
       <dir>$PROJECT_DIR$/php-packages/events</dir>
       <dir>$PROJECT_DIR$/php-packages/db</dir>
+      <dir>$PROJECT_DIR$/php-packages</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -347,10 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/GetFormTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/GetForm.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/RespondsForForms.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/DeleteForm.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/RouteContract.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/GetForms.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Route.php" />
@@ -383,21 +268,25 @@
         <option value="$PROJECT_DIR$/tests/Integration/Forms/SnapshotTestCase.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" />
         <option value="$PROJECT_DIR$/tests/Integration/Forms/FormSnapshotTests.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/CalderaForms/ProvidesFields.php" />
-        <option value="$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldModelContract.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldOptions.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionsTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldOption.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/Integration/FormModelTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" />
+        <option value="$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -531,14 +420,6 @@
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="php-packages" type="462c0819:PsiDirectoryNode" />
               <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Field" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -558,6 +439,14 @@
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="Integration" type="462c0819:PsiDirectoryNode" />
               <item name="Forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Integration" type="462c0819:PsiDirectoryNode" />
+              <item name="Forms" type="462c0819:PsiDirectoryNode" />
+              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -601,9 +490,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.FieldModelTest.testSetFieldConfigFromArray">
-    <configuration name="FieldConfigTest.testGetSetButtonType" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\FieldConfigTest" file="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" method="testGetSetButtonType" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.FieldsCollectionTest">
+    <configuration name="ContactFormTest.testContactFormToArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Tests\Integration\Forms\ContactFormTest" file="$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php" method="testContactFormToArray" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="FieldConfigTest.testGetSetHtml5Type" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -614,28 +503,28 @@
       <TestRunner class="calderawp\caldera\Forms\Tests\FieldModelTest" file="$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php" method="testSetFieldConfigFromArray" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FieldOptionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\FieldOptionTest" file="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php" scope="Class" />
+    <configuration name="FieldsCollectionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\FieldsCollectionTest" file="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="FieldOptionTest.testToArrayNoId" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\FieldOptionTest" file="$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php" method="testToArrayNoId" scope="Method" />
+    <configuration name="FieldsCollectionTest.testFromFieldsArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\FieldsCollectionTest" file="$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php" method="testFromFieldsArray" scope="Method" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.FieldOptionTest" />
-      <item itemvalue="PHPUnit.FieldOptionTest.testToArrayNoId" />
       <item itemvalue="PHPUnit.FieldModelTest.testSetFieldConfigFromArray" />
-      <item itemvalue="PHPUnit.FieldConfigTest.testGetSetButtonType" />
       <item itemvalue="PHPUnit.FieldConfigTest.testGetSetHtml5Type" />
+      <item itemvalue="PHPUnit.ContactFormTest.testContactFormToArray" />
+      <item itemvalue="PHPUnit.FieldsCollectionTest.testFromFieldsArray" />
+      <item itemvalue="PHPUnit.FieldsCollectionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FieldsCollectionTest" />
+        <item itemvalue="PHPUnit.FieldsCollectionTest.testFromFieldsArray" />
+        <item itemvalue="PHPUnit.ContactFormTest.testContactFormToArray" />
         <item itemvalue="PHPUnit.FieldModelTest.testSetFieldConfigFromArray" />
         <item itemvalue="PHPUnit.FieldConfigTest.testGetSetHtml5Type" />
-        <item itemvalue="PHPUnit.FieldConfigTest.testGetSetButtonType" />
-        <item itemvalue="PHPUnit.FieldOptionTest.testToArrayNoId" />
-        <item itemvalue="PHPUnit.FieldOptionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -655,39 +544,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FieldOptionTest_testToArrayNoId - 2018.12.26 at 23h 28m 39s.xml">
-      <configuration name="FieldOptionTest.testToArrayNoId" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldOptionTest_testToArrayNoId - 2018.12.26 at 23h 28m 42s.xml">
-      <configuration name="FieldOptionTest.testToArrayNoId" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldModelTest_testSetFieldConfigFromArray - 2018.12.26 at 23h 36m 18s.xml">
-      <configuration name="FieldModelTest.testSetFieldConfigFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldModelTest_testSetFieldConfigFromArray - 2018.12.26 at 23h 36m 19s.xml">
-      <configuration name="FieldModelTest.testSetFieldConfigFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldConfigTest_testGetSetButtonType - 2018.12.26 at 23h 40m 39s.xml">
-      <configuration name="FieldConfigTest.testGetSetButtonType" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldConfigTest_testGetSetButtonType - 2018.12.26 at 23h 45m 17s.xml">
-      <configuration name="FieldConfigTest.testGetSetButtonType" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldConfigTest_testGetSetButtonType - 2018.12.26 at 23h 45m 33s.xml">
-      <configuration name="FieldConfigTest.testGetSetButtonType" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldConfigTest_testGetSetButtonType - 2018.12.26 at 23h 46m 00s.xml">
-      <configuration name="FieldConfigTest.testGetSetButtonType" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FieldConfigTest_testGetSetHtml5Type - 2018.12.26 at 23h 46m 44s.xml">
-      <configuration name="FieldConfigTest.testGetSetHtml5Type" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="FieldModelTest_testSetFieldConfigFromArray - 2018.12.26 at 23h 48m 32s.xml">
       <configuration name="FieldModelTest.testSetFieldConfigFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="FieldModelTest_testSetFieldConfigFromArray - 2018.12.26 at 23h 49m 07s.xml">
+      <configuration name="FieldModelTest.testSetFieldConfigFromArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ContactFormTest_testContactFormToArray - 2018.12.26 at 23h 50m 20s.xml">
+      <configuration name="ContactFormTest.testContactFormToArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ContactFormTest_testContactFormToArray - 2018.12.26 at 23h 50m 53s.xml">
+      <configuration name="ContactFormTest.testContactFormToArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ContactFormTest_testContactFormToArray - 2018.12.26 at 23h 51m 15s.xml">
+      <configuration name="ContactFormTest.testContactFormToArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ContactFormTest_testContactFormToArray - 2018.12.26 at 23h 51m 34s.xml">
+      <configuration name="ContactFormTest.testContactFormToArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ContactFormTest_testContactFormToArray - 2018.12.26 at 23h 51m 58s.xml">
+      <configuration name="ContactFormTest.testContactFormToArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="FieldsCollectionTest_testFromFieldsArray - 2018.12.26 at 23h 54m 40s.xml">
+      <configuration name="FieldsCollectionTest.testFromFieldsArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="FieldsCollectionTest_testFromFieldsArray - 2018.12.26 at 23h 55m 56s.xml">
+      <configuration name="FieldsCollectionTest.testFromFieldsArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="FieldsCollectionTest - 2018.12.26 at 23h 58m 47s.xml">
+      <configuration name="FieldsCollectionTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66728000" />
+    <option name="totallyTimeSpent" value="68036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -698,7 +587,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" weight="0.3296582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39911798" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -706,7 +595,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" weight="0.4178344" />
+      <window_info active="true" anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.16942675" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -788,50 +677,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/MockRouteTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#43#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#50#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Controllers/FormsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="45" />
-          <folding>
-            <element signature="e#58#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/db/src/Contracts/Crud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/EntryTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1025,23 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FormModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="e#44#103#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FormModelTest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1054,26 +882,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/SnapshotTestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#63#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/__snapshots__/ContactFormTest__testContactFormToArray__1.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/FieldModelContract.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1103,6 +911,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FormModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#44#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ConvertsInteropModelToArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldsCollectionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/cli/src/TestPackage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldOptionsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1110,10 +949,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Field/FieldOption.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        <state relative-caret-position="601">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/FormModelTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+          <folding>
+            <element signature="e#55#94#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FieldsCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#50#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/__snapshots__/ContactFormTest__testContactFormToArray__1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1127,27 +1005,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Integration/FormModelTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Field/FieldOption.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="144" selection-end-column="10" />
-          <folding>
-            <element signature="e#55#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldOptionTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="226">
+          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1174,8 +1035,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="257">
           <caret line="180" column="101" selection-start-line="180" selection-start-column="101" selection-end-line="180" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/ContactFormTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Integration/Forms/SnapshotTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="464">
+            <caret line="48" column="115" selection-start-line="48" selection-start-column="115" selection-end-line="48" selection-end-column="115" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

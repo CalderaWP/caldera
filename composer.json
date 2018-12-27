@@ -43,6 +43,7 @@
         "test": "composer fixes && composer test:packages",
         "tests": "composer test:integration && composer test && composer test:integration",
         "test:integration": "phpunit tests/",
+        "snapshot:accept": "phpunit tests/ -d --update-snapshots",
         "fixes": "composer fixes:packages",
         "-test:packages": "calderawp\\caldera\\Cli\\TestPackages::callback",
         "-test:package": "calderawp\\caldera\\Cli\\TestPackage::callback",
