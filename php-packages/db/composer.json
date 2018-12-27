@@ -1,27 +1,27 @@
 {
-  "name": "calderawp/php-boilerplate",
+  "name": "calderawp/database",
   "description": "A boilerplate for new composer based PHP projects.",
   "license": "GPL-2.0",
   "require": {
-    "php": "^7.2",
-    "psr/container": "^1.0"
+    "php": "^5.6|^7.0",
+    "calderawp/caldera-containers": "^0.2",
+    "inpsyde/wp-db-tools": "^0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "calderawp\\DB\\": "php"
+    }
   },
   "require-dev": {
     "php": "^7.2",
     "mockery/mockery": "^1.2",
-    "phpunit/phpunit": "^7.3",
-    "friendsofphp/php-cs-fixer": "^2.0"
+    "phpunit/phpunit": "^7.3"
   },
   "config": {
     "platform": {
       "php": "7.2"
     },
     "sort-packages": true
-  },
-  "autoload": {
-    "psr-4": {
-      "calderawp\\caldera\\Db\\": "src"
-    }
   },
   "autoload-dev": {
     "psr-4": {
