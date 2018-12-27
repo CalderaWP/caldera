@@ -6,6 +6,7 @@ namespace calderawp\caldera\Events;
 use calderawp\interop\Contracts\CalderaModule;
 use calderawp\interop\Contracts\WordPress\ApplysFilters;
 use calderawp\interop\Module;
+use calderawp\CalderaContainers\Service\Container as ServiceContainer;
 
 class CalderaEvents extends Module
 {
@@ -24,9 +25,9 @@ class CalderaEvents extends Module
 	}
 
 	/** @inheritdoc */
-	public function registerServices(): CalderaModule
+	public function registerServices(ServiceContainer$container): CalderaModule
 	{
-		$this->getServiceContainer()
+		$container
 			->singleton(ApplysFilters::class, function () {
 				return new Filters();
 			});
