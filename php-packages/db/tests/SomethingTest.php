@@ -1,14 +1,14 @@
 <?php
 
-namespace calderawp\caldera\Tests\Integration;
+namespace calderawp\caldera\Db\Tests;
 
-use calderawp\caldera\Cli\Something;
+use calderawp\caldera\Db\Something;
 
 class SomethingTest extends TestCase
 {
 
 	/**
-	 * @covers \calderawp\caldera\PackageName\Something::hiRoy()
+	 * @covers \calderawp\caldera\Db\Something::hiRoy()
 	 */
 	public function testHiRoy()
 	{

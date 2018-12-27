@@ -13,12 +13,14 @@
         "guzzlehttp/guzzle": "^6.3",
         "mockery/mockery": "^1.2",
         "phpunit/phpunit": "^7.3",
+        "spatie/phpunit-snapshot-assertions": "^1.3",
         "squizlabs/php_codesniffer": "3.*",
         "symplify/monorepo-builder": "^4.7"
     },
     "autoload": {
         "psr-4": {
             "calderawp\\caldera\\Cli\\": "php-packages/cli/src",
+            "calderawp\\caldera\\Db\\": "php-packages/db/src",
             "calderawp\\caldera\\Events\\": "php-packages/events/src",
             "calderawp\\caldera\\Forms\\": "php-packages/forms/src",
             "calderawp\\caldera\\restApi\\": "php-packages/rest-api/src",
@@ -28,15 +30,18 @@
     "autoload-dev": {
         "psr-4": {
             "calderawp\\caldera\\Cli\\Tests\\": "php-packages/cli/tests",
+            "calderawp\\caldera\\Db\\Tests\\": "php-packages/db/tests",
             "calderawp\\caldera\\Events\\Tests\\": "php-packages/events/tests",
             "calderawp\\caldera\\Forms\\Tests\\": "php-packages/forms/tests",
             "calderawp\\caldera\\restApi\\Tests\\": "php-packages/rest-api/tests",
-            "calderawp\\interop\\Tests\\": "php-packages/interop/tests"
+            "calderawp\\interop\\Tests\\": "php-packages/interop/tests",
+            "calderawp\\caldera\\Tests\\Integration\\": "tests/Integration"
         }
     },
     "scripts": {
         "merge": "vendor/bin/monorepo-builder merge && composer update",
-        "test": "composer test:packages && composer fixes",
+        "test": "composer fixes && composer test:packages",
+        "tests": "composer test:integration && composer test && composer test:integration",
         "test:integration": "phpunit tests/",
         "fixes": "composer fixes:packages",
         "-test:packages": "calderawp\\caldera\\Cli\\TestPackages::callback",

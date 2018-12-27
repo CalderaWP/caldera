@@ -6,7 +6,6 @@ use calderawp\caldera\Forms\FieldModel;
 use calderawp\caldera\Forms\FieldsCollection;
 use calderawp\caldera\Forms\FormModel;
 use calderawp\interop\Tests\Mocks\MockRequest;
-use PHPUnit\Framework\TestCase;
 
 class FormModelTest extends TestCase
 {
@@ -120,5 +119,42 @@ class FormModelTest extends TestCase
 
 		$this->assertArrayHasKey($fieldId, $response->getData()['fields']);
 		$this->assertEquals($fieldValue, $response->getData()['fields'][$fieldId]['value']);
+	}
+
+
+	public function testFromArrayWithArrayofFields(){
+		$formId = 'x1';
+		$formName = 'Contact Form';
+		$fieldId = 'fld1';
+		$fieldId2 = 'fld2';
+
+		$field = [
+			'id' => $fieldId,
+			'default' => 'roy@hiroy.club',
+			'type' => 'text',
+			'html5type' => 'email',
+		];
+
+		$field2 = [
+			'id' => $fieldId2,
+			'type' => 'button',
+			'buttonType' => 'submit',
+			'slug' => 'submit_button',
+			'label' => 'Click Me'
+
+		];
+
+		$fields = [$field,$field2];
+
+		$form = FormModel::fromArray([
+			'id' => $formId,
+			'name' => $formName,
+			'fields' => $fields
+		]);
+
+		$this->assertFalse($form->getFields()->hasField('false-positive'));
+		$this->assertFalse($form->getFields()->hasField(4));
+		$this->assertTrue($form->getFields()->hasField($fieldId));
+		$this->assertTrue($form->getFields()->hasField($fieldId2));
 	}
 }
