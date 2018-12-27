@@ -1,5 +1,5 @@
 <?php
-
+namespace calderawp\caldera\Core;
 use calderawp\interop\Contracts\CalderaModule;
 use calderawp\CalderaContainers\Service\Container;
 use calderawp\caldera\core\CalderaCore;
