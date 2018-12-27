@@ -4,6 +4,7 @@
 namespace calderawp\caldera\Tests\Traits;
 use calderawp\caldera\core\CalderaCore;
 use calderawp\caldera\Events\CalderaEvents;
+use calderawp\caldera\Forms\CalderaForms;
 use calderawp\caldera\restApi\CalderaRestApi;
 use calderawp\CalderaContainers\Service\Container;
 
@@ -23,6 +24,16 @@ trait SharedFactories
 	protected function serviceContainer(): Container
 	{
 		return new Container();
+	}
+
+	public function calderaForms(): CalderaForms
+	{
+		return $this->core()->getCalderaForms();
+	}
+
+	public function calderaRestApi(): CalderaRestApi
+	{
+		return $this->core()->getRestApi();
 	}
 
 	/**
