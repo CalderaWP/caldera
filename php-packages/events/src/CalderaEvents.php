@@ -4,17 +4,19 @@
 namespace calderawp\caldera\Events;
 
 use calderawp\interop\Contracts\CalderaModule;
+use calderawp\caldera\Events\Contracts\CalderaEventsContract;
 use calderawp\interop\Contracts\WordPress\ApplysFilters;
 use calderawp\interop\Module;
 use calderawp\CalderaContainers\Service\Container as ServiceContainer;
 
-class CalderaEvents extends Module
+class CalderaEvents extends Module implements CalderaEventsContract
 {
 
+	const IDENTIFIER = 'events';
 	/** @inheritdoc */
 	public function getIdentifier(): string
 	{
-		return 'events';
+		return self::IDENTIFIER;
 	}
 
 	/** @inheritdoc */

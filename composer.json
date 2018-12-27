@@ -19,6 +19,7 @@
     },
     "autoload": {
         "psr-4": {
+            "calderawp\\caldera\\core\\": "core",
             "calderawp\\caldera\\Cli\\": "php-packages/cli/src",
             "calderawp\\caldera\\Db\\": "php-packages/db/src",
             "calderawp\\caldera\\Events\\": "php-packages/events/src",
@@ -35,7 +36,9 @@
             "calderawp\\caldera\\Forms\\Tests\\": "php-packages/forms/tests",
             "calderawp\\caldera\\restApi\\Tests\\": "php-packages/rest-api/tests",
             "calderawp\\interop\\Tests\\": "php-packages/interop/tests",
-            "calderawp\\caldera\\Tests\\Integration\\": "tests/Integration"
+            "calderawp\\caldera\\Tests\\Integration\\": "tests/Integration",
+            "calderawp\\caldera\\Tests\\Unit\\": "tests/Unit",
+            "calderawp\\caldera\\Tests\\Unit\\Core\\": "tests/Unit/Core"
         }
     },
     "scripts": {
