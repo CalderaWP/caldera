@@ -41,6 +41,9 @@ Unit tests should not use classes from other packages, that's what integration t
 
 * From root directory `composer test:integration` will run the integration tests.
 
+### Static Analysis and Type Checking
+To run static analysis and type checking with [phpstan](https://github.com/phpstan/phpstan) run the command `composer analysisgi`
+
 #### Snapshot Testing
 PHP Snapshot tests should go in /tests/Integration and extend `calderawp\caldera\Tests\Integration\TestCase\SnapShotTestCase`
 

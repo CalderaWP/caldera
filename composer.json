@@ -58,7 +58,11 @@
         "test:packages-events": "cd php-packages/events && composer test ",
         "fixes:packages": "cd php-packages/interop && composer fixes && cd ../ && pwd && cd forms && composer fixes && cd ../ && pwd && cd rest-api && composer fixes && cd ../ && pwd && cd events && composer fixes",
         "test:packages": "cd php-packages/interop && composer test && cd ../ && pwd && cd forms && composer test && cd ../ && pwd && cd rest-api && composer test && cd ../ && pwd && cd events && composer test",
-        "analysis" : "composer stan php-packages/forms/src && composer stan  php-packages/forms/tests",
+        "analysis" : "composer analysis:forms && analysis:events && analysis:rest && analysis:interop",
+        "analysis:forms" : "vendor/bin/phpstan analyse stan php-packages/forms/src",
+        "analysis:events" : "vendor/bin/phpstan analyse php-packages/events/src",
+        "analysis:interop" : "vendor/bin/phpstan analyse php-packages/interop/src",
+        "analysis:rest" : "vendor/bin/phpstan analyse php-packages/rest-api/src",
         "stan": "vendor/bin/phpstan analyse"
     },
     "config": {
