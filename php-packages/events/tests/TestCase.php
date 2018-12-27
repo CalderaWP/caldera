@@ -1,7 +1,7 @@
 <?php
 
 
-namespace calderawp\caldera\restApi\Tests;
+namespace calderawp\caldera\Events\Tests;
 
 use calderawp\caldera\core\CalderaCore;
 use calderawp\caldera\Events\CalderaEvents;

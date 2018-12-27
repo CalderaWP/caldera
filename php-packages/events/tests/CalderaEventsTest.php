@@ -5,7 +5,6 @@ namespace calderawp\caldera\Events\Tests;
 use calderawp\caldera\Events\CalderaEvents;
 use calderawp\caldera\Events\Filters;
 use calderawp\CalderaContainers\Service\Container;
-use PHPUnit\Framework\TestCase;
 
 class CalderaEventsTest extends TestCase
 {
@@ -16,8 +15,7 @@ class CalderaEventsTest extends TestCase
 	 */
 	public function testGetHooks()
 	{
-		$serviceContainer = new Container();
-		$module = new CalderaEvents($serviceContainer);
+		$module = $this->calderaEventsModule();
 		$this->assertEquals(Filters::class, get_class($module->getHooks()));
 	}
 
@@ -26,8 +24,8 @@ class CalderaEventsTest extends TestCase
 	 */
 	public function testGetIdentifier()
 	{
-		$serviceContainer = new Container();
-		$module = new CalderaEvents($serviceContainer);
+		$module = $this->calderaEventsModule();
+
 		$this->assertEquals('events', $module->getIdentifier());
 	}
 }

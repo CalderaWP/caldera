@@ -38,7 +38,8 @@
             "calderawp\\interop\\Tests\\": "php-packages/interop/tests",
             "calderawp\\caldera\\Tests\\Integration\\": "tests/Integration",
             "calderawp\\caldera\\Tests\\Unit\\": "tests/Unit",
-            "calderawp\\caldera\\Tests\\Unit\\Core\\": "tests/Unit/Core"
+            "calderawp\\caldera\\Tests\\Unit\\Core\\": "tests/Unit/Core",
+            "calderawp\\caldera\\Tests\\Traits\\": "tests/Traits"
         }
     },
     "scripts": {

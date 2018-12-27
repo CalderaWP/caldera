@@ -24,6 +24,10 @@ class CalderaCoreTest extends \calderawp\caldera\Tests\Unit\TestCase
 		$this->assertEquals($module, $core->getModule('hiRoy'));
 	}
 
+	/**
+	 * @covers \calderawp\caldera\core\CalderaCore::addModule()
+	 * @covers \calderawp\caldera\core\CalderaCore::getModule()
+	 */
 	public function testGetDefaultModulesByIdentifiers()
 	{
 		$core = new CalderaCore($this->serviceContainer());

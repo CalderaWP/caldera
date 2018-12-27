@@ -84,27 +84,28 @@ class CalderaCore implements CalderaCoreContract, CalderaModule
 	public function registerServices(Container $container): CalderaModule
 	{
 		$container->bind(Container::class, function (){
-			return new Container();
+			$serviceContainer = new Container();
+			return $serviceContainer;
 		});
 
 		$container->singleton(
 			CalderaFormsContract::class,
 			function (){
-				return new CalderaForms($this->serviceContainerFactory() );
+				return new CalderaForms($this,$this->serviceContainerFactory() );
 			}
 		);
 
 		$container->singleton(
 			CalderaRestApiContract::class,
 			function (){
-				return new CalderaRestApi($this->serviceContainerFactory() );
+				return new CalderaRestApi($this,$this->serviceContainerFactory() );
 			}
 		);
 
 		$container->singleton(
 			CalderaEventsContract::class,
 			function (){
-				return new CalderaEvents($this->serviceContainerFactory() );
+				return new CalderaEvents($this,$this->serviceContainerFactory() );
 			}
 		);
 
@@ -139,4 +140,11 @@ class CalderaCore implements CalderaCoreContract, CalderaModule
 	}
 
 
+	/**
+	 * @inheritDoc
+	 */
+	public function getCore(): CalderaCoreContract
+	{
+		return $this;
+	}
 }
