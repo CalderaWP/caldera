@@ -1,6 +1,6 @@
 <?php
 
-namespace calderawp\caldera\Tests\Integration;
+namespace calderawp\caldera\Core\Tests\Integration;
 
 use calderawp\caldera\Forms\FieldModel;
 use calderawp\caldera\Forms\FieldsCollection;

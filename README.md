@@ -37,7 +37,7 @@ Unit tests should go in the sub-packages.
 * From root directory `composer test <package>` will run tests for <package> where <package> is the directory name of a package.
 
 ### Integration Tests
-Unit tests should not use classes from other packages, that's what integration tests are for. Integration tests are in the main tests folder.
+Unit tests should not use classes from other packages, that's what integration tests are for. Integration tests are in the core package.
 
 * From root directory `composer test:integration` will run the integration tests.
 

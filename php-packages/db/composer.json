@@ -3,9 +3,7 @@
   "description": "A boilerplate for new composer based PHP projects.",
   "license": "GPL-2.0",
   "require": {
-    "php": "^5.6|^7.0",
-    "calderawp/caldera-containers": "^0.2",
-    "inpsyde/wp-db-tools": "^0.2"
+
   },
   "autoload": {
     "psr-4": {
@@ -13,9 +11,7 @@
     }
   },
   "require-dev": {
-    "php": "^7.2",
-    "mockery/mockery": "^1.2",
-    "phpunit/phpunit": "^7.3"
+
   },
   "config": {
     "platform": {

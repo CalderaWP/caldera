@@ -1,10 +1,10 @@
 <?php
 
 
-namespace calderawp\caldera\Tests\Integration\Forms;
+namespace calderawp\caldera\Core\Tests\Integration\Forms;
 
 
-use calderawp\caldera\Tests\Integration\TestCase;
+use calderawp\caldera\Core\Tests\Integration\TestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
 abstract class SnapshotTestCase extends TestCase
