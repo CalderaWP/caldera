@@ -1,0 +1,33 @@
+name: caldera
+recipe: wordpress
+config:
+  env: dev
+  xdebug: true
+  php: '7.2'
+  via: nginx
+  webroot: wordpress
+proxy:
+  mailhog:
+  - mail.caldera.lndo.site
+  pma:
+  - pma.caldera.lndo.site
+services:
+  appserver:
+    composer:
+      phpunit/phpunit: '*'
+    build:
+    - "cd $LANDO_MOUNT && composer update --prefer-source"
+    - "bash ./scripts/wp/post-build.sh"
+    post-start:
+    - "cd $LANDO_MOUNT && composer update --prefer-source"
+    - "bash ./scripts/wp/post-start.sh"
+  mailhog:
+    type: mailhog
+    hogfrom:
+    - appserver
+    portforward: true
+  pma:
+    type: phpmyadmin
+    hosts:
+    - database
+    - database.caldera.internal

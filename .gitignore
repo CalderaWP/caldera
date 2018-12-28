@@ -1,5 +1,7 @@
 /build/
 /vendor/
+/wordpress/
+/wp-content/plugins
 # /composer.lock
 
 /.php_cs.cache

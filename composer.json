@@ -5,8 +5,10 @@
         "php": "^7.2",
         "calderawp/caldera-containers": "^0.2",
         "inpsyde/wp-db-tools": "^0.2",
+        "johnpbloch/wordpress": ">=5.0",
         "mockery/mockery": "^1.2",
-        "psr/container": "^1.0"
+        "psr/container": "^1.0",
+        "vlucas/phpdotenv": "^2.2"
     },
     "require-dev": {
         "php": "^7.2",
@@ -27,6 +29,7 @@
             "calderawp\\caldera\\Data\\": "php-packages/data/php",
             "calderawp\\caldera\\Events\\": "php-packages/events/src",
             "calderawp\\caldera\\Forms\\": "php-packages/forms/src",
+            "calderawp\\caldera\\WordPressPlugin\\": "wp-content/mu-plugins/plugins/wordpress-plugin/src",
             "calderawp\\caldera\\restApi\\": "php-packages/rest-api/src",
             "calderawp\\interop\\": "php-packages/interop/src"
         }
@@ -42,10 +45,17 @@
             "calderawp\\caldera\\Data\\Tests\\": "php-packages/data/tests",
             "calderawp\\caldera\\Events\\Tests\\": "php-packages/events/tests",
             "calderawp\\caldera\\Forms\\Tests\\": "php-packages/forms/tests",
+            "calderawp\\caldera\\WordPressPlugin\\Tests\\": "wp-content/mu-plugins/plugins/wordpress-plugin/tests",
             "calderawp\\caldera\\restApi\\Tests\\": "php-packages/rest-api/tests",
             "calderawp\\interop\\Tests\\": "php-packages/interop/tests"
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
     "scripts": {
         "merge": "vendor/bin/monorepo-builder merge && composer update",
         "test": "composer fixes && composer test:core && composer test:packages",

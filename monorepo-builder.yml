@@ -11,6 +11,7 @@ parameters:
         packages/second-package: 'git@github.com:your-monorepo/second-package.git'
     package_directories:
     - 'php-packages'
+    - 'wp-content/mu-plugins/plugins'
     parameters:
         merge_sections:
         # default values
@@ -19,3 +20,5 @@ parameters:
         - 'autoload'
         - 'autoload-dev'
         - 'repositories'
+        # Josh added values
+        #  - 'extra'

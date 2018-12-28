@@ -21,6 +21,8 @@ Each package should have these commands:
 * `composer test` 
 * `composer fixes`
 
+Do NOT add dependencies, autoloaders, or any other field that monorepo builder overwrites in the root dir composer.json. Use meta package instead.
+
 ### Add A Package
 * Copy the `boilerplate/php-packages` to `php-packages`
 * Change name of new directory name
@@ -51,7 +53,25 @@ Snapshot tests use [spatie/phpunit-snapshot-assertions](https://github.com/spati
 
 * From root directory `composer snapshot:accept` will accept a change to a snapshot test that is currently failing.
 
-### JavaScript
+### WordPress
+In general, most development should not require WordPress. 
+
+A local WordPress environment with xdebug, mailhog, phpmyadmin, etc is included, using Lando.
+
+* Install Lando
+    - https://docs.devwithlando.io/installation/installing.html
+* Start server
+    - `lando start`
+* Go to [https://caldera.lndo.site](https://caldera.lndo.site) and dismiss the HTTPS warning.
+
+WordPress-specific code should be placed in wp-content/mu-plugins. Plugins with composer.json files in the wp-content/mu-plugins/plugins folder are merged into the monorepo.
+
+
+#### See:
+* https://docs.devwithlando.io/tutorials/wordpress.html
+* https://joshpress.net/create-a-wordpres-site-with-lando/
+
+## JavaScript
 https://github.com/nareshbhatia/lerna-workspaces-react-es6
 https://www.nearform.com/blog/sharing-react-components-with-lerna/
 https://medium.com/@luisvieira_gmr/building-large-scale-react-applications-in-a-monorepo-91cd4637c131
