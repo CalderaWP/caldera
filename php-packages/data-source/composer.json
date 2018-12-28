@@ -1,17 +1,15 @@
 {
-  "name": "calderawp/data",
+  "name": "calderawp/php-boilerplate",
   "description": "A boilerplate for new composer based PHP projects.",
   "license": "GPL-2.0",
   "require": {
-
-  },
-  "autoload": {
-    "psr-4": {
-      "calderawp\\caldera\\Data\\": "php"
-    }
+    "php": "^7.2"
   },
   "require-dev": {
-
+    "php": "^7.2",
+    "mockery/mockery": "^1.2",
+    "phpunit/phpunit": "^7.3",
+    "squizlabs/php_codesniffer": "3.*"
   },
   "config": {
     "platform": {
@@ -19,9 +17,14 @@
     },
     "sort-packages": true
   },
+  "autoload": {
+    "psr-4": {
+      "calderawp\\caldera\\DataSource\\": "src"
+    }
+  },
   "autoload-dev": {
     "psr-4": {
-      "calderawp\\caldera\\Data\\Tests\\": "tests"
+      "calderawp\\caldera\\DataSource\\Tests\\": "tests"
     }
   },
   "scripts": {

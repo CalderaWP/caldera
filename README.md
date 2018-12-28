@@ -30,13 +30,11 @@ Do NOT add dependencies, autoloaders, or any other field that monorepo builder o
 * Find and replace `packageName` in new directory replacing with new package's namespace;
 * From root directory, register new package by running `composer merge`
 
-### Unit Testing
+### Testing
 Unit tests should go in the sub-packages.
 
-* From root directory `composer test` will run all package unit tests and and fixes plus the integration tests.
-* From root directory `composer tests` will run all tests and all fixes of all packages.
+* From root directory `composer test` will run all package unit tests and and fixes plus the integration tests and also the WordPress tests
 * From root directory `composer fixes` will run phpcs fixes on all packages.
-* From root directory `composer test <package>` will run tests for <package> where <package> is the directory name of a package.
 
 ### Integration Tests
 Unit tests should not use classes from other packages, that's what integration tests are for. Integration tests are in the core package.

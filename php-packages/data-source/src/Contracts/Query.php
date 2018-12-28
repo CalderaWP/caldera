@@ -1,8 +1,7 @@
 <?php
 
 
-namespace calderawp\caldera\Db\Contracts;
-
+namespace calderawp\caldera\DataSource\Contracts;
 
 interface Query
 {
