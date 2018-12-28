@@ -11,6 +11,12 @@ add_action( 'caldera_wordpress_plugin', function ( \calderawp\caldera\WordPressP
 	{
 		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route') )->initFormsApi();
 	});
+	add_action( 'init', function(){
+		(new \calderawp\caldera\WordPressPlugin\Database(
+			new \calderawp\DB\Tables()
+		) )
+		->formsDatabase();
+	});
 });
 
 add_action( 'plugins_loaded', function (){
