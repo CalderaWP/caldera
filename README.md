@@ -66,6 +66,7 @@ A local WordPress environment with xdebug, mailhog, phpmyadmin, etc is included,
 
 WordPress-specific code should be placed in wp-content/mu-plugins. Plugins with composer.json files in the wp-content/mu-plugins/plugins folder are merged into the monorepo.
 
+Run WordPress' tests `composer test:wordpress`
 
 #### See:
 * https://docs.devwithlando.io/tutorials/wordpress.html

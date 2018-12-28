@@ -1,0 +1,349 @@
+[28-Dec-2018 15:15:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 14
+[28-Dec-2018 15:17:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 16
+[28-Dec-2018 15:19:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 16
+[28-Dec-2018 15:20:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function calderawp\caldera\restApi\Endpoint::__construct(), 0 passed in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 10 and exactly 1 expected in /app/php-packages/rest-api/src/Endpoint.php:20
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(10): calderawp\caldera\restApi\Endpoint->__construct()
+#1 /app/wp-content/mu-plugins/load-plugins.php(7): require('/app/wp-content...')
+#2 /app/wordpress/wp-settings.php(277): include_once('/app/wp-content...')
+#3 /app/wp-config.php(43): require_once('/app/wordpress/...')
+#4 /app/wordpress/wp-load.php(42): require_once('/app/wp-config....')
+#5 /app/wordpress/wp-admin/admin-ajax.php(22): require_once('/app/wordpress/...')
+#6 {main}
+  thrown in /app/php-packages/rest-api/src/Endpoint.php on line 20
+[28-Dec-2018 15:22:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function calderawp\caldera\restApi\Endpoint::__construct(), 0 passed in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 10 and exactly 1 expected in /app/php-packages/rest-api/src/Endpoint.php:20
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(10): calderawp\caldera\restApi\Endpoint->__construct()
+#1 /app/wp-content/mu-plugins/load-plugins.php(7): require('/app/wp-content...')
+#2 /app/wordpress/wp-settings.php(277): include_once('/app/wp-content...')
+#3 /app/wp-config.php(43): require_once('/app/wordpress/...')
+#4 /app/wordpress/wp-load.php(42): require_once('/app/wp-config....')
+#5 /app/wordpress/wp-admin/admin-ajax.php(22): require_once('/app/wordpress/...')
+#6 {main}
+  thrown in /app/php-packages/rest-api/src/Endpoint.php on line 20
+[28-Dec-2018 15:24:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function calderawp\caldera\restApi\Endpoint::__construct(), 0 passed in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 10 and exactly 1 expected in /app/php-packages/rest-api/src/Endpoint.php:20
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(10): calderawp\caldera\restApi\Endpoint->__construct()
+#1 /app/wp-content/mu-plugins/load-plugins.php(7): require('/app/wp-content...')
+#2 /app/wordpress/wp-settings.php(277): include_once('/app/wp-content...')
+#3 /app/wp-config.php(43): require_once('/app/wordpress/...')
+#4 /app/wordpress/wp-load.php(42): require_once('/app/wp-config....')
+#5 /app/wordpress/wp-admin/admin-ajax.php(22): require_once('/app/wordpress/...')
+#6 {main}
+  thrown in /app/php-packages/rest-api/src/Endpoint.php on line 20
+[28-Dec-2018 15:26:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function calderawp\caldera\restApi\Endpoint::__construct(), 0 passed in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 10 and exactly 1 expected in /app/php-packages/rest-api/src/Endpoint.php:20
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(10): calderawp\caldera\restApi\Endpoint->__construct()
+#1 /app/wp-content/mu-plugins/load-plugins.php(7): require('/app/wp-content...')
+#2 /app/wordpress/wp-settings.php(277): include_once('/app/wp-content...')
+#3 /app/wp-config.php(43): require_once('/app/wordpress/...')
+#4 /app/wordpress/wp-load.php(42): require_once('/app/wp-config....')
+#5 /app/wordpress/wp-admin/admin-ajax.php(22): require_once('/app/wordpress/...')
+#6 {main}
+  thrown in /app/php-packages/rest-api/src/Endpoint.php on line 20
+[28-Dec-2018 15:28:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function calderawp\caldera\restApi\Endpoint::__construct(), 0 passed in /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php on line 10 and exactly 1 expected in /app/php-packages/rest-api/src/Endpoint.php:20
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(10): calderawp\caldera\restApi\Endpoint->__construct()
+#1 /app/wp-content/mu-plugins/load-plugins.php(7): require('/app/wp-content...')
+#2 /app/wordpress/wp-settings.php(277): include_once('/app/wp-content...')
+#3 /app/wp-config.php(43): require_once('/app/wordpress/...')
+#4 /app/wordpress/wp-load.php(42): require_once('/app/wp-config....')
+#5 /app/wordpress/wp-admin/admin-ajax.php(22): require_once('/app/wordpress/...')
+#6 {main}
+  thrown in /app/php-packages/rest-api/src/Endpoint.php on line 20
+[28-Dec-2018 15:54:32 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getArgs() must be of the type array, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:69
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(44): calderawp\caldera\restApi\Endpoint->getArgs()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(37): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(29): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Object(calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin))
+#4 /app/wordpress/wp-includes/class-wp-hook.php(286): {closure}(Object(WP_REST_Server))
+#5 /app/wordpre in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 69
+[28-Dec-2018 15:55:02 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getArgs() must be of the type array, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:69
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(44): calderawp\caldera\restApi\Endpoint->getArgs()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(37): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(29): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Object(calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin))
+#4 /app/wordpress/wp-includes/class-wp-hook.php(286): {closure}(Object(WP_REST_Server))
+#5 /app/wordpre in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 69
+[28-Dec-2018 15:55:11 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getArgs() must be of the type array, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:69
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(44): calderawp\caldera\restApi\Endpoint->getArgs()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(37): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(29): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Object(calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin))
+#4 /app/wordpress/wp-includes/class-wp-hook.php(286): {closure}(Object(WP_REST_Server))
+#5 /app/wordpre in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 69
+[28-Dec-2018 15:55:22 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getArgs() must be of the type array, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:69
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(45): calderawp\caldera\restApi\Endpoint->getArgs()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(38): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(29): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Object(calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin))
+#4 /app/wordpress/wp-includes/class-wp-hook.php(286): {closure}(Object(WP_REST_Server))
+#5 /app/wordpre in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 69
+[28-Dec-2018 15:55:23 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getArgs() must be of the type array, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:69
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(45): calderawp\caldera\restApi\Endpoint->getArgs()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(38): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(29): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Object(calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin))
+#4 /app/wordpress/wp-includes/class-wp-hook.php(286): {closure}(Object(WP_REST_Server))
+#5 /app/wordpre in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 69
+[28-Dec-2018 15:56:30 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getArgs() must be of the type array, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:69
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(43): calderawp\caldera\restApi\Endpoint->getArgs()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(36): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(28): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Object(calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin))
+#4 /app/wordpress/wp-includes/class-wp-hook.php(286): {closure}(Object(WP_REST_Server))
+#5 /app/wordpre in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 69
+[28-Dec-2018 15:57:42 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to calderawp\caldera\WordPressPlugin\RestApi::wpArgs() must implement interface calderawp\interop\Contracts\Rest\Endpoint, array given, called in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php on line 43 and defined in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:47
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(43): calderawp\caldera\WordPressPlugin\RestApi->wpArgs(Array)
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(36): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(28): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Objec in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php on line 47
+[28-Dec-2018 15:57:55 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getHttpMethod() must be of the type string, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:79
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(67): calderawp\caldera\restApi\Endpoint->getHttpMethod()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(43): calderawp\caldera\WordPressPlugin\RestApi->wpArgs(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(36): calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress(Object(calderawp\caldera\restApi\Endpoints\Entry\GetEntries))
+#3 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(28): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#4 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordP in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 79
+[28-Dec-2018 15:58:35 UTC] PHP Fatal error:  Uncaught TypeError: Return value of calderawp\caldera\restApi\Endpoint::getHttpMethod() must be of the type string, null returned in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php:79
+Stack trace:
+#0 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(36): calderawp\caldera\restApi\Endpoint->getHttpMethod()
+#1 /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php(28): calderawp\caldera\WordPressPlugin\RestApi->registerRoute(Object(calderawp\caldera\restApi\Routes\FormRoute))
+#2 /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php(12): calderawp\caldera\WordPressPlugin\RestApi->__construct(Object(calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin))
+#3 /app/wordpress/wp-includes/class-wp-hook.php(286): {closure}(Object(WP_REST_Server))
+#4 /app/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /app/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#6 /app/wordpress/wp-includes/rest-api.php in /app/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php on line 79
+[28-Dec-2018 16:09:16 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, no array or string given in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php on line 48
+[28-Dec-2018 16:09:16 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:16 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:16 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:16 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:16 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:16 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:16 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:16 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:16 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:16 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:16 UTC] PHP  10. rest_get_server() /app/wordpress/wp-includes/rest-api.php:288
+[28-Dec-2018 16:09:16 UTC] PHP  11. do_action($tag = *uninitialized*, $arg = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:461
+[28-Dec-2018 16:09:16 UTC] PHP  12. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:453
+[28-Dec-2018 16:09:16 UTC] PHP  13. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:16 UTC] PHP  14. {closure:/app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:10-13}(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:16 UTC] PHP  15. calderawp\caldera\WordPressPlugin\RestApi->__construct($module = *uninitialized*, $registerFunction = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:12
+[28-Dec-2018 16:09:16 UTC] PHP  16. calderawp\caldera\WordPressPlugin\RestApi->registerRoute($route = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:30
+[28-Dec-2018 16:09:16 UTC] PHP  17. calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress($endpoint = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:41
+[28-Dec-2018 16:09:16 UTC] PHP  18. call_user_func:{/app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48}(*uninitialized*, *uninitialized*, *uninitialized*, *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48
+[28-Dec-2018 16:09:16 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, no array or string given in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php on line 48
+[28-Dec-2018 16:09:16 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:16 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:16 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:16 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:16 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:16 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:16 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:16 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:16 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:16 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:16 UTC] PHP  10. rest_get_server() /app/wordpress/wp-includes/rest-api.php:288
+[28-Dec-2018 16:09:16 UTC] PHP  11. do_action($tag = *uninitialized*, $arg = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:461
+[28-Dec-2018 16:09:16 UTC] PHP  12. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:453
+[28-Dec-2018 16:09:16 UTC] PHP  13. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:16 UTC] PHP  14. {closure:/app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:10-13}(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:16 UTC] PHP  15. calderawp\caldera\WordPressPlugin\RestApi->__construct($module = *uninitialized*, $registerFunction = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:12
+[28-Dec-2018 16:09:16 UTC] PHP  16. calderawp\caldera\WordPressPlugin\RestApi->registerRoute($route = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:30
+[28-Dec-2018 16:09:16 UTC] PHP  17. calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress($endpoint = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:41
+[28-Dec-2018 16:09:16 UTC] PHP  18. call_user_func:{/app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48}(*uninitialized*, *uninitialized*, *uninitialized*, *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48
+[28-Dec-2018 16:09:16 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, no array or string given in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php on line 48
+[28-Dec-2018 16:09:16 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:16 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:16 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:16 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:16 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:16 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:16 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:16 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:16 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:16 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:16 UTC] PHP  10. rest_get_server() /app/wordpress/wp-includes/rest-api.php:288
+[28-Dec-2018 16:09:16 UTC] PHP  11. do_action($tag = *uninitialized*, $arg = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:461
+[28-Dec-2018 16:09:17 UTC] PHP  12. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:453
+[28-Dec-2018 16:09:17 UTC] PHP  13. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP  14. {closure:/app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:10-13}(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  15. calderawp\caldera\WordPressPlugin\RestApi->__construct($module = *uninitialized*, $registerFunction = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:12
+[28-Dec-2018 16:09:17 UTC] PHP  16. calderawp\caldera\WordPressPlugin\RestApi->registerRoute($route = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:35
+[28-Dec-2018 16:09:17 UTC] PHP  17. calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress($endpoint = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:41
+[28-Dec-2018 16:09:17 UTC] PHP  18. call_user_func:{/app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48}(*uninitialized*, *uninitialized*, *uninitialized*, *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, no array or string given in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php on line 48
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. rest_get_server() /app/wordpress/wp-includes/rest-api.php:288
+[28-Dec-2018 16:09:17 UTC] PHP  11. do_action($tag = *uninitialized*, $arg = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:461
+[28-Dec-2018 16:09:17 UTC] PHP  12. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:453
+[28-Dec-2018 16:09:17 UTC] PHP  13. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP  14. {closure:/app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:10-13}(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  15. calderawp\caldera\WordPressPlugin\RestApi->__construct($module = *uninitialized*, $registerFunction = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:12
+[28-Dec-2018 16:09:17 UTC] PHP  16. calderawp\caldera\WordPressPlugin\RestApi->registerRoute($route = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:35
+[28-Dec-2018 16:09:17 UTC] PHP  17. calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress($endpoint = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:41
+[28-Dec-2018 16:09:17 UTC] PHP  18. call_user_func:{/app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48}(*uninitialized*, *uninitialized*, *uninitialized*, *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, no array or string given in /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php on line 48
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. rest_get_server() /app/wordpress/wp-includes/rest-api.php:288
+[28-Dec-2018 16:09:17 UTC] PHP  11. do_action($tag = *uninitialized*, $arg = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:461
+[28-Dec-2018 16:09:17 UTC] PHP  12. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:453
+[28-Dec-2018 16:09:17 UTC] PHP  13. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP  14. {closure:/app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:10-13}(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  15. calderawp\caldera\WordPressPlugin\RestApi->__construct($module = *uninitialized*, $registerFunction = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php:12
+[28-Dec-2018 16:09:17 UTC] PHP  16. calderawp\caldera\WordPressPlugin\RestApi->registerRoute($route = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:35
+[28-Dec-2018 16:09:17 UTC] PHP  17. calderawp\caldera\WordPressPlugin\RestApi->registerWithWordPress($endpoint = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:41
+[28-Dec-2018 16:09:17 UTC] PHP  18. call_user_func:{/app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48}(*uninitialized*, *uninitialized*, *uninitialized*, *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:220
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:221
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:225
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:233
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:234
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:235
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:250
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1248
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->send_header($key = *uninitialized*, $value = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:250
+[28-Dec-2018 16:09:17 UTC] PHP  12. header(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1248
+[28-Dec-2018 16:09:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php:48) in /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php on line 1274
+[28-Dec-2018 16:09:17 UTC] PHP Stack trace:
+[28-Dec-2018 16:09:17 UTC] PHP   1. {main}() /app/wordpress/index.php:0
+[28-Dec-2018 16:09:17 UTC] PHP   2. require() /app/wordpress/index.php:17
+[28-Dec-2018 16:09:17 UTC] PHP   3. wp($query_vars = *uninitialized*) /app/wordpress/wp-blog-header.php:16
+[28-Dec-2018 16:09:17 UTC] PHP   4. WP->main($query_args = *uninitialized*) /app/wordpress/wp-includes/functions.php:964
+[28-Dec-2018 16:09:17 UTC] PHP   5. WP->parse_request($extra_query_vars = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:715
+[28-Dec-2018 16:09:17 UTC] PHP   6. do_action_ref_array($tag = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp.php:375
+[28-Dec-2018 16:09:17 UTC] PHP   7. WP_Hook->do_action($args = *uninitialized*) /app/wordpress/wp-includes/plugin.php:515
+[28-Dec-2018 16:09:17 UTC] PHP   8. WP_Hook->apply_filters($value = *uninitialized*, $args = *uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:310
+[28-Dec-2018 16:09:17 UTC] PHP   9. rest_api_loaded(*uninitialized*) /app/wordpress/wp-includes/class-wp-hook.php:286
+[28-Dec-2018 16:09:17 UTC] PHP  10. WP_REST_Server->serve_request($path = *uninitialized*) /app/wordpress/wp-includes/rest-api.php:295
+[28-Dec-2018 16:09:17 UTC] PHP  11. WP_REST_Server->remove_header($key = *uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:248
+[28-Dec-2018 16:09:17 UTC] PHP  12. header_remove(*uninitialized*) /app/wordpress/wp-includes/rest-api/class-wp-rest-server.php:1274

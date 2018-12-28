@@ -32,7 +32,10 @@
             "calderawp\\caldera\\WordPressPlugin\\": "wp-content/mu-plugins/plugins/wordpress-plugin/src",
             "calderawp\\caldera\\restApi\\": "php-packages/rest-api/src",
             "calderawp\\interop\\": "php-packages/interop/src"
-        }
+        },
+        "files": [
+            "php-packages/core/Caldera.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -58,14 +61,15 @@
     ],
     "scripts": {
         "merge": "vendor/bin/monorepo-builder merge && composer update",
-        "test": "composer fixes && composer test:core && composer test:packages",
-        "tests": "composer test:integration  && composer test && composer test:integration",
+        "test": "composer tests",
+        "tests": "composer fixes && composer test:integration  && composer test:core && composer test:packages && composer test:wordpress",
         "test:integration": "cd php-packages/core && composer test",
         "snapshot:accept": "phpunit tests/ -d --update-snapshots",
         "fixes": "composer fixes:packages",
         "-test:packages": "calderawp\\caldera\\Cli\\TestPackages::callback",
         "-test:package": "calderawp\\caldera\\Cli\\TestPackage::callback",
         "test:core": "cd php-packages/core && composer test ",
+        "test:wordpress": "cd wp-content/mu-plugins/plugins/wordpress-plugin && composer test ",
         "test:packages-interop": "cd php-packages/interop && composer test ",
         "test:packages-rest": "cd php-packages/rest-api && composer test ",
         "test:packages-forms": "cd php-packages/forms && composer test ",
