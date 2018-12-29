@@ -63,6 +63,7 @@
         "merge": "vendor/bin/monorepo-builder merge && composer update",
         "test": "composer fixes && composer test:packages && composer test:integration",
         "tests": "composer test",
+        "php:v" : "php -v",
         "test:integration": "bash scripts/test-integration.sh",
         "snapshot:accept": "phpunit tests/ -d --update-snapshots",
         "fixes": "composer fixes:packages",

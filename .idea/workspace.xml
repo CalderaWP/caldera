@@ -1,13 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="PHPUnitRunConfigurationType" name="FormsControllerTest.testFilters" />
+    </enabled-run-configurations>
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/php-packages/core/README.md" description="### Get The Caldera Rest API&#10;```php&#10;$calderaForms ..." line="45" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/WordPressLocalDev.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/img/xdebug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/examples.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Contracts/DataSourcesContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/DataSources/FormsDataSources.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/ResultHandlers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Traits/AddsEntryValuesFromRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/tests/Controllers/CalderaFormsControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/tests/DataSources/DataSourcesTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/forms/tests/Filters/EntryDataFiltersTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/interop/src/Contracts/WordPress/Wpdb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/ItemsIterator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/AcceptanceTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/caldera-db/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/caldera-db/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/form_entry_values.yml" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/form_entry_values.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/caldera-db/src/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/caldera-db/src/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/core/src/CalderaCore.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/core/src/CalderaCore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/core/src/CalderaCoreContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/core/src/CalderaCoreContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/core/tests/Unit/CalderaCoreTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/core/tests/Unit/CalderaCoreTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/Crud.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/Crud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/DataSourceContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/CalderaDataSourceContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/Query.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/Query.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/DataSource.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/CalderaDataSource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/tests/DataSourceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/tests/DataSourceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Contracts/CalderaFormsContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Contracts/CalderaFormsContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Contracts/EntryContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Contracts/EntryContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Controllers/CalderaFormsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Controllers/CalderaFormsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Controllers/EntryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Controllers/EntryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Controllers/FormsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Controllers/FormsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/EntryCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/EntryCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/FormModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/CalderaFormsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/CalderaFormsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/Controllers/EntryControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/Controllers/EntryControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/EntryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/EntryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/EntryValuesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/EntryValuesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,29 +95,29 @@
           <entry key="gitignore" value="2" />
           <entry key="inc" value="1" />
           <entry key="js" value="1" />
-          <entry key="json" value="61" />
-          <entry key="md" value="27" />
+          <entry key="json" value="62" />
+          <entry key="md" value="31" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
-          <entry key="php" value="1017" />
+          <entry key="php" value="1261" />
           <entry key="php_cs" value="1" />
           <entry key="sh" value="5" />
           <entry key="test-integration" value="1" />
           <entry key="test-packages" value="1" />
-          <entry key="yml" value="12" />
+          <entry key="yml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
           <entry key="Bash" value="5" />
-          <entry key="JSON" value="61" />
+          <entry key="JSON" value="62" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="27" />
-          <entry key="PHP" value="1018" />
+          <entry key="Markdown" value="31" />
+          <entry key="PHP" value="1262" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="12" />
+          <entry key="YAML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -67,55 +125,148 @@
           <entry key="dummy" value="42" />
           <entry key="env" value="16" />
           <entry key="gitignore" value="31" />
-          <entry key="json" value="2149" />
-          <entry key="md" value="4253" />
-          <entry key="php" value="58467" />
+          <entry key="json" value="2167" />
+          <entry key="md" value="5315" />
+          <entry key="php" value="69719" />
           <entry key="sh" value="738" />
-          <entry key="txt" value="801" />
-          <entry key="yml" value="150" />
+          <entry key="txt" value="905" />
+          <entry key="yml" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="16" />
           <entry key="Bash" value="738" />
-          <entry key="JSON" value="2149" />
-          <entry key="Markdown" value="4249" />
-          <entry key="PHP" value="58471" />
-          <entry key="PLAIN_TEXT" value="874" />
-          <entry key="YAML" value="150" />
+          <entry key="JSON" value="2167" />
+          <entry key="Markdown" value="5307" />
+          <entry key="PHP" value="69727" />
+          <entry key="PLAIN_TEXT" value="978" />
+          <entry key="YAML" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="78" />
-          <entry key="PHP Interface.type" value="26" />
-          <entry key="PHP Trait.type" value="11" />
+          <entry key="PHP Class.type" value="87" />
+          <entry key="PHP Interface.type" value="27" />
+          <entry key="PHP Trait.type" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test">
         <counts>
-          <entry key="source.empty" value="49" />
+          <entry key="source.empty" value="51" />
           <entry key="with.framework.PHPUnit" value="14" />
-          <entry key="with.framework.PHPUnit 6+" value="33" />
+          <entry key="with.framework.PHPUnit 6+" value="35" />
           <entry key="with.framework.PHPUnit 6+.without.selected.methods" value="1" />
           <entry key="with.framework.PHPUnit.without.selected.methods" value="1" />
-          <entry key="without.target.element" value="49" />
+          <entry key="without.target.element" value="51" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.48526645">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/EntryControllerTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="138" selection-end-column="7" />
+                <state relative-caret-position="461">
+                  <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="389">
+                  <caret line="225" column="79" selection-start-line="225" selection-start-column="79" selection-end-line="225" selection-end-column="79" />
                   <folding>
-                    <element signature="e#44#90#0#PHP" expanded="true" />
+                    <element signature="e#49#94#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/CreateEntry.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Controllers/FormsController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#56#120#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Controllers/EntryController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="691">
+                  <caret line="129" selection-start-line="129" selection-end-line="129" />
+                  <folding>
+                    <element signature="e#56#101#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Traits/AddsEntryValuesFromRequest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
+                  <folding>
+                    <element signature="e#52#113#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="562">
+                  <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ItemsIterator.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#50#102#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -126,19 +277,34 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/CalderaFormsContract.php">
+            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+                <state relative-caret-position="874">
+                  <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#50#108#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php">
+            <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
-                  <caret line="321" column="22" selection-end-line="433" />
+                <state relative-caret-position="-147">
+                  <caret line="77" selection-start-line="77" selection-end-line="77" />
+                  <folding>
+                    <element signature="e#62#119#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="469">
+                  <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -149,36 +315,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isAllowedKey</find>
-      <find>testGetPr</find>
-      <find>tableN</find>
-      <find>update</find>
-      <find>addTableSchemaToCollection</find>
-      <find>ann</find>
-      <find>delete</find>
-      <find>WP_Query</find>
-      <find>extra</find>
-      <find>createTa</find>
-      <find>formcalderas</find>
-      <find>wp-config</find>
-      <find>do_action( 'plu</find>
-      <find>getEndpoints</find>
-      <find>add</find>
-      <find>ProvidesRestEndpoint</find>
-      <find>get</find>
-      <find>getHtt</find>
-      <find>Data</find>
-      <find>PackageName</find>
-      <find>php-packages/</find>
-      <find>last_statement</find>
-      <find>in</find>
-      <find>getColumnAttribute</find>
-      <find>in(</find>
-      <find>last_</find>
+      <find>getDat</find>
+      <find>Request</find>
+      <find>getDate</find>
+      <find>values</find>
+      <find>var</find>
+      <find>var_di</find>
       <find>find</find>
-      <find>Result</find>
-      <find>getColumnAttribute(</find>
-      <find>create</find>
+      <find>findI</find>
+      <find>__con</find>
+      <find>wpdb</find>
+      <find>queryStatement</find>
+      <find>prep</find>
+      <find>findW</find>
+      <find>get_w</find>
+      <find>read</find>
+      <find>$expectedResult</find>
+      <find>update</find>
+      <find>ann</find>
+      <find>449</find>
+      <find>findWh</find>
+      <find>$wpdb</find>
+      <find>OBJECT</find>
+      <find>Filter</find>
+      <find>v</find>
+      <find>var_d</find>
+      <find>var_dimp</find>
+      <find>getEntry</find>
+      <find>date</find>
+      <find>getDa</find>
+      <find>f</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -200,14 +366,14 @@
       <dir>$PROJECT_DIR$/php-packages/rest-api</dir>
       <dir>$PROJECT_DIR$/php-packages/events</dir>
       <dir>$PROJECT_DIR$/php-packages/db</dir>
-      <dir>$PROJECT_DIR$/php-packages/interop/src/Contracts</dir>
       <dir>$PROJECT_DIR$/plugins/wordpress-plugin</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/wordpress</dir>
       <dir>$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin</dir>
-      <dir>$PROJECT_DIR$/php-packages</dir>
       <dir>$PROJECT_DIR$/php-packages/data</dir>
       <dir>$PROJECT_DIR$/php-packages/data-source</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/php-packages/interop/src/Contracts</dir>
+      <dir>$PROJECT_DIR$/php-packages</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -216,57 +382,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Contracts/CalderaWordPressPluginContract.php" />
-        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/CalderaWordPressPlugin.php" />
-        <option value="$PROJECT_DIR$/php-packages/core/composer.json" />
-        <option value="$PROJECT_DIR$/php-packages/core/tests/Unit/FunctionTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/core/tests/Unit/AccessorFunctionTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/core/README.md" />
-        <option value="$PROJECT_DIR$/php-packages/core/Caldera.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Routes/EntryRoute.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/RouteContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestEndpoint.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRoute.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php" />
-        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/RestApiTest.php" />
-        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/tests/MockRouteTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/DataSources/DataSourcesTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/examples.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Field/FieldConfig.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/FieldConfigTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/README.md" />
+        <option value="$PROJECT_DIR$/wordpress/wp-content/themes/twentynineteen/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentynineteen/header.php" />
+        <option value="$PROJECT_DIR$/docs/WordPressLocalDev.md" />
+        <option value="$PROJECT_DIR$/php-packages/caldera-db/README.md" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/IterratesItems.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/EntryValuesTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/FieldModel.php" />
+        <option value="$PROJECT_DIR$/vendor/inpsyde/wp-db-tools/src/Db/WpDbAdapter.php" />
+        <option value="$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/form_entry_values.yml" />
+        <option value="$PROJECT_DIR$/php-packages/caldera-db/src/WpdbAdapter.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/WordPress/Wpdb.php" />
         <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Database.php" />
-        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" />
-        <option value="$PROJECT_DIR$/php-packages/data/src/Contracts/Crud.php" />
-        <option value="$PROJECT_DIR$/php-packages/data/composer.json" />
-        <option value="$PROJECT_DIR$/boilerplate/php-package/src/Contracts/PackageNameContract.php" />
-        <option value="$PROJECT_DIR$/boilerplate/php-package/src/PackageName.php" />
-        <option value="$PROJECT_DIR$/boilerplate/php-package/.travis.yml" />
-        <option value="$PROJECT_DIR$/boilerplate/php-package/composer.json" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/Contracts/FormsDb.php" />
-        <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TablesTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/tests/SomethingTest.php" />
-        <option value="$PROJECT_DIR$/test.sh" />
-        <option value="$PROJECT_DIR$/test-packages.sh" />
-        <option value="$PROJECT_DIR$/scripts/test-packages.sh" />
-        <option value="$PROJECT_DIR$/scripts/tests.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/scripts/package-beutification.sh" />
-        <option value="$PROJECT_DIR$/scripts/package-fixes.sh" />
-        <option value="$PROJECT_DIR$/scripts/packages-analysis.sh" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/scripts/test-integration.sh" />
-        <option value="$PROJECT_DIR$/scripts/packages-tests.sh" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/tests/TestCase.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/tests/DataSourceTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/DataSource.php" />
-        <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Integration/TableTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/Result.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/Contracts/ResultContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/Contracts/SourceContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/Contracts/Crud.php" />
         <option value="$PROJECT_DIR$/php-packages/data-source/src/Contracts/Query.php" />
-        <option value="$PROJECT_DIR$/php-packages/caldera-db/src/Table.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/CalderaFormsContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/data-source/src/Contracts/Crud.php" />
+        <option value="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery.php" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Controller.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/Controllers/EntryControllerTest.php" />
+        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Filters/FormDataFilters.php" />
+        <option value="$PROJECT_DIR$/php-packages/caldera-db/src/Table.php" />
+        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/Integration/IntegrationTestCase.php" />
+        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/AcceptanceTestCase.php" />
+        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/DatabaseApiTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Controllers/FormsController.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/Controllers/CalderaFormsControllerTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Controllers/CalderaFormsController.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/WordPress/ProvidesFilters.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/CreatesCollectionFromArray.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/EntryTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/Filters/EntryDataFiltersTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/DataSources/FormsDataSources.php" />
+        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/test.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php" />
+        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/EntryCollection.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/EntryContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Controllers/EntryController.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ItemsIterator.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php" />
+        <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Traits/AddsEntryValuesFromRequest.php" />
       </list>
     </option>
   </component>
@@ -287,7 +453,11 @@
     <servers>
       <server host="appserver" id="68e82d1e-aec2-4fab-a97f-1196c06aebf2" name="appserver" use_path_mappings="true">
         <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/php-packages" remote-root="/app/php-packages" />
+          <mapping local-root="$PROJECT_DIR$/vendor" remote-root="/app/vendor" />
           <mapping local-root="$PROJECT_DIR$/wordpress" remote-root="/app/wordpress" />
+          <mapping local-root="$PROJECT_DIR$/wordpress/index.php" remote-root="/app/wordpress/index.php" />
+          <mapping local-root="$PROJECT_DIR$/wp-content" remote-root="/app/wp-content" />
         </path_mappings>
       </server>
     </servers>
@@ -378,7 +548,7 @@
     <option name="x" value="77" />
     <option name="y" value="23" />
     <option name="width" value="1843" />
-    <option name="height" value="1057" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -397,33 +567,7 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -441,7 +585,111 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="interop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Endpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Endpoints" type="462c0819:PsiDirectoryNode" />
+              <item name="Entry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="wordpress-plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="wordpress-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -464,7 +712,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="INHERIT" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -475,11 +723,11 @@
       <recent name="$PROJECT_DIR$/plugins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/img" />
+      <recent name="$PROJECT_DIR$/php-packages/forms/src/DataSources" />
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$/php-packages" />
       <recent name="$PROJECT_DIR$/wp-content/mu-plugins/plugins" />
-      <recent name="$PROJECT_DIR$/wp-content/mu-plugins" />
-      <recent name="$PROJECT_DIR$/servers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -494,41 +742,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.TableTest.testDelete">
-    <configuration name="DataSourceTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\DataSource\Tests\DataSourceTest" file="$PROJECT_DIR$/php-packages/data-source/tests/DataSourceTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.EntryValueTest.testFromDatabaseResults">
+    <configuration name="EntryControllerTest.testFilters" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\Controllers\EntryControllerTest" file="$PROJECT_DIR$/php-packages/forms/tests/Controllers/EntryControllerTest.php" method="testFilters" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DataSourceTest.testAddGetSource" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\DataSource\Tests\DataSourceTest" file="$PROJECT_DIR$/php-packages/data-source/tests/DataSourceTest.php" method="testAddGetSource" scope="Method" />
+    <configuration name="EntryDataFiltersTest.testCreateEntry" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\Filters\EntryDataFiltersTest" file="$PROJECT_DIR$/php-packages/forms/tests/Filters/EntryDataFiltersTest.php" method="testCreateEntry" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DataSourceTest.testGetSources" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\DataSource\Tests\DataSourceTest" file="$PROJECT_DIR$/php-packages/data-source/tests/DataSourceTest.php" method="testGetSources" scope="Method" />
+    <configuration name="EntryTest.testfromDatabaseResult" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\EntryTest" file="$PROJECT_DIR$/php-packages/forms/tests/EntryTest.php" method="testfromDatabaseResult" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TableTest.testDelete" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\DB\Tests\Unit\TableTest" file="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php" method="testDelete" scope="Method" />
+    <configuration name="EntryValueTest.testFromDatabaResults" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\EntryValueTest" file="$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php" method="testFromDatabaResults" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TableTest.testImplodeIn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\DB\Tests\Unit\TableTest" file="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php" method="testImplodeIn" scope="Method" />
+    <configuration name="EntryValueTest.testFromDatabaseResults" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\EntryValueTest" file="$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php" method="testFromDatabaseResults" scope="Method" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.DataSourceTest.testAddGetSource" />
-      <item itemvalue="PHPUnit.DataSourceTest" />
-      <item itemvalue="PHPUnit.DataSourceTest.testGetSources" />
-      <item itemvalue="PHPUnit.TableTest.testImplodeIn" />
-      <item itemvalue="PHPUnit.TableTest.testDelete" />
+      <item itemvalue="PHPUnit.EntryTest.testfromDatabaseResult" />
+      <item itemvalue="PHPUnit.EntryControllerTest.testFilters" />
+      <item itemvalue="PHPUnit.EntryDataFiltersTest.testCreateEntry" />
+      <item itemvalue="PHPUnit.EntryValueTest.testFromDatabaResults" />
+      <item itemvalue="PHPUnit.EntryValueTest.testFromDatabaseResults" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.TableTest.testDelete" />
-        <item itemvalue="PHPUnit.TableTest.testImplodeIn" />
-        <item itemvalue="PHPUnit.DataSourceTest" />
-        <item itemvalue="PHPUnit.DataSourceTest.testGetSources" />
-        <item itemvalue="PHPUnit.DataSourceTest.testAddGetSource" />
+        <item itemvalue="PHPUnit.EntryValueTest.testFromDatabaseResults" />
+        <item itemvalue="PHPUnit.EntryValueTest.testFromDatabaResults" />
+        <item itemvalue="PHPUnit.EntryDataFiltersTest.testCreateEntry" />
+        <item itemvalue="PHPUnit.EntryControllerTest.testFilters" />
+        <item itemvalue="PHPUnit.EntryTest.testfromDatabaseResult" />
       </list>
     </recent_temporary>
   </component>
@@ -548,58 +796,58 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataSourceTest - 2018.12.28 at 20h 59m 26s.xml">
-      <configuration name="DataSourceTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataFiltersTest_testCreateEntry - 2018.12.29 at 17h 53m 59s.xml">
+      <configuration name="EntryDataFiltersTest.testCreateEntry" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="DataSourceTest - 2018.12.28 at 20h 59m 29s.xml">
-      <configuration name="DataSourceTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataFiltersTest_testCreateEntry - 2018.12.29 at 17h 54m 17s.xml">
+      <configuration name="EntryDataFiltersTest.testCreateEntry" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testImplodeIn - 2018.12.28 at 21h 06m 53s.xml">
-      <configuration name="TableTest.testImplodeIn" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataFiltersTest_testCreateEntry - 2018.12.29 at 17h 55m 59s.xml">
+      <configuration name="EntryDataFiltersTest.testCreateEntry" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testImplodeIn - 2018.12.28 at 21h 08m 11s.xml">
-      <configuration name="TableTest.testImplodeIn" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataFiltersTest_testCreateEntry - 2018.12.29 at 17h 56m 29s.xml">
+      <configuration name="EntryDataFiltersTest.testCreateEntry" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testImplodeIn - 2018.12.28 at 21h 08m 23s.xml">
-      <configuration name="TableTest.testImplodeIn" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataFiltersTest_testCreateEntry - 2018.12.29 at 17h 56m 55s.xml">
+      <configuration name="EntryDataFiltersTest.testCreateEntry" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testImplodeIn - 2018.12.28 at 21h 08m 42s.xml">
-      <configuration name="TableTest.testImplodeIn" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryValueTest_testFromDatabaResults - 2018.12.29 at 18h 05m 45s.xml">
+      <configuration name="EntryValueTest.testFromDatabaResults" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testDelete - 2018.12.28 at 21h 26m 04s.xml">
-      <configuration name="TableTest.testDelete" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryValueTest_testFromDatabaResults - 2018.12.29 at 18h 07m 21s.xml">
+      <configuration name="EntryValueTest.testFromDatabaResults" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testDelete - 2018.12.28 at 21h 27m 04s.xml">
-      <configuration name="TableTest.testDelete" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryValueTest_testFromDatabaResults - 2018.12.29 at 18h 08m 53s.xml">
+      <configuration name="EntryValueTest.testFromDatabaResults" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testDelete - 2018.12.28 at 21h 27m 22s.xml">
-      <configuration name="TableTest.testDelete" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryValueTest_testFromDatabaseResults - 2018.12.29 at 18h 09m 31s.xml">
+      <configuration name="EntryValueTest.testFromDatabaseResults" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TableTest_testDelete - 2018.12.28 at 21h 27m 25s.xml">
-      <configuration name="TableTest.testDelete" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryValueTest_testFromDatabaseResults - 2018.12.29 at 18h 09m 45s.xml">
+      <configuration name="EntryValueTest.testFromDatabaseResults" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121218000" />
+    <option name="totallyTimeSpent" value="150695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="23" width="1843" height="1057" extended-state="0" />
+    <frame x="77" y="23" width="1843" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.1321488" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.114380896" />
       <window_info id="Structure" order="1" sideWeight="0.21875" side_tool="true" weight="0.32981676" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" weight="0.44559586" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31088084" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39896372" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.08022599" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.061139897" />
+      <window_info anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" weight="0.3299435" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -638,18 +886,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/php-packages/forms/src/FieldModel.php</url>
-          <line>60</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-packages/forms/tests/EntryValuesTest.php</url>
           <line>92</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php</url>
-          <line>32</line>
+          <line>52</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -679,7 +922,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php</url>
-          <line>67</line>
+          <line>68</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -713,390 +956,465 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/wp-content/mu-plugins/load-plugins.php</url>
-          <line>6</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-packages/interop/tests/MockRouteTest.php</url>
           <line>16</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php</url>
+          <line>125</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wordpress/wp-admin/admin.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wordpress/wp-includes/wp-db.php</url>
+          <line>1775</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/caldera-db/src/Table.php</url>
+          <line>205</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery.php</url>
+          <line>117</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/Parameter.php</url>
+          <line>79</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/test.php</url>
+          <line>41</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/test.php</url>
+          <line>61</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php</url>
+          <line>116</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/forms/src/Traits/AddsEntryValuesFromRequest.php</url>
+          <line>23</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/forms/src/Traits/AddsEntryValuesFromRequest.php</url>
+          <line>22</line>
+          <option name="timeStamp" value="158" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/FormEndpoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoint.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/WordPress/Wpdb.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="66" />
-          <folding>
-            <element signature="e#46#112#0#PHP" expanded="true" />
-          </folding>
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/RestApiTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/SourceContract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#59#98#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/MockRouteTest.php">
+    <entry file="file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
+        <state relative-caret-position="217">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/tests/Traits/TableFactory.php">
+    <entry file="file://$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Generator/Parameter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="182">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/tests/Integration/TablesTest.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="185">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/CalderaWordPressPlugin.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/EntryEndpoint.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/form_entry_values.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/form_entry_meta.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/WordPress/ApplysFilters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/events/src/CalderaEvents.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/events/src/Filters.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#54#100#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/Loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/src/Contracts/FormsDb.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/src/Contracts/Query.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/src/Contracts/Crud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/events/src/Contracts/CalderaEventsContract.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boilerplate/php-package/src/Contracts/PackageNameContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boilerplate/php-package/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boilerplate/php-package/src/PackageName.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boilerplate/php-package/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/tests.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="351">
-            <caret line="35" column="139" selection-start-line="35" selection-start-column="139" selection-end-line="35" selection-end-column="139" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/packages-tests.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/packages-analysis.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/packages-fixes.sh">
+    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/form_entries.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/test-integration.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/core/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/SomethingTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TablesTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="105" selection-start-line="113" selection-start-column="4" selection-end-line="114" />
-          <folding>
-            <element signature="e#43#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/Tables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/inpsyde/wp-db-tools/src/Db/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/inpsyde/wp-db-tools/src/Type/GenericResult.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/inpsyde/wp-db-tools/src/Type/Result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="607" column="34" selection-start-line="607" selection-start-column="34" selection-end-line="607" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/tests/Integration/TableTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/ResultContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/Query.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/Crud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="e#59#127#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/DataSourceContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/SourceContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/DataSource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="e#49#119#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/DataSourceTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="e#55#111#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/Table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="153" column="22" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
-          <folding>
-            <element signature="e#33#101#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/inpsyde/wp-db-tools/src/Db/WpDbAdapter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="138" selection-end-column="7" />
-          <folding>
-            <element signature="e#44#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/CalderaFormsContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="321" column="22" selection-end-line="433" />
+        <state relative-caret-position="326">
+          <caret line="436" column="12" selection-start-line="436" selection-start-column="12" selection-end-line="436" selection-end-column="12" />
+          <folding>
+            <element signature="e#43#94#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/Crud.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/wp-db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="2481" column="20" selection-start-line="2481" selection-start-column="20" selection-end-line="2481" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+          <folding>
+            <element signature="e#33#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#55#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/Contracts/Query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#59#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CreatesCollectionFromArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Controllers/CalderaFormsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="e#56#97#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/WordPress/ProvidesFilters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/DatabaseApiTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+          <folding>
+            <element signature="e#70#111#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="120" column="25" lean-forward="true" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
+          <folding>
+            <element signature="e#61#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/CalderaFormsControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="85" column="72" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
+          <folding>
+            <element signature="e#63#119#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="81" column="11" lean-forward="true" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Filters/EntryDataFiltersTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="e#57#114#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/EntryValueTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="225" column="79" selection-start-line="225" selection-start-column="79" selection-end-line="225" selection-end-column="79" />
+          <folding>
+            <element signature="e#49#94#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/DataSources/FormsDataSources.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <element signature="e#56#124#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/EntryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="186" column="30" lean-forward="true" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="57" selection-start-line="56" selection-end-line="57" />
+          <folding>
+            <element signature="e#6#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/AcceptanceTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/RestApiTest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/Tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/EntryControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/CollectsModels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValues.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+          <folding>
+            <element signature="e#50#108#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/EntryCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#44#106#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/RestApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/CreateEntry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Controllers/FormsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="e#56#120#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/EntryContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="e#54#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="e#50#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Controllers/EntryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+          <folding>
+            <element signature="e#56#101#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ItemsIterator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="e#62#119#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Traits/AddsEntryValuesFromRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
+          <folding>
+            <element signature="e#52#113#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
