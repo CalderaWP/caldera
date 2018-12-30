@@ -1,3 +1,4 @@
+//import '@lbabel/polyfil';
 import { configure } from '@storybook/react';
 
 function loadStories() {

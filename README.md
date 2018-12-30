@@ -73,6 +73,8 @@ Run WordPress' tests `composer test:wordpress`
 ## JavaScript
 Monorepo managment is handled by Lerna. 
 
+__Do BIT use npm, use Yarn.__
+
 Approach to implimenting CRA + shared component libraries came from [this post](https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875) and [this repo](https://github.com/nareshbhatia/lerna-workspaces-react-es6)
 
 * Start storybooks

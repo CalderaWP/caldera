@@ -1,10 +1,18 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { FieldLabel } from './FieldLabel';
+import { TextField } from './TextField';
 
-storiesOf('FieldLabel', module).add('Is a label', () => (
-	<FieldLabel
-		fieldType={'text'}
-		fieldId={'text-field-test'}
-	>Label For Text Field</FieldLabel>
+const onChange = (event) => {
+
+};
+const onBlur = (event) => {
+
+};
+storiesOf('TextField', module).add('With no value', () => (
+	<TextField
+		label={'Hi Roy'}
+		html5type={'text'}
+		onChange={onChange}
+		onBlur={onBlur}
+	/>
 ));

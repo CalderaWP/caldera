@@ -19,7 +19,7 @@ export const TextField = ({
 						  }) => {
 
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
-
+	const _attributes = parseAttributes(attributes,fieldType);
 	return (
 		<div className={fieldClassNames('text')}>
 			<FieldLabel
@@ -29,12 +29,13 @@ export const TextField = ({
 			</FieldLabel>
 			<TextControl
 				id={fieldId}
-				type={fieldType}
-				placeholder={placeholder}
 				value={value}
+				placeholder={placeholder}
+				type={fieldType}
 				onChange={onChange}
 				onBlur={onBlur}
 				help={description}
+				{..._attributes}
 			/>
 		</div>
 	)
@@ -47,7 +48,7 @@ TextField.propTypes = {
 	placeholder: PropTypes.string,
 	required: PropTypes.bool,
 	html5type: PropTypes.string,
-	attributes: PropTypes.arrayOf(PropTypes.string),
+	attributes: PropTypes.object,
 	value: PropTypes.oneOfType([
 		PropTypes.string,
 		PropTypes.number,

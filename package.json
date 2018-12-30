@@ -13,6 +13,8 @@
     "build": "lerna exec --scope @caldera-labs/shared -- babel src -d dist --ignore test.js,story.js",
     "start": "cd js-packages/app && yarn start",
     "test": "lerna run test",
+    "test:app": "cd js-packages/app && yarn test",
+    "test:shared": "cd js-packages/shared && yarn test",
     "storybook": "cd js-packages/shared && yarn storybook",
     "format": "prettier --use-tabs --print-width 80 --tab-width 4 --single-quote --write 'js-packages/*/src/**/*.js'"
   },
@@ -20,6 +22,7 @@
     "del-cli": "^1.1.0",
     "husky": "^0.14.3",
     "lerna": "^2.9.0",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "react-scripts": "1.1.4"
   }
 }

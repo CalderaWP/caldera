@@ -1,48 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
-<div>
-  1
-</div>
-`;
-
-exports[`TextField  Uses text when html5type is not valid 1`] = `
-<div
-  className="caldera-field caldera-field-text"
->
-  <label
-    className="caldera-field-label caldera-field-label-undefined"
-    htmlFor={undefined}
-  >
-    Hi Roy
-  </label>
-  <div
-    className="components-base-control"
-  >
-    <div
-      className="components-base-control__field"
-    >
-      <input
-        aria-describedby="inspector-text-control-0__help"
-        className="components-text-control__input"
-        id={undefined}
-        onBlur={[Function]}
-        onChange={[Function]}
-        placeholder="Hello"
-        type="unreal"
-        value="Roy"
-      />
-    </div>
-    <p
-      className="components-base-control__help"
-      id="inspector-text-control-0__help"
-    >
-      Say Hi
-    </p>
-  </div>
-</div>
-`;
-
 exports[`TextField  matches snapshot with all props 1`] = `
 <div
   className="caldera-field caldera-field-text"

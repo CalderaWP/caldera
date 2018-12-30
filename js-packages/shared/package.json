@@ -6,8 +6,9 @@
   "license": "GPL-2.0",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "yarn test:watch",
     "test:watch": "jest --watch",
+    "test:once": "jest",
     "lint": "eslint 'src/**/*.js'",
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
@@ -20,7 +21,7 @@
     "react-dom": "^16.x"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.1",
+    "@storybook/react": "^4.1.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^20.0.3",
@@ -65,6 +66,7 @@
     "classnames": "^2.2.6",
     "deepmerge": "^3.0.0",
     "lodash": "^4.17.11",
+    "lodash.pick": "^4.4.0",
     "prop-types": "^15.6.2"
   }
 }

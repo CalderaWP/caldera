@@ -7,7 +7,7 @@ import {
 	toBoolean
 } from './index'
 
-describe( 'parseAttributes', () => {
+describe( 'parseAttributes util function', () => {
 	it( 'allows whitelist', () => {
 		const attrs = {
 			className: 'something',
@@ -25,6 +25,24 @@ describe( 'parseAttributes', () => {
 			...attrs,
 			step: 5
 		}, Object.keys(attrs)) ).toEqual(attrs);
+	});
+
+	it( 'allows number attrs', () => {
+		const numberAttrs = {
+			min: 54,
+			max: 4000,
+			step: 5
+		};
+		const result = parseAttributes(numberAttrs, 'number');
+		expect( result ).toEqual(numberAttrs);
+	});
+
+	it( 'allows email attrs', () => {
+		const emailAttrs = {
+			maxlength: 54,
+			multiple: true,
+		};
+		expect( parseAttributes(emailAttrs, 'email') ).toEqual(emailAttrs);
 	});
 
 });
