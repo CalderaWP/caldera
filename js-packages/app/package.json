@@ -9,7 +9,13 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@wordpress/components": "^7.0.4",
+    "@wordpress/editor": "^9.0.6",
+    "@wordpress/element": "^2.1.8",
+    "classnames": "^2.2.6",
     "deepmerge": "^3.0.0",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-test-renderer": "^16.7.0"

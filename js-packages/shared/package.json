@@ -28,6 +28,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "css-loader": "^0.28.11",
+    "deepmerge": "^3.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
@@ -37,8 +38,7 @@
     "jest": "^20.0.4",
     "react": "^16.7",
     "react-dom": "^16.7",
-    "style-loader": "^0.21.0",
-    "deepmerge": "^3.0.0"
+    "style-loader": "^0.21.0"
   },
   "jest": {
     "setupFiles": [
@@ -59,6 +59,12 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "deepmerge": "^3.0.0"
+    "@wordpress/components": "^7.0.4",
+    "@wordpress/editor": "^9.0.6",
+    "@wordpress/element": "^2.1.8",
+    "classnames": "^2.2.6",
+    "deepmerge": "^3.0.0",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2"
   }
 }

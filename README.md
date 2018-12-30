@@ -81,6 +81,15 @@ Approach to implimenting CRA + shared component libraries came from [this post](
     - `yarn test`
 * Start development server
     - `yarn build && yarn start`
+    
+### Managing Dependencies
+
+* Add depenendency
+    - `yarn lerna add classnames`   
+    
+#### See
+* https://github.com/lerna/lerna/tree/master/commands/add
+ 
 ### Components
 Components should be developed in `/js-packages/shared`. Storybooks is provided for testing/ previewing components. Jest is also used for testin.
 

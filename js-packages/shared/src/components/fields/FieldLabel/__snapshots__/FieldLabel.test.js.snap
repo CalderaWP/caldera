@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field label 1`] = `
+<label
+  className="caldera-field-label caldera-field-label-text"
+  htmlFor="hello"
+>
+  Hi Roy
+</label>
+`;
