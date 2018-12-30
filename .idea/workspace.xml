@@ -7,50 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/src/__snapshots__/App.test.js.snap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/src/features/home/home-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/app/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/.storybook/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/.storybook/preview-head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/.storybook/stories.pattern" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/config/jest/test-setup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/config/jest/test-shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/clover.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/coverage-final.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/header.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/prettify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/prettify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/sort-arrow-sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/sorter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/dist/components/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/dist/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/src/components/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/src/components/header.story.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/src/components/header.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/shared/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lerna-debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lerna.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wpcli.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.lando.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.lando.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/debug.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,16 +19,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-431066744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,7 +43,7 @@
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="inc" value="1" />
-          <entry key="js" value="16" />
+          <entry key="js" value="17" />
           <entry key="json" value="68" />
           <entry key="log" value="1" />
           <entry key="md" value="35" />
@@ -92,7 +54,7 @@
           <entry key="sh" value="5" />
           <entry key="test-integration" value="1" />
           <entry key="test-packages" value="1" />
-          <entry key="yml" value="17" />
+          <entry key="yml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -102,12 +64,12 @@
           <entry key="Bash" value="5" />
           <entry key="CSS" value="1" />
           <entry key="JSON" value="68" />
-          <entry key="JavaScript" value="16" />
+          <entry key="JavaScript" value="17" />
           <entry key="Markdown" value="35" />
           <entry key="PHP" value="1262" />
           <entry key="PLAIN_TEXT" value="18" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="17" />
+          <entry key="YAML" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -121,7 +83,7 @@
           <entry key="php" value="69719" />
           <entry key="sh" value="738" />
           <entry key="txt" value="905" />
-          <entry key="yml" value="162" />
+          <entry key="yml" value="230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -133,7 +95,7 @@
           <entry key="Markdown" value="5780" />
           <entry key="PHP" value="69727" />
           <entry key="PLAIN_TEXT" value="1009" />
-          <entry key="YAML" value="162" />
+          <entry key="YAML" value="230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -156,33 +118,30 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wpcli.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.lando.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/wordpress/wp-content/plugins/atomic-blocks/src/utils/helper.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/header.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -190,7 +149,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/header.story.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
+            <state relative-caret-position="360">
               <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -203,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="380">
+              <first_editor relative-caret-position="1380">
                 <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
               </first_editor>
               <second_editor />
@@ -223,7 +182,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/shared/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="600">
               <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
             </state>
           </provider>
@@ -231,15 +190,13 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/shared/.eslintrc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/app/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="300">
               <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -324,8 +281,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/inpsyde/wp-db-tools/src/Db/WpDbAdapter.php" />
-        <option value="$PROJECT_DIR$/php-packages/caldera-db/src/CalderaForms/form_entry_values.yml" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/src/WpdbAdapter.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/WordPress/Wpdb.php" />
         <option value="$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/src/Database.php" />
@@ -375,6 +330,8 @@
         <option value="$PROJECT_DIR$/js-packages/shared/package.json" />
         <option value="$PROJECT_DIR$/js-packages/app/src/App.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/wpcli.yml" />
+        <option value="$PROJECT_DIR$/.lando.yml" />
       </list>
     </option>
   </component>
@@ -389,11 +346,12 @@
       <path value="$PROJECT_DIR$/js-packages/app/package.json" />
       <path value="$PROJECT_DIR$/js-packages/shared/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/wordpress/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/package.json" />
       <path value="$PROJECT_DIR$/wordpress/wp-content/themes/twentynineteen/package.json" />
+      <path value="$PROJECT_DIR$/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/package.json" />
       <path value="$PROJECT_DIR$/wp-content/themes/twentynineteen/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="appserver" id="68e82d1e-aec2-4fab-a97f-1196c06aebf2" name="appserver" use_path_mappings="true">
@@ -403,6 +361,11 @@
           <mapping local-root="$PROJECT_DIR$/wordpress" remote-root="/app/wordpress" />
           <mapping local-root="$PROJECT_DIR$/wordpress/index.php" remote-root="/app/wordpress/index.php" />
           <mapping local-root="$PROJECT_DIR$/wp-content" remote-root="/app/wp-content" />
+        </path_mappings>
+      </server>
+      <server host="appserver" id="548e06b0-f7e5-4a97-bc17-0fca476e0b4e" name="appserver (1)" port="443" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/wordpress" remote-root="/app/wordpress" />
         </path_mappings>
       </server>
     </servers>
@@ -489,10 +452,10 @@
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="77" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
     <option name="y" value="23" />
-    <option name="width" value="1843" />
+    <option name="width" value="1504" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -512,41 +475,59 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="wordpress" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="wordpress" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wordpress" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="twentynineteen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -564,19 +545,19 @@
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wordpress/wp-content/plugins" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/php-packages/data-source/src/Contracts" />
+      <recent name="$PROJECT_DIR$/php-packages" />
+      <recent name="$PROJECT_DIR$/wp-content/plugins" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/img" />
       <recent name="$PROJECT_DIR$/php-packages/forms/src/DataSources" />
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$/php-packages" />
       <recent name="$PROJECT_DIR$/wp-content/mu-plugins/plugins" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/php-packages/data-source/src/Contracts" />
-      <recent name="$PROJECT_DIR$/php-packages" />
-      <recent name="$PROJECT_DIR$/wp-content/plugins" />
-      <recent name="$PROJECT_DIR$/wp-content/themes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -641,6 +622,7 @@
       <updated>1545406860420</updated>
       <workItem from="1545406861569" duration="7802000" />
       <workItem from="1545416235667" duration="36452000" />
+      <workItem from="1546136900545" duration="1616000" />
     </task>
     <servers />
   </component>
@@ -677,13 +659,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154205000" />
+    <option name="totallyTimeSpent" value="156032000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="23" width="1843" height="977" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.17990005" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.18240343" />
       <window_info id="Structure" order="1" sideWeight="0.21875" side_tool="true" weight="0.32981676" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -696,7 +678,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" weight="0.41016948" />
+      <window_info anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.21468927" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -868,24 +850,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Controllers/CalderaFormsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding>
-            <element signature="e#56#97#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/WordPress/ProvidesFilters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/DatabaseApiTest.php" />
     <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -921,9 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="225" column="79" selection-start-line="225" selection-start-column="79" selection-end-line="225" selection-end-column="79" />
-          <folding>
-            <element signature="e#49#94#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,9 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="e#56#120#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,9 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="e#54#99#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,9 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="39" />
-          <folding>
-            <element signature="e#50#102#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,9 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="691">
           <caret line="129" selection-start-line="129" selection-end-line="129" />
-          <folding>
-            <element signature="e#56#101#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,9 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-147">
           <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#62#119#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,21 +1094,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/shared/src/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/deepmerge/dist/umd.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/node_modules/deepmerge/dist/umd.js" />
+    <entry file="file://$PROJECT_DIR$/lerna-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/header.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="60">
           <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -1172,7 +1134,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/header.story.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
+        <state relative-caret-position="360">
           <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1183,22 +1145,10 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="380">
+          <first_editor relative-caret-position="1380">
             <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lerna-debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -1211,21 +1161,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/shared/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="600">
           <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="300">
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1236,10 +1182,24 @@
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/features/home/home-page.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/wpcli.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.lando.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/plugins/atomic-blocks/src/utils/helper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>

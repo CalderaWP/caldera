@@ -11,6 +11,8 @@ proxy:
   - mail.caldera.lndo.site
   pma:
   - pma.caldera.lndo.site
+  node:
+  - app.lndo.site
 services:
   appserver:
     composer:
@@ -31,3 +33,22 @@ services:
     hosts:
     - database
     - database.caldera.internal
+  node:
+    type: node:9
+    ssl: true
+    overrides:
+      services:
+        ports:
+        - "3000:3000"
+    run:
+    - "cd $LANDO_MOUNT && yarn && yarn build && yarn start"
+tooling:
+  yarn:
+    service: node
+  node:
+    service: node
+  composer:
+    service: appserver
+  wp:
+    service: appserver
+

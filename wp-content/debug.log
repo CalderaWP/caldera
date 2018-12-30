@@ -2398,3 +2398,30 @@ Stack trace:
 [29-Dec-2018 23:52:23 UTC] PHP  14. spl_autoload_call(*uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php:21
 [29-Dec-2018 23:52:23 UTC] PHP  15. Composer\Autoload\ClassLoader->loadClass($class = *uninitialized*) /app/wp-content/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php:21
 [29-Dec-2018 23:52:23 UTC] PHP  16. Composer\Autoload\includeFile($file = *uninitialized*) /app/vendor/composer/ClassLoader.php:322
+[30-Dec-2018 02:44:24 UTC] PHP Notice:  Trying to get property 'is_premium' of non-object in /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php on line 9375
+[30-Dec-2018 02:44:24 UTC] PHP Stack trace:
+[30-Dec-2018 02:44:24 UTC] PHP   1. {main}() /app/wordpress/wp-admin/plugins.php:0
+[30-Dec-2018 02:44:24 UTC] PHP   2. activate_plugin() /app/wordpress/wp-admin/plugins.php:43
+[30-Dec-2018 02:44:24 UTC] PHP   3. include_once() /app/wordpress/wp-admin/includes/plugin.php:567
+[30-Dec-2018 02:44:24 UTC] PHP   4. require_once() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/plugin.php:85
+[30-Dec-2018 02:44:24 UTC] PHP   5. sugb_fs() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius.php:44
+[30-Dec-2018 02:44:24 UTC] PHP   6. fs_dynamic_init() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius.php:21
+[30-Dec-2018 02:44:24 UTC] PHP   7. Freemius::instance() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/start.php:506
+[30-Dec-2018 02:44:24 UTC] PHP   8. Freemius->__construct() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:2217
+[30-Dec-2018 02:44:24 UTC] PHP   9. Freemius->_register_hooks() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:480
+[30-Dec-2018 02:44:24 UTC] PHP  10. Freemius->premium_plugin_basename() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:1282
+[30-Dec-2018 02:44:24 UTC] PHP  11. Freemius->is_premium() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:8375
+[30-Dec-2018 02:44:24 UTC] PHP Notice:  Trying to get property 'is_premium' of non-object in /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php on line 9375
+[30-Dec-2018 02:44:24 UTC] PHP Stack trace:
+[30-Dec-2018 02:44:24 UTC] PHP   1. {main}() /app/wordpress/wp-admin/plugins.php:0
+[30-Dec-2018 02:44:24 UTC] PHP   2. activate_plugin() /app/wordpress/wp-admin/plugins.php:43
+[30-Dec-2018 02:44:24 UTC] PHP   3. include_once() /app/wordpress/wp-admin/includes/plugin.php:567
+[30-Dec-2018 02:44:24 UTC] PHP   4. require_once() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/plugin.php:85
+[30-Dec-2018 02:44:24 UTC] PHP   5. sugb_fs() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius.php:44
+[30-Dec-2018 02:44:24 UTC] PHP   6. fs_dynamic_init() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius.php:21
+[30-Dec-2018 02:44:24 UTC] PHP   7. Freemius::instance() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/start.php:506
+[30-Dec-2018 02:44:24 UTC] PHP   8. Freemius->__construct() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:2217
+[30-Dec-2018 02:44:24 UTC] PHP   9. Freemius->_register_hooks() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:480
+[30-Dec-2018 02:44:24 UTC] PHP  10. Freemius->is_activation_mode() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:1335
+[30-Dec-2018 02:44:24 UTC] PHP  11. Freemius->is_site_activation_mode() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:2385
+[30-Dec-2018 02:44:24 UTC] PHP  12. Freemius->is_premium() /app/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/includes/class-freemius.php:2401
