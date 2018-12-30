@@ -2,9 +2,9 @@ import * as React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
-import { TextField } from './TextField';
+import { InputField } from './InputField';
 
-describe('TextField  as number', () => {
+describe('InputField  as number', () => {
 	let onChange;
 	let onBlur;
 
@@ -20,7 +20,7 @@ describe('TextField  as number', () => {
 	};
 
 	it( 'Allows min, max and step attributes', () =>  {
-		const component = mount(<TextField
+		const component = mount(<InputField
 			label={'Number of Roys'}
 			html5type={'number'}
 			value={5}

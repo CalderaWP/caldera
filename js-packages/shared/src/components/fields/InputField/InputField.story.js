@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { TextField } from './TextField';
+import { InputField } from './InputField';
 
 const onChange = (event) => {
 
@@ -8,8 +8,8 @@ const onChange = (event) => {
 const onBlur = (event) => {
 
 };
-storiesOf('TextField', module).add('With no value', () => (
-	<TextField
+storiesOf('InputField', module).add('With no value', () => (
+	<InputField
 		label={'Hi Roy'}
 		html5type={'text'}
 		onChange={onChange}

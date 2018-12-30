@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1546208353947" clover="3.2.0">
-  <project timestamp="1546208353947" name="All files">
+<coverage generated="1546208505411" clover="3.2.0">
+  <project timestamp="1546208505411" name="All files">
     <metrics statements="50" coveredstatements="48" conditionals="22" coveredconditionals="19" methods="13" coveredmethods="12" elements="85" coveredelements="79" complexity="0" loc="50" ncloc="50" packages="5" files="8" classes="8">
       <package name="components">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
@@ -31,7 +31,7 @@
       </package>
       <package name="components.fields.TextField">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
-        <file name="TextField.js" path="/Users/josh/caldera/js-packages/shared/src/components/fields/TextField/TextField.js">
+        <file name="InputField.js" path="/Users/josh/caldera/js-packages/shared/src/components/fields/TextField/InputField.js">
           <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
           <line num="9" count="3" type="stmt"/>
           <line num="22" count="4" type="cond" truecount="2" falsecount="0"/>

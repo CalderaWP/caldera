@@ -6,7 +6,7 @@ import React from 'react'
 import {FieldLabel} from '../FieldLabel/FieldLabel'
 import {FieldWrapper} from '../FieldWrapper/FieldWrapper'
 
-export const TextField = ({
+export const InputField = ({
 							  label,
 							  description,
 							  fieldId,
@@ -42,7 +42,7 @@ export const TextField = ({
 	)
 }
 
-TextField.propTypes = {
+InputField.propTypes = {
 	label: PropTypes.string,
 	description: PropTypes.string,
 	fieldId: PropTypes.string,
@@ -59,7 +59,7 @@ TextField.propTypes = {
 	onBlur: PropTypes.func
 };
 
-TextField.defaultProps = {
+InputField.defaultProps = {
 	onBlur: () => {
 	},
 	required: false,

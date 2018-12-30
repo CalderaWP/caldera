@@ -2,9 +2,9 @@ import * as React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
-import { TextField } from './TextField';
+import { InputField } from './InputField';
 
-describe('TextField ', () => {
+describe('InputField ', () => {
 	let onChange;
 	let onBlur;
 
@@ -14,7 +14,7 @@ describe('TextField ', () => {
 	});
 
 	it( 'matches snapshot with all props', () =>  {
-		const component = renderer.create(<TextField
+		const component = renderer.create(<InputField
 			label={'Hi Roy'}
 			description={'Say Hi'}
 			placeholder={'Hello'}
@@ -27,7 +27,7 @@ describe('TextField ', () => {
 	});
 
 	it( 'Uses text when html5type is not valid', () =>  {
-		const component = mount(<TextField
+		const component = mount(<InputField
 			label={'Hi Roy'}
 			description={'Say Hi'}
 			placeholder={'Hello'}

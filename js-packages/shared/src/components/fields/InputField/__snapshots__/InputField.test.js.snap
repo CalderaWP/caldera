@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField  matches snapshot with all props 1`] = `
+exports[`InputField  matches snapshot with all props 1`] = `
 <div
   className="caldera-field caldera-field-text"
 >
