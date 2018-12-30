@@ -39,8 +39,10 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "calderawp\\DB\\Tests\\Traits\\": "php-packages/caldera-db/Tests/Traits/",
-            "calderawp\\DB\\Tests\\Unit\\": "php-packages/caldera-db/Tests/Unit/",
+            "calderawp\\DB\\Tests\\": "php-packages/caldera-db/tests/",
+            "calderawp\\DB\\Tests\\Integration\\": "php-packages/caldera-db/tests/Integration/",
+            "calderawp\\DB\\Tests\\Traits\\": "php-packages/caldera-db/tests/Traits/",
+            "calderawp\\DB\\Tests\\Unit\\": "php-packages/caldera-db/tests/Unit/",
             "calderawp\\caldera\\Core\\Tests\\": "php-packages/core/tests",
             "calderawp\\caldera\\Core\\Tests\\Integration\\": "php-packages/core/tests/Integration",
             "calderawp\\caldera\\Core\\Tests\\Traits\\": "php-packages/core/tests/Traits",
