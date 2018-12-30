@@ -1,4 +1,3 @@
-import {TextControl} from '@wordpress/components';
 import {parseAttributes,fieldClassNames,isValidHtml5type} from '../util';
 import PropTypes from 'prop-types';
 import React from 'react'
@@ -22,7 +21,9 @@ export const InputField = ({
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
 	const _attributes = parseAttributes(attributes,fieldType);
 	return (
-		<FieldWrapper fieldType={fieldType}>
+		<FieldWrapper
+			fieldType={fieldType}
+		>
 			<FieldLabel
 				fieldId={fieldId}
 			>

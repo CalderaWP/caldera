@@ -11,8 +11,7 @@ export const Input = ({
 						  help,
 						  attributes,
 						  description,
-						  fieldType
-
+						  fieldType,
 					  }) => (
 	<TextControl
 		id={fieldId}

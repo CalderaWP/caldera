@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for FieldSet/FieldSet.js</title>
+    <title>Code coverage report for controls/Input.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../index.html">All files</a> / <a href="index.html">FieldSet</a> FieldSet.js
+      <a href="../index.html">All files</a> / <a href="index.html">controls</a> Input.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>2/2</span>
       </div>
     </div>
   </div>
@@ -69,17 +69,10 @@
 24
 25
 26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+27</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -91,9 +84,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -104,53 +95,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {fieldSetClassNames,parseAttributes} from '../util';
-import PropTypes from 'prop-types';
-import React from 'react'
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {TextControl} from "@wordpress/components";
+import React from "react";
 &nbsp;
-/**
- *
- * @param fieldType
- * @param attributes
- * @param children
- * @return {*}
- * @constructor
- */
-export const FieldSet = ({fieldType, attributes, children, legend}) =&gt; {
-	attributes = parseAttributes( attributes, 'fieldset' );
-	return (
-		&lt;fieldset
-			className={fieldSetClassNames(fieldType)}
-			{...attributes}
-		&gt;
-			&lt;legend&gt;
-				{legend}
-			&lt;/legend&gt;
-			{children}
-		&lt;/fieldset&gt;
-	);
-};
-&nbsp;
-FieldSet.propTypes = {
-	fieldType: PropTypes.string.isRequired,
-	children: PropTypes.oneOfType([
-		PropTypes.arrayOf(PropTypes.node),
-		PropTypes.node
-	]).isRequired,
-	attributes: PropTypes.object,
-};
-&nbsp;
+export const Input = ({
+						  fieldId,
+						  value,
+						  placeholder,
+						  type,
+						  onChange,
+						  onBlur,
+						  help,
+						  attributes,
+						  description,
+						  fieldType,
+					  }) =&gt; (
+	&lt;TextControl
+		id={fieldId}
+		value={value}
+		placeholder={placeholder}
+		type={fieldType}
+		onChange={onChange}
+		onBlur={onBlur}
+		help={description}
+		{...attributes}
+	/&gt;
+)
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

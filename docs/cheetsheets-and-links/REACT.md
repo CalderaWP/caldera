@@ -15,6 +15,23 @@ https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 
 https://reactjs.org/docs/test-renderer.html
 
+### Simulating DOM Events With Enzyme
+* https://airbnb.io/enzyme/docs/api/ShallowWrapper/simulate.html
+#### Change Event
+```js
+const component = mount(
+    <select />
+);
+const event = {target: {value: 2}};
+component.find( 'select' ).simulate( 'change', event );
+```
+#### Click Event
+```js
+const component = mount(
+    <input />
+);
+component.find( 'input' ).simulate( 'click' );
+```
 
 ## Spread Props
 Want to print an array of props, such as HTML attributes without having to unwrap each one?

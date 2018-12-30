@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select Field component matches snapshot, multiple 1`] = `
+<div
+  className="caldera-field caldera-field-select"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="selection-hatses"
+  >
+    Select  Hats
+  </label>
+</div>
+`;
+
+exports[`Select Field component matches snapshot, not multiple 1`] = `
+<div
+  className="caldera-field caldera-field-select"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="selection-hats"
+  >
+    Select A Hat
+  </label>
+</div>
+`;

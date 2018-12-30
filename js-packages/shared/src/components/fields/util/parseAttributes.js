@@ -36,40 +36,54 @@ const fieldSetAttrs = [
 	'form',
 	'name',
 ];
+
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option#Attributes
+const selectAttrs = [
+	'disabled',
+	'label',
+	'selected',
+	'value'
+];
+
 /**
  *
  * @param {Object} attributes
  * @param {Array|string|null} allowed
  */
-export const parseAttributes = ( attributes, allowed = null ) => {
+export const parseAttributes = (attributes, allowed = null) => {
 
 	switch (allowed) {
 		case 'number':
-			allowed = [...inputAttrs,...numberAttrs];
+			allowed = [...inputAttrs, ...numberAttrs];
 			break;
 		case 'fieldSet' :
 		case 'fieldset' :
-			allowed = [...inputAttrs,...fieldSetAttrs];
+			allowed = [...inputAttrs, ...fieldSetAttrs];
 			break;
-			case 'email' :
-			allowed = [...inputAttrs,...emailAttrs];
+		case 'select' :
+		case 'dropdown' :
+			allowed = [...inputAttrs, ...selectAttrs];
+			break;
+		case 'email' :
+			allowed = [...inputAttrs, ...emailAttrs];
 			break;
 		case 'text':
 		case 'default':
 		case null :
 			allowed = inputAttrs;
 			break;
-	};
+	}
+	;
 
 
-	attributes = require('lodash.pick')(attributes,allowed);
+	attributes = require('lodash.pick')(attributes, allowed);
 
 	const transforms = {
 		maxlength: 'maxLength',
 		spellcheck: 'spellCheck'
 	};
 	Object.keys(transforms).forEach(attr => {
-		if( attributes.hasOwnProperty(attr) ){
+		if (attributes.hasOwnProperty(attr)) {
 			attributes[transforms[attr]] = attributes[attr];
 			delete attributes[attr];
 		}

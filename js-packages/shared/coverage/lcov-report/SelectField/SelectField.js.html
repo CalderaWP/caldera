@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for FieldSet/FieldSet.js</title>
+    <title>Code coverage report for SelectField/SelectField.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../index.html">All files</a> / <a href="index.html">FieldSet</a> FieldSet.js
+      <a href="../index.html">All files</a> / <a href="index.html">SelectField</a> SelectField.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>6/6</span>
       </div>
     </div>
   </div>
@@ -79,7 +79,33 @@
 34
 35
 36
-37</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+37
+38
+39
+40
+41
+42
+43
+44</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -92,13 +118,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -110,47 +129,49 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {fieldSetClassNames,parseAttributes} from '../util';
-import PropTypes from 'prop-types';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import PropTypes from 'prop-types';
 import React from 'react'
 &nbsp;
-/**
- *
- * @param fieldType
- * @param attributes
- * @param children
- * @return {*}
- * @constructor
- */
-export const FieldSet = ({fieldType, attributes, children, legend}) =&gt; {
-	attributes = parseAttributes( attributes, 'fieldset' );
+import {parseAttributes,fieldClassNames,isValidHtml5type} from '../util';
+import {FieldLabel} from '../FieldLabel/FieldLabel';
+import {FieldWrapper} from '../FieldWrapper/FieldWrapper';
+import {Select} from '../controls/Select'
+export  const SelectField = (props) =&gt; {
+	let {
+		attributes,
+		label,
+		fieldId
+	} = props;
+	attributes = parseAttributes(attributes,'select');
 	return (
-		&lt;fieldset
-			className={fieldSetClassNames(fieldType)}
-			{...attributes}
+		&lt;FieldWrapper
+			fieldType={'select'}
 		&gt;
-			&lt;legend&gt;
-				{legend}
-			&lt;/legend&gt;
-			{children}
-		&lt;/fieldset&gt;
-	);
+			&lt;FieldLabel
+				fieldId={fieldId}
+			&gt;
+				{label}
+			&lt;/FieldLabel&gt;
+			&lt;Select
+				{...props}
+			/&gt;
+		&lt;/FieldWrapper&gt;
+	)
 };
 &nbsp;
-FieldSet.propTypes = {
-	fieldType: PropTypes.string.isRequired,
-	children: PropTypes.oneOfType([
-		PropTypes.arrayOf(PropTypes.node),
-		PropTypes.node
-	]).isRequired,
-	attributes: PropTypes.object,
+&nbsp;
+SelectField.propTypes = {
+	label: PropTypes.string,
+	description: PropTypes.string,
+	fieldId: PropTypes.string,
+	required: PropTypes.bool,
+	multiple: PropTypes.bool,
 };
 &nbsp;
+SelectField.defaultProps = {
+	required: false,
+	multiple: false,
+};
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
