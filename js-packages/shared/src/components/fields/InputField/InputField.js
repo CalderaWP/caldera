@@ -5,7 +5,7 @@ import React from 'react'
 
 import {FieldLabel} from '../FieldLabel/FieldLabel'
 import {FieldWrapper} from '../FieldWrapper/FieldWrapper'
-
+import {Input} from '../controls/Input';
 export const InputField = ({
 							  label,
 							  description,
@@ -28,19 +28,19 @@ export const InputField = ({
 			>
 				{label}
 			</FieldLabel>
-			<TextControl
-				id={fieldId}
+			<Input
+				fieldId={fieldId}
 				value={value}
 				placeholder={placeholder}
 				type={fieldType}
 				onChange={onChange}
 				onBlur={onBlur}
 				help={description}
-				{..._attributes}
+				attributes={_attributes}
 			/>
 		</FieldWrapper>
 	)
-}
+};
 
 InputField.propTypes = {
 	label: PropTypes.string,

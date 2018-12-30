@@ -17,7 +17,7 @@ exports[`InputField  matches snapshot with all props 1`] = `
       className="components-base-control__field"
     >
       <input
-        aria-describedby="inspector-text-control-0__help"
+        aria-describedby={undefined}
         className="components-text-control__input"
         id={undefined}
         onBlur={[Function]}
@@ -27,12 +27,6 @@ exports[`InputField  matches snapshot with all props 1`] = `
         value="Roy"
       />
     </div>
-    <p
-      className="components-base-control__help"
-      id="inspector-text-control-0__help"
-    >
-      Say Hi
-    </p>
   </div>
 </div>
 `;

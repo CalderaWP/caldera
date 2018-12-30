@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1546208505411" clover="3.2.0">
-  <project timestamp="1546208505411" name="All files">
-    <metrics statements="50" coveredstatements="48" conditionals="22" coveredconditionals="19" methods="13" coveredmethods="12" elements="85" coveredelements="79" complexity="0" loc="50" ncloc="50" packages="5" files="8" classes="8">
+<coverage generated="1546208750671" clover="3.2.0">
+  <project timestamp="1546208750671" name="All files">
+    <metrics statements="52" coveredstatements="50" conditionals="22" coveredconditionals="19" methods="14" coveredmethods="13" elements="88" coveredelements="82" complexity="0" loc="52" ncloc="52" packages="6" files="9" classes="9">
       <package name="components">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <file name="header.js" path="/Users/josh/caldera/js-packages/shared/src/components/header.js">
@@ -29,9 +29,9 @@
           <line num="13" count="4" type="stmt"/>
         </file>
       </package>
-      <package name="components.fields.TextField">
+      <package name="components.fields.InputField">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
-        <file name="InputField.js" path="/Users/josh/caldera/js-packages/shared/src/components/fields/TextField/InputField.js">
+        <file name="InputField.js" path="/Users/josh/caldera/js-packages/shared/src/components/fields/InputField/InputField.js">
           <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
           <line num="9" count="3" type="stmt"/>
           <line num="22" count="4" type="cond" truecount="2" falsecount="0"/>
@@ -39,6 +39,14 @@
           <line num="24" count="4" type="stmt"/>
           <line num="45" count="3" type="stmt"/>
           <line num="62" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.fields.controls">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="Input.js" path="/Users/josh/caldera/js-packages/shared/src/components/fields/controls/Input.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="17" count="4" type="stmt"/>
         </file>
       </package>
       <package name="components.fields.util">

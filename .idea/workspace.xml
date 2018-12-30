@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js-packages/shared/src/components/fields/controls/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/clover.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/coverage-final.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/TextField/TextField.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/TextField/TextField.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/TextField/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/TextField/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldLabel/FieldLabel.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldLabel/FieldLabel.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldLabel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldLabel/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldWrapper/FieldWrapper.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldWrapper/FieldWrapper.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldWrapper/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/FieldWrapper/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/TextField/TextField.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/TextField/TextField.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/TextField/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/TextField/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/util/fieldClassNames.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/util/fieldClassNames.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/util/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/util/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/util/index.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/fields/util/index.js.html" afterDir="false" />
@@ -22,12 +19,7 @@
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/components/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov-report/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/shared/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/TextField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/TextField.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/TextField.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/TextFieldAsEmail.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsEmail.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/TextFieldAsNumber.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsNumber.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/__snapshots__/TextField.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +52,7 @@
           <entry key="gitignore" value="3" />
           <entry key="html" value="1" />
           <entry key="inc" value="1" />
-          <entry key="js" value="68" />
+          <entry key="js" value="69" />
           <entry key="json" value="80" />
           <entry key="log" value="1" />
           <entry key="md" value="43" />
@@ -85,7 +77,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="80" />
-          <entry key="JavaScript" value="68" />
+          <entry key="JavaScript" value="69" />
           <entry key="Jest Snapshot" value="5" />
           <entry key="Markdown" value="43" />
           <entry key="PHP" value="1304" />
@@ -100,7 +92,7 @@
           <entry key="dummy" value="42" />
           <entry key="env" value="16" />
           <entry key="gitignore" value="62" />
-          <entry key="js" value="4520" />
+          <entry key="js" value="4654" />
           <entry key="json" value="2537" />
           <entry key="md" value="7025" />
           <entry key="php" value="71295" />
@@ -114,7 +106,7 @@
           <entry key=".env file" value="16" />
           <entry key="Bash" value="738" />
           <entry key="JSON" value="2537" />
-          <entry key="JavaScript" value="4520" />
+          <entry key="JavaScript" value="4654" />
           <entry key="Markdown" value="7016" />
           <entry key="PHP" value="71304" />
           <entry key="PLAIN_TEXT" value="1018" />
@@ -143,11 +135,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="458">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -156,7 +148,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.story.js">
+        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/controls/Input.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.story.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
@@ -183,7 +187,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.test.js">
+        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-223">
               <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
@@ -192,16 +196,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsEmail.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsNumber.test.js">
+        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputFieldAsEmail.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
@@ -210,12 +205,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/FieldLabel/FieldLabel.story.js">
+        <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputFieldAsNumber.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -321,8 +316,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/core/tests/Integration/TestCase.php" />
-        <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Acceptance/IntegrationTestCase.php" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Acceptance/AcceptenceTestCase.php" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php" />
@@ -372,6 +365,8 @@
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.test.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsEmail.test.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsNumber.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/controls/Input.js" />
+        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js" />
       </list>
     </option>
   </component>
@@ -570,7 +565,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="FieldLabel" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -580,38 +575,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="FieldWrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="TextField" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="TextField" type="462c0819:PsiDirectoryNode" />
-              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="InputField" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -793,17 +757,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173092000" />
+    <option name="totallyTimeSpent" value="173344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="175" y="23" width="1632" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.2981132" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.2981132" />
       <window_info id="Structure" order="1" sideWeight="0.21875" side_tool="true" weight="0.32981676" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" visible="true" weight="0.44457144" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" visible="true" weight="0.24342857" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41485715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -812,7 +776,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.38628572" />
+      <window_info active="true" anchor="bottom" x="0" y="45" width="1440" height="578" id="Terminal" order="10" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.38628572" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -981,19 +945,19 @@
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.test.js</url>
+          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.test.js</url>
           <line>6</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.test.js</url>
+          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.test.js</url>
           <line>30</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.js</url>
+          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js</url>
           <line>34</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="162" />
@@ -1005,13 +969,13 @@
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.js</url>
+          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js</url>
           <line>17</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsEmail.test.js</url>
+          <url>file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputFieldAsEmail.test.js</url>
           <line>21</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="170" />
@@ -1032,15 +996,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/Controllers/FormsControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1542">
-          <folding>
-            <element signature="e#61#102#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/FiltersTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1387,41 +1342,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.story.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.story.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.test.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-223">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsEmail.test.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputFieldAsEmail.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsNumber.test.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputFieldAsNumber.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/controls/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
