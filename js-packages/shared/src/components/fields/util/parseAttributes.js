@@ -51,5 +51,19 @@ export const parseAttributes = ( attributes, allowed = null ) => {
 			break;
 	};
 
-	return require('lodash.pick')(attributes,allowed);
+
+	attributes = require('lodash.pick')(attributes,allowed);
+
+	const transforms = {
+		maxlength: 'maxLength',
+		spellcheck: 'spellCheck'
+	};
+	Object.keys(transforms).forEach(attr => {
+		if( attributes.hasOwnProperty(attr) ){
+			attributes[transforms[attr]] = attributes[attr];
+			delete attributes[attr];
+		}
+	});
+
+	return attributes;
 };

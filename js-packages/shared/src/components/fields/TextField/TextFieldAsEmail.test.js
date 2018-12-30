@@ -16,6 +16,7 @@ describe('TextField  as number', () => {
 	const attributes = {
 		'maxlength':77,
 		'multiple': true,
+		spellcheck: false
 	};
 
 	it( 'Allows min, max and step attributes', () =>  {
@@ -28,8 +29,9 @@ describe('TextField  as number', () => {
 			attributes={attributes}
 		/>);
 
-		expect( component.find( 'input').prop( 'maxlength') ).toEqual( attributes.maxlength );
+		expect( component.find( 'input').prop( 'maxLength') ).toEqual( attributes.maxlength );
 		expect( component.find( 'input').prop( 'multiple') ).toEqual( attributes.multiple );
 		expect( component.find( 'input').prop( 'value') ).toEqual( 'roy@hiroy.club' );
+		expect( component.find( 'input').prop( 'spellCheck') ).toEqual( false );
 	});
 });

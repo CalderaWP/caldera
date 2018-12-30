@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react'
 
 import {FieldLabel} from '../FieldLabel/FieldLabel'
+import {FieldWrapper} from '../FieldWrapper/FieldWrapper'
 
 export const TextField = ({
 							  label,
@@ -21,7 +22,7 @@ export const TextField = ({
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
 	const _attributes = parseAttributes(attributes,fieldType);
 	return (
-		<div className={fieldClassNames('text')}>
+		<FieldWrapper fieldType={fieldType}>
 			<FieldLabel
 				fieldId={fieldId}
 			>
@@ -37,7 +38,7 @@ export const TextField = ({
 				help={description}
 				{..._attributes}
 			/>
-		</div>
+		</FieldWrapper>
 	)
 }
 

@@ -42,7 +42,10 @@ describe( 'parseAttributes util function', () => {
 			maxlength: 54,
 			multiple: true,
 		};
-		expect( parseAttributes(emailAttrs, 'email') ).toEqual(emailAttrs);
+		expect( parseAttributes(emailAttrs, 'email') ).toEqual({
+			maxLength: 54,
+			multiple: true,
+		});
 	});
 
 });
