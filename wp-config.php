@@ -20,8 +20,11 @@ define('WP_DEBUG', _getenv('WP_DEBUG', true ));
 define('WP_DEBUG_LOG', _getenv('WP_DEBUG_LOG', true ));
 define('WP_DEBUG_DISPLAY', _getenv('WP_DEBUG_DISPLAY', true ));
 
-define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content' );
-define( 'WP_CONTENT_URL', ' https://caldera.lndo.site/wp-content' );
+//define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content' );
+//define( 'WP_CONTENT_URL', ' https://caldera.lndo.site/wp-content' );
+
+define( 'WPMU_PLUGIN_DIR', dirname(__FILE__) . '/mu-plugins' );
+define( 'WPMU_PLUGIN_URL', ' https://caldera.lndo.site/mu-plugins' );
 
 
 define('AUTH_KEY', _getenv('AUTH_KEY', 'wordpress'));

@@ -62,7 +62,7 @@ A local WordPress environment with xdebug, mailhog, phpmyadmin, etc is included,
     - `lando start`
 * Go to [https://caldera.lndo.site](https://caldera.lndo.site) and dismiss the HTTPS warning.
 
-WordPress-specific code should be placed in wp-content/mu-plugins. Plugins with composer.json files in the wp-content/mu-plugins/plugins folder are merged into the monorepo.
+WordPress-specific code should be placed in `/mu-plugins`. Plugins with composer.json files in the `/mu-plugins/plugins` folder are merged into the monorepo.
 
 Run WordPress' tests `composer test:wordpress`
 
