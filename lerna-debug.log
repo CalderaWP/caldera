@@ -1,0 +1,22 @@
+0 silly input [ 'del-cli', 'dist' ]
+1 silly flags { _: [ 'exec' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   parallel: true,
+1 silly flags   command: 'del-cli',
+1 silly flags   args: [ 'dist' ] }
+2 verbose rootPath /Users/josh/caldera
+3 info version 2.11.0
+4 silly existsSync /Users/josh/caldera/VERSION
+5 info versioning independent
+6 error EPACKAGES Errored while collecting packages and package graph
+7 error JSONError: Unexpected token , in JSON at position 1174 while parsing near '...rge": "^3.0.0"  }},  "jest": {    "s...' in js-packages/shared/package.json
+7 error     at module.exports (/Users/josh/caldera/node_modules/load-json-file/node_modules/parse-json/index.js:26:19)
+7 error     at parse (/Users/josh/caldera/node_modules/load-json-file/index.js:8:29)
+7 error     at Function.module.exports.sync.fp [as sync] (/Users/josh/caldera/node_modules/load-json-file/index.js:11:29)
+7 error     at Function.module.exports.sync (/Users/josh/caldera/node_modules/lerna/node_modules/read-pkg/index.js:40:25)
+7 error     at /Users/josh/caldera/node_modules/lerna/lib/PackageUtilities.js:138:47
+7 error     at Array.forEach (<anonymous>)
+7 error     at /Users/josh/caldera/node_modules/lerna/lib/PackageUtilities.js:132:86
+7 error     at Array.forEach (<anonymous>)
+7 error     at Function.getPackages (/Users/josh/caldera/node_modules/lerna/lib/PackageUtilities.js:131:22)

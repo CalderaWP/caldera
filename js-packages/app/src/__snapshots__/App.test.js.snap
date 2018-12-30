@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Matches snapshot 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2196f3",
+        "color": "#ffffff",
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 54,
+        "padding": 8,
+      }
+    }
+  >
+    <h1
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "normal",
+        }
+      }
+    >
+      Caldera Pro
+    </h1>
+  </div>
+  <div
+    style={
+      Object {
+        "padding": 8,
+      }
+    }
+  >
+    Home Page
+  </div>
+</div>
+`;

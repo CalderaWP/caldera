@@ -1,5 +1,5 @@
-a# Caldera 
-This is a mono-repo. Code is organized into packages that will be installable separately via npm or Composer.
+# Caldera 
+This is a monorepo. Code is organized into packages that will be installable separately via npm or Composer.
 
 
 # Install
@@ -71,7 +71,30 @@ Run WordPress' tests `composer test:wordpress`
 * https://joshpress.net/create-a-wordpres-site-with-lando/
 
 ## JavaScript
+Monorepo managment is handled by Lerna. 
+
+Approach to implimenting CRA + shared component libraries came from [this post](https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875) and [this repo](https://github.com/nareshbhatia/lerna-workspaces-react-es6)
+
+* Start storybooks
+    - `yarn storybook`
+* Run unit tests for all packages
+    - `yarn test`
+* Start development server
+    - `yarn build && yarn start`
+### Components
+Components should be developed in `/js-packages/shared`. Storybooks is provided for testing/ previewing components. Jest is also used for testin.
+
+* Transpile components
+    - `yarn build`
+    
+### React App
+
+* Start app server
+    - `yarn start`
+
+### Also See
 https://github.com/nareshbhatia/lerna-workspaces-react-es6
 https://www.nearform.com/blog/sharing-react-components-with-lerna/
 https://medium.com/@luisvieira_gmr/building-large-scale-react-applications-in-a-monorepo-91cd4637c131
 https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875
+https://www.robinwieruch.de/visual-regression-testing-react-storybook/

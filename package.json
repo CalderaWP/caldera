@@ -1,0 +1,25 @@
+{
+  "name": "@caldera-labs/caldera",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "license": "GPL-2.0",
+  "workspaces": [
+    "js-packages/*"
+  ],
+  "scripts": {
+    "del-dist": "lerna exec --parallel -- del-cli dist",
+    "prebuild": "yarn del-dist",
+    "build": "lerna exec --scope @caldera-labs/shared -- babel src -d dist --ignore test.js,story.js",
+    "start": "cd js-packages/app && yarn start",
+    "test": "lerna run test",
+    "storybook": "cd js-packages/shared && yarn storybook",
+    "format": "prettier --use-tabs --print-width 80 --tab-width 4 --single-quote --write 'js-packages/*/src/**/*.js'",
+  },
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "husky": "^0.14.3",
+    "lerna": "^2.9.0",
+    "prettier": "^1.11.1"
+  }
+}

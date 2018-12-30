@@ -1,7 +1,12 @@
-/build/
+/build
+build/
 /vendor/
+vendor/
 /wordpress/
 /wp-content/plugins
 # /composer.lock
 
-/.php_cs.cache
+/.php_cs.cache/
+
+node_modules/
+/node_modules
