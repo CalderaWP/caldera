@@ -6,8 +6,8 @@ exports[`App component Matches snapshot 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#2196f3",
-        "color": "#ffffff",
+        "backgroundColor": "#ff7e30",
+        "color": "#fff",
         "display": "flex",
         "flexDirection": "row",
         "height": 54,
@@ -16,10 +16,21 @@ exports[`App component Matches snapshot 1`] = `
     }
   >
     <h1
-      style={
+      styles={
         Object {
-          "fontSize": 20,
-          "fontWeight": "normal",
+          "header": Object {
+            "alignItems": "center",
+            "backgroundColor": "#ff7e30",
+            "color": "#fff",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 54,
+            "padding": 8,
+          },
+          "heading": Object {
+            "fontSize": 20,
+            "fontWeight": "normal",
+          },
         }
       }
     >

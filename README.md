@@ -93,15 +93,18 @@ Approach to implimenting CRA + shared component libraries came from [this post](
 * https://github.com/lerna/lerna/tree/master/commands/add
  
 ### Components
-Components should be developed in `/js-packages/shared`. Storybooks is provided for testing/ previewing components. Jest is also used for testin.
+Components should be developed in `/js-packages/components`. Storybooks is provided for testing/ previewing components. Jest is also used for testing.
 
 * Transpile components
     - `yarn build`
-    
+ * Test components
+     - `yarn test:components`   
 ### React App
 
 * Start app server
     - `yarn start`
+* Test app
+    - `yarn test:app`
 
 ### Also See
 https://github.com/nareshbhatia/lerna-workspaces-react-es6

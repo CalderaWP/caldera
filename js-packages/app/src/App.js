@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '@caldera-labs/shared';
+import { Header } from '@caldera-labs/components';
 import { HomePage } from './features/home/home-page';
 
 export class App extends React.Component {
@@ -20,4 +20,4 @@ export class App extends React.Component {
 			</div>
 		);
 	}
-}
+};

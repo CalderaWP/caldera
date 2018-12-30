@@ -14,7 +14,7 @@
     "start": "cd js-packages/app && yarn start",
     "test": "lerna run test",
     "test:app": "cd js-packages/app && yarn test",
-    "test:shared": "cd js-packages/shared && yarn test",
+    "test:components": "cd js-packages/components && yarn test",
     "storybook": "cd js-packages/shared && yarn storybook",
     "format": "prettier --use-tabs --print-width 80 --tab-width 4 --single-quote --write 'js-packages/*/src/**/*.js'"
   },
