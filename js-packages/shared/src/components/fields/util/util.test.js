@@ -4,7 +4,8 @@ import {
 	labelClassNames,
 	isValidHtml5type,
 	addOrRemoveFromArray,
-	toBoolean
+	toBoolean,
+	fieldSetClassNames
 } from './index'
 
 describe( 'parseAttributes util function', () => {
@@ -55,6 +56,11 @@ describe( 'fieldClassNames util function', () => {
 		expect( fieldClassNames('text') ).toEqual('caldera-field caldera-field-text')
 	});
 });
+describe( 'fieldSetClassNames util function', () => {
+	it( 'adds type', ()=> {
+		expect( fieldSetClassNames('checkbox') ).toEqual('caldera-fieldset caldera-fieldset-checkbox')
+	});
+});
 
 describe( 'labelClassNames util function', () => {
 	it( 'adds type', ()=> {
@@ -69,7 +75,8 @@ test( 'imports', () => {
 	expect(typeof addOrRemoveFromArray).toEqual('function')
 	expect(typeof toBoolean).toEqual('function')
 	expect(typeof isValidHtml5type).toEqual('function')
-})
+	expect(typeof fieldSetClassNames).toEqual('function')
+});
 
 describe('HTML5 checks', () => {
 	it('allows email', () => {

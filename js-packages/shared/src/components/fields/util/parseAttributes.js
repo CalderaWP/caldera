@@ -30,7 +30,12 @@ const emailAttrs = [
 	'size',
 	'spellcheck'
 ];
-
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset#Attributes
+const fieldSetAttrs = [
+	'disabled',
+	'form',
+	'name',
+];
 /**
  *
  * @param {Object} attributes
@@ -42,9 +47,14 @@ export const parseAttributes = ( attributes, allowed = null ) => {
 		case 'number':
 			allowed = [...inputAttrs,...numberAttrs];
 			break;
-		case 'email' :
+		case 'fieldSet' :
+		case 'fieldset' :
+			allowed = [...inputAttrs,...fieldSetAttrs];
+			break;
+			case 'email' :
 			allowed = [...inputAttrs,...emailAttrs];
 			break;
+		case 'text':
 		case 'default':
 		case null :
 			allowed = inputAttrs;

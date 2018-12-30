@@ -1,6 +1,7 @@
 import {parseAttributes} from './parseAttributes'
 import {fieldClassNames} from './fieldClassNames';
 import {labelClassNames} from './labelClassNames';
+import {fieldSetClassNames} from './fieldSetClassNames';
 /**
  * Get HTML5 input types that are valid
  * @returns {string[]}
@@ -77,5 +78,6 @@ export {
 	getHtml5InputTypes,
 	addOrRemoveFromArray,
 	toBoolean,
-	isValidHtml5type
+	isValidHtml5type,
+	fieldSetClassNames
 }
