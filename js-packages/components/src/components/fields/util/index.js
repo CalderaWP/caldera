@@ -2,11 +2,15 @@ import {parseAttributes} from './parseAttributes'
 import {fieldClassNames} from './fieldClassNames';
 import {labelClassNames} from './labelClassNames';
 import {fieldSetClassNames} from './fieldSetClassNames';
+
+
 /**
- * Get HTML5 input types that are valid
- * @returns {string[]}
+ * Checks if a given input type is an acceptable HTML5 input type
+ *
+ * @param {String} type
+ * @returns {boolean}
  */
-function getHtml5InputTypes() {
+const isValidHtml5type = (type) => {
 	return [
 		'text',
 		'email',
@@ -18,17 +22,7 @@ function getHtml5InputTypes() {
 		'reset',
 		'checkbox',
 		'hidden'
-	];
-}
-
-/**
- * Checks if a given input type is an acceptable HTML5 input type
- *
- * @param {String} type
- * @returns {boolean}
- */
-const isValidHtml5type = (type) => {
-	return getHtml5InputTypes().includes(type);
+	].includes(type);
 }
 
 
@@ -75,7 +69,6 @@ export {
 	parseAttributes,
 	fieldClassNames,
 	labelClassNames,
-	getHtml5InputTypes,
 	addOrRemoveFromArray,
 	toBoolean,
 	isValidHtml5type,

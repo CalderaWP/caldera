@@ -23,4 +23,4 @@ export const Input = ({
 		help={description}
 		{...attributes}
 	/>
-)
+);

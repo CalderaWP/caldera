@@ -38,6 +38,14 @@ describe( 'parseAttributes util function', () => {
 		expect( result ).toEqual(numberAttrs);
 	});
 
+	it( 'allows checked arg for checkbox field', () => {
+		const checkedArgs = {
+			checked: true
+		};
+		const result = parseAttributes(checkedArgs, 'checkbox');
+		expect( result ).toEqual(checkedArgs);
+	});
+
 	it( 'allows email attrs', () => {
 		const emailAttrs = {
 			maxlength: 54,

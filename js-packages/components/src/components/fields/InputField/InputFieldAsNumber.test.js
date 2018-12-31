@@ -29,6 +29,7 @@ describe('InputField  as number', () => {
 			attributes={attributes}
 		/>);
 
+		expect( component.find( 'input').prop( 'type') ).toEqual( 'number' );
 		expect( component.find( 'input').prop( 'min') ).toEqual( attributes.min );
 		expect( component.find( 'input').prop( 'max') ).toEqual( attributes.max );
 		expect( component.find( 'input').prop( 'step') ).toEqual( attributes.step );

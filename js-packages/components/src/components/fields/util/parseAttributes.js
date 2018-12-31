@@ -44,7 +44,11 @@ const selectAttrs = [
 	'selected',
 	'value'
 ];
-
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Additional_attributes
+const checkboxAttrs = [
+	'checked',
+	'value'
+];
 /**
  *
  * @param {Object} attributes
@@ -66,6 +70,9 @@ export const parseAttributes = (attributes, allowed = null) => {
 			break;
 		case 'email' :
 			allowed = [...inputAttrs, ...emailAttrs];
+			break;
+		case 'checkbox':
+			allowed = [...inputAttrs,...checkboxAttrs];
 			break;
 		case 'text':
 		case 'default':

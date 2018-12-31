@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fieldFactory Creates a number field 1`] = `
+<div
+  className="caldera-field caldera-field-text"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="firstName"
+  >
+    First Name
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="firstName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="text"
+        value="roy"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`fieldFactory Creates a text field 1`] = `
+<div
+  className="caldera-field caldera-field-text"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="firstName"
+  >
+    First Name
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="firstName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="number"
+        value="roy"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`fieldFactory Creates an checkbox field field 1`] = `
+<div
+  className="caldera-field caldera-field-checkbox"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="checkboxFieldLabel"
+  >
+    Checkbox Labe
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="checkboxFieldLabel"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="text"
+        value={undefined}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`fieldFactory Creates an email field 1`] = `
+<div
+  className="caldera-field caldera-field-text"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="emailFieldLabel"
+  >
+    Email Field Label
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="emailFieldLabel"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="email"
+        value="emai@email.com"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`fieldFactory Creates an select field 1`] = `
+<div
+  className="caldera-field caldera-field-select"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="selectFieldId"
+  >
+    Select Field Label
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <label
+        className="components-base-control__label"
+        htmlFor="inspector-select-control-0"
+      >
+        Select Field Label
+      </label>
+      <select
+        aria-describedby="inspector-select-control-0__help"
+        className="components-select-control__input"
+        id="inspector-select-control-0"
+        multiple={false}
+        onBlur={undefined}
+        onChange={[Function]}
+        required={true}
+        value={1}
+      >
+        <option
+          value={0}
+        >
+          Zero
+        </option>
+        <option
+          value={1}
+        >
+          One
+        </option>
+        <option
+          value={2}
+        >
+          Two
+        </option>
+      </select>
+    </div>
+    <p
+      className="components-base-control__help"
+      id="inspector-select-control-0__help"
+    >
+      Select field description
+    </p>
+  </div>
+</div>
+`;

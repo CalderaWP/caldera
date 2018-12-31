@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 
 import { InputField } from './InputField';
 
-describe('InputField  as number', () => {
+describe('InputField  as email field', () => {
 	let onChange;
 	let onBlur;
 
@@ -19,7 +19,7 @@ describe('InputField  as number', () => {
 		spellcheck: false
 	};
 
-	it( 'Allows min, max and step attributes', () =>  {
+	it( 'Allows email attributes', () =>  {
 		const component = mount(<InputField
 			label={'Email addresses'}
 			html5type={'email'}
@@ -29,6 +29,7 @@ describe('InputField  as number', () => {
 			attributes={attributes}
 		/>);
 
+		expect( component.find( 'input').prop( 'type') ).toEqual( 'email' );
 		expect( component.find( 'input').prop( 'maxLength') ).toEqual( attributes.maxlength );
 		expect( component.find( 'input').prop( 'multiple') ).toEqual( attributes.multiple );
 		expect( component.find( 'input').prop( 'value') ).toEqual( 'roy@hiroy.club' );

@@ -10,11 +10,14 @@
   "scripts": {
     "del-dist": "lerna exec --parallel -- del-cli dist",
     "prebuild": "yarn del-dist",
-    "build": "lerna exec --scope @caldera-labs/shared -- babel src -d dist --ignore test.js,story.js",
+    "build": "yarn build:components && yarn build:factory",
+    "build:components": "lerna exec --scope @caldera-labs/components -- babel src -d dist --ignore test.js,story.js",
+    "build:factory": "lerna exec --scope @caldera-labs/factory -- babel src -d dist --ignore test.js,story.js",
     "start": "cd js-packages/app && yarn start",
     "test": "lerna run test",
     "test:app": "cd js-packages/app && yarn test",
     "test:components": "cd js-packages/components && yarn test",
+    "test:factory": "cd js-packages/factory && yarn test",
     "storybook": "cd js-packages/shared && yarn storybook",
     "format": "prettier --use-tabs --print-width 80 --tab-width 4 --single-quote --write 'js-packages/*/src/**/*.js'"
   },

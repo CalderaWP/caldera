@@ -105,7 +105,14 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
     - `yarn start`
 * Test app
     - `yarn test:app`
-
+    
+### Add a package
+* Copy `boilerplate/js-package` to `js-packages` and rename directory for package name.
+* Change package name and description in package's package.json.
+* In root directory add package to monorepo.
+    - `yarn lerna bootstrap`
+#### See
+* https://github.com/lerna/lerna/blob/master/commands/bootstrap/README.md
 ### Also See
 https://github.com/nareshbhatia/lerna-workspaces-react-es6
 https://www.nearform.com/blog/sharing-react-components-with-lerna/
