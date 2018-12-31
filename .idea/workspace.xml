@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/coverage-final.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Row.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Row.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Rows.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Rows.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" afterDir="false" />
-    </list>
+    <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +15,7 @@
     <session id="-431066744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.opened" value="5" />
@@ -166,19 +149,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="36" selection-start-column="36" selection-end-column="36" />
+            <state relative-caret-position="750">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
+            <state relative-caret-position="1500">
               <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
               <folding>
                 <element signature="e#0#109#0" expanded="true" />
@@ -676,7 +662,7 @@
       <workItem from="1545406861569" duration="7802000" />
       <workItem from="1545416235667" duration="36452000" />
       <workItem from="1546136900545" duration="1616000" />
-      <workItem from="1546211702081" duration="11331000" />
+      <workItem from="1546211702081" duration="11440000" />
     </task>
     <servers />
   </component>
@@ -713,13 +699,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187521000" />
+    <option name="totallyTimeSpent" value="187630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.18311875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.18311875" />
       <window_info id="Structure" order="1" sideWeight="0.21875" side_tool="true" weight="0.32981676" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -732,7 +718,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" x="0" y="45" width="1440" height="778" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.118644066" />
+      <window_info anchor="bottom" x="0" y="45" width="1440" height="778" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.018361581" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1335,19 +1321,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
+        <state relative-caret-position="1500">
           <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
           <folding>
             <element signature="e#0#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
