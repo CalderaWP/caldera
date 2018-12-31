@@ -11,6 +11,7 @@ export const messageObjectFactory = ({message,error}) => {
 	if( 'string' !== typeof  message ){
 		message = '';
 	}
+
 	return{
 		message: message,
 		error: toBoolean(error)

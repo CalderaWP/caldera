@@ -44,6 +44,10 @@ PropTypes.oneOf(['optionOne', 'optionTwo'])
 
 https://reactjs.org/docs/test-renderer.html
 
+### A
+
+### Snapshot Testing
+
 ### Simulating DOM Events With Enzyme
 * https://airbnb.io/enzyme/docs/api/ShallowWrapper/simulate.html
 #### Change Event

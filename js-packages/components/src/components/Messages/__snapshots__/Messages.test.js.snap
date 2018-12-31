@@ -15,3 +15,5 @@ exports[`Message component Renders message 1`] = `
   Hi Roy
 </div>
 `;
+
+exports[`Message component Renders no error message 1`] = `null`;

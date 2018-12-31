@@ -49,6 +49,11 @@ const checkboxAttrs = [
 	'checked',
 	'value'
 ];
+
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#Additional_attributes
+const radioAttrs = [
+	'checked'
+];
 /**
  *
  * @param {Object} attributes
@@ -70,6 +75,9 @@ export const parseAttributes = (attributes, allowed = null) => {
 			break;
 		case 'email' :
 			allowed = [...inputAttrs, ...emailAttrs];
+			break;
+			case 'radio' :
+			allowed = [...inputAttrs, ...radioAttrs];
 			break;
 		case 'checkbox':
 			allowed = [...inputAttrs,...checkboxAttrs];

@@ -42,6 +42,17 @@ describe('Message component', () => {
 		expect(wrapper.toJSON()).toMatchSnapshot();
 	});
 
+	it('Renders no error message', () => {
+		const wrapper = renderer.create(
+			<Message
+				message={{
+					error: true,
+				}}
+			/>
+		);
+		expect(wrapper.toJSON()).toMatchSnapshot();
+	});
+
 	it('Shows the right message message', () => {
 		const wrapper = shallow(
 			<Message
@@ -129,5 +140,11 @@ describe('messageObjectFactory', () => {
 			error: 'false',
 			message: 'Roy'
 		}).error).toBe(false);
+	});
+
+	it('Adds missing message key', () => {
+		expect(messageObjectFactory({
+			error: 'false',
+		}).message).toBe('');
 	});
 });
