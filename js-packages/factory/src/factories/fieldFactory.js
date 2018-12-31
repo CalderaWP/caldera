@@ -8,18 +8,23 @@ import {
 import React, {Fragment} from 'react';
 
 
+function messageObjectIsValid(messages){
+	return 'object' === typeof messages && messages.hasOwnProperty('message');
+}
 const TheMessage = (messages, fieldId) => {
-	return undefined !== typeof messages && messages.hasOwnProperty('message') ? <Message
+	return <Message
 		message={{
 			message: 'Hi Roy',
 			error: false,
 		}}
-	/> : <Fragment/>;
+	/>;
 }
 export const fieldFactory = (field, onChange, onBlur) => {
 	const {fieldType, label, attributes, options, fieldId, messages} = field;
-
-	const Message = TheMessage(messages, fieldId);
+	let Message;
+	if( messageObjectIsValid(messages)){
+		 Message = TheMessage(messages, fieldId);
+	}
 	switch (fieldType) {
 		case 'checkbox':
 		case 'checkboxes' :
@@ -49,13 +54,19 @@ export const fieldFactory = (field, onChange, onBlur) => {
 								onChange={onChange}
 							/>
 						})}
-						<Message/>
+						{ messageObjectIsValid(messages) &&
+							<TheMessage/>
+						}
 					</FieldSet>
 				);
 			} else {
 				return <InputField
 					{...field} onChange={onChange}
-				><TheMessage/></InputField>
+				>
+					{ messageObjectIsValid(messages) &&
+						<TheMessage/>
+					}
+				</InputField>
 			}
 			break;
 		case 'select':
@@ -64,7 +75,11 @@ export const fieldFactory = (field, onChange, onBlur) => {
 				{...field}
 				onChange={onChange}
 
-			><Message/></SelectField>;
+			>
+				{ messageObjectIsValid(messages) &&
+					<TheMessage/>
+				}
+			</SelectField>;
 			break;
 		case 'text':
 		case 'email':
@@ -80,7 +95,12 @@ export const fieldFactory = (field, onChange, onBlur) => {
 			return <InputField
 				{...field}
 				onChange={onChange}
-			><TheMessage/></InputField>
+			>
+
+				{ messageObjectIsValid(messages) &&
+					<TheMessage/>
+				}
+			</InputField>
 			break;
 	}
 }

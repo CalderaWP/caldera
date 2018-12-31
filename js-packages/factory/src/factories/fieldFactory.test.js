@@ -1,4 +1,4 @@
-import fieldFactory  from './fieldFactory';
+import {fieldFactory}  from './fieldFactory';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
