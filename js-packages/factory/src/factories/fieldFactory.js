@@ -2,14 +2,25 @@ import {
 	InputField,
 	SelectField,
 	isValidHtml5type,
-	FieldSet
+	FieldSet,
+	Message
 } from '@caldera-labs/components';
-import React from 'react';
+import React, {Fragment} from 'react';
 
-export const fieldFactory = ( field, onChange, onBlur ) => {
-	const {fieldType, label, attributes, options, fieldId} = field;
 
-	switch( fieldType ){
+const TheMessage = (messages, fieldId) => {
+	return undefined !== typeof messages && messages.hasOwnProperty('message') ? <Message
+		message={{
+			message: 'Hi Roy',
+			error: false,
+		}}
+	/> : <Fragment/>;
+}
+export const fieldFactory = (field, onChange, onBlur) => {
+	const {fieldType, label, attributes, options, fieldId, messages} = field;
+
+	const Message = TheMessage(messages, fieldId);
+	switch (fieldType) {
 		case 'checkbox':
 		case 'checkboxes' :
 			if ('checkboxes' === fieldType || fieldType.hasOwnProperty('options')) {
@@ -26,7 +37,7 @@ export const fieldFactory = ( field, onChange, onBlur ) => {
 								description,
 								attributes
 							} = option;
-							const fieldId =  option.hasOwnProperty('id') ? option.id : `opt-${fieldId}-${option.value}`;
+							const fieldId = option.hasOwnProperty('id') ? option.id : `opt-${fieldId}-${option.value}`;
 							return <InputField
 								key={fieldId}
 								fieldId={fieldId}
@@ -38,12 +49,13 @@ export const fieldFactory = ( field, onChange, onBlur ) => {
 								onChange={onChange}
 							/>
 						})}
+						<Message/>
 					</FieldSet>
 				);
-			}else {
+			} else {
 				return <InputField
-					{...field} 								onChange={onChange}
-				/>
+					{...field} onChange={onChange}
+				><TheMessage/></InputField>
 			}
 			break;
 		case 'select':
@@ -52,23 +64,23 @@ export const fieldFactory = ( field, onChange, onBlur ) => {
 				{...field}
 				onChange={onChange}
 
-			/>;
+			><Message/></SelectField>;
 			break;
 		case 'text':
 		case 'email':
 		case 'number':
 		case 'input':
 		default:
-			if( isValidHtml5type(fieldType)){
+			if (isValidHtml5type(fieldType)) {
 				field.html5type = fieldType;
-			}else{
+			} else {
 				field.html5type = 'text';
 
 			}
 			return <InputField
 				{...field}
 				onChange={onChange}
-			/>
-		break;
+			><TheMessage/></InputField>
+			break;
 	}
 }

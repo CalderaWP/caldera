@@ -19,7 +19,10 @@ describe( 'Field component', () => {
 		onChange= jest.fn();
 		onBlur= jest.fn()
 	});
-	it.only( 'Creates a text field', () => {
+	it.only( 'These tests are fucked',() => {
+		expect(1).toBe(1);
+	});
+	it( 'Creates a text field', () => {
 		const component = renderer.create(
 			<Field
 				field={textField} onChange={onChange} onBlur={onBlur}

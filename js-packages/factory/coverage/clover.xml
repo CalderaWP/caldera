@@ -1,55 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1546219431626" clover="3.2.0">
-  <project timestamp="1546219431626" name="All files">
-    <metrics statements="29" coveredstatements="18" conditionals="17" coveredconditionals="6" methods="5" coveredmethods="4" elements="51" coveredelements="28" complexity="0" loc="29" ncloc="29" packages="3" files="4" classes="4">
+<coverage generated="1546221668411" clover="3.2.0">
+  <project timestamp="1546221668411" name="All files">
+    <metrics statements="43" coveredstatements="24" conditionals="23" coveredconditionals="1" methods="10" coveredmethods="6" elements="76" coveredelements="31" complexity="0" loc="43" ncloc="43" packages="3" files="6" classes="6">
       <package name="src">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="fields.fixtures.js" path="/Users/josh/caldera/js-packages/factory/src/fields.fixtures.js">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="3" type="stmt"/>
-          <line num="32" count="3" type="stmt"/>
-          <line num="49" count="3" type="stmt"/>
-          <line num="60" count="3" type="stmt"/>
-          <line num="73" count="3" type="stmt"/>
-          <line num="82" count="3" type="stmt"/>
+          <line num="1" count="5" type="stmt"/>
+          <line num="32" count="5" type="stmt"/>
+          <line num="49" count="5" type="stmt"/>
+          <line num="60" count="5" type="stmt"/>
+          <line num="73" count="5" type="stmt"/>
+          <line num="82" count="5" type="stmt"/>
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <metrics statements="17" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="6"/>
         <file name="Field.js" path="/Users/josh/caldera/js-packages/factory/src/components/Field.js">
-          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="7" count="1" type="stmt"/>
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
         </file>
         <file name="Fields.js" path="/Users/josh/caldera/js-packages/factory/src/components/Fields.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="9" count="12" type="stmt"/>
+          <line num="18" count="3" type="stmt"/>
+        </file>
+        <file name="Row.js" path="/Users/josh/caldera/js-packages/factory/src/components/Row.js">
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="30" count="2" type="stmt"/>
+          <line num="32" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="60" count="2" type="stmt"/>
+          <line num="72" count="2" type="stmt"/>
+        </file>
+        <file name="Rows.js" path="/Users/josh/caldera/js-packages/factory/src/components/Rows.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="5" count="1" type="stmt"/>
-          <line num="8" count="2" type="stmt"/>
-          <line num="9" count="8" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
           <line num="18" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.factories">
-        <metrics statements="17" coveredstatements="6" conditionals="17" coveredconditionals="6" methods="2" coveredmethods="1"/>
+        <metrics statements="20" coveredstatements="2" conditionals="21" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <file name="fieldFactory.js" path="/Users/josh/caldera/js-packages/factory/src/factories/fieldFactory.js">
-          <metrics statements="17" coveredstatements="6" conditionals="17" coveredconditionals="6" methods="2" coveredmethods="1"/>
-          <line num="9" count="3" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="12" count="1" type="cond" truecount="5" falsecount="4"/>
-          <line num="15" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="28" count="0" type="stmt"/>
-          <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="30" count="0" type="stmt"/>
-          <line num="44" count="0" type="stmt"/>
-          <line num="48" count="0" type="stmt"/>
-          <line num="51" count="0" type="stmt"/>
+          <metrics statements="20" coveredstatements="2" conditionals="21" coveredconditionals="0" methods="3" coveredmethods="0"/>
+          <line num="11" count="5" type="stmt"/>
+          <line num="12" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="19" count="5" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="23" count="0" type="cond" truecount="0" falsecount="9"/>
+          <line num="26" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="41" count="0" type="stmt"/>
           <line num="56" count="0" type="stmt"/>
-          <line num="62" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="63" count="1" type="stmt"/>
-          <line num="65" count="0" type="stmt"/>
-          <line num="68" count="1" type="stmt"/>
-          <line num="72" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="74" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="77" count="0" type="stmt"/>
+          <line num="80" count="0" type="stmt"/>
+          <line num="84" count="0" type="stmt"/>
         </file>
       </package>
     </metrics>

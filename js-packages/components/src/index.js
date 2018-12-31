@@ -6,6 +6,8 @@ export { FieldLabel } from './components/fields/FieldLabel/FieldLabel';
 export { FieldSet } from './components/fields/FieldSet/FieldSet';
 export { Input } from './components/fields/controls/Input';
 export { Select } from './components/fields/controls/Select';
+export { Message } from './components/Messages/Message';
+export { messageObjectFactory } from './components/Messages/messageObjectFactory';
 export {
 	addOrRemoveFromArray,
 	toBoolean,

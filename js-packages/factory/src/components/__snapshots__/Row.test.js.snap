@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row component Creates a 2 column  row 1`] = `
+<div
+  className="sc-bdVaJa caldera-row sc-bwzfXH pjOvZ"
+  id="twoColumns"
+>
+  <div
+    className="sc-bdVaJa dihzyz"
+    id={undefined}
+    width="1/2"
+  >
+    <div
+      className="caldera-fields-wrapper"
+    />
+  </div>
+  <div
+    className="sc-bdVaJa dihzyz"
+    id={undefined}
+    width="1/2"
+  >
+    <div
+      className="caldera-fields-wrapper"
+    />
+  </div>
+</div>
+`;

@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">35.29% </span>
+        <span class="strong">10% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>6/17</span>
+        <span class='fraction'>2/20</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">35.29% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>6/17</span>
+        <span class='fraction'>0/21</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">35.29% </span>
+        <span class="strong">10% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/17</span>
+        <span class='fraction'>2/20</span>
       </div>
     </div>
   </div>
@@ -117,7 +117,19 @@
 72
 73
 74
-75</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -125,10 +137,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -160,31 +183,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -195,16 +219,27 @@
 	InputField,
 	SelectField,
 	isValidHtml5type,
-	FieldSet
+	FieldSet,
+	Message
 } from '@caldera-labs/components';
-import React from 'react';
+import React, {Fragment} from 'react';
 &nbsp;
-export const fieldFactory = ( field, onChange, onBlur ) =&gt; {
-	const {fieldType, label, attributes, options, fieldId} = field;
 &nbsp;
-	switch( fieldType ){
-<span class="branch-0 cbranch-no" title="branch not covered" >		case 'checkbox':</span>
-<span class="branch-1 cbranch-no" title="branch not covered" >		case 'checkboxes' :</span>
+const TheMessage = <span class="fstat-no" title="function not covered" >(m</span>essages, fieldId) =&gt; {
+<span class="cstat-no" title="statement not covered" >	return undefined !== typeof messages &amp;&amp; messages.hasOwnProperty('message') ? &lt;Message</span>
+		message={{
+			message: 'Hi Roy',
+			error: false,
+		}}
+	/&gt; : &lt;Fragment/&gt;;
+}
+export const fieldFactory = <span class="fstat-no" title="function not covered" >(f</span>ield, onChange, onBlur) =&gt; {
+	const {fieldType, label, attributes, options, fieldId, messages} = <span class="cstat-no" title="statement not covered" >field;</span>
+&nbsp;
+	const Message = <span class="cstat-no" title="statement not covered" >TheMessage(messages, fieldId);</span>
+<span class="cstat-no" title="statement not covered" >	switch (fieldType) {</span>
+		case 'checkbox':
+		case 'checkboxes' :
 <span class="cstat-no" title="statement not covered" >			if ('checkboxes' === fieldType || fieldType.hasOwnProperty('options')) {</span>
 <span class="cstat-no" title="statement not covered" >				return (</span>
 					&lt;FieldSet
@@ -219,7 +254,7 @@ export const fieldFactory = ( field, onChange, onBlur ) =&gt; {
 								description,
 								attributes
 							} = <span class="cstat-no" title="statement not covered" >option;</span>
-							const fieldId =  <span class="cstat-no" title="statement not covered" >option.hasOwnProperty('id') ? option.id : `opt-${fieldId}-${option.value}`;</span>
+							const fieldId = <span class="cstat-no" title="statement not covered" >option.hasOwnProperty('id') ? option.id : `opt-${fieldId}-${option.value}`;</span>
 <span class="cstat-no" title="statement not covered" >							return &lt;InputField</span>
 								key={fieldId}
 								fieldId={fieldId}
@@ -231,38 +266,39 @@ export const fieldFactory = ( field, onChange, onBlur ) =&gt; {
 								onChange={onChange}
 							/&gt;
 						})}
+						&lt;Message/&gt;
 					&lt;/FieldSet&gt;
 				);
-			}else {
+			} else {
 <span class="cstat-no" title="statement not covered" >				return &lt;InputField</span>
-					{...field} 								onChange={onChange}
-				/&gt;
+					{...field} onChange={onChange}
+				&gt;&lt;TheMessage/&gt;&lt;/InputField&gt;
 			}
 <span class="cstat-no" title="statement not covered" >			break;</span>
-<span class="branch-2 cbranch-no" title="branch not covered" >		case 'select':</span>
-<span class="branch-3 cbranch-no" title="branch not covered" >		case 'dropdown':</span>
+		case 'select':
+		case 'dropdown':
 <span class="cstat-no" title="statement not covered" >			return &lt;SelectField</span>
 				{...field}
 				onChange={onChange}
 &nbsp;
-			/&gt;;
+			&gt;&lt;Message/&gt;&lt;/SelectField&gt;;
 <span class="cstat-no" title="statement not covered" >			break;</span>
 		case 'text':
 		case 'email':
 		case 'number':
 		case 'input':
 		default:
-			<span class="missing-if-branch" title="else path not taken" >E</span>if( isValidHtml5type(fieldType)){
-				field.html5type = fieldType;
-			}else{
+<span class="cstat-no" title="statement not covered" >			if (isValidHtml5type(fieldType)) {</span>
+<span class="cstat-no" title="statement not covered" >				field.html5type = fieldType;</span>
+			} else {
 <span class="cstat-no" title="statement not covered" >				field.html5type = 'text';</span>
 &nbsp;
 			}
-			return &lt;InputField
+<span class="cstat-no" title="statement not covered" >			return &lt;InputField</span>
 				{...field}
 				onChange={onChange}
-			/&gt;
-<span class="cstat-no" title="statement not covered" >		break;</span>
+			&gt;&lt;TheMessage/&gt;&lt;/InputField&gt;
+<span class="cstat-no" title="statement not covered" >			break;</span>
 	}
 }
 &nbsp;</pre></td></tr>
@@ -271,7 +307,7 @@ export const fieldFactory = ( field, onChange, onBlur ) =&gt; {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 30 2018 20:23:51 GMT-0500 (EST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 30 2018 21:01:08 GMT-0500 (EST)
 </div>
 </div>
 <script src="../../prettify.js"></script>
