@@ -26,7 +26,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SelectField = exports.SelectField = function SelectField(props) {
 	var attributes = props.attributes,
 	    label = props.label,
-	    fieldId = props.fieldId;
+	    fieldId = props.fieldId,
+	    children = props.children;
 
 	attributes = (0, _util.parseAttributes)(attributes, 'select');
 	return _react2.default.createElement(
@@ -41,7 +42,8 @@ var SelectField = exports.SelectField = function SelectField(props) {
 			},
 			label
 		),
-		_react2.default.createElement(_Select.Select, props)
+		_react2.default.createElement(_Select.Select, props),
+		children
 	);
 };
 

@@ -33,7 +33,8 @@ var InputField = exports.InputField = function InputField(_ref) {
 	    value = _ref.value,
 	    onChange = _ref.onChange,
 	    onBlur = _ref.onBlur,
-	    attributes = _ref.attributes;
+	    attributes = _ref.attributes,
+	    children = _ref.children;
 
 
 	var fieldType = (0, _util.isValidHtml5type)(html5type) ? html5type : 'text';
@@ -59,7 +60,8 @@ var InputField = exports.InputField = function InputField(_ref) {
 			onBlur: onBlur,
 			help: description,
 			attributes: _attributes
-		})
+		}),
+		children
 	);
 };
 

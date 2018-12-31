@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/Messages/Message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/Messages/messageObjectFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/Messages/messagePropTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/clover.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/coverage-final.json" afterDir="false" />
@@ -28,11 +32,6 @@
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/__snapshots__/InputField.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/__snapshots__/InputField.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
           <entry key="gitignore" value="3" />
           <entry key="html" value="1" />
           <entry key="inc" value="1" />
-          <entry key="js" value="145" />
+          <entry key="js" value="148" />
           <entry key="json" value="88" />
           <entry key="log" value="1" />
           <entry key="md" value="47" />
@@ -76,7 +75,7 @@
           <entry key="php" value="1303" />
           <entry key="php_cs" value="1" />
           <entry key="sh" value="9" />
-          <entry key="snap" value="16" />
+          <entry key="snap" value="21" />
           <entry key="test" value="1" />
           <entry key="test-integration" value="1" />
           <entry key="test-packages" value="1" />
@@ -91,8 +90,8 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="89" />
-          <entry key="JavaScript" value="145" />
-          <entry key="Jest Snapshot" value="16" />
+          <entry key="JavaScript" value="148" />
+          <entry key="Jest Snapshot" value="21" />
           <entry key="Markdown" value="47" />
           <entry key="PHP" value="1304" />
           <entry key="PLAIN_TEXT" value="21" />
@@ -106,7 +105,7 @@
           <entry key="dummy" value="42" />
           <entry key="env" value="16" />
           <entry key="gitignore" value="62" />
-          <entry key="js" value="9803" />
+          <entry key="js" value="9866" />
           <entry key="json" value="2681" />
           <entry key="md" value="7666" />
           <entry key="php" value="71295" />
@@ -121,7 +120,7 @@
           <entry key=".env file" value="16" />
           <entry key="Bash" value="738" />
           <entry key="JSON" value="2681" />
-          <entry key="JavaScript" value="9808" />
+          <entry key="JavaScript" value="9871" />
           <entry key="Jest Snapshot" value="11" />
           <entry key="Markdown" value="7652" />
           <entry key="PHP" value="71304" />
@@ -151,7 +150,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -159,6 +158,48 @@
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/__snapshots__/SelectField.test.js.snap">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/Messages/Message.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/Messages/messageObjectFactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -204,60 +245,6 @@
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Fields.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="56" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -342,8 +329,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.test.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsEmail.test.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputFieldAsNumber.test.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/util/fieldSetClassNames.js" />
@@ -393,6 +378,8 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/Messages/messageObjectFactory.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js" />
       </list>
     </option>
   </component>
@@ -581,7 +568,7 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="Messages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -590,28 +577,8 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="FieldWrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="InputField" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="SelectField" type="462c0819:PsiDirectoryNode" />
+              <item name="Messages" type="462c0819:PsiDirectoryNode" />
+              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -765,11 +732,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components" />
       <recent name="$PROJECT_DIR$/js-packages/factory/src/components" />
       <recent name="$PROJECT_DIR$/js-packages" />
       <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField" />
       <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields/util" />
-      <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields/FieldLabel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js-packages/factory/src/factories" />
@@ -791,43 +758,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.fieldFactory.Creates an select field identified as dropdown">
-    <configuration name="InputField  as number.Allows min, max and step attributes" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Message component.Renders message">
+    <configuration name="Message component.Renders message" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$/js-packages/components" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputFieldAsNumber.test.js" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js" />
       <test-names>
-        <test-name value="InputField  as number" />
-        <test-name value="Allows min, max and step attributes" />
+        <test-name value="Message component" />
+        <test-name value="Renders message" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="fieldFactory.Creates a number field" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="Message component.Shows a message" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/factory" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js" />
       <test-names>
-        <test-name value="fieldFactory" />
-        <test-name value="Creates a number field" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="fieldFactory.Creates a text field" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/factory" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" />
-      <test-names>
-        <test-name value="fieldFactory" />
-        <test-name value="Creates a text field" />
+        <test-name value="Message component" />
+        <test-name value="Shows a message" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -857,20 +811,32 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="messageObjectFactory" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js" />
+      <test-names>
+        <test-name value="messageObjectFactory" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Jest.fieldFactory.Creates a text field" />
-      <item itemvalue="Jest.fieldFactory.Creates a number field" />
-      <item itemvalue="Jest.InputField  as number.Allows min, max and step attributes" />
       <item itemvalue="Jest.fieldFactory.Creates an select field" />
       <item itemvalue="Jest.fieldFactory.Creates an select field identified as dropdown" />
+      <item itemvalue="Jest.Message component.Shows a message" />
+      <item itemvalue="Jest.messageObjectFactory" />
+      <item itemvalue="Jest.Message component.Renders message" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Message component.Renders message" />
+        <item itemvalue="Jest.messageObjectFactory" />
+        <item itemvalue="Jest.Message component.Shows a message" />
         <item itemvalue="Jest.fieldFactory.Creates an select field identified as dropdown" />
         <item itemvalue="Jest.fieldFactory.Creates an select field" />
-        <item itemvalue="Jest.InputField  as number.Allows min, max and step attributes" />
-        <item itemvalue="Jest.fieldFactory.Creates a number field" />
-        <item itemvalue="Jest.fieldFactory.Creates a text field" />
       </list>
     </recent_temporary>
   </component>
@@ -887,20 +853,11 @@
       <workItem from="1545406861569" duration="7802000" />
       <workItem from="1545416235667" duration="36452000" />
       <workItem from="1546136900545" duration="1616000" />
-      <workItem from="1546211702081" duration="7302000" />
+      <workItem from="1546211702081" duration="7637000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="fieldFactory_Creates_a_number_field - 2018.12.30 at 18h 58m 50s.xml">
-      <configuration name="fieldFactory.Creates a number field" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="fieldFactory_Creates_a_number_field - 2018.12.30 at 18h 59m 14s.xml">
-      <configuration name="fieldFactory.Creates a number field" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="InputField__as_number_Allows_min,_max_and_step_attributes - 2018.12.30 at 19h 06m 42s.xml">
-      <configuration name="InputField  as number.Allows min, max and step attributes" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="InputField__as_number_Allows_min,_max_and_step_attributes - 2018.12.30 at 19h 07m 12s.xml">
       <configuration name="InputField  as number.Allows min, max and step attributes" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -922,9 +879,18 @@
     <history-entry file="fieldFactory_Creates_an_select_field_identified_as_dropdown - 2018.12.30 at 19h 49m 53s.xml">
       <configuration name="fieldFactory.Creates an select field identified as dropdown" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="Message_component_Shows_a_message - 2018.12.30 at 20h 22m 07s.xml">
+      <configuration name="Message component.Shows a message" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="messageObjectFactory - 2018.12.30 at 20h 22m 21s.xml">
+      <configuration name="messageObjectFactory" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Message_component_Renders_message - 2018.12.30 at 20h 22m 40s.xml">
+      <configuration name="Message component.Renders message" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183492000" />
+    <option name="totallyTimeSpent" value="183827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="175" y="23" width="1632" height="967" extended-state="0" />
@@ -935,7 +901,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" weight="0.32914287" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32914287" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32914287" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1142,35 +1108,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/__snapshots__/FieldWrapper.test.js.snap">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.story.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.story.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/FieldSet/__snapshots__/FieldSet.test.js.snap" />
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/fieldSetClassNames.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1523,6 +1460,47 @@
           <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/__snapshots__/SelectField.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/Messages/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/Messages/messageObjectFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/Messages/__snapshots__/Messages.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
