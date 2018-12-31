@@ -111,6 +111,11 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
 * Change package name and description in package's package.json.
 * In root directory add package to monorepo.
     - `yarn lerna bootstrap`
+* Change storybook port to a unique port to avoid collisions with other libraries.
+    - In package.json, scripts -> storybook, argument is `-p`
+* Add build and test commands to main package.json (monorepo)
+    - ` "build:<package-name>": "lerna exec --scope @caldera-labs/<package-name> -- babel src -d dist --ignore test.js,story.js,fixtures.js",`
+    - `"test:<package-name>": "cd js-packages/<package-name> && yarn test"`
 #### See
 * https://github.com/lerna/lerna/blob/master/commands/bootstrap/README.md
 ### Also See

@@ -9,6 +9,8 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@storybook/addon-options": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
     "@wordpress/components": "^7.0.4",
     "@wordpress/editor": "^9.0.6",
     "@wordpress/element": "^2.1.8",

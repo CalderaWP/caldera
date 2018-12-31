@@ -8,11 +8,11 @@
   "scripts": {
     "test": "yarn test:watch",
     "test:watch": "jest --watch",
-    "test:once": "jest",
+    "test:once": "jest -ci",
     "lint": "eslint 'src/**/*.js'",
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
-    "build": "babel src -d dist --ignore test.js,story.js",
+    "build": "babel src -d dist --ignore test.js,story.js,fixture.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -60,6 +60,8 @@
     "collectCoverage": true
   },
   "dependencies": {
+    "@storybook/addon-options": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
     "@wordpress/components": "^7.0.4",
     "@wordpress/compose": "^3.0.0",
     "@wordpress/editor": "^9.0.6",
