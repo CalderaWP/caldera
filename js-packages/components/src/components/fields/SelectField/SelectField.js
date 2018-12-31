@@ -9,7 +9,8 @@ export  const SelectField = (props) => {
 	let {
 		attributes,
 		label,
-		fieldId
+		fieldId,
+		children
 	} = props;
 	attributes = parseAttributes(attributes,'select');
 	return (
@@ -24,6 +25,7 @@ export  const SelectField = (props) => {
 			<Select
 				{...props}
 			/>
+			{children}
 		</FieldWrapper>
 	)
 };

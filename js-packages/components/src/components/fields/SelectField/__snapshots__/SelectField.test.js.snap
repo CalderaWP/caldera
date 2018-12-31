@@ -25,3 +25,19 @@ exports[`Select Field component matches snapshot, not multiple 1`] = `
   </label>
 </div>
 `;
+
+exports[`Select Field component outputs children 1`] = `
+<div
+  className="caldera-field caldera-field-select"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="selection-hats"
+  >
+    Select A Hat
+  </label>
+  <div>
+    CHILDRENS!
+  </div>
+</div>
+`;

@@ -1,5 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`InputField  Outputs childen 1`] = `
+<div
+  className="caldera-field caldera-field-text"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor={undefined}
+  >
+    Hi Roy
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id={undefined}
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Hello"
+        type="text"
+        value="Roy"
+      />
+    </div>
+  </div>
+  <div>
+    The Children!
+  </div>
+</div>
+`;
+
 exports[`InputField  matches snapshot with all props 1`] = `
 <div
   className="caldera-field caldera-field-text"

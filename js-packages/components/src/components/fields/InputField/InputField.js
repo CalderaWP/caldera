@@ -15,7 +15,8 @@ export const InputField = ({
 							  value,
 							  onChange,
 							  onBlur,
-							  attributes
+							  attributes,
+	children
 						  }) => {
 
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
@@ -39,6 +40,7 @@ export const InputField = ({
 				help={description}
 				attributes={_attributes}
 			/>
+			{children}
 		</FieldWrapper>
 	)
 };

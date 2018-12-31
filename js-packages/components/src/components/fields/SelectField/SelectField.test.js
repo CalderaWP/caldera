@@ -21,6 +21,18 @@ describe( 'Select Field component', () => {
 
 	});
 
+	it( 'outputs children', () => {
+		const component = renderer.create(<SelectField
+			label={'Select A Hat'}
+			description={'selection of hats' }
+			fieldId={'selection-hats' }
+			required={false}
+			multiple={false}
+		><div>CHILDRENS!</div></SelectField>);
+		expect(component.toJSON()).toMatchSnapshot();
+
+	});
+
 	it( 'matches snapshot, multiple', () => {
 		const component = renderer.create(<SelectField
 			label={'Select  Hats'}
@@ -32,6 +44,8 @@ describe( 'Select Field component', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 
 	});
+
+
 
 	it( 'Fires on change event', () => {
 		const component = mount(<SelectField

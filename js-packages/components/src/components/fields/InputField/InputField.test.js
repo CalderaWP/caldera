@@ -26,6 +26,19 @@ describe('InputField ', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
+	it( 'Outputs childen', () =>  {
+		const component = renderer.create(<InputField
+			label={'Hi Roy'}
+			description={'Say Hi'}
+			placeholder={'Hello'}
+			html5type={'text'}
+			value={'Roy'}
+			onChange={onChange}
+			onBlur={onBlur}
+		><div>The Children!</div></InputField>);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
 	it( 'Uses text when html5type is not valid', () =>  {
 		const component = mount(<InputField
 			label={'Hi Roy'}
