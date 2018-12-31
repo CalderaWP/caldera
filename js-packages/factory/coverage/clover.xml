@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1546217907949" clover="3.2.0">
-  <project timestamp="1546217907949" name="All files">
+<coverage generated="1546218013333" clover="3.2.0">
+  <project timestamp="1546218013333" name="All files">
     <metrics statements="25" coveredstatements="10" conditionals="17" coveredconditionals="0" methods="3" coveredmethods="2" elements="45" coveredelements="12" complexity="0" loc="25" ncloc="25" packages="3" files="3" classes="3">
       <package name="src">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -16,7 +16,7 @@
       </package>
       <package name="src.components">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <file name="FieldGroup.js" path="/Users/josh/caldera/js-packages/factory/src/components/FieldGroup.js">
+        <file name="Fields.js" path="/Users/josh/caldera/js-packages/factory/src/components/Fields.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="4" count="1" type="stmt"/>
           <line num="7" count="1" type="stmt"/>

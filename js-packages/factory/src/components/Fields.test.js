@@ -9,11 +9,10 @@ import {
 	textField,
 	emailField
 } from '../fields.fixtures';
-import fieldFactory  from '../factories/fieldFactory';
 
-import {FieldGroup} from './FieldGroup';
+import {Fields} from './Fields';
 
-describe( 'FieldGroup component', () => {
+describe( 'Fields component', () => {
 	let onChange;
 	let onBlur;
 	beforeEach( () => {
@@ -22,7 +21,7 @@ describe( 'FieldGroup component', () => {
 	});
 	it.only( 'Creates a text field', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<Fields
 				{...textField} onChange={onChange} onBlur={onBlur}
 		/>
 		);
@@ -30,7 +29,7 @@ describe( 'FieldGroup component', () => {
 	});
 	it( 'Creates a number field', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<Fields
 				{...numberField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -39,7 +38,7 @@ describe( 'FieldGroup component', () => {
 
 	it( 'Creates an email field', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<Fields
 				{...emailField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -48,7 +47,7 @@ describe( 'FieldGroup component', () => {
 
 	it( 'Creates an checkbox field field', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<Fields
 				{...checkboxField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -57,7 +56,7 @@ describe( 'FieldGroup component', () => {
 
 	it( 'Creates an checkbox field set', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<Fields
 				{...checkboxFieldset} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -66,7 +65,7 @@ describe( 'FieldGroup component', () => {
 
 	it( 'Creates an select field', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<Fields
 				{...selectField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -75,7 +74,7 @@ describe( 'FieldGroup component', () => {
 
 	it( 'Creates an select field identified as dropdown', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<Fields
 				{...{
 					...selectField,
 					fieldType:'dropdown'
