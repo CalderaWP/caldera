@@ -5,7 +5,8 @@ import {
 	isValidHtml5type,
 	addOrRemoveFromArray,
 	toBoolean,
-	fieldSetClassNames
+	fieldSetClassNames,
+	fieldWrapperClassNames
 } from './index'
 
 describe( 'parseAttributes util function', () => {
@@ -59,6 +60,12 @@ describe( 'parseAttributes util function', () => {
 
 });
 
+
+describe( 'fieldWrapperClassNames util function', () => {
+	it( 'adds type', ()=> {
+		expect( fieldWrapperClassNames('text') ).toEqual("caldera-field-wrapper caldera-field-wrapper-text")
+	});
+});
 describe( 'fieldClassNames util function', () => {
 	it( 'adds type', ()=> {
 		expect( fieldClassNames('text') ).toEqual('caldera-field caldera-field-text')

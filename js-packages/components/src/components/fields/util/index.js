@@ -2,6 +2,7 @@ import {parseAttributes} from './parseAttributes'
 import {fieldClassNames} from './fieldClassNames';
 import {labelClassNames} from './labelClassNames';
 import {fieldSetClassNames} from './fieldSetClassNames';
+import {fieldWrapperClassNames} from './fieldWrapperClassNames';
 
 
 /**
@@ -72,5 +73,6 @@ export {
 	addOrRemoveFromArray,
 	toBoolean,
 	isValidHtml5type,
-	fieldSetClassNames
+	fieldSetClassNames,
+	fieldWrapperClassNames
 }

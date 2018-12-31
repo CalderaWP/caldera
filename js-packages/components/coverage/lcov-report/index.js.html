@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.08% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/13</span>
+        <span class='fraction'>3/12</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.08% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/13</span>
+        <span class='fraction'>3/12</span>
       </div>
     </div>
   </div>
@@ -119,31 +119,7 @@
 74
 75
 76
-77
-78
-79
-80
-81
-82
-83
-84</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+77</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -157,6 +133,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -194,7 +181,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -213,11 +199,15 @@
 import {fieldClassNames} from './fieldClassNames';
 import {labelClassNames} from './labelClassNames';
 import {fieldSetClassNames} from './fieldSetClassNames';
+&nbsp;
+&nbsp;
 /**
- * Get HTML5 input types that are valid
- * @returns {string[]}
+ * Checks if a given input type is an acceptable HTML5 input type
+ *
+ * @param {String} type
+ * @returns {boolean}
  */
-function <span class="fstat-no" title="function not covered" >getHtml5InputTypes(</span>) {
+const isValidHtml5type = <span class="fstat-no" title="function not covered" >(t</span>ype) =&gt; {
 <span class="cstat-no" title="statement not covered" >	return [</span>
 		'text',
 		'email',
@@ -229,17 +219,7 @@ function <span class="fstat-no" title="function not covered" >getHtml5InputTypes
 		'reset',
 		'checkbox',
 		'hidden'
-	];
-}
-&nbsp;
-/**
- * Checks if a given input type is an acceptable HTML5 input type
- *
- * @param {String} type
- * @returns {boolean}
- */
-const isValidHtml5type = <span class="fstat-no" title="function not covered" >(t</span>ype) =&gt; {
-<span class="cstat-no" title="statement not covered" >	return getHtml5InputTypes().includes(type);</span>
+	].includes(type);
 }
 &nbsp;
 &nbsp;
@@ -286,7 +266,6 @@ export {
 	parseAttributes,
 	fieldClassNames,
 	labelClassNames,
-	getHtml5InputTypes,
 	addOrRemoveFromArray,
 	toBoolean,
 	isValidHtml5type,
@@ -298,7 +277,7 @@ export {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 30 2018 17:32:43 GMT-0500 (EST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 31 2018 15:45:35 GMT-0500 (EST)
 </div>
 </div>
 <script src="prettify.js"></script>

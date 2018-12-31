@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.81% </span>
+        <span class="strong">26.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>5/21</span>
+        <span class='fraction'>8/30</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/9</span>
+        <span class='fraction'>0/14</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.81% </span>
+        <span class="strong">26.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>5/21</span>
+        <span class='fraction'>8/30</span>
       </div>
     </div>
   </div>
@@ -121,7 +121,37 @@
 76
 77
 78
-79</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -161,6 +191,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -175,12 +223,24 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -237,39 +297,69 @@ const fieldSetAttrs = [
 	'form',
 	'name',
 ];
+&nbsp;
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option#Attributes
+const selectAttrs = [
+	'disabled',
+	'label',
+	'selected',
+	'value'
+];
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Additional_attributes
+const checkboxAttrs = [
+	'checked',
+	'value'
+];
+&nbsp;
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#Additional_attributes
+const radioAttrs = [
+	'checked'
+];
 /**
  *
  * @param {Object} attributes
  * @param {Array|string|null} allowed
  */
-export const parseAttributes = <span class="fstat-no" title="function not covered" >( </span>attributes, allowed = <span class="branch-0 cbranch-no" title="branch not covered" >null </span>) =&gt; {
+export const parseAttributes = <span class="fstat-no" title="function not covered" >(a</span>ttributes, allowed = <span class="branch-0 cbranch-no" title="branch not covered" >null)</span> =&gt; {
 &nbsp;
 <span class="cstat-no" title="statement not covered" >	switch (allowed) {</span>
 		case 'number':
-<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs,...numberAttrs];</span>
+<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs, ...numberAttrs];</span>
 <span class="cstat-no" title="statement not covered" >			break;</span>
 		case 'fieldSet' :
 		case 'fieldset' :
-<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs,...fieldSetAttrs];</span>
+<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs, ...fieldSetAttrs];</span>
 <span class="cstat-no" title="statement not covered" >			break;</span>
-			case 'email' :
-<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs,...emailAttrs];</span>
+		case 'select' :
+		case 'dropdown' :
+<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs, ...selectAttrs];</span>
 <span class="cstat-no" title="statement not covered" >			break;</span>
+		case 'email' :
+<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs, ...emailAttrs];</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
+			case 'radio' :
+<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs, ...radioAttrs];</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
+		case 'checkbox':
+<span class="cstat-no" title="statement not covered" >			allowed = [...inputAttrs,...checkboxAttrs];</span>
+<span class="cstat-no" title="statement not covered" >			break;</span>
+		case 'text':
 		case 'default':
 		case null :
 <span class="cstat-no" title="statement not covered" >			allowed = inputAttrs;</span>
 <span class="cstat-no" title="statement not covered" >			break;</span>
-	};
+	}
+	;
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	attributes = require('lodash.pick')(attributes,allowed);</span>
+<span class="cstat-no" title="statement not covered" >	attributes = require('lodash.pick')(attributes, allowed);</span>
 &nbsp;
 	const transforms = <span class="cstat-no" title="statement not covered" >{</span>
 		maxlength: 'maxLength',
 		spellcheck: 'spellCheck'
 	};
 <span class="cstat-no" title="statement not covered" >	Object.keys(transforms).forEach(<span class="fstat-no" title="function not covered" >at</span>tr =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >		if( attributes.hasOwnProperty(attr) ){</span>
+<span class="cstat-no" title="statement not covered" >		if (attributes.hasOwnProperty(attr)) {</span>
 <span class="cstat-no" title="statement not covered" >			attributes[transforms[attr]] = attributes[attr];</span>
 <span class="cstat-no" title="statement not covered" >			delete attributes[attr];</span>
 		}
@@ -283,7 +373,7 @@ export const parseAttributes = <span class="fstat-no" title="function not covere
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 30 2018 17:32:43 GMT-0500 (EST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 31 2018 15:45:35 GMT-0500 (EST)
 </div>
 </div>
 <script src="prettify.js"></script>

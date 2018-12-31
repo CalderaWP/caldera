@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.fieldSetClassNames = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.labelClassNames = exports.fieldClassNames = exports.parseAttributes = undefined;
+exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.labelClassNames = exports.fieldClassNames = exports.parseAttributes = undefined;
 
 var _parseAttributes = require('./parseAttributes');
 
@@ -12,6 +12,8 @@ var _fieldClassNames = require('./fieldClassNames');
 var _labelClassNames = require('./labelClassNames');
 
 var _fieldSetClassNames = require('./fieldSetClassNames');
+
+var _fieldWrapperClassNames = require('./fieldWrapperClassNames');
 
 /**
  * Checks if a given input type is an acceptable HTML5 input type
@@ -67,3 +69,4 @@ exports.addOrRemoveFromArray = addOrRemoveFromArray;
 exports.toBoolean = toBoolean;
 exports.isValidHtml5type = isValidHtml5type;
 exports.fieldSetClassNames = _fieldSetClassNames.fieldSetClassNames;
+exports.fieldWrapperClassNames = _fieldWrapperClassNames.fieldWrapperClassNames;

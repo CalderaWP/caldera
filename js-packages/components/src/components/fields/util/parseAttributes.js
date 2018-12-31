@@ -87,15 +87,14 @@ export const parseAttributes = (attributes, allowed = null) => {
 		case null :
 			allowed = inputAttrs;
 			break;
-	}
-	;
+	};
 
 
 	attributes = require('lodash.pick')(attributes, allowed);
 
 	const transforms = {
 		maxlength: 'maxLength',
-		spellcheck: 'spellCheck'
+		spellcheck: 'spellCheck',
 	};
 	Object.keys(transforms).forEach(attr => {
 		if (attributes.hasOwnProperty(attr)) {
@@ -103,6 +102,7 @@ export const parseAttributes = (attributes, allowed = null) => {
 			delete attributes[attr];
 		}
 	});
+
 
 	return attributes;
 };

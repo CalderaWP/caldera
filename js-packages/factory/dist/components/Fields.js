@@ -21,22 +21,28 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _collectFieldValues = require('./collectFieldValues');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var Fields = exports.Fields = function Fields(_ref) {
 	var fields = _ref.fields,
-	    onChange = _ref.onChange,
+	    _onChange = _ref.onChange,
 	    onBlur = _ref.onBlur,
 	    className = _ref.className;
 	return _react2.default.createElement(
 		'div',
 		{ className: (0, _classnames2.default)('caldera-fields-wrapper', className) },
-		fields.forEach(function (field) {
-			return _react2.default.createElement(_Field.Field, _extends({
-				key: field.fieldId
-			}, field, {
-				onChange: onChange,
-				onBlur: onBlur }));
+		fields.map(function (field) {
+			return _react2.default.createElement(_Field.Field, {
+				key: field.fieldId,
+				field: field,
+				onChange: function onChange(newValue) {
+					_onChange(_extends({}, (0, _collectFieldValues.collectFieldValues)(fields), _defineProperty({}, field.fieldId, newValue)));
+				},
+				onBlur: onBlur });
 		})
 	);
 };

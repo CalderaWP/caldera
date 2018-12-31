@@ -54,8 +54,7 @@ var parseAttributes = exports.parseAttributes = function parseAttributes(attribu
 		case null:
 			allowed = inputAttrs;
 			break;
-	}
-	;
+	};
 
 	attributes = require('lodash.pick')(attributes, allowed);
 
