@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Field component Creates a number field 1`] = `
+<div
+  className="caldera-field caldera-field-number"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="numberFieldId"
+  >
+    Number Field Label
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="numberFieldId"
+        max={10}
+        min={1}
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="number"
+        value={3}
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Field component Creates a text field 1`] = `
 <div
   className="caldera-field caldera-field-text"
@@ -27,6 +60,282 @@ exports[`Field component Creates a text field 1`] = `
         value="roy"
       />
     </div>
+  </div>
+</div>
+`;
+
+exports[`Field component Creates an checkbox field field 1`] = `
+<div
+  className="caldera-field caldera-field-text"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="checkboxFieldLabel"
+  >
+    Checkbox Labe
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="checkboxFieldLabel"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="text"
+        value={undefined}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Field component Creates an checkbox field set 1`] = `
+<fieldset
+  className="caldera-fieldset caldera-fieldset-checkboxes"
+>
+  <legend>
+    Checkbox Field Set Label
+  </legend>
+  <div
+    className="caldera-field caldera-field-checkbox"
+  >
+    <label
+      className="caldera-field-label caldera-field-label-undefined"
+      htmlFor="opt-1"
+    >
+      One
+    </label>
+    <div
+      className="components-base-control"
+    >
+      <div
+        className="components-base-control__field"
+      >
+        <input
+          aria-describedby={undefined}
+          className="components-text-control__input"
+          id="opt-1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder={undefined}
+          type="checkbox"
+          value={1}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="caldera-field caldera-field-checkbox"
+  >
+    <label
+      className="caldera-field-label caldera-field-label-undefined"
+      htmlFor="opt-2"
+    >
+      Two
+    </label>
+    <div
+      className="components-base-control"
+    >
+      <div
+        className="components-base-control__field"
+      >
+        <input
+          aria-describedby={undefined}
+          checked={true}
+          className="components-text-control__input"
+          id="opt-2"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder={undefined}
+          type="checkbox"
+          value={2}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="caldera-field caldera-field-checkbox"
+  >
+    <label
+      className="caldera-field-label caldera-field-label-undefined"
+      htmlFor="opt-3"
+    >
+      Three
+    </label>
+    <div
+      className="components-base-control"
+    >
+      <div
+        className="components-base-control__field"
+      >
+        <input
+          aria-describedby={undefined}
+          className="components-text-control__input"
+          id="opt-3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder={undefined}
+          type="checkbox"
+          value={3}
+        />
+      </div>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`Field component Creates an email field 1`] = `
+<div
+  className="caldera-field caldera-field-email"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="emailFieldLabel"
+  >
+    Email Field Label
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="emailFieldLabel"
+        multiple={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="email"
+        value="emai@email.com"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Field component Creates an select field 1`] = `
+<div
+  className="caldera-field caldera-field-select"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="selectFieldId"
+  >
+    Select Field Label
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <label
+        className="components-base-control__label"
+        htmlFor="inspector-select-control-0"
+      >
+        Select Field Label
+      </label>
+      <select
+        aria-describedby="inspector-select-control-0__help"
+        className="components-select-control__input"
+        id="inspector-select-control-0"
+        multiple={false}
+        onBlur={undefined}
+        onChange={[Function]}
+        required={true}
+        value={1}
+      >
+        <option
+          value={0}
+        >
+          Zero
+        </option>
+        <option
+          value={1}
+        >
+          One
+        </option>
+        <option
+          value={2}
+        >
+          Two
+        </option>
+      </select>
+    </div>
+    <p
+      className="components-base-control__help"
+      id="inspector-select-control-0__help"
+    >
+      Select field description
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Field component Creates an select field identified as dropdown 1`] = `
+<div
+  className="caldera-field caldera-field-select"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="selectFieldId"
+  >
+    Select Field Label
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <label
+        className="components-base-control__label"
+        htmlFor="inspector-select-control-1"
+      >
+        Select Field Label
+      </label>
+      <select
+        aria-describedby="inspector-select-control-1__help"
+        className="components-select-control__input"
+        id="inspector-select-control-1"
+        multiple={false}
+        onBlur={undefined}
+        onChange={[Function]}
+        required={true}
+        value={1}
+      >
+        <option
+          value={0}
+        >
+          Zero
+        </option>
+        <option
+          value={1}
+        >
+          One
+        </option>
+        <option
+          value={2}
+        >
+          Two
+        </option>
+      </select>
+    </div>
+    <p
+      className="components-base-control__help"
+      id="inspector-select-control-1__help"
+    >
+      Select field description
+    </p>
   </div>
 </div>
 `;

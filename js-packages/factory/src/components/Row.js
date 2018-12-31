@@ -59,12 +59,18 @@ export const Row = ({
  */
 export const rowPropTypes = {
 	columns: PropTypes.arrayOf(PropTypes.shape({
-		fields: PropTypes.object.isRequired,
+		fields: PropTypes.array.isRequired,
 		width: PropTypes.string.isRequired,
-		columnId: PropTypes.string.isRequired
+		columnId: PropTypes.oneOfType([
+			PropTypes.string,
+			PropTypes.number,
+		])
 		//input propTypes?
 	})),
-	rowId: PropTypes.string.isRequired,
+	rowId: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number,
+	]),
 	onChange: PropTypes.func.isRequired,
 	onBlur: PropTypes.func,
 	className: PropTypes.string

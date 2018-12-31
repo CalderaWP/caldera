@@ -19,9 +19,7 @@ describe( 'Field component', () => {
 		onChange= jest.fn();
 		onBlur= jest.fn()
 	});
-	it.only( 'These tests are fucked',() => {
-		expect(1).toBe(1);
-	});
+
 	it( 'Creates a text field', () => {
 		const component = renderer.create(
 			<Field
@@ -49,6 +47,7 @@ describe( 'Field component', () => {
 	});
 
 	it( 'Creates an checkbox field field', () => {
+		console.log(checkboxField);
 		const component = renderer.create(
 			<Field
 				field={checkboxField} onChange={onChange} onBlur={onBlur}

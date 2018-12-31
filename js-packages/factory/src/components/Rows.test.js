@@ -28,6 +28,7 @@ describe('Row component', () => {
 			onBlur,
 			columns: [
 				{
+					columnId: 'a1',
 					fields: [
 						textField,
 						checkboxField,
@@ -35,6 +36,7 @@ describe('Row component', () => {
 					width: '1/2'
 				},
 				{
+					columnId: 'a2',
 					fields: [
 						checkboxFieldset,
 					],
@@ -49,18 +51,21 @@ describe('Row component', () => {
 			onBlur,
 			columns: [
 				{
+					columnId: 'b1',
 					fields: [
 						selectField,
 					],
 					width: '1/3'
 				},
 				{
+					columnId: 'b2',
 					fields: [
 						emailField,
 					],
 					width: '1/3'
 				},
 				{
+					columnId: 'b3',
 					fields: [
 						checkboxField,
 					],

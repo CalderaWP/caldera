@@ -27,14 +27,17 @@ describe('Row component', () => {
 					textField,
 					checkboxField,
 				],
-				width: '1/2'
+				width: '1/2',
+				columnId: 1,
 			},
 			{
 				fields:[
 					checkboxField,
 					emailField,
 				],
-				width: '1/2'
+				width: '1/2',
+				columnId: 2,
+
 			}
 		];
 		const component = renderer.create(

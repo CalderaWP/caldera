@@ -11,6 +11,35 @@ https://reactjs.org/docs/react-without-es6.html#declaring-default-props
 https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 
 
+* String, number or array
+```js
+PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array
+])
+```
+
+* String or number 
+```js
+PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+])
+```
+
+* Enum - Must be one of these values
+```js
+PropTypes.oneOf(['optionOne', 'optionTwo'])
+```
+
+* Object With Shape -- Object with specific properties.
+```js
+ PropTypes.shape({
+    color: PropTypes.string,
+    fontSize: PropTypes.number
+  })
+```
 ## Testing
 
 https://reactjs.org/docs/test-renderer.html
