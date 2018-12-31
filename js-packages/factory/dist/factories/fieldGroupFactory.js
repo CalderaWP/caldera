@@ -30,7 +30,7 @@ var fieldGroupFactory = exports.fieldGroupFactory = function fieldGroupFactory(f
 		_components.FieldWrapper,
 		{
 			fieldType: 'text',
-			classNames: (0, _classnames2.default)({
+			className: (0, _classnames2.default)('caldera-field-group', {
 				'has-error': touched && error,
 				'is-required': required
 			})
