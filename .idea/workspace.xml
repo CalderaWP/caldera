@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.story.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/cheetsheets-and-links/REACT.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/cheetsheets-and-links/REACT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/.storybook/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/.storybook/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/clover.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/Messages/Message.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/Messages/Message.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/Messages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/Messages/index.html" afterDir="false" />
@@ -33,25 +35,12 @@
       <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/InputField/InputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/fields/InputField/InputField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/controls/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/fields/controls/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/coverage-final.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Row.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Row.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Rows.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Rows.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Row.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Rows.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Rows.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Field.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Field.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Row.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Row.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.story.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/dist/components/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/dist/components/Row.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/dist/factories/fieldFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/dist/factories/fieldFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,26 +66,26 @@
         <counts>
           <entry key="LICENSE" value="3" />
           <entry key="Makefile" value="1" />
-          <entry key="babelrc" value="1" />
+          <entry key="babelrc" value="3" />
           <entry key="css" value="1" />
           <entry key="dist" value="6" />
           <entry key="editorconfig" value="1" />
           <entry key="env" value="1" />
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="1" />
+          <entry key="html" value="2" />
           <entry key="inc" value="1" />
-          <entry key="js" value="181" />
-          <entry key="json" value="92" />
+          <entry key="js" value="192" />
+          <entry key="json" value="94" />
           <entry key="log" value="1" />
-          <entry key="md" value="49" />
+          <entry key="md" value="50" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="2" />
           <entry key="php" value="1303" />
           <entry key="php_cs" value="1" />
           <entry key="sh" value="9" />
-          <entry key="snap" value="24" />
+          <entry key="snap" value="25" />
           <entry key="test" value="1" />
           <entry key="test-integration" value="1" />
           <entry key="test-packages" value="1" />
@@ -109,11 +98,11 @@
           <entry key="ANSI Aware" value="1" />
           <entry key="Bash" value="9" />
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="1" />
-          <entry key="JSON" value="93" />
-          <entry key="JavaScript" value="181" />
-          <entry key="Jest Snapshot" value="24" />
-          <entry key="Markdown" value="49" />
+          <entry key="HTML" value="2" />
+          <entry key="JSON" value="97" />
+          <entry key="JavaScript" value="192" />
+          <entry key="Jest Snapshot" value="25" />
+          <entry key="Markdown" value="50" />
           <entry key="PHP" value="1304" />
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="XML" value="3" />
@@ -122,12 +111,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="babelrc" value="5" />
           <entry key="dist" value="27" />
           <entry key="dummy" value="42" />
           <entry key="env" value="16" />
           <entry key="gitignore" value="62" />
-          <entry key="js" value="11390" />
-          <entry key="json" value="2747" />
+          <entry key="js" value="11950" />
+          <entry key="json" value="2760" />
           <entry key="md" value="7855" />
           <entry key="php" value="71295" />
           <entry key="sh" value="738" />
@@ -140,8 +130,8 @@
         <counts>
           <entry key=".env file" value="16" />
           <entry key="Bash" value="738" />
-          <entry key="JSON" value="2747" />
-          <entry key="JavaScript" value="11395" />
+          <entry key="JSON" value="2765" />
+          <entry key="JavaScript" value="11955" />
           <entry key="Jest Snapshot" value="11" />
           <entry key="Markdown" value="7841" />
           <entry key="PHP" value="71304" />
@@ -170,26 +160,62 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5696877">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Row.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/.storybook/config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="783">
-                  <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+                <state relative-caret-position="135">
+                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
                   <folding>
-                    <element signature="e#0#38#0" expanded="true" />
+                    <element signature="e#0#25#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#0#73#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#0#35#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="573">
+                  <caret line="60" column="14" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="60" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.story.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -198,82 +224,39 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="274">
-                  <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+                <state relative-caret-position="355">
+                  <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
                   <folding>
-                    <element signature="e#0#109#0" expanded="true" />
+                    <element signature="e#0#31#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/dist/index.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/controls/Input.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/dist/components/fields/InputField/InputField.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/dist/components/fields/controls/Input.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+                <state relative-caret-position="375">
+                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
                   <folding>
-                    <element signature="e#0#49#0" expanded="true" />
+                    <element signature="e#0#50#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
+            <entry file="file://$PROJECT_DIR$/js-packages/components/.storybook/preview-head.html">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="735">
-                  <caret line="49" column="24" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="24" />
+                <state relative-caret-position="224">
+                  <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -282,11 +265,26 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Field.test.js.snap">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.story.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+                <state relative-caret-position="347">
+                  <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.story.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -304,8 +302,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>449</find>
-      <find>findWh</find>
       <find>$wpdb</find>
       <find>OBJECT</find>
       <find>Filter</find>
@@ -334,6 +330,8 @@
       <find>only</find>
       <find>it</find>
       <find>.o</find>
+      <find>select</find>
+      <find>shared</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -376,16 +374,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/FieldSet/FieldSet.js" />
-        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/controls/Option.js" />
-        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/controls/Select.js" />
-        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/SelectField/SelectField.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/controls/Input.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/util/parseAttributes.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/InputField/InputField.test.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/SelectField/SelectField.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/package.json" />
         <option value="$PROJECT_DIR$/js-packages/app/src/App.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/FieldFactory.js" />
@@ -415,7 +408,6 @@
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/Field.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/Rows.js" />
         <option value="$PROJECT_DIR$/js-packages/app/package.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/controls/Input.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" />
@@ -427,6 +419,12 @@
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" />
         <option value="$PROJECT_DIR$/js-packages/components/dist/components/fields/InputField/InputField.js" />
         <option value="$PROJECT_DIR$/js-packages/components/dist/components/fields/controls/Input.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/js-packages/components/package.json" />
+        <option value="$PROJECT_DIR$/js-packages/components/.storybook/.babelrc" />
+        <option value="$PROJECT_DIR$/js-packages/components/.storybook/config.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.story.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.story.js" />
       </list>
     </option>
   </component>
@@ -440,253 +438,7 @@
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/boilerplate/js-package/package.json" />
       <path value="$PROJECT_DIR$/js-packages/app/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/plugin-proposal-object-rest-spread/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/plugin-transform-classes/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/plugin-transform-destructuring/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/preset-env/node_modules/@babel/plugin-proposal-object-rest-spread/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/preset-env/node_modules/@babel/plugin-transform-classes/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/preset-env/node_modules/@babel/plugin-transform-destructuring/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/preset-env/node_modules/browserslist/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/preset-env/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@babel/runtime/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/addons/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/channel-postmessage/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/client-logger/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/components/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/file-loader/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/ajv-errors/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/node_modules/schema-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/.bin/url-loader/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/@babel/plugin-proposal-class-properties/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/@babel/plugin-proposal-object-rest-spread/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/@babel/plugin-transform-classes/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/@babel/plugin-transform-destructuring/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/@babel/preset-env/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/ajv-errors/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/babel-plugin-macros/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/browserslist/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/css-loader/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/inquirer/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/loader-utils/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/schema-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/node_modules/style-loader/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/core/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/node-logger/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/ajv-errors/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/node_modules/schema-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/node_modules/.bin/mini-css-extract-plugin/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/react/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/ui/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/acorn-dynamic-import/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ansi-align/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ansi-align/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ansi-align/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ansi-align/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/autoprefixer/node_modules/browserslist/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/autoprefixer/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/autoprefixer/node_modules/postcss/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/autoprefixer/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/autoprefixer/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-helper-evaluate-path/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-helper-flip-expressions/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-helper-is-void-0/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-helper-mark-eval-scopes/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-helper-remove-or-void/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-helper-to-multiple-sequence-expressions/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/find-cache-dir/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/find-up/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/locate-path/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/p-limit/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/p-locate/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/p-try/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/node_modules/pkg-dir/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-loader/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-dynamic-import-node/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-macros/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-builtins/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-constant-folding/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-dead-code-elimination/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-flip-comparisons/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-guarded-expressions/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-infinity/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-mangle-names/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-numeric-literals/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-replace/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-simplify/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-minify-type-constructors/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-react-docgen/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-transform-inline-consecutive-adds/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-transform-regexp-constructors/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-plugin-transform-remove-undefined/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-preset-minify/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-preset-react-app/node_modules/@babel/plugin-transform-react-constant-elements/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/babel-preset-react-app/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/boxen/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/boxen/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/boxen/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/boxen/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/browserslist/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/cacache/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/camelcase/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/acorn-dynamic-import/node_modules/acorn/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/acorn-dynamic-import/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/enhanced-resolve/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/loader-utils/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/tapable/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/node_modules/webpack/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/dotenv-webpack/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/emoji-regex/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/enhanced-resolve/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/eslint/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/node_modules/is-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/node_modules/is-extendable/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/expand-brackets/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/extglob/node_modules/define-property/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/extglob/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/extglob/node_modules/is-extendable/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/extglob/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/filesize/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/find-cache-dir/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/find-up/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/fs-extra/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/globby/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/gzip-size/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/html-webpack-plugin/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/html-webpack-plugin/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/html-webpack-plugin/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/html-webpack-plugin/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/is-accessor-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/is-data-descriptor/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/is-data-descriptor/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/is-extendable/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/is-root/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/loader-utils/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/locate-path/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/lru-cache/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/micromatch/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/mississippi/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/node-fetch/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/p-limit/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/p-locate/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/p-try/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/pify/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/pkg-dir/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-flexbugs-fixes/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-flexbugs-fixes/node_modules/postcss/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-flexbugs-fixes/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-flexbugs-fixes/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/ajv-errors/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/postcss/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/schema-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss-loader/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/postcss/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/pump/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/react-dev-utils/node_modules/cross-spawn/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/react-dev-utils/node_modules/inquirer/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/react-dev-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/react-error-overlay/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/react-treebeard/node_modules/@babel/runtime/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/react-treebeard/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/recursive-readdir/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/ssri/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/table/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/tapable/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/terser-webpack-plugin/node_modules/ajv-errors/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/terser-webpack-plugin/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/terser-webpack-plugin/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/terser-webpack-plugin/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/terser-webpack-plugin/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/terser-webpack-plugin/node_modules/schema-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/terser-webpack-plugin/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack-dev-middleware/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/big.js/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/eslint-scope/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/node_modules/loader-utils/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/webpack/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/y18n/package.json" />
       <path value="$PROJECT_DIR$/js-packages/components/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/eslint/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/table/package.json" />
       <path value="$PROJECT_DIR$/js-packages/factory/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
       <path value="$PROJECT_DIR$/wordpress/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/package.json" />
@@ -843,6 +595,13 @@
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name=".storybook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -855,7 +614,125 @@
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="FieldSet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectField" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name=".storybook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="InputField" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectField" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -876,19 +753,19 @@
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js-packages/components/src/components" />
-      <recent name="$PROJECT_DIR$/js-packages/factory/src/components" />
-      <recent name="$PROJECT_DIR$/js-packages" />
-      <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField" />
-      <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields/util" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js-packages/factory/src/factories" />
       <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields" />
       <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields/util" />
       <recent name="$PROJECT_DIR$/docs/cheetsheets-and-links" />
       <recent name="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField" />
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components" />
+      <recent name="$PROJECT_DIR$/js-packages/factory/src/components" />
+      <recent name="$PROJECT_DIR$/js-packages" />
+      <recent name="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1000,14 +877,11 @@
       <workItem from="1545416235667" duration="36452000" />
       <workItem from="1546136900545" duration="1616000" />
       <workItem from="1546211702081" duration="11440000" />
-      <workItem from="1546268090924" duration="1158000" />
+      <workItem from="1546268090924" duration="3154000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Row_component_Creates_a_2_column__row - 2018.12.31 at 09h 58m 46s.xml">
-      <configuration name="Row component.Creates a 2 column  row" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="Row_component_Creates_a_2_column__row - 2018.12.31 at 09h 59m 47s.xml">
       <configuration name="Row component.Creates a 2 column  row" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -1035,9 +909,12 @@
     <history-entry file="Field_component_Creates_an_checkbox_field_set - 2018.12.31 at 10h 13m 23s.xml">
       <configuration name="Field component.Creates an checkbox field set" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="Field_component_Creates_an_checkbox_field_set - 2018.12.31 at 10h 14m 20s.xml">
+      <configuration name="Field component.Creates an checkbox field set" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188788000" />
+    <option name="totallyTimeSpent" value="190784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="218" y="23" width="1702" height="977" extended-state="0" />
@@ -1048,7 +925,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" weight="0.32914287" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17062147" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.259887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32881355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1056,7 +933,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="0" y="45" width="1440" height="778" id="Terminal" order="10" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
+      <window_info active="true" anchor="bottom" x="126" y="222" width="1440" height="778" id="Terminal" order="10" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1264,72 +1141,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@caldera-labs/components/src/components/fields/SelectField/SelectField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@caldera-labs/components/dist/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/controls/Select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputFieldAsNumber.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1376,40 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="10" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/__snapshots__/InputField.test.js.snap">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1495,33 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="121" selection-start-line="15" selection-start-column="121" selection-end-line="15" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/controls/Input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="23" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputFieldAsEmail.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1577,64 +1327,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/dist/components/fields/InputField/InputField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="24" />
+        <state relative-caret-position="202">
+          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Field.test.js.snap">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Row.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1648,24 +1351,209 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/dist/index.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+        <state relative-caret-position="180">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/dist/components/fields/InputField/InputField.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="195">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/dist/components/fields/controls/Input.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Row.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Field.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="248" column="42" lean-forward="true" selection-start-line="248" selection-start-column="42" selection-end-line="248" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="473">
+            <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="3" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/.storybook/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/.storybook/preview-head.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/.storybook/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/__snapshots__/InputField.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/controls/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

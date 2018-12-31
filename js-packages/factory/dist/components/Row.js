@@ -80,12 +80,12 @@ var Row = exports.Row = function Row(_ref) {
  */
 var rowPropTypes = exports.rowPropTypes = {
 	columns: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-		fields: _propTypes2.default.object.isRequired,
+		fields: _propTypes2.default.array.isRequired,
 		width: _propTypes2.default.string.isRequired,
-		columnId: _propTypes2.default.string.isRequired
+		columnId: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number])
 		//input propTypes?
 	})),
-	rowId: _propTypes2.default.string.isRequired,
+	rowId: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
 	onChange: _propTypes2.default.func.isRequired,
 	onBlur: _propTypes2.default.func,
 	className: _propTypes2.default.string

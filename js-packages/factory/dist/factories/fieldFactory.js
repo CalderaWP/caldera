@@ -17,13 +17,16 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function messageObjectIsValid(messages) {
+	return 'object' === (typeof messages === 'undefined' ? 'undefined' : _typeof(messages)) && messages.hasOwnProperty('message');
+}
 var TheMessage = function TheMessage(messages, fieldId) {
-	return undefined !== (typeof messages === 'undefined' ? 'undefined' : _typeof(messages)) && messages.hasOwnProperty('message') ? _react2.default.createElement(_components.Message, {
+	return _react2.default.createElement(_components.Message, {
 		message: {
 			message: 'Hi Roy',
 			error: false
 		}
-	}) : _react2.default.createElement(_react.Fragment, null);
+	});
 };
 var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange, onBlur) {
 	var fieldType = field.fieldType,
@@ -33,8 +36,10 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 	    fieldId = field.fieldId,
 	    messages = field.messages;
 
-
-	var Message = TheMessage(messages, fieldId);
+	var Message = void 0;
+	if (messageObjectIsValid(messages)) {
+		Message = TheMessage(messages, fieldId);
+	}
 	switch (fieldType) {
 		case 'checkbox':
 		case 'checkboxes':
@@ -64,14 +69,14 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 							onChange: onChange
 						});
 					}),
-					_react2.default.createElement(Message, null)
+					messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
 				);
 			} else {
 				return _react2.default.createElement(
 					_components.InputField,
 					_extends({}, field, { onChange: onChange
 					}),
-					_react2.default.createElement(TheMessage, null)
+					messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
 				);
 			}
 			break;
@@ -83,7 +88,7 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 					onChange: onChange
 
 				}),
-				_react2.default.createElement(Message, null)
+				messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
 			);
 			break;
 		case 'text':
@@ -101,7 +106,7 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 				_extends({}, field, {
 					onChange: onChange
 				}),
-				_react2.default.createElement(TheMessage, null)
+				messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
 			);
 			break;
 	}

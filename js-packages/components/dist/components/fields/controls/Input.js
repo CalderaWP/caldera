@@ -25,7 +25,6 @@ var Input = exports.Input = function Input(_ref) {
 	    attributes = _ref.attributes,
 	    description = _ref.description,
 	    type = _ref.type;
-	console.log(28,type);
 	return _react2.default.createElement(_components.TextControl, _extends({
 		id: fieldId,
 		value: value,

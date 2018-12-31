@@ -21,7 +21,7 @@
     "react-dom": "^16.x"
   },
   "devDependencies": {
-    "@storybook/react": "^4.1.4",
+    "@storybook/react": "^3.4.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^20.0.3",
