@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 import {FieldSet} from './FieldSet';
 
 describe('Field label', () => {
-	if('Matches snapshot', () => {
+	it('Matches snapshot', () => {
 		const component = renderer.create(
 			<FieldSet
 				fieldType={'checkbox'}

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field component Creates a text field 1`] = `
+<div
+  className="caldera-field caldera-field-text"
+>
+  <label
+    className="caldera-field-label caldera-field-label-undefined"
+    htmlFor="firstName"
+  >
+    First Name
+  </label>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        className="components-text-control__input"
+        id="firstName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder={undefined}
+        type="text"
+        value="roy"
+      />
+    </div>
+  </div>
+</div>
+`;

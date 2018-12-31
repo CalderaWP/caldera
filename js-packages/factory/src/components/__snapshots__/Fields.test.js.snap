@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fields component Creates a text and checkbox field field 1`] = `
+<div
+  className="caldera-fields-wrapper"
+/>
+`;
+
+exports[`Fields component Creates all five fields 1`] = `
+<div
+  className="caldera-fields-wrapper"
+/>
+`;

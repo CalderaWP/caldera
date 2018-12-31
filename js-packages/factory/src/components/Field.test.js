@@ -22,7 +22,7 @@ describe( 'Field component', () => {
 	it.only( 'Creates a text field', () => {
 		const component = renderer.create(
 			<Field
-				{...textField} onChange={onChange} onBlur={onBlur}
+				field={textField} onChange={onChange} onBlur={onBlur}
 		/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -30,7 +30,7 @@ describe( 'Field component', () => {
 	it( 'Creates a number field', () => {
 		const component = renderer.create(
 			<Field
-				{...numberField} onChange={onChange} onBlur={onBlur}
+				field={numberField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -39,7 +39,7 @@ describe( 'Field component', () => {
 	it( 'Creates an email field', () => {
 		const component = renderer.create(
 			<Field
-				{...emailField} onChange={onChange} onBlur={onBlur}
+				field={emailField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -48,7 +48,7 @@ describe( 'Field component', () => {
 	it( 'Creates an checkbox field field', () => {
 		const component = renderer.create(
 			<Field
-				{...checkboxField} onChange={onChange} onBlur={onBlur}
+				field={checkboxField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -57,7 +57,7 @@ describe( 'Field component', () => {
 	it( 'Creates an checkbox field set', () => {
 		const component = renderer.create(
 			<Field
-				{...checkboxFieldset} onChange={onChange} onBlur={onBlur}
+				field={checkboxFieldset} onChange={onChange} onBlur={onBlur}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -66,7 +66,7 @@ describe( 'Field component', () => {
 	it( 'Creates an select field', () => {
 		const component = renderer.create(
 			<Field
-				{...selectField} onChange={onChange} onBlur={onBlur}
+				field={selectField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -75,10 +75,11 @@ describe( 'Field component', () => {
 	it( 'Creates an select field identified as dropdown', () => {
 		const component = renderer.create(
 			<Field
-				{...{
+				field={{
 					...selectField,
 					fieldType:'dropdown'
-				}} onChange={onChange} onBlur={onBlur}
+				}}
+				onChange={onChange} onBlur={onBlur}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();

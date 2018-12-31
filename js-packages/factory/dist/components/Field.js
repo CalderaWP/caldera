@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 							value: true
 });
-exports.FieldGroup = undefined;
+exports.Field = undefined;
 
 var _react = require('react');
 
@@ -13,9 +13,10 @@ var _fieldFactory = require('../factories/fieldFactory');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var FieldGroup = exports.FieldGroup = function FieldGroup(_ref) {
+var Field = exports.Field = function Field(_ref) {
 							var field = _ref.field,
-							    onChange = _ref.onChange;
+							    onChange = _ref.onChange,
+							    onBlur = _ref.onBlur;
 							return _react2.default.createElement(
 														_react.Fragment,
 														null,

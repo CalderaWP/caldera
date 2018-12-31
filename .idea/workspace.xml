@@ -2,28 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js-packages/components/node_modules/cacache/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/node_modules/cacache/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldLabel/FieldLabel.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldLabel/FieldLabel.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldLabel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldLabel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldSet/FieldSet.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldSet/FieldSet.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldSet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldSet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldWrapper/FieldWrapper.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldWrapper/FieldWrapper.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldWrapper/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/FieldWrapper/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/InputField/InputField.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/InputField/InputField.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/InputField/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/InputField/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/SelectField/SelectField.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/SelectField/SelectField.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/SelectField/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/SelectField/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/controls/Input.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/controls/Input.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/controls/Select.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/controls/Select.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/controls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/controls/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/fieldClassNames.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/fieldClassNames.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/fieldSetClassNames.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/fieldSetClassNames.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/index.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/index.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/labelClassNames.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/labelClassNames.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/parseAttributes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/fields/util/parseAttributes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/header.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/header.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/components/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/FieldGroup.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/FieldGroup.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Field.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Fields.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-class-properties/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-plugin-transform-class-properties/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-scripts/template/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-scripts/template/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/type-check/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/type-check/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/MockProvidesFieldsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/MockProvidesFieldsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/SomethingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/SomethingTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/Traits/EntityFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/Traits/EntityFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-admin/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-admin/css/edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-admin/edit-form-blocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-admin/edit-form-blocks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-admin/includes/meta-boxes.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-admin/includes/meta-boxes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-admin/js/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-admin/js/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/plugins/stylist/build/stylist_parent.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/plugins/stylist/build/stylist_parent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-includes/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-includes/js/dist/edit-post.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-includes/js/dist/edit-post.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-includes/rest-api/search/class-wp-rest-search-handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-includes/rest-api/search/class-wp-rest-search-handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/dist/components/FieldGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Field.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Field.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +76,7 @@
           <entry key="gitignore" value="3" />
           <entry key="html" value="1" />
           <entry key="inc" value="1" />
-          <entry key="js" value="134" />
+          <entry key="js" value="138" />
           <entry key="json" value="88" />
           <entry key="log" value="1" />
           <entry key="md" value="47" />
@@ -67,7 +86,7 @@
           <entry key="php" value="1303" />
           <entry key="php_cs" value="1" />
           <entry key="sh" value="9" />
-          <entry key="snap" value="13" />
+          <entry key="snap" value="15" />
           <entry key="test" value="1" />
           <entry key="test-integration" value="1" />
           <entry key="test-packages" value="1" />
@@ -82,8 +101,8 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="89" />
-          <entry key="JavaScript" value="134" />
-          <entry key="Jest Snapshot" value="13" />
+          <entry key="JavaScript" value="138" />
+          <entry key="Jest Snapshot" value="15" />
           <entry key="Markdown" value="47" />
           <entry key="PHP" value="1304" />
           <entry key="PLAIN_TEXT" value="21" />
@@ -97,7 +116,7 @@
           <entry key="dummy" value="42" />
           <entry key="env" value="16" />
           <entry key="gitignore" value="62" />
-          <entry key="js" value="9308" />
+          <entry key="js" value="9687" />
           <entry key="json" value="2681" />
           <entry key="md" value="7666" />
           <entry key="php" value="71295" />
@@ -112,7 +131,7 @@
           <entry key=".env file" value="16" />
           <entry key="Bash" value="738" />
           <entry key="JSON" value="2681" />
-          <entry key="JavaScript" value="9313" />
+          <entry key="JavaScript" value="9692" />
           <entry key="Jest Snapshot" value="11" />
           <entry key="Markdown" value="7652" />
           <entry key="PHP" value="71304" />
@@ -151,11 +170,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="587">
+              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Fields.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Fields.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +210,7 @@
         <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -187,8 +233,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="285">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -207,7 +253,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>read</find>
       <find>$expectedResult</find>
       <find>update</find>
       <find>ann</find>
@@ -237,6 +282,7 @@
       <find>util</find>
       <find>getHtml5InputTypes</find>
       <find>parseA</find>
+      <find>_fieldFactory2</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -267,6 +313,7 @@
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/php-packages/interop/src/Contracts</dir>
       <dir>$PROJECT_DIR$/php-packages</dir>
+      <dir>$PROJECT_DIR$/js-packages</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -275,7 +322,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/FieldWrapper/FieldWrapper.story.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/TextField.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/TextFieldAsEmail.test.js" />
         <option value="$PROJECT_DIR$/js-packages/shared/src/components/fields/TextField/InputField.js" />
@@ -322,10 +368,11 @@
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/FieldGroup.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/FieldGroup.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/factory/src/components/Field.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/Fields.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/Fields.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/factory/src/components/Field.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.test.js" />
       </list>
     </option>
   </component>
@@ -490,56 +537,6 @@
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="FieldSet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -548,6 +545,14 @@
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="factory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -591,6 +596,48 @@
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="FieldWrapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -760,7 +807,7 @@
       <workItem from="1545406861569" duration="7802000" />
       <workItem from="1545416235667" duration="36452000" />
       <workItem from="1546136900545" duration="1616000" />
-      <workItem from="1546211702081" duration="6335000" />
+      <workItem from="1546211702081" duration="7048000" />
     </task>
     <servers />
   </component>
@@ -797,7 +844,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182525000" />
+    <option name="totallyTimeSpent" value="183238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="175" y="23" width="1632" height="967" extended-state="0" />
@@ -1015,16 +1062,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/CheckBoxField/__snapshots__/CheckboxField.test.js.snap" />
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/CheckBoxField/CheckboxField.story.js" />
-    <entry file="file://$PROJECT_DIR$/js-packages/shared/src/components/fields/CheckBoxField/CheckboxField.js" />
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldLabel/FieldLabel.story.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1254,16 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1356,20 +1383,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/__snapshots__/Field.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Field.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="587">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Fields.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/Fields.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
