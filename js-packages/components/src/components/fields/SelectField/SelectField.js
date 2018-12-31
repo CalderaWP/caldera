@@ -1,32 +1,39 @@
 import PropTypes from 'prop-types';
 import React from 'react'
-
+import {SelectControl} from "@wordpress/components";
 import {parseAttributes,fieldClassNames,isValidHtml5type} from '../util';
-import {FieldLabel} from '../FieldLabel/FieldLabel';
-import {FieldWrapper} from '../FieldWrapper/FieldWrapper';
-import {Select} from '../controls/Select'
-export  const SelectField = (props) => {
-	let {
-		attributes,
-		label,
-		fieldId,
-		children
-	} = props;
+export  const SelectField = ({
+								 attributes,
+								 label,
+								 fieldId,
+								 onChange,
+								 value,
+								 options,
+								 multiple,
+								 description,
+								 placeholder
+							 }) => {
+
 	attributes = parseAttributes(attributes,'select');
+	if( ! value && placeholder ){
+		options.unshift({
+			label: placeholder
+		});
+	}
 	return (
-		<FieldWrapper
-			fieldType={'select'}
-		>
-			<FieldLabel
-				fieldId={fieldId}
-			>
-				{label}
-			</FieldLabel>
-			<Select
-				{...props}
+
+			<SelectControl
+				classNames={fieldClassNames('select')}
+				id={fieldId}
+				value={value}
+				options={ options }
+				onChange={ onChange  }
+				label={label}
+				help={description}
+				{...attributes}
+
 			/>
-			{children}
-		</FieldWrapper>
+
 	)
 };
 

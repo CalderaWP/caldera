@@ -13,6 +13,7 @@ const onBlur = (event) => {
 const STORY_NAME_INPUT = 'InputField';
 const STORY_NAME_INPUT_NUMBER = 'InputField as number field';
 const STORY_NAME_INPUT_EMAIL = 'InputField as email field';
+const STORY_NAME_INPUT_CHECKBOX = 'InputField as checkbox';
 storiesOf(STORY_NAME_INPUT, module).add('With no value', () => (
 	<InputField
 		label={'Text Input'}
@@ -37,7 +38,7 @@ storiesOf(STORY_NAME_INPUT, module).add('With description', () => (
 	<InputField
 		label={'Text Input With Description'}
 		html5type={'text'}
-		description={'Text fields are'}
+		description={'Text field description'}
 		onChange={onChange}
 		onBlur={onBlur}
 	/>
@@ -49,6 +50,20 @@ storiesOf(STORY_NAME_INPUT, module).add('With value', () => (
 		html5type={'text'}
 		onChange={onChange}
 		onBlur={onBlur}
+	/>
+));
+storiesOf(STORY_NAME_INPUT, module).add('Disbaled', () => (
+	<InputField
+		label={'Text Input'}
+		value={value}
+		html5type={'text'}
+		onChange={onChange}
+		onBlur={onBlur}
+		attributes={
+			{
+				disabled:true
+			}
+		}
 	/>
 ));
 
@@ -90,6 +105,41 @@ storiesOf(STORY_NAME_INPUT_EMAIL, module).add('Multiple', () => (
 		attributes={
 			{
 				multiple: true
+			}
+		}
+	/>
+));
+
+storiesOf(STORY_NAME_INPUT_CHECKBOX, module).add('Checked', () => (
+	<InputField
+		label={'Option'}
+		html5type={'checkbox'}
+		value={true}
+		onChange={onChange}
+		description={'Set to checked'}
+	/>
+));
+
+storiesOf(STORY_NAME_INPUT_CHECKBOX, module).add('Not Checked', () => (
+	<InputField
+		label={'Option'}
+		html5type={'checkbox'}
+		value={false}
+		onChange={onChange}
+		description={'Not  checked'}
+	/>
+));
+
+storiesOf(STORY_NAME_INPUT_CHECKBOX, module).add('Disabled', () => (
+	<InputField
+		label={'Option'}
+		html5type={'checkbox'}
+		value={false}
+		onChange={onChange}
+		description={'Not  checked'}
+		attributes={
+			{
+				disabled: true
 			}
 		}
 	/>

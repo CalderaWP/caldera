@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "@rebass/grid": "^6.0.0-7",
+    "formik": "^1.4.1",
     "styled-components": "^4.1.3"
   }
 }

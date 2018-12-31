@@ -1,10 +1,8 @@
 import {parseAttributes,fieldClassNames,isValidHtml5type} from '../util';
+
 import PropTypes from 'prop-types';
 import React from 'react'
-
-import {FieldLabel} from '../FieldLabel/FieldLabel'
-import {FieldWrapper} from '../FieldWrapper/FieldWrapper'
-import {Input} from '../controls/Input';
+import {TextControl,CheckboxControl} from "@wordpress/components";
 export const InputField = ({
 							  label,
 							  description,
@@ -21,28 +19,34 @@ export const InputField = ({
 
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
 	const _attributes = parseAttributes(attributes,fieldType);
-	return (
-		<FieldWrapper
-			fieldType={fieldType}
-		>
-			<FieldLabel
-				fieldId={fieldId}
-			>
-				{label}
-			</FieldLabel>
-			<Input
-				fieldId={fieldId}
+	if ('checkbox' === fieldType) {
+		return (
+			<CheckboxControl
+				id={fieldId}
+				help={description}
+				{..._attributes}
+				checked={ value }
+				onChange={ onChange }
+				label={label}
+			/>
+		)
+
+	} else {
+		return (
+			<TextControl
+				label={label}
+				className={fieldClassNames(fieldType)}
+				id={fieldId}
 				value={value}
 				placeholder={placeholder}
 				type={fieldType}
 				onChange={onChange}
 				onBlur={onBlur}
 				help={description}
-				attributes={_attributes}
+				{..._attributes}
 			/>
-			{children}
-		</FieldWrapper>
-	)
+		)
+	}
 };
 
 InputField.propTypes = {

@@ -14,6 +14,7 @@
     "@wordpress/element": "^2.1.8",
     "classnames": "^2.2.6",
     "deepmerge": "^3.0.0",
+    "formik": "^1.4.1",
     "lodash": "^4.17.11",
     "lodash.pick": "^4.4.0",
     "prop-types": "^15.6.2",
