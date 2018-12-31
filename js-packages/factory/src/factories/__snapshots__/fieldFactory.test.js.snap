@@ -9,12 +9,12 @@ exports[`fieldFactory Creates a number field 1`] = `
   >
     <label
       className="components-base-control__label"
-      htmlFor="inspector-text-control-1"
+      htmlFor="inspector-text-control-3"
     >
       Number Field Label
     </label>
     <input
-      aria-describedby="inspector-text-control-1__help"
+      aria-describedby="inspector-text-control-3__help"
       className="components-text-control__input"
       id="numberFieldId"
       max={10}
@@ -28,9 +28,89 @@ exports[`fieldFactory Creates a number field 1`] = `
   </div>
   <p
     className="components-base-control__help"
-    id="inspector-text-control-1__help"
+    id="inspector-text-control-3__help"
   >
     Number field description
+  </p>
+</div>
+`;
+
+exports[`fieldFactory Creates a radio field 1`] = `
+<div
+  className="components-base-control caldera-field caldera-field-radio components-radio-control"
+>
+  <div
+    className="components-base-control__field"
+  >
+    <label
+      className="components-base-control__label"
+      htmlFor="inspector-radio-control-0"
+    >
+      Radio Field Label
+    </label>
+    <div
+      className="components-radio-control__option"
+    >
+      <input
+        aria-describedby="inspector-radio-control-0__help"
+        checked={false}
+        className="components-radio-control__input"
+        id="inspector-radio-control-0-0"
+        name="inspector-radio-control-0"
+        onChange={[Function]}
+        type="radio"
+        value={0}
+      />
+      <label
+        htmlFor="inspector-radio-control-0-0"
+      >
+        Zero
+      </label>
+    </div>
+    <div
+      className="components-radio-control__option"
+    >
+      <input
+        aria-describedby="inspector-radio-control-0__help"
+        checked={true}
+        className="components-radio-control__input"
+        id="inspector-radio-control-0-1"
+        name="inspector-radio-control-0"
+        onChange={[Function]}
+        type="radio"
+        value={1}
+      />
+      <label
+        htmlFor="inspector-radio-control-0-1"
+      >
+        One
+      </label>
+    </div>
+    <div
+      className="components-radio-control__option"
+    >
+      <input
+        aria-describedby="inspector-radio-control-0__help"
+        checked={false}
+        className="components-radio-control__input"
+        id="inspector-radio-control-0-2"
+        name="inspector-radio-control-0"
+        onChange={[Function]}
+        type="radio"
+        value={2}
+      />
+      <label
+        htmlFor="inspector-radio-control-0-2"
+      >
+        Two
+      </label>
+    </div>
+  </div>
+  <p
+    className="components-base-control__help"
+    id="inspector-radio-control-0__help"
+  >
+    Radio field description
   </p>
 </div>
 `;
@@ -117,7 +197,7 @@ exports[`fieldFactory Creates an checkbox field set 1`] = `
         aria-describedby={undefined}
         checked={true}
         className="components-checkbox-control__input"
-        id="opt-1"
+        id={undefined}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -140,7 +220,7 @@ exports[`fieldFactory Creates an checkbox field set 1`] = `
         aria-describedby="inspector-checkbox-control-2__help"
         checked={true}
         className="components-checkbox-control__input"
-        id="opt-2"
+        id={undefined}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -169,7 +249,7 @@ exports[`fieldFactory Creates an checkbox field set 1`] = `
         aria-describedby={undefined}
         checked={true}
         className="components-checkbox-control__input"
-        id="opt-3"
+        id={undefined}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -194,12 +274,12 @@ exports[`fieldFactory Creates an email field 1`] = `
   >
     <label
       className="components-base-control__label"
-      htmlFor="inspector-text-control-2"
+      htmlFor="inspector-text-control-4"
     >
       Email Field Label
     </label>
     <input
-      aria-describedby="inspector-text-control-2__help"
+      aria-describedby="inspector-text-control-4__help"
       className="components-text-control__input"
       id="emailFieldLabel"
       multiple={true}
@@ -212,7 +292,7 @@ exports[`fieldFactory Creates an email field 1`] = `
   </div>
   <p
     className="components-base-control__help"
-    id="inspector-text-control-2__help"
+    id="inspector-text-control-4__help"
   >
     Email field description
   </p>

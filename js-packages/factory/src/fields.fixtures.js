@@ -46,6 +46,23 @@ const selectField = {
 	]
 };
 
+const radioField = {
+	fieldType: 'radio',
+	value: 1,
+	label: 'Radio Field Label',
+	fieldId: 'radioFieldLabel',
+	description: 'Radio field description',
+	required: true,
+	attributes: {
+		multiple: false,
+	},
+	options : [
+		{ value: 0, label: 'Zero' },
+		{ value: 1, label: 'One' },
+		{ value: 2, label: 'Two' },
+	]
+};
+
 const checkboxField = {
 	fieldType: 'checkbox',
 	label: 'Checkbox Labe',
@@ -97,5 +114,6 @@ export {
 	checkboxField,
 	numberField,
 	textField,
-	emailField
+	emailField,
+	radioField
 }

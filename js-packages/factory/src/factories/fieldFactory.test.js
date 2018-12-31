@@ -8,7 +8,8 @@ import {
 	checkboxField,
 	numberField,
 	textField,
-	emailField
+	emailField,
+	radioField
 } from '../fields.fixtures';
 
 describe( 'fieldFactory', () => {
@@ -22,6 +23,16 @@ describe( 'fieldFactory', () => {
 		const component = renderer.create(fieldFactory(textField,onChange,onBlur));
 		expect(component.toJSON()).toMatchSnapshot();
 	});
+
+	it( 'Creates a text field when field type is bogus', () => {
+		const component = mount(fieldFactory({...textField,fieldType:'travels-in-space'},onChange,onBlur));
+		expect(component.find( 'input').prop('type')).toBe('text');
+	});
+	it( 'Creates a text field when field type is input', () => {
+		const component = mount(fieldFactory({...textField,fieldType:'input'},onChange,onBlur));
+		expect(component.find( 'input').prop('type')).toBe('text');
+	});
+
 	it( 'Creates a number field', () => {
 		const component = renderer.create(fieldFactory(numberField,onChange,onBlur));
 		expect(component.toJSON()).toMatchSnapshot();
@@ -44,6 +55,11 @@ describe( 'fieldFactory', () => {
 
 	it( 'Creates an select field', () => {
 		const component = renderer.create(fieldFactory(selectField,onChange,onBlur));
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
+	it( 'Creates a radio field', () => {
+		const component = renderer.create(fieldFactory(radioField,onChange,onBlur));
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 

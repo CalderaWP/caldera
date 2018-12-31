@@ -7,8 +7,6 @@ exports.fieldFactory = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 var _components = require('@caldera-labs/components');
 
 var _react = require('react');
@@ -17,17 +15,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function messageObjectIsValid(messages) {
-	return 'object' === (typeof messages === 'undefined' ? 'undefined' : _typeof(messages)) && messages.hasOwnProperty('message');
-}
-var TheMessage = function TheMessage(messages, fieldId) {
-	return _react2.default.createElement(_components.Message, {
-		message: {
-			message: 'Hi Roy',
-			error: false
-		}
-	});
-};
 var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange, onBlur) {
 	var fieldType = field.fieldType,
 	    label = field.label,
@@ -36,60 +23,46 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 	    fieldId = field.fieldId,
 	    messages = field.messages;
 
-	var Message = void 0;
-	if (messageObjectIsValid(messages)) {
-		Message = TheMessage(messages, fieldId);
-	}
-	switch (fieldType) {
-		case 'checkbox':
-		case 'checkboxes':
-			if ('checkboxes' === fieldType || fieldType.hasOwnProperty('options')) {
-				return _react2.default.createElement(
-					_components.FieldSet,
-					{
-						fieldType: fieldType,
-						legend: label,
-						attributes: attributes
-					},
-					options.map(function (option) {
-						var value = option.value,
-						    label = option.label,
-						    description = option.description,
-						    attributes = option.attributes;
 
-						var fieldId = option.hasOwnProperty('id') ? option.id : 'opt-' + fieldId + '-' + option.value;
-						return _react2.default.createElement(_components.InputField, {
-							key: fieldId,
-							fieldId: fieldId,
-							value: value,
-							label: label,
-							description: description,
-							html5type: 'checkbox',
-							attributes: attributes,
-							onChange: onChange
-						});
-					}),
-					messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
-				);
-			} else {
-				return _react2.default.createElement(
-					_components.InputField,
-					_extends({}, field, { onChange: onChange
-					}),
-					messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
-				);
-			}
+	switch (fieldType) {
+		case 'checkboxGroup':
+		case 'checkboxes':
+			return _react2.default.createElement(
+				_components.FieldSet,
+				{
+					fieldType: fieldType,
+					legend: label,
+					attributes: attributes
+				},
+				options.map(function (option) {
+					var value = option.value,
+					    label = option.label,
+					    description = option.description,
+					    attributes = option.attributes;
+
+					var fieldId = option.hasOwnProperty('id') ? option.id : 'opt-' + fieldId + '-' + option.value;
+					return _react2.default.createElement(_components.InputField, {
+						key: fieldId,
+						id: fieldId,
+						value: value,
+						label: label,
+						description: description,
+						html5type: 'checkbox',
+						attributes: attributes,
+						onChange: onChange
+					});
+				})
+			);
 			break;
+		case 'radio':
+			return _react2.default.createElement(_components.RadioField, _extends({}, field, {
+				onChange: onChange
+			}));
 		case 'select':
 		case 'dropdown':
-			return _react2.default.createElement(
-				_components.SelectField,
-				_extends({}, field, {
-					onChange: onChange
-
-				}),
-				messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
-			);
+			return _react2.default.createElement(_components.SelectField, _extends({}, field, {
+				onChange: onChange
+			}));
 			break;
 		case 'text':
 		case 'email':
@@ -101,13 +74,9 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 			} else {
 				field.html5type = 'text';
 			}
-			return _react2.default.createElement(
-				_components.InputField,
-				_extends({}, field, {
-					onChange: onChange
-				}),
-				messageObjectIsValid(messages) && _react2.default.createElement(TheMessage, null)
-			);
+			return _react2.default.createElement(_components.InputField, _extends({}, field, {
+				onChange: onChange
+			}));
 			break;
 	}
 };
