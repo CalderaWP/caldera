@@ -26,9 +26,8 @@ export const fieldFactory = (field, onChange, onBlur) => {
 		 Message = TheMessage(messages, fieldId);
 	}
 	switch (fieldType) {
-		case 'checkbox':
+		case 'checkboxGroup' :
 		case 'checkboxes' :
-			if ('checkboxes' === fieldType || fieldType.hasOwnProperty('options')) {
 				return (
 					<FieldSet
 						fieldType={fieldType}
@@ -59,15 +58,6 @@ export const fieldFactory = (field, onChange, onBlur) => {
 						}
 					</FieldSet>
 				);
-			} else {
-				return <InputField
-					{...field} onChange={onChange}
-				>
-					{ messageObjectIsValid(messages) &&
-						<TheMessage/>
-					}
-				</InputField>
-			}
 			break;
 		case 'select':
 		case 'dropdown':

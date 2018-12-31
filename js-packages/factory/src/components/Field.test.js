@@ -47,13 +47,12 @@ describe( 'Field component', () => {
 	});
 
 	it( 'Creates an checkbox field field', () => {
-		console.log(checkboxField);
-		const component = renderer.create(
+		const component = mount(
 			<Field
 				field={checkboxField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
-		expect(component.toJSON()).toMatchSnapshot();
+		expect(component.find('input').prop( 'type')).toEqual('checkbox');
 	});
 
 	it( 'Creates an checkbox field set', () => {

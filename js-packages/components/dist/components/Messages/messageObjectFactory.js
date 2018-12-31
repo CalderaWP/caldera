@@ -21,6 +21,7 @@ var messageObjectFactory = exports.messageObjectFactory = function messageObject
 	if ('string' !== typeof message) {
 		message = '';
 	}
+
 	return {
 		message: message,
 		error: (0, _util.toBoolean)(error)

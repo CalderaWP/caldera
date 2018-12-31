@@ -31,48 +31,12 @@ Object.defineProperty(exports, 'SelectField', {
 	}
 });
 
-var _FieldWrapper = require('./components/fields/FieldWrapper/FieldWrapper');
-
-Object.defineProperty(exports, 'FieldWrapper', {
-	enumerable: true,
-	get: function get() {
-		return _FieldWrapper.FieldWrapper;
-	}
-});
-
-var _FieldLabel = require('./components/fields/FieldLabel/FieldLabel');
-
-Object.defineProperty(exports, 'FieldLabel', {
-	enumerable: true,
-	get: function get() {
-		return _FieldLabel.FieldLabel;
-	}
-});
-
 var _FieldSet = require('./components/fields/FieldSet/FieldSet');
 
 Object.defineProperty(exports, 'FieldSet', {
 	enumerable: true,
 	get: function get() {
 		return _FieldSet.FieldSet;
-	}
-});
-
-var _Input = require('./components/fields/controls/Input');
-
-Object.defineProperty(exports, 'Input', {
-	enumerable: true,
-	get: function get() {
-		return _Input.Input;
-	}
-});
-
-var _Select = require('./components/fields/controls/Select');
-
-Object.defineProperty(exports, 'Select', {
-	enumerable: true,
-	get: function get() {
-		return _Select.Select;
 	}
 });
 

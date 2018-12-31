@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.InputField = undefined;
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _util = require('../util');
 
 var _propTypes = require('prop-types');
@@ -15,11 +17,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _FieldLabel = require('../FieldLabel/FieldLabel');
-
-var _FieldWrapper = require('../FieldWrapper/FieldWrapper');
-
-var _Input = require('../controls/Input');
+var _components = require('@wordpress/components');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39,30 +37,30 @@ var InputField = exports.InputField = function InputField(_ref) {
 
 	var fieldType = (0, _util.isValidHtml5type)(html5type) ? html5type : 'text';
 	var _attributes = (0, _util.parseAttributes)(attributes, fieldType);
-	return _react2.default.createElement(
-		_FieldWrapper.FieldWrapper,
-		{
-			fieldType: fieldType
-		},
-		_react2.default.createElement(
-			_FieldLabel.FieldLabel,
-			{
-				fieldId: fieldId
-			},
-			label
-		),
-		_react2.default.createElement(_Input.Input, {
-			fieldId: fieldId,
+	if ('checkbox' === fieldType) {
+
+		var checked = value ? true : false;
+		return _react2.default.createElement(_components.CheckboxControl, _extends({
+			id: fieldId,
+			checked: checked,
+			help: description
+		}, _attributes, {
+			onChange: onChange,
+			label: label
+		}));
+	} else {
+		return _react2.default.createElement(_components.TextControl, _extends({
+			label: label,
+			className: (0, _util.fieldClassNames)(fieldType),
+			id: fieldId,
 			value: value,
 			placeholder: placeholder,
 			type: fieldType,
 			onChange: onChange,
 			onBlur: onBlur,
-			help: description,
-			attributes: _attributes
-		}),
-		children
-	);
+			help: description
+		}, _attributes));
+	}
 };
 
 InputField.propTypes = {
@@ -73,7 +71,7 @@ InputField.propTypes = {
 	required: _propTypes2.default.bool,
 	html5type: _propTypes2.default.string,
 	attributes: _propTypes2.default.object,
-	value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number, _propTypes2.default.array]),
+	value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number, _propTypes2.default.array, _propTypes2.default.bool]),
 	onChange: _propTypes2.default.func,
 	onBlur: _propTypes2.default.func
 };

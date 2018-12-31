@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.SelectField = undefined;
+exports.RadioField = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -21,7 +21,7 @@ var _util = require('../util');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var SelectField = exports.SelectField = function SelectField(_ref) {
+var RadioField = exports.RadioField = function RadioField(_ref) {
 	var attributes = _ref.attributes,
 	    label = _ref.label,
 	    fieldId = _ref.fieldId,
@@ -33,17 +33,12 @@ var SelectField = exports.SelectField = function SelectField(_ref) {
 	    placeholder = _ref.placeholder;
 
 
-	attributes = (0, _util.parseAttributes)(attributes, 'select');
+	attributes = (0, _util.parseAttributes)(attributes, 'radio');
 
-	if (!value && placeholder) {
-		options.unshift({
-			label: placeholder
-		});
-	}
-	return _react2.default.createElement(_components.SelectControl, _extends({
-		className: (0, _util.fieldClassNames)('select'),
+	return _react2.default.createElement(_components.RadioControl, _extends({
+		className: (0, _util.fieldClassNames)('radio'),
 		id: fieldId,
-		value: value,
+		selected: value,
 		options: options,
 		onChange: onChange,
 		label: label,
@@ -51,7 +46,7 @@ var SelectField = exports.SelectField = function SelectField(_ref) {
 	}, attributes));
 };
 
-SelectField.propTypes = {
+RadioField.propTypes = {
 	label: _propTypes2.default.string,
 	description: _propTypes2.default.string,
 	fieldId: _propTypes2.default.string,
@@ -59,7 +54,7 @@ SelectField.propTypes = {
 	multiple: _propTypes2.default.bool
 };
 
-SelectField.defaultProps = {
+RadioField.defaultProps = {
 	required: false,
 	multiple: false
 };
