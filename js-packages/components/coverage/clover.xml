@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1546220987504" clover="3.2.0">
-  <project timestamp="1546220987504" name="All files">
+<coverage generated="1546227077778" clover="3.2.0">
+  <project timestamp="1546227077778" name="All files">
     <metrics statements="86" coveredstatements="84" conditionals="34" coveredconditionals="30" methods="19" coveredmethods="18" elements="139" coveredelements="132" complexity="0" loc="86" ncloc="86" packages="9" files="16" classes="16">
       <package name="components">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
@@ -92,7 +92,7 @@
         <file name="Input.js" path="/Users/josh/caldera/js-packages/components/src/components/fields/controls/Input.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="4" count="3" type="stmt"/>
-          <line num="16" count="5" type="stmt"/>
+          <line num="15" count="5" type="stmt"/>
         </file>
         <file name="Select.js" path="/Users/josh/caldera/js-packages/components/src/components/fields/controls/Select.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

@@ -5,19 +5,18 @@ export const Input = ({
 						  fieldId,
 						  value,
 						  placeholder,
-						  type,
 						  onChange,
 						  onBlur,
 						  help,
 						  attributes,
 						  description,
-						  fieldType,
+						  type,
 					  }) => (
 	<TextControl
 		id={fieldId}
 		value={value}
 		placeholder={placeholder}
-		type={fieldType}
+		type={type}
 		onChange={onChange}
 		onBlur={onBlur}
 		help={description}
