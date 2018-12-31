@@ -78,12 +78,6 @@ Object.defineProperty(exports, 'Select', {
 
 var _util = require('./components/fields/util');
 
-Object.defineProperty(exports, 'getHtml5InputTypes', {
-	enumerable: true,
-	get: function get() {
-		return _util.getHtml5InputTypes;
-	}
-});
 Object.defineProperty(exports, 'addOrRemoveFromArray', {
 	enumerable: true,
 	get: function get() {

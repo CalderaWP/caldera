@@ -1,12 +1,13 @@
 import {
 	InputField,
 	SelectField,
-	isValidHtml5type
+	isValidHtml5type,
+	FieldSet
 } from '@caldera-labs/components';
 import React from 'react';
 
-export default function fieldFactory( field ) {
-	const {fieldType,label,attributes,options,fieldId} = field;
+export const fieldFactory = ( field, onChange, onBlur ) => {
+	const {fieldType, label, attributes, options, fieldId} = field;
 
 	switch( fieldType ){
 		case 'checkbox':
@@ -27,27 +28,34 @@ export default function fieldFactory( field ) {
 							} = option;
 							const fieldId =  option.hasOwnProperty('id') ? option.id : `opt-${fieldId}-${option.value}`;
 							return <InputField
+								key={fieldId}
 								fieldId={fieldId}
 								value={value}
 								label={label}
 								description={description}
 								html5type={'checkbox'}
 								attributes={attributes}
+								onChange={onChange}
 							/>
 						})}
 					</FieldSet>
 				);
 			}else {
-				return <InputField {...field} />
+				return <InputField
+					{...field} 								onChange={onChange}
+				/>
 			}
 			break;
 		case 'select':
 		case 'dropdown':
-			return <SelectField {...field} />;
+			return <SelectField
+				{...field}
+				onChange={onChange}
+
+			/>;
 			break;
 		case 'text':
 		case 'email':
-
 		case 'number':
 		case 'input':
 		default:
@@ -57,7 +65,10 @@ export default function fieldFactory( field ) {
 				field.html5type = 'text';
 
 			}
-			return <InputField {...field} />
+			return <InputField
+				{...field}
+				onChange={onChange}
+			/>
 		break;
 	}
 }

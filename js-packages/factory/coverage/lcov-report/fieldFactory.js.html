@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">56.25% </span>
+        <span class="strong">75% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>9/16</span>
+        <span class='fraction'>12/16</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">82.35% </span>
+        <span class="strong">88.24% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>14/17</span>
+        <span class='fraction'>15/17</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">56.25% </span>
+        <span class="strong">75% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/16</span>
+        <span class='fraction'>12/16</span>
       </div>
     </div>
   </div>
@@ -106,7 +106,19 @@
 61
 62
 63
-64</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -132,9 +144,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -148,10 +161,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -166,17 +185,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
 	InputField,
 	SelectField,
-	isValidHtml5type
+	isValidHtml5type,
+	FieldSet
 } from '@caldera-labs/components';
 import React from 'react';
 &nbsp;
-export default function fieldFactory( field ) {
+export default function fieldFactory( field, onChange ) {
 	const {fieldType,label,attributes,options,fieldId} = field;
 &nbsp;
 	switch( fieldType ){
@@ -189,32 +212,39 @@ export default function fieldFactory( field ) {
 						legend={label}
 						attributes={attributes}
 					&gt;
-						{options.map(<span class="fstat-no" title="function not covered" >op</span>tion =&gt; {
+						{options.map(option =&gt; {
 							const {
 								value,
 								label,
 								description,
 								attributes
-							} = <span class="cstat-no" title="statement not covered" >option;</span>
-							const fieldId =  <span class="cstat-no" title="statement not covered" >option.hasOwnProperty('id') ? option.id : `opt-${fieldId}-${option.value}`;</span>
-<span class="cstat-no" title="statement not covered" >							return &lt;InputField</span>
+							} = option;
+							const fieldId =  option.hasOwnProperty('id') ? option.id : <span class="branch-1 cbranch-no" title="branch not covered" >`opt-${fieldId}-${option.value}`;</span>
+							return &lt;InputField
 								fieldId={fieldId}
 								value={value}
 								label={label}
 								description={description}
 								html5type={'checkbox'}
 								attributes={attributes}
+								onChange={onChange}
 							/&gt;
 						})}
 					&lt;/FieldSet&gt;
 				);
 			}else {
-				return &lt;InputField {...field} /&gt;
+				return &lt;InputField
+					{...field} 								onChange={onChange}
+				/&gt;
 			}
 <span class="cstat-no" title="statement not covered" >			break;</span>
 		case 'select':
 		case 'dropdown':
-			return &lt;SelectField {...field} /&gt;;
+			return &lt;SelectField
+				{...field}
+				onChange={onChange}
+&nbsp;
+			/&gt;;
 <span class="cstat-no" title="statement not covered" >			break;</span>
 		case 'text':
 		case 'email':
@@ -228,7 +258,10 @@ export default function fieldFactory( field ) {
 <span class="cstat-no" title="statement not covered" >				field.html5type = 'text';</span>
 &nbsp;
 			}
-			return &lt;InputField {...field} /&gt;
+			return &lt;InputField
+				{...field}
+				onChange={onChange}
+			/&gt;
 <span class="cstat-no" title="statement not covered" >		break;</span>
 	}
 }
@@ -238,7 +271,7 @@ export default function fieldFactory( field ) {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 30 2018 19:30:19 GMT-0500 (EST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 30 2018 19:43:53 GMT-0500 (EST)
 </div>
 </div>
 <script src="prettify.js"></script>

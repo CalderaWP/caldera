@@ -14,7 +14,8 @@ var fieldSetAttrs = ['disabled', 'form', 'name'];
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option#Attributes
 var selectAttrs = ['disabled', 'label', 'selected', 'value'];
-
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Additional_attributes
+var checkboxAttrs = ['checked', 'value'];
 /**
  *
  * @param {Object} attributes
@@ -38,6 +39,9 @@ var parseAttributes = exports.parseAttributes = function parseAttributes(attribu
 			break;
 		case 'email':
 			allowed = [].concat(inputAttrs, emailAttrs);
+			break;
+		case 'checkbox':
+			allowed = [].concat(inputAttrs, checkboxAttrs);
 			break;
 		case 'text':
 		case 'default':

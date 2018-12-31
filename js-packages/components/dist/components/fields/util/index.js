@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.fieldSetClassNames = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.getHtml5InputTypes = exports.labelClassNames = exports.fieldClassNames = exports.parseAttributes = undefined;
+exports.fieldSetClassNames = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.labelClassNames = exports.fieldClassNames = exports.parseAttributes = undefined;
 
 var _parseAttributes = require('./parseAttributes');
 
@@ -14,21 +14,13 @@ var _labelClassNames = require('./labelClassNames');
 var _fieldSetClassNames = require('./fieldSetClassNames');
 
 /**
- * Get HTML5 input types that are valid
- * @returns {string[]}
- */
-function getHtml5InputTypes() {
-	return ['text', 'email', 'number', 'date', 'datetime', 'password', 'submit', 'reset', 'checkbox', 'hidden'];
-}
-
-/**
  * Checks if a given input type is an acceptable HTML5 input type
  *
  * @param {String} type
  * @returns {boolean}
  */
 var isValidHtml5type = function isValidHtml5type(type) {
-	return getHtml5InputTypes().includes(type);
+	return ['text', 'email', 'number', 'date', 'datetime', 'password', 'submit', 'reset', 'checkbox', 'hidden'].includes(type);
 };
 
 /**
@@ -71,7 +63,6 @@ var toBoolean = function toBoolean(value) {
 exports.parseAttributes = _parseAttributes.parseAttributes;
 exports.fieldClassNames = _fieldClassNames.fieldClassNames;
 exports.labelClassNames = _labelClassNames.labelClassNames;
-exports.getHtml5InputTypes = getHtml5InputTypes;
 exports.addOrRemoveFromArray = addOrRemoveFromArray;
 exports.toBoolean = toBoolean;
 exports.isValidHtml5type = isValidHtml5type;
