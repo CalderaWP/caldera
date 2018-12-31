@@ -26,18 +26,7 @@ describe('InputField ', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it( 'Outputs childen', () =>  {
-		const component = renderer.create(<InputField
-			label={'Hi Roy'}
-			description={'Say Hi'}
-			placeholder={'Hello'}
-			html5type={'text'}
-			value={'Roy'}
-			onChange={onChange}
-			onBlur={onBlur}
-		><div>The Children!</div></InputField>);
-		expect(component.toJSON()).toMatchSnapshot();
-	});
+
 
 	it( 'Uses text when html5type is not valid', () =>  {
 		const component = mount(<InputField
@@ -51,5 +40,19 @@ describe('InputField ', () => {
 		/>);
 
 		expect( component.find( 'input').prop( 'type') ).toEqual( 'text' );
+	});
+
+	it( 'Uses html5type as type when html5type is valid', () =>  {
+		const component = mount(<InputField
+			label={'Hi Roy'}
+			description={'Say Hi'}
+			placeholder={'Hello'}
+			html5type={'email'}
+			value={'Roy'}
+			onChange={onChange}
+			onBlur={onBlur}
+		/>);
+
+		expect( component.find( 'input').prop( 'type') ).toEqual( 'email' );
 	});
 });

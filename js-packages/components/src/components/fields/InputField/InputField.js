@@ -1,4 +1,4 @@
-import {parseAttributes,fieldClassNames,isValidHtml5type} from '../util';
+import {parseAttributes,fieldClassNames,isValidHtml5type,toBoolean} from '../util';
 
 import PropTypes from 'prop-types';
 import React from 'react'
@@ -20,12 +20,14 @@ export const InputField = ({
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
 	const _attributes = parseAttributes(attributes,fieldType);
 	if ('checkbox' === fieldType) {
+
+		const checked = value ? true : false;
 		return (
 			<CheckboxControl
 				id={fieldId}
+				checked={checked}
 				help={description}
 				{..._attributes}
-				checked={ value }
 				onChange={ onChange }
 				label={label}
 			/>
@@ -60,7 +62,8 @@ InputField.propTypes = {
 	value: PropTypes.oneOfType([
 		PropTypes.string,
 		PropTypes.number,
-		PropTypes.array
+		PropTypes.array,
+		PropTypes.bool
 	]),
 	onChange: PropTypes.func,
 	onBlur: PropTypes.func

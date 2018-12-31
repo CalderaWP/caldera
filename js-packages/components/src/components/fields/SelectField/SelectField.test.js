@@ -11,35 +11,11 @@ describe( 'Select Field component', () => {
 	});
 	it( 'matches snapshot, not multiple', () => {
 		const component = renderer.create(<SelectField
-			label={'Select A Hat'}
+			label={'Select A Hat!'}
 			description={'selection of hats' }
 			fieldId={'selection-hats' }
 			required={false}
 			multiple={false}
-		/>);
-		expect(component.toJSON()).toMatchSnapshot();
-
-	});
-
-	it( 'outputs children', () => {
-		const component = renderer.create(<SelectField
-			label={'Select A Hat'}
-			description={'selection of hats' }
-			fieldId={'selection-hats' }
-			required={false}
-			multiple={false}
-		><div>CHILDRENS!</div></SelectField>);
-		expect(component.toJSON()).toMatchSnapshot();
-
-	});
-
-	it( 'matches snapshot, multiple', () => {
-		const component = renderer.create(<SelectField
-			label={'Select  Hats'}
-			description={'selection of hats' }
-			fieldId={'selection-hatses' }
-			required={true}
-			multiple={true}
 		/>);
 		expect(component.toJSON()).toMatchSnapshot();
 
@@ -67,6 +43,24 @@ describe( 'Select Field component', () => {
 		expect(onChange.mock.calls[0][0]).toBe(2);
 	});
 
+	it('With no value selected and placeholder', () => {
+		const placeholder = '---';
+		const component = mount(<SelectField
+				label={'Select A Hat'}
+				onChange={onChange}
+				description={'selection of hats'}
+				fieldId={'selection-hats'}
+				placeholder={placeholder}
+				required={true}
+				options={[
+					{value: 1, label: 'One'},
+					{value: 2, label: 'Two'},
+				]}
+			/>
+		);
+		expect( component.find( 'select' ).find('option').first().props() ).toEqual({"children": "---", "value": undefined});
+
+	})
 
 
 });

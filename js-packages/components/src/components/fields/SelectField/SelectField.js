@@ -15,15 +15,15 @@ export  const SelectField = ({
 							 }) => {
 
 	attributes = parseAttributes(attributes,'select');
+
 	if( ! value && placeholder ){
 		options.unshift({
 			label: placeholder
 		});
 	}
 	return (
-
 			<SelectControl
-				classNames={fieldClassNames('select')}
+				className={fieldClassNames('select')}
 				id={fieldId}
 				value={value}
 				options={ options }
