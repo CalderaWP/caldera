@@ -49,4 +49,39 @@ describe('Fields component', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
+
+
+});
+
+describe('Fields component change handling', () => {
+
+	let onChange = jest.fn()
+	let onBlur;
+	beforeEach(() => {
+		onChange = jest.fn();
+		onBlur = jest.fn()
+	});
+
+	const textInitalValue = 'TEXTS';
+	const fields = [
+		{...selectField,value:1},
+		{...textField,value:textInitalValue},
+	];
+
+
+	const component = mount(
+		<Fields
+			fields={fields} onChange={onChange} onBlur={onBlur}
+		/>
+	);
+
+	const newSelectValue = 2;
+	const event = {target: {value: newSelectValue}};
+	component.find( 'select' ).simulate( 'change', event );
+	expect(onChange.mock.calls[0][0]).toEqual({
+		[textField.fieldId]: textInitalValue,
+		[selectField.fieldId]: newSelectValue,
+
+	});
+
 });

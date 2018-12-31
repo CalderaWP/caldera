@@ -55,4 +55,19 @@ describe('InputField ', () => {
 
 		expect( component.find( 'input').prop( 'type') ).toEqual( 'email' );
 	});
+
+	it( 'Changes calls change handler', () =>  {
+		const component = mount(<InputField
+			label={'Hi Roy'}
+			description={'Say Hi'}
+			placeholder={'Hello'}
+			html5type={'email'}
+			value={'Roy'}
+			onChange={onChange}
+			onBlur={onBlur}
+		/>);
+
+		component.find( 'input' ).simulate( 'change' );
+		expect(onChange.mock.calls.length).toBe(1);
+	});
 });

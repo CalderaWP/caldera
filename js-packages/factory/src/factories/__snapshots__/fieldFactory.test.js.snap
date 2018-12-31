@@ -281,7 +281,7 @@ exports[`fieldFactory Creates an email field 1`] = `
     <input
       aria-describedby="inspector-text-control-4__help"
       className="components-text-control__input"
-      id="emailFieldLabel"
+      id="emailFieldId"
       multiple={true}
       onBlur={[Function]}
       onChange={[Function]}

@@ -100,7 +100,7 @@ const emailField =  {
 	fieldType: 'email',
 	value: 'emai@email.com',
 	label: 'Email Field Label',
-	fieldId: 'emailFieldLabel',
+	fieldId: 'emailFieldId',
 	description: 'Email field description',
 	required: true,
 	attributes: {

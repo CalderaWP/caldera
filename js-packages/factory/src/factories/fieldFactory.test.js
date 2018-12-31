@@ -72,3 +72,20 @@ describe( 'fieldFactory', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 });
+
+describe( 'change handlers', () => {
+	let onChange;
+	let onBlur;
+	beforeEach( () => {
+		onChange= jest.fn();
+		onBlur= jest.fn()
+	});
+
+	it( 'Changes calls change handler', () => {
+		const component = mount(fieldFactory(textField,onChange,onBlur) );
+		component.find( 'input' ).simulate( 'change' );
+		expect(onChange.mock.calls.length).toBe(1);
+	});
+});
+
+

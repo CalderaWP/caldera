@@ -8,7 +8,7 @@
   "scripts": {
     "test": "yarn test:watch",
     "test:watch": "jest --watch",
-    "test:once": "jest",
+    "test:once": "jest --ci",
     "lint": "eslint 'src/**/*.js'",
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
@@ -61,7 +61,9 @@
   },
   "dependencies": {
     "@rebass/grid": "^6.0.0-7",
+    "dot-prop": "^4.2.0",
     "formik": "^1.4.1",
+    "lodash.flatmap": "^4.5.0",
     "styled-components": "^4.1.3"
   }
 }
