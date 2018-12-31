@@ -10,9 +10,9 @@ import {
 	emailField
 } from '../fields.fixtures';
 
-import {Fields} from './Fields';
+import {Field} from './Field';
 
-describe( 'Fields component', () => {
+describe( 'Field component', () => {
 	let onChange;
 	let onBlur;
 	beforeEach( () => {
@@ -21,7 +21,7 @@ describe( 'Fields component', () => {
 	});
 	it.only( 'Creates a text field', () => {
 		const component = renderer.create(
-			<Fields
+			<Field
 				{...textField} onChange={onChange} onBlur={onBlur}
 		/>
 		);
@@ -29,7 +29,7 @@ describe( 'Fields component', () => {
 	});
 	it( 'Creates a number field', () => {
 		const component = renderer.create(
-			<Fields
+			<Field
 				{...numberField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -38,7 +38,7 @@ describe( 'Fields component', () => {
 
 	it( 'Creates an email field', () => {
 		const component = renderer.create(
-			<Fields
+			<Field
 				{...emailField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -47,7 +47,7 @@ describe( 'Fields component', () => {
 
 	it( 'Creates an checkbox field field', () => {
 		const component = renderer.create(
-			<Fields
+			<Field
 				{...checkboxField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -56,7 +56,7 @@ describe( 'Fields component', () => {
 
 	it( 'Creates an checkbox field set', () => {
 		const component = renderer.create(
-			<Fields
+			<Field
 				{...checkboxFieldset} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -65,7 +65,7 @@ describe( 'Fields component', () => {
 
 	it( 'Creates an select field', () => {
 		const component = renderer.create(
-			<Fields
+			<Field
 				{...selectField} onChange={onChange} onBlur={onBlur}
 			/>
 		);
@@ -74,7 +74,7 @@ describe( 'Fields component', () => {
 
 	it( 'Creates an select field identified as dropdown', () => {
 		const component = renderer.create(
-			<Fields
+			<Field
 				{...{
 					...selectField,
 					fieldType:'dropdown'
