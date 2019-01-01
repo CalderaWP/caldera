@@ -5,13 +5,21 @@ import { fieldFactory, fieldGroupFactory } from '@caldera-labs/factory';
 import {Column,Row,FieldGroup} from '@caldera-labs/factory';
 import classNames from "classnames";
 
-export const CalderaForm = ({ formRows, initialValues,onChange,onBlur,onSubmit }) => {
+export const CalderaForm = ({ formRows, initialValues,onSubmit }) => {
 	return (
 		<div>
 			<Formik
 				initialValues={initialValues}
 				onSubmit={onSubmit}
-				render={({ errors, status, touched, isSubmitting }) => (
+				render={({ errors,
+							 status,
+							 touched,
+							 isSubmitting,
+							 handleChange,
+							 handleBlur,
+							 setFieldValue,
+							 values
+						 }) => (
 					<Form>
 						{formRows.map( (formRow ) => {
 							const {
@@ -21,8 +29,6 @@ export const CalderaForm = ({ formRows, initialValues,onChange,onBlur,onSubmit }
 								return(
 									<Row
 										className={classNames('caldera-form-row')}
-										onChange={onChange}
-										onBlur={onBlur}
 										key={rowId}
 										id={rowId}
 									>
@@ -44,12 +50,15 @@ export const CalderaForm = ({ formRows, initialValues,onChange,onBlur,onSubmit }
 															const {
 																fieldId
 															} = field;
+															field.value = values[fieldId];
 															return (
 																<FieldGroup
 																	key={fieldId}
 																	field={field}
-																	onChange={onChange}
-																	onBlur={onBlur}
+																	onChange={(newValue) => {
+																		setFieldValue(fieldId, newValue,true)
+																	}}
+																	onBlur={handleBlur}
 																	fieldErrors={errors}
 																	fieldsTouch={touched}
 																/>
@@ -63,12 +72,16 @@ export const CalderaForm = ({ formRows, initialValues,onChange,onBlur,onSubmit }
 
 
 						})}
-						<button type="submit" disabled={isSubmitting}>
-							Click Button
-						</button>
+						<input type="submit" className={'caldera-forms-submit'} disabled={isSubmitting} value={'Click Button'}/>
 					</Form>
 				)}
 			/>
 		</div>
 	);
+};
+
+CalderaForm.propTypes=  {
+	formRows: PropTypes.array,
+	initialValues: PropTypes.object,
+	onSubmit: PropTypes.func
 };

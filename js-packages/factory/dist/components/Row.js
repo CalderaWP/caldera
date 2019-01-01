@@ -90,7 +90,7 @@ var rowPropTypes = exports.rowPropTypes = {
 		columnId: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number])
 	})),
 	rowId: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
-	onChange: _propTypes2.default.func.isRequired,
+	onChange: _propTypes2.default.func,
 	onBlur: _propTypes2.default.func,
 	className: _propTypes2.default.string
 };

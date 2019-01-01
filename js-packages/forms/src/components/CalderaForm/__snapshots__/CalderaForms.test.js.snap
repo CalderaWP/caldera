@@ -271,12 +271,12 @@ exports[`Caldera Forms Forms 1`] = `
         </div>
       </div>
     </div>
-    <button
+    <input
+      className="caldera-forms-submit"
       disabled={false}
       type="submit"
-    >
-      Click Button
-    </button>
+      value="Click Button"
+    />
   </form>
 </div>
 `;

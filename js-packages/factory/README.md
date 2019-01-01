@@ -7,6 +7,9 @@ Provides some sort of functionality.
 ### Import With webpack
 ```js
 import { fieldFactory, fieldGroupFactory } from '@caldera-labs/factory';
+
+import { collectFieldValues } from '@caldera-labs/collectFieldValues';
+
 ```
 
 ## Components

@@ -6,10 +6,12 @@ import {mount} from 'enzyme';
 import {
 	formRows
 } from './columns.fixtures'
+import{ getValuesFromFormLayout} from './util/getValuesFromFormLayout';
 
+const initialValues = getValuesFromFormLayout(formRows);
 describe( 'Caldera Forms', () => {
 	let onChange = jest.fn();
-	let onBlur;
+	let onBlur = jest.fn();
 	beforeEach(() => {
 		onChange = jest.fn();
 		onBlur = jest.fn()
@@ -19,7 +21,7 @@ describe( 'Caldera Forms', () => {
 		const component = renderer.create(
 			<CalderaForm
 				formRows={formRows}
-				initialValues={{}}
+				initialValues={initialValues}
 				onBlur={onBlur}
 				onChange={onChange}
 			/>
@@ -29,3 +31,24 @@ describe( 'Caldera Forms', () => {
 
 });
 
+describe( 'Updates field value', () => {
+	let onSubmit = jest.fn();
+	beforeEach(() => {
+		onSubmit = jest.fn();
+	});
+
+	it( 'Updates field value when field is changed', ()=> {
+		const component = mount(
+			<CalderaForm
+				formRows={formRows}
+				initialValues={initialValues}
+				onSubmit={onSubmit}
+			/>
+		);
+		const value = 'changed@email22.com';
+		const event = {target: {value}};
+		component.find( '#emailFieldId' ).find( 'input').simulate( 'change', event );
+		expect( component.find( '#emailFieldId').find( 'input').prop('value') ).toEqual(value);
+	});
+
+});

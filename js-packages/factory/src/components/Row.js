@@ -77,7 +77,7 @@ export const rowPropTypes = {
 		PropTypes.string,
 		PropTypes.number,
 	]),
-	onChange: PropTypes.func.isRequired,
+	onChange: PropTypes.func,
 	onBlur: PropTypes.func,
 	className: PropTypes.string
 };
