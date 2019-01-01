@@ -13,54 +13,35 @@ import {
 import {Row} from './Row';
 
 describe('Row component', () => {
-	let onChange;
+	let onChange = jest.fn();
 	let onBlur;
 	beforeEach(() => {
 		onChange = jest.fn();
 		onBlur = jest.fn()
 	});
 
-	const columnWithEmailField = {
-		fields:[
-			emailField,
-		],
-		width: '1/2',
-		columnId: 22,
 
-	};
-
-	const columnWithEmailFieldNoValue = {
-		fields:[
-			{...emailField,value: ''},
-		],
-		width: '1/2',
-		columnId: 22,
-
-	};
-
-	const columnWithSelectField = {
-		fields:[
-			{...selectField, value: 2},
-		],
-		width: '1/2',
-		columnId: 222,
-
-	};
 
 	const columns = [
 		{
-			fields:[
-				textField,
-				checkboxField,
-			],
+			children: <div>Half Column</div>,
 			width: '1/2',
 			columnId: 1,
 		},
-		columnWithEmailField
+		{
+			children: <div>Quarter Column</div>,
+			width: '1/4',
+			columnId: 2,
+		},
+		{
+			children: <div>Quarter Column 2</div>,
+			width: '1/4',
+			columnId: 3,
+		},
 	];
 
 
-	it('Creates a 2 column  row', () => {
+	it('Creates columns', () => {
 
 		const component = renderer.create(
 			<Row
@@ -71,24 +52,6 @@ describe('Row component', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it('Calls the change handler correctly', () => {
-
-
-		const component = mount(
-			<Row
-				rowId={'twoColumns'}
-				columns={[columnWithEmailFieldNoValue]} onChange={onChange} onBlur={onBlur}
-			/>
-		);
-		//emailField
-		const expectedValue = 'roy@hiroy.club';
-		const event = {target: {value: expectedValue}};
-		component.find( 'input').simulate( 'change',event);
-		expect(onChange.mock.calls[0][0]).toEqual({[emailField.fieldId]:expectedValue});
-
-
-
-	});
 
 
 });

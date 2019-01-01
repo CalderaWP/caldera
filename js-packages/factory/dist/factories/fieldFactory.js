@@ -16,12 +16,13 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange, onBlur) {
-	var fieldType = field.fieldType,
-	    label = field.label,
-	    attributes = field.attributes,
-	    options = field.options,
-	    fieldId = field.fieldId,
-	    messages = field.messages;
+	var _field = field,
+	    fieldType = _field.fieldType,
+	    label = _field.label,
+	    attributes = _field.attributes,
+	    options = _field.options,
+	    fieldId = _field.fieldId,
+	    messages = _field.messages;
 
 
 	switch (fieldType) {
@@ -70,7 +71,9 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 		case 'input':
 		default:
 			if ((0, _components.isValidHtml5type)(fieldType)) {
-				field.html5type = fieldType;
+				if (field.html5type !== fieldType) {
+					field = _extends({}, field, { html5type: fieldType });
+				}
 			} else {
 				field.html5type = 'text';
 			}

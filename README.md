@@ -118,6 +118,18 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
     - `"test:<package-name>": "cd js-packages/<package-name> && yarn test"`
 #### See
 * https://github.com/lerna/lerna/blob/master/commands/bootstrap/README.md
+
+### Sharing Packages
+When you import a module from one package to another, the IDE may try and autocomplete, the full path. That imports the module __without__ babelifification. These packages are designed to be used separately, so being forced to use the correct name is good.
+ 
+```js
+//Works!
+import {FieldGroup,} from '@caldera-labs/factory';
+
+//Does not work. Makes errors about imports.
+// Do not try to fix.
+import {FieldGroup} from "@caldera-labs/factory/src/components/FieldGroup";
+```
 ### Also See
 https://github.com/nareshbhatia/lerna-workspaces-react-es6
 https://www.nearform.com/blog/sharing-react-components-with-lerna/

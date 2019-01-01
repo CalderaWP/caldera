@@ -6,52 +6,59 @@ import {Flex, Box} from '@rebass/grid'
 
 
 /**
- * Render a row of fields with a shared onChange/onBlur event for all values
+ *
  * @param columns
  * @param onChange
  * @param onBlur
  * @param className
  * @param rowId
+ * @param children
  * @return {*}
  * @constructor
  */
 export const Row = ({
-						columns, onChange, onBlur, className, rowId
-					}) => (
-	<Flex
-		className={classNames('caldera-row', className)}
-		id={rowId}
-	>
-		{columns.map(column => {
-			let {
-				width,
-				padding,
-				columnId,
-				fields,
-			} = column;
+						columns, onChange, onBlur, className, rowId,children
+					}) => {
+		return (
+			<Flex
+				className={classNames('caldera-row', className)}
+				id={rowId}
+			>
+				{columns ? (
+					<Fragment>
+						{columns.map(column => {
+							let {
+								width,
+								padding,
+								columnId
+							} = column;
 
-			padding = padding ? padding : 8;
+							padding = padding ? padding : 8;
 
-			return (
-				<Box
-					key={columnId}
-					id={columnId}
-					width={width}
-					px={padding}
-					py={padding}
-				>
-					<Fields
-						fields={fields}
-						onChange={onChange}
-						onBlur={onBlur}
-					/>
-				</Box>
+							return (
+								<Column
+									key={columnId}
+									id={columnId}
+									width={width}
+									px={padding}
+									py={padding}
+								>
+									{children}
+								</Column>
 
-			)
-		})}
-	</Flex>
+							)
+						})}
 
-);
+					</Fragment>
+
+				) : (
+					<Fragment>{children}</Fragment>
+				)}
+
+
+			</Flex>
+		)
+	};
 
 /**
  * Row prop types
@@ -60,13 +67,11 @@ export const Row = ({
  */
 export const rowPropTypes = {
 	columns: PropTypes.arrayOf(PropTypes.shape({
-		fields: PropTypes.array.isRequired,
 		width: PropTypes.string.isRequired,
 		columnId: PropTypes.oneOfType([
 			PropTypes.string,
 			PropTypes.number,
 		])
-		//input propTypes?
 	})),
 	rowId: PropTypes.oneOfType([
 		PropTypes.string,

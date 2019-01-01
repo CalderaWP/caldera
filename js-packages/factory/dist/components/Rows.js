@@ -27,12 +27,14 @@ var Rows = exports.Rows = function Rows(_ref) {
 	return _react2.default.createElement(
 		_react.Fragment,
 		null,
-		rows.forEach(function (row) {
+		rows.map(function (row) {
 			return _react2.default.createElement(_Row.Row, _extends({
 				key: row.rowId
 			}, row, {
 				onChange: onChange,
-				onBlur: onBlur }));
+				onBlur: onBlur,
+				className: className
+			}));
 		})
 	);
 };

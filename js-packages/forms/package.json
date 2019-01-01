@@ -6,7 +6,7 @@
   "license": "GPL-2.0",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "yarn test:watch",
     "test:watch": "jest --watch",
     "test:once": "jest -ci",
     "lint": "eslint 'src/**/*.js'",

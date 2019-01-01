@@ -141,3 +141,18 @@ const attributes = {
 //Better
 <input {...attributes} />
 ```
+
+## JSX
+
+### Conditional Rednering
+```jsx 
+<div>
+    {isLoggedIn ? (
+        <LogoutButton onClick={this.handleLogoutClick} />
+    ) : (
+        <LoginButton onClick={this.handleLoginClick} />
+    )}
+</div>
+
+```
+* https://reactjs.org/docs/conditional-rendering.html#inline-if-else-with-conditional-operator

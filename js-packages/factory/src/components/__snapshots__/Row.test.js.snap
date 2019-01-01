@@ -1,119 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Row component Creates a 2 column  row 1`] = `
+exports[`Row component Creates columns 1`] = `
 <div
   className="sc-bdVaJa caldera-row sc-bwzfXH pjOvZ"
   id="twoColumns"
 >
   <div
-    className="sc-bdVaJa dihzyz"
-    id={1}
+    className="sc-bdVaJa gfmZBt"
+    id={undefined}
     width="1/2"
-  >
-    <div
-      className="caldera-fields-wrapper"
-    >
-      <div
-        className="components-base-control caldera-field caldera-field-text"
-      >
-        <div
-          className="components-base-control__field"
-        >
-          <label
-            className="components-base-control__label"
-            htmlFor="inspector-text-control-0"
-          >
-            First Name
-          </label>
-          <input
-            aria-describedby="inspector-text-control-0__help"
-            className="components-text-control__input"
-            id="firstName"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder={undefined}
-            type="text"
-            value="roy"
-          />
-        </div>
-        <p
-          className="components-base-control__help"
-          id="inspector-text-control-0__help"
-        >
-          your first name
-        </p>
-      </div>
-      <div
-        className="components-base-control"
-      >
-        <div
-          className="components-base-control__field"
-        >
-          <input
-            aria-describedby="inspector-checkbox-control-0__help"
-            checked={true}
-            className="components-checkbox-control__input"
-            id="checkboxFieldLabel"
-            onChange={[Function]}
-            type="checkbox"
-            value="1"
-          />
-          <label
-            className="components-checkbox-control__label"
-            htmlFor="inspector-checkbox-control-0"
-          >
-            Checkbox Labe
-          </label>
-        </div>
-        <p
-          className="components-base-control__help"
-          id="inspector-checkbox-control-0__help"
-        >
-          Checkbox field description
-        </p>
-      </div>
-    </div>
-  </div>
+  />
   <div
-    className="sc-bdVaJa dihzyz"
-    id={22}
-    width="1/2"
-  >
-    <div
-      className="caldera-fields-wrapper"
-    >
-      <div
-        className="components-base-control caldera-field caldera-field-email"
-      >
-        <div
-          className="components-base-control__field"
-        >
-          <label
-            className="components-base-control__label"
-            htmlFor="inspector-text-control-1"
-          >
-            Email Field Label
-          </label>
-          <input
-            aria-describedby="inspector-text-control-1__help"
-            className="components-text-control__input"
-            id="emailFieldId"
-            multiple={true}
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder={undefined}
-            type="email"
-            value="emai@email.com"
-          />
-        </div>
-        <p
-          className="components-base-control__help"
-          id="inspector-text-control-1__help"
-        >
-          Email field description
-        </p>
-      </div>
-    </div>
-  </div>
+    className="sc-bdVaJa jlBFAP"
+    id={undefined}
+    width="1/4"
+  />
+  <div
+    className="sc-bdVaJa jlBFAP"
+    id={undefined}
+    width="1/4"
+  />
 </div>
 `;

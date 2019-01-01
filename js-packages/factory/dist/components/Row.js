@@ -24,12 +24,13 @@ var _grid = require('@rebass/grid');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
- * Render a row of fields with a shared onChange/onBlur event for all values
+ *
  * @param columns
  * @param onChange
  * @param onBlur
  * @param className
  * @param rowId
+ * @param children
  * @return {*}
  * @constructor
  */
@@ -38,38 +39,43 @@ var Row = exports.Row = function Row(_ref) {
 	    onChange = _ref.onChange,
 	    onBlur = _ref.onBlur,
 	    className = _ref.className,
-	    rowId = _ref.rowId;
+	    rowId = _ref.rowId,
+	    children = _ref.children;
+
 	return _react2.default.createElement(
 		_grid.Flex,
 		{
 			className: (0, _classnames2.default)('caldera-row', className),
 			id: rowId
 		},
-		columns.map(function (column) {
-			var width = column.width,
-			    padding = column.padding,
-			    columnId = column.columnId,
-			    fields = column.fields;
+		columns ? _react2.default.createElement(
+			_react.Fragment,
+			null,
+			columns.map(function (column) {
+				var width = column.width,
+				    padding = column.padding,
+				    columnId = column.columnId;
 
 
-			padding = padding ? padding : 8;
+				padding = padding ? padding : 8;
 
-			return _react2.default.createElement(
-				_grid.Box,
-				{
-					key: columnId,
-					id: columnId,
-					width: width,
-					px: padding,
-					py: padding
-				},
-				_react2.default.createElement(_Fields.Fields, {
-					fields: fields,
-					onChange: onChange,
-					onBlur: onBlur
-				})
-			);
-		})
+				return _react2.default.createElement(
+					Column,
+					{
+						key: columnId,
+						id: columnId,
+						width: width,
+						px: padding,
+						py: padding
+					},
+					children
+				);
+			})
+		) : _react2.default.createElement(
+			_react.Fragment,
+			null,
+			children
+		)
 	);
 };
 
@@ -80,10 +86,8 @@ var Row = exports.Row = function Row(_ref) {
  */
 var rowPropTypes = exports.rowPropTypes = {
 	columns: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-		fields: _propTypes2.default.array.isRequired,
 		width: _propTypes2.default.string.isRequired,
 		columnId: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number])
-		//input propTypes?
 	})),
 	rowId: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
 	onChange: _propTypes2.default.func.isRequired,

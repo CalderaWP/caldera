@@ -6,11 +6,13 @@ export const Rows = ({
 						 rows, onChange, onBlur, className
 					 }) => (
 	<Fragment>
-		{rows.forEach(row => <Row
+		{rows.map(row => <Row
 			key={row.rowId}
 			{...row}
 			onChange={onChange}
-			onBlur={onBlur}/>)
+			onBlur={onBlur}
+			className={className}
+		/>)
 		}
 	</Fragment>
 );

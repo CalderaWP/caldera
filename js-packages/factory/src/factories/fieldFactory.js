@@ -60,7 +60,9 @@ export const fieldFactory = (field, onChange, onBlur) => {
 		case 'input':
 		default:
 			if (isValidHtml5type(fieldType)) {
-				field.html5type = fieldType;
+				if (field.html5type !== fieldType) {
+					field = { ...field, html5type: fieldType }
+				}
 			} else {
 				field.html5type = 'text';
 

@@ -2,6 +2,26 @@
 
 Provides some sort of functionality.
 
+## Field Factories
+
+### Import With webpack
+```js
+import { fieldFactory, fieldGroupFactory } from '@caldera-labs/factory';
+```
+
+## Components
+
+### Import With webpack
+```js
+import { 
+	Rows,
+	Row, 
+	Field,
+	Fields,
+	FieldGroup
+} from '@caldera-labs/factory';
+```
+
 ## Testing
 
 * Run Unit Tests - Jest.

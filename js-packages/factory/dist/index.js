@@ -49,6 +49,24 @@ Object.defineProperty(exports, 'Rows', {
   }
 });
 
+var _Column = require('./components/Column');
+
+Object.defineProperty(exports, 'Column', {
+  enumerable: true,
+  get: function get() {
+    return _Column.Column;
+  }
+});
+
+var _collectFieldValues = require('./components/collectFieldValues');
+
+Object.defineProperty(exports, 'collectFieldValues', {
+  enumerable: true,
+  get: function get() {
+    return _collectFieldValues.collectFieldValues;
+  }
+});
+
 var _fieldFactory = require('./factories/fieldFactory');
 
 Object.defineProperty(exports, 'fieldFactory', {
