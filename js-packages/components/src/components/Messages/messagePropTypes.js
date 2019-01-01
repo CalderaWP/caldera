@@ -5,9 +5,7 @@ import PropTypes from 'prop-types';
  *
  * @type {shim}
  */
-export const messagePropShape = PropTypes.shape(
-	{
-		error: PropTypes.bool,
-		text: PropTypes.string
-	}
-);
+export const messagePropShape = PropTypes.shape({
+	error: PropTypes.bool,
+	text: PropTypes.string
+});

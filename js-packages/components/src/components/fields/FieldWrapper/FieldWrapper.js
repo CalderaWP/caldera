@@ -1,6 +1,6 @@
-import {fieldWrapperClassNames,parseAttributes} from '../util';
+import { fieldWrapperClassNames, parseAttributes } from '../util';
 import PropTypes from 'prop-types';
-import React from 'react'
+import React from 'react';
 
 /**
  *
@@ -10,12 +10,9 @@ import React from 'react'
  * @return {*}
  * @constructor
  */
-export const FieldWrapper = ({fieldType, attributes, children, }) => {
+export const FieldWrapper = ({ fieldType, attributes, children }) => {
 	return (
-		<div
-			className={fieldWrapperClassNames(fieldType)}
-			{...attributes}
-		>
+		<div className={fieldWrapperClassNames(fieldType)} {...attributes}>
 			{children}
 		</div>
 	);
@@ -27,6 +24,5 @@ FieldWrapper.propTypes = {
 		PropTypes.arrayOf(PropTypes.node),
 		PropTypes.node
 	]).isRequired,
-	attributes: PropTypes.object,
+	attributes: PropTypes.object
 };
-

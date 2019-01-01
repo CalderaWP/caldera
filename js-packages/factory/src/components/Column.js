@@ -1,16 +1,10 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import classNames from 'classnames';
-import { Box} from '@rebass/grid'
+import { Box } from '@rebass/grid';
 
-export const Column = ({
-						   columnId,
-						   padding,
-						   width,
-						   children,
-	className
-					   }) => (
+export const Column = ({ columnId, padding, width, children, className }) => (
 	<Box
-		className={classNames('caldera-column',className)}
+		className={classNames('caldera-column', className)}
 		key={columnId}
 		id={columnId}
 		width={width}
@@ -19,4 +13,4 @@ export const Column = ({
 	>
 		{children}
 	</Box>
-)
+);

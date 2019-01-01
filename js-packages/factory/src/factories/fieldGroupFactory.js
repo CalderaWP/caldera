@@ -1,23 +1,22 @@
-import {
-	FieldWrapper,
-	Message
-} from '@caldera-labs/components';
-import React, {Fragment} from 'react';
+import { FieldWrapper, Message } from '@caldera-labs/components';
+import React, { Fragment } from 'react';
 import classNames from 'classnames';
-import {fieldFactory} from './fieldFactory';
+import { fieldFactory } from './fieldFactory';
 
-export const fieldGroupFactory = (field, onChange, onBlur, fieldErrors, fieldsTouch) => {
-	const {
-		fieldType,
-		fieldId,
-		required
-	} = field;
+export const fieldGroupFactory = (
+	field,
+	onChange,
+	onBlur,
+	fieldErrors,
+	fieldsTouch
+) => {
+	const { fieldType, fieldId, required } = field;
 	const error = fieldErrors && fieldErrors[fieldId];
 	const touched = fieldsTouch && fieldsTouch[fieldId];
 	return (
 		<FieldWrapper
 			fieldType={'text'}
-			className={classNames('caldera-field-group',{
+			className={classNames('caldera-field-group', {
 				'has-error': touched && error,
 				'is-required': required
 			})}
@@ -25,7 +24,7 @@ export const fieldGroupFactory = (field, onChange, onBlur, fieldErrors, fieldsTo
 			<Fragment key={`${fieldId}-1`}>
 				{fieldFactory(field, onChange, onBlur)}
 			</Fragment>
-			{touched && error &&
+			{touched && error && (
 				<Fragment key={`${fieldId}-2`}>
 					<Message
 						message={{
@@ -34,8 +33,7 @@ export const fieldGroupFactory = (field, onChange, onBlur, fieldErrors, fieldsTo
 						}}
 					/>
 				</Fragment>
-			}
-
+			)}
 		</FieldWrapper>
 	);
 };

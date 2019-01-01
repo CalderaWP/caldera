@@ -1,9 +1,8 @@
-import {parseAttributes} from './parseAttributes'
-import {fieldClassNames} from './fieldClassNames';
-import {labelClassNames} from './labelClassNames';
-import {fieldSetClassNames} from './fieldSetClassNames';
-import {fieldWrapperClassNames} from './fieldWrapperClassNames';
-
+import { parseAttributes } from './parseAttributes';
+import { fieldClassNames } from './fieldClassNames';
+import { labelClassNames } from './labelClassNames';
+import { fieldSetClassNames } from './fieldSetClassNames';
+import { fieldWrapperClassNames } from './fieldWrapperClassNames';
 
 /**
  * Checks if a given input type is an acceptable HTML5 input type
@@ -11,7 +10,7 @@ import {fieldWrapperClassNames} from './fieldWrapperClassNames';
  * @param {String} type
  * @returns {boolean}
  */
-const isValidHtml5type = (type) => {
+const isValidHtml5type = type => {
 	return [
 		'text',
 		'email',
@@ -24,8 +23,7 @@ const isValidHtml5type = (type) => {
 		'checkbox',
 		'hidden'
 	].includes(type);
-}
-
+};
 
 /**
  * Remove a value from an array if present, if not present, add it
@@ -34,12 +32,12 @@ const isValidHtml5type = (type) => {
  * @param {Array} array Array to mutate
  * @return {*}
  */
-const addOrRemoveFromArray = (value,array) => {
+const addOrRemoveFromArray = (value, array) => {
 	const index = array.indexOf(value);
-	if (index !== -1){
+	if (index !== -1) {
 		array.splice(index, 1);
-	}else{
-		array.push( value );
+	} else {
+		array.push(value);
 	}
 	return array;
 };
@@ -50,8 +48,8 @@ const addOrRemoveFromArray = (value,array) => {
  * @param {Mixed} value Value to cast
  * @return {boolean}
  */
-const toBoolean =(value) => {
-	switch(value){
+const toBoolean = value => {
+	switch (value) {
 		case true:
 		case 'true':
 		case 1:
@@ -64,8 +62,6 @@ const toBoolean =(value) => {
 	}
 };
 
-
-
 export {
 	parseAttributes,
 	fieldClassNames,
@@ -75,4 +71,4 @@ export {
 	isValidHtml5type,
 	fieldSetClassNames,
 	fieldWrapperClassNames
-}
+};

@@ -1,26 +1,29 @@
-import {parseAttributes,fieldClassNames,isValidHtml5type,toBoolean} from '../util';
+import {
+	parseAttributes,
+	fieldClassNames,
+	isValidHtml5type,
+	toBoolean
+} from '../util';
 
 import PropTypes from 'prop-types';
-import React from 'react'
-import {TextControl,CheckboxControl} from "@wordpress/components";
+import React from 'react';
+import { TextControl, CheckboxControl } from '@wordpress/components';
 export const InputField = ({
-							  label,
-							  description,
-							  fieldId,
-							  placeholder,
-							  required,
-							  html5type,
-							  value,
-							  onChange,
-							  onBlur,
-							  attributes,
+	label,
+	description,
+	fieldId,
+	placeholder,
+	required,
+	html5type,
+	value,
+	onChange,
+	onBlur,
+	attributes,
 	children
-						  }) => {
-
+}) => {
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
-	const _attributes = parseAttributes(attributes,fieldType);
+	const _attributes = parseAttributes(attributes, fieldType);
 	if ('checkbox' === fieldType) {
-
 		const checked = value ? true : false;
 		return (
 			<CheckboxControl
@@ -28,11 +31,10 @@ export const InputField = ({
 				checked={checked}
 				help={description}
 				{..._attributes}
-				onChange={ onChange }
+				onChange={onChange}
 				label={label}
 			/>
-		)
-
+		);
 	} else {
 		return (
 			<TextControl
@@ -47,7 +49,7 @@ export const InputField = ({
 				help={description}
 				{..._attributes}
 			/>
-		)
+		);
 	}
 };
 
@@ -70,8 +72,7 @@ InputField.propTypes = {
 };
 
 InputField.defaultProps = {
-	onBlur: () => {
-	},
+	onBlur: () => {},
 	required: false,
 	html5type: 'text'
 };

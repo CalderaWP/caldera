@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {messagePropShape} from './messagePropTypes';
+import { messagePropShape } from './messagePropTypes';
 import classNames from 'classnames';
 
 /**
@@ -18,23 +18,18 @@ export const MESSAGE_CLASS = 'caldera-components-message';
  * @return {*}
  * @constructor
  */
-export const Message = (props) => {
-	const {message,error} = props.message;
-	if( !message || '' === message ){
-		return <React.Fragment></React.Fragment>;
+export const Message = props => {
+	const { message, error } = props.message;
+	if (!message || '' === message) {
+		return <React.Fragment />;
 	}
-	return(
+	return (
 		<div
-			className={classNames(
-				props.className,
-				MESSAGE_CLASS,
-				{
-					'has-error': error,
-					'caldera-components-error': error,
-					'caldera-components-not-error': ! error,
-
-				}
-			)}
+			className={classNames(props.className, MESSAGE_CLASS, {
+				'has-error': error,
+				'caldera-components-error': error,
+				'caldera-components-not-error': !error
+			})}
 		>
 			{message}
 		</div>
@@ -48,6 +43,5 @@ export const Message = (props) => {
  */
 Message.propTypes = {
 	className: PropTypes.string,
-	message: messagePropShape,
+	message: messagePropShape
 };
-

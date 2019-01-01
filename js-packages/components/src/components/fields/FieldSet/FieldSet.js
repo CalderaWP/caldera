@@ -1,6 +1,6 @@
-import {fieldSetClassNames,parseAttributes} from '../util';
+import { fieldSetClassNames, parseAttributes } from '../util';
 import PropTypes from 'prop-types';
-import React from 'react'
+import React from 'react';
 
 /**
  *
@@ -10,16 +10,11 @@ import React from 'react'
  * @return {*}
  * @constructor
  */
-export const FieldSet = ({fieldType, attributes, children, legend}) => {
-	attributes = parseAttributes( attributes, 'fieldset' );
+export const FieldSet = ({ fieldType, attributes, children, legend }) => {
+	attributes = parseAttributes(attributes, 'fieldset');
 	return (
-		<fieldset
-			className={fieldSetClassNames(fieldType)}
-			{...attributes}
-		>
-			<legend>
-				{legend}
-			</legend>
+		<fieldset className={fieldSetClassNames(fieldType)} {...attributes}>
+			<legend>{legend}</legend>
 			{children}
 		</fieldset>
 	);
@@ -31,6 +26,5 @@ FieldSet.propTypes = {
 		PropTypes.arrayOf(PropTypes.node),
 		PropTypes.node
 	]).isRequired,
-	attributes: PropTypes.object,
+	attributes: PropTypes.object
 };
-

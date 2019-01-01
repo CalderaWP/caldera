@@ -1,9 +1,8 @@
-import React, {Fragment} from 'react';
-import {Fields} from './Fields';
+import React, { Fragment } from 'react';
+import { Fields } from './Fields';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import {Flex, Box} from '@rebass/grid'
-
+import { Flex, Box } from '@rebass/grid';
 
 /**
  *
@@ -17,48 +16,41 @@ import {Flex, Box} from '@rebass/grid'
  * @constructor
  */
 export const Row = ({
-						columns, onChange, onBlur, className, rowId,children
-					}) => {
-		return (
-			<Flex
-				className={classNames('caldera-row', className)}
-				id={rowId}
-			>
-				{columns ? (
-					<Fragment>
-						{columns.map(column => {
-							let {
-								width,
-								padding,
-								columnId
-							} = column;
+	columns,
+	onChange,
+	onBlur,
+	className,
+	rowId,
+	children
+}) => {
+	return (
+		<Flex className={classNames('caldera-row', className)} id={rowId}>
+			{columns ? (
+				<Fragment>
+					{columns.map(column => {
+						let { width, padding, columnId } = column;
 
-							padding = padding ? padding : 8;
+						padding = padding ? padding : 8;
 
-							return (
-								<Column
-									key={columnId}
-									id={columnId}
-									width={width}
-									px={padding}
-									py={padding}
-								>
-									{children}
-								</Column>
-
-							)
-						})}
-
-					</Fragment>
-
-				) : (
-					<Fragment>{children}</Fragment>
-				)}
-
-
-			</Flex>
-		)
-	};
+						return (
+							<Column
+								key={columnId}
+								id={columnId}
+								width={width}
+								px={padding}
+								py={padding}
+							>
+								{children}
+							</Column>
+						);
+					})}
+				</Fragment>
+			) : (
+				<Fragment>{children}</Fragment>
+			)}
+		</Flex>
+	);
+};
 
 /**
  * Row prop types
@@ -66,17 +58,13 @@ export const Row = ({
  * @type {{columns: shim, rowId: *, onChange: *, onBlur: shim, className: shim}}
  */
 export const rowPropTypes = {
-	columns: PropTypes.arrayOf(PropTypes.shape({
-		width: PropTypes.string.isRequired,
-		columnId: PropTypes.oneOfType([
-			PropTypes.string,
-			PropTypes.number,
-		])
-	})),
-	rowId: PropTypes.oneOfType([
-		PropTypes.string,
-		PropTypes.number,
-	]),
+	columns: PropTypes.arrayOf(
+		PropTypes.shape({
+			width: PropTypes.string.isRequired,
+			columnId: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+		})
+	),
+	rowId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	onChange: PropTypes.func,
 	onBlur: PropTypes.func,
 	className: PropTypes.string

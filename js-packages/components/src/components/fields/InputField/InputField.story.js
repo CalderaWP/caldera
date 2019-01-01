@@ -3,12 +3,10 @@ import { storiesOf } from '@storybook/react';
 import { InputField } from './InputField';
 
 let value = 'Hi Roy';
-const onChange = (newValue) => {
-	console.log(newValue)
+const onChange = newValue => {
+	console.log(newValue);
 };
-const onBlur = (event) => {
-
-};
+const onBlur = event => {};
 
 const STORY_NAME_INPUT = 'InputField';
 const STORY_NAME_INPUT_NUMBER = 'InputField as number field';
@@ -22,7 +20,6 @@ storiesOf(STORY_NAME_INPUT, module).add('With no value', () => (
 		onBlur={onBlur}
 	/>
 ));
-
 
 storiesOf(STORY_NAME_INPUT, module).add('With placeholder', () => (
 	<InputField
@@ -59,14 +56,11 @@ storiesOf(STORY_NAME_INPUT, module).add('Disbaled', () => (
 		html5type={'text'}
 		onChange={onChange}
 		onBlur={onBlur}
-		attributes={
-			{
-				disabled:true
-			}
-		}
+		attributes={{
+			disabled: true
+		}}
 	/>
 ));
-
 
 storiesOf(STORY_NAME_INPUT_NUMBER, module).add('With attributes', () => (
 	<InputField
@@ -74,13 +68,11 @@ storiesOf(STORY_NAME_INPUT_NUMBER, module).add('With attributes', () => (
 		html5type={'number'}
 		onChange={onChange}
 		onBlur={onBlur}
-		attributes={
-			{
-				min: 40,
-				max: 100,
-				step:10
-			}
-		}
+		attributes={{
+			min: 40,
+			max: 100,
+			step: 10
+		}}
 	/>
 ));
 storiesOf(STORY_NAME_INPUT_EMAIL, module).add('Required', () => (
@@ -91,7 +83,6 @@ storiesOf(STORY_NAME_INPUT_EMAIL, module).add('Required', () => (
 		onChange={onChange}
 		description={'Minimum 40, Max 100, Step 10'}
 		onBlur={onBlur}
-
 	/>
 ));
 storiesOf(STORY_NAME_INPUT_EMAIL, module).add('Multiple', () => (
@@ -102,11 +93,9 @@ storiesOf(STORY_NAME_INPUT_EMAIL, module).add('Multiple', () => (
 		onChange={onChange}
 		description={'Multiples allowed'}
 		onBlur={onBlur}
-		attributes={
-			{
-				multiple: true
-			}
-		}
+		attributes={{
+			multiple: true
+		}}
 	/>
 ));
 
@@ -137,10 +126,8 @@ storiesOf(STORY_NAME_INPUT_CHECKBOX, module).add('Disabled', () => (
 		value={false}
 		onChange={onChange}
 		description={'Not  checked'}
-		attributes={
-			{
-				disabled: true
-			}
-		}
+		attributes={{
+			disabled: true
+		}}
 	/>
 ));

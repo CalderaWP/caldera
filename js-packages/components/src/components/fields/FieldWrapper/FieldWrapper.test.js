@@ -2,19 +2,16 @@ import * as React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
-import {FieldWrapper} from './FieldWrapper';
+import { FieldWrapper } from './FieldWrapper';
 
 describe('Field label', () => {
 	it('Matches snapshot', () => {
 		const component = renderer.create(
-			<FieldWrapper
-				fieldType={'checkbox'}
-				legend={'Check All options'}
-			>
+			<FieldWrapper fieldType={'checkbox'} legend={'Check All options'}>
 				<label htmlFor="one">One</label>
-				<input id="one" type={'checkbox'}/>
+				<input id="one" type={'checkbox'} />
 				<label htmlFor="two">Two</label>
-				<input id="two" type={'checkbox'}/>
+				<input id="two" type={'checkbox'} />
 			</FieldWrapper>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -23,7 +20,7 @@ describe('Field label', () => {
 		const attributes = {
 			form: 'contactForm',
 			disable: true,
-			name:'roys'
+			name: 'roys'
 		};
 		const component = mount(
 			<FieldWrapper
@@ -32,11 +29,11 @@ describe('Field label', () => {
 				attributes={attributes}
 			>
 				<label htmlFor="one">One</label>
-				<input id="one" type={'checkbox'}/>
+				<input id="one" type={'checkbox'} />
 				<label htmlFor="two">Two</label>
-				<input id="two" type={'checkbox'}/>
+				<input id="two" type={'checkbox'} />
 			</FieldWrapper>
 		);
-		expect( component.find( 'div').prop( 'form') ).toEqual( attributes.form );
+		expect(component.find('div').prop('form')).toEqual(attributes.form);
 	});
 });

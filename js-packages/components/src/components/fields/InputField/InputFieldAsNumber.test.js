@@ -8,9 +8,9 @@ describe('InputField  as number', () => {
 	let onChange;
 	let onBlur;
 
-	beforeEach( () => {
-		onChange= jest.fn();
-		onBlur= jest.fn()
+	beforeEach(() => {
+		onChange = jest.fn();
+		onBlur = jest.fn();
 	});
 
 	const attributes = {
@@ -19,20 +19,22 @@ describe('InputField  as number', () => {
 		step: 0.1
 	};
 
-	it( 'Allows min, max and step attributes', () =>  {
-		const component = mount(<InputField
-			label={'Number of Roys'}
-			html5type={'number'}
-			value={5}
-			onChange={onChange}
-			onBlur={onBlur}
-			attributes={attributes}
-		/>);
+	it('Allows min, max and step attributes', () => {
+		const component = mount(
+			<InputField
+				label={'Number of Roys'}
+				html5type={'number'}
+				value={5}
+				onChange={onChange}
+				onBlur={onBlur}
+				attributes={attributes}
+			/>
+		);
 
-		expect( component.find( 'input').prop( 'type') ).toEqual( 'number' );
-		expect( component.find( 'input').prop( 'min') ).toEqual( attributes.min );
-		expect( component.find( 'input').prop( 'max') ).toEqual( attributes.max );
-		expect( component.find( 'input').prop( 'step') ).toEqual( attributes.step );
-		expect( component.find( 'input').prop( 'value') ).toEqual( 5 );
+		expect(component.find('input').prop('type')).toEqual('number');
+		expect(component.find('input').prop('min')).toEqual(attributes.min);
+		expect(component.find('input').prop('max')).toEqual(attributes.max);
+		expect(component.find('input').prop('step')).toEqual(attributes.step);
+		expect(component.find('input').prop('value')).toEqual(5);
 	});
 });

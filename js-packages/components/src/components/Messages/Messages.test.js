@@ -1,10 +1,9 @@
 import renderer from 'react-test-renderer';
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import Enzyme from 'enzyme';
-import {Message, MESSAGE_CLASS} from './Message';
-import {messageObjectFactory} from './messageObjectFactory';
-
+import { Message, MESSAGE_CLASS } from './Message';
+import { messageObjectFactory } from './messageObjectFactory';
 
 describe('Message component', () => {
 	it('Shows a message', () => {
@@ -23,7 +22,7 @@ describe('Message component', () => {
 			<Message
 				message={{
 					message: 'Hi Roy',
-					error: false,
+					error: false
 				}}
 			/>
 		);
@@ -35,7 +34,7 @@ describe('Message component', () => {
 			<Message
 				message={{
 					message: 'An error happened',
-					error: true,
+					error: true
 				}}
 			/>
 		);
@@ -46,7 +45,7 @@ describe('Message component', () => {
 		const wrapper = renderer.create(
 			<Message
 				message={{
-					error: true,
+					error: true
 				}}
 			/>
 		);
@@ -63,7 +62,6 @@ describe('Message component', () => {
 		);
 		expect(wrapper.text()).toBe('Hi Roy');
 	});
-
 
 	it('shows classname prop as class', () => {
 		const wrapper = shallow(
@@ -82,7 +80,7 @@ describe('Message component', () => {
 			<Message
 				message={{
 					message: 'Something bad has happened.',
-					error: true,
+					error: true
 				}}
 			/>
 		);
@@ -94,7 +92,7 @@ describe('Message component', () => {
 			<Message
 				message={{
 					message: 'Something good has happened.',
-					error: false,
+					error: false
 				}}
 			/>
 		);
@@ -106,7 +104,7 @@ describe('Message component', () => {
 			<Message
 				message={{
 					message: 'Something',
-					error: true,
+					error: true
 				}}
 			/>
 		);
@@ -118,7 +116,7 @@ describe('Message component', () => {
 			<Message
 				message={{
 					message: 'Something',
-					error: false,
+					error: false
 				}}
 			/>
 		);
@@ -126,25 +124,30 @@ describe('Message component', () => {
 	});
 });
 
-
 describe('messageObjectFactory', () => {
 	it('casts truthy error to boolean', () => {
-		expect(messageObjectFactory({
-			error: 1,
-			message: 'Roy'
-		}).error).toBe(true);
+		expect(
+			messageObjectFactory({
+				error: 1,
+				message: 'Roy'
+			}).error
+		).toBe(true);
 	});
 
 	it('casts falsey error to boolean', () => {
-		expect(messageObjectFactory({
-			error: 'false',
-			message: 'Roy'
-		}).error).toBe(false);
+		expect(
+			messageObjectFactory({
+				error: 'false',
+				message: 'Roy'
+			}).error
+		).toBe(false);
 	});
 
 	it('Adds missing message key', () => {
-		expect(messageObjectFactory({
-			error: 'false',
-		}).message).toBe('');
+		expect(
+			messageObjectFactory({
+				error: 'false'
+			}).message
+		).toBe('');
 	});
 });

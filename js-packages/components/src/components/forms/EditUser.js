@@ -1,7 +1,6 @@
-
 // EditUserDialog.js
 import React from 'react';
-import { Formik, Field, Form, ErrorMessage, FieldArray} from 'formik';
+import { Formik, Field, Form, ErrorMessage, FieldArray } from 'formik';
 
 export const EditUser = ({ user, updateUser }) => {
 	const validateEmail = value => {
@@ -15,42 +14,71 @@ export const EditUser = ({ user, updateUser }) => {
 		<div>
 			<h1>Edit User</h1>
 			<Formik
-				initialValues={{ name: '',friends: ['jared', 'ian', 'brent'] }}
+				initialValues={{ name: '', friends: ['jared', 'ian', 'brent'] }}
 				onSubmit={(values, actions) => {
 					setTimeout(() => {
 						alert(JSON.stringify(values, null, 2));
 						actions.setSubmitting(false);
 					}, 1000);
 				}}
-				render={({ values,errors, status, touched, isSubmitting }) => (
+				render={({ values, errors, status, touched, isSubmitting }) => (
 					<Form>
 						<Field name="name" type="text" required={true} />
-						<Field validate={validateEmail} name="email" type="email" />
+						<Field
+							validate={validateEmail}
+							name="email"
+							type="email"
+						/>
 						<FieldArray
 							name="friends"
 							render={arrayHelpers => (
 								<div>
-									{values.friends && values.friends.length > 0 ? (
+									{values.friends &&
+									values.friends.length > 0 ? (
 										values.friends.map((friend, index) => (
 											<div key={index}>
-												{errors &&  errors.friends && errors.friends[index] && touched.friends[index] ? <div>{errors.friends[index]}</div> : null}
-												<Field name={`friends.${index}`} validate={validateEmail} />
+												{errors &&
+												errors.friends &&
+												errors.friends[index] &&
+												touched.friends[index] ? (
+													<div>
+														{errors.friends[index]}
+													</div>
+												) : null}
+												<Field
+													name={`friends.${index}`}
+													validate={validateEmail}
+												/>
 												<button
 													type="button"
-													onClick={() => arrayHelpers.remove(index)} // remove a friend from the list
+													onClick={() =>
+														arrayHelpers.remove(
+															index
+														)
+													} // remove a friend from the list
 												>
 													-
 												</button>
 												<button
 													type="button"
-													onClick={() => arrayHelpers.insert(index, '')} // insert an empty string at a position
+													onClick={() =>
+														arrayHelpers.insert(
+															index,
+															''
+														)
+													} // insert an empty string at a position
 												>
 													+
 												</button>
 											</div>
 										))
 									) : (
-										<button type="button" onClick={() => arrayHelpers.push('')}>
+										<button
+											type="button"
+											onClick={() =>
+												arrayHelpers.push('')
+											}
+										>
 											{/* show this when user has removed all friends from the list */}
 											Add a friend
 										</button>

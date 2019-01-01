@@ -11,25 +11,23 @@ import {
 	emailField
 } from '../fields.fixtures';
 
-import {FieldGroup} from './FieldGroup';
+import { FieldGroup } from './FieldGroup';
 
-describe( 'FieldGroup component', () => {
+describe('FieldGroup component', () => {
 	let onChange;
 	let onBlur;
-	beforeEach( () => {
-		onChange= jest.fn();
-		onBlur= jest.fn()
+	beforeEach(() => {
+		onChange = jest.fn();
+		onBlur = jest.fn();
 	});
 
-	it( 'Creates a text field', () => {
+	it('Creates a text field', () => {
 		const component = renderer.create(
-			<FieldGroup
-				field={textField} onChange={onChange} onBlur={onBlur}
-		/>
+			<FieldGroup field={textField} onChange={onChange} onBlur={onBlur} />
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
-	it( 'Shows errors', () => {
+	it('Shows errors', () => {
 		const fieldErrors = {
 			[textField.fieldId]: 'Fail Cake!'
 		};
@@ -39,37 +37,52 @@ describe( 'FieldGroup component', () => {
 
 		const component = renderer.create(
 			<FieldGroup
-				field={textField} onChange={onChange} onBlur={onBlur} fieldErrors={fieldErrors} fieldsTouch={fieldsTouched}
+				field={textField}
+				onChange={onChange}
+				onBlur={onBlur}
+				fieldErrors={fieldErrors}
+				fieldsTouch={fieldsTouched}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it( 'Creates an select field', () => {
+	it('Creates an select field', () => {
 		const component = renderer.create(
 			<FieldGroup
-				field={selectField} onChange={onChange} onBlur={onBlur}
+				field={selectField}
+				onChange={onChange}
+				onBlur={onBlur}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it( 'Changes calls change handler of radio field', () =>  {
+	it('Changes calls change handler of radio field', () => {
 		const component = mount(
 			<FieldGroup
-				field={radioField} onChange={onChange} onBlur={onBlur}
-		/>);
+				field={radioField}
+				onChange={onChange}
+				onBlur={onBlur}
+			/>
+		);
 
-		component.find( 'input' ).first().simulate( 'change' );
+		component
+			.find('input')
+			.first()
+			.simulate('change');
 		expect(onChange.mock.calls.length).toBe(1);
 	});
-	it( 'Changes calls change handler of checkbox field', () =>  {
-		const component = mount(<FieldGroup
-			field={checkboxField} onChange={onChange} onBlur={onBlur}
-		/>);
+	it('Changes calls change handler of checkbox field', () => {
+		const component = mount(
+			<FieldGroup
+				field={checkboxField}
+				onChange={onChange}
+				onBlur={onBlur}
+			/>
+		);
 
-		component.find( 'input' ).simulate( 'change' );
+		component.find('input').simulate('change');
 		expect(onChange.mock.calls.length).toBe(1);
 	});
 });
-

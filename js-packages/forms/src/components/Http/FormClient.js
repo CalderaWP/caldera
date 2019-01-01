@@ -1,5 +1,4 @@
-import {decorateObjectLiteralWithMethods} from './decoratorFactory';
-
+import { decorateObjectLiteralWithMethods } from './decoratorFactory';
 
 /**
  *
@@ -8,10 +7,10 @@ import {decorateObjectLiteralWithMethods} from './decoratorFactory';
  * @return {Proxy}
  * @constructor
  */
-export default function FormClient(form,options){
-	const {fieldValues} = form;
+export default function FormClient(form, options) {
+	const { fieldValues } = form;
 	this.submitForm = () => {
-		if( 'function' === typeof options.submitHandler){
+		if ('function' === typeof options.submitHandler) {
 			return options.submitHandler(fieldValues);
 		}
 	};
@@ -21,13 +20,7 @@ export default function FormClient(form,options){
 	 *     submitForm:function({object})}}
 	 * }}
 	 */
-	return decorateObjectLiteralWithMethods(
-		fieldValues,
-		{
-			submitForm: this.submitForm
-		},
-	);
-
+	return decorateObjectLiteralWithMethods(fieldValues, {
+		submitForm: this.submitForm
+	});
 }
-
-

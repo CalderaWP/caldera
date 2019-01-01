@@ -6,22 +6,22 @@
  *
  * @return {Proxy}
  */
-export const decorateObjectLiteral = (decoratedObject )  => {
+export const decorateObjectLiteral = decoratedObject => {
 	let handler = {
-		get(obj,prop) {
-			return decoratedObject.hasOwnProperty(prop) ? decoratedObject[prop]: null;
+		get(obj, prop) {
+			return decoratedObject.hasOwnProperty(prop)
+				? decoratedObject[prop]
+				: null;
 		},
 		set(obj, prop, value) {
-			if(decoratedObject.hasOwnProperty(prop) ){
+			if (decoratedObject.hasOwnProperty(prop)) {
 				decoratedObject[prop] = value;
 				return true;
 			}
 			return false;
-
 		}
 	};
-	return new Proxy(decoratedObject,handler);
-
+	return new Proxy(decoratedObject, handler);
 };
 
 /**
@@ -32,11 +32,9 @@ export const decorateObjectLiteral = (decoratedObject )  => {
  *
  * @return {Proxy}
  */
-export  const  decorateObjectLiteralWithMethods = (decoratedObject,methods) => {
-
+export const decorateObjectLiteralWithMethods = (decoratedObject, methods) => {
 	return decorateObjectLiteral({
 		...decoratedObject,
-		...methods,
+		...methods
 	});
-}
-
+};

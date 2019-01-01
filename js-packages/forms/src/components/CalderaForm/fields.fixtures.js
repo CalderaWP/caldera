@@ -16,17 +16,15 @@ const checkboxFieldset = {
 			id: 'opt-2',
 			description: 'The Second Option',
 			attributes: {
-				checked: true,
-			},
+				checked: true
+			}
 		},
 		{
 			value: 3,
 			label: 'Three',
 			id: 'opt-3'
 		}
-	],
-
-
+	]
 };
 
 const selectField = {
@@ -37,12 +35,12 @@ const selectField = {
 	description: 'Select field description',
 	required: true,
 	attributes: {
-		multiple: false,
+		multiple: false
 	},
-	options : [
+	options: [
 		{ value: 0, label: 'Zero' },
 		{ value: 1, label: 'One' },
-		{ value: 2, label: 'Two' },
+		{ value: 2, label: 'Two' }
 	]
 };
 
@@ -54,12 +52,12 @@ const radioField = {
 	description: 'Radio field description',
 	required: true,
 	attributes: {
-		multiple: false,
+		multiple: false
 	},
-	options : [
+	options: [
 		{ value: 0, label: 'Zero' },
 		{ value: 1, label: 'One' },
-		{ value: 2, label: 'Two' },
+		{ value: 2, label: 'Two' }
 	]
 };
 
@@ -70,7 +68,7 @@ const checkboxField = {
 	description: 'Checkbox field description',
 	required: true,
 	attributes: {
-		checked: true,
+		checked: true
 	}
 };
 
@@ -96,7 +94,7 @@ const textField = {
 	required: true
 };
 
-const emailField =  {
+const emailField = {
 	fieldType: 'email',
 	value: 'emai@email.com',
 	label: 'Email Field Label',
@@ -104,7 +102,7 @@ const emailField =  {
 	description: 'Email field description',
 	required: true,
 	attributes: {
-		multiple: true,
+		multiple: true
 	}
 };
 
@@ -116,4 +114,4 @@ export {
 	textField,
 	emailField,
 	radioField
-}
+};

@@ -3,7 +3,6 @@
  * @param {string} fieldType
  * @return {string}
  */
-export const fieldSetClassNames = (fieldType) => {
-	return `caldera-fieldset caldera-fieldset-${fieldType}`
-
+export const fieldSetClassNames = fieldType => {
+	return `caldera-fieldset caldera-fieldset-${fieldType}`;
 };

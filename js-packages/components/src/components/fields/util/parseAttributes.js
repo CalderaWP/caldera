@@ -12,13 +12,7 @@ const inputAttrs = [
 ];
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#Additional_attributes
-const numberAttrs = [
-	'step',
-	'min',
-	'max',
-	'readonly',
-	'placeholder'
-];
+const numberAttrs = ['step', 'min', 'max', 'readonly', 'placeholder'];
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#Additional_attributes
 const emailAttrs = [
 	'maxlength',
@@ -31,70 +25,54 @@ const emailAttrs = [
 	'spellcheck'
 ];
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset#Attributes
-const fieldSetAttrs = [
-	'disabled',
-	'form',
-	'name',
-];
+const fieldSetAttrs = ['disabled', 'form', 'name'];
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option#Attributes
-const selectAttrs = [
-	'disabled',
-	'label',
-	'selected',
-	'value'
-];
+const selectAttrs = ['disabled', 'label', 'selected', 'value'];
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Additional_attributes
-const checkboxAttrs = [
-	'checked',
-	'value'
-];
+const checkboxAttrs = ['checked', 'value'];
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#Additional_attributes
-const radioAttrs = [
-	'checked'
-];
+const radioAttrs = ['checked'];
 /**
  *
  * @param {Object} attributes
  * @param {Array|string|null} allowed
  */
 export const parseAttributes = (attributes, allowed = null) => {
-
 	switch (allowed) {
 		case 'number':
 			allowed = [...inputAttrs, ...numberAttrs];
 			break;
-		case 'fieldSet' :
-		case 'fieldset' :
+		case 'fieldSet':
+		case 'fieldset':
 			allowed = [...inputAttrs, ...fieldSetAttrs];
 			break;
-		case 'select' :
-		case 'dropdown' :
+		case 'select':
+		case 'dropdown':
 			allowed = [...inputAttrs, ...selectAttrs];
 			break;
-		case 'email' :
+		case 'email':
 			allowed = [...inputAttrs, ...emailAttrs];
 			break;
-			case 'radio' :
+		case 'radio':
 			allowed = [...inputAttrs, ...radioAttrs];
 			break;
 		case 'checkbox':
-			allowed = [...inputAttrs,...checkboxAttrs];
+			allowed = [...inputAttrs, ...checkboxAttrs];
 			break;
 		case 'text':
 		case 'default':
-		case null :
+		case null:
 			allowed = inputAttrs;
 			break;
-	};
-
+	}
 
 	attributes = require('lodash.pick')(attributes, allowed);
 
 	const transforms = {
 		maxlength: 'maxLength',
-		spellcheck: 'spellCheck',
+		spellcheck: 'spellCheck'
 	};
 	Object.keys(transforms).forEach(attr => {
 		if (attributes.hasOwnProperty(attr)) {
@@ -102,7 +80,6 @@ export const parseAttributes = (attributes, allowed = null) => {
 			delete attributes[attr];
 		}
 	});
-
 
 	return attributes;
 };

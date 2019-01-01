@@ -7,90 +7,101 @@ import {
 	toBoolean,
 	fieldSetClassNames,
 	fieldWrapperClassNames
-} from './index'
+} from './index';
 
-describe( 'parseAttributes util function', () => {
-	it( 'allows whitelist', () => {
+describe('parseAttributes util function', () => {
+	it('allows whitelist', () => {
 		const attrs = {
 			className: 'something',
 			id: 'field-type-chooser'
 		};
-		expect( parseAttributes(attrs, Object.keys(attrs)) ).toEqual(attrs);
+		expect(parseAttributes(attrs, Object.keys(attrs))).toEqual(attrs);
 	});
 
-	it( 'Removes attributes not on whitelist', () => {
+	it('Removes attributes not on whitelist', () => {
 		const attrs = {
 			className: 'something',
 			id: 'field-type-chooser'
 		};
-		expect( parseAttributes({
-			...attrs,
-			step: 5
-		}, Object.keys(attrs)) ).toEqual(attrs);
+		expect(
+			parseAttributes(
+				{
+					...attrs,
+					step: 5
+				},
+				Object.keys(attrs)
+			)
+		).toEqual(attrs);
 	});
 
-	it( 'allows number attrs', () => {
+	it('allows number attrs', () => {
 		const numberAttrs = {
 			min: 54,
 			max: 4000,
 			step: 5
 		};
 		const result = parseAttributes(numberAttrs, 'number');
-		expect( result ).toEqual(numberAttrs);
+		expect(result).toEqual(numberAttrs);
 	});
 
-	it( 'allows checked arg for checkbox field', () => {
+	it('allows checked arg for checkbox field', () => {
 		const checkedArgs = {
 			checked: true
 		};
 		const result = parseAttributes(checkedArgs, 'checkbox');
-		expect( result ).toEqual(checkedArgs);
+		expect(result).toEqual(checkedArgs);
 	});
 
-	it( 'allows email attrs', () => {
+	it('allows email attrs', () => {
 		const emailAttrs = {
 			maxlength: 54,
-			multiple: true,
+			multiple: true
 		};
-		expect( parseAttributes(emailAttrs, 'email') ).toEqual({
+		expect(parseAttributes(emailAttrs, 'email')).toEqual({
 			maxLength: 54,
-			multiple: true,
+			multiple: true
 		});
 	});
-
 });
 
-
-describe( 'fieldWrapperClassNames util function', () => {
-	it( 'adds type', ()=> {
-		expect( fieldWrapperClassNames('text') ).toEqual("caldera-field-wrapper caldera-field-wrapper-text")
+describe('fieldWrapperClassNames util function', () => {
+	it('adds type', () => {
+		expect(fieldWrapperClassNames('text')).toEqual(
+			'caldera-field-wrapper caldera-field-wrapper-text'
+		);
 	});
 });
-describe( 'fieldClassNames util function', () => {
-	it( 'adds type', ()=> {
-		expect( fieldClassNames('text') ).toEqual('caldera-field caldera-field-text')
+describe('fieldClassNames util function', () => {
+	it('adds type', () => {
+		expect(fieldClassNames('text')).toEqual(
+			'caldera-field caldera-field-text'
+		);
 	});
 });
-describe( 'fieldSetClassNames util function', () => {
-	it( 'adds type', ()=> {
-		expect( fieldSetClassNames('checkbox') ).toEqual('caldera-fieldset caldera-fieldset-checkbox')
+describe('fieldSetClassNames util function', () => {
+	it('adds type', () => {
+		expect(fieldSetClassNames('checkbox')).toEqual(
+			'caldera-fieldset caldera-fieldset-checkbox'
+		);
 	});
 });
 
-describe( 'labelClassNames util function', () => {
-	it( 'adds type', ()=> {
-		expect( labelClassNames('text') ).toEqual('caldera-field-label caldera-field-label-text')
+describe('labelClassNames util function', () => {
+	it('adds type', () => {
+		expect(labelClassNames('text')).toEqual(
+			'caldera-field-label caldera-field-label-text'
+		);
 	});
 });
 
-test( 'imports', () => {
-	expect(typeof parseAttributes).toEqual('function')
-	expect(typeof fieldClassNames).toEqual('function')
-	expect(typeof labelClassNames).toEqual('function')
-	expect(typeof addOrRemoveFromArray).toEqual('function')
-	expect(typeof toBoolean).toEqual('function')
-	expect(typeof isValidHtml5type).toEqual('function')
-	expect(typeof fieldSetClassNames).toEqual('function')
+test('imports', () => {
+	expect(typeof parseAttributes).toEqual('function');
+	expect(typeof fieldClassNames).toEqual('function');
+	expect(typeof labelClassNames).toEqual('function');
+	expect(typeof addOrRemoveFromArray).toEqual('function');
+	expect(typeof toBoolean).toEqual('function');
+	expect(typeof isValidHtml5type).toEqual('function');
+	expect(typeof fieldSetClassNames).toEqual('function');
 });
 
 describe('HTML5 checks', () => {
@@ -147,7 +158,6 @@ describe('addOrRemoveFromArray', () => {
 		expect(array).toEqual([2]);
 	});
 
-
 	it('Removes from an array', () => {
 		let array = [];
 		array = addOrRemoveFromArray('two', array);
@@ -170,7 +180,6 @@ describe('addOrRemoveFromArray', () => {
 		array = addOrRemoveFromArray(3, array);
 		expect(array).toEqual([2, 5]);
 	});
-
 });
 
 describe('Boolean casting', () => {
