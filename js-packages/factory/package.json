@@ -65,6 +65,7 @@
     "@storybook/addons": "^4.1.4",
     "dot-prop": "^4.2.0",
     "formik": "^1.4.1",
+    "jest-fetch-mock": "^2.1.0",
     "lodash.flatmap": "^4.5.0",
     "styled-components": "^4.1.3"
   }

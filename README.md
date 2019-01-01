@@ -87,9 +87,12 @@ Approach to implimenting CRA + shared component libraries came from [this post](
 ### Managing Dependencies
 
 * Add depenendency
-    - `yarn lerna add classnames`   
+    - `yarn lerna add classnames`  
     
+* Remove Depenendency
+    - `yarn lerna exec -- yarn remove fetch-mock`
 #### See
+* https://medium.com/@jsilvax/a-workflow-guide-for-lerna-with-yarn-workspaces-60f97481149d
 * https://github.com/lerna/lerna/tree/master/commands/add
  
 ### Components

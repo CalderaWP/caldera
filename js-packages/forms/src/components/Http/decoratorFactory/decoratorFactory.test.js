@@ -43,6 +43,16 @@ describe('decorateObjectLiteral', () => {
 		proxy.x = 222;
 		expect(proxy.x).toEqual(222);
 	});
+
+	it('Does not set invalid props', () => {
+		const proxy = decorateObjectLiteral({
+			x: 12
+		});
+		expect(proxy.x).toEqual(12);
+		expect(() => {
+			proxy.y = 'Fake stuff'
+		}).toThrow();
+	});
 });
 
 describe('decorateObjectLiteralWithMethods', () => {
