@@ -38,7 +38,7 @@ describe( 'submitForm', () => {
 		fetch.resetMocks()
 	});
 
-	const apiRootUri = 'https://something.com/wp-json/caldera';
+	const apiRootUri = 'https://something.com/wp-json/caldera-api';
 	const formId = 'cf1';
 	const eventOptions = {
 		apiRootUri,
@@ -47,17 +47,17 @@ describe( 'submitForm', () => {
 
 	it( 'calls fetch with the right url', () => {
 		submitForm(fieldValues,eventOptions,fetch);
-		expect(fetch.mock.calls[0][0]).toEqual('https://something.com/wp-json/caldera/cf1');
+		expect(fetch.mock.calls[0][0]).toEqual('https://something.com/wp-json/caldera-api/v1/entries');
 	});
 
 	it( 'calls fetch with the field values in body', () => {
 		submitForm(fieldValues,eventOptions,fetch);
-		expect(fetch.mock.calls[0][1].body).toEqual(JSON.stringify({fieldValues}));
+		expect(JSON.parse(fetch.mock.calls[0][1].body).entryValues).toEqual(  {"firstName": "Thor", "fld1": 1});
 	});
 
-	it( 'calls fetch with POST HTTP method', () => {
+	it( 'calls fetch with PUT HTTP method', () => {
 		submitForm(fieldValues,eventOptions,fetch);
-		expect(fetch.mock.calls[0][1].method).toEqual('POST');
+		expect(fetch.mock.calls[0][1].method).toEqual('PUT');
 	});
 
 	it( 'calls fetch with headers', () => {

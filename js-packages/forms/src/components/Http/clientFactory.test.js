@@ -16,7 +16,7 @@ describe( '', () => {
 		id: formId,
 		fieldValues
 	};
-	const apiRootUri = 'https://site.com/wp-json/caldera/';
+	const apiRootUri = 'https://site.com/wp-json/caldera-api/v1';
 
 	it( 'Adds default submit handler', () => {
 		const client = formClientFactory(form,apiRootUri,'caldera',{});

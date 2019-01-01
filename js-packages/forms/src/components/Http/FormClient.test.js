@@ -1,16 +1,41 @@
 import FormClient from './FormClient';
+const value = 'First field value';
+const fieldValues = {
+	fld0: 'dsa',
+	fld1: value,
+	fld2: '4'
+};
+const formId = 'cf1';
+const form = {
+	id: formId,
+	fieldValues
+};
+
+describe('Form client - updates state', () => {
+	it( 'sets state', () => {
+		const client = new FormClient(form, {
+			form,
+		});
+		client.fld1 = 33;
+		expect(client.fld1).toBe(33);
+	});
+
+	it( 'Sets field values', () => {
+		const client = new FormClient(form, {
+			form,
+		});
+		const newValues =  {
+			fld0: '111',
+			fld1: 333,
+			fld2: '41'
+		};
+		client.setFieldValues(newValues);
+		expect(client.getFieldValues()).toEqual(newValues);
+	})
+
+});
 describe('Form client - calls handlers', () => {
-	const value = 'First field value';
-	const fieldValues = {
-		fld0: 'dsa',
-		fld1: value,
-		fld2: '4'
-	};
-	const formId = 'cf1';
-	const form = {
-		id: formId,
-		fieldValues
-	};
+
 	let submitForm = jest.fn();
 	const apiRootUri = 'https://site.com/wp-json/caldera/';
 	beforeEach(() => {
@@ -20,7 +45,6 @@ describe('Form client - calls handlers', () => {
 	it('Calls submit handler function', function() {
 		const client = new FormClient(form, {
 			submitForm,
-
 		});
 		client.submitForm();
 		expect(submitForm.mock.calls.length).toBe(1);

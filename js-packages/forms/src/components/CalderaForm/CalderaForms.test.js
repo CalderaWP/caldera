@@ -28,6 +28,7 @@ describe('Caldera Forms', () => {
 	});
 });
 
+
 describe('Updates field value', () => {
 	let onSubmit = jest.fn();
 	beforeEach(() => {
@@ -55,4 +56,27 @@ describe('Updates field value', () => {
 				.prop('value')
 		).toEqual(value);
 	});
+
+	it( 'Recives values update when any field changes', () => {
+		const _onChange = jest.fn();
+		const component = mount(
+			<CalderaForm
+				formRows={formRows}
+				initialValues={initialValues}
+				onSubmit={onSubmit}
+				onChange={_onChange}
+			/>
+		);
+		const value = 'changed@email22.com';
+		const event = { target: { value } };
+		component
+			.find('#emailFieldId')
+			.find('input')
+			.simulate('change', event);
+		expect(
+			_onChange.mock.calls.length
+		).toEqual(1);
+
+	})
 });
+

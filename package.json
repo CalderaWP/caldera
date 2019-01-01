@@ -11,7 +11,7 @@
     "del-dist": "lerna exec --parallel -- del-cli dist",
     "del-node_modules": "lerna exec --parallel -- del-cli node_modules",
     "prebuild": "yarn del-dist",
-    "build": "yarn build:components && yarn build:factory",
+    "build": "yarn build:components && yarn build:factory && yarn build:forms",
     "build:components": "lerna exec --scope @caldera-labs/components -- babel src -d dist --ignore test.js,story.js,fixtures.js",
     "build:factory": "lerna exec --scope @caldera-labs/factory -- babel src -d dist --ignore test.js,story.js,fixtures.js",
     "build:forms": "lerna exec --scope @caldera-labs/forms -- babel src -d dist --ignore test.js,story.js,fixtures.js",

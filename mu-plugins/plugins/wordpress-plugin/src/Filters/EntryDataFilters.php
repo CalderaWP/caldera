@@ -63,17 +63,28 @@ class EntryDataFilters
 					]
 				);
 
-			$entry = $this
+			$entryData = $this
 				->dataSources
 				->getEntryDataSource()
 				->read($entryId);
+
+			$entry = \calderawp\caldera\Forms\Entry\Entry::fromDatabaseResult($entryData[0]);
 			$entry = $this->addValuesToEntry($entry,$this->findForm($formId));
 			$entryValuesDataSource = $this
 				->dataSources
 				->getEntryValuesDataSource();
 			/** @var EntryValue $entryValue */
-			foreach ( $entry->getEntryValues() as $entryValue ){
-				$entryValuesDataSource->create($entryValue->toDatabaseArray() );
+			foreach ( $request->getParam('entryValues') as $fieldId => $value ){
+				$entryValue = EntryValue::fromArray([
+					'fieldId' => $fieldId,
+					'formId' => $formId,
+					'slug' => $fieldId
+				]);
+				$entryValue->setValue($value);
+				$entryValue->setEntryId($entryId);
+				$x=$entryValue->toDatabaseArray();
+				$entryValueId = $entryValuesDataSource->create($entryValue->toDatabaseArray() );
+				$x=  1;
 			}
 
 		}

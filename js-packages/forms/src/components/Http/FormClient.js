@@ -8,7 +8,7 @@ import { decorateObjectLiteralWithMethods } from './decoratorFactory/decoratorFa
  * @constructor
  */
 export default function FormClient(form, options) {
-	const { fieldValues } = form;
+	this.fieldValues = form.fieldValues;
 	let {
 		apiRootUri,
 		fetch
@@ -21,6 +21,13 @@ export default function FormClient(form, options) {
 		}
 	};
 
+	this.setFieldValues = (fieldValues )=> {
+		this.fieldValues = fieldValues;
+	};
+
+	this.getFieldValues = ( )=> {
+		return this.fieldValues;
+	};
 
 	/**
 	 * Create arguments to provide to each event
@@ -28,7 +35,7 @@ export default function FormClient(form, options) {
 	 */
 	this.createEventBag = () => {
 		return [
-			fieldValues,
+			this.fieldValues,
 			this.eventOpts(),
 			fetch
 		]
@@ -50,7 +57,9 @@ export default function FormClient(form, options) {
 	 *     submitForm:function({object})}}
 	 * }}
 	 */
-	return decorateObjectLiteralWithMethods(fieldValues, {
+	return decorateObjectLiteralWithMethods(this.fieldValues, {
+		setFieldValues: this.setFieldValues,
+		getFieldValues: this.getFieldValues,
 		submitForm: this.submitForm
 	});
 }

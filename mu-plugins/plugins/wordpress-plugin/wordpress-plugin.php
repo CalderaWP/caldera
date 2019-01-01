@@ -2,7 +2,6 @@
 /**
  * Plugin Name: Load Plugins
  */
-
 use \calderawp\caldera\Forms\Entry\Entry;
 
 add_action('admin_notices', function () {

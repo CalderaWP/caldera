@@ -11,15 +11,22 @@ export default function submitForm(fieldValues,eventOptions,fetch) {
 		apiRootUri,
 		formId
 	} = eventOptions;
-	const url = `${apiRootUri}/${formId}`;
+	const entryValues = [];
+	Object.keys(fieldValues).forEach(fieldId => {
+		entryValues.push({
+			fieldId:fieldValues[fieldId]
+		})
+	});
+	const url = `${apiRootUri}/v1/entries`;
 	return fetch(url,
 		{
-			method: "POST",
+			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
-				fieldValues
+				formId,
+				entryValues:fieldValues
 			})
 		}
 	);

@@ -3,11 +3,11 @@ import { Header  } from '@caldera-labs/components';
 import { HomePage } from './features/home/home-page';
 import calderaWpLogoDark from './logos/Logo-CalderaWP-DarkBG.svg';
 import calderaFormsIcon from './logos/icons/Icon-CalderaForms.svg';
-
+import {ContactForm} from './forms/ContactForm';
 export class App extends React.Component {
 
 	componentDidMount(){
-		fetch('/wp-json/caldera-api/v1/' ).then(r => r.json() )
+		fetch('/wp-json/caldera-api/v1/forms' ).then(r => r.json() )
 			.then( r => console.log(r))
 			.catch( e => console.log(e))
 	}
@@ -42,7 +42,7 @@ export class App extends React.Component {
 
 				</Header>
 				<HomePage>
-					Content
+					<ContactForm/>
 				</HomePage>
 			</div>
 		);
