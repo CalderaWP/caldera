@@ -36,16 +36,21 @@ services:
   node:
     type: node:9
     ssl: true
+    build:
+    - "cd js-packages/app && yarn install"
     overrides:
       services:
-        ports:
-        - "3000:3000"
-    run:
-    - "cd $LANDO_MOUNT && yarn && yarn build && yarn start"
+        ports: [3000:3010]
 tooling:
   yarn:
     service: node
   node:
+    service: node
+  google-chrome-stable:
+    service: node
+  app:
+    description: "Start app front-end"
+    cmd: "cd $LANDO_MOUNT && cd js-packages/app && yarn start"
     service: node
   composer:
     service: appserver
