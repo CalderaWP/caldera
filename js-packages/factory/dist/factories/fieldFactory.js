@@ -56,14 +56,10 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 			);
 			break;
 		case 'radio':
-			return _react2.default.createElement(_components.RadioField, _extends({}, field, {
-				onChange: onChange
-			}));
+			return _react2.default.createElement(_components.RadioField, _extends({}, field, { onChange: onChange }));
 		case 'select':
 		case 'dropdown':
-			return _react2.default.createElement(_components.SelectField, _extends({}, field, {
-				onChange: onChange
-			}));
+			return _react2.default.createElement(_components.SelectField, _extends({}, field, { onChange: onChange }));
 			break;
 		case 'text':
 		case 'email':
@@ -77,9 +73,7 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 			} else {
 				field.html5type = 'text';
 			}
-			return _react2.default.createElement(_components.InputField, _extends({}, field, {
-				onChange: onChange
-			}));
+			return _react2.default.createElement(_components.InputField, _extends({}, field, { onChange: onChange }));
 			break;
 	}
 };

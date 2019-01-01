@@ -36,9 +36,7 @@ var FieldSet = exports.FieldSet = function FieldSet(_ref) {
 	attributes = (0, _util.parseAttributes)(attributes, 'fieldset');
 	return _react2.default.createElement(
 		'fieldset',
-		_extends({
-			className: (0, _util.fieldSetClassNames)(fieldType)
-		}, attributes),
+		_extends({ className: (0, _util.fieldSetClassNames)(fieldType) }, attributes),
 		_react2.default.createElement(
 			'legend',
 			null,

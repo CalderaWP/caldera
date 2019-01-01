@@ -51,7 +51,6 @@ var Message = exports.Message = function Message(props) {
 				'has-error': error,
 				'caldera-components-error': error,
 				'caldera-components-not-error': !error
-
 			})
 		},
 		message

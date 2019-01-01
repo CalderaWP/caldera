@@ -51,7 +51,11 @@ var EditUser = exports.EditUser = function EditUser(_ref) {
 					_formik.Form,
 					null,
 					_react2.default.createElement(_formik.Field, { name: 'name', type: 'text', required: true }),
-					_react2.default.createElement(_formik.Field, { validate: validateEmail, name: 'email', type: 'email' }),
+					_react2.default.createElement(_formik.Field, {
+						validate: validateEmail,
+						name: 'email',
+						type: 'email'
+					}),
 					_react2.default.createElement(_formik.FieldArray, {
 						name: 'friends',
 						render: function render(arrayHelpers) {
@@ -67,7 +71,10 @@ var EditUser = exports.EditUser = function EditUser(_ref) {
 											null,
 											errors.friends[index]
 										) : null,
-										_react2.default.createElement(_formik.Field, { name: 'friends.' + index, validate: validateEmail }),
+										_react2.default.createElement(_formik.Field, {
+											name: 'friends.' + index,
+											validate: validateEmail
+										}),
 										_react2.default.createElement(
 											'button',
 											{
@@ -91,9 +98,12 @@ var EditUser = exports.EditUser = function EditUser(_ref) {
 									);
 								}) : _react2.default.createElement(
 									'button',
-									{ type: 'button', onClick: function onClick() {
+									{
+										type: 'button',
+										onClick: function onClick() {
 											return arrayHelpers.push('');
-										} },
+										}
+									},
 									'Add a friend'
 								)
 							);

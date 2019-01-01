@@ -42,7 +42,8 @@ var Fields = exports.Fields = function Fields(_ref) {
 				onChange: function onChange(newValue) {
 					_onChange(_extends({}, (0, _collectFieldValues.collectFieldValues)(fields), _defineProperty({}, field.fieldId, newValue)));
 				},
-				onBlur: onBlur });
+				onBlur: onBlur
+			});
 		})
 	);
 };

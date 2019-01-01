@@ -34,9 +34,7 @@ var FieldWrapper = exports.FieldWrapper = function FieldWrapper(_ref) {
 
 	return _react2.default.createElement(
 		'div',
-		_extends({
-			className: (0, _util.fieldWrapperClassNames)(fieldType)
-		}, attributes),
+		_extends({ className: (0, _util.fieldWrapperClassNames)(fieldType) }, attributes),
 		children
 	);
 };

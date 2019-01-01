@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 exports.Select = undefined;
 
-var _components = require("@wordpress/components");
+var _components = require('@wordpress/components');
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 

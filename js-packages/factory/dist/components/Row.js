@@ -44,10 +44,7 @@ var Row = exports.Row = function Row(_ref) {
 
 	return _react2.default.createElement(
 		_grid.Flex,
-		{
-			className: (0, _classnames2.default)('caldera-row', className),
-			id: rowId
-		},
+		{ className: (0, _classnames2.default)('caldera-row', className), id: rowId },
 		columns ? _react2.default.createElement(
 			_react.Fragment,
 			null,

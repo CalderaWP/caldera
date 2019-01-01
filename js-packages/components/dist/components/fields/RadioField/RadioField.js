@@ -32,7 +32,6 @@ var RadioField = exports.RadioField = function RadioField(_ref) {
 	    description = _ref.description,
 	    placeholder = _ref.placeholder;
 
-
 	attributes = (0, _util.parseAttributes)(attributes, 'radio');
 
 	return _react2.default.createElement(_components.RadioControl, _extends({

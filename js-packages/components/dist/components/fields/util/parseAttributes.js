@@ -27,7 +27,6 @@ var radioAttrs = ['checked'];
 var parseAttributes = exports.parseAttributes = function parseAttributes(attributes) {
 	var allowed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
-
 	switch (allowed) {
 		case 'number':
 			allowed = [].concat(inputAttrs, numberAttrs);
@@ -54,7 +53,7 @@ var parseAttributes = exports.parseAttributes = function parseAttributes(attribu
 		case null:
 			allowed = inputAttrs;
 			break;
-	};
+	}
 
 	attributes = require('lodash.pick')(attributes, allowed);
 

@@ -1,13 +1,15 @@
 import React from 'react';
+import classNames from 'classnames';
+export function HomePage(props){
 
-export class HomePage extends React.Component {
-	render() {
-		const styles = {
-			content: {
-				padding: 8
-			}
-		};
+	const {
+		children
+	} = props;
+	return(
+	 	<div className={classNames('caldera-homepage')}>{children}</div>
 
-		return <div style={styles.content}>Home Page</div>;
-	}
+	)
+
+
+
 }

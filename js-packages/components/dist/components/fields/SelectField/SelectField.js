@@ -32,7 +32,6 @@ var SelectField = exports.SelectField = function SelectField(_ref) {
 	    description = _ref.description,
 	    placeholder = _ref.placeholder;
 
-
 	attributes = (0, _util.parseAttributes)(attributes, 'select');
 
 	if (!value && placeholder) {

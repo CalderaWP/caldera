@@ -1,6 +1,8 @@
 import React from 'react';
-//import { Header } from '@caldera-labs/components';
-//import { HomePage } from './features/home/home-page';
+import { Header  } from '@caldera-labs/components';
+import { HomePage } from './features/home/home-page';
+import calderaWpLogoDark from './logos/Logo-CalderaWP-DarkBG.svg';
+import calderaFormsIcon from './logos/icons/Icon-CalderaForms.svg';
 
 export class App extends React.Component {
 
@@ -12,7 +14,36 @@ export class App extends React.Component {
 	render() {
 		return (
 			<div>
-				The Ap@p
+				<Header
+					styles={{
+						header: {
+							fontFamily: 'Signika',
+							backgroundColor: '#333333',
+							color: "#FF3721",
+							borderBottom: '#cfcfcf'
+						}
+					}}
+				>
+					<nav>
+						<img style={{
+							width: '200px',
+							height: '75px',
+							padding: '15px',
+						}} src={calderaWpLogoDark} alt={'CalderaWP logo'} />
+
+						<img style={{
+							width: '200px',
+							height: '75px',
+							padding: '15px',
+						}} src={calderaFormsIcon} alt={'Caldera Forms logo'} />
+					</nav>
+
+
+
+				</Header>
+				<HomePage>
+					Content
+				</HomePage>
 			</div>
 		);
 	}

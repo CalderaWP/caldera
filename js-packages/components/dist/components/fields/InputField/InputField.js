@@ -34,11 +34,9 @@ var InputField = exports.InputField = function InputField(_ref) {
 	    attributes = _ref.attributes,
 	    children = _ref.children;
 
-
 	var fieldType = (0, _util.isValidHtml5type)(html5type) ? html5type : 'text';
 	var _attributes = (0, _util.parseAttributes)(attributes, fieldType);
 	if ('checkbox' === fieldType) {
-
 		var checked = value ? true : false;
 		return _react2.default.createElement(_components.CheckboxControl, _extends({
 			id: fieldId,
