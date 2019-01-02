@@ -14,7 +14,8 @@ exports.default = submitForm;
  */
 function submitForm(fieldValues, eventOptions, fetch) {
 	var apiRootUri = eventOptions.apiRootUri,
-	    formId = eventOptions.formId;
+	    formId = eventOptions.formId,
+	    token = eventOptions.token;
 
 	var entryValues = [];
 	Object.keys(fieldValues).forEach(function (fieldId) {
@@ -26,7 +27,8 @@ function submitForm(fieldValues, eventOptions, fetch) {
 	return fetch(url, {
 		method: "PUT",
 		headers: {
-			"Content-Type": "application/json"
+			"Content-Type": "application/json",
+			"X-CWP-TOKEN": token
 		},
 		body: JSON.stringify({
 			formId: formId,

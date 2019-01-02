@@ -4,6 +4,8 @@ import { HomePage } from './features/home/home-page';
 import calderaWpLogoDark from './logos/Logo-CalderaWP-DarkBG.svg';
 import calderaFormsIcon from './logos/icons/Icon-CalderaForms.svg';
 import {ContactForm} from './forms/ContactForm';
+import {TopBar} from './components/TopBar';
+
 const uuidv1 = require('uuid/v1');
 function rowFactory(columns = [],rowId=null) {
 	rowId = ! rowId ? uuidv1() : rowId;
@@ -42,33 +44,7 @@ export class App extends React.Component {
 
 		return (
 			<div>
-				<Header
-					styles={{
-						header: {
-							fontFamily: 'Signika',
-							backgroundColor: '#333333',
-							color: "#FF3721",
-							borderBottom: '#cfcfcf'
-						}
-					}}
-				>
-					<nav>
-						<img style={{
-							width: '200px',
-							height: '75px',
-							padding: '15px',
-						}} src={calderaWpLogoDark} alt={'CalderaWP logo'} />
-
-						<img style={{
-							width: '200px',
-							height: '75px',
-							padding: '15px',
-						}} src={calderaFormsIcon} alt={'Caldera Forms logo'} />
-					</nav>
-
-
-
-				</Header>
+				<TopBar/>
 				<HomePage>
 					{formsLoaded &&
 						<ContactForm

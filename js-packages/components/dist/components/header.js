@@ -34,8 +34,8 @@ var Header = exports.Header = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			var _props = this.props,
-			    children = _props.children,
-			    headingLevel = _props.headingLevel;
+			    headingLevel = _props.headingLevel,
+			    childern = _props.childern;
 
 			var styles = merge({
 				header: {
@@ -55,7 +55,7 @@ var Header = exports.Header = function (_React$Component) {
 			return _react2.default.createElement(
 				'div',
 				{ style: styles.header },
-				(0, _react.createElement)(headingLevel ? headingLevel : 'h1', { styles: styles }, children)
+				childern
 			);
 		}
 	}]);
