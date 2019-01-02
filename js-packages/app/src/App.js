@@ -1,34 +1,44 @@
 import React from 'react';
-import { Header  } from '@caldera-labs/components';
 import { HomePage } from './features/home/home-page';
-import calderaWpLogoDark from './logos/Logo-CalderaWP-DarkBG.svg';
-import calderaFormsIcon from './logos/icons/Icon-CalderaForms.svg';
 import {ContactForm} from './forms/ContactForm';
 import {TopBar} from './components/TopBar';
+import {PageBody} from './components/PageBody';
 
-const uuidv1 = require('uuid/v1');
-function rowFactory(columns = [],rowId=null) {
-	rowId = ! rowId ? uuidv1() : rowId;
-	return {
-		rowId,
-		columns
+
+
+function Body({
+	route,
+	forms
+			  }) {
+	switch (route) {
+		case 'calderaForms':
+			return <PageBody pageKey={route}>
+				<ContactForm
+					form={forms.hasOwnProperty('contact-form') ? forms['contact-form'] : false }
+				/>
+			</PageBody>;
+		break;
+		case 'calderaPay':
+			return <PageBody pageKey={route}>
+				<div>Caldera Pay</div>
+			</PageBody>;
+			break;
+		case 'home':
+		default:
+			return <div>Home</div>;
+			break;
 	}
 }
 
-function columnFactory(fields = [], columnId=null ) {
-	columnId = ! columnId ? uuidv1() : columnId;
-	return {
-		columnId,
-		fields
-	}
-}
+
 export class App extends React.Component {
 
 	state = {
 		formsLoaded:false,
 		forms : {
 
-		}
+		},
+		route: '/'
 	};
 	componentDidMount(){
 		fetch('/wp-json/caldera-api/v1/forms' ).then(r => r.json() )
@@ -36,22 +46,23 @@ export class App extends React.Component {
 			.catch( e => console.log(e))
 			.then(() => this.setState({formsLoaded:true}));
 	}
+
+	setRoute(route){
+		this.setState({route});
+	}
 	render() {
 		const {
 			forms,
-			formsLoaded
+			formsLoaded,
+			route
 		} = this.state;
 
 		return (
 			<div>
-				<TopBar/>
-				<HomePage>
-					{formsLoaded &&
-						<ContactForm
-							form={forms.hasOwnProperty('contact-form') ? forms['contact-form'] : false }
-						/>
-					}
-				</HomePage>
+				<TopBar
+					onChangeActive={(route) => this.setRoute(route)}
+				/>
+				<Body route={route} forms={forms}/>
 			</div>
 		);
 	}

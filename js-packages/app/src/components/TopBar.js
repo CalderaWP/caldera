@@ -1,8 +1,3 @@
-import {
-	CSSTransition,
-	TransitionGroup,
-} from 'react-transition-group';
-
 import React, {Component, Fragment} from 'react';
 import calderaWpLogo from '../logos/Logo-CalderaWP-DarkBG.svg';
 import calderaWpIcon from '../logos/icons/Icon-CalderaWP-DarkBG.svg';
@@ -13,6 +8,7 @@ import calderaFormsIcon from '../logos/icons/Icon-CalderaForms-DarkBG-Alt.svg';
 import calderaPayLogo from '../logos/Logo-CalderaPay-DarkBG.svg';
 import calderaPayIcon from '../logos/icons/Icon-CalderaPay-DarkBG-Alt.svg';
 
+import PropTypes from 'prop-types';
 const merge = require('deepmerge');
 
 export class TopBar extends Component {
@@ -25,19 +21,19 @@ export class TopBar extends Component {
 			key: 'home',
 			title: 'CalderaWP',
 			icon : calderaWpIcon,
-			logo: calderaWpLogo
+			logo: calderaWpLogo,
 		},
 		{
 			key: 'calderaForms',
 			title: 'Caldera Forms',
 			icon : calderaFormsIcon,
-			logo: calderaFormsLogo
+			logo: calderaFormsLogo,
 		},
 		{
 			key: 'calderaPay',
 			title: 'Caldera Pay',
 			icon : calderaPayIcon,
-			logo: calderaPayLogo
+			logo: calderaPayLogo,
 		}
 	];
 
@@ -61,6 +57,7 @@ export class TopBar extends Component {
 	);
 
 	setActive(activeItem){
+		this.props.onChangeActive(activeItem);
 		this.setState({activeItem});
 	}
 
@@ -113,4 +110,14 @@ export class TopBar extends Component {
 
 		)
 	}
+}
+
+
+TopBar.propTypes = {
+	onChangeActive: PropTypes.func,
+};
+const noop = () => {};
+
+TopBar.defaultProps = {
+	onChangeActive: noop,
 }
