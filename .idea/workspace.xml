@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/clover.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/CalderaForm.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/CalderaForm.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/columns.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/columns.fixtures.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/fields.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/fields.fixtures.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/getValuesFromFormLayout.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/getValuesFromFormLayout.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/FormClient.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/FormClient.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/clientFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/clientFactory.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/decoratorFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/decoratorFactory.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/submitForm.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/submitForm.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockEndpoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockEndpoint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Endpoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Endpoint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Token/Csfr.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Token/Csfr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Token/CsfrTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Token/CsfrTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +39,7 @@
           <entry key="html" value="3" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="568" />
+          <entry key="js" value="572" />
           <entry key="json" value="117" />
           <entry key="log" value="2" />
           <entry key="md" value="78" />
@@ -96,7 +68,7 @@
           <entry key="HTML" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="121" />
-          <entry key="JavaScript" value="568" />
+          <entry key="JavaScript" value="572" />
           <entry key="Jest Snapshot" value="39" />
           <entry key="Markdown" value="78" />
           <entry key="PHP" value="1393" />
@@ -116,7 +88,7 @@
           <entry key="env" value="36" />
           <entry key="gitignore" value="62" />
           <entry key="html" value="1" />
-          <entry key="js" value="31785" />
+          <entry key="js" value="31877" />
           <entry key="json" value="2927" />
           <entry key="md" value="10451" />
           <entry key="php" value="74981" />
@@ -133,7 +105,7 @@
           <entry key="CSS" value="26" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="2932" />
-          <entry key="JavaScript" value="31805" />
+          <entry key="JavaScript" value="31897" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="10422" />
           <entry key="PHP" value="74990" />
@@ -169,88 +141,22 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
+        <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/CreateEntry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-              <folding>
-                <element signature="e#50#96#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockEndpoint.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/app/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/dist/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/CreateEntry.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -260,15 +166,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
               <caret line="84" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/forms/tests/FieldModelTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="123" column="30" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -298,7 +195,6 @@
       <find>Form</find>
       <find>FormRow</find>
       <find>collectFieldValues</find>
-      <find>collect</find>
       <find>event</find>
       <find>mock.</find>
       <find>mocks</find>
@@ -314,6 +210,7 @@
       <find>$container-&gt;bind</find>
       <find>factory</find>
       <find>options</find>
+      <find>collect</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -406,9 +303,9 @@
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/Http/handlers/handlers.test.js" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php" />
         <option value="$PROJECT_DIR$/js-packages/app/src/App.js" />
-        <option value="$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockEndpoint.php" />
+        <option value="$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js" />
       </list>
     </option>
   </component>
@@ -580,6 +477,33 @@
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -764,7 +688,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257593000" />
+    <option name="totallyTimeSpent" value="257975000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -779,21 +703,21 @@
     <frame x="356" y="23" width="1654" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.3560794" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78125" visible="true" weight="0.3560794" />
       <window_info id="Structure" order="1" sideWeight="0.21875" side_tool="true" weight="0.32981676" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972236" weight="0.32881355" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24745762" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.07683616" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.07683616" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.1220339" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" x="0" y="166" width="1419" height="778" id="Terminal" order="10" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
+      <window_info anchor="bottom" x="519" y="302" width="1419" height="778" id="Terminal" order="10" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -1082,20 +1006,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-csrf/TokenGenerator/UriSafeTokenGenerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/AuthenticationEvents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/Authentication/Token/PreAuthenticatedToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1377,13 +1287,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#112#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="104">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
@@ -1397,17 +1304,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/dist/index.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="36">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1421,6 +1324,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/dist/components/collectFieldValues.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="60" column="57" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockEndpoint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="e#50#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/CreateEntry.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1430,28 +1367,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-          <folding>
-            <element signature="e#50#96#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/tests/Mocks/MockEndpoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
