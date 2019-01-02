@@ -1,14 +1,15 @@
 import renderer from 'react-test-renderer';
 import React from 'react';
-import {PageBody} from './PageBody';
-describe( 'PageBody', () => {
+import AppBody from './AppBody';
+describe( 'AppBody', () => {
 	it( 'Matches snapshot' , ()=> {
 		const component = renderer.create(
-			<PageBody
-				pageKey={'about'}
+			<AppBody
+				route={'about'}
+				forms={{}}
 			>
 				<div>a</div>
-			</PageBody>
+			</AppBody>
 		);
 		expect( component.toJSON() ).toMatchSnapshot();
 	});

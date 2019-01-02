@@ -41,6 +41,16 @@ PropTypes.oneOf(['optionOne', 'optionTwo'])
   })
 ```
 
+* Children/ React Element/ DOM Node
+    - https://stackoverflow.com/a/42122662/1469799
+    
+```js
+  PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ])
+```
+
 ## Spread Props
 Want to print an array of props, such as HTML attributes without having to unwrap each one?
 
