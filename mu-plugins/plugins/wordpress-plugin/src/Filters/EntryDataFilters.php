@@ -82,9 +82,6 @@ class EntryDataFilters
 				]);
 				$entryValue->setValue($value);
 				$entryValue->setEntryId($entryId);
-				$x=$entryValue->toDatabaseArray();
-				$entryValueId = $entryValuesDataSource->create($entryValue->toDatabaseArray() );
-				$x=  1;
 			}
 
 		}
