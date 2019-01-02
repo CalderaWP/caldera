@@ -8,6 +8,7 @@
         "johnpbloch/wordpress": ">=5.0",
         "mockery/mockery": "^1.2",
         "psr/container": "^1.0",
+        "symfony/security-csrf": "^4.2",
         "vlucas/phpdotenv": "^2.2"
     },
     "require-dev": {
