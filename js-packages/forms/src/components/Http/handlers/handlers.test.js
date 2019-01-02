@@ -64,4 +64,14 @@ describe( 'submitForm', () => {
 		submitForm(fieldValues,eventOptions,fetch);
 		expect(typeof fetch.mock.calls[0][1].headers).toEqual('object');
 	});
+
+	it( 'Adds token to fetch headers', () => {
+		const token = 'dsjdfs-2dsa';
+		submitForm(fieldValues,{
+			apiRootUri,
+			formId,
+			token
+		},fetch);
+		expect(fetch.mock.calls[0][1].headers['X-CWP-TOKEN']).toEqual(token);
+	});
 });

@@ -9,7 +9,8 @@
 export default function submitForm(fieldValues,eventOptions,fetch) {
 	const {
 		apiRootUri,
-		formId
+		formId,
+		token
 	} = eventOptions;
 	const entryValues = [];
 	Object.keys(fieldValues).forEach(fieldId => {
@@ -23,6 +24,7 @@ export default function submitForm(fieldValues,eventOptions,fetch) {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
+				"X-CWP-TOKEN" : token
 			},
 			body: JSON.stringify({
 				formId,
