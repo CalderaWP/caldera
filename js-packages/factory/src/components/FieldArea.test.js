@@ -11,9 +11,9 @@ import {
 	emailField
 } from '../fields.fixtures';
 
-import { FieldGroup } from './FieldGroup';
+import { FieldArea } from './FieldArea';
 
-describe('FieldGroup component', () => {
+describe('FieldArea component', () => {
 	let onChange;
 	let onBlur;
 	beforeEach(() => {
@@ -23,7 +23,7 @@ describe('FieldGroup component', () => {
 
 	it('Creates a text field', () => {
 		const component = renderer.create(
-			<FieldGroup field={textField} onChange={onChange} onBlur={onBlur} />
+			<FieldArea field={textField} onChange={onChange} onBlur={onBlur} />
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
@@ -36,7 +36,7 @@ describe('FieldGroup component', () => {
 		};
 
 		const component = renderer.create(
-			<FieldGroup
+			<FieldArea
 				field={textField}
 				onChange={onChange}
 				onBlur={onBlur}
@@ -49,7 +49,7 @@ describe('FieldGroup component', () => {
 
 	it('Creates an select field', () => {
 		const component = renderer.create(
-			<FieldGroup
+			<FieldArea
 				field={selectField}
 				onChange={onChange}
 				onBlur={onBlur}
@@ -60,7 +60,7 @@ describe('FieldGroup component', () => {
 
 	it('Changes calls change handler of radio field', () => {
 		const component = mount(
-			<FieldGroup
+			<FieldArea
 				field={radioField}
 				onChange={onChange}
 				onBlur={onBlur}
@@ -75,7 +75,7 @@ describe('FieldGroup component', () => {
 	});
 	it('Changes calls change handler of checkbox field', () => {
 		const component = mount(
-			<FieldGroup
+			<FieldArea
 				field={checkboxField}
 				onChange={onChange}
 				onBlur={onBlur}

@@ -1,4 +1,4 @@
-import { fieldGroupFactory } from './fieldGroupFactory';
+import { fieldAreaFactory } from './fieldAreaFactory';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
@@ -23,14 +23,14 @@ describe('fieldFactory', () => {
 	});
 	it('Creates a text field', () => {
 		const component = renderer.create(
-			fieldGroupFactory(textField, onChange, onBlur)
+			fieldAreaFactory(textField, onChange, onBlur)
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
 	it('Creates an select field', () => {
 		const component = renderer.create(
-			fieldGroupFactory(selectField, onChange, onBlur)
+			fieldAreaFactory(selectField, onChange, onBlur)
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
@@ -45,7 +45,7 @@ describe('change handlers', () => {
 	});
 
 	it('Changes calls change handler', () => {
-		const component = mount(fieldGroupFactory(textField, onChange, onBlur));
+		const component = mount(fieldAreaFactory(textField, onChange, onBlur));
 		component.find('input').simulate('change');
 		expect(onChange.mock.calls.length).toBe(1);
 	});
@@ -65,7 +65,7 @@ describe('Showing errors', () => {
 			[textField.fieldId]: errorMessage
 		};
 		const component = mount(
-			fieldGroupFactory(textField, onChange, onBlur, fieldErrors, {})
+			fieldAreaFactory(textField, onChange, onBlur, fieldErrors, {})
 		);
 		expect(
 			component.find('.caldera-field-group').hasClass('has-error')
@@ -80,7 +80,7 @@ describe('Showing errors', () => {
 			[textField.fieldId]: true
 		};
 		const component = mount(
-			fieldGroupFactory(
+			fieldAreaFactory(
 				textField,
 				onChange,
 				onBlur,
@@ -103,7 +103,7 @@ describe('Showing errors', () => {
 		};
 		const fieldTouched = {};
 		const component = mount(
-			fieldGroupFactory(
+			fieldAreaFactory(
 				textField,
 				onChange,
 				onBlur,
@@ -123,7 +123,7 @@ describe('Showing errors', () => {
 			[textField.fieldId]: true
 		};
 		const component = mount(
-			fieldGroupFactory(
+			fieldAreaFactory(
 				textField,
 				onChange,
 				onBlur,
@@ -149,7 +149,7 @@ describe('Showing errors', () => {
 			[textField.fieldId]: true
 		};
 		const component = mount(
-			fieldGroupFactory(
+			fieldAreaFactory(
 				textField,
 				onChange,
 				onBlur,

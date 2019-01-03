@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FieldGroup component Creates a text field 1`] = `
+exports[`FieldArea component Creates a text field 1`] = `
 <div
   className="caldera-field-wrapper caldera-field-wrapper-text"
 >
@@ -37,7 +37,7 @@ exports[`FieldGroup component Creates a text field 1`] = `
 </div>
 `;
 
-exports[`FieldGroup component Creates an select field 1`] = `
+exports[`FieldArea component Creates an select field 1`] = `
 <div
   className="caldera-field-wrapper caldera-field-wrapper-text"
 >
@@ -88,7 +88,7 @@ exports[`FieldGroup component Creates an select field 1`] = `
 </div>
 `;
 
-exports[`FieldGroup component Shows errors 1`] = `
+exports[`FieldArea component Shows errors 1`] = `
 <div
   className="caldera-field-wrapper caldera-field-wrapper-text"
 >

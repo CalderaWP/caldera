@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import classNames from 'classnames';
 import { fieldFactory } from './fieldFactory';
 
-export const fieldGroupFactory = (
+export const fieldAreaFactory = (
 	field,
 	onChange,
 	onBlur,

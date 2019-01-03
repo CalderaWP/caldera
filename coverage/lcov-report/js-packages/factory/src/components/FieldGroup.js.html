@@ -72,7 +72,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Fragment } from 'react';
-import { fieldGroupFactory } from '../factories/fieldGroupFactory';
+import { fieldAreaFactory } from '../factories/fieldAreaFactory';
 &nbsp;
 export const FieldGroup = ({
 	field,
@@ -82,7 +82,7 @@ export const FieldGroup = ({
 	fieldsTouch
 }) =&gt; (
 	&lt;Fragment&gt;
-		{fieldGroupFactory(field, onChange, onBlur, fieldErrors, fieldsTouch)}
+		{fieldAreaFactory(field, onChange, onBlur, fieldErrors, fieldsTouch)}
 	&lt;/Fragment&gt;
 );
 &nbsp;</pre></td></tr>

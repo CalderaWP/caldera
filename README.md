@@ -127,11 +127,11 @@ When you import a module from one package to another, the IDE may try and autoco
  
 ```js
 //Works!
-import {FieldGroup,} from '@caldera-labs/factory';
+import {FieldArea,} from '@caldera-labs/factory';
 
 //Does not work. Makes errors about imports.
 // Do not try to fix.
-import {FieldGroup} from "@caldera-labs/factory/src/components/FieldGroup";
+import {FieldArea} from "@caldera-labs/factory/src/components/FieldArea";
 ```
 ### Also See
 https://github.com/nareshbhatia/lerna-workspaces-react-es6

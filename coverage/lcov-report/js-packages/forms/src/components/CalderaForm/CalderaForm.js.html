@@ -232,8 +232,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import PropTypes from 'prop-types';
 import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import { fieldFactory, fieldGroupFactory } from '@caldera-labs/factory';
-import { Column, Row, FieldGroup } from '@caldera-labs/factory';
+import { fieldFactory, fieldAreaFactory } from '@caldera-labs/factory';
+import { Column, Row, FieldArea } from '@caldera-labs/factory';
 import classNames from 'classnames';
 &nbsp;
 export const CalderaForm = ({ formRows, initialValues, onSubmit }) =&gt; {
@@ -280,7 +280,7 @@ export const CalderaForm = ({ formRows, initialValues, onSubmit }) =&gt; {
 													field.value =
 														values[fieldId];
 													return (
-														&lt;FieldGroup
+														&lt;FieldArea
 															key={fieldId}
 															field={field}
 															onChange={<span class="fstat-no" title="function not covered" >ne</span>wValue =&gt; {
