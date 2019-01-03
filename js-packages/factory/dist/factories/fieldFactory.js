@@ -15,6 +15,16 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/**
+ * Create a field from an object describing it.
+ *
+ * Note: field.render is a render prop. If it is passed, field is passed to it.
+ *
+ * @param field
+ * @param onChange
+ * @param onBlur
+ * @return {*}
+ */
 var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange, onBlur) {
 	var _field = field,
 	    fieldType = _field.fieldType,
@@ -22,8 +32,13 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 	    attributes = _field.attributes,
 	    options = _field.options,
 	    fieldId = _field.fieldId,
-	    messages = _field.messages;
+	    messages = _field.messages,
+	    render = _field.render;
 
+
+	if (render) {
+		return _react2.default.createElement(render, field);
+	}
 
 	switch (fieldType) {
 		case 'checkboxes':

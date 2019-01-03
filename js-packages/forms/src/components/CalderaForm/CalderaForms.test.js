@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
-import { formRows,formRowOne } from './columns.fixtures';
+import { formRows,formRowOne,checkboxField } from './columns.fixtures';
 import { getValuesFromFormLayout } from './util/getValuesFromFormLayout';
 import {emailField, textField} from "./fields.fixtures";
 
@@ -28,19 +28,92 @@ describe('Caldera Forms', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it( 'A row can be a component', () => {
+	it( 'A row can have a render prop', () => {
+		const _Row = (props) => <div id={'test2243'}/>;
+
 		const component = mount(
 			<CalderaForm
 				formRows={[
 					formRowOne,
-					<p id={'test20'}>Hi Roy</p>
+					{
+						rowId: 'r45',
+						render:  _Row
+					}
 				]}
 				initialValues={initialValues}
 				onBlur={onBlur}
 				onChange={onChange}
 			/>
 		);
-		expect(component.find('#test20').length).toBe(1);
+		expect(component.find('#test2243').length).toBe(1);
+	});
+	it( 'A column can have a render prop', () => {
+		const _Field = (props) => <input id={'test243'} type={'number'} key={808}/>;
+
+		const component = mount(
+			<CalderaForm
+				formRows={[
+					{
+						rowId: 'r1',
+						columns: [
+							{
+								render: _Field,
+								width: '1/2',
+								columnId: '1aaaaa'
+							},
+							{
+								fields: [textField],
+								width: '1/4',
+								columnId: '1b'
+							}
+						]
+					}
+				]}
+				initialValues={initialValues}
+				onBlur={onBlur}
+				onChange={onChange}
+			/>
+		);
+		expect(component.find('#test243').length).toBe(1);
+	});
+
+	it( 'A field can have a render prop', () => {
+		const _Field = (props) => <input id={'test808'} type={'number'} />;
+
+		const field = {
+			...checkboxField,
+			render: _Field,
+			key:800000
+		};
+		const component = mount(
+			<CalderaForm
+				formRows={[
+					{
+						rowId: 'r1',
+						columns: [
+							{
+								fields: [
+									field,
+									checkboxField
+								],
+								width: '1/2',
+								columnId: '1aaaaa'
+							},
+							{
+								fields: [textField],
+								width: '1/4',
+								columnId: '1b'
+							}
+						]
+					}
+				]}
+				initialValues={initialValues}
+				onBlur={onBlur}
+				onChange={onChange}
+			/>
+		);
+		expect(component.find('#test808').length).toBe(1);
+		expect(component.find('#test808').prop('type')).toBe('number');
 	});
 
 

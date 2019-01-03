@@ -103,6 +103,43 @@ describe('fieldFactory', () => {
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
+
+	test( 'Render props pattern', () => {
+		const _Field = (props) => <input type={'number'} key={88}/>;
+		const _Rp = ({render}) => ({render});
+
+		const component = mount(
+			<_Rp render={_Field} />
+		);
+		expect(component.find('input').prop('type') ).toEqual('number')
+	});
+
+	test( 'Field can supply a component', () => {
+		const _Field = (props) => <input type={'number'} key={88}/>;
+
+		const component = mount(
+			fieldFactory({
+				render: _Field,
+			}),
+			onChange,
+			onBlur
+		);
+		expect(component.find('input').prop('type') ).toEqual('number')
+	});
+
+	test( 'Field can supply a component and will be provided with field config as props', () => {
+		const _Field = ({fieldId}) => <input id={fieldId} type={'number'} key={88}/>;
+
+		const component = mount(
+			fieldFactory({
+				...selectField,
+				render: _Field,
+			}),
+			onChange,
+			onBlur
+		);
+		expect(component.find('#selectFieldId').length ).toEqual(1)
+	});
 });
 
 describe('change handlers', () => {

@@ -21,16 +21,19 @@ import classNames from 'classnames';
 const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched,setFieldValue}) => (
 	<Fragment>
 		{rows.map(row => {
-			if( React.isValidElement(row)){
-				const {
-					key,
-					rowId
-				} = row.props ? row.props : {};
-				return createElement(Fragment, {
-					key: key ? key : rowId ? rowId : 'row-without-key-or-rowId'
-				},row);
+			const {
+				rowId,
+				columns,
+				render
+			} = row;
+
+			if( render ){
+				return createElement(render,{
+					...row,
+					key: rowId
+				})
 			}
-			const { rowId, columns } = row;
+
 			return (
 				<Row
 					className={classNames('caldera-form-row')}
@@ -42,8 +45,16 @@ const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched
 							padding,
 							width,
 							columnId,
-							fields
+							fields,
+							render,
+							key
 						} = column;
+						if( render ){
+							return createElement(render,{
+								...column,
+								key: columnId
+							});
+						}
 						return (
 							<Column
 								key={columnId}
@@ -52,11 +63,21 @@ const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched
 								padding={padding}
 							>
 								{fields.map(field => {
-									const { fieldId } = field;
+									if( ! field ){
+										return;
+									}
+									const {
+										fieldId,
+										render,
+										key
+									} = field;
 									field.value = fieldValues[fieldId];
+
+									const _key = render ? key  : fieldId;
 									return (
 										<FieldArea
-											key={fieldId}
+											render={render}
+											key={_key}
 											field={field}
 											onChange={newValue => {
 												setFieldValue(
@@ -95,7 +116,8 @@ const _noop = () => {};
 Layout.defaultProps = {
 	onAnyChange: _noop,
 	onAnyBlur: _noop,
-	setFieldValue: _noop
+	setFieldValue: _noop,
+	fieldValues: {}
 };
 
 

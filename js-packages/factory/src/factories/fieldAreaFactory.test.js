@@ -13,6 +13,7 @@ import {
 } from '../fields.fixtures';
 
 import { fieldWrapperClassNames } from '@caldera-labs/components';
+import {fieldFactory} from "./fieldFactory";
 
 describe('fieldFactory', () => {
 	let onChange;
@@ -158,5 +159,25 @@ describe('Showing errors', () => {
 			)
 		);
 		expect(component.find('.caldera-components-error').length).toBe(0);
+	});
+
+	test( 'Field can be a component using render prop', () => {
+		const _Field = ({fieldId}) => <input id={fieldId} type={'number'} key={88}/>;
+		const field = {
+			...selectField,
+			render: _Field,
+		};
+		const component = mount(
+			fieldAreaFactory(
+				field,
+				onChange,
+				onBlur,
+				{},
+				{}
+			)
+		);
+		expect(component.find('#selectFieldId').length ).toEqual(1);
+		expect(component.find('#selectFieldId').prop('type') ).toEqual('number');
+
 	});
 });

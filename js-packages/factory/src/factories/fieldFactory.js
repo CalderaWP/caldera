@@ -7,8 +7,22 @@ import {
 } from '@caldera-labs/components';
 import React from 'react';
 
+/**
+ * Create a field from an object describing it.
+ *
+ * Note: field.render is a render prop. If it is passed, field is passed to it.
+ *
+ * @param field
+ * @param onChange
+ * @param onBlur
+ * @return {*}
+ */
 export const fieldFactory = (field, onChange, onBlur) => {
-	const { fieldType, label, attributes, options, fieldId, messages } = field;
+	const { fieldType, label, attributes, options, fieldId, messages, render } = field;
+
+	if( render ){
+		return React.createElement(render,field);
+	}
 
 	switch (fieldType) {
 		case 'checkboxes':
