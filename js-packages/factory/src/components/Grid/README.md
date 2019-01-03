@@ -1,12 +1,34 @@
 # Caldera Grid
 
-
 ## Grid Factory
 
 ## Grid Components
 
 ### Rows
-Outputs many rows.
+Outputs many rows. A row can be an object describing the row and its columns, or it can be a React component.
+
+```js
+const row = {
+    rowId: 'r2',
+    columns: [
+        {
+            fields: [{
+            	//field config
+            	//link to docs for this: @todo
+            }],
+          
+            width: '1/3',
+            columnId: 'c1'
+        },
+        <div 
+            key={'unique-key'}
+        >
+            A Column can be a React component
+        </div>,
+    ]
+    
+}
+```
 
 ### Row
 One row, possibly in a collection of rows. Outputs many columns.

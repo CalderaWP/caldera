@@ -23,13 +23,16 @@ export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
 				}) => (
 					<Form>
 						{formRows.map(formRow => {
+							function ifComponentElseIterateOn(ifComponent, elseLogic) {
+
+							}
 							if( React.isValidElement(formRow)){
 								const {
 									key,
-									id
+									rowId
 								} = formRow.props ? formRow.props : {};
 								return createElement(Fragment, {
-									key: key ? key : id ? id : 'this-is-bad'
+									key: key ? key : rowId ? rowId : 'row-without-key-or-rowId'
 								},formRow);
 							}
 							const { rowId, columns } = formRow;
@@ -46,6 +49,16 @@ export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
 											columnId,
 											fields
 										} = column;
+
+										if( React.isValidElement(column)){
+											const {
+												key,
+												columnId
+											} = column.props ? column.props : {};
+											return createElement(Fragment, {
+												key: key ? key : columnId ? columnId : 'column-without-key-or-columnId'
+											},column);
+										}
 										return (
 											<Column
 												key={columnId}
@@ -54,6 +67,16 @@ export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
 												padding={padding}
 											>
 												{fields.map(field => {
+													if( React.isValidElement(field)){
+														const {
+															key,
+															fieldId
+														} = field.props ? field.props : {};
+														return createElement(Fragment, {
+															key: key ? key : fieldId ? fieldId : 'field-without-key-or-fieldId'
+														},field);
+													}
+
 													const { fieldId } = field;
 													field.value =
 														values[fieldId];

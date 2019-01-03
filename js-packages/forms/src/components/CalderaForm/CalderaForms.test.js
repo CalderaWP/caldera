@@ -1,10 +1,11 @@
 import { CalderaForm } from './CalderaForm';
-import React from 'react';
+import React, {Fragment} from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
 import { formRows,formRowOne } from './columns.fixtures';
 import { getValuesFromFormLayout } from './util/getValuesFromFormLayout';
+import {emailField, textField} from "./fields.fixtures";
 
 const initialValues = getValuesFromFormLayout(formRows);
 describe('Caldera Forms', () => {
@@ -40,6 +41,29 @@ describe('Caldera Forms', () => {
 			/>
 		);
 		expect(component.find('#test20').length).toBe(1);
+	})
+
+	it( 'A column can be a component', () => {
+		const component = mount(
+			<CalderaForm
+				formRows={[
+					formRowOne,
+					{
+						rowId: 'r22',
+						columns: [
+							<Fragment columnId={'c11'}><div id="test30" key="c1">Line 54</div></Fragment>,
+							<Fragment key="c12"><div id="test30" >Line 55</div></Fragment>,
+
+						]
+					}
+				]}
+				initialValues={{}}
+				onBlur={onBlur}
+				onChange={onChange}
+			/>
+		);
+		expect(component.find('#test30').length).toBe(1);
+		expect(component.find('#test31').length).toBe(1);
 	})
 });
 

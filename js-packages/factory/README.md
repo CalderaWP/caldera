@@ -70,7 +70,7 @@ import {
 	Row, 
 	Field,
 	Fields,
-	FieldGroup
+	FieldArea
 } from '@caldera-labs/factory';
 ```
 
