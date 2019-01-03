@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, {isValidElement,createElement,Fragment} from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { fieldFactory, FieldAreaFactory } from '@caldera-labs/factory';
 import { Column, Row, FieldArea } from '@caldera-labs/factory';
@@ -23,6 +23,15 @@ export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
 				}) => (
 					<Form>
 						{formRows.map(formRow => {
+							if( React.isValidElement(formRow)){
+								const {
+									key,
+									id
+								} = formRow.props ? formRow.props : {};
+								return createElement(Fragment, {
+									key: key ? key : id ? id : 'this-is-bad'
+								},formRow);
+							}
 							const { rowId, columns } = formRow;
 							return (
 								<Row

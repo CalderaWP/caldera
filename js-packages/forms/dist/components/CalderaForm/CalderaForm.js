@@ -59,6 +59,9 @@ var CalderaForm = exports.CalderaForm = function CalderaForm(_ref) {
 								id: rowId
 							},
 							columns.map(function (column) {
+								if (_react2.default.isValidElement(column)) {
+									return createEl;
+								}
 								var padding = column.padding,
 								    width = column.width,
 								    columnId = column.columnId,

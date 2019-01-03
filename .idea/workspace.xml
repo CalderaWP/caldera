@@ -2,6 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Column.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Column.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Field.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/FieldArea.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/FieldArea.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Fields.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Grid/Row.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Grid/Row.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Grid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Grid/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Rows.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/Rows.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/collectFieldValues.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/collectFieldValues.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/components/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldAreaFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldAreaFactory.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/fieldFactory.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/factories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/fields.fixtures.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/coverage/lcov-report/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/CalderaForm.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/CalderaForm.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/columns.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/columns.fixtures.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/fields.fixtures.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/fields.fixtures.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/getValuesFromFormLayout.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/getValuesFromFormLayout.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/CalderaForm/util/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/FormClient.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/FormClient.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/clientFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/clientFactory.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/decoratorFactory.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/decoratorFactory.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/submitForm.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/handlers/submitForm.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/Http/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/dist/components/CalderaForm/CalderaForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/dist/components/CalderaForm/CalderaForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/dist/components/Http/clientFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/dist/components/Http/clientFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +75,7 @@
           <entry key="html" value="3" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="636" />
+          <entry key="js" value="639" />
           <entry key="json" value="117" />
           <entry key="log" value="2" />
           <entry key="md" value="82" />
@@ -68,7 +104,7 @@
           <entry key="HTML" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="121" />
-          <entry key="JavaScript" value="636" />
+          <entry key="JavaScript" value="639" />
           <entry key="Jest Snapshot" value="42" />
           <entry key="Markdown" value="82" />
           <entry key="PHP" value="1393" />
@@ -88,7 +124,7 @@
           <entry key="env" value="36" />
           <entry key="gitignore" value="62" />
           <entry key="html" value="1" />
-          <entry key="js" value="34940" />
+          <entry key="js" value="35238" />
           <entry key="json" value="2927" />
           <entry key="md" value="11516" />
           <entry key="php" value="74981" />
@@ -105,7 +141,7 @@
           <entry key="CSS" value="26" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="2932" />
-          <entry key="JavaScript" value="34962" />
+          <entry key="JavaScript" value="35260" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="11481" />
           <entry key="PHP" value="74990" />
@@ -139,14 +175,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.16849315">
+    <splitter split-orientation="horizontal" split-proportion="0.5400411">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="635">
-                  <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+                <state relative-caret-position="387">
+                  <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
                   <folding>
                     <element signature="e#0#35#0" expanded="true" />
                   </folding>
@@ -155,10 +191,28 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/Http/clientFactory.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="525">
-                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -169,7 +223,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.6482702">
+        <splitter split-orientation="horizontal" split-proportion="0.72619045">
           <split-first>
             <leaf>
               <file pinned="false" current-in-tab="false">
@@ -187,8 +241,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="615">
-                      <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+                    <state relative-caret-position="169">
+                      <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
                       <folding>
                         <element signature="e#0#44#0" expanded="true" />
                       </folding>
@@ -227,7 +281,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onChangeValue</find>
       <find>changeH</find>
       <find>testField</find>
       <find>classNam</find>
@@ -257,6 +310,7 @@
       <find>options</find>
       <find>collect</find>
       <find>FieldGroup</find>
+      <find>fieldAreadFa</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -348,12 +402,12 @@
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/FieldArea.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/README.md" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/index.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/index.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/Http/clientFactory.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/Http/clientFactory.test.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" />
       </list>
     </option>
   </component>
@@ -708,8 +762,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.CsfrTest.testInvalidToken">
-    <configuration name="Caldera Forms.Forms" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Caldera Forms.A row can be a component">
+    <configuration name="Caldera Forms.A row can be a component" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$/js-packages/forms" />
@@ -718,7 +772,7 @@
       <test-file value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" />
       <test-names>
         <test-name value="Caldera Forms" />
-        <test-name value="Forms" />
+        <test-name value="A row can be a component" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -748,19 +802,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.Caldera Forms.Forms" />
       <item itemvalue="Jest..Adds default submit handler" />
       <item itemvalue="PHPUnit.CsfrTest" />
       <item itemvalue="PHPUnit.CsfrTest.testValidateToken" />
       <item itemvalue="PHPUnit.CsfrTest.testInvalidToken" />
+      <item itemvalue="Jest.Caldera Forms.A row can be a component" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Caldera Forms.A row can be a component" />
         <item itemvalue="PHPUnit.CsfrTest.testInvalidToken" />
         <item itemvalue="PHPUnit.CsfrTest.testValidateToken" />
         <item itemvalue="PHPUnit.CsfrTest" />
         <item itemvalue="Jest..Adds default submit handler" />
-        <item itemvalue="Jest.Caldera Forms.Forms" />
       </list>
     </recent_temporary>
   </component>
@@ -784,9 +838,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Adds_default_submit_handler - 2019.01.01 at 12h 56m 54s.xml">
-      <configuration name=".Adds default submit handler" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="_Adds_default_submit_handler - 2019.01.01 at 12h 57m 22s.xml">
       <configuration name=".Adds default submit handler" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -814,9 +865,12 @@
     <history-entry file="CsfrTest_testInvalidToken - 2019.01.01 at 19h 50m 32s.xml">
       <configuration name="CsfrTest.testInvalidToken" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Caldera_Forms_A_row_can_be_a_component - 2019.01.02 at 19h 57m 59s.xml">
+      <configuration name="Caldera Forms.A row can be a component" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267768000" />
+    <option name="totallyTimeSpent" value="268393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,14 +885,14 @@
     <frame x="187" y="47" width="1654" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9186441" visible="true" weight="0.094292805" />
-      <window_info id="Structure" order="1" sideWeight="0.08135593" side_tool="true" visible="true" weight="0.094292805" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8693285" visible="true" weight="0.093672454" />
+      <window_info id="Structure" order="1" sideWeight="0.1306715" side_tool="true" visible="true" weight="0.093672454" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.0" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.24745762" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.024858758" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.37740114" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.1220339" />
@@ -847,7 +901,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info anchor="bottom" x="13" y="302" width="1419" height="778" id="Terminal" order="13" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
+      <window_info active="true" anchor="bottom" x="13" y="302" width="1419" height="778" id="Terminal" order="13" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1094,13 +1148,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js</url>
-          <line>48</line>
+          <line>57</line>
           <option name="timeStamp" value="216" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="217" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js-packages/forms/src/components/Http/FormClient.js</url>
@@ -1124,16 +1173,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Forms/ContactForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-          <folding>
-            <element signature="e#50#96#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/CreateEntry.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1419,13 +1458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1467,13 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1508,19 +1533,9 @@
     <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/Http/clientFactory.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1545,12 +1560,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+        <state relative-caret-position="169">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

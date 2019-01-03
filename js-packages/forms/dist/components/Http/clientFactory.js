@@ -45,7 +45,5 @@ var formClientFactory = exports.formClientFactory = function formClientFactory(f
 				apiRootUri: apiRootUri,
 				fetch: fetch
 			}, handlers));
-			break;
-
 	}
 };

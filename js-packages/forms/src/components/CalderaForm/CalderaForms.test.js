@@ -27,19 +27,19 @@ describe('Caldera Forms', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it( 'A column can be a component', () => {
+	it( 'A row can be a component', () => {
 		const component = mount(
 			<CalderaForm
 				formRows={[
 					formRowOne,
-					<p id={'---test20'}>Hi Roy</p>
+					<p id={'test20'}>Hi Roy</p>
 				]}
 				initialValues={initialValues}
 				onBlur={onBlur}
 				onChange={onChange}
 			/>
 		);
-		expect(component.find('#---test20').length).toBe(1);
+		expect(component.find('#test20').length).toBe(1);
 	})
 });
 
