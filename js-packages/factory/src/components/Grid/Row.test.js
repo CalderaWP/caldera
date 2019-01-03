@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import {
 	checkboxFieldset,
 	selectField,
@@ -45,6 +45,39 @@ describe('Row component', () => {
 				columns={columns}
 				onChange={onChange}
 				onBlur={onBlur}
+			/>
+		);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
+	it('Renders children if no columns', () => {
+		const component = shallow(
+			<Row
+				rowId={'twoColumns'}
+				onChange={onChange}
+				onBlur={onBlur}
+			>
+				<p>Hi Roy</p>
+			</Row>
+		);
+		expect(component.find('p').text()).toEqual('Hi Roy');
+	});
+
+	it('Applies padding to x and y ', () => {
+		const component = renderer.create(
+			<Row
+				rowId={'twoColumns'}
+				columns={[
+					{
+						children: <div>Half Column</div>,
+						width: '1/2',
+						columnId: 1,
+						padding: '222'
+					}
+				]}
+				onChange={onChange}
+				onBlur={onBlur}
+				padding={'11'}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();

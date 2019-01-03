@@ -1,5 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`fieldFactory Creates a checkbox fieldset 1`] = `
+<fieldset
+  className="caldera-fieldset caldera-fieldset-checkboxes"
+>
+  <legend>
+    Checkbox Field Set Label
+  </legend>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        checked={true}
+        className="components-checkbox-control__input"
+        id={undefined}
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      />
+      <label
+        className="components-checkbox-control__label"
+        htmlFor="inspector-checkbox-control-4"
+      >
+        One
+      </label>
+    </div>
+  </div>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby="inspector-checkbox-control-5__help"
+        checked={true}
+        className="components-checkbox-control__input"
+        id={undefined}
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      />
+      <label
+        className="components-checkbox-control__label"
+        htmlFor="inspector-checkbox-control-5"
+      >
+        Two
+      </label>
+    </div>
+    <p
+      className="components-base-control__help"
+      id="inspector-checkbox-control-5__help"
+    >
+      The Second Option
+    </p>
+  </div>
+  <div
+    className="components-base-control"
+  >
+    <div
+      className="components-base-control__field"
+    >
+      <input
+        aria-describedby={undefined}
+        checked={true}
+        className="components-checkbox-control__input"
+        id={undefined}
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      />
+      <label
+        className="components-checkbox-control__label"
+        htmlFor="inspector-checkbox-control-6"
+      >
+        Three
+      </label>
+    </div>
+  </div>
+</fieldset>
+`;
+
 exports[`fieldFactory Creates a number field 1`] = `
 <div
   className="components-base-control caldera-field caldera-field-number"

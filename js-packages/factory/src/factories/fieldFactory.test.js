@@ -85,6 +85,13 @@ describe('fieldFactory', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
+	it('Creates a checkbox fieldset', () => {
+		const component = renderer.create(
+			fieldFactory(checkboxFieldset, onChange, onBlur)
+		);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
 	it('Creates an select field identified as dropdown', () => {
 		const component = renderer.create(
 			fieldFactory({

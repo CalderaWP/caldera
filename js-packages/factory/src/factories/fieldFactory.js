@@ -11,7 +11,6 @@ export const fieldFactory = (field, onChange, onBlur) => {
 	const { fieldType, label, attributes, options, fieldId, messages } = field;
 
 	switch (fieldType) {
-		case 'checkboxGroup':
 		case 'checkboxes':
 			return (
 				<FieldSet
@@ -44,13 +43,11 @@ export const fieldFactory = (field, onChange, onBlur) => {
 					})}
 				</FieldSet>
 			);
-			break;
 		case 'radio':
 			return <RadioField {...field} onChange={onChange} />;
 		case 'select':
 		case 'dropdown':
 			return <SelectField {...field} onChange={onChange} />;
-			break;
 		case 'text':
 		case 'email':
 		case 'number':
@@ -64,6 +61,5 @@ export const fieldFactory = (field, onChange, onBlur) => {
 				field.html5type = 'text';
 			}
 			return <InputField {...field} onChange={onChange} />;
-			break;
 	}
 };

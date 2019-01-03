@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1546430277633" clover="3.2.0">
-  <project timestamp="1546430277633" name="All files">
+<coverage generated="1546474689067" clover="3.2.0">
+  <project timestamp="1546474689067" name="All files">
     <metrics statements="71" coveredstatements="70" conditionals="13" coveredconditionals="10" methods="21" coveredmethods="21" elements="105" coveredelements="101" complexity="0" loc="71" ncloc="71" packages="4" files="8" classes="8">
       <package name="CalderaForm">
         <metrics statements="27" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>

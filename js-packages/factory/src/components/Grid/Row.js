@@ -28,9 +28,7 @@ export const Row = ({
 				<Fragment>
 					{columns.map(column => {
 						let { width, padding, columnId } = column;
-
-						padding = padding ? padding : 8;
-
+						
 						return (
 							<Column
 								key={columnId}
