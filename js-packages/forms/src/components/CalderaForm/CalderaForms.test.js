@@ -43,7 +43,7 @@ describe('Caldera Forms', () => {
 		expect(component.find('#test20').length).toBe(1);
 	})
 
-	it( 'A column can be a component', () => {
+	it.skip( 'A column can be a component', () => {
 		const component = mount(
 			<CalderaForm
 				formRows={[
@@ -51,7 +51,7 @@ describe('Caldera Forms', () => {
 					{
 						rowId: 'r22',
 						columns: [
-							<Fragment columnId={'c11'}><div id="test30" key="c1">Line 54</div></Fragment>,
+							<Fragment key={'c11'}><div id="test30" key="c1">Line 54</div></Fragment>,
 							<Fragment key="c12"><div id="test30" >Line 55</div></Fragment>,
 
 						]
