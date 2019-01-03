@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, { Component, Fragment } from 'react';
 import calderaWpLogo from '../logos/Logo-CalderaWP-DarkBG.svg';
 import calderaWpIcon from '../logos/icons/Icon-CalderaWP-DarkBG.svg';
 
@@ -20,20 +20,20 @@ export class TopBar extends Component {
 		{
 			key: 'home',
 			title: 'CalderaWP',
-			icon : calderaWpIcon,
-			logo: calderaWpLogo,
+			icon: calderaWpIcon,
+			logo: calderaWpLogo
 		},
 		{
 			key: 'calderaForms',
 			title: 'Caldera Forms',
-			icon : calderaFormsIcon,
-			logo: calderaFormsLogo,
+			icon: calderaFormsIcon,
+			logo: calderaFormsLogo
 		},
 		{
 			key: 'calderaPay',
 			title: 'Caldera Pay',
-			icon : calderaPayIcon,
-			logo: calderaPayLogo,
+			icon: calderaPayIcon,
+			logo: calderaPayLogo
 		}
 	];
 
@@ -56,68 +56,66 @@ export class TopBar extends Component {
 		this.props.styles || {}
 	);
 
-	setActive(activeItem){
+	setActive(activeItem) {
 		this.props.onChangeActive(activeItem);
-		this.setState({activeItem});
+		this.setState({ activeItem });
 	}
 
-	activeItem(){
-		return this.menuItems.find( item => this.state.activeItem === item.key );
+	activeItem() {
+		return this.menuItems.find(item => this.state.activeItem === item.key);
 	}
 
-	render(){
+	render() {
 		const activeItem = this.activeItem();
 
-		return(
-
+		return (
 			<div style={this.styles.header}>
-				<img style={{
-					width: '200px',
-					height: '75px',
-					padding: '15px',
-				}} src={activeItem.logo} alt={`${activeItem.title} Logo`} />
+				<img
+					style={{
+						width: '200px',
+						height: '75px',
+						padding: '15px'
+					}}
+					src={activeItem.logo}
+					alt={`${activeItem.title} Logo`}
+				/>
 
 				<nav>
 					{this.menuItems.map(menuItem => {
-						const {
-							icon,
-							logo,
-							title,
-							key
-						} = menuItem;
-						if( activeItem.key === key ){
-							return <Fragment/>
+						const { icon, logo, title, key } = menuItem;
+						if (activeItem.key === key) {
+							return <Fragment />;
 						}
-						return <a
-							key={key}
-							onClick={() => {
-								this.setActive(key);
-							}}
-						>
-							<img style={{
-								width: '200px',
-								height: '75px',
-								padding: '15px',
-							}} src={icon} alt={`${title} Icon`}
-							/>
-
-						</a>
+						return (
+							<a
+								key={key}
+								onClick={() => {
+									this.setActive(key);
+								}}
+							>
+								<img
+									style={{
+										width: '200px',
+										height: '75px',
+										padding: '15px'
+									}}
+									src={icon}
+									alt={`${title} Icon`}
+								/>
+							</a>
+						);
 					})}
-
 				</nav>
-
 			</div>
-
-		)
+		);
 	}
 }
 
-
 TopBar.propTypes = {
-	onChangeActive: PropTypes.func,
+	onChangeActive: PropTypes.func
 };
 const noop = () => {};
 
 TopBar.defaultProps = {
-	onChangeActive: noop,
-}
+	onChangeActive: noop
+};

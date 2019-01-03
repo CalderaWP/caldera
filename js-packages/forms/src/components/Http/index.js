@@ -1,3 +1,5 @@
-export FormClient  from './FormClient';
+export FormClient from './FormClient';
 export { formClientFactory } from './clientFactory';
-export { decorateObjectLiteralWithMethods } from './decoratorFactory/decoratorFactory';
+export {
+	decorateObjectLiteralWithMethods
+} from './decoratorFactory/decoratorFactory';

@@ -18,10 +18,18 @@ import React from 'react';
  * @return {*}
  */
 export const fieldFactory = (field, onChange, onBlur) => {
-	const { fieldType, label, attributes, options, fieldId, messages, render } = field;
+	const {
+		fieldType,
+		label,
+		attributes,
+		options,
+		fieldId,
+		messages,
+		render
+	} = field;
 
-	if( render ){
-		return React.createElement(render,field);
+	if (render) {
+		return React.createElement(render, field);
 	}
 
 	switch (fieldType) {

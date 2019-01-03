@@ -1,4 +1,4 @@
-import { selectField, numberField,emailField } from '../fields.fixtures';
+import { selectField, numberField, emailField } from '../fields.fixtures';
 
 import { collectFieldValues } from './collectFieldValues';
 
@@ -8,7 +8,7 @@ describe('collects field values', () => {
 	const fields = [
 		{ ...selectField, value: selectValue },
 		{ ...numberField, value: numberValue },
-		{ ...emailField },
+		{ ...emailField }
 	];
 
 	it('works', () => {
@@ -19,7 +19,7 @@ describe('collects field values', () => {
 	it('works with unset value', () => {
 		let testField = { ...emailField };
 		delete testField.value;
-		expect(testField.hasOwnProperty('value') ).toBe(false);
+		expect(testField.hasOwnProperty('value')).toBe(false);
 		const values = collectFieldValues([
 			{ ...numberField, value: numberValue },
 			testField

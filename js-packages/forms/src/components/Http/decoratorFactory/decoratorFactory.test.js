@@ -50,7 +50,7 @@ describe('decorateObjectLiteral', () => {
 		});
 		expect(proxy.x).toEqual(12);
 		expect(() => {
-			proxy.y = 'Fake stuff'
+			proxy.y = 'Fake stuff';
 		}).toThrow();
 	});
 });

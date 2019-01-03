@@ -52,11 +52,7 @@ describe('Row component', () => {
 
 	it('Renders children if no columns', () => {
 		const component = shallow(
-			<Row
-				rowId={'twoColumns'}
-				onChange={onChange}
-				onBlur={onBlur}
-			>
+			<Row rowId={'twoColumns'} onChange={onChange} onBlur={onBlur}>
 				<p>Hi Roy</p>
 			</Row>
 		);

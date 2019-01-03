@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, {isValidElement,createElement,Fragment} from 'react';
+import React, { isValidElement, createElement, Fragment } from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { fieldFactory, FieldAreaFactory } from '@caldera-labs/factory';
 import { Column, Row, FieldArea } from '@caldera-labs/factory';
@@ -18,20 +18,24 @@ import classNames from 'classnames';
  * @return {*}
  * @constructor
  */
-const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched,setFieldValue}) => (
+const Layout = ({
+	rows,
+	onAnyChange,
+	onAnyBlur,
+	fieldValues,
+	fieldErrors,
+	fieldTouched,
+	setFieldValue
+}) => (
 	<Fragment>
 		{rows.map(row => {
-			const {
-				rowId,
-				columns,
-				render
-			} = row;
+			const { rowId, columns, render } = row;
 
-			if( render ){
-				return createElement(render,{
+			if (render) {
+				return createElement(render, {
 					...row,
 					key: rowId
-				})
+				});
 			}
 
 			return (
@@ -49,8 +53,8 @@ const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched
 							render,
 							key
 						} = column;
-						if( render ){
-							return createElement(render,{
+						if (render) {
+							return createElement(render, {
 								...column,
 								key: columnId
 							});
@@ -63,17 +67,13 @@ const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched
 								padding={padding}
 							>
 								{fields.map(field => {
-									if( ! field ){
+									if (!field) {
 										return;
 									}
-									const {
-										fieldId,
-										render,
-										key
-									} = field;
+									const { fieldId, render, key } = field;
 									field.value = fieldValues[fieldId];
 
-									const _key = render ? key  : fieldId;
+									const _key = render ? key : fieldId;
 									return (
 										<FieldArea
 											render={render}
@@ -109,7 +109,7 @@ Layout.propTypes = {
 	fieldValues: PropTypes.object,
 	fieldErrors: PropTypes.object,
 	fieldTouched: PropTypes.object,
-	setFieldValue: PropTypes.func,
+	setFieldValue: PropTypes.func
 };
 
 const _noop = () => {};
@@ -120,9 +120,12 @@ Layout.defaultProps = {
 	fieldValues: {}
 };
 
-
-
-export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
+export const CalderaForm = ({
+	formRows,
+	initialValues,
+	onSubmit,
+	onChange
+}) => {
 	return (
 		<div>
 			<Formik
@@ -173,5 +176,5 @@ CalderaForm.propTypes = {
 const noop = () => {};
 CalderaForm.defaultProps = {
 	onChange: noop,
-	onBlur: noop,
+	onBlur: noop
 };

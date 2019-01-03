@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types'
+import propTypes from 'prop-types';
 
 /**
  * Show shortcode viewer UI
@@ -7,23 +7,19 @@ import propTypes from 'prop-types'
  * @return {*}
  * @constructor
  */
-export const ShortcodeViewer = (props) => {
+export const ShortcodeViewer = props => {
 	if (true === props.show) {
 		return (
 			<span>
-
-				<span>
-					[caldera_forms="{props.formId}"]
-				</span>
+				<span>[caldera_forms="{props.formId}"]</span>
 				<button
 					className="button cf-form-shortcode-preview-button"
 					onClick={props.onButtonClick}
 				>
-				Close
-			</button>
+					Close
+				</button>
 			</span>
-
-		)
+		);
 	}
 	return (
 		<button
@@ -32,8 +28,8 @@ export const ShortcodeViewer = (props) => {
 		>
 			Get Shortcode
 		</button>
-	)
-}
+	);
+};
 
 ShortcodeViewer.propTypes = {
 	formId: propTypes.string.isRequired,
@@ -43,7 +39,4 @@ ShortcodeViewer.propTypes = {
 
 ShortcodeViewer.defaultProps = {
 	show: false
-}
-
-
-
+};

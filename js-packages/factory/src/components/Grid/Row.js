@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Flex, Box } from '@rebass/grid';
-import {Column} from './Column'
+import { Column } from './Column';
 /**
  *
  * @param columns
@@ -28,7 +28,7 @@ export const Row = ({
 				<Fragment>
 					{columns.map(column => {
 						let { width, padding, columnId } = column;
-						
+
 						return (
 							<Column
 								key={columnId}

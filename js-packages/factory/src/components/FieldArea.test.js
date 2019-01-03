@@ -60,11 +60,7 @@ describe('FieldArea component', () => {
 
 	it('Changes calls change handler of radio field', () => {
 		const component = mount(
-			<FieldArea
-				field={radioField}
-				onChange={onChange}
-				onBlur={onBlur}
-			/>
+			<FieldArea field={radioField} onChange={onChange} onBlur={onBlur} />
 		);
 
 		component

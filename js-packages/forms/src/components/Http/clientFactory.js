@@ -13,20 +13,23 @@ import submitForm from './handlers/submitForm';
  * @param {fetch} fetch
  * @return {Proxy}
  */
-export const formClientFactory = (form,apiRootUri, type = 'caldera', handlers = {},fetch = window.fetch) => {
-
+export const formClientFactory = (
+	form,
+	apiRootUri,
+	type = 'caldera',
+	handlers = {},
+	fetch = window.fetch
+) => {
 	switch (type) {
 		case 'caldera':
 		default:
-		 	if( ! handlers.hasOwnProperty('submitForm')){
-		 		handlers.submitForm = submitForm;
+			if (!handlers.hasOwnProperty('submitForm')) {
+				handlers.submitForm = submitForm;
 			}
-			 return new FormClient(form, {
-				 apiRootUri,
-				 fetch,
-				 ...handlers
-			 });
+			return new FormClient(form, {
+				apiRootUri,
+				fetch,
+				...handlers
+			});
 	}
-
-
 };

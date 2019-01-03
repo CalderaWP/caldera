@@ -5,9 +5,7 @@
 export const collectFieldValues = fields => {
 	const values = {};
 	fields.forEach(field => {
-		values[field.fieldId] = field.value
-			? field.value
-			: null;
+		values[field.fieldId] = field.value ? field.value : null;
 	});
 	return values;
 };

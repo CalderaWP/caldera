@@ -1,11 +1,11 @@
-import renderer from "react-test-renderer";
-import {Form} from "./Form";
+import renderer from 'react-test-renderer';
+import { Form } from './Form';
 import React from 'react';
-import {shallow, mount} from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({adapter: new Adapter()});
+Enzyme.configure({ adapter: new Adapter() });
 const formOne = {
 	ID: 'cf1',
 	name: 'Form One',
@@ -13,20 +13,16 @@ const formOne = {
 };
 
 describe('Forms component', () => {
-
 	it('Shows form', () => {
 		const formList = renderer.create(
 			<Form
 				form={formOne}
-				onFormUpdate={() => {
-				}}
-				openEntryViewerForForm={() => {
-				}}
+				onFormUpdate={() => {}}
+				openEntryViewerForForm={() => {}}
 			/>
 		);
 		expect(formList.toJSON()).toMatchSnapshot();
 	});
-
 
 	it('Passes form ID to openEntryViewerForForm ', () => {
 		let id = '';
@@ -38,9 +34,8 @@ describe('Forms component', () => {
 						count: 4
 					}
 				}}
-				onFormUpdate={() => {
-				}}
-				openEntryViewerForForm={(formID) => {
+				onFormUpdate={() => {}}
+				openEntryViewerForForm={formID => {
 					id = formID;
 				}}
 			/>
@@ -56,10 +51,8 @@ describe('Forms component', () => {
 		const component = mount(
 			<Form
 				form={formOne}
-				onFormUpdate={() => {
-				}}
-				openEntryViewerForForm={() => {
-				}}
+				onFormUpdate={() => {}}
+				openEntryViewerForForm={() => {}}
 				isAlternate={true}
 			/>
 		);
@@ -72,10 +65,8 @@ describe('Forms component', () => {
 		const component = mount(
 			<Form
 				form={formOne}
-				onFormUpdate={() => {
-				}}
-				openEntryViewerForForm={() => {
-				}}
+				onFormUpdate={() => {}}
+				openEntryViewerForForm={() => {}}
 			/>
 		);
 		expect(component.find('.alternate').length).toBe(0);
@@ -87,10 +78,8 @@ describe('Forms component', () => {
 		const component = mount(
 			<Form
 				form={formOne}
-				onFormUpdate={() => {
-				}}
-				openEntryViewerForForm={() => {
-				}}
+				onFormUpdate={() => {}}
+				openEntryViewerForForm={() => {}}
 				isAlternate={false}
 			/>
 		);

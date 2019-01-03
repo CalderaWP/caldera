@@ -2,16 +2,17 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-export function PageBody({
-							 pageKey,
-							 children
-						 }) {
+export function PageBody({ pageKey, children }) {
 	return (
-		<div className={classNames('caldera-page-body', `caldera-page-body-${pageKey}`)}>{children}</div>
-
-	)
-
-
+		<div
+			className={classNames(
+				'caldera-page-body',
+				`caldera-page-body-${pageKey}`
+			)}
+		>
+			{children}
+		</div>
+	);
 }
 
 PageBody.propTypes = {
@@ -19,5 +20,5 @@ PageBody.propTypes = {
 		PropTypes.arrayOf(PropTypes.node),
 		PropTypes.node
 	]),
-	pageKey: PropTypes.string.isRequired,
-}
+	pageKey: PropTypes.string.isRequired
+};

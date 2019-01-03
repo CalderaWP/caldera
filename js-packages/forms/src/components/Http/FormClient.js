@@ -9,23 +9,20 @@ import { decorateObjectLiteralWithMethods } from './decoratorFactory/decoratorFa
  */
 export default function FormClient(form, options) {
 	this.fieldValues = form.fieldValues;
-	let {
-		apiRootUri,
-		fetch
-	} = options;
+	let { apiRootUri, fetch } = options;
 
 	this.eventOpts = () => {
 		return {
 			apiRootUri,
 			formId: form.id
-		}
+		};
 	};
 
-	this.setFieldValues = (fieldValues )=> {
+	this.setFieldValues = fieldValues => {
 		this.fieldValues = fieldValues;
 	};
 
-	this.getFieldValues = ( )=> {
+	this.getFieldValues = () => {
 		return this.fieldValues;
 	};
 
@@ -34,11 +31,7 @@ export default function FormClient(form, options) {
 	 * @return {*[]}
 	 */
 	this.createEventBag = () => {
-		return [
-			this.fieldValues,
-			this.eventOpts(),
-			fetch
-		]
+		return [this.fieldValues, this.eventOpts(), fetch];
 	};
 
 	/**
@@ -63,4 +56,3 @@ export default function FormClient(form, options) {
 		submitForm: this.submitForm
 	});
 }
-

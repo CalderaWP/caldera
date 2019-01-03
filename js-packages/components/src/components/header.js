@@ -1,8 +1,8 @@
-import React  from 'react';
+import React from 'react';
 const merge = require('deepmerge');
 export class Header extends React.Component {
 	render() {
-		const {  headingLevel,children } = this.props;
+		const { headingLevel, children } = this.props;
 		const styles = merge(
 			{
 				header: {
@@ -21,10 +21,6 @@ export class Header extends React.Component {
 			},
 			this.props.styles || {}
 		);
-		return (
-			<div style={styles.header}>
-				{children}
-			</div>
-		);
+		return <div style={styles.header}>{children}</div>;
 	}
 }
