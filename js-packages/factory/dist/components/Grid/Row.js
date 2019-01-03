@@ -9,8 +9,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Fields = require('./Fields');
-
 var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
@@ -20,6 +18,8 @@ var _classnames = require('classnames');
 var _classnames2 = _interopRequireDefault(_classnames);
 
 var _grid = require('@rebass/grid');
+
+var _Column = require('./Column');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54,10 +54,8 @@ var Row = exports.Row = function Row(_ref) {
 				    columnId = column.columnId;
 
 
-				padding = padding ? padding : 8;
-
 				return _react2.default.createElement(
-					Column,
+					_Column.Column,
 					{
 						key: columnId,
 						id: columnId,

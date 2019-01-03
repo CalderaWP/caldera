@@ -35,7 +35,7 @@ var Header = exports.Header = function (_React$Component) {
 		value: function render() {
 			var _props = this.props,
 			    headingLevel = _props.headingLevel,
-			    childern = _props.childern;
+			    children = _props.children;
 
 			var styles = merge({
 				header: {
@@ -55,7 +55,7 @@ var Header = exports.Header = function (_React$Component) {
 			return _react2.default.createElement(
 				'div',
 				{ style: styles.header },
-				childern
+				children
 			);
 		}
 	}]);

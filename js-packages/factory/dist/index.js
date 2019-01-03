@@ -13,12 +13,12 @@ Object.defineProperty(exports, 'Field', {
   }
 });
 
-var _FieldGroup = require('./components/FieldGroup');
+var _FieldArea = require('./components/FieldArea');
 
-Object.defineProperty(exports, 'FieldGroup', {
+Object.defineProperty(exports, 'FieldArea', {
   enumerable: true,
   get: function get() {
-    return _FieldGroup.FieldGroup;
+    return _FieldArea.FieldArea;
   }
 });
 
@@ -31,7 +31,7 @@ Object.defineProperty(exports, 'Fields', {
   }
 });
 
-var _Row = require('./components/Row');
+var _Row = require('./components/Grid/Row');
 
 Object.defineProperty(exports, 'Row', {
   enumerable: true,
@@ -40,7 +40,7 @@ Object.defineProperty(exports, 'Row', {
   }
 });
 
-var _Rows = require('./components/Rows');
+var _Rows = require('./components/Grid/Rows');
 
 Object.defineProperty(exports, 'Rows', {
   enumerable: true,
@@ -49,7 +49,7 @@ Object.defineProperty(exports, 'Rows', {
   }
 });
 
-var _Column = require('./components/Column');
+var _Column = require('./components/Grid/Column');
 
 Object.defineProperty(exports, 'Column', {
   enumerable: true,
@@ -76,11 +76,11 @@ Object.defineProperty(exports, 'fieldFactory', {
   }
 });
 
-var _fieldGroupFactory = require('./factories/fieldGroupFactory');
+var _fieldAreaFactory = require('./factories/fieldAreaFactory');
 
-Object.defineProperty(exports, 'fieldGroupFactory', {
+Object.defineProperty(exports, 'fieldAreaFactory', {
   enumerable: true,
   get: function get() {
-    return _fieldGroupFactory.fieldGroupFactory;
+    return _fieldAreaFactory.fieldAreaFactory;
   }
 });

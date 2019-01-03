@@ -13,12 +13,12 @@ Object.defineProperty(exports, 'Field', {
   }
 });
 
-var _FieldGroup = require('./FieldGroup');
+var _FieldArea = require('./FieldArea');
 
-Object.defineProperty(exports, 'FieldGroup', {
+Object.defineProperty(exports, 'FieldArea', {
   enumerable: true,
   get: function get() {
-    return _FieldGroup.FieldGroup;
+    return _FieldArea.FieldArea;
   }
 });
 
@@ -31,7 +31,7 @@ Object.defineProperty(exports, 'Fields', {
   }
 });
 
-var _Rows = require('./Rows');
+var _Rows = require('./Grid/Rows');
 
 Object.defineProperty(exports, 'Rows', {
   enumerable: true,
@@ -40,7 +40,7 @@ Object.defineProperty(exports, 'Rows', {
   }
 });
 
-var _Row = require('./Row');
+var _Row = require('./Grid/Row');
 
 Object.defineProperty(exports, 'Row', {
   enumerable: true,
@@ -49,7 +49,7 @@ Object.defineProperty(exports, 'Row', {
   }
 });
 
-var _Column = require('./Column');
+var _Column = require('./Grid/Column');
 
 Object.defineProperty(exports, 'Column', {
   enumerable: true,

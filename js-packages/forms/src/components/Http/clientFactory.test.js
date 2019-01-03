@@ -23,4 +23,13 @@ describe( '', () => {
 		client.submitForm();
 		expect(fetch.mock.calls.length).toBe(1);
 	});
+
+	it( 'Uses supplied submit handler', () => {
+		const submitForm = jest.fn();
+		const client = formClientFactory(form,apiRootUri,'caldera',{
+			submitForm
+		});
+		client.submitForm();
+		expect(submitForm.mock.calls.length).toBe(1);
+	});
 });

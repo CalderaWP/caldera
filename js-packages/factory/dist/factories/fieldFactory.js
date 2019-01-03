@@ -26,7 +26,6 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 
 
 	switch (fieldType) {
-		case 'checkboxGroup':
 		case 'checkboxes':
 			return _react2.default.createElement(
 				_components.FieldSet,
@@ -54,13 +53,11 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 					});
 				})
 			);
-			break;
 		case 'radio':
 			return _react2.default.createElement(_components.RadioField, _extends({}, field, { onChange: onChange }));
 		case 'select':
 		case 'dropdown':
 			return _react2.default.createElement(_components.SelectField, _extends({}, field, { onChange: onChange }));
-			break;
 		case 'text':
 		case 'email':
 		case 'number':
@@ -74,6 +71,5 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 				field.html5type = 'text';
 			}
 			return _react2.default.createElement(_components.InputField, _extends({}, field, { onChange: onChange }));
-			break;
 	}
 };

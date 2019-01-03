@@ -13,7 +13,7 @@ import submitForm from './handlers/submitForm';
  * @param {fetch} fetch
  * @return {Proxy}
  */
-export const formClientFactory = (form,apiRootUri, type = 'caldera', handlers = {},fetch  = window.fetch) => {
+export const formClientFactory = (form,apiRootUri, type = 'caldera', handlers = {},fetch = window.fetch) => {
 
 	switch (type) {
 		case 'caldera':
@@ -26,8 +26,6 @@ export const formClientFactory = (form,apiRootUri, type = 'caldera', handlers = 
 				 fetch,
 				 ...handlers
 			 });
-			 break;
-
 	}
 
 

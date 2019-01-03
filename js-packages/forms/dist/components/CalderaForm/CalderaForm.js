@@ -76,7 +76,7 @@ var CalderaForm = exports.CalderaForm = function CalderaForm(_ref) {
 										var fieldId = field.fieldId;
 
 										field.value = values[fieldId];
-										return _react2.default.createElement(_factory.FieldGroup, {
+										return _react2.default.createElement(_factory.FieldArea, {
 											key: fieldId,
 											field: field,
 											onChange: function onChange(newValue) {

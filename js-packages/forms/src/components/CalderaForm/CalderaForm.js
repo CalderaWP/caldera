@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import { fieldFactory, fieldGroupFactory } from '@caldera-labs/factory';
-import { Column, Row, FieldGroup } from '@caldera-labs/factory';
+import { fieldFactory, FieldAreaFactory } from '@caldera-labs/factory';
+import { Column, Row, FieldArea } from '@caldera-labs/factory';
 import classNames from 'classnames';
 
 export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
@@ -49,7 +49,7 @@ export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
 													field.value =
 														values[fieldId];
 													return (
-														<FieldGroup
+														<FieldArea
 															key={fieldId}
 															field={field}
 															onChange={newValue => {

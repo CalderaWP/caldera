@@ -1,5 +1,5 @@
 export { Field } from './Field';
-export { FieldArea } from './FieldGroup';
+export { FieldArea } from './FieldArea';
 export { Fields } from './Fields';
 export { Rows } from './Grid/Rows';
 export { Row } from './Grid/Row';

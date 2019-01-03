@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.fieldGroupFactory = undefined;
+exports.fieldAreaFactory = undefined;
 
 var _components = require('@caldera-labs/components');
 
@@ -19,7 +19,7 @@ var _fieldFactory = require('./fieldFactory');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var fieldGroupFactory = exports.fieldGroupFactory = function fieldGroupFactory(field, onChange, onBlur, fieldErrors, fieldsTouch) {
+var fieldAreaFactory = exports.fieldAreaFactory = function fieldAreaFactory(field, onChange, onBlur, fieldErrors, fieldsTouch) {
 	var fieldType = field.fieldType,
 	    fieldId = field.fieldId,
 	    required = field.required;
