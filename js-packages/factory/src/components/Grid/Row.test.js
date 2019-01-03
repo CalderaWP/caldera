@@ -8,7 +8,7 @@ import {
 	numberField,
 	textField,
 	emailField
-} from '../fields.fixtures';
+} from '../../fields.fixtures';
 
 import { Row } from './Row';
 

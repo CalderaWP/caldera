@@ -7,12 +7,12 @@ Array [
     id="r1"
 >
     <div
-        className="sc-bdVaJa gfmZBt"
+        className="caldera-column sc-bdVaJa gfmZBt"
         id={undefined}
         width="1/2"
     />
     <div
-        className="sc-bdVaJa gfmZBt"
+        className="caldera-column sc-bdVaJa gfmZBt"
         id={undefined}
         width="1/2"
     />
@@ -22,17 +22,17 @@ Array [
     id="r2"
 >
     <div
-        className="sc-bdVaJa dbyxub"
+        className="caldera-column sc-bdVaJa dbyxub"
         id={undefined}
         width="1/3"
     />
     <div
-        className="sc-bdVaJa dbyxub"
+        className="caldera-column sc-bdVaJa dbyxub"
         id={undefined}
         width="1/3"
     />
     <div
-        className="sc-bdVaJa dbyxub"
+        className="caldera-column sc-bdVaJa dbyxub"
         id={undefined}
         width="1/3"
     />

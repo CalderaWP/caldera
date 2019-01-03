@@ -54,254 +54,35 @@
 9
 10
 11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {Fragment} from 'react';
-import {Fields} from './Fields';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import {Flex, Box} from '@rebass/grid'
-&nbsp;
-&nbsp;
-/**
- *
- * @param columns
- * @param onChange
- * @param onBlur
- * @param className
- * @param rowId
- * @param children
- * @return {*}
- * @constructor
- */
-export const Row = ({
-						columns, onChange, onBlur, className, rowId,children
-					}) =&gt; {
-		return (
-			&lt;Flex
-				className={classNames('caldera-row', className)}
-				id={rowId}
-			&gt;
-				{columns ? (
-					&lt;Fragment&gt;
-						{columns.map(column =&gt; {
-							let {
-								width,
-								padding,
-								columnId
-							} = column;
-&nbsp;
-							padding = padding ? <span class="branch-0 cbranch-no" title="branch not covered" >padding </span>: 8;
-&nbsp;
-							return (
-								&lt;Column
-									key={columnId}
-									id={columnId}
-									width={width}
-									px={padding}
-									py={padding}
-								&gt;
-									{children}
-								&lt;/Column&gt;
-&nbsp;
-							)
-						})}
-&nbsp;
-					&lt;/Fragment&gt;
-&nbsp;
-				) : (
-<span class="branch-1 cbranch-no" title="branch not covered" >					&lt;Fragment&gt;{children}&lt;/Fragment&gt;</span>
-				)}
-&nbsp;
-&nbsp;
-			&lt;/Flex&gt;
-		)
-	};
-&nbsp;
-/**
- * Row prop types
- *
- * @type {{columns: shim, rowId: *, onChange: *, onBlur: shim, className: shim}}
- */
-export const rowPropTypes = {
-	columns: PropTypes.arrayOf(PropTypes.shape({
-		width: PropTypes.string.isRequired,
-		columnId: PropTypes.oneOfType([
-			PropTypes.string,
-			PropTypes.number,
-		])
-	})),
-	rowId: PropTypes.oneOfType([
-		PropTypes.string,
-		PropTypes.number,
-	]),
-	onChange: PropTypes.func.isRequired,
-	onBlur: PropTypes.func,
-	className: PropTypes.string
-};
-Row.propTypes = rowPropTypes;
-&nbsp;</pre></td></tr>
+12</td><td class="line-coverage quiet"><span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span></td><td class="text"><pre class="prettyprint lang-js">Unable to lookup source: /Users/josh/caldera/js-packages/factory/src/components/Row.js(ENOENT: no such file or directory, open '/Users/josh/caldera/js-packages/factory/src/components/Row.js')
+Error: Unable to lookup source: /Users/josh/caldera/js-packages/factory/src/components/Row.js(ENOENT: no such file or directory, open '/Users/josh/caldera/js-packages/factory/src/components/Row.js')
+    at Context.defaultSourceLookup [as sourceFinder] (/Users/josh/caldera/node_modules/istanbul-lib-report/lib/context.js:15:15)
+    at Context.getSource (/Users/josh/caldera/node_modules/istanbul-lib-report/lib/context.js:74:17)
+    at Object.annotateSourceCode (/Users/josh/caldera/node_modules/istanbul-reports/lib/html/annotator.js:172:38)
+    at HtmlReport.onDetail (/Users/josh/caldera/node_modules/istanbul-reports/lib/html/index.js:217:39)
+    at LcovReport.(anonymous function) [as onDetail] (/Users/josh/caldera/node_modules/istanbul-reports/lib/lcov/index.js:24:24)
+    at Visitor.(anonymous function) [as onDetail] (/Users/josh/caldera/node_modules/istanbul-lib-report/lib/tree.js:34:30)
+    at ReportNode.Node.visit (/Users/josh/caldera/node_modules/istanbul-lib-report/lib/tree.js:123:17)
+    at /Users/josh/caldera/node_modules/istanbul-lib-report/lib/tree.js:116:23
+    at Array.forEach (<anonymous>)
+    at visitChildren (/Users/josh/caldera/node_modules/istanbul-lib-report/lib/tree.js:115:32)</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 31 2018 20:03:20 GMT-0500 (EST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Jan 02 2019 19:00:33 GMT-0500 (EST)
 </div>
 </div>
 <script src="../../prettify.js"></script>

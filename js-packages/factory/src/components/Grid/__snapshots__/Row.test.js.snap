@@ -6,17 +6,17 @@ exports[`Row component Creates columns 1`] = `
   id="twoColumns"
 >
   <div
-    className="sc-bdVaJa gfmZBt"
+    className="caldera-column sc-bdVaJa gfmZBt"
     id={undefined}
     width="1/2"
   />
   <div
-    className="sc-bdVaJa jlBFAP"
+    className="caldera-column sc-bdVaJa jlBFAP"
     id={undefined}
     width="1/4"
   />
   <div
-    className="sc-bdVaJa jlBFAP"
+    className="caldera-column sc-bdVaJa jlBFAP"
     id={undefined}
     width="1/4"
   />

@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
-import { Fields } from './Fields';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Flex, Box } from '@rebass/grid';
-
+import {Column} from './Column'
 /**
  *
  * @param columns
