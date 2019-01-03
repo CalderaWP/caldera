@@ -3,7 +3,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
-import { formRows } from './columns.fixtures';
+import { formRows,formRowOne } from './columns.fixtures';
 import { getValuesFromFormLayout } from './util/getValuesFromFormLayout';
 
 const initialValues = getValuesFromFormLayout(formRows);
@@ -26,6 +26,21 @@ describe('Caldera Forms', () => {
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
+
+	it( 'A column can be a component', () => {
+		const component = mount(
+			<CalderaForm
+				formRows={[
+					formRowOne,
+					<p id={'---test20'}>Hi Roy</p>
+				]}
+				initialValues={initialValues}
+				onBlur={onBlur}
+				onChange={onChange}
+			/>
+		);
+		expect(component.find('#---test20').length).toBe(1);
+	})
 });
 
 
