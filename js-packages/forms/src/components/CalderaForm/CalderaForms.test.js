@@ -41,30 +41,9 @@ describe('Caldera Forms', () => {
 			/>
 		);
 		expect(component.find('#test20').length).toBe(1);
-	})
+	});
 
-	it.skip( 'A column can be a component', () => {
-		const component = mount(
-			<CalderaForm
-				formRows={[
-					formRowOne,
-					{
-						rowId: 'r22',
-						columns: [
-							<Fragment key={'c11'}><div id="test30" key="c1">Line 54</div></Fragment>,
-							<Fragment key="c12"><div id="test30" >Line 55</div></Fragment>,
 
-						]
-					}
-				]}
-				initialValues={{}}
-				onBlur={onBlur}
-				onChange={onChange}
-			/>
-		);
-		expect(component.find('#test30').length).toBe(1);
-		expect(component.find('#test31').length).toBe(1);
-	})
 });
 
 

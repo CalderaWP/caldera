@@ -5,22 +5,32 @@ import { fieldFactory, FieldAreaFactory } from '@caldera-labs/factory';
 import { Column, Row, FieldArea } from '@caldera-labs/factory';
 import classNames from 'classnames';
 
-export const Layout = ({formRows,onChange,handleBlur,values,errors,touched,setFieldValue}) => (
+//Do not move until it gets tests!
+/**
+ *
+ * @param rows
+ * @param onAnyChange Function that runs when any supplied field value changes. Current field values are passed to callback.
+ * @param onAnyBlur Function that runs when any field inside of this layout is blurred. Current field values are passed to callback.
+ * @param {*} fieldValues Current field values used in layout. {fieldId: fieldValue}
+ * @param {*} fieldErrors Current field errors. {fieldId: 'Invalid!'}
+ * @param {*} fieldTouched
+ * @param {function} setFieldValue
+ * @return {*}
+ * @constructor
+ */
+const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched,setFieldValue}) => (
 	<Fragment>
-		{formRows.map(formRow => {
-			function ifComponentElseIterateOn(ifComponent, elseLogic) {
-
-			}
-			if( React.isValidElement(formRow)){
+		{rows.map(row => {
+			if( React.isValidElement(row)){
 				const {
 					key,
 					rowId
-				} = formRow.props ? formRow.props : {};
+				} = row.props ? row.props : {};
 				return createElement(Fragment, {
 					key: key ? key : rowId ? rowId : 'row-without-key-or-rowId'
-				},formRow);
+				},row);
 			}
-			const { rowId, columns } = formRow;
+			const { rowId, columns } = row;
 			return (
 				<Row
 					className={classNames('caldera-form-row')}
@@ -34,16 +44,6 @@ export const Layout = ({formRows,onChange,handleBlur,values,errors,touched,setFi
 							columnId,
 							fields
 						} = column;
-
-						if( React.isValidElement(column)){
-							const {
-								key,
-								columnId
-							} = column.props ? column.props : {};
-							return createElement(Fragment, {
-								key: key ? key : columnId ? columnId : 'column-without-key-or-columnId'
-							},column);
-						}
 						return (
 							<Column
 								key={columnId}
@@ -63,8 +63,7 @@ export const Layout = ({formRows,onChange,handleBlur,values,errors,touched,setFi
 									}
 
 									const { fieldId } = field;
-									field.value =
-										values[fieldId];
+									field.value = fieldValues[fieldId];
 									return (
 										<FieldArea
 											key={fieldId}
@@ -75,13 +74,11 @@ export const Layout = ({formRows,onChange,handleBlur,values,errors,touched,setFi
 													newValue,
 													true
 												);
-												onChange(values);
+												onAnyChange(fieldValues);
 											}}
-											onBlur={handleBlur}
-											fieldErrors={errors}
-											fieldsTouch={
-												touched
-											}
+											onBlur={onAnyBlur}
+											fieldErrors={fieldErrors}
+											fieldsTouch={fieldTouched}
 										/>
 									);
 								})}
@@ -93,6 +90,24 @@ export const Layout = ({formRows,onChange,handleBlur,values,errors,touched,setFi
 		})}
 	</Fragment>
 );
+
+Layout.propTypes = {
+	rows: PropTypes.array,
+	onAnyChange: PropTypes.func,
+	onAnyBlur: PropTypes.func,
+	fieldValues: PropTypes.object,
+	fieldErrors: PropTypes.object,
+	fieldTouched: PropTypes.object,
+	setFieldValue: PropTypes.func,
+};
+
+const _noop = () => {};
+Layout.defaultProps = {
+	onAnyChange: _noop,
+	onAnyBlur: _noop,
+	setFieldValue: _noop
+};
+
 
 
 export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
@@ -113,11 +128,13 @@ export const CalderaForm = ({ formRows, initialValues, onSubmit,onChange }) => {
 				}) => (
 					<Form>
 						<Layout
-							formRows={formRows}
-							onChange={onChange}
-							onBlur={handleBlur}
-							values={values}
+							rows={formRows}
+							onAnyChange={onChange}
+							onAnyBlur={handleBlur}
+							fieldValues={values}
 							setFieldValue={setFieldValue}
+							fieldErrors={errors}
+							fieldTouched={touched}
 						/>
 						<input
 							type="submit"
@@ -136,9 +153,13 @@ CalderaForm.propTypes = {
 	formRows: PropTypes.array,
 	initialValues: PropTypes.object,
 	onSubmit: PropTypes.func,
-	onChange: PropTypes.func
+	onChange: PropTypes.func,
+	onBlur: PropTypes.func,
+	initialValues: PropTypes.object
 };
+
 const noop = () => {};
 CalderaForm.defaultProps = {
-	onChange: noop
-}
+	onChange: noop,
+	onBlur: noop,
+};
