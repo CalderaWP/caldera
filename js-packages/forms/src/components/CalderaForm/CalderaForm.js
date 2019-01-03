@@ -52,16 +52,6 @@ const Layout = ({rows,onAnyChange,onAnyBlur,fieldValues,fieldErrors,fieldTouched
 								padding={padding}
 							>
 								{fields.map(field => {
-									if( React.isValidElement(field)){
-										const {
-											key,
-											fieldId
-										} = field.props ? field.props : {};
-										return createElement(Fragment, {
-											key: key ? key : fieldId ? fieldId : 'field-without-key-or-fieldId'
-										},field);
-									}
-
 									const { fieldId } = field;
 									field.value = fieldValues[fieldId];
 									return (
