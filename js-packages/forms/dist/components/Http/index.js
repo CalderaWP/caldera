@@ -1,26 +1,26 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 exports.decorateObjectLiteralWithMethods = exports.formClientFactory = exports.FormClient = undefined;
 
 var _clientFactory = require('./clientFactory');
 
 Object.defineProperty(exports, 'formClientFactory', {
-  enumerable: true,
-  get: function get() {
-    return _clientFactory.formClientFactory;
-  }
+	enumerable: true,
+	get: function get() {
+		return _clientFactory.formClientFactory;
+	}
 });
 
 var _decoratorFactory = require('./decoratorFactory/decoratorFactory');
 
 Object.defineProperty(exports, 'decorateObjectLiteralWithMethods', {
-  enumerable: true,
-  get: function get() {
-    return _decoratorFactory.decorateObjectLiteralWithMethods;
-  }
+	enumerable: true,
+	get: function get() {
+		return _decoratorFactory.decorateObjectLiteralWithMethods;
+	}
 });
 
 var _FormClient2 = require('./FormClient');

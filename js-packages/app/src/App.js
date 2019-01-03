@@ -1,5 +1,4 @@
 import React from 'react';
-import { Forms } from './features/forms/Forms';
 import { ContactForm } from './forms/ContactForm';
 import { TopBar } from './components/TopBar';
 import AppBody from './components/AppBody';

@@ -3,7 +3,16 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.formClientFactory = exports.FormClient = exports.CalderaForm = undefined;
+exports.formClientFactory = exports.FormClient = exports.CalderaForm = exports.CalderaGrid = undefined;
+
+var _CalderaGrid = require('./components/CalderaForm/CalderaGrid');
+
+Object.defineProperty(exports, 'CalderaGrid', {
+  enumerable: true,
+  get: function get() {
+    return _CalderaGrid.CalderaGrid;
+  }
+});
 
 var _CalderaForm = require('./components/CalderaForm/CalderaForm');
 

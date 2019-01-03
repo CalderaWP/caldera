@@ -92,6 +92,43 @@ describe('fieldFactory', () => {
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
+	it('Adds option id', () => {
+		const component = mount(
+			fieldFactory({
+				fieldType: 'checkboxes',
+				label: 'Checkbox Field Set Label',
+				fieldId: 'checkboxFieldSetLabel',
+				description: 'Checkbox field set description',
+				options: [
+					{
+						value: 1,
+						label: 'One',
+						id: 'opt-1'
+					},
+				]
+			}, onChange, onBlur)
+		);
+		expect(component.find('input').first().props().id).toBe('opt-1');
+	});
+
+	it('Adds option id based on fieldId if option id not provided', () => {
+		const component = mount(
+			fieldFactory({
+				fieldType: 'checkboxes',
+				label: 'Checkbox Field Set Label',
+				fieldId: 'test',
+				description: 'Checkbox field set description',
+				options: [
+					{
+						value: 7,
+						label: 'One',
+					},
+				]
+			}, onChange, onBlur)
+		);
+		expect(component.find('input').first().props().id).toBe('opt-test-7');
+	});
+
 	it('Creates an select field identified as dropdown', () => {
 		const component = renderer.create(
 			fieldFactory({

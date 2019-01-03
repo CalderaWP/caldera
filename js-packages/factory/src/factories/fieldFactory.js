@@ -47,13 +47,14 @@ export const fieldFactory = (field, onChange, onBlur) => {
 							description,
 							attributes
 						} = option;
-						const fieldId = option.hasOwnProperty('id')
+						const optionId = option.hasOwnProperty('id')
 							? option.id
 							: `opt-${fieldId}-${option.value}`;
 						return (
 							<InputField
-								key={fieldId}
-								id={fieldId}
+								key={optionId}
+								id={optionId}
+								fieldId={optionId}
 								value={value}
 								label={label}
 								description={description}

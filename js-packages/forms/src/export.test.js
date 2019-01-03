@@ -11,12 +11,7 @@ describe( 'Exports', () => {
 
 	it( 'exports CalderaGrid', () => {
 		expect( typeof  CalderaGrid ).toBe( 'function' );
-
 	});
-
-
-
-
 
 	it( 'exports formClientFactory', () => {
 		expect( typeof  formClientFactory ).toBe( 'function' );

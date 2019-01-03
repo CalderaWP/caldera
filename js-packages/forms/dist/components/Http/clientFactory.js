@@ -34,7 +34,6 @@ var formClientFactory = exports.formClientFactory = function formClientFactory(f
 	var handlers = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
 	var fetch = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : window.fetch;
 
-
 	switch (type) {
 		case 'caldera':
 		default:

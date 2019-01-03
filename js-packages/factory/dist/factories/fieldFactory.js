@@ -55,10 +55,11 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 					    description = option.description,
 					    attributes = option.attributes;
 
-					var fieldId = option.hasOwnProperty('id') ? option.id : 'opt-' + fieldId + '-' + option.value;
+					var optionId = option.hasOwnProperty('id') ? option.id : 'opt-' + fieldId + '-' + option.value;
 					return _react2.default.createElement(_components.InputField, {
-						key: fieldId,
-						id: fieldId,
+						key: optionId,
+						id: optionId,
+						fieldId: optionId,
 						value: value,
 						label: label,
 						description: description,

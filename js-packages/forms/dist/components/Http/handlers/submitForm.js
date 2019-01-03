@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
@@ -23,12 +23,12 @@ function submitForm(fieldValues, eventOptions, fetch) {
 			fieldId: fieldValues[fieldId]
 		});
 	});
-	var url = apiRootUri + "/v1/entries";
+	var url = apiRootUri + '/v1/entries';
 	return fetch(url, {
-		method: "PUT",
+		method: 'PUT',
 		headers: {
-			"Content-Type": "application/json",
-			"X-CWP-TOKEN": token
+			'Content-Type': 'application/json',
+			'X-CWP-TOKEN': token
 		},
 		body: JSON.stringify({
 			formId: formId,
