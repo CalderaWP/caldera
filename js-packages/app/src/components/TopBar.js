@@ -71,6 +71,7 @@ export class TopBar extends Component {
 		return (
 			<div style={this.styles.header}>
 				<img
+					key={'active-item'}
 					style={{
 						width: '200px',
 						height: '75px',
@@ -80,11 +81,13 @@ export class TopBar extends Component {
 					alt={`${activeItem.title} Logo`}
 				/>
 
-				<nav>
+				<nav
+					key={'main-nav'}
+				>
 					{this.menuItems.map(menuItem => {
 						const { icon, logo, title, key } = menuItem;
 						if (activeItem.key === key) {
-							return <Fragment />;
+							return <Fragment key={key} />;
 						}
 						return (
 							<a
