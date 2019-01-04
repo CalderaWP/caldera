@@ -12,7 +12,7 @@ cd ../
 
 cd data-source
 composer fixes
-cd../
+cd ../
 
 cd interop
 composer fixes
