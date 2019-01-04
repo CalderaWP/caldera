@@ -8,6 +8,9 @@ import calderaFormsIcon from '../logos/icons/Icon-CalderaForms-DarkBG-Alt.svg';
 import calderaPayLogo from '../logos/Logo-CalderaPay-DarkBG.svg';
 import calderaPayIcon from '../logos/icons/Icon-CalderaPay-DarkBG-Alt.svg';
 
+import calderaSocialLogo from '../logos/Logo-CalderaSocial-DarkBG.svg';
+import calderaSocialIcon from '../logos/icons/Icon-Social-DarkBG-Alt.svg';
+
 import PropTypes from 'prop-types';
 const merge = require('deepmerge');
 
@@ -34,6 +37,12 @@ export class TopBar extends Component {
 			title: 'Caldera Pay',
 			icon: calderaPayIcon,
 			logo: calderaPayLogo
+		},
+		{
+			key: 'calderaSocial',
+			title: 'Caldera Social',
+			icon: calderaSocialIcon,
+			logo: calderaSocialLogo
 		}
 	];
 
