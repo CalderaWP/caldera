@@ -80,20 +80,6 @@ var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 			_this.setState({ rows: rows, columns: columns });
 		};
 
-		_this.onGridRowsUpdated = function (_ref) {
-			var fromRow = _ref.fromRow,
-			    toRow = _ref.toRow,
-			    updated = _ref.updated;
-
-			_this.setState(function (state) {
-				var rows = state.rows.slice();
-				for (var i = fromRow; i <= toRow; i++) {
-					rows[i] = _extends({}, rows[i], updated);
-				}
-				return { rows: rows };
-			});
-		};
-
 		_this.rowCount = function () {
 			return _this.state.rows.length;
 		};
@@ -111,7 +97,9 @@ var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 		value: function render() {
 			var _this2 = this;
 
-			var form = this.props.form;
+			var _props = this.props,
+			    form = _props.form,
+			    noItemsMessage = _props.noItemsMessage;
 			var columns = this.state.columns;
 
 			if (form && form.fields) {
@@ -121,14 +109,13 @@ var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 						return _this2.state.rows[i];
 					},
 					rowsCount: this.rowCount(),
-					onGridRowsUpdated: this.onGridRowsUpdated,
 					enableCellSelect: true
 				});
 			} else {
 				return _react2.default.createElement(
 					"div",
-					null,
-					"No Fields"
+					{ className: 'has-error' },
+					noItemsMessage
 				);
 			}
 		}

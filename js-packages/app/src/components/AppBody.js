@@ -3,7 +3,7 @@ import { ContactForm } from '../forms/ContactForm';
 import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 
-
+import {FormEntryViewer} from "@calderawp/components";
 
 const ListOfForms = ( {forms} ) => (
 	<Fragment>
@@ -15,19 +15,22 @@ const ListOfForms = ( {forms} ) => (
 );
 const findFormById = (formId, forms ) => {
 	return forms.find(form => formId === form.id);
-}
-export default function AppBody({ activeRoute, forms }) {
+};
+
+
+
+export default function AppBody({ activeRoute, forms, getEntries }) {
 	switch (activeRoute) {
 		case 'calderaForms':
+			const form = findFormById('contact-form', forms)
+				? findFormById('contact-form', forms)
+				: false;
+			const entries = getEntries('contact-form',1);
 			return (
 				<PageBody pageKey={activeRoute}>
 					<ListOfForms forms={forms}/>
 					<ContactForm
-						form={
-							findFormById('contact-form', forms)
-							? findFormById('contact-form', forms)
-								: false
-						}
+						form={form}
 					/>
 				</PageBody>
 			);

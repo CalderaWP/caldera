@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.RadioField = exports.SelectField = exports.InputField = undefined;
 
 var _InputField = require('./components/fields/InputField/InputField');
 
@@ -67,15 +68,6 @@ Object.defineProperty(exports, 'FieldWrapper', {
   }
 });
 
-var _header = require('./components/header');
-
-Object.defineProperty(exports, 'Header', {
-  enumerable: true,
-  get: function get() {
-    return _header.Header;
-  }
-});
-
 var _fieldClassNames = require('./components/fields/util/fieldClassNames');
 
 Object.defineProperty(exports, 'fieldClassNames', {
@@ -123,3 +115,11 @@ Object.defineProperty(exports, 'isValidHtml5type', {
     return _util.isValidHtml5type;
   }
 });
+
+var _FormEntryViewer2 = require('./components/EntryViewer/FormEntryViewer');
+
+var _FormEntryViewer3 = _interopRequireDefault(_FormEntryViewer2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.FormEntryViewer = _FormEntryViewer3.default;

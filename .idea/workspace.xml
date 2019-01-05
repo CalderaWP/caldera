@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/app/src/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/app/src/components/AppBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/components/AppBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/EntryViewer/FormEntryViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/EntryViewer/FormEntryViewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +50,7 @@
           <entry key="html" value="3" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="783" />
+          <entry key="js" value="787" />
           <entry key="json" value="126" />
           <entry key="log" value="3" />
           <entry key="md" value="97" />
@@ -76,7 +79,7 @@
           <entry key="HTML" value="3" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="131" />
-          <entry key="JavaScript" value="783" />
+          <entry key="JavaScript" value="787" />
           <entry key="Jest Snapshot" value="43" />
           <entry key="Markdown" value="97" />
           <entry key="PHP" value="1529" />
@@ -96,7 +99,7 @@
           <entry key="env" value="48" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="1" />
-          <entry key="js" value="47046" />
+          <entry key="js" value="47264" />
           <entry key="json" value="3034" />
           <entry key="md" value="12226" />
           <entry key="php" value="84140" />
@@ -113,7 +116,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="3039" />
-          <entry key="JavaScript" value="47078" />
+          <entry key="JavaScript" value="47296" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="12179" />
           <entry key="PHP" value="84151" />
@@ -147,109 +150,53 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.67046535">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/forms.fixtures.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="31" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="530">
-                  <caret line="58" selection-start-line="58" selection-end-line="58" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#0#35#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="236">
-                  <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="7" selection-start-line="8" selection-end-line="14" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
-                  <folding>
-                    <element signature="e#0#35#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="20" selection-start-line="23" selection-end-line="24" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/AppBody.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/app/src/Admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -288,8 +235,8 @@
       <find>launchEditorEndpoint</find>
       <find>getStackTraceLines</find>
       <find>logo</find>
-      <find>enableR</find>
       <find>children</find>
+      <find>enableR</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -343,7 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/forms/tests/Processing/ProcessorTest.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProcessorContract.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProcessorCollectionContract.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorCollection.php" />
@@ -381,8 +327,6 @@
         <option value="$PROJECT_DIR$/js-packages/app/src/components/StandardPage.js" />
         <option value="$PROJECT_DIR$/js-packages/app/src/About.js" />
         <option value="$PROJECT_DIR$/js-packages/app/src/server.js" />
-        <option value="$PROJECT_DIR$/js-packages/app/src/Admin.js" />
-        <option value="$PROJECT_DIR$/js-packages/app/src/components/AppBody.js" />
         <option value="$PROJECT_DIR$/js-packages/app/src/Home.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/FormEntryViewer.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.stroy.js" />
@@ -394,6 +338,9 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/index.js" />
+        <option value="$PROJECT_DIR$/js-packages/app/src/Admin.js" />
+        <option value="$PROJECT_DIR$/js-packages/app/src/components/AppBody.js" />
       </list>
     </option>
   </component>
@@ -670,64 +617,7 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="EntryViewer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="EntryViewer" type="462c0819:PsiDirectoryNode" />
-              <item name="EntryActions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="RadioField" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -853,17 +743,11 @@
       <workItem from="1546638220216" duration="1932000" />
       <workItem from="1546651565557" duration="56000" />
       <workItem from="1546651636456" duration="1248000" />
-      <workItem from="1546652958325" duration="22428000" />
+      <workItem from="1546652958325" duration="22898000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 28m 41s.xml">
-      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 29m 01s.xml">
-      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 31m 27s.xml">
       <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -888,9 +772,15 @@
     <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 35m 02s.xml">
       <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 36m 01s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 36m 28s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320796000" />
+    <option name="totallyTimeSpent" value="321266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -905,13 +795,13 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8497942" visible="true" weight="0.24678111" />
-      <window_info id="Structure" order="1" sideWeight="0.15020576" side_tool="true" visible="true" weight="0.24678111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9070064" visible="true" weight="0.24678111" />
+      <window_info id="Structure" order="1" sideWeight="0.09299363" side_tool="true" visible="true" weight="0.24678111" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.14715026" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3808917" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3808917" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.061146498" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1228,14 +1118,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/components/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1472,16 +1354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/Admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/StandardPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1508,16 +1380,6 @@
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/AppBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1552,47 +1414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/forms.fixtures.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="20" selection-start-line="23" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="360">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -1609,12 +1434,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="345">
+          <caret line="23" column="20" selection-start-line="23" selection-end-line="24" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1622,9 +1447,73 @@
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/forms.fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/app/src/Admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/AppBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

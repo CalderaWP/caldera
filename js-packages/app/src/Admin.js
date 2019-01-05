@@ -20,6 +20,17 @@ async function getForms() {
 }
 
 /**
+ * @return {Promise}
+ * @constructor
+ */
+async function getEntries(formId,page) {
+	return fetch('http://localhost:3000/wp-json/caldera-api/v1/entries?formId=' + formId )
+		.then( r => r.json() )
+		.then( entries => {
+			return entries;
+		})
+}
+/**
  *
  * @param req
  * @param res
@@ -51,7 +62,6 @@ class Admin extends Component {
 	static async getInitialProps({ req, res, match }) {
 		try {
 			const props = await adminGetInitialProps(req, res, match);
-			console.log(props);
 			return props;
 		} catch (e) {
 			console.log(e);
@@ -79,7 +89,7 @@ class Admin extends Component {
 		return (
 			<StandardPage pageTitle={pageTitle} pageKey={'admin'}
 						  onChangeActive={(activeRoute) => this.setState({activeRoute})}>
-				<AppBody activeRoute={activeRoute} forms={forms} />
+				<AppBody activeRoute={activeRoute} forms={forms} getEntries={getEntries}/>
 			</StandardPage>
 		)
 

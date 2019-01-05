@@ -14,7 +14,6 @@ export {
 } from './components/Messages/messageObjectFactory';
 export { FieldSet } from './components/fields/FieldSet/FieldSet';
 export { FieldWrapper } from './components/fields/FieldWrapper/FieldWrapper';
-export { Header } from './components/header';
 
 /**
  * Field class util functions
@@ -35,3 +34,5 @@ export {
 	toBoolean,
 	isValidHtml5type
 } from './components/fields/util';
+
+export  FormEntryViewer  from './components/EntryViewer/FormEntryViewer';
