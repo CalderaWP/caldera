@@ -5,26 +5,19 @@ import {StandardPage} from './components/StandardPage';
 import React, {Component, Fragment} from 'react';
 import { NavLink } from 'react-router-dom';
 import AppBody from './components/AppBody';
-const axios = require( 'axios' );
-const https = require( 'https' );
+const fetch = require( 'isomorphic-fetch' );
 
 /**
  * @return {Promise}
  * @constructor
  */
 async function getForms() {
-	const instance = axios.create({
-		httpsAgent: new https.Agent({
-			rejectUnauthorized: false
-		})
-	});
-	return instance.get('https://caldera.lndo.site/wp-json/caldera-api/v1/forms')
+	return fetch('http://localhost:3000/wp-json/caldera-api/v1/forms')
+		.then( r => r.json() )
 		.then( forms => {
-			return forms.data;
+			return forms;
 		})
 }
-
-
 
 /**
  *
@@ -34,23 +27,34 @@ async function getForms() {
  * @return {Promise<{users, pageTitle: string}>}
  */
 async function adminGetInitialProps( req, res, match ) {
-	const forms = await getForms();
-	return {
-		forms,
-		pageTitle: 'The Title Of This Page Is Admin'
-	};
+	try {
+		const forms = await getForms();
+		return {
+			forms,
+			pageTitle: 'The Title Of This Page Is Admin'
+		};
+	} catch (e) {
+		console.log(e);
+		return {
+			a: 2,
+			forms: e,
+			pageTitle: 'The Title Of This Page Is Admin'
+		};
+	}
+
 }
 
 class Admin extends Component {
 
 	state = {
-		activeRoute: 'calderaForms'
+		activeRoute: 'calderaSocial'
 	};
 
 	//on server, call api and pass results to props
 	static async getInitialProps({ req, res, match }) {
 		try {
 			const props = await adminGetInitialProps(req, res, match);
+			console.log(props);
 			return props;
 		} catch (e) {
 			console.log(e);
@@ -65,7 +69,8 @@ class Admin extends Component {
 			return false;
 		}
 		return Object.values(forms);
-	}
+	};
+
 	render() {
 		const {
 			pageTitle
@@ -75,22 +80,12 @@ class Admin extends Component {
 		} = this.state;
 		const forms = this.getFormsFromProps();
 		return (
-			<div>
-				<StandardPage
-					pageKey={'admin'}
-					pageTitle={'Admin Area'}
-					onChangeActive={(activeRoute) => this.setState({activeRoute})}
-				>
-					<NavLink to="/admin">Admin</NavLink>
-					{ forms && forms.length  ? (
-						<AppBody pageTitle={pageTitle} forms={forms} activeRoute={activeRoute}/>
-					): (
-						<div>Loading...</div>
-					)}
-				</StandardPage>
+			<StandardPage pageTitle={pageTitle} pageKey={'admin'}
+						  onChangeActive={(activeRoute) => this.setState({activeRoute})}>
+				<AppBody activeRoute={activeRoute} forms={forms} />
+			</StandardPage>
+		)
 
-			</div>
-		);
 	}
 }
 export default Admin;

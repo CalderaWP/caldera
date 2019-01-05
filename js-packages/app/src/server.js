@@ -1,7 +1,7 @@
 import express from 'express';
 import { render } from '@jaredpalmer/after';
 import routes from './routes';
-//const proxy = require('http-proxy-middleware')
+const proxy = require('http-proxy-middleware')
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
 const server = express();
@@ -35,6 +35,15 @@ Object.values(routes).forEach(route =>{
 		.get(path, appPage);
 });
 
+server.use('/users', proxy({
+	target: 'http://jsonplaceholder.typicode.com',
+	changeOrigin: true
+}));
 
+server.use('/wp-json', proxy({
+	target: 'https://caldera.lndo.site',
+	changeOrigin: true,
+	secure: false
+}));
 
 export default server;

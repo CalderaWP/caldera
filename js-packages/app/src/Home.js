@@ -8,7 +8,7 @@ class Home extends Component {
 
   render() {
     return (
-      <StandardPage className={'caldera-pro-home'} key={'home'} onChangeActive={() => {}}>
+      <StandardPage className={'caldera-pro-home'} pageKey={'home'} onChangeActive={() => {}}>
           <div>Hi Roy</div>
       </StandardPage>
     );
