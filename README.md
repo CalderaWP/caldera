@@ -122,7 +122,10 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
     - `yarn test:app`
     
 ### Acceptance tests
-Before :
+
+Acceptance tests, for now, are testing the REST API by making requests. They are in `js-packages/factory/acceptence/wp-rest-create-entry.test.js` for now.
+
+Before Running Tests:
     - `bash start.sh`
 Run Tests: 
     - `yarn test:acceptence`
