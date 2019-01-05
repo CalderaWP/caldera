@@ -1,5 +1,5 @@
 const apiRootURL = 'https://caldera.lndo.site/wp-json/caldera-api/';
-
+const fetch = require( 'isomorphic-fetch')
 const requestUrl = (endpoint) => {
 	return `${apiRootURL}/${endpoint}`;
 };
@@ -9,7 +9,7 @@ describe('Tests run', () => {
 
 describe('Creating entries via REST API of WordPress', () => {
 	test('create contact form entry', async (done) => {
-		fetch("https://localhost:3001/wp-json/caldera-api/v1/entries", {
+		fetch("http://localhost:3000/wp-json/caldera-api/v1/entries?formId=contact-form", {
 			"credentials": "include",
 			"headers": {
 				"accept": "*/*",
@@ -29,6 +29,7 @@ describe('Creating entries via REST API of WordPress', () => {
 				//{"id":"89","formId":"contact-form","date":"2019-01-04 13:05:13","userId":0,"entryValues":{"196":{"fieldId":"firstName","formId":"contact-form","slug":"firstName","entryId":89,"id":"196","value":"Josh"},"197":{"fieldId":"email","formId":"contact-form","slug":"email","entryId":89,"id":"197","value":"Josh@CalderaWP.com"},"198":{"fieldId":"consent","formId":"contact-form","slug":"consent","entryId":89,"id":"198","value":"1"}}}
 				expect(r.hasOwnProperty('id')).toBe(true);
 				expect(r.hasOwnProperty('formId')).toBe(true);
+				expect(r.formId).toEqual( 'contact-form' );
 				expect(r.hasOwnProperty('date')).toBe(true);
 				expect(r.hasOwnProperty('entryValues')).toBe(true);
 				expect(r.hasOwnProperty('userId')).toBe(false);

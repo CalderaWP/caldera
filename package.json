@@ -18,6 +18,7 @@
     "build:app": "lerna exec --scope @calderawp/app build",
     "start": "cd js-packages/app && yarn start",
     "test": "lerna run test",
+    "test:acceptence": "cd js-packages/factory && yarn test:acceptence",
     "test:app": "cd js-packages/app && yarn test",
     "test:components": "cd js-packages/components && yarn test",
     "test:factory": "cd js-packages/factory && yarn test",

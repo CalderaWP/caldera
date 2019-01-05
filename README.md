@@ -85,7 +85,7 @@ Run WordPress' tests `composer test:wordpress`
 ## JavaScript
 Monorepo managment is handled by Lerna. 
 
-__Do BIT use npm, use Yarn.__
+__Do NOT use npm, use Yarn.__
 
 Approach to implimenting CRA + shared component libraries came from [this post](https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875) and [this repo](https://github.com/nareshbhatia/lerna-workspaces-react-es6)
 
@@ -120,6 +120,14 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
     - `yarn start`
 * Test app
     - `yarn test:app`
+    
+### Acceptance tests
+Before :
+    - `bash start.sh`
+Run Tests: 
+    - `yarn test:acceptence`
+
+
     
 ### Add a package
 * Copy `boilerplate/js-package` to `js-packages` and rename directory for package name.
