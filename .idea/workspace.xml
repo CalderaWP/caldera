@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/forms.fixtures.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/header.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/header.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +47,7 @@
           <entry key="html" value="3" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="779" />
+          <entry key="js" value="783" />
           <entry key="json" value="126" />
           <entry key="log" value="3" />
           <entry key="md" value="97" />
@@ -81,7 +76,7 @@
           <entry key="HTML" value="3" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="131" />
-          <entry key="JavaScript" value="779" />
+          <entry key="JavaScript" value="783" />
           <entry key="Jest Snapshot" value="43" />
           <entry key="Markdown" value="97" />
           <entry key="PHP" value="1529" />
@@ -101,7 +96,7 @@
           <entry key="env" value="48" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="1" />
-          <entry key="js" value="46124" />
+          <entry key="js" value="47046" />
           <entry key="json" value="3034" />
           <entry key="md" value="12226" />
           <entry key="php" value="84140" />
@@ -118,7 +113,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="3039" />
-          <entry key="JavaScript" value="46156" />
+          <entry key="JavaScript" value="47078" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="12179" />
           <entry key="PHP" value="84151" />
@@ -152,7 +147,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46409807">
+    <splitter split-orientation="horizontal" split-proportion="0.67046535">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -176,13 +171,37 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="149">
-                  <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+                <state relative-caret-position="530">
+                  <caret line="58" selection-start-line="58" selection-end-line="58" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#0#35#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="236">
+                  <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -192,13 +211,25 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="7" selection-start-line="8" selection-end-line="14" selection-end-column="7" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                  <folding>
+                    <element signature="e#0#35#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -229,8 +260,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setFieldValue</find>
-      <find>touched</find>
       <find>initialValues</find>
       <find>WordPres</find>
       <find>checkboxes</find>
@@ -259,6 +288,8 @@
       <find>launchEditorEndpoint</find>
       <find>getStackTraceLines</find>
       <find>logo</find>
+      <find>enableR</find>
+      <find>children</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -303,6 +334,7 @@
       <dir>$PROJECT_DIR$/js-packages/app</dir>
       <dir>$PROJECT_DIR$/js-packages</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/js-packages/components/src/components</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -311,9 +343,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorMeta.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/tests/Processing/ProcessorMetaTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests/Processing/ProcessorTest.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProcessorContract.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProcessorCollectionContract.php" />
@@ -362,6 +391,9 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.story.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" />
       </list>
     </option>
   </component>
@@ -510,10 +542,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="81" />
-    <option name="y" value="23" />
-    <option name="width" value="1595" />
-    <option name="height" value="1057" />
+    <option name="y" value="100" />
+    <option name="width" value="1440" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -661,6 +692,18 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="EntryViewer" type="462c0819:PsiDirectoryNode" />
+              <item name="EntryActions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="fields" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -707,11 +750,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions" />
       <recent name="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer" />
       <recent name="$PROJECT_DIR$/js-packages/app/src" />
       <recent name="$PROJECT_DIR$/js-packages/app" />
       <recent name="$PROJECT_DIR$/js-packages/factory/src/factories" />
-      <recent name="$PROJECT_DIR$/js-packages/app/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer" />
@@ -733,7 +776,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Form EntryViewer component.No entries or forms">
+  <component name="RunManager" selected="Jest.Form EntryViewer component.Views entries">
     <configuration name="Form EntryViewer component.No entries or forms" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -744,6 +787,19 @@
       <test-names>
         <test-name value="Form EntryViewer component" />
         <test-name value="No entries or forms" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Form EntryViewer component.Views entries" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" />
+      <test-names>
+        <test-name value="Form EntryViewer component" />
+        <test-name value="Views entries" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -759,24 +815,20 @@
       <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorTest" file="$PROJECT_DIR$/php-packages/forms/tests/Processing/ProcessorTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="ProcessorTest.testPostProcess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorTest" file="$PROJECT_DIR$/php-packages/forms/tests/Processing/ProcessorTest.php" method="testPostProcess" scope="Method" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="PHPUnit.ProcessorTest.testPostProcess" />
       <item itemvalue="PHPUnit.ProcessorTest" />
       <item itemvalue="PHPUnit.ProcessorCollectionTest.testToArray" />
       <item itemvalue="PHPUnit.FormModelTest.testSetProcessorsFromArray" />
       <item itemvalue="Jest.Form EntryViewer component.No entries or forms" />
+      <item itemvalue="Jest.Form EntryViewer component.Views entries" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Form EntryViewer component.Views entries" />
         <item itemvalue="Jest.Form EntryViewer component.No entries or forms" />
         <item itemvalue="PHPUnit.FormModelTest.testSetProcessorsFromArray" />
         <item itemvalue="PHPUnit.ProcessorCollectionTest.testToArray" />
         <item itemvalue="PHPUnit.ProcessorTest" />
-        <item itemvalue="PHPUnit.ProcessorTest.testPostProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -801,44 +853,44 @@
       <workItem from="1546638220216" duration="1932000" />
       <workItem from="1546651565557" duration="56000" />
       <workItem from="1546651636456" duration="1248000" />
-      <workItem from="1546652958325" duration="21035000" />
+      <workItem from="1546652958325" duration="22428000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 40m 36s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 28m 41s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 40m 49s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 29m 01s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 41m 07s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 31m 27s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 41m 17s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 31m 37s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 42m 20s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 32m 58s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 42m 44s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 33m 27s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 43m 39s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 33m 45s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.04 at 07h 44m 04s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 34m 02s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Form_EntryViewer_component_No_entries_or_forms - 2019.01.05 at 15h 06m 11s.xml">
-      <configuration name="Form EntryViewer component.No entries or forms" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 34m 37s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Form_EntryViewer_component_No_entries_or_forms - 2019.01.05 at 15h 06m 27s.xml">
-      <configuration name="Form EntryViewer component.No entries or forms" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Form_EntryViewer_component_Views_entries - 2019.01.05 at 15h 35m 02s.xml">
+      <configuration name="Form EntryViewer component.Views entries" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319403000" />
+    <option name="totallyTimeSpent" value="320796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,13 +905,13 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8612167" visible="true" weight="0.18311875" />
-      <window_info id="Structure" order="1" sideWeight="0.13878328" side_tool="true" visible="true" weight="0.18311875" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8497942" visible="true" weight="0.24678111" />
+      <window_info id="Structure" order="1" sideWeight="0.15020576" side_tool="true" visible="true" weight="0.24678111" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.14715026" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3808917" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.061146498" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -869,7 +921,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32611465" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info active="true" anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
+      <window_info anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.49928468" type="WINDOWED" visible="true" weight="0.41468927" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1163,6 +1215,12 @@
           <line>2</line>
           <option name="timeStamp" value="289" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1170,27 +1228,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lerna-debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="75" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1542,22 +1579,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" selection-start-line="8" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
