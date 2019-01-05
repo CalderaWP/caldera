@@ -115,12 +115,40 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
     - `yarn build`
  * Test components
      - `yarn test:components`   
-### React App + Express Server
+### React App + With SSR - Port 3000
+React app for decoupled, server-side rendered WordPress front-end that we can reuse in WordPress.
+
+#### Location 
+`js-packages/app`
+
+#### Uses
+* Razzle
+* After.js
+* React
+
+#### Using
 
 * Start app server
     - `yarn start`
 * Test app
     - `yarn test:app`
+
+    
+###  Express Server - Port 5000
+
+
+#### Location 
+`js-packages/server`
+
+#### Uses
+* Express
+
+#### Using
+
+* Start app server
+    - `yarn start:server`
+* Test app
+    - `yarn test:server`
     
 ### Acceptance tests
 

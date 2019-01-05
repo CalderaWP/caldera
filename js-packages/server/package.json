@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js ",
+    "test": "jest --watch "
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.9",
+    "wpapi": "^1.1.2"
+  },
+  "devDependencies": {
+    "moxios": "^0.4.0",
+    "supertest": "^3.3.0"
+  }
+}
