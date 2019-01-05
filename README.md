@@ -1,11 +1,23 @@
 # Caldera 
 This is a monorepo. Code is organized into packages that will be installable separately via npm or Composer.
 
-
 # Install
-`git clone ...`
-`composer install`
 
+### Requires
+* git
+* yarn
+* Docker
+* Lando
+* node
+
+### Install And Start
+* Clone from Github
+    - `git clone ...`
+* Install dependencies and start server
+    - `bash start.sh`
+    
+### Restart
+`bash start.sh`
 
 ## PHP Code
 
@@ -102,7 +114,7 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
     - `yarn build`
  * Test components
      - `yarn test:components`   
-### React App
+### React App + Express Server
 
 * Start app server
     - `yarn start`

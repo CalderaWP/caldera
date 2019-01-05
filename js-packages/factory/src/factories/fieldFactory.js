@@ -4,7 +4,7 @@ import {
 	RadioField,
 	isValidHtml5type,
 	FieldSet
-} from '@caldera-labs/components';
+} from '@calderawp/components';
 import React from 'react';
 
 /**

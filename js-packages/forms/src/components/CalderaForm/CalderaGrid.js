@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { createElement, Fragment } from 'react';
-import { Column, Row, FieldArea } from '@caldera-labs/factory';
+import { Column, Row, FieldArea } from '@calderawp/factory';
 import classNames from 'classnames';
 
 /**

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.fieldAreaFactory = undefined;
 
-var _components = require('@caldera-labs/components');
+var _components = require('@calderawp/components');
 
 var _react = require('react');
 

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { CalderaForm } from './CalderaForm';
 import { formRows } from './columns.fixtures';
 
-import { collectFieldValues } from '@caldera-labs/factory';
+import { collectFieldValues } from '@calderawp/factory';
 
 import { getValuesFromFormLayout } from './util/getValuesFromFormLayout';
 

@@ -12,7 +12,7 @@ import {
 	radioField
 } from '../fields.fixtures';
 
-import { fieldWrapperClassNames } from '@caldera-labs/components';
+import { fieldWrapperClassNames } from '@calderawp/components';
 import { fieldFactory } from './fieldFactory';
 
 describe('fieldFactory', () => {

@@ -15,7 +15,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _factory = require('@caldera-labs/factory');
+var _factory = require('@calderawp/factory');
 
 var _classnames = require('classnames');
 

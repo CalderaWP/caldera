@@ -1,4 +1,4 @@
-import { collectFieldValues } from '@caldera-labs/factory';
+import { collectFieldValues } from '@calderawp/factory';
 
 /**
  * Given a Caldera Layout for a form, grab all field values
