@@ -8,7 +8,7 @@ storiesOf('CalderaNotice', module).add('Success message', () => (
 	</CalderaNotice>
 ));
 
-storiesOf('CalderaNotice', module).add('Success message', () => (
+storiesOf('CalderaNotice', module).add('Error message', () => (
 	<CalderaNotice isError={true}>
 		Bad Things!
 	</CalderaNotice>
