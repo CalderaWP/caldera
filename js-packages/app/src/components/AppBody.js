@@ -1,22 +1,43 @@
 import { PageBody } from './PageBody';
 import { ContactForm } from '../forms/ContactForm';
-import React from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 
+
+
+const ListOfForms = ( {forms} ) => (
+	<Fragment>
+		<h2>List Of Forms</h2>
+		<ul>{forms.map( form => {
+			return <li key={form.id}>{form.id}</li>
+		})}</ul>
+	</Fragment>
+);
+const findFormById = (formId, forms ) => {
+	return forms.find(form => formId === form.id);
+}
 export default function AppBody({ activeRoute, forms }) {
 	switch (activeRoute) {
 		case 'calderaForms':
 			return (
 				<PageBody pageKey={activeRoute}>
+					<ListOfForms forms={forms}/>
 					<ContactForm
 						form={
-							forms.hasOwnProperty('contact-form')
-								? forms['contact-form']
+							findFormById('contact-form', forms)
+							? findFormById('contact-form', forms)
 								: false
 						}
 					/>
 				</PageBody>
-			);case 'calderaPay':
+			);
+		case 'calderaSocial':
+			return (
+				<PageBody pageKey={activeRoute}>
+					<div>Caldera Social</div>
+				</PageBody>
+			);
+			case 'calderaPay':
 			return (
 				<PageBody pageKey={activeRoute}>
 					<div>Caldera Pay</div>

@@ -5,15 +5,25 @@ import {PageBody} from './PageBody';
 export const StandardPage = ({
 						  className,
 						  children,
-								 pageTitle
+						 pageTitle,
+							pageKey,
+							 onChangeActive
 					  }) => (
 	<div className={className} >
-		<TopBar/>
+		<TopBar
+			onChangeActive={onChangeActive}
+		/>
 		<div>
 			<h1>{pageTitle}</h1>
 		</div>
-		<PageBody pageKey={'home'}>
+		<PageBody pageKey={pageKey}>
 			{children}
 		</PageBody>
 	</div>
-)
+);
+
+
+const noop = () => {};
+StandardPage.defualtProps = {
+	onChangeActive: noop
+};
