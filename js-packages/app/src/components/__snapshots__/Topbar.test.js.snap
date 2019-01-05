@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topbar Matches snpashot 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#333333",
+      "color": "#ffffff",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 54,
+      "padding": 8,
+    }
+  }
+>
+  <img
+    alt="CalderaWP Logo"
+    src="Logo-CalderaWP-DarkBG.svg"
+    style={
+      Object {
+        "height": "75px",
+        "padding": "15px",
+        "width": "200px",
+      }
+    }
+  />
+  <nav>
+    <a
+      onClick={[Function]}
+    >
+      <img
+        alt="Caldera Forms Icon"
+        src="Icon-CalderaForms-DarkBG-Alt.svg"
+        style={
+          Object {
+            "height": "75px",
+            "padding": "15px",
+            "width": "200px",
+          }
+        }
+      />
+    </a>
+    <a
+      onClick={[Function]}
+    >
+      <img
+        alt="Caldera Pay Icon"
+        src="Icon-CalderaPay-DarkBG-Alt.svg"
+        style={
+          Object {
+            "height": "75px",
+            "padding": "15px",
+            "width": "200px",
+          }
+        }
+      />
+    </a>
+    <a
+      onClick={[Function]}
+    >
+      <img
+        alt="Caldera Social Icon"
+        src="Icon-Social-DarkBG-Alt.svg"
+        style={
+          Object {
+            "height": "75px",
+            "padding": "15px",
+            "width": "200px",
+          }
+        }
+      />
+    </a>
+  </nav>
+</div>
+`;
