@@ -45,7 +45,7 @@ export default function AppBody({ activeRoute, forms }) {
 			);
 		case 'home':
 		default:
-			return <div>Home</div>;
+			return <div>Admin Landing</div>;
 	}
 }
 

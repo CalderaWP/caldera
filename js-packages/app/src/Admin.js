@@ -31,14 +31,11 @@ async function adminGetInitialProps( req, res, match ) {
 		const forms = await getForms();
 		return {
 			forms,
-			pageTitle: 'The Title Of This Page Is Admin'
+			pageTitle: 'Caldera Admin Area'
 		};
 	} catch (e) {
-		console.log(e);
 		return {
-			a: 2,
-			forms: e,
-			pageTitle: 'The Title Of This Page Is Admin'
+			pageTitle: 'An Error Occurred When Loading Forms'
 		};
 	}
 
@@ -47,7 +44,7 @@ async function adminGetInitialProps( req, res, match ) {
 class Admin extends Component {
 
 	state = {
-		activeRoute: 'calderaSocial'
+		activeRoute: ''
 	};
 
 	//on server, call api and pass results to props
