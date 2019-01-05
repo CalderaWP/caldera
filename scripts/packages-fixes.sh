@@ -22,6 +22,11 @@ cd forms
 composer fixes
 cd ../
 
+cd http
+composer fixes
+cd ../
+
+
 cd rest-api
 composer fixes
 cd ../

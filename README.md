@@ -36,6 +36,7 @@ Each package should have these commands:
 Do NOT add dependencies, autoloaders, or any other field that monorepo builder overwrites in the root dir composer.json. Use meta package instead.
 
 ### Add A Package
+
 * Copy the `boilerplate/php-packages` to `php-packages`
 * Change name of new directory name
 * Change the library name to `calderawp/<name>` where <name> is the same name as the directory.
