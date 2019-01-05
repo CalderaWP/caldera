@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from 'react';
-import calderaWpLogo from '../../../../../Desktop/app/src/logos/Logo-CalderaWP-DarkBG.svg';
-import calderaWpIcon from '../../../../../Desktop/app/src/logos/icons/Icon-CalderaWP-DarkBG.svg';
+import calderaWpLogo from './logos/Logo-CalderaWP-DarkBG.svg';
+import calderaWpIcon from './logos/icons/Icon-CalderaWP-DarkBG.svg';
 
-import calderaFormsLogo from '../../../../../Desktop/app/src/logos/Logo-CalderaForms-DarkBG.svg';
-import calderaFormsIcon from '../../../../../Desktop/app/src/logos/icons/Icon-CalderaForms-DarkBG-Alt.svg';
+import calderaFormsLogo from './logos/Logo-CalderaForms-DarkBG.svg';
+import calderaFormsIcon from './logos/icons/Icon-CalderaForms-DarkBG-Alt.svg';
 
-import calderaPayLogo from '../../../../../Desktop/app/src/logos/Logo-CalderaPay-DarkBG.svg';
-import calderaPayIcon from '../../../../../Desktop/app/src/logos/icons/Icon-CalderaPay-DarkBG-Alt.svg';
+import calderaPayLogo from './logos/Logo-CalderaPay-DarkBG.svg';
+import calderaPayIcon from './logos/icons/Icon-CalderaPay-DarkBG-Alt.svg';
 
-import calderaSocialLogo from '../../../../../Desktop/app/src/logos/Logo-CalderaSocial-DarkBG.svg';
-import calderaSocialIcon from '../../../../../Desktop/app/src/logos/icons/Icon-Social-DarkBG-Alt.svg';
+import calderaSocialLogo from './logos/Logo-CalderaSocial-DarkBG.svg';
+import calderaSocialIcon from './logos/icons/Icon-Social-DarkBG-Alt.svg';
 
 import PropTypes from 'prop-types';
 const merge = require('deepmerge');
@@ -94,7 +94,7 @@ export class TopBar extends Component {
 					key={'main-nav'}
 				>
 					{this.menuItems.map(menuItem => {
-						const { icon, logo, title, key } = menuItem;
+						const { icon, title, key } = menuItem;
 						if (activeItem.key === key) {
 							return <Fragment key={key} />;
 						}

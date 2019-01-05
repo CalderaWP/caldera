@@ -1,14 +1,13 @@
 import { PageBody } from './PageBody';
-import { ContactForm } from '../../../../../Desktop/app/src/forms/ContactForm';
-import { Forms } from '../../../../../Desktop/app/src/features/forms/Forms';
+import { ContactForm } from '../forms/ContactForm';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function AppBody({ route, forms }) {
-	switch (route) {
+export default function AppBody({ activeRoute, forms }) {
+	switch (activeRoute) {
 		case 'calderaForms':
 			return (
-				<PageBody pageKey={route}>
+				<PageBody pageKey={activeRoute}>
 					<ContactForm
 						form={
 							forms.hasOwnProperty('contact-form')
@@ -17,24 +16,20 @@ export default function AppBody({ route, forms }) {
 						}
 					/>
 				</PageBody>
-			);
-			break;
-		case 'calderaPay':
+			);case 'calderaPay':
 			return (
-				<PageBody pageKey={route}>
-					<Forms forms={forms} />
+				<PageBody pageKey={activeRoute}>
+					<div>Caldera Pay</div>
 				</PageBody>
 			);
-			break;
 		case 'home':
 		default:
 			return <div>Home</div>;
-			break;
 	}
 }
 
 AppBody.propTypes = {
-	route: PropTypes.string.isRequired,
+	activeRoute: PropTypes.string.isRequired,
 	forms: PropTypes.object
 };
 
