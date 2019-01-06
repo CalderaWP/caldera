@@ -10,6 +10,11 @@ use calderawp\caldera\restApi\Routes\EntryRoute;
 use calderawp\caldera\restApi\Routes\FormRoute;
 use calderawp\interop\Contracts\Rest\Endpoint;
 
+/**
+ * Class RestApi
+ *
+ * Registers Caldera REST API routes with WordPress
+ */
 class RestApi
 {
 
