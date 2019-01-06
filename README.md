@@ -1,9 +1,20 @@
 # Caldera 
 This is a monorepo. Code is organized into packages that will be installable separately via npm or Composer.
 
-# Install
 
-### Requires
+
+## Install
+
+### Short Version
+* Install global dependencies
+* git clone
+    - ``
+* Install and Start servers
+    - `bash start.sh`
+* Run every test
+    - `bash test.sh`
+
+### Development Global Dependencies
 * git
 * yarn
 * Docker
@@ -57,17 +68,31 @@ Do NOT add dependencies, autoloaders, or any other field that monorepo builder o
 * From root directory, register new package by running `composer merge`
 
 ### Testing
+Tests SHOULD be organized according to which of these questions they answer:
+
+* Unit tests
+    - Do individual units within packages work?
+* Integration tests
+    - Do packages work as expected in isolation?
+    - Do the packages work together correctly?
+    - Do the WordPress plugin(s) consume the packages correctly?
+* Acceptance Tests
+    - Does the whole system work?
+    - These tests should be minimal and use HTTP requests or CLI commands.
+
+
+### Unit Tests
 Unit tests should go in the sub-packages.
 
 * From root directory `composer test` will run all package unit tests and and fixes plus the integration tests and also the WordPress tests
 * From root directory `composer fixes` will run phpcs fixes on all packages.
 
-### Integration Tests
+#### Integration Tests
 Unit tests should not use classes from other packages, that's what integration tests are for. Integration tests are in the core package.
 
 * From root directory `composer test:integration` will run the integration tests.
 
-### Acceptance Tests
+#### Acceptance Tests
 
 Acceptance tests should be added to each package as a separate test suite -- see the http package and WordPress plugin. 
 * Run All PHP Acceptance Tests (Packages + WordPress)

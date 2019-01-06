@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/php-packages/core/tests/Unit/CalderaCoreTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/core/tests/Unit/CalderaCoreTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/http/tests/Acceptance/AcceptanceTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/http/tests/Acceptance/AcceptanceTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/http/tests/Acceptance/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/http/tests/Acceptance/RequestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/http/tests/Unit/CalderaHttpTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/http/tests/Unit/CalderaHttpTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/http/tests/Unit/ResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/http/tests/Unit/ResponseTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/http/tests/Unit/UnitTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/http/tests/Unit/UnitTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/packages-tests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/packages-tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,14 +49,14 @@
           <entry key="js" value="812" />
           <entry key="json" value="140" />
           <entry key="log" value="3" />
-          <entry key="md" value="107" />
+          <entry key="md" value="109" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="2" />
           <entry key="php" value="1657" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
-          <entry key="sh" value="31" />
+          <entry key="sh" value="34" />
           <entry key="snap" value="43" />
           <entry key="svg" value="3" />
           <entry key="test" value="1" />
@@ -76,14 +71,14 @@
         <counts>
           <entry key=".env file" value="5" />
           <entry key="ANSI Aware" value="3" />
-          <entry key="Bash" value="31" />
+          <entry key="Bash" value="34" />
           <entry key="CSS" value="7" />
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="145" />
           <entry key="JavaScript" value="813" />
           <entry key="Jest Snapshot" value="43" />
-          <entry key="Markdown" value="107" />
+          <entry key="Markdown" value="109" />
           <entry key="PHP" value="1658" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="SVG" value="3" />
@@ -103,9 +98,9 @@
           <entry key="html" value="1" />
           <entry key="js" value="47638" />
           <entry key="json" value="3404" />
-          <entry key="md" value="16966" />
+          <entry key="md" value="17644" />
           <entry key="php" value="88531" />
-          <entry key="sh" value="1299" />
+          <entry key="sh" value="1447" />
           <entry key="snap" value="12" />
           <entry key="txt" value="1037" />
           <entry key="www" value="1" />
@@ -115,13 +110,13 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="48" />
-          <entry key="Bash" value="1299" />
+          <entry key="Bash" value="1447" />
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="3409" />
           <entry key="JavaScript" value="47671" />
           <entry key="Jest Snapshot" value="12" />
-          <entry key="Markdown" value="16919" />
+          <entry key="Markdown" value="17597" />
           <entry key="PHP" value="88542" />
           <entry key="PLAIN_TEXT" value="1163" />
           <entry key="XML" value="107" />
@@ -153,26 +148,73 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/packages-fixes.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/packages-tests.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.29055008">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/packages-fixes.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/packages-tests.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/test-acceptance.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/test-integration.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="259">
+                    <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -272,7 +314,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/HttpRequestContract.php" />
         <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesHttpHeaders.php" />
         <option value="$PROJECT_DIR$/php-packages/http/src/Contracts/Http.php" />
@@ -315,7 +356,6 @@
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/AcceptanceTestCase.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/scripts/test-acceptance.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Filters/EntryDataFilters.php" />
@@ -323,6 +363,8 @@
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/Acceptance/CreateEntryTest.php" />
         <option value="$PROJECT_DIR$/scripts/packages-fixes.sh" />
         <option value="$PROJECT_DIR$/scripts/packages-tests.sh" />
+        <option value="$PROJECT_DIR$/test.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -594,23 +636,6 @@
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -756,7 +781,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339065000" />
+    <option name="totallyTimeSpent" value="339436000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,7 +796,7 @@
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8848581" visible="true" weight="0.24494143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8848581" visible="true" weight="0.24494143" />
       <window_info id="Structure" order="1" sideWeight="0.11514196" side_tool="true" visible="true" weight="0.24494143" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -787,7 +812,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50159746" side_tool="true" visible="true" weight="0.34300518" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info active="true" anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.49840257" visible="true" weight="0.34300518" />
+      <window_info anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.49840257" visible="true" weight="0.34300518" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1088,13 +1113,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/server/__TESTS__/roy.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/server/clients/getWpSite.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1133,13 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/test-integration.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -1299,23 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="357">
-            <caret line="56" column="71" lean-forward="true" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/test-acceptance.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/Unit/RestApiTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1461,8 +1455,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/packages-tests.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+        <state relative-caret-position="60">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/test-acceptance.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/test-integration.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="259">
+            <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
