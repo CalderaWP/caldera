@@ -3,7 +3,7 @@
 
 namespace calderawp\caldera\WordPressPlugin\Filters;
 
-use calderawp\caldera\Forms\Filters\ProcessEventPriories;
+use calderawp\caldera\Forms\Filters\ProcessEventPriorities;
 use calderawp\interop\Contracts\FiltersDataSource;
 use calderawp\caldera\Forms\DataSources\FormsDataSources;
 use calderawp\caldera\Forms\Contracts\EntryCollectionContract as Entries;
@@ -38,11 +38,11 @@ class EntryDataFilters implements FiltersDataSource
 			->addFilter(
 				"caldera/forms/createEntry",
 				[$this, 'createEntry'],
-				ProcessEventPriories::SAVE, 2);
+				ProcessEventPriorities::SAVE, 2);
 		$filters
 			->addFilter("caldera/forms/getEntries",
 				[$this, 'getEntries'],
-				ProcessEventPriories::SAVE,
+				ProcessEventPriorities::SAVE,
 				2
 			);
 	}
