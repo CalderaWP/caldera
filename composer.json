@@ -67,7 +67,7 @@
     ],
     "scripts": {
         "merge": "vendor/bin/monorepo-builder merge && composer update",
-        "test": "composer fixes && composer test:packages && composer test:integration",
+        "test": "composer fixes && composer test:packages && composer test:integration && composer test:acceptance",
         "tests": "composer test",
         "php:v": "php -v",
         "test:integration": "bash scripts/test-integration.sh",
