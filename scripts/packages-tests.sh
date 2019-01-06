@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+#for dir in php-packages/*; do ( cd "$dir" &&  composer test ); done
+
+
 composer test:packages-interop
 
 composer test:packages-data
