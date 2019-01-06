@@ -1,4 +1,4 @@
-const roy = require('../roy');
+const roy = require('../routers/roy');
 const express = require('express');
 const moxios = require('moxios');
 const request = require('supertest');
@@ -9,7 +9,7 @@ const initHugo = () => {
   return app;
 }
 
-describe('GET /api/roy', () => {
+describe('GET /', () => {
   beforeEach(() => {
     moxios.install();
   });
@@ -28,16 +28,16 @@ describe('GET /api/roy', () => {
       response: JSON.stringify(response)
     });
     const app = initHugo();
-    const res = await request(app).get('/api/roy');
+    const res = await request(app).get('/');
     expect(response).toEqual(JSON.parse(res.text));
   });
-  test('It should retrun 200 ', async () => {
+  test('It should return 200 ', async () => {
     moxios.stubRequest(/api.github.com\/users/, {
       status: 200,
       response
     });
     const app = initHugo();
-    const res = await request(app).get('/api/roy');
+    const res = await request(app).get('/');
     expect(res.status).toEqual(200);
   });
 });

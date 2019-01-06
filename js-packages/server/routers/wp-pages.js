@@ -1,13 +1,13 @@
 const {Router} = require('express');
-const getWpSite = require( './clients/getWpSite');
-const getAllFromWordPress = require( './util/getAllFromWordPress');
-const cacheFileName = require( './util/cacheFileName' );
-const cachePage = require( './util/cachePage')
+const getWpSite = require( '../clients/getWpSite');
+const getAllFromWordPress = require( '../util/getAllFromWordPress');
+const cacheFileName = require( '../util/cacheFileName' );
+const cachePage = require( '../util/cachePage')
 
 
 
 module.exports = (url = 'https://localhost', router = new Router()) => {
-	router.get('/api/pages', async (req, res) => {
+	router.get('/', async (req, res) => {
 		try {
 			const site = await getWpSite(url);
 			try {
@@ -23,13 +23,13 @@ module.exports = (url = 'https://localhost', router = new Router()) => {
 		}
 	});
 
-	router.get('/api/pages/:slug', async (req, res) => {
-		const cacheFileExists = require( './util/cacheFileExists');
+	router.get('/:slug', async (req, res) => {
+		const cacheFileExists = require( '../util/cacheFileExists');
 		const {slug} = req.params;
 
 		const dirName = __dirname;
 		if( cacheFileExists(dirName,slug)){
-			const getCacheFile = require( './util/getCacheFile' );
+			const getCacheFile = require( '../util/getCacheFile' );
 			return res.status(200).json(getCacheFile(dirName,slug));
 		}
 
@@ -50,7 +50,7 @@ module.exports = (url = 'https://localhost', router = new Router()) => {
 		}
 	});
 
-	router.get('/api/pages/page/:page', async (req, res) => {
+	router.get('/page/:page', async (req, res) => {
 
 		try {
 			const site = await getWpSite(url);
@@ -102,12 +102,12 @@ module.exports = (url = 'https://localhost', router = new Router()) => {
 
 	});
 
-	router.get('/api/cache/pages', async (req, res) => {
+	router.get('/cache/pages', async (req, res) => {
 
 		const site = await getWpSite(url);
 		const fs = require('fs');
 		const dirName = __dirname;
-		const getCachedPages = require( './util/getCachedPages');
+		const getCachedPages = require( '../util/getCachedPages');
 		return res.status(200).json(getCachedPages(dirName));
 	});
 

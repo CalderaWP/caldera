@@ -12,12 +12,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-const roy = require( './roy' );
-const pages = require( './wp-pages' );
-app.use(roy());
-app.use(pages());
+const roy = require( './routers/roy' );
+const pages = require( './routers/wp-pages' );
 
-
+app.use(`/caldera-api/v2/roy`,roy());
 app.get('/', function(req, res) {
 	res.json( {hi:'roy'});
 });

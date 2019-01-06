@@ -2,7 +2,7 @@ const { Router } = require('express');
 const axios = require('axios');
 
 module.exports = (router = new Router()) => {
-  router.get('/api/roy', async (req, res) => {
+  router.get('/', async (req, res) => {
     const { data: userData } = await axios.get('https://api.github.com/users/royboy789');
     const {
       blog,
