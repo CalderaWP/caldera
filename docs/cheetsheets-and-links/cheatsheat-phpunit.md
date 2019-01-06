@@ -4,6 +4,7 @@
 
 ### Add bootstrap
 
+
 ```xml
 <!-- phpunit.xml.dist -->
 <?xml version="1.0" encoding="UTF-8"?>
@@ -16,6 +17,56 @@
 
 See:
 * https://symfony.com/doc/current/testing/bootstrap.html
+
+
+### Seperate Unit and Integration Tests
+When seperating tests into unit and integration, defined the test suites in the xml config file:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/7.0/phpunit.xsd"
+    colors="true">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory>./tests/Integration</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <directory>./tests</directory>
+                <directory>./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
+```
+
+* Run the unit tests:
+    - `phpunit --testsuite=Unit`
+* Run the Integration tests:
+    - `phpunit --testsuite=Integration`
+    
+* composer scripts :
+```json
+{
+//...
+"scripts": {
+    "test": "composer test:unit",
+    "tests": "composer test:unit && && composer test:integration && composer test:acceptance",
+    "test:unit": "phpunit --testsuite=Unit",
+    "test:integration": "phpunit --testsuite=Integration",
+    "test:acceptance": "phpunit --testsuite=Acceptance"
+  }
+}
+```
 ## Mock Class
 
 For these examples, assume we are testing the class `Greeter` which has a dependency that muse impliment `HiRoyContract`. The unit tests must test `Greeter` independent of all dependencies, so we will mock `HiRoyContract` using Mockery.
