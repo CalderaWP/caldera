@@ -68,8 +68,12 @@ Unit tests should not use classes from other packages, that's what integration t
 * From root directory `composer test:integration` will run the integration tests.
 
 ### Acceptance Tests
-* Run Acceptance Tests
+
+Acceptance tests should be added to each package as a separate test suite -- see the http package and WordPress plugin. 
+* Run All PHP Acceptance Tests (Packages + WordPress)
     - `composer test:acceptance`
+    
+That command calls `scripts/test-acceptance.sh`. Any new acceptance tests suites that are created need to get added to that script.
 
 ### Static Analysis and Type Checking
 To run static analysis and type checking with [phpstan](https://github.com/phpstan/phpstan) run the command `composer analysisgi`

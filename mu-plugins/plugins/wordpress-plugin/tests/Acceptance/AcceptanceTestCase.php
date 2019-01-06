@@ -4,7 +4,9 @@
 namespace calderawp\caldera\WordPressPlugin\Tests\Acceptance;
 
 
-abstract class AcceptanceTestCase extends \Mockery\Adapter\Phpunit\MockeryTestCase
+use calderawp\caldera\WordPressPlugin\Tests\TestCase;
+
+abstract class AcceptanceTestCase extends TestCase
 {
 
 }

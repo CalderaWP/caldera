@@ -1,6 +1,6 @@
 <?php
 
-namespace calderawp\caldera\WordPressPlugin\Tests;
+namespace calderawp\caldera\WordPressPlugin\Tests\Unit;
 
 use calderawp\caldera\Core\CalderaCore;
 use calderawp\caldera\restApi\Endpoints\Form\GetForms;
@@ -10,7 +10,7 @@ use calderawp\caldera\WordPressPlugin\RestApi;
 use calderawp\CalderaContainers\Service\Container;
 use calderawp\interop\Contracts\Rest\Endpoint as EndpointContract;
 
-class RestApiTest extends TestCase
+class RestApiTest extends UnitTestCase
 {
 
 	protected $called;

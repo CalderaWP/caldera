@@ -13,6 +13,7 @@ use calderawp\caldera\Forms\FormModel;
 use calderawp\caldera\Forms\Traits\AddsEntryValuesFromRequest;
 use calderawp\caldera\restApi\Request;
 use calderawp\interop\Contracts\WordPress\ApplysFilters;
+use calderawp\caldera\DataSource\Contracts\SourceContract as Source;
 
 
 class EntryDataFilters
@@ -31,7 +32,7 @@ class EntryDataFilters
 		$this->dataSources = $dataSources;
 	}
 
-	public function addHooks()
+	public function addHooks(ApplysFilters $filters)
 	{
 		$this
 			->filters
@@ -41,6 +42,29 @@ class EntryDataFilters
 			->addFilter("caldera/forms/getEntries", [$this, 'getEntries'], 5, 2);
 	}
 
+	public function getDataSource( string  $source ) : Source
+	{
+		switch ($source){
+			case 'form':
+			case 'forms':
+				return $this
+					->dataSources
+					->getFormsDataSource();
+				break;
+			case 'entry':
+			case 'entries':
+				return $this
+					->dataSources
+					->getEntryDataSource();
+				break;
+			case 'entryValue' :
+			case 'entryValues' :
+				return $this
+					->dataSources
+					->getEntryValuesDataSource();
+		}
+	}
+
 	/**
 	 * Create an entry and return it
 	 *
@@ -48,14 +72,14 @@ class EntryDataFilters
 	 * @param Request $request
 	 *
 	 * @return Entry
+	 * @throws \Exception
 	 */
 	public function createEntry(?Entry $entry, Request $request): Entry
 	{
 		if (!is_a($entry, Entry::class)) {
 			$formId = $request->getParam('formId');
 			$entryId = $this
-				->dataSources
-				->getEntryDataSource()
+				->getDataSource('entry')
 				->create([
 						'form_id' => $formId,
 						'user_id' => 0,
@@ -64,15 +88,14 @@ class EntryDataFilters
 				);
 
 			$entryData = $this
-				->dataSources
-				->getEntryDataSource()
+				->getDataSource('entry')
 				->read($entryId);
 
 			$entry = \calderawp\caldera\Forms\Entry\Entry::fromDatabaseResult($entryData[0]);
 			$entry = $this->addValuesToEntry($entry,$this->findForm($formId));
 			$entryValuesDataSource = $this
-				->dataSources
-				->getEntryValuesDataSource();
+				->getDataSource('entryValues' );
+
 			/** @var EntryValue $entryValue */
 			foreach ( $request->getParam('entryValues') as $fieldId => $value ){
 				$entryValue = EntryValue::fromArray([
@@ -104,8 +127,7 @@ class EntryDataFilters
 		if (!is_a($entries, Entries::class)) {
 			$formId = $request->getParam('formId');
 			$entries = $this
-				->dataSources
-				->getEntryDataSource()
+				->getDataSource('entry')
 				->findWhere('form_id', $formId);
 			$entries = EntryCollection::fromDatabaseResults($entries);
 			foreach ($entries as $entry ){
@@ -121,8 +143,8 @@ class EntryDataFilters
 	protected function addValuesToEntry(Entry $entry,$formId ) : Entry
 	{
 		$form = $this->findForm($formId);
-		$results = $this->dataSources
-			->getEntryValuesDataSource()
+		$results = $this
+			->getDataSource('entryValue')
 			->findWhere('entry_id', $entry->getId() );
 		foreach ($results as $result ){
 			$entryValue = EntryValue::fromDataBaseResults($result,$form);
