@@ -46,4 +46,10 @@ server.use('/wp-json', proxy({
 	secure: false
 }));
 
+server.use('/caldera-api/v2', proxy({
+	target: 'http://localhost:5000',
+	changeOrigin: true,
+	secure: false
+}));
+
 export default server;
