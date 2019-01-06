@@ -28,17 +28,14 @@ class EntryDataFilters
 
 	public function __construct(ApplysFilters $filters, FormsDataSources $dataSources)
 	{
-		$this->filters = $filters;
 		$this->dataSources = $dataSources;
 	}
 
 	public function addHooks(ApplysFilters $filters)
 	{
-		$this
-			->filters
+		$filters
 			->addFilter("caldera/forms/createEntry", [$this, 'createEntry'], 5, 2);
-		$this
-			->filters
+		$filters
 			->addFilter("caldera/forms/getEntries", [$this, 'getEntries'], 5, 2);
 	}
 

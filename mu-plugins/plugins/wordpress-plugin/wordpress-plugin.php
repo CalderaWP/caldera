@@ -20,7 +20,7 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
 		(new \calderawp\caldera\WordPressPlugin\Filters\EntryDataFilters(
 			$module->getCore()->getEvents()->getHooks(),
 			$dataBase->getDataSources()
-		))->addHooks();
+		))->addHooks($module->getCore()->getEvents()->getHooks());
 	});
 	//include_once  __DIR__ . '/test.php';
 });
