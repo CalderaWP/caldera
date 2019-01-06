@@ -21,17 +21,30 @@ This is a monorepo. Code is organized into packages that will be installable sep
 
 ## PHP Code
 
+PHP code is organized into reusable packages. For an overview of each package, see [the Core package README.md](./php-packages/core/README.md).
+
 ### Organization
 All PHP code is organized into packages in the `php-packages` directory. 
 
 * Using [symplify/monorepobuilder](https://github.com/symplify/monorepobuilder) to manage shared dependencies.
-* See [https://gomonorepo.org/](https://gomonorepo.org/)
+    -  See [https://gomonorepo.org/](https://gomonorepo.org/)
 * If a package depends on something, define that dependency in it's composer.json.
 * The command `composer merge` updates root composer.json 
 
-Each package should have these commands:
+Each package SHOULD have these commands:
 * `composer test` 
+    - This should run the unit tests
+* `composer tests` 
+    - This should run all tests a package has. **Very few packages have this, must fix.**
 * `composer fixes`
+    - This should run all lints/sniffs/ fixes
+
+A package MAY have these commands
+* Run unit tests
+    - `composer test:unit`
+
+* Run acceptance tests
+    - `composer test:acceptance`
 
 Do NOT add dependencies, autoloaders, or any other field that monorepo builder overwrites in the root dir composer.json. Use meta package instead.
 
@@ -53,6 +66,10 @@ Unit tests should go in the sub-packages.
 Unit tests should not use classes from other packages, that's what integration tests are for. Integration tests are in the core package.
 
 * From root directory `composer test:integration` will run the integration tests.
+
+### Acceptance Tests
+* Run Acceptance Tests
+    - `composer test:acceptance`
 
 ### Static Analysis and Type Checking
 To run static analysis and type checking with [phpstan](https://github.com/phpstan/phpstan) run the command `composer analysisgi`
