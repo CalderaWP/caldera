@@ -3,63 +3,48 @@
 
 namespace calderawp\caldera\WordPressPlugin\Filters;
 
+use calderawp\caldera\Forms\Filters\ProcessEventPriories;
+use calderawp\interop\Contracts\FiltersDataSource;
 use calderawp\caldera\Forms\DataSources\FormsDataSources;
 use calderawp\caldera\Forms\Contracts\EntryCollectionContract as Entries;
 use calderawp\caldera\Forms\Contracts\EntryContract as Entry;
 use calderawp\caldera\Forms\Entry\EntryValue;
-use calderawp\caldera\Forms\Entry\EntryValues;
 use calderawp\caldera\Forms\EntryCollection;
 use calderawp\caldera\Forms\FormModel;
 use calderawp\caldera\Forms\Traits\AddsEntryValuesFromRequest;
 use calderawp\caldera\restApi\Request;
 use calderawp\interop\Contracts\WordPress\ApplysFilters;
-use calderawp\caldera\DataSource\Contracts\SourceContract as Source;
+use calderawp\interop\Traits\ProvidesFormsDataSource;
 
 
-class EntryDataFilters
+class EntryDataFilters implements FiltersDataSource
 {
 
-	use AddsEntryValuesFromRequest;
+	use AddsEntryValuesFromRequest, ProvidesFormsDataSource;
+
 	/** @var ApplysFilters */
 	protected $filters;
 
-	/** @var FormsDataSources */
-	protected $dataSources;
 
 	public function __construct(ApplysFilters $filters, FormsDataSources $dataSources)
 	{
 		$this->dataSources = $dataSources;
 	}
 
-	public function addHooks(ApplysFilters $filters)
+	/** @inheritdoc */
+	public function addHooks(ApplysFilters $filters) :void
 	{
 		$filters
-			->addFilter("caldera/forms/createEntry", [$this, 'createEntry'], 5, 2);
+			->addFilter(
+				"caldera/forms/createEntry",
+				[$this, 'createEntry'],
+				ProcessEventPriories::SAVE, 2);
 		$filters
-			->addFilter("caldera/forms/getEntries", [$this, 'getEntries'], 5, 2);
-	}
-
-	public function getDataSource( string  $source ) : Source
-	{
-		switch ($source){
-			case 'form':
-			case 'forms':
-				return $this
-					->dataSources
-					->getFormsDataSource();
-				break;
-			case 'entry':
-			case 'entries':
-				return $this
-					->dataSources
-					->getEntryDataSource();
-				break;
-			case 'entryValue' :
-			case 'entryValues' :
-				return $this
-					->dataSources
-					->getEntryValuesDataSource();
-		}
+			->addFilter("caldera/forms/getEntries",
+				[$this, 'getEntries'],
+				ProcessEventPriories::SAVE,
+				2
+			);
 	}
 
 	/**
