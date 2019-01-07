@@ -5,27 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/Callbacks/ApiRequestPre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ProcessorType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caldera.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caldera.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/razzle.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/razzle.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessCallback.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessCallback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/Processor.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/Processor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorConfig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processors/ApiRequestProcessor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-integration/FormModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-integration/FormModelTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-integration/ProcessSubmissionFiltersTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-integration/ProcessSubmissionFiltersTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-unit/FormArrayLikeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-unit/FormArrayLikeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-unit/FormModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-unit/FormModelTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorCollectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorCollectionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorMeta.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorMeta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/Callbacks/ApiRequestPre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/Callbacks/ApiRequestPre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ProcessorType.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ProcessorType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorMetaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorMetaTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesIdGeneric.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesIdGeneric.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,11 +61,11 @@
           <entry key="js" value="813" />
           <entry key="json" value="150" />
           <entry key="log" value="3" />
-          <entry key="md" value="114" />
+          <entry key="md" value="115" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="2" />
-          <entry key="php" value="1860" />
+          <entry key="php" value="1866" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="46" />
@@ -99,8 +90,8 @@
           <entry key="JSON" value="155" />
           <entry key="JavaScript" value="814" />
           <entry key="Jest Snapshot" value="43" />
-          <entry key="Markdown" value="114" />
-          <entry key="PHP" value="1861" />
+          <entry key="Markdown" value="115" />
+          <entry key="PHP" value="1867" />
           <entry key="PLAIN_TEXT" value="24" />
           <entry key="SVG" value="3" />
           <entry key="TypeScript" value="5" />
@@ -119,8 +110,8 @@
           <entry key="html" value="1" />
           <entry key="js" value="47659" />
           <entry key="json" value="3497" />
-          <entry key="md" value="19140" />
-          <entry key="php" value="102246" />
+          <entry key="md" value="21104" />
+          <entry key="php" value="103223" />
           <entry key="sh" value="1558" />
           <entry key="snap" value="12" />
           <entry key="txt" value="1168" />
@@ -137,8 +128,8 @@
           <entry key="JSON" value="3504" />
           <entry key="JavaScript" value="47692" />
           <entry key="Jest Snapshot" value="12" />
-          <entry key="Markdown" value="19090" />
-          <entry key="PHP" value="102258" />
+          <entry key="Markdown" value="21054" />
+          <entry key="PHP" value="103235" />
           <entry key="PLAIN_TEXT" value="1294" />
           <entry key="XML" value="136" />
           <entry key="YAML" value="386" />
@@ -169,85 +160,38 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41342282">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="9" selection-start-line="17" selection-start-column="35" selection-end-line="22" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="388">
-                  <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#61#102#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="107">
-                  <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/app/razzle.config.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessCallback.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1260">
-                  <caret line="89" selection-start-line="89" selection-end-line="89" />
-                  <folding>
-                    <element signature="e#55#97#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/composer.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorCollection.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesIdGeneric.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="21" selection-start-line="20" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+              <folding>
+                <element signature="e#61#102#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="172" column="13" lean-forward="true" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -258,7 +202,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PackageName</find>
       <find>Add Pack</find>
       <find>package</find>
       <find>respond with a resource</find>
@@ -288,6 +231,7 @@
       <find>ProcessCallback</find>
       <find>fromAr</find>
       <find>get</find>
+      <find>fofrorm</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -349,11 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/FieldsArrayLike.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/ArrayLike.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/src/Filters/FilterFormData.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/FiltersDataSource.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ArrayLike.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/FieldsArrayLike.php" />
         <option value="$PROJECT_DIR$/docs/extending/form-processors.md" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/FormFieldsWithUpdateTest.php" />
@@ -391,15 +330,20 @@
         <option value="$PROJECT_DIR$/php-packages/forms/tests-integration/FormModelTest.php" />
         <option value="$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php" />
-        <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorCollectionTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/FormModelTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/FormArrayLikeTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/Callbacks/ApiRequestPre.php" />
         <option value="$PROJECT_DIR$/js-packages/app/razzle.config.js" />
-        <option value="$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorCollection.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php" />
+        <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesIdGeneric.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/README.md" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/Processor.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorMetaTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorMeta.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php" />
       </list>
     </option>
   </component>
@@ -656,6 +600,37 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Processing" type="462c0819:PsiDirectoryNode" />
+              <item name="Types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="tests-integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="tests-unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="tests-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="Processing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -798,41 +773,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ApiRequestPreTest.testProcess">
+  <component name="RunManager" selected="PHPUnit.ProcessorTest">
     <configuration name="ApiRequestPreTest.testProcess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="calderawp\caldera\Forms\Tests\Integration\ApiRequestPreTest" file="$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php" method="testProcess" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FormArrayLikeTest.testSetProcessorsFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\FormArrayLikeTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/FormArrayLikeTest.php" method="testSetProcessorsFromArray" scope="Method" />
+    <configuration name="ProcessorMetaTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorMetaTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorMetaTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="FormModelTest.testSetProcessorsFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\FormModelTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/FormModelTest.php" method="testSetProcessorsFromArray" scope="Method" />
+    <configuration name="ProcessorMetaTest.testGetId" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorMetaTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorMetaTest.php" method="testGetId" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ProcessorCollectionTest.testFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorCollectionTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorCollectionTest.php" method="testFromArray" scope="Method" />
+    <configuration name="ProcessorMetaTest.testSetId" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorMetaTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorMetaTest.php" method="testSetId" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ProcessorTest.testConfigFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php" method="testConfigFromArray" scope="Method" />
+    <configuration name="ProcessorTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="PHPUnit.ApiRequestPreTest.testProcess" />
-      <item itemvalue="PHPUnit.ProcessorTest.testConfigFromArray" />
-      <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
-      <item itemvalue="PHPUnit.FormModelTest.testSetProcessorsFromArray" />
-      <item itemvalue="PHPUnit.FormArrayLikeTest.testSetProcessorsFromArray" />
+      <item itemvalue="PHPUnit.ProcessorMetaTest.testSetId" />
+      <item itemvalue="PHPUnit.ProcessorMetaTest.testGetId" />
+      <item itemvalue="PHPUnit.ProcessorMetaTest" />
+      <item itemvalue="PHPUnit.ProcessorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ProcessorTest" />
+        <item itemvalue="PHPUnit.ProcessorMetaTest" />
+        <item itemvalue="PHPUnit.ProcessorMetaTest.testGetId" />
+        <item itemvalue="PHPUnit.ProcessorMetaTest.testSetId" />
         <item itemvalue="PHPUnit.ApiRequestPreTest.testProcess" />
-        <item itemvalue="PHPUnit.FormArrayLikeTest.testSetProcessorsFromArray" />
-        <item itemvalue="PHPUnit.FormModelTest.testSetProcessorsFromArray" />
-        <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
-        <item itemvalue="PHPUnit.ProcessorTest.testConfigFromArray" />
       </list>
     </recent_temporary>
   </component>
@@ -861,29 +836,11 @@
       <workItem from="1546722769458" duration="5606000" />
       <workItem from="1546862977459" duration="5007000" />
       <workItem from="1546884751353" duration="2661000" />
-      <workItem from="1546897013634" duration="949000" />
+      <workItem from="1546897013634" duration="2489000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApiRequestPreTest_testProcess - 2019.01.07 at 08h 04m 57s.xml">
-      <configuration name="ApiRequestPreTest.testProcess" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.07 at 08h 05m 42s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.07 at 08h 06m 38s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FormModelTest_testSetProcessorsFromArray - 2019.01.07 at 08h 06m 44s.xml">
-      <configuration name="FormModelTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FormArrayLikeTest_testSetProcessorsFromArray - 2019.01.07 at 08h 08m 08s.xml">
-      <configuration name="FormArrayLikeTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FormArrayLikeTest_testSetProcessorsFromArray - 2019.01.07 at 08h 08m 52s.xml">
-      <configuration name="FormArrayLikeTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="FormArrayLikeTest_testSetProcessorsFromArray - 2019.01.07 at 08h 09m 12s.xml">
       <configuration name="FormArrayLikeTest.testSetProcessorsFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -896,9 +853,27 @@
     <history-entry file="ApiRequestPreTest_testProcess - 2019.01.07 at 16h 49m 30s.xml">
       <configuration name="ApiRequestPreTest.testProcess" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="ProcessorMetaTest_testSetId - 2019.01.07 at 17h 11m 21s.xml">
+      <configuration name="ProcessorMetaTest.testSetId" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ProcessorMetaTest_testGetId - 2019.01.07 at 17h 12m 30s.xml">
+      <configuration name="ProcessorMetaTest.testGetId" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ProcessorMetaTest_testGetId - 2019.01.07 at 17h 12m 38s.xml">
+      <configuration name="ProcessorMetaTest.testGetId" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ProcessorMetaTest_testGetId - 2019.01.07 at 17h 13m 02s.xml">
+      <configuration name="ProcessorMetaTest.testGetId" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ProcessorMetaTest - 2019.01.07 at 17h 13m 11s.xml">
+      <configuration name="ProcessorMetaTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ProcessorTest - 2019.01.07 at 17h 16m 23s.xml">
+      <configuration name="ProcessorTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368147000" />
+    <option name="totallyTimeSpent" value="369687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -913,13 +888,13 @@
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88110965" visible="true" weight="0.20660277" />
-      <window_info id="Structure" order="1" sideWeight="0.11889036" side_tool="true" visible="true" weight="0.20660277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8809892" visible="true" weight="0.20660277" />
+      <window_info id="Structure" order="1" sideWeight="0.11901082" side_tool="true" visible="true" weight="0.20660277" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.26369426" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.21554404" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.32953367" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.4373057" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -929,7 +904,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021299" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.4978701" weight="0.0" />
+      <window_info anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.4978701" visible="true" weight="0.32953367" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1250,34 +1225,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Traits/AddsEntryValuesFromRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Controllers/EntryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="97" column="37" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/EntryContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/Entry.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1488,16 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Processor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
-          <folding>
-            <element signature="e#55#97#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/src/FormModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1512,37 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="9" selection-start-line="17" selection-start-column="35" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessCallback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#55#97#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="259" column="26" lean-forward="true" selection-start-line="259" selection-start-column="26" selection-end-line="259" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1570,6 +1476,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="9" selection-start-line="17" selection-start-column="35" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/razzle.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1577,27 +1504,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessCallback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+        <state relative-caret-position="567">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
-            <element signature="e#61#102#0#PHP" expanded="true" />
+            <element signature="e#55#97#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/ProvidesProcessors.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="390">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorCollection.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorMetaTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        <state relative-caret-position="735">
+          <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#55#97#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/ProcessorMeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesIdGeneric.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="21" selection-start-line="20" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="172" column="13" lean-forward="true" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <folding>
+            <element signature="e#61#102#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
