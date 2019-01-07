@@ -85,6 +85,7 @@
         "test:packages-data": "cd php-packages/data-source && composer test ",
         "test:packages-db": "cd php-packages/caldera-db && composer test ",
         "test:integration-forms": "cd php-packages/forms && composer test:integration",
+        "test:integration-core": "cd php-packages/core && composer test:integration",
         "fixes:packages": "bash ./scripts/packages-fixes.sh",
         "test:packages": "bash scripts/packages-tests.sh",
         "analysis": "bash scripts/packages-analysis.sh",
