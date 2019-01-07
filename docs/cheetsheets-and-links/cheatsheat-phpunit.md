@@ -19,7 +19,7 @@ See:
 * https://symfony.com/doc/current/testing/bootstrap.html
 
 
-### Seperate Unit and Integration Tests
+### Separate Unit and Integration Tests
 When seperating tests into unit and integration, defined the test suites in the xml config file:
 
 ```xml
@@ -142,5 +142,25 @@ class SomethingTest extends \Mockery\Adapter\Phpunit\MockeryTestCase
 }
 ``` 
 
+### Mocking HTTP With Guzzle
+
+* SEE - http://docs.guzzlephp.org/en/stable/testing.html
+
+```php
+    //Create Mock Responses
+    $mockResponse1 = new Response(200, ['X-HELLO' => 'ROY']);
+    $mock = new MockHandler([
+        $mockResponse1,
+        //If testing multiple requests, add more responses here
+    ]);
+    $handler = HandlerStack::create($mock);
+    
+    //Create Guzzle client with the mock response stack.
+    $client = new Client(['handler' => $handler]);
+    
+    //Use this client with CalderaHttp
+    $http = new CalderaHttp($this->core(), $this->serviceContainer());
+    $http->setClient($client);
+```
 ## Expect Expectation
 
