@@ -1,3 +1,38 @@
+We use phpunit to run our php unit tests and integration tests and sometimes for acceptance tests.
+
+## phpunit TL;DR
+
+1. Call function.
+2. Assert that the result of function is what you expected.
+
+```php
+    use PHPUnit\Framework\TestCase;
+    
+    class SomethingTest extends TestCase
+    {
+    
+    	/**
+    	 * @covers \calderawp\caldera\PackageName\Something::hiRoy()
+    	 */
+    	public function testHiRoy()
+    	{
+    		//Did it return a string?
+    		$this->assertIsString((new Something())->hiRoy() );
+    
+    		//Did it return the right string?
+    		$this->assertEquals('Hi Roy', (new Something())->hiRoy() );
+    
+    	}
+    }
+    
+```
+## Useful Links
+* https://phpunit.de/
+* https://deliciousbrains.com/unit-testing-ajax-api-requests-wordpress-plugins/
+* https://torquemag.io/2017/07/practical-guide-unit-testing-code/
+* https://pippinsplugins.com/unit-tests-wordpress-plugins-introduction/
+* https://torquemag.io/2017/01/testing-api-endpoints/
+* https://torquemag.io/2018/04/advanced-oop-wordpress-part-3-unit-testing-wordpress-rest-api-plugins/
 
 
 ## Setup
@@ -162,5 +197,21 @@ class SomethingTest extends \Mockery\Adapter\Phpunit\MockeryTestCase
     $http = new CalderaHttp($this->core(), $this->serviceContainer());
     $http->setClient($client);
 ```
+
 ## Expect Expectation
+
+* https://stackoverflow.com/a/5683605/1469799
+
+If a test's purpose is to ensure that an exception is thrown, don't use try/catch. Instead tell phpunit was expectation to expect. This test fails if an `InvalidArgumentException` exception is NOT thrown.
+
+```php
+    public function testException()
+    {
+        //What kind of exception should be thrown
+        $this->expectException(InvalidArgumentException::class);
+        functionThatThrowsException($somethingInvalid);
+    }
+
+
+```
 

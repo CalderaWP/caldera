@@ -1,7 +1,20 @@
 # Caldera 
+
+This repository is the home of the Caldera framework. The Caldera framework is one standard set of tools that we -- CalderWP -- use for developing our WordPress plugins and WordPress-powered applications. It is not [Caldera Forms](https://calderaforms.com). It is the spirtual child of Caldera Forms that is being used to build the next version of Caldera Forms, Caldera Forms Pro and other Caldera products.
 This is a monorepo. Code is organized into packages that will be installable separately via npm or Composer.
 
+## Documentation
+A proper documentation site with generated code reference will be created soon. This part of the documentation will be generated from phpdoc blocks and jsdocs blocks that exist in the code and you can read now.
 
+In addition, the markdown files in `/docs` and all of the README.md files in the codebase -- each package has one, some directories of the packages have one -- will be used in the documentation site. For now, you can read them on Github or locally. 
+
+The `docs` directory contains mainly cheat sheets about testing and React so I didn't have to keep looking for things. If you find a bit of code you're always cutting and pasting, please put it there for others/ you in the future.
+
+### The First Person
+The documentation often is in the first person. "I" is Josh.
+
+### The docs may be wrong.
+Sorry. If the docs are wrong, it could be a bug, open an issue please. It could be that I documented how it will work before making it work. Slack me if confused.
 
 ## Install
 
@@ -50,7 +63,8 @@ Each package SHOULD have these commands:
 * `composer fixes`
     - This should run all lints/sniffs/ fixes
 
-A package MAY have these commands
+A package MAY have these commands:
+
 * Run unit tests
     - `composer test:unit`
 
@@ -111,19 +125,14 @@ Snapshot tests use [spatie/phpunit-snapshot-assertions](https://github.com/spati
 * From root directory `composer snapshot:accept` will accept a change to a snapshot test that is currently failing.
 
 ### WordPress
-In general, most development should not require WordPress. 
-
-A local WordPress environment with xdebug, mailhog, phpmyadmin, etc is included, using Lando.
-
-* Install Lando
-    - https://docs.devwithlando.io/installation/installing.html
-* Start server
-    - `lando start`
-* Go to [https://caldera.lndo.site](https://caldera.lndo.site) and dismiss the HTTPS warning.
+In general, most development should not require WordPress. A local WordPress environment with xdebug, mailhog, phpmyadmin, etc is included, using Lando.
 
 WordPress-specific code should be placed in `/mu-plugins`. Plugins with composer.json files in the `/mu-plugins/plugins` folder are merged into the monorepo.
 
-Run WordPress' tests `composer test:wordpress`
+* Run WordPress' tests 
+    - `composer test:wordpress`
+    
+See [local WordPress development docs for install instructions](./docs/WordPressLocalDev.md)
 
 #### See:
 * https://docs.devwithlando.io/tutorials/wordpress.html
@@ -145,10 +154,10 @@ Approach to implimenting CRA + shared component libraries came from [this post](
     
 ### Managing Dependencies
 
-* Add depenendency
+* Add dependency
     - `yarn lerna add classnames`  
     
-* Remove Depenendency
+* Remove Dependency
     - `yarn lerna exec -- yarn remove fetch-mock`
 #### See
 * https://medium.com/@jsilvax/a-workflow-guide-for-lerna-with-yarn-workspaces-60f97481149d
@@ -162,15 +171,10 @@ Components should be developed in `/js-packages/components`. Storybooks is provi
  * Test components
      - `yarn test:components`   
 ### React App + With SSR - Port 3000
-React app for decoupled, server-side rendered WordPress front-end that we can reuse in WordPress.
+React app for decoupled, server-side rendered WordPress front-end that we can reuse in WordPress. The app was scaffold with [Razzle](https://github.com/jaredpalmer/razzle) and uses After.js and react-dom-router for routing.
 
 #### Location 
 `js-packages/app`
-
-#### Uses
-* Razzle
-* After.js
-* React
 
 #### Using
 
@@ -179,9 +183,12 @@ React app for decoupled, server-side rendered WordPress front-end that we can re
 * Test app
     - `yarn test:app`
 
-    
+   
 ###  Express Server - Port 5000
+This server is used for two purposes:
 
+* Fake APIs to run tests against.
+* API endpoints when we want to use Node instead of PHP.
 
 #### Location 
 `js-packages/server`
@@ -204,8 +211,6 @@ Before Running Tests:
     - `bash start.sh`
 Run Tests: 
     - `yarn test:acceptence`
-
-
     
 ### Add a package
 * Copy `boilerplate/js-package` to `js-packages` and rename directory for package name.
@@ -237,3 +242,7 @@ https://www.nearform.com/blog/sharing-react-components-with-lerna/
 https://medium.com/@luisvieira_gmr/building-large-scale-react-applications-in-a-monorepo-91cd4637c131
 https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875
 https://www.robinwieruch.de/visual-regression-testing-react-storybook/
+
+
+## License, Copyright, etc.
+Copyright 2018+ CalderaWP LLC and licensed under the terms of the GNU GPL license. Please share with your neighbor.

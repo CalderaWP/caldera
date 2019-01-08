@@ -1,44 +1,24 @@
+# How To Create A Caldera (Forms) Processor
+This document describes how to create a submission processor that works with the Caldera framework and can be used in Caldera Forms 1.8.1+. This is mainly a list of steps, the documentation on each step can be found on other pages in different places.
 
 
-## HTTP Requests To 3rd-Party APIs (If Needed)
+## Steps To Create A Processor
 
-### Testing CalderaHttp Request Objects
+See the `calderawp/forms` README and the readme in [the processing namespace](../../php-packages/forms/src/Processing/README.md)
+* Define a processor type
+* Add processor callback(s)
+* Unit test to prove that the callbacks do what they are intended to do, given input.
+* Add processor type to container.
 
-### Using CalderaHttp to create a Request Object
+* Create Endpoints and Routes For Settings
+Does your add-on need to get/set data on the server, for example saving API keys or requesting MailChimp lists? If so, add API endpoints using the `@calderawp/rest-api` package.
 
-### Testing Responses For HTTP Requests Dispatched By CalderaHttp::send()
+* Remote API requests?
+Will your processor make remote HTTP requests? If so, make sure to review the `calderawp/http` package docs which explain how to use that module to represent HTTP requests and responses and how to dispatch and test HTTP requests.
 
-### Dispatching HTTP Requests Via CalderaHttp::send()
+    - Use acceptance tests to figure out remote API and create mock request/ response objects for unit/ integration tests.
+    - Add unit and/or integration tests that show that your processor can create the right request objects and do the right things with a response object.
+    
 
-
-## Add REST API Endpoints For Settings (If Needed)
-
-### How To Test REST API Endpoints
-
-### How To Create REST API Endpoints
-
-### How To Register REST API Endpoints With The Application
-
-### How To Register REST API Endpoint With WordPress
-
-### Testing Endpoint Controllers
-
-### Creating Endpoint Controllers
-
-### How To Create The Processor
-
-### Test Processor Callbacks
-
-### Create Process Callbacks
-
-### Test Processor
-
-### Create Processor
-
-## User Interface
-
-### Form Processor
-
-### Global Settings
-
-## e2e/acceptence testing
+## Using In WordPress With Caldera Forms
+NOTE: These features require Caldera Forms 1.8.1, which has not been released yet.

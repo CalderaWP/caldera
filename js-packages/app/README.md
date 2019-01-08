@@ -1,21 +1,24 @@
-# Razzle x After.js
+# Caldera Front-end App
+This app creates a decoupled front-end for Caldera sites.
 
-## How to use
+## Usage
 
-Download the example [or clone the whole project](https://github.com/jaredpalmer/razzle.git):
+### Install
 
-```bash
-curl https://codeload.github.com/jaredpalmer/razzle/tar.gz/master | tar -xz --strip=2 razzle-master/examples/with-afterjs
-cd with-afterjs
-```
+* git clone
+    - `@todo`
+* Install
+    - `yarn`
 
-Install it and run:
+### Start and Test
+* Start development server:
+    - `yarn start`
+* Start test watcher
+    - `yarn test`
+    
 
-```bash
-yarn install
-yarn start
-```
+## Notes
+This was created using [Razzle](https://github.com/jaredpalmer/razzle), specifically the [after.js](https://github.com/jaredpalmer/razzle/tree/master/examples/with-afterjs) example.
 
-## Idea behind the example
-
-This is a basic, bare-bones example of how to use After.js and Razzle.
+### Proxies
+In development, this app proxies requests to `wp-json` to the WordPress server and requests to `caldera-api` to the Express server. Therefore this app can not yet be used outside of our development environment.
