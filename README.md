@@ -1,6 +1,6 @@
 # Caldera 
 
-This repository is the home of the Caldera framework. The Caldera framework is one standard set of tools that we -- CalderWP -- use for developing our WordPress plugins and WordPress-powered applications. It is not [Caldera Forms](https://calderaforms.com). It is the spirtual child of Caldera Forms that is being used to build the next version of Caldera Forms, Caldera Forms Pro and other Caldera products.
+This repository is the Caldera framework. The Caldera framework is one standard set of tools that we -- CalderWP -- use for developing our WordPress plugins and WordPress-powered applications. It is not [Caldera Forms](https://calderaforms.com), it is the framework we are using to build the next version of Caldera Forms, Caldera Forms Pro and other Caldera products.
 This is a monorepo. Code is organized into packages that will be installable separately via npm or Composer.
 
 ## Documentation
@@ -21,7 +21,7 @@ Sorry. If the docs are wrong, it could be a bug, open an issue please. It could 
 ### Short Version
 * Install global dependencies
 * git clone
-    - ``
+    - `git clone git@github.com:CalderaWP/caldera.git`
 * Install and Start servers
     - `bash start.sh`
 * Run every test

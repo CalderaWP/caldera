@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/php-packages/forms/tests-unit/FormModelTest.php" line="185" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Traits/CreatesWordPressEndpoints.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Traits/CreatesWordPressEndpoints.php" afterDir="false" />
-    </list>
+    <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +148,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Traits/CreatesWordPressEndpoints.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -159,10 +157,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/Unit/RestApiTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="180">
               <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
             </state>
           </provider>
@@ -796,17 +794,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ProcessorTypeTest">
+  <component name="RunManager" selected="PHPUnit.RestApiTest">
     <configuration name="ApiRequestPreTest.testProcess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="calderawp\caldera\Forms\Tests\Integration\ApiRequestPreTest" file="$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php" method="testProcess" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ApiRequestTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="calderawp\caldera\Forms\Tests\Processing\Types\ApiRequestTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ProcessorConfigTest.testArrayAccess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorConfigTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorConfigTest.php" method="testArrayAccess" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ProcessorTypeTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -817,20 +811,24 @@
       <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorTypeTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTypeTest.php" method="testGetCallbacks" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="RestApiTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\WordPressPlugin\Tests\Unit\RestApiTest" file="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/Unit/RestApiTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="PHPUnit.ApiRequestPreTest.testProcess" />
-      <item itemvalue="PHPUnit.ProcessorConfigTest.testArrayAccess" />
       <item itemvalue="PHPUnit.ApiRequestTest" />
       <item itemvalue="PHPUnit.ProcessorTypeTest.testGetCallbacks" />
       <item itemvalue="PHPUnit.ProcessorTypeTest" />
+      <item itemvalue="PHPUnit.RestApiTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.RestApiTest" />
         <item itemvalue="PHPUnit.ProcessorTypeTest" />
         <item itemvalue="PHPUnit.ProcessorTypeTest.testGetCallbacks" />
         <item itemvalue="PHPUnit.ApiRequestPreTest.testProcess" />
         <item itemvalue="PHPUnit.ApiRequestTest" />
-        <item itemvalue="PHPUnit.ProcessorConfigTest.testArrayAccess" />
       </list>
     </recent_temporary>
   </component>
@@ -859,14 +857,11 @@
       <workItem from="1546722769458" duration="5606000" />
       <workItem from="1546862977459" duration="5007000" />
       <workItem from="1546884751353" duration="2661000" />
-      <workItem from="1546897013634" duration="31368000" />
+      <workItem from="1546897013634" duration="31731000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApiRequestPreTest_testFormProcessesTheProcessor - 2019.01.07 at 19h 21m 15s.xml">
-      <configuration name="ApiRequestPreTest.testFormProcessesTheProcessor" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="ApiRequestPreTest_testFormProcessesTheProcessor - 2019.01.07 at 19h 21m 42s.xml">
       <configuration name="ApiRequestPreTest.testFormProcessesTheProcessor" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -894,9 +889,12 @@
     <history-entry file="ProcessorTypeTest - 2019.01.08 at 12h 56m 52s.xml">
       <configuration name="ProcessorTypeTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="RestApiTest - 2019.01.08 at 18h 23m 22s.xml">
+      <configuration name="RestApiTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398566000" />
+    <option name="totallyTimeSpent" value="398929000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -911,13 +909,13 @@
     <frame x="0" y="143" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83524024" visible="true" weight="0.20660277" />
-      <window_info id="Structure" order="1" sideWeight="0.16475973" side_tool="true" visible="true" weight="0.20660277" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.88082904" visible="true" weight="0.20660277" />
+      <window_info id="Structure" order="1" sideWeight="0.119170986" side_tool="true" visible="true" weight="0.20660277" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.26369426" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.32953367" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.4373057" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -927,7 +925,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.573057" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021299" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.4978701" visible="true" weight="0.54715025" />
+      <window_info anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.4978701" weight="0.2476684" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1597,13 +1595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/Unit/RestApiTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Form/GetForms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1629,6 +1620,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/tests/Unit/RestApiTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
         </state>
       </provider>
     </entry>
