@@ -6,7 +6,7 @@ namespace calderawp\caldera\WordPressPlugin\Traits;
 use calderawp\caldera\restApi\Contracts\RouteContract as Route;
 use calderawp\caldera\restApi\Request;
 
-use calderawp\interop\Contracts\Rest\Endpoint;
+use calderawp\interop\Contracts\Rest\Endpoint as Endpoint;
 
 trait CreatesWordPressEndpoints
 {
