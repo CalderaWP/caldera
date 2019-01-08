@@ -1,28 +1,29 @@
-# PHP Boilerplate
+# Caldera Events
+A WordPress Plugins API (hooks)-like event dispatcher.
 
-A boilerplate for new composer based PHP projects.
+## Usage
 
-## Getting started
+### Install
 
-```bash
-# With composer
-$ composer create-project kreait/php-boilerplate new-project
+### Examples
 
-# With git
-$ git clone git@github.com:kreait/php-boilerplate.git new-project && cd $_ && rm -rf .git && git init
-```
+### Adding A Filter (Subscribe)
 
-### Update `composer.json`
+### Applying A Filter (Dispatch)
 
-Replace the Namespaces in the `autoload` and `autoload-dev` sections with your project's namespaces
-and run `composer dump-autoload`.
+### Adding An Action (Subscribe)
+Not yet implemented.
 
-### (Optional) Update `.gitattributes`
+### Doing An Action (Dispatch)
+Not yet implemented.
 
-Remove the comments in `.gitattributes` so that unneeded files for your package won't get included in your releases.
-
-### (Optional) Add `composer.lock` to the `.gitignore` file
-
-If you're creating an application instead of a library, it is considered good practice to commit the `composer.lock` file together with the rest of the code.
-
-### Start coding! :smile:
+## Testing
+* Run unit tests
+    - `composer test:unit`
+* Run integration tests
+    - `composer test:integration`
+* Run acceptance tests
+    - `composer test:acceptance`
+    
+## License, Copyright, etc.
+Copyright 2018+ CalderaWP LLC and licensed under the terms of the GNU GPL license. Please share with your neighbor.
