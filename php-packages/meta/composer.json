@@ -1,27 +1,27 @@
 {
-  "name": "calderawp/meta",
-  "version": "1.0.3",
-  "description": "Metapackage for dependencies of main package",
-  "type": "metapackage",
-  "require": {
-    "johnpbloch/wordpress": ">=5.0",
-    "vlucas/phpdotenv": "^2.2"
-  },
-  "repositories":[
-    {
-      "type":"composer",
-      "url":"https://wpackagist.org"
+    "name": "calderawp/meta",
+    "version": "1.0.3",
+    "description": "Metapackage for dependencies of main package",
+    "type": "metapackage",
+    "require": {
+        "johnpbloch/wordpress": ">=5.0",
+        "vlucas/phpdotenv": "^2.2"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wordpress",
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
     }
-  ],
-  "extra": {
-    "wordpress-install-dir": "wordpress",
-    "installer-paths": {
-      "wp-content/plugins/{$name}/": [
-        "type:wordpress-plugin"
-      ],
-      "wp-content/themes/{$name}/": [
-        "type:wordpress-theme"
-      ]
-    }
-  }
 }

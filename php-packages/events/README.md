@@ -1,6 +1,13 @@
 # Caldera Events
 A WordPress Plugins API (hooks)-like event dispatcher.
 
+## 👀🌋 This Is A Module Of The [Caldera Framework](https://github.com/CalderaWP/caldera)
+* 🌋 Find Caldera Forms Here:
+    - [Caldera Forms on Github](http://github.com/calderawp/caldera-forms/)
+    - [CalderaForms.com](http://calderaforms.com)
+    
+* 🌋 [Issues](https://github.com/CalderaWP/caldera/issues) and [pull requests](https://github.com/CalderaWP/caldera/pulls), should be submitted to the [main Caldera repo](https://github.com/CalderaWP/caldera/pulls).
+
 ## Usage
 
 ### Install

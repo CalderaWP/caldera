@@ -1,5 +1,5 @@
 # How To Create A Caldera (Forms) Processor
-This document describes how to create a submission processor that works with the Caldera framework and can be used in Caldera Forms 1.8.1+. This is mainly a list of steps, the documentation on each step can be found on other pages in different places.
+This document describes how to create a submission processor that works with the [Caldera Framework](https://github.com/CalderaWP/caldera) and can be used in Caldera Forms 1.8.1+. This is mainly a list of steps, the documentation on each step can be found on other pages in different places.
 
 
 ## Steps To Create A Processor

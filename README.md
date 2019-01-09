@@ -1,6 +1,6 @@
 # Caldera 
 
-This repository is the Caldera framework. The Caldera framework is one standard set of tools that we -- CalderWP -- use for developing our WordPress plugins and WordPress-powered applications. It is not [Caldera Forms](https://calderaforms.com), it is the framework we are using to build the next version of Caldera Forms, Caldera Forms Pro and other Caldera products.
+This repository is the [Caldera Framework](https://github.com/CalderaWP/caldera). the [Caldera Framework](https://github.com/CalderaWP/caldera) is one standard set of tools that we -- CalderWP -- use for developing our WordPress plugins and WordPress-powered applications. It is not [Caldera Forms](https://calderaforms.com), it is the framework we are using to build the next version of Caldera Forms, Caldera Forms Pro and other Caldera products.
 This is a monorepo. Code is organized into packages that will be installable separately via npm or Composer.
 
 ## Documentation
@@ -9,6 +9,8 @@ A proper documentation site with generated code reference will be created soon. 
 In addition, the markdown files in `/docs` and all of the README.md files in the codebase -- each package has one, some directories of the packages have one -- will be used in the documentation site. For now, you can read them on Github or locally. 
 
 The `docs` directory contains mainly cheat sheets about testing and React so I didn't have to keep looking for things. If you find a bit of code you're always cutting and pasting, please put it there for others/ you in the future.
+
+The readme for the `calderawp/core` package has a good overview of what the different PHP packages do.
 
 ### The First Person
 The documentation often is in the first person. "I" is Josh.
@@ -130,6 +132,17 @@ PHP Snapshot tests should go in /tests/Integration and extend `calderawp\caldera
 Snapshot tests use [spatie/phpunit-snapshot-assertions](https://github.com/spatie/phpunit-snapshot-assertions)
 
 * From root directory `composer snapshot:accept` will accept a change to a snapshot test that is currently failing.
+
+### Releasing, Github and Packagist.
+The monorepo builder allows us to split each package to its own Github repo. This allows the packages to be installed via Composer.
+
+* Push updates in core repo to the split packages
+    -  `composer split`
+* Release update
+    - `composer release [version]`
+    - The provided version will be tagged   
+* Pushing to packagist:
+    - @todo
 
 ### WordPress
 In general, most development should not require WordPress. A local WordPress environment with xdebug, mailhog, phpmyadmin, etc is included, using Lando.

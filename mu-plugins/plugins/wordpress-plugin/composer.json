@@ -1,41 +1,41 @@
 {
-  "name": "calderawp/wordpress-plugin",
-  "type" : "wordpress-plugin",
-  "description": "A boilerplate for new composer based PHP projects.",
-  "license": "GPL-2.0",
-  "require": {
-    "php": "^7.2",
-    "psr/container": "^1.0"
-  },
-  "require-dev": {
-    "php": "^7.2",
-    "mockery/mockery": "^1.2",
-    "phpunit/phpunit": "^7.3",
-    "squizlabs/php_codesniffer": "3.*"
-  },
-  "config": {
-    "platform": {
-      "php": "7.2"
+    "name": "calderawp/wordpress-plugin",
+    "type": "wordpress-plugin",
+    "description": "A boilerplate for new composer based PHP projects.",
+    "license": "GPL-2.0",
+    "require": {
+        "php": "^7.2",
+        "psr/container": "^1.0"
     },
-    "sort-packages": true
-  },
-  "autoload": {
-    "psr-4": {
-      "calderawp\\caldera\\WordPressPlugin\\": "src"
+    "require-dev": {
+        "php": "^7.2",
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^7.3",
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "calderawp\\caldera\\WordPressPlugin\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "calderawp\\caldera\\WordPressPlugin\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "composer test:unit",
+        "tests": "composer test:unit && composer test:acceptance",
+        "test:unit": "phpunit --testsuite=Unit",
+        "test:acceptance": "phpunit --testsuite=Acceptance",
+        "tests-now": "phpunit tests --group=now",
+        "sniffs": "phpcs src/ && phpcs src/",
+        "fixes": "phpcbf src/ && phpcbf tests/"
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "calderawp\\caldera\\WordPressPlugin\\Tests\\": "tests"
-    }
-  },
-  "scripts": {
-    "test": "composer test:unit",
-    "tests": "composer test:unit && composer test:acceptance",
-    "test:unit": "phpunit --testsuite=Unit",
-    "test:acceptance": "phpunit --testsuite=Acceptance",
-    "tests-now": "phpunit tests --group=now",
-    "sniffs": "phpcs src/ && phpcs src/",
-    "fixes": "phpcbf src/ && phpcbf tests/"
-  }
 }

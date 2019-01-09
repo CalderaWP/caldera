@@ -9,6 +9,11 @@ parameters:
     directories_to_repositories:
         php-packages/rest-api: 'git@github.com:CalderaWP/rest-api.git'
         php-packages/caldera-db: 'git@github.com:CalderaWP/caldera-db.git'
+        php-packages/core: 'git@github.com:CalderaWP/core.git'
+        php-packages/data-source: 'git@github.com:CalderaWP/data-source.git'
+        php-packages/forms: 'git@github.com:CalderaWP/forms.git'
+        php-packages/http: 'git@github.com:CalderaWP/http.git'
+        php-packages/interop: 'git@github.com:CalderaWP/caldera-interop.git'
     package_directories:
     - 'php-packages'
     - 'mu-plugins/plugins'
