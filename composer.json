@@ -69,6 +69,7 @@
     "scripts": {
         "merge": "vendor/bin/monorepo-builder merge && composer update",
         "release": "vendor/bin/monorepo-builder release 0.0.2-alpha.1 --dry-run  ",
+        "split": "vendor/bin/monorepo-builder split ",
         "test": "composer fixes && composer test:packages && composer test:integration && composer test:acceptance",
         "tests": "composer test",
         "php:v": "php -v",
