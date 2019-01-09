@@ -7,8 +7,7 @@ parameters:
 
     # for "split" command
     directories_to_repositories:
-        packages/first-package: 'git@github.com:your-monorepo/first-package.git'
-        packages/second-package: 'git@github.com:your-monorepo/second-package.git'
+        php-packages/rest-api: 'git@github.com:CalderaWP/rest-api.git'
     package_directories:
     - 'php-packages'
     - 'mu-plugins/plugins'
@@ -22,3 +21,5 @@ parameters:
         - 'repositories'
         # Josh added values
         #  - 'extra'
+    services:
+        calderawp\caldera\Core\Release\PackageWorker: ~

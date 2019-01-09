@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49ea539006b74d31e8d2d3c77417b001",
+    "content-hash": "935383b06a76a5c97ba3dbfc7feeb50b",
     "packages": [
         {
             "name": "calderawp/caldera-containers",
@@ -1619,6 +1619,68 @@
                 "object graph"
             ],
             "time": "2018-06-11T23:09:50+00:00"
+        },
+        {
+            "name": "nette/finder",
+            "version": "v2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/finder.git",
+                "reference": "ee951a656cb8ac622e5dd33474a01fd2470505a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/finder/zipball/ee951a656cb8ac622e5dd33474a01fd2470505a0",
+                "reference": "ee951a656cb8ac622e5dd33474a01fd2470505a0",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "~2.4",
+                "php": ">=5.6.0"
+            },
+            "conflict": {
+                "nette/nette": "<2.2"
+            },
+            "require-dev": {
+                "nette/tester": "~2.0",
+                "tracy/tracy": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "filesystem",
+                "glob",
+                "iterator",
+                "nette"
+            ],
+            "time": "2018-06-28T11:49:23+00:00"
         },
         {
             "name": "nette/utils",
@@ -4333,31 +4395,31 @@
         },
         {
             "name": "symplify/monorepo-builder",
-            "version": "v4.8.0",
+            "version": "v5.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Symplify/MonorepoBuilder.git",
-                "reference": "3fc870c85a60f7d1f7e916a65a0f9aee77604890"
+                "reference": "6fb87924ecbef10e45346c3981fec1392fdca281"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/MonorepoBuilder/zipball/3fc870c85a60f7d1f7e916a65a0f9aee77604890",
-                "reference": "3fc870c85a60f7d1f7e916a65a0f9aee77604890",
+                "url": "https://api.github.com/repos/Symplify/MonorepoBuilder/zipball/6fb87924ecbef10e45346c3981fec1392fdca281",
+                "reference": "6fb87924ecbef10e45346c3981fec1392fdca281",
                 "shasum": ""
             },
             "require": {
-                "composer/composer": "^1.6",
+                "composer/composer": "^1.8",
                 "nette/utils": "^2.5",
                 "phar-io/version": "^2.0",
                 "php": "^7.1",
-                "symfony/console": "^3.4|^4.0",
-                "symfony/dependency-injection": "^3.4|^4.0",
-                "symfony/finder": "^3.4|^4.0",
-                "symplify/package-builder": "^4.8",
-                "thecodingmachine/safe": "^0.1.3"
+                "symfony/console": "^3.4|^4.1",
+                "symfony/dependency-injection": "^3.4|^4.1",
+                "symfony/finder": "^3.4|^4.1",
+                "symplify/package-builder": "^5.3.5",
+                "thecodingmachine/safe": "^0.1.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.3"
+                "phpunit/phpunit": "^7.5"
             },
             "bin": [
                 "bin/monorepo-builder"
@@ -4365,13 +4427,14 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.8-dev"
+                    "dev-master": "5.4-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Symplify\\MonorepoBuilder\\": "src",
                     "Symplify\\MonorepoBuilder\\Split\\": "packages/Split/src",
+                    "Symplify\\MonorepoBuilder\\Release\\": "packages/Release/src",
                     "Symplify\\MonorepoBuilder\\Init\\": "packages/Init/src"
                 }
             },
@@ -4380,41 +4443,42 @@
                 "MIT"
             ],
             "description": "Not only Composer tools to build a Monorepo.",
-            "time": "2018-09-15T14:03:46+00:00"
+            "time": "2019-01-08T16:13:25+00:00"
         },
         {
             "name": "symplify/package-builder",
-            "version": "v4.8.0",
+            "version": "v5.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Symplify/PackageBuilder.git",
-                "reference": "b725936b7046852a9ab15e408ee4cd84c6be2faa"
+                "reference": "ec4c7395813a958a9096ad263f76a7bba489c2ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/PackageBuilder/zipball/b725936b7046852a9ab15e408ee4cd84c6be2faa",
-                "reference": "b725936b7046852a9ab15e408ee4cd84c6be2faa",
+                "url": "https://api.github.com/repos/Symplify/PackageBuilder/zipball/ec4c7395813a958a9096ad263f76a7bba489c2ff",
+                "reference": "ec4c7395813a958a9096ad263f76a7bba489c2ff",
                 "shasum": ""
             },
             "require": {
+                "nette/finder": "^2.4",
                 "nette/utils": "^2.5",
                 "php": "^7.1",
-                "symfony/config": "^3.4|^4.0",
-                "symfony/console": "^3.4|^4.0",
-                "symfony/debug": "^3.4|^4.0",
-                "symfony/dependency-injection": "^3.4|^4.0",
-                "symfony/finder": "^3.4|^4.0",
-                "symfony/http-kernel": "^3.4|^4.0",
-                "symfony/yaml": "^3.4|^4.0",
-                "thecodingmachine/safe": "^0.1.3"
+                "symfony/config": "^3.4|^4.1",
+                "symfony/console": "^3.4|^4.1",
+                "symfony/debug": "^3.4|^4.1",
+                "symfony/dependency-injection": "^3.4|^4.1",
+                "symfony/finder": "^3.4|^4.1",
+                "symfony/http-kernel": "^3.4|^4.1",
+                "symfony/yaml": "^3.4|^4.1",
+                "thecodingmachine/safe": "^0.1.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.3"
+                "phpunit/phpunit": "^7.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.8-dev"
+                    "dev-master": "5.4-dev"
                 }
             },
             "autoload": {
@@ -4427,7 +4491,7 @@
                 "MIT"
             ],
             "description": "Dependency Injection, Console and Kernel toolkit for Symplify packages.",
-            "time": "2018-09-15T13:22:18+00:00"
+            "time": "2019-01-06T17:38:17+00:00"
         },
         {
             "name": "thecodingmachine/safe",
