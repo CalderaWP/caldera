@@ -139,7 +139,7 @@ See [local WordPress development docs for install instructions](./docs/WordPress
 * https://joshpress.net/create-a-wordpres-site-with-lando/
 
 ## JavaScript
-Monorepo managment is handled by Lerna. 
+Monorepo management is handled by Lerna. 
 
 __Do NOT use npm, use Yarn.__
 
