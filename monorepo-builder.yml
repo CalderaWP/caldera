@@ -27,5 +27,3 @@ parameters:
         - 'repositories'
         # Josh added values
         #  - 'extra'
-    services:
-        \calderawp\caldera\Core\Release\PackageWorker: ~

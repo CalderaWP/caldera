@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monorepo-builder.yml" beforeDir="false" afterPath="$PROJECT_DIR$/monorepo-builder.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
           <entry key="json" value="164" />
           <entry key="lock" value="1" />
           <entry key="log" value="3" />
-          <entry key="md" value="178" />
+          <entry key="md" value="183" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="2" />
@@ -80,7 +80,7 @@
           <entry key="JSON" value="170" />
           <entry key="JavaScript" value="826" />
           <entry key="Jest Snapshot" value="43" />
-          <entry key="Markdown" value="178" />
+          <entry key="Markdown" value="183" />
           <entry key="PHP" value="2022" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="SVG" value="3" />
@@ -166,11 +166,41 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/monorepo-builder.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+                <state relative-caret-position="361">
+                  <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/events/CHANGELOG.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor />
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/core/CHANGELOG.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor />
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/CHANGELOG.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor />
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -208,7 +238,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
@@ -218,53 +248,20 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/interop/README.md">
+            <entry file="file://$PROJECT_DIR$/php-packages/meta/CHANGELOG.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="555">
-                    <caret line="37" selection-start-line="37" selection-end-line="38" selection-end-column="115" />
-                  </first_editor>
+                  <first_editor />
                   <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/http/README.md">
+            <entry file="file://$PROJECT_DIR$/php-packages/interop/CHANGELOG.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="60">
-                    <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/http/phpunit.xml.dist">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/data-source/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="60">
-                    <caret line="4" selection-start-line="4" selection-end-line="10" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="315">
-                    <caret line="21" column="115" selection-start-line="21" selection-start-column="115" selection-end-line="21" selection-end-column="115" />
-                  </first_editor>
+                  <first_editor />
                   <second_editor />
                 </state>
               </provider>
@@ -417,7 +414,6 @@
         <option value="$PROJECT_DIR$/php-packages/core/Release/PackageWorker.php" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/README.md" />
-        <option value="$PROJECT_DIR$/monorepo-builder.yml" />
         <option value="$PROJECT_DIR$/php-packages/http/README.md" />
         <option value="$PROJECT_DIR$/php-packages/forms/README.md" />
         <option value="$PROJECT_DIR$/php-packages/events/README.md" />
@@ -428,6 +424,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/monorepo-builder.yml" />
       </list>
     </option>
   </component>
@@ -748,30 +745,6 @@
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
               <item name="interop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -927,7 +900,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="408779000" />
+    <option name="totallyTimeSpent" value="408856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -942,7 +915,7 @@
     <frame x="0" y="23" width="1815" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8487395" visible="true" weight="0.26903552" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8487395" visible="true" weight="0.26903552" />
       <window_info id="Structure" order="1" sideWeight="0.15126051" side_tool="true" visible="true" weight="0.26903552" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -958,7 +931,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.573057" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021299" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info active="true" anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.4978701" visible="true" weight="0.50673574" />
+      <window_info anchor="bottom" x="6" y="113" width="942" height="726" id="Terminal" order="13" sideWeight="0.4978701" visible="true" weight="0.50673574" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1320,9 +1293,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/Page.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1470,14 +1440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/meta/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/http/CHANGELOG.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1488,31 +1450,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/events/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/data-source/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/core/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/CHANGELOG.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -1662,13 +1600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monorepo-builder.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1700,6 +1631,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/meta/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/interop/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/events/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/core/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monorepo-builder.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
