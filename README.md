@@ -79,7 +79,14 @@ Do NOT add dependencies, autoloaders, or any other field that monorepo builder o
 * Change name of new directory name
 * Change the library name to `calderawp/<name>` where <name> is the same name as the directory.
 * Find and replace `packageName` in new directory replacing with new package's namespace;
-* From root directory, register new package by running `composer merge`
+* From root directory, register new package by running `composer merge`.
+
+When package is ready to be published:
+* create an empty Github repo.
+* In `monorepo-builder.yml`'s `directories_to_repositories` index, map directory to repository
+    - https://github.com/Symplify/MonorepoBuilder#5-split-directories-to-git-repositories
+* Publish on packagist.
+    - @TODO
 
 ### Testing
 Tests SHOULD be organized according to which of these questions they answer:
