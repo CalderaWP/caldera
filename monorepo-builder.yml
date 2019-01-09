@@ -7,6 +7,7 @@ parameters:
 
     # for "split" command
     directories_to_repositories:
+        php-packages/events: 'git@github.com:CalderaWP/events.git'
         php-packages/wordpress-framework: 'git@github.com:CalderaWP/wordpress-framework.git'
         php-packages/rest-api: 'git@github.com:CalderaWP/rest-api.git'
         php-packages/caldera-db: 'git@github.com:CalderaWP/caldera-db.git'
