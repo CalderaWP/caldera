@@ -6,10 +6,12 @@ import {ensureReady, After} from '@jaredpalmer/after';
 import './client.css';
 import routes from './routes';
 
+
+
 ensureReady(routes).then(data =>
 	hydrate(
 		<BrowserRouter>
-			<After data={data} routes={routes}/>
+			<After data={data} routes={routes} />
 		</BrowserRouter>,
 		document.getElementById('root')
 	)

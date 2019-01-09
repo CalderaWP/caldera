@@ -3,7 +3,7 @@ import { ContactForm } from '../forms/ContactForm';
 import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 
-import {FormEntryViewer} from "@calderawp/components";
+//import {FormEntryViewer} from "@calderawp/components";
 
 const ListOfForms = ( {forms} ) => (
 	<Fragment>

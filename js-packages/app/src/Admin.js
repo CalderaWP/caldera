@@ -1,9 +1,5 @@
 import {StandardPage} from './components/StandardPage';
-
-
-
 import React, {Component, Fragment} from 'react';
-import { NavLink } from 'react-router-dom';
 import AppBody from './components/AppBody';
 const fetch = require( 'isomorphic-fetch' );
 
