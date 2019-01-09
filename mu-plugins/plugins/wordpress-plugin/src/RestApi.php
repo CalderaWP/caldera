@@ -37,8 +37,12 @@ class RestApi
 	 */
 	public function __construct(CalderaWordPressPlugin $module, callable $registerFunction )
 	{
+
 		$this->registerFunction = $registerFunction;
 		$this->module = $module;
+
+
+
 
 	}
 
@@ -59,6 +63,64 @@ class RestApi
 			->getRestApi()
 			->getRoute(EntryRoute::class);
 		$this->registerRoute($route);
+
+		//Use the correct abstraction
+		register_rest_route($this->namespace, '/wordpress/style', [
+			'args' => [
+				'handle' => [
+					'type' => 'string'
+				]
+			],
+			'callback' => [$this,'serveStyle']
+		]);
+	}
+
+
+	/**
+	 * Respond to a request for a WordPress style
+	 *
+	 * @todo abstract this out and black box REST API/WP Styles
+	 *
+	 * @return \WP_REST_Response
+	 */
+	public function serveStyle( \WP_REST_Request $request ): \WP_REST_Response{
+		$wpStyles = wp_styles();
+		if( $wpStyles->query($request['handle'])  ){
+			return rest_ensure_response($this->prepareStyle($request['handle'],$wpStyles));
+		}
+
+		return new \WP_REST_Response( 'not found', 404 );
+
+
+	}
+
+	/**
+	 * @param $handle
+	 * @param \WP_Styles $wpStyles
+	 * @param array $dependencies
+	 *
+	 * @return \WP_REST_Response
+	 */
+	protected function prepareStyle(string $handle, \WP_Styles $wpStyles, array $dependencies = []) : \WP_REST_Response {
+		if( $wpStyles->query($handle)  ){
+			$style = $wpStyles->query($handle);
+			$dependencies = $style->deps;
+			if( ! empty( $dependencies)){
+				$_dependencies = [];
+				foreach ( $dependencies as $dependency ){
+					$_dependencies[$dependency] = $this->prepareStyle($dependency,$wpStyles);
+				}
+				$dependencies = $_dependencies;
+			}
+			ob_start();
+			$wpStyles->do_item($handle);
+			$tag = ob_get_clean();
+			return rest_ensure_response( [
+				'tag' => $tag,
+				'dependencies' => $dependencies
+			]);
+		};
+
 	}
 
 

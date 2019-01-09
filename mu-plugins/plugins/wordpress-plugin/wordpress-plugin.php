@@ -22,6 +22,7 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
 			$dataBase->getDataSources()
 		))->addHooks($module->getCore()->getEvents()->getHooks());
 	});
+
 	//include_once  __DIR__ . '/test.php';
 });
 
