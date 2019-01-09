@@ -11,6 +11,11 @@ A WordPress Plugins API (hooks)-like event dispatcher.
 ## Usage
 
 ### Install
+* Add to your package:
+    - `composer require calderawp/http`
+* Install for development:
+    - `git clone git@github.com:CalderaWP/http.git && composer install`
+
 
 ### Examples
 

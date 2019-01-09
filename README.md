@@ -138,11 +138,12 @@ The monorepo builder allows us to split each package to its own Github repo. Thi
 
 * Push updates in core repo to the split packages
     -  `composer split`
+    - Do this first or everything will fail.
 * Release update
     - `composer release [version]`
     - The provided version will be tagged   
 * Pushing to packagist:
-    - @todo
+    - Should be automatic.
 
 ### WordPress
 In general, most development should not require WordPress. A local WordPress environment with xdebug, mailhog, phpmyadmin, etc is included, using Lando.

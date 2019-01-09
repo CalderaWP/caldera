@@ -17,6 +17,8 @@ This is a composer meta package.
     
 * 🌋 [Issues](https://github.com/CalderaWP/caldera/issues) and [pull requests](https://github.com/CalderaWP/caldera/pulls), should be submitted to the [main Caldera repo](https://github.com/CalderaWP/caldera/pulls).
 
+## Install
+`composer require calderawp/wordpress-framework`
 
 ## License, Copyright, etc.
 Copyright 2018+ CalderaWP LLC and licensed under the terms of the GNU GPL license. Please share with your neighbor.
