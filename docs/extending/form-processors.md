@@ -12,9 +12,6 @@ First, familiarize yourself with the Caldera framework. It is a modular framewor
 * If your add-on plugin needs a to add a REST API enddoint, for example for settings, then you will need to use the [rest-api package](https://github.com/CalderaWP/caldera/blob/master/php-packages/rest-api/README.md). 
 * If your add-on plugin needs a to make HTTP requests to a remote API, you will need to use the [http package](https://github.com/CalderaWP/caldera/blob/master/php-packages/http/README.md). 
 
-
-
-
 ### 2. (optional) Create Endpoints and Routes For Settings
 Does your add-on need to get/set data on the server, for example saving API keys or requesting MailChimp lists? If so, add API endpoints using the `@calderawp/rest-api` package.
 
