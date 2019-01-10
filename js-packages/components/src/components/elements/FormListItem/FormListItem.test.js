@@ -47,7 +47,7 @@ describe('FormListItem', () => {
 		);
 		component.find( '.' + FormListItem.defaultProps.classNames[ 'view-entries'] + ' button').simulate( 'click' );
 		expect(onFormAction.mock.calls[0][0]).toBe(formId);
-		expect(onFormAction.mock.calls[0][1]).toBe('view');
+		expect(onFormAction.mock.calls[0][1]).toBe('view-entries');
 	});
 
 	test( 'clicking on preview', () => {
@@ -59,7 +59,7 @@ describe('FormListItem', () => {
 		expect(onFormAction.mock.calls[0][1]).toBe('preview');
 	});
 
-	test( 'clicking on settinss', () => {
+	test( 'clicking on settings', () => {
 		const component = mount(
 			<FormListItem form={form} onFormAction={onFormAction} />
 		);

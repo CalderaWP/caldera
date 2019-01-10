@@ -1,9 +1,9 @@
 # Name Of ComponentName
 What component does
 
-## Import With webpack
-
 ## Usage
+
+### Import With webpack
 `import {ComponentName}` from '@calderawp/packageName';`
 
 ### Example One

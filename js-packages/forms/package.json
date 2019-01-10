@@ -64,6 +64,7 @@
     "@storybook/addon-options": "^4.1.4",
     "@storybook/addons": "^4.1.4",
     "jest-fetch-mock": "^2.1.0",
+    "react-oembed-container": "^0.3.0",
     "react-transition-group": "^2.5.2",
     "uuid": "^3.3.2"
   }

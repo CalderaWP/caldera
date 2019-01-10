@@ -2,9 +2,7 @@
 
 exports[`FormListItem Matches snapshot 1`] = `
 <div>
-  <div>
-    Contact Form
-  </div>
+  <div />
   <div
     className="components-toolbar components-toolbar"
   >

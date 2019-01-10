@@ -23,9 +23,9 @@ describe( 'Form EntryViewer component', ()=> {
 		})
 	];
 
-	test('Views entries', () => {
+	test.skip('Views entries', () => {
 		const component = mount(
-			<EntryActions formId={'cf1'} actions={actions} entryId={7} />
+			<EntryActions formId={'cf1'} actions={actions} entryId={7} actionKey={'actionKeya'} />
 		);
 		expect(component.find('.test-action').length).toBe(1);
 	});
