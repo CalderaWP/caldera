@@ -34,7 +34,7 @@ See: https://calderaforms.com/doc/creating-caldera-forms-processors/
 
 #### For Caldera Forms 1.x and 2.x
 * [Creating a processor is documented here](https://github.com/CalderaWP/caldera/blob/master/docs/extending/form-processors.md)
-* This plugin adds a sub page to 
+* This plugin adds a sub page to Caldera Forms admin menu. The UI is a small React app.
 * This boilerplate should be used with Caldera Forms 1.8 or later.
     - Caldera Forms 1.8 is currently in development.
     - Use [the develop branch](https://github.com/CalderaWP/Caldera-Forms/tree/develop), also, use The Force Luke.
