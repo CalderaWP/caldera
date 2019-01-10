@@ -56,6 +56,8 @@ component.find( 'input' ).simulate( 'click' );
 ```
 
 ## Testing Change Events
+* https://jestjs.io/docs/en/mock-functions
+
 ```js
 import { shallow } from 'enzyme';
 

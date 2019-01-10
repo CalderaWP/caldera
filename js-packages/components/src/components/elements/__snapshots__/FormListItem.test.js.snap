@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormListItem Matches snapshot 1`] = `
+<div>
+  <div>
+    Contact Form
+  </div>
+  <div>
+    Actions
+  </div>
+</div>
+`;
