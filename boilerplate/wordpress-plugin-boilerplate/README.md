@@ -3,7 +3,7 @@
 ## Boilerplate Readme
 
 ### When To Use This Boilerplate?
-This boilerplate is good for WordPress plugins that use [the Caldera Framework]((https://github.com/CalderaWP/caldera/) and do not provide blocks.
+This boilerplate is good for WordPress plugins that use [the Caldera Framework](https://github.com/CalderaWP/caldera/) and do not provide blocks.
 
 This boilerplate provides:
 

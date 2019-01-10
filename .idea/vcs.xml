@@ -2,5 +2,39 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/caldera-containers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/caldera-db" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/caldera-interop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/data-source" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/events" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/forms" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/http" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/calderawp/rest-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/doctrine/instantiator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/guzzlehttp/psr7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/hamcrest/hamcrest-php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/inpsyde/wpsr7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/myclabs/deep-copy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/phar-io/manifest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/phpspec/prophecy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/phpunit/php-code-coverage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/phpunit/php-file-iterator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/phpunit/php-timer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/phpunit/php-token-stream" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/phpunit/phpunit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/pimple/pimple" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/psr/container" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/psr/http-message" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/code-unit-reverse-lookup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/comparator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/diff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/environment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/exporter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/object-enumerator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/object-reflector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/recursion-context" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/resource-operations" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/squizlabs/php_codesniffer" vcs="Git" />
   </component>
 </project>
