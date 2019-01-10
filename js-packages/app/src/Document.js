@@ -7,6 +7,20 @@ class Document extends React.Component {
 		return { assets, data, ...page };
 	}
 
+	componentDidMount(){
+		fetch( 'http://localhost:3000/wp-admin/load-styles.php?c=1&dir=ltr&load%5B%5D=dashicons,admin-bar,buttons,media-views,editor-buttons,wp-components,wp-nux,wp-editor,wp-block-library,wp-block-library-theme,wp&load%5B%5D=-edit-blocks,wp-edit-post,wp-format-library,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-&load%5B%5D=menus,wp-pointer,widgets,site-icon,l10n,wp-auth-check&ver=5.0.3')
+			.then(r => {
+				console.log(111);
+					const css = document.createElement('style');
+					css.id = 'wp-admin-styles';
+					css.type = 'text/css';
+					css.innerHtml = r;
+					document.getElementsByTagName('head')[0].appendChild(css);
+
+			}
+		);
+	}
+
 	render() {
 		const { helmet, assets, data } = this.props;
 		// get attributes from React Helmet

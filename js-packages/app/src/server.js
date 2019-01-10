@@ -47,6 +47,12 @@ server.use('/wp-json', proxy({
 	secure: false
 }));
 
+server.use('/wp-admin/load-styles.php', proxy({
+	target: 'https://caldera.lndo.site',
+	changeOrigin: true,
+	secure: false
+}));
+
 server.use('/caldera-api/v2', proxy({
 	target: 'http://localhost:5000',
 	changeOrigin: true,

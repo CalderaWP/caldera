@@ -97,11 +97,10 @@ class RestApi
 	/**
 	 * @param $handle
 	 * @param \WP_Styles $wpStyles
-	 * @param array $dependencies
 	 *
-	 * @return \WP_REST_Response
+	 * @return array
 	 */
-	protected function prepareStyle(string $handle, \WP_Styles $wpStyles, array $dependencies = []) : \WP_REST_Response {
+	protected function prepareStyle(string $handle, \WP_Styles $wpStyles) : array {
 		if( $wpStyles->query($handle)  ){
 			$style = $wpStyles->query($handle);
 			$dependencies = $style->deps;
@@ -115,10 +114,10 @@ class RestApi
 			ob_start();
 			$wpStyles->do_item($handle);
 			$tag = ob_get_clean();
-			return rest_ensure_response( [
+			return  [
 				'tag' => $tag,
 				'dependencies' => $dependencies
-			]);
+			];
 		};
 
 	}
