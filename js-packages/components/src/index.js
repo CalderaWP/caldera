@@ -14,7 +14,7 @@ export {
 } from './components/Messages/messageObjectFactory';
 export { FieldSet } from './components/fields/FieldSet/FieldSet';
 export { FieldWrapper } from './components/fields/FieldWrapper/FieldWrapper';
-
+export {RemotePost} from './components/elements/RemotePost/RemotePost';
 /**
  * Field class util functions
  */

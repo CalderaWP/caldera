@@ -35,4 +35,12 @@ export default [
 			Placeholder: () => <div>...LOADING...</div>, // this is optional, just returns null by default
 		}),
 	},
+	{
+		path: '/page',
+		exact: true,
+		component: asyncComponent({
+			loader: () => import('./Page'), // required
+			Placeholder: () => <div>...LOADING...</div>, // this is optional, just returns null by default
+		}),
+	},
 ];

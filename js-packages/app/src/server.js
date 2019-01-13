@@ -36,10 +36,6 @@ Object.values(routes).forEach(route =>{
 		.get(path, appPage);
 });
 
-server.use('/users', proxy({
-	target: 'http://jsonplaceholder.typicode.com',
-	changeOrigin: true
-}));
 
 server.use('/wp-json', proxy({
 	target: 'https://caldera.lndo.site',

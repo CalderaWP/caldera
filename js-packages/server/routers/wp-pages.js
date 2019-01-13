@@ -7,6 +7,9 @@ const cachePage = require( '../util/cachePage')
 
 
 module.exports = (url = 'https://localhost', router = new Router()) => {
+	/**
+	 * Get page one of pages
+	 */
 	router.get('/', async (req, res) => {
 		try {
 			const site = await getWpSite(url);
@@ -23,6 +26,9 @@ module.exports = (url = 'https://localhost', router = new Router()) => {
 		}
 	});
 
+	/**
+	 * Get a page by slug
+	 */
 	router.get('/:slug', async (req, res) => {
 		const cacheFileExists = require( '../util/cacheFileExists');
 		const {slug} = req.params;
@@ -32,7 +38,6 @@ module.exports = (url = 'https://localhost', router = new Router()) => {
 			const getCacheFile = require( '../util/getCacheFile' );
 			return res.status(200).json(getCacheFile(dirName,slug));
 		}
-
 
 		try {
 			const site = await getWpSite(url);
@@ -50,6 +55,11 @@ module.exports = (url = 'https://localhost', router = new Router()) => {
 		}
 	});
 
+	/**
+	 * Get page list after the first page
+	 *
+	 * BAD SMELL - Not same controller as first page
+	 */
 	router.get('/page/:page', async (req, res) => {
 
 		try {

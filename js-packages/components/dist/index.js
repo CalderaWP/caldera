@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.RadioField = exports.SelectField = exports.InputField = undefined;
+exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.RemotePost = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.RadioField = exports.SelectField = exports.InputField = undefined;
 
 var _InputField = require('./components/fields/InputField/InputField');
 
@@ -65,6 +65,15 @@ Object.defineProperty(exports, 'FieldWrapper', {
   enumerable: true,
   get: function get() {
     return _FieldWrapper.FieldWrapper;
+  }
+});
+
+var _RemotePost = require('./components/elements/RemotePost/RemotePost');
+
+Object.defineProperty(exports, 'RemotePost', {
+  enumerable: true,
+  get: function get() {
+    return _RemotePost.RemotePost;
   }
 });
 
