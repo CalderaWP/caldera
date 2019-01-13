@@ -36,7 +36,7 @@ export default [
 		}),
 	},
 	{
-		path: '/page',
+		path: '/:pageSlug',
 		exact: true,
 		component: asyncComponent({
 			loader: () => import('./Page'), // required
@@ -44,3 +44,7 @@ export default [
 		}),
 	},
 ];
+
+const wpPages = [
+
+]

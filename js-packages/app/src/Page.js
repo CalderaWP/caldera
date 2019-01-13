@@ -15,13 +15,13 @@ const fetch = require( 'isomorphic-fetch');
 class Page extends Component {
 
 	state = {
-		page: {}
+		page: {},
+		notFound: false,
 	}
 	static async getInitialProps({req, res, match, history, location, ...ctx}) {
-		const pageSlug = match.path;
-		let pageId = 22;//home
-
-
+		const {
+			pageSlug
+		} = req.params;
 		const  post = {
 			title: {
 				rendered: 'Post Title'
@@ -32,7 +32,7 @@ class Page extends Component {
 
 		};
 		return {
-			pageId,
+			pageSlug,
 			post
 		}
 
@@ -41,24 +41,32 @@ class Page extends Component {
 	};
 
 	componentDidMount = ()  => {
-		const {
-			pageId
+		let {
+			pageSlug
 		} = this.props;
-		fetch( 'http://localhost:3000/wp-json/wp/v2/pages/' + pageId )
-			.then(r => r.json() )
-			.then( page => this.setState({page}));
-
-
+		if (!pageSlug) {
+			pageSlug = 'caldera';
+		}
+		fetch('http://localhost:3000/wp-json/wp/v2/pages/?slug=' + pageSlug)
+			.then(r => r.json())
+			.then(pages => {
+				if (pages.length) {
+					this.setState({page: pages[0], notFound: false})
+				} else {
+					this.setState({notFound: true});
+				}
+			});
 	}
-
-
-
 
 
 	render() {
 		const {
-			page
+			page,
+			notFound
 		} = this.state;
+		if( notFound) {
+			return <div>Not Found</div>
+		}
 		if( ! page.id) {
 			return <div>Loading</div>
 		}
