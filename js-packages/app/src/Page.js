@@ -1,5 +1,5 @@
 import React, {Component,Fragment} from 'react';
-import {RemotePost} from '@calderawp/components';
+import {RemotePost}  from '@calderawp/components';
 
 /**
  <RemotePost
@@ -10,7 +10,18 @@ import {RemotePost} from '@calderawp/components';
 
 
 const fetch = require( 'isomorphic-fetch');
+async function getPage (pageSlug){
+	return fetch('http://localhost:3000/wp-json/wp/v2/pages/?slug=' + pageSlug)
+		.then(r => r.json())
+		.then(pages => {
+			if (pages.length) {
+				return pages[0];
+			} else {
+				throw new Error( 'Not Found' );
+			}
 
+		})
+}
 
 class Page extends Component {
 
@@ -31,7 +42,10 @@ class Page extends Component {
 			}
 
 		};
+		const page = await getPage(pageSlug);
+
 		return {
+			page,
 			pageSlug,
 			post
 		}
@@ -40,23 +54,6 @@ class Page extends Component {
 
 	};
 
-	componentDidMount = ()  => {
-		let {
-			pageSlug
-		} = this.props;
-		if (!pageSlug) {
-			pageSlug = 'caldera';
-		}
-		fetch('http://localhost:3000/wp-json/wp/v2/pages/?slug=' + pageSlug)
-			.then(r => r.json())
-			.then(pages => {
-				if (pages.length) {
-					this.setState({page: pages[0], notFound: false})
-				} else {
-					this.setState({notFound: true});
-				}
-			});
-	}
 
 
 	render() {
@@ -64,14 +61,15 @@ class Page extends Component {
 			page,
 			notFound
 		} = this.state;
+
 		if( notFound) {
 			return <div>Not Found</div>
 		}
-		if( ! page.id) {
+		if( ! this.props.page.id) {
 			return <div>Loading</div>
 		}
 		return  <RemotePost
-			post={page}
+			post={this.props.page}
 			showFullContent={true}
 		/>;
 	}
