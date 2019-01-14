@@ -65,6 +65,6 @@ describe('FormListItem', () => {
 		);
 		component.find( '.' + FormListItem.defaultProps.classNames.settings + ' button').simulate( 'click' );
 		expect(onFormAction.mock.calls[0][0]).toBe(formId);
-		expect(onFormAction.mock.calls[0][1]).toBe('preview');
+		expect(onFormAction.mock.calls[0][1]).toBe('settings');
 	});
 });
