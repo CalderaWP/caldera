@@ -27,6 +27,9 @@ class Document extends React.Component {
 				{assets.client.css && (
 					<link rel="stylesheet" href={assets.client.css} />
 				)}
+				{assets.wp.css && (
+					<link rel="stylesheet" href={assets.wp.css} />
+				)}
 			</head>
 			<body {...bodyAttrs}>
 			<AfterRoot />

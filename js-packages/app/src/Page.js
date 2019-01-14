@@ -91,16 +91,13 @@ class Page extends Component {
 				 id={'primary'}
 			>
 				<main id={'main'} className={'site-main'}>
-					<RemotePost
-						post={page}
-						showFullContent={true}
-					/>
+					<div>1</div>
 				</main>
+
 			</section>
 		)
 
 	}
 }
-
 
 export default Page;

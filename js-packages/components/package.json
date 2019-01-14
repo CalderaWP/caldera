@@ -55,6 +55,7 @@
     "lodash": "^4.17.11",
     "lodash.flatmap": "^4.5.0",
     "lodash.pick": "^4.4.0",
+    "moment": "^2.23.0",
     "prop-types": "^15.6.2",
     "react-data-grid": "^5.0.5",
     "react-oembed-container": "^0.3.0",
