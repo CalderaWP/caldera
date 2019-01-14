@@ -32,7 +32,7 @@ export const RemotePost = ({
 				id={`post-${post.id}`}
 			>
 				<header className="entry-header">
-					<h2 className="entry-title">{post.title.rendered}</h2>
+					<h1 className="entry-title">{post.title.rendered}</h1>
 				</header>
 				<Fragment>
 					{showFullContent ? (

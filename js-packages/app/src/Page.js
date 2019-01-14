@@ -55,26 +55,28 @@ class Page extends Component {
 	};
 
 	componentDidMount = async () => {
-		const {pageSlug} = this.props;
-		try {
-			const page = await getPage(pageSlug);
-			const {wpStylesLoaderUrl} = page;
+		if (this.props.pageSlug) {
+			const {pageSlug} = this.props;
+			try {
+				const page = await getPage(pageSlug);
+				const {wpStylesLoaderUrl} = page;
 
-			const cssId = 'caldera-wp-css';
-			if (null !== document.getElementById(cssId)) {
-				document.getElementById(cssId).remove();
+				const cssId = 'caldera-wp-css';
+				if (null !== document.getElementById(cssId)) {
+					document.getElementById(cssId).remove();
+				}
+				//https://www.filamentgroup.com/lab/async-css.html#async-css-loading-approaches
+				// make a stylesheet link
+				const wpCss = document.createElement("link");
+				wpCss.rel = "stylesheet";
+				wpCss.href = wpStylesLoaderUrl;
+				wpCss.id = cssId;
+				// insert it at the end of the head in a legacy-friendly manner
+				document.head.insertBefore(wpCss, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+				this.setState({page});
+			} catch (e) {
+				console.log(e);
 			}
-			//https://www.filamentgroup.com/lab/async-css.html#async-css-loading-approaches
-			// make a stylesheet link
-			const wpCss = document.createElement("link");
-			wpCss.rel = "stylesheet";
-			wpCss.href = wpStylesLoaderUrl;
-			wpCss.id = cssId;
-			// insert it at the end of the head in a legacy-friendly manner
-			document.head.insertBefore(wpCss, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
-			this.setState({page});
-		} catch (e) {
-			console.log(e);
 		}
 	};
 
@@ -83,11 +85,20 @@ class Page extends Component {
 		if( !page||! page.id) {
 			return <div>Loading</div>
 		}
+		return (
+			<section
+				 className={'content-area'}
+				 id={'primary'}
+			>
+				<main id={'main'} className={'site-main'}>
+					<RemotePost
+						post={page}
+						showFullContent={true}
+					/>
+				</main>
+			</section>
+		)
 
-		return  <RemotePost
-			post={page}
-			showFullContent={true}
-		/>;
 	}
 }
 

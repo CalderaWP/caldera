@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/js-packages/app/src/Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/Page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/elements/RemotePost/RemotePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/elements/RemotePost/RemotePost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/__snapshots__/RemotePost.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/__snapshots__/RemotePost.test.js.snap" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +105,7 @@
           <entry key="env" value="48" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="54736" />
+          <entry key="js" value="54860" />
           <entry key="json" value="3969" />
           <entry key="md" value="54922" />
           <entry key="php" value="110696" />
@@ -124,7 +123,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="3976" />
-          <entry key="JavaScript" value="54769" />
+          <entry key="JavaScript" value="54893" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="54790" />
           <entry key="PHP" value="110790" />
@@ -174,8 +173,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js-packages/app/src/Page.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="827">
-                  <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+                <state relative-caret-position="63">
+                  <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                   </folding>
@@ -216,8 +215,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                <state relative-caret-position="510">
+                  <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -390,8 +389,8 @@
         <option value="$PROJECT_DIR$/js-packages/app/src/Document.js" />
         <option value="$PROJECT_DIR$/js-packages/app/src/server.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js" />
         <option value="$PROJECT_DIR$/js-packages/app/src/Page.js" />
       </list>
     </option>
@@ -1063,7 +1062,7 @@
       <workItem from="1547306757188" duration="12000" />
       <workItem from="1547329929536" duration="427000" />
       <workItem from="1547336941893" duration="13000" />
-      <workItem from="1547337040861" duration="15221000" />
+      <workItem from="1547337040861" duration="15690000" />
     </task>
     <servers />
   </component>
@@ -1100,7 +1099,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446914000" />
+    <option name="totallyTimeSpent" value="447383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1871,8 +1870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -1881,8 +1880,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/Page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+        <state relative-caret-position="63">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>

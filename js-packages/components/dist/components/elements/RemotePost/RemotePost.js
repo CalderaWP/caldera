@@ -55,7 +55,7 @@ var RemotePost = exports.RemotePost = function RemotePost(_ref) {
 				'header',
 				{ className: 'entry-header' },
 				_react2.default.createElement(
-					'h2',
+					'h1',
 					{ className: 'entry-title' },
 					post.title.rendered
 				)
