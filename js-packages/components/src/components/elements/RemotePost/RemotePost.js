@@ -2,54 +2,56 @@ import React, {Fragment} from 'react';
 import {postPropTypes} from "./propTypes";
 import EmbedContainer from 'react-oembed-container';
 import PropTypes from 'prop-types'
+import classNames from  'classnames';
 
 /**
- * The main container component for the RemotePost
+ * Show a WordPress post from the REST API with embeds allowed
  *
  * @param {Object} props
  * @return {*}
  * @constructor
  */
 export const RemotePost = ({
-							   post,
-							   showFullContent,
-							   className
+							   post, //WordPress post
+							   showFullContent,//false show excerpt
+							   className //extra class name for wrapper component
 						   }) => {
 	return (
 		<EmbedContainer
 			markup={post.content.rendered}
-			className={className}
 		>
 			<article
+				className={classNames(
+					className,
+					post.type,
+					`post-${post.id}`,
+					`type-${post.type}`,
+					`status-${post.status}`,
+					'hentry entry' //I need to return post_class or something from REST API??
+				)}
 				id={`post-${post.id}`}
 			>
-				<h2>
-					{post.title.rendered}
-				</h2>
+				<header className="entry-header">
+					<h2 className="entry-title">{post.title.rendered}</h2>
+				</header>
 				<Fragment>
 					{showFullContent ? (
-						<div dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
+						<div className="entry-content" dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
 					) : (
-						<div dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
+						<div className="entry-excerpt" dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
 					)}
 				</Fragment>
 			</article>
-
 		</EmbedContainer>
 	);
 };
 
-/**
- *
- * @type {{form: shim, formId: (boolean|*), onFormUpdate: (boolean|*), className: shim, showFullContent: shim}}
- */
 RemotePost.propTypes = {
 	...postPropTypes,
 	className: PropTypes.string,
 	showFullContent: PropTypes.bool
-
 };
 
 RemotePost.defaultPosts = {
 	showFullContent: false
-}
+};

@@ -21,10 +21,14 @@ var _propTypes2 = require('prop-types');
 
 var _propTypes3 = _interopRequireDefault(_propTypes2);
 
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
- * The main container component for the RemotePost
+ * Show a WordPress post from the REST API with embeds allowed
  *
  * @param {Object} props
  * @return {*}
@@ -38,36 +42,36 @@ var RemotePost = exports.RemotePost = function RemotePost(_ref) {
 	return _react2.default.createElement(
 		_reactOembedContainer2.default,
 		{
-			markup: post.content.rendered,
-			className: className
+			markup: post.content.rendered
 		},
 		_react2.default.createElement(
 			'article',
 			{
+				className: (0, _classnames2.default)(className, post.type, 'post-' + post.id, 'type-' + post.type, 'status-' + post.status, 'hentry entry' //I need to return post_class or something from REST API??
+				),
 				id: 'post-' + post.id
 			},
 			_react2.default.createElement(
-				'h2',
-				null,
-				post.title.rendered
+				'header',
+				{ className: 'entry-header' },
+				_react2.default.createElement(
+					'h2',
+					{ className: 'entry-title' },
+					post.title.rendered
+				)
 			),
 			_react2.default.createElement(
 				_react.Fragment,
 				null,
-				showFullContent ? _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: post.content.rendered } }) : _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: post.excerpt.rendered } })
+				showFullContent ? _react2.default.createElement('div', { className: 'entry-content', dangerouslySetInnerHTML: { __html: post.content.rendered } }) : _react2.default.createElement('div', { className: 'entry-excerpt', dangerouslySetInnerHTML: { __html: post.excerpt.rendered } })
 			)
 		)
 	);
 };
 
-/**
- *
- * @type {{form: shim, formId: (boolean|*), onFormUpdate: (boolean|*), className: shim, showFullContent: shim}}
- */
 RemotePost.propTypes = _extends({}, _propTypes.postPropTypes, {
 	className: _propTypes3.default.string,
 	showFullContent: _propTypes3.default.bool
-
 });
 
 RemotePost.defaultPosts = {

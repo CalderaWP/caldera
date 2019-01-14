@@ -5,12 +5,20 @@ exports[`Remote post  Component Matches snapshot 1`] = `
   className={null}
 >
   <article
+    className="post-42 type-undefined status-undefined hentry entry"
     id="post-42"
   >
-    <h2>
-      Hello To Roy
-    </h2>
+    <header
+      className="entry-header"
+    >
+      <h2
+        className="entry-title"
+      >
+        Hello To Roy
+      </h2>
+    </header>
     <div
+      className="entry-excerpt"
       dangerouslySetInnerHTML={
         Object {
           "__html": "<p>Hi From Excerpt</p>",
@@ -23,15 +31,23 @@ exports[`Remote post  Component Matches snapshot 1`] = `
 
 exports[`Remote post  Component Matches snapshot with class names 1`] = `
 <div
-  className="remote-post-for-help"
+  className={null}
 >
   <article
+    className="remote-post-for-help post-42 type-undefined status-undefined hentry entry"
     id="post-42"
   >
-    <h2>
-      Hello To Roy
-    </h2>
+    <header
+      className="entry-header"
+    >
+      <h2
+        className="entry-title"
+      >
+        Hello To Roy
+      </h2>
+    </header>
     <div
+      className="entry-excerpt"
       dangerouslySetInnerHTML={
         Object {
           "__html": "<p>Hi From Excerpt</p>",
@@ -44,15 +60,23 @@ exports[`Remote post  Component Matches snapshot with class names 1`] = `
 
 exports[`Remote post  Component Matches snapshot with full content 1`] = `
 <div
-  className="remote-post-for-help"
+  className={null}
 >
   <article
+    className="remote-post-for-help post-42 type-undefined status-undefined hentry entry"
     id="post-42"
   >
-    <h2>
-      Hello To Roy
-    </h2>
+    <header
+      className="entry-header"
+    >
+      <h2
+        className="entry-title"
+      >
+        Hello To Roy
+      </h2>
+    </header>
     <div
+      className="entry-content"
       dangerouslySetInnerHTML={
         Object {
           "__html": "<p>Hi Roy</p>",
