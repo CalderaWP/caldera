@@ -36,4 +36,25 @@ add_action('plugins_loaded', function () {
 
 
 
+add_action( 'rest_api_init', function () {
+	register_rest_field( ['page'], 'wpStylesLoaderUrl', array(
+		'get_callback' => function(  ) {
+			//Find the CSS
+			do_action('wp_enqueue_scripts' );
 
+			$loaderUrl = admin_url('load-styles.php' );
+			ob_start();
+			$header = wp_styles()->do_items(false, 0);
+			$html = ob_get_clean(); //html for style tags. Do we need this?
+			$loaderUrl .= '?c=1&load=&dir=ltr&load=' . implode($header, ',');
+			//Can we prime cache with this?
+			return $loaderUrl;
+
+		},
+		'update_callback' => null,
+		'schema' => array(
+			'description' => __( 'WordPress style dependency loader URL.' ),
+			'type'        => 'array'
+		),
+	) );
+} );

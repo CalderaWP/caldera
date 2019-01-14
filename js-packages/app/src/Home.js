@@ -12,6 +12,7 @@ class Home extends Component {
       <StandardPage className={'caldera-pro-home'} pageKey={'home'} onChangeActive={() => {}}>
 		  <NavLink to="/about">About</NavLink>
 		  <NavLink to="/admin">Admin</NavLink>
+		  <NavLink to="/caldera-forms">Caldera Forms</NavLink>
       </StandardPage>
     );
   }

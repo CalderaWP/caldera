@@ -1,13 +1,15 @@
 import express from 'express';
 import { render } from '@jaredpalmer/after';
 import routes from './routes';
-const proxy = require('http-proxy-middleware')
-const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
-
-const server = express();
 import Document from  './Document';
 
+const proxy = require('http-proxy-middleware')
+let assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
+
+const server = express();
+
 const appPage = async (req, res) => {
+
 	try {
 		const html = await render({
 			document: Document,

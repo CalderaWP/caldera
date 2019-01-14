@@ -26,10 +26,10 @@ async function getPage (pageSlug){
 class Page extends Component {
 
 	state = {
-		page: {},
-		notFound: false,
-	}
-	static async getInitialProps({req, res, match, history, location, ...ctx}) {
+		page: {}
+	};
+
+	static async getInitialProps({req, res}) {
 		const {
 			pageSlug
 		} = req.params;
@@ -42,10 +42,10 @@ class Page extends Component {
 			}
 
 		};
-		const page = await getPage(pageSlug);
+
 
 		return {
-			page,
+			//page,
 			pageSlug,
 			post
 		}
@@ -54,22 +54,34 @@ class Page extends Component {
 
 	};
 
+	componentDidMount = async () => {
+		const {pageSlug} = this.props;
+		const page = await getPage(pageSlug);
+		const {wpStylesLoaderUrl} = page;
 
+		const cssId = 'caldera-wp-css';
+		if( null !== document.getElementById(cssId)){
+			document.getElementById(cssId).remove();
+		}
+		//https://www.filamentgroup.com/lab/async-css.html#async-css-loading-approaches
+		// make a stylesheet link
+		const wpCss = document.createElement( "link" );
+		wpCss.rel = "stylesheet";
+		wpCss.href = wpStylesLoaderUrl;
+		wpCss.id = cssId;
+		// insert it at the end of the head in a legacy-friendly manner
+		document.head.insertBefore( wpCss, document.head.childNodes[ document.head.childNodes.length - 1 ].nextSibling );
+		this.setState({page});
+	};
 
 	render() {
-		const {
-			page,
-			notFound
-		} = this.state;
-
-		if( notFound) {
-			return <div>Not Found</div>
-		}
-		if( ! this.props.page.id) {
+		const {page} = this.state;
+		if( !page||! page.id) {
 			return <div>Loading</div>
 		}
+
 		return  <RemotePost
-			post={this.props.page}
+			post={page}
 			showFullContent={true}
 		/>;
 	}

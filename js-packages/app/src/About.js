@@ -1,4 +1,4 @@
-import {StandardPage} from './components/StandardPage';
+//import {StandardPage} from './components/StandardPage';
 
 import React, {Component, Fragment} from 'react';
 import { NavLink } from 'react-router-dom';

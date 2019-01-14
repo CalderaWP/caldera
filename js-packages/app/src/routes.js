@@ -44,7 +44,3 @@ export default [
 		}),
 	},
 ];
-
-const wpPages = [
-
-]
