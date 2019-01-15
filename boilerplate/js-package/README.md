@@ -16,3 +16,26 @@ Provides some sort of functionality.
 * Build Package
     - `yarn package`
     - The output is stored in the `dist` folder.
+    
+    
+## Usage
+
+### Import With webpack
+   `import {ComponentName}` from '@calderawp/packageName';`
+   
+   ### Example One
+   ```jsx
+   <ComponentName 
+   
+   />
+   
+   ```
+   
+   ### Example Two
+   ```jsx
+   <ComponentName 
+   
+   />
+   
+   ```
+
