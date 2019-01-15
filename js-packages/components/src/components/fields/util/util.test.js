@@ -34,12 +34,12 @@ describe('parseAttributes util function', () => {
 		).toEqual(attrs);
 	});
 
-	it( 'defaults to input', () => {
+	it('defaults to input', () => {
 		const attrs = {
 			autocomplete: false,
-			required: true,
+			required: true
 		};
-		expect(parseAttributes(attrs) ).toEqual(attrs);
+		expect(parseAttributes(attrs)).toEqual(attrs);
 	});
 
 	it('allows number attrs', () => {
@@ -73,10 +73,16 @@ describe('parseAttributes util function', () => {
 
 	it('allows fieldset attrs', () => {
 		const fieldSetAttrs = {
-			'disabled': true, 'form' : 'hat-pants', 'name': 'face-two'
+			disabled: true,
+			form: 'hat-pants',
+			name: 'face-two'
 		};
-		expect(parseAttributes(fieldSetAttrs, 'fieldset')).toEqual(fieldSetAttrs);
-		expect(parseAttributes(fieldSetAttrs, 'fieldSet')).toEqual(fieldSetAttrs);
+		expect(parseAttributes(fieldSetAttrs, 'fieldset')).toEqual(
+			fieldSetAttrs
+		);
+		expect(parseAttributes(fieldSetAttrs, 'fieldSet')).toEqual(
+			fieldSetAttrs
+		);
 	});
 });
 

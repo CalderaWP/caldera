@@ -1,7 +1,7 @@
-import {StandardPage} from './components/StandardPage';
-import React, {Component} from 'react';
+import { StandardPage } from './components/StandardPage';
+import React, { Component } from 'react';
 import AppBody from './components/AppBody';
-const fetch = require( 'isomorphic-fetch' );
+const fetch = require('isomorphic-fetch');
 
 /**
  * @return {Promise}
@@ -9,22 +9,24 @@ const fetch = require( 'isomorphic-fetch' );
  */
 async function getForms() {
 	return fetch('http://localhost:3000/wp-json/caldera-api/v1/forms')
-		.then( r => r.json() )
-		.then( forms => {
+		.then(r => r.json())
+		.then(forms => {
 			return forms;
-		})
+		});
 }
 
 /**
  * @return {Promise}
  * @constructor
  */
-async function getEntries(formId,page) {
-	return fetch('http://localhost:3000/wp-json/caldera-api/v1/entries?formId=' + formId )
-		.then( r => r.json() )
-		.then( entries => {
+async function getEntries(formId, page) {
+	return fetch(
+		'http://localhost:3000/wp-json/caldera-api/v1/entries?formId=' + formId
+	)
+		.then(r => r.json())
+		.then(entries => {
 			return entries;
-		})
+		});
 }
 /**
  *
@@ -33,7 +35,7 @@ async function getEntries(formId,page) {
  * @param match
  * @return {Promise<{users, pageTitle: string}>}
  */
-async function adminGetInitialProps( req, res, match ) {
+async function adminGetInitialProps(req, res, match) {
 	try {
 		const forms = await getForms();
 		return {
@@ -45,11 +47,9 @@ async function adminGetInitialProps( req, res, match ) {
 			pageTitle: 'An Error Occurred When Loading Forms'
 		};
 	}
-
 }
 
 class Admin extends Component {
-
 	state = {
 		activeRoute: ''
 	};
@@ -65,30 +65,30 @@ class Admin extends Component {
 	}
 
 	getFormsFromProps = () => {
-		const {
-			forms
-		} = this.props;
-		if( undefined === forms || ! Object.values(forms).length) {
+		const { forms } = this.props;
+		if (undefined === forms || !Object.values(forms).length) {
 			return false;
 		}
 		return Object.values(forms);
 	};
 
 	render() {
-		const {
-			pageTitle
-		} = this.props;
-		const {
-			activeRoute
-		} = this.state;
+		const { pageTitle } = this.props;
+		const { activeRoute } = this.state;
 		const forms = this.getFormsFromProps();
 		return (
-			<StandardPage pageTitle={pageTitle} pageKey={'admin'}
-						  onChangeActive={(activeRoute) => this.setState({activeRoute})}>
-				<AppBody activeRoute={activeRoute} forms={forms} getEntries={getEntries}/>
+			<StandardPage
+				pageTitle={pageTitle}
+				pageKey={'admin'}
+				onChangeActive={activeRoute => this.setState({ activeRoute })}
+			>
+				<AppBody
+					activeRoute={activeRoute}
+					forms={forms}
+					getEntries={getEntries}
+				/>
 			</StandardPage>
-		)
-
+		);
 	}
 }
 export default Admin;

@@ -7,7 +7,6 @@ class Document extends React.Component {
 		return { assets, data, ...page };
 	}
 
-
 	render() {
 		const { helmet, assets, data } = this.props;
 		// get attributes from React Helmet
@@ -16,31 +15,34 @@ class Document extends React.Component {
 
 		return (
 			<html {...htmlAttrs}>
-			<head>
-				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-				<meta charSet="utf-8" />
-				<title>Caldera</title>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				{helmet.title.toComponent()}
-				{helmet.meta.toComponent()}
-				{helmet.link.toComponent()}
-				{assets.client.css && (
-					<link rel="stylesheet" href={assets.client.css} />
-				)}
-				{assets.wp.css && (
-					<link rel="stylesheet" href={assets.wp.css} />
-				)}
-			</head>
-			<body {...bodyAttrs}>
-			<AfterRoot />
-			<AfterData data={data} />
-			<script
-				type="text/javascript"
-				src={assets.client.js}
-				defer
-				crossOrigin="anonymous"
-			/>
-			</body>
+				<head>
+					<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+					<meta charSet="utf-8" />
+					<title>Caldera</title>
+					<meta
+						name="viewport"
+						content="width=device-width, initial-scale=1"
+					/>
+					{helmet.title.toComponent()}
+					{helmet.meta.toComponent()}
+					{helmet.link.toComponent()}
+					{assets.client.css && (
+						<link rel="stylesheet" href={assets.client.css} />
+					)}
+					{assets.wp.css && (
+						<link rel="stylesheet" href={assets.wp.css} />
+					)}
+				</head>
+				<body {...bodyAttrs}>
+					<AfterRoot />
+					<AfterData data={data} />
+					<script
+						type="text/javascript"
+						src={assets.client.js}
+						defer
+						crossOrigin="anonymous"
+					/>
+				</body>
 			</html>
 		);
 	}

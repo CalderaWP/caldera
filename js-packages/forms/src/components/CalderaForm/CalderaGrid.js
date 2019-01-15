@@ -15,17 +15,15 @@ import classNames from 'classnames';
  * @return {*}
  * @constructor
  */
-export const CalderaGrid = (
-	{
-		 rows,
-		 onAnyChange,
-		 onAnyBlur,
-		 fieldValues,
-		 fieldErrors,
-		 fieldTouched,
-		 setFieldValue
-	 }
- ) => (
+export const CalderaGrid = ({
+	rows,
+	onAnyChange,
+	onAnyBlur,
+	fieldValues,
+	fieldErrors,
+	fieldTouched,
+	setFieldValue
+}) => (
 	<Fragment>
 		{rows.map(row => {
 			const { rowId, columns, render } = row;

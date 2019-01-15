@@ -1,15 +1,14 @@
 import React from 'react';
-import renderer from "react-test-renderer";
-import {mount} from 'enzyme';
+import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import {RemotePost} from "./RemotePost";
-Enzyme.configure({adapter: new Adapter()});
-
+import { RemotePost } from './RemotePost';
+Enzyme.configure({ adapter: new Adapter() });
 
 const post = {
 	id: 42,
-	title : {
+	title: {
 		rendered: 'Hello To Roy'
 	},
 	content: {
@@ -19,29 +18,20 @@ const post = {
 		rendered: '<p>Hi From Excerpt</p>'
 	}
 };
-describe( 'Remote post  Component', () => {
-
-	it( 'Matches snapshot', () => {
-		const component = renderer.create(
-			<RemotePost
-				post={post}
-
-			/>
-		);
-		expect( component.toJSON() ).toMatchSnapshot();
+describe('Remote post  Component', () => {
+	it('Matches snapshot', () => {
+		const component = renderer.create(<RemotePost post={post} />);
+		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it( 'Matches snapshot with class names', () => {
+	it('Matches snapshot with class names', () => {
 		const component = renderer.create(
-			<RemotePost
-				post={post}
-				className={'remote-post-for-help'}
-			/>
+			<RemotePost post={post} className={'remote-post-for-help'} />
 		);
-		expect( component.toJSON() ).toMatchSnapshot();
+		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it( 'Matches snapshot with full content', () => {
+	it('Matches snapshot with full content', () => {
 		const component = renderer.create(
 			<RemotePost
 				post={post}
@@ -49,7 +39,6 @@ describe( 'Remote post  Component', () => {
 				className={'remote-post-for-help'}
 			/>
 		);
-		expect( component.toJSON() ).toMatchSnapshot();
+		expect(component.toJSON()).toMatchSnapshot();
 	});
-
 });

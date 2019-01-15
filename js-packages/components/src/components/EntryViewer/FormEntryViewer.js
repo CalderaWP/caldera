@@ -1,24 +1,17 @@
-import React from "react";
-import ReactDataGrid from "react-data-grid";
+import React from 'react';
+import ReactDataGrid from 'react-data-grid';
 //import "./styles.css";
 
-
-
 export class FormEntryViewer extends React.Component {
-	state = { rows: [], columns:[] };
+	state = { rows: [], columns: [] };
 
-
-	constructor(props){
+	constructor(props) {
 		super(props);
-
 	}
 
-	setColumnsAndRows = () =>{
-		const{
-			entries,
-			form,
-		} = this.props;
-		if( ! form || ! form.fields ){
+	setColumnsAndRows = () => {
+		const { entries, form } = this.props;
+		if (!form || !form.fields) {
 			return;
 		}
 		const columns = [];
@@ -27,52 +20,50 @@ export class FormEntryViewer extends React.Component {
 			resizable: true,
 			width: 120
 		};
-		Object.values(form.fields).forEach( field => {
-			columns.push(
-				{ ...defaultColumnProperties,key:field.id, name: field.label, editable: false, }
-			)
+		Object.values(form.fields).forEach(field => {
+			columns.push({
+				...defaultColumnProperties,
+				key: field.id,
+				name: field.label,
+				editable: false
+			});
 		});
 
-		function findEntryValue(entry,field) {
-			return Object.values(entry.entryValues).find( entryValueField => field.key === entryValueField.fieldId )
+		function findEntryValue(entry, field) {
+			return Object.values(entry.entryValues).find(
+				entryValueField => field.key === entryValueField.fieldId
+			);
 		}
 
-		Object.values(entries).forEach( entry => {
+		Object.values(entries).forEach(entry => {
 			const entryId = entry.id;
 			const row = {
-				key: entryId,
+				key: entryId
 			};
 			columns.forEach(field => {
-
-				const entryValue = findEntryValue(entry,field);
-				if( entryValue){
-					row[field.key] = entryValue.value
-
+				const entryValue = findEntryValue(entry, field);
+				if (entryValue) {
+					row[field.key] = entryValue.value;
 				}
-
 			});
 			rows.push(row);
 		});
 
-		this.setState({rows,columns});
+		this.setState({ rows, columns });
 	};
 
 	rowCount = () => {
 		return this.state.rows.length;
 	};
 
-	componentDidMount(){
+	componentDidMount() {
 		this.setColumnsAndRows();
 	}
 
 	render() {
-		const {
-			form,noItemsMessage
-		} = this.props;
-		const {
-			columns,
-		} = this.state;
-		if( form && form.fields ){
+		const { form, noItemsMessage } = this.props;
+		const { columns } = this.state;
+		if (form && form.fields) {
 			return (
 				<ReactDataGrid
 					columns={columns}
@@ -81,10 +72,8 @@ export class FormEntryViewer extends React.Component {
 					enableCellSelect={true}
 				/>
 			);
-		}else{
-			return <div className={'has-error'}>{noItemsMessage}</div>
+		} else {
+			return <div className={'has-error'}>{noItemsMessage}</div>;
 		}
 	}
 }
-
-

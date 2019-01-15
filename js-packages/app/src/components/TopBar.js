@@ -90,9 +90,7 @@ export class TopBar extends Component {
 					alt={`${activeItem.title} Logo`}
 				/>
 
-				<nav
-					key={'main-nav'}
-				>
+				<nav key={'main-nav'}>
 					{this.menuItems.map(menuItem => {
 						const { icon, title, key } = menuItem;
 						if (activeItem.key === key) {

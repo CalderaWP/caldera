@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { isValidElement, createElement, Fragment } from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
-import {CalderaGrid} from './CalderaGrid'
+import { CalderaGrid } from './CalderaGrid';
 export const CalderaForm = ({
 	formRows,
 	initialValues,

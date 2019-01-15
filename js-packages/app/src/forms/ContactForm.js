@@ -9,7 +9,11 @@ export const ContactForm = props => {
 	const _className = 'caldera-forms-form-contact-form';
 	const { form } = props;
 	if (!form) {
-		return <div className={classNames( _className, 'caldera-form-loading') }>Spinner</div>;
+		return (
+			<div className={classNames(_className, 'caldera-form-loading')}>
+				Spinner
+			</div>
+		);
 	}
 	const formRows = form.rows;
 

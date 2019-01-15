@@ -1,8 +1,8 @@
 import React from 'react';
-import {Panel, PanelBody, PanelRow} from '@wordpress/components';
+import { Panel, PanelBody, PanelRow } from '@wordpress/components';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import {FormListItem} from '../FormListItem/FormListItem';
+import { FormListItem } from '../FormListItem/FormListItem';
 
 /**
  *
@@ -13,21 +13,20 @@ import {FormListItem} from '../FormListItem/FormListItem';
  * @return {*}
  * @constructor
  */
-export const FormsList = ({forms, panelTitle, classname, onFormAction}) => (
+export const FormsList = ({ forms, panelTitle, classname, onFormAction }) => (
 	<Panel classname={classNames(classname)}>
-		<PanelBody
-			title={panelTitle}
-			icon="feedback"
-			initialOpen={true}
-		>
+		<PanelBody title={panelTitle} icon="feedback" initialOpen={true}>
 			{forms.map(form => {
 				return (
 					<PanelRow key={form.id}>
-						<FormListItem key={form.id} form={form} onFormAction={onFormAction}/>
+						<FormListItem
+							key={form.id}
+							form={form}
+							onFormAction={onFormAction}
+						/>
 					</PanelRow>
 				);
 			})}
-
 		</PanelBody>
 	</Panel>
 );
@@ -41,7 +40,7 @@ FormsList.propTypes = {
 	forms: PropTypes.array,
 	panelTitle: PropTypes.string,
 	noFormsMessage: PropTypes.string,
-	onFormAction: PropTypes.func.isRequired,
+	onFormAction: PropTypes.func.isRequired
 };
 
 /**

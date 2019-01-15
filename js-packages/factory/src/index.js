@@ -37,7 +37,5 @@ export {
 	formRowTwo,
 	formRows,
 	notFormRow,
-	notFormRows,
-
-} from './columns.fixtures.js'
-
+	notFormRows
+} from './columns.fixtures.js';

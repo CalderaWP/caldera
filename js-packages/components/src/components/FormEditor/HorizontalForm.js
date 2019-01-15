@@ -1,16 +1,14 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import {CalderaForm} from "@calderawp/forms";
+import { CalderaForm } from '@calderawp/forms';
 
-export const HorizontalForm = (
-	{
-		fields,
-		initialValues,
-		onClose,
-		onChange,
-		onBlur,
-		instanceId
-	}) => {
+export const HorizontalForm = ({
+	fields,
+	initialValues,
+	onClose,
+	onChange,
+	instanceId
+}) => {
 	const rows = [];
 	let i = 0;
 	fields.forEach(field => {
@@ -33,14 +31,10 @@ export const HorizontalForm = (
 				initialValues={initialValues}
 				onSubmit={onClose}
 				onChange={onChange}
-				onBlur={onBlur}
 			/>
-
 		</Fragment>
 	);
 };
-
-
 
 HorizontalForm.propTypes = {
 	fields: PropTypes.array,
@@ -49,7 +43,7 @@ HorizontalForm.propTypes = {
 	onChange: PropTypes.func,
 	onBlur: PropTypes.func,
 	onClose: PropTypes.func,
-	initialValues: PropTypes.object,
+	initialValues: PropTypes.object
 };
 
 const _noop = () => {};
@@ -57,8 +51,5 @@ HorizontalForm.defaultProps = {
 	fields: {},
 	onSubmit: _noop,
 	onChange: _noop,
-	onBlur: _noop,
 	initialValues: {}
 };
-
-

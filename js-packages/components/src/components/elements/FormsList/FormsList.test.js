@@ -4,7 +4,6 @@ import { mount } from 'enzyme';
 
 import { FormsList } from './FormsList';
 
-
 describe('FormsList', () => {
 	const forms = [
 		{
@@ -14,10 +13,10 @@ describe('FormsList', () => {
 		{
 			id: 'other-form',
 			name: 'Other Form'
-		},
+		}
 	];
 	let onFormAction;
-	beforeEach( () => {
+	beforeEach(() => {
 		onFormAction = jest.fn();
 	});
 
@@ -27,12 +26,9 @@ describe('FormsList', () => {
 				forms={forms}
 				panelTitle={'Panel Title'}
 				noFormsMessage={'Custom No Forms Found'}
-				onFormAction={() => {} }
+				onFormAction={() => {}}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
-
-
-
 });

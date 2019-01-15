@@ -33,6 +33,7 @@ export const InputField = ({
 				{..._attributes}
 				onChange={onChange}
 				label={label}
+				onBlur={onBlur}
 			/>
 		);
 	} else {

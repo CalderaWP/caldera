@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 /**
  * Prop type definitions for the RemotePost component
@@ -7,16 +7,13 @@ import PropTypes from 'prop-types'
  */
 export const postPropTypes = {
 	post: PropTypes.shape({
-		id: PropTypes.oneOfType([
-			PropTypes.string,
-			PropTypes.number
-		]).isRequired,
+		id: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+			.isRequired,
 		title: PropTypes.shape({
-			rendered: PropTypes.string.isRequired,
+			rendered: PropTypes.string.isRequired
 		}),
 		content: PropTypes.shape({
-			rendered: PropTypes.string.isRequired,
-		}),
+			rendered: PropTypes.string.isRequired
+		})
 	}).isRequired
 };
-

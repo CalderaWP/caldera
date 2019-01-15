@@ -10,7 +10,7 @@ import classNames from 'classnames';
  * @return {*}
  * @constructor
  */
-export const FormListItem = ({form,onFormAction}) => (
+export const FormListItem = ({ form, onFormAction }) => (
 	<div>
 		<div>{form.name}</div>
 		<Toolbar>
@@ -19,16 +19,15 @@ export const FormListItem = ({form,onFormAction}) => (
 				label="Edit Form"
 				className={'form-list-item form-list-item-edit'}
 				onClick={() => {
-					onFormAction( form.id, 'edit' );
+					onFormAction(form.id, 'edit');
 				}}
-
 			/>
 			<IconButton
 				icon="list-view"
 				label="View Entries"
 				className={'form-list-item form-list-item-view-entries'}
 				onClick={() => {
-					onFormAction( form.id, 'view-entries' );
+					onFormAction(form.id, 'view-entries');
 				}}
 			/>
 			<IconButton
@@ -36,7 +35,7 @@ export const FormListItem = ({form,onFormAction}) => (
 				label="Preview Form"
 				className={'form-list-item form-list-item-preview'}
 				onClick={() => {
-					onFormAction( form.id, 'preview' );
+					onFormAction(form.id, 'preview');
 				}}
 			/>
 			<IconButton
@@ -44,7 +43,7 @@ export const FormListItem = ({form,onFormAction}) => (
 				label="Form Settings"
 				className={'form-list-item form-list-item-settings'}
 				onClick={() => {
-					onFormAction( form.id, 'settings' );
+					onFormAction(form.id, 'settings');
 				}}
 			/>
 		</Toolbar>
@@ -54,12 +53,12 @@ export const FormListItem = ({form,onFormAction}) => (
 FormListItem.defaultProps = {
 	classNames: {
 		edit: 'form-list-item-edit',
-		'view-entries' : 'form-list-item-view-entries',
+		'view-entries': 'form-list-item-view-entries',
 		preview: 'form-list-item-preview',
-		settings: 'form-list-item-settings',
+		settings: 'form-list-item-settings'
 	}
 };
 FormListItem.propTypes = {
 	form: PropTypes.object,
-	onFormAction: PropTypes.func.isRequired,
+	onFormAction: PropTypes.func.isRequired
 };

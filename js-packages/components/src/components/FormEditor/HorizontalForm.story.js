@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {HorizontalForm} from './HorizontalForm';
+import { HorizontalForm } from './HorizontalForm';
 
-import{
+import {
 	checkboxFieldset,
 	selectField,
 	checkboxField,
@@ -22,10 +22,8 @@ storiesOf('HorizontalForm', module).add('Works with a bunch of fields', () => (
 			emailField,
 			radioField
 		]}
-		onChange={(values) => console.log(values)}
-		onBlur={(values) => console.log(values)}
-		onClose={(values) => console.log(values)}
-
+		onChange={values => console.log(values)}
+		onBlur={values => console.log(values)}
+		onClose={values => console.log(values)}
 	/>
 ));
-

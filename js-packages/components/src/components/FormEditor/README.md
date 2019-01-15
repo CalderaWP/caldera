@@ -1,5 +1,5 @@
 
-## `<HorizontalForm>`
+## Horizontal Forms
 This is a small wrapper around the `<CalderaForm>` component that is supplied an array of fields and each field is shown in its own row.
 
 ### Primary Use Case(s)
@@ -8,7 +8,9 @@ This is a small wrapper around the `<CalderaForm>` component that is supplied an
     - Field Config UI
 * The inspector controls section of a Gutenberg block.
 
-### Example
+
+### Props
+### Generic Example
 ```jsx
 import {HorizontalForm} from '@calderawp/components';
 <HorizontalForm
@@ -16,9 +18,13 @@ import {HorizontalForm} from '@calderawp/components';
     initialValues={{}}
     onClose={onClose}
     onChange={onChange}
-    onBlur={onBlur}
     instanceId={'test-2'}
 />
 ```
 
 
+
+### Components
+There are components that wrap `<HorizontalForm />`. They generally add controls for the UI state -- open, close, minimize, expand.
+
+* `<Processor />`

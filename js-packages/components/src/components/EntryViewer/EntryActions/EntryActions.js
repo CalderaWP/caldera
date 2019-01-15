@@ -1,49 +1,32 @@
 import PropTypes from 'prop-types';
-import React, {Fragment,createElement} from 'react';
+import React, { Fragment, createElement } from 'react';
 
-export const EntryActions = ({
-							  entryId,
-	formId,
-	actions,
-								onAction
-						   }) => {
-
-	return(
+export const EntryActions = ({ entryId, formId, actions, onAction }) => {
+	return (
 		<Fragment>
-			{actions.map( ActionComponent  => {
-				const {
-					actionKey,
-					onClick,
-				} = ActionComponent.props;
+			{actions.map(ActionComponent => {
+				const { actionKey, onClick } = ActionComponent.props;
 				return (
 					<ActionComponent
 						key={actionKey}
 						onClick={() => {
-							onAction(formId,entryId, actionKey)
+							onAction(formId, entryId, actionKey);
 						}}
 					/>
-				)
-
+				);
 			})}
 		</Fragment>
-	)
-
+	);
 };
 
 EntryActions.propTypes = {
 	formId: PropTypes.string.isRequired,
-	entryId: PropTypes.oneOfType([
-		PropTypes.string,
-		PropTypes.number
-	]).isRequired,
+	entryId: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+		.isRequired,
 	actions: PropTypes.arrayOf(
-		PropTypes.oneOfType([
-			PropTypes.arrayOf(PropTypes.node),
-			PropTypes.node
-		])
+		PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 	),
 	onAction: PropTypes.func
-
 };
 
 EntryActions.defaultProps = {

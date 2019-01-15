@@ -14,7 +14,7 @@ export {
 } from './components/Messages/messageObjectFactory';
 export { FieldSet } from './components/fields/FieldSet/FieldSet';
 export { FieldWrapper } from './components/fields/FieldWrapper/FieldWrapper';
-export {RemotePost} from './components/elements/RemotePost/RemotePost';
+export { RemotePost } from './components/elements/RemotePost/RemotePost';
 /**
  * Field class util functions
  */
@@ -35,4 +35,4 @@ export {
 	isValidHtml5type
 } from './components/fields/util';
 
-export  FormEntryViewer  from './components/EntryViewer/FormEntryViewer';
+export FormEntryViewer from './components/EntryViewer/FormEntryViewer';

@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 
 import { HorizontalForm } from './HorizontalForm';
 
-import{
+import {
 	checkboxFieldset,
 	selectField,
 	checkboxField,
@@ -19,7 +19,7 @@ describe('HorizontalForm', () => {
 	let onChange;
 	let onBlur;
 
-	beforeEach( () => {
+	beforeEach(() => {
 		onClose = jest.fn();
 		onChange = jest.fn();
 		onBlur = jest.fn();
@@ -28,11 +28,7 @@ describe('HorizontalForm', () => {
 	it('Matches snapshot', () => {
 		const component = renderer.create(
 			<HorizontalForm
-				fields={[
-					checkboxFieldset,
-					selectField,
-					checkboxField
-				]}
+				fields={[checkboxFieldset, selectField, checkboxField]}
 				initialValues={{}}
 				onClose={onClose}
 				onChange={onChange}
@@ -46,11 +42,7 @@ describe('HorizontalForm', () => {
 	it('Calls on change', () => {
 		const component = mount(
 			<HorizontalForm
-				fields={[
-					checkboxFieldset,
-					selectField,
-					checkboxField
-				]}
+				fields={[checkboxFieldset, selectField, checkboxField]}
 				initialValues={{}}
 				onClose={onClose}
 				onChange={onChange}
@@ -58,12 +50,12 @@ describe('HorizontalForm', () => {
 				instanceId={'test-2'}
 			/>
 		);
-		const event = {target: {value: 2}};
-		component.find( 'select' ).first().simulate( 'change', event );
+		const event = { target: { value: 2 } };
+		component
+			.find('select')
+			.first()
+			.simulate('change', event);
 		expect(onChange.mock.calls.length).toBe(1);
-
 	});
-
-
 
 });
