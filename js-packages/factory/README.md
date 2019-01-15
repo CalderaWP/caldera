@@ -72,7 +72,24 @@ import {
 	Fields,
 	FieldArea
 } from '@caldera-labs/factory';
+
 ```
+
+### Fixtures
+This package also exports fixtures for testing columns and fields.
+
+```js
+import{
+	checkboxFieldset,
+	selectField,
+	checkboxField,
+	numberField,
+	textField,
+	emailField,
+	radioField
+} from '@calderawp/factory';
+```
+
 
 ## Testing
 
@@ -88,3 +105,4 @@ import {
 * Build Package
     - `yarn package`
     - The output is stored in the `dist` folder.
+

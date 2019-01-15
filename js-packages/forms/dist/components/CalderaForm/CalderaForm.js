@@ -19,8 +19,6 @@ var _CalderaGrid = require('./CalderaGrid');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var CalderaForm = exports.CalderaForm = function CalderaForm(_ref) {
 	var formRows = _ref.formRows,
 	    initialValues = _ref.initialValues,
@@ -66,13 +64,13 @@ var CalderaForm = exports.CalderaForm = function CalderaForm(_ref) {
 	);
 };
 
-CalderaForm.propTypes = _defineProperty({
+CalderaForm.propTypes = {
 	formRows: _propTypes2.default.array,
 	initialValues: _propTypes2.default.object,
 	onSubmit: _propTypes2.default.func,
 	onChange: _propTypes2.default.func,
 	onBlur: _propTypes2.default.func
-}, 'initialValues', _propTypes2.default.object);
+};
 
 var noop = function noop() {};
 CalderaForm.defaultProps = {

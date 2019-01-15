@@ -52,8 +52,7 @@ CalderaForm.propTypes = {
 	initialValues: PropTypes.object,
 	onSubmit: PropTypes.func,
 	onChange: PropTypes.func,
-	onBlur: PropTypes.func,
-	initialValues: PropTypes.object
+	onBlur: PropTypes.func
 };
 
 const noop = () => {};

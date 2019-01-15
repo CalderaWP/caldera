@@ -40,7 +40,7 @@ Specific benefits:
  
 
 #### Import With webpack
-`import {CalderaForm}` from '@calderawp/forms';`
+`import {CalderaForm} from '@calderawp/forms';`
    
 #### How A Caldera Forms
 ```jsx
@@ -115,8 +115,8 @@ Notes:
 
 
 ```js
-
-
+import React, {Component} from 'react';
+import {CalderaGrid} from '@calderawp/forms';
 
 class Something extends Component {
 	

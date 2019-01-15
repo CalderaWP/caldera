@@ -68,7 +68,7 @@ exports[`FormsList Matches snapshot  1`] = `
           Contact Form
         </div>
         <div
-          className="components-toolbar components-toolbar"
+          className="components-toolbar"
         >
           <button
             aria-label="Edit Form"
@@ -185,7 +185,7 @@ exports[`FormsList Matches snapshot  1`] = `
           Other Form
         </div>
         <div
-          className="components-toolbar components-toolbar"
+          className="components-toolbar"
         >
           <button
             aria-label="Edit Form"
