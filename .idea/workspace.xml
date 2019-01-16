@@ -2,60 +2,30 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/php-packages/forms/tests-unit/FormModelTest.php" line="185" />
-    <bookmark url="file://$PROJECT_DIR$/php-packages/data-source/README.md" description="&#10;" line="17" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/Document.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/Document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/Page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/clients/get.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/clients/get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/clients/getWpSite.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/clients/getWpSite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/components/AppBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/components/AppBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/components/StandardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/components/StandardPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/components/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/components/TopBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/app/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/app/src/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/forms.fixtures.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/forms.fixtures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/propTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/propTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/export.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/export.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/export.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/export.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/phpcs.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/src/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/src/Contracts/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/src/Contracts/RegisterBlocksContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/src/RegisterBlocks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/tests/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/register-block/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +61,7 @@
           <entry key="Makefile" value="1" />
           <entry key="babelrc" value="5" />
           <entry key="css" value="10" />
-          <entry key="dist" value="25" />
+          <entry key="dist" value="26" />
           <entry key="editorconfig" value="1" />
           <entry key="env" value="6" />
           <entry key="gitattributes" value="1" />
@@ -100,14 +70,14 @@
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
           <entry key="js" value="979" />
-          <entry key="json" value="186" />
+          <entry key="json" value="189" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
-          <entry key="md" value="227" />
+          <entry key="md" value="231" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="2" />
-          <entry key="php" value="2043" />
+          <entry key="php" value="2052" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="51" />
@@ -118,7 +88,7 @@
           <entry key="test-packages" value="1" />
           <entry key="ts" value="6" />
           <entry key="www" value="1" />
-          <entry key="yml" value="28" />
+          <entry key="yml" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -129,17 +99,17 @@
           <entry key="CSS" value="10" />
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="192" />
+          <entry key="JSON" value="195" />
           <entry key="JavaScript" value="980" />
           <entry key="Jest Snapshot" value="45" />
-          <entry key="Markdown" value="227" />
-          <entry key="PHP" value="2044" />
+          <entry key="Markdown" value="231" />
+          <entry key="PHP" value="2053" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="SVG" value="4" />
           <entry key="Scratch" value="1" />
           <entry key="TypeScript" value="6" />
-          <entry key="XML" value="19" />
-          <entry key="YAML" value="28" />
+          <entry key="XML" value="20" />
+          <entry key="YAML" value="29" />
           <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
@@ -147,18 +117,18 @@
         <counts>
           <entry key="babelrc" value="5" />
           <entry key="css" value="27" />
-          <entry key="dist" value="136" />
-          <entry key="dummy" value="50" />
+          <entry key="dist" value="139" />
+          <entry key="dummy" value="64" />
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
           <entry key="js" value="56530" />
-          <entry key="json" value="3982" />
-          <entry key="md" value="61220" />
-          <entry key="php" value="110697" />
+          <entry key="json" value="4029" />
+          <entry key="md" value="61221" />
+          <entry key="php" value="111741" />
           <entry key="sh" value="1575" />
           <entry key="snap" value="12" />
-          <entry key="txt" value="1245" />
+          <entry key="txt" value="1251" />
           <entry key="www" value="1" />
           <entry key="yml" value="500" />
         </counts>
@@ -169,14 +139,14 @@
           <entry key="Bash" value="1575" />
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
-          <entry key="JSON" value="3989" />
+          <entry key="JSON" value="4036" />
           <entry key="JavaScript" value="56579" />
           <entry key="Jest Snapshot" value="12" />
-          <entry key="Markdown" value="61072" />
-          <entry key="PHP" value="110791" />
-          <entry key="PLAIN_TEXT" value="1371" />
+          <entry key="Markdown" value="61073" />
+          <entry key="PHP" value="111835" />
+          <entry key="PLAIN_TEXT" value="1391" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="136" />
+          <entry key="XML" value="139" />
           <entry key="YAML" value="500" />
         </counts>
       </usages-collector>
@@ -189,12 +159,12 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.test">
         <counts>
-          <entry key="source.empty" value="69" />
+          <entry key="source.empty" value="70" />
           <entry key="with.framework.PHPUnit" value="14" />
-          <entry key="with.framework.PHPUnit 6+" value="51" />
+          <entry key="with.framework.PHPUnit 6+" value="52" />
           <entry key="with.framework.PHPUnit 6+.without.selected.methods" value="3" />
           <entry key="with.framework.PHPUnit.without.selected.methods" value="1" />
-          <entry key="without.target.element" value="69" />
+          <entry key="without.target.element" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -205,7 +175,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3845535">
+    <splitter split-orientation="horizontal" split-proportion="0.44814816">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -232,14 +202,44 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
+                <state relative-caret-position="615">
                   <caret line="53" selection-start-line="53" selection-end-line="53" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/register-block/src/RegisterBlocks.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="33" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#51#121#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/register-block/composer.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/register-block/phpunit.xml.dist">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
                 </state>
               </provider>
             </entry>
@@ -261,38 +261,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-285">
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
-                  <caret line="79" selection-start-line="79" selection-end-line="79" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="30">
@@ -304,7 +272,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
@@ -312,6 +280,76 @@
                     <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
                   </first_editor>
                   <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/register-block/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="15">
+                    <caret line="1" selection-start-line="1" selection-end-line="1" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/composer.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="282">
+                  <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/register-block/tests/bootstrap.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="92">
+                    <caret line="46" column="17" selection-start-line="46" selection-end-line="47" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SECOND">
+                  <first_editor />
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/register-block/src/Contracts/RegisterBlocksContract.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -329,8 +367,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>link</find>
-      <find>is(</find>
       <find>query(</find>
       <find>hads</find>
       <find>blocks</find>
@@ -359,6 +395,8 @@
       <find>factory</find>
       <find>fieldSet</find>
       <find>fieldset</find>
+      <find>PackageName</find>
+      <find>Regiser</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -384,9 +422,9 @@
       <replace>Caldera Framework</replace>
       <replace>the [Caldera Framework](https://github.com/CalderaWP/caldera)</replace>
       <replace>*</replace>
+      <replace>RegisterBlock</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$/tests/Integration</dir>
       <dir>$PROJECT_DIR$/php-packages/rest-api</dir>
       <dir>$PROJECT_DIR$/php-packages/events</dir>
       <dir>$PROJECT_DIR$/php-packages/db</dir>
@@ -416,6 +454,7 @@
       <dir>$PROJECT_DIR$/php-packages</dir>
       <dir>$PROJECT_DIR$/mu-plugins/plugins</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/php-packages/register-block</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -424,17 +463,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/README.md" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.js" />
-        <option value="$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/README.md" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePosts/RemotePosts.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/README.md" />
         <option value="$PROJECT_DIR$/js-packages/components/src/export.test.js" />
@@ -475,6 +503,17 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/README.md" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/README.md" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/src/PackageName.php" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/src/Contracts/PackageNameContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/src/Contracts/RegisterBlockContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/src/Contracts/RegisterBlocksContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/phpunit.xml.dist" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/composer.json" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/tests/bootstrap.php" />
+        <option value="$PROJECT_DIR$/php-packages/register-block/src/RegisterBlocks.php" />
       </list>
     </option>
   </component>
@@ -646,10 +685,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
+    <option name="x" value="104" />
     <option name="y" value="23" />
-    <option name="width" value="1828" />
-    <option name="height" value="1057" />
+    <option name="width" value="1719" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -757,77 +796,106 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="cheetsheets-and-links" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="register-block" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="register-block" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="register-block" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Contracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="register-block" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="register-block" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="register-block" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="InputField" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="register-block" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="SelectField" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="FormEditor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -850,11 +918,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php-packages/register-block/src/Contracts" />
+      <recent name="$PROJECT_DIR$/php-packages" />
       <recent name="$PROJECT_DIR$/js-packages/components/src/components/FormEditor" />
       <recent name="$PROJECT_DIR$/js-packages/app/src" />
       <recent name="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost" />
-      <recent name="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem" />
-      <recent name="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js-packages/app/src/clients" />
@@ -876,45 +944,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.InputField .Focus event calls blut handler">
-    <configuration name="FormListItem.clicking on settings" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.test.js" />
-      <test-names>
-        <test-name value="FormListItem" />
-        <test-name value="clicking on settings" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="HorizontalForm" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js" />
-      <test-names>
-        <test-name value="HorizontalForm" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="HorizontalForm.Matches snapshot" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js" />
-      <test-names>
-        <test-name value="HorizontalForm" />
-        <test-name value="Matches snapshot" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.RegisterBlocksTest.testRegisterBlock">
     <configuration name="InputField .Focus event calls blut handler" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -928,33 +958,36 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="exports.RemotePost" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/export.test.js" />
-      <test-names>
-        <test-name value="exports" />
-        <test-name value="RemotePost" />
-      </test-names>
+    <configuration name="RegisterBlocksTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\RegisterBlock\Tests\RegisterBlocksTest" file="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterBlocksTest.testPrintStyles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\RegisterBlock\Tests\RegisterBlocksTest" file="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" method="testPrintStyles" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterBlocksTest.testRegisterBlock" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\RegisterBlock\Tests\RegisterBlocksTest" file="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" method="testRegisterBlock" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterBlocksTest.test__construct" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\RegisterBlock\Tests\RegisterBlocksTest" file="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" method="test__construct" scope="Method" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.exports.RemotePost" />
-      <item itemvalue="Jest.FormListItem.clicking on settings" />
-      <item itemvalue="Jest.HorizontalForm.Matches snapshot" />
-      <item itemvalue="Jest.HorizontalForm" />
       <item itemvalue="Jest.InputField .Focus event calls blut handler" />
+      <item itemvalue="PHPUnit.RegisterBlocksTest.testRegisterBlock" />
+      <item itemvalue="PHPUnit.RegisterBlocksTest.test__construct" />
+      <item itemvalue="PHPUnit.RegisterBlocksTest" />
+      <item itemvalue="PHPUnit.RegisterBlocksTest.testPrintStyles" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.RegisterBlocksTest.testRegisterBlock" />
+        <item itemvalue="PHPUnit.RegisterBlocksTest.testPrintStyles" />
+        <item itemvalue="PHPUnit.RegisterBlocksTest" />
+        <item itemvalue="PHPUnit.RegisterBlocksTest.test__construct" />
         <item itemvalue="Jest.InputField .Focus event calls blut handler" />
-        <item itemvalue="Jest.HorizontalForm" />
-        <item itemvalue="Jest.HorizontalForm.Matches snapshot" />
-        <item itemvalue="Jest.FormListItem.clicking on settings" />
-        <item itemvalue="Jest.exports.RemotePost" />
       </list>
     </recent_temporary>
   </component>
@@ -996,44 +1029,44 @@
       <workItem from="1547486952766" duration="491000" />
       <workItem from="1547500071076" duration="3885000" />
       <workItem from="1547578980897" duration="364000" />
-      <workItem from="1547579399801" duration="9945000" />
+      <workItem from="1547579399801" duration="12787000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormListItem_clicking_on_settings - 2019.01.14 at 07h 43m 28s.xml">
-      <configuration name="FormListItem.clicking on settings" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testPrintStyles - 2019.01.16 at 08h 46m 44s.xml">
+      <configuration name="RegisterBlocksTest.testPrintStyles" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="FormListItem_clicking_on_settings - 2019.01.14 at 07h 43m 58s.xml">
-      <configuration name="FormListItem.clicking on settings" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 08h 46m 52s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="HorizontalForm_Matches_snapshot - 2019.01.15 at 17h 05m 59s.xml">
-      <configuration name="HorizontalForm.Matches snapshot" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 08h 48m 10s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="HorizontalForm_Matches_snapshot - 2019.01.15 at 17h 06m 56s.xml">
-      <configuration name="HorizontalForm.Matches snapshot" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 08h 48m 25s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="HorizontalForm_Matches_snapshot - 2019.01.15 at 17h 07m 06s.xml">
-      <configuration name="HorizontalForm.Matches snapshot" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 08h 48m 55s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="HorizontalForm - 2019.01.15 at 17h 09m 30s.xml">
-      <configuration name="HorizontalForm" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 08h 49m 07s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="HorizontalForm - 2019.01.15 at 17h 09m 51s.xml">
-      <configuration name="HorizontalForm" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 08h 49m 14s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="HorizontalForm - 2019.01.15 at 17h 10m 43s.xml">
-      <configuration name="HorizontalForm" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 15h 08m 51s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="HorizontalForm - 2019.01.15 at 17h 11m 22s.xml">
-      <configuration name="HorizontalForm" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 15h 10m 27s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="InputField__Focus_event_calls_blut_handler - 2019.01.15 at 18h 19m 20s.xml">
-      <configuration name="InputField .Focus event calls blut handler" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="RegisterBlocksTest_testRegisterBlock - 2019.01.16 at 15h 10m 40s.xml">
+      <configuration name="RegisterBlocksTest.testRegisterBlock" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462209000" />
+    <option name="totallyTimeSpent" value="465051000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1045,16 +1078,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1828" height="1057" extended-state="0" />
+    <frame x="104" y="23" width="1719" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.30403134" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.19499105" />
       <window_info id="Structure" order="1" sideWeight="0.6889849" side_tool="true" weight="0.21215531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.5181347" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.30569947" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.41751152" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.33364055" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.022797927" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1064,7 +1097,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.043523315" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39481866" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info anchor="bottom" x="851" y="118" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.65284973" />
+      <window_info anchor="bottom" x="371" y="345" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" weight="0.29493088" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1433,99 +1466,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/app/razzle.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-admin/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/Document.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/class.wp-dependencies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/debug.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boilerplate/js-package/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="414">
-            <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-512">
@@ -1615,14 +1555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1805,7 +1737,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="615">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -1840,6 +1772,121 @@
             <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/src/Contracts/RegisterBlocksContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/class-wp-block-type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/blocks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/http/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="72" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monorepo-builder.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="92">
+            <caret line="46" column="17" selection-start-line="46" selection-end-line="47" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/register-block/src/RegisterBlocks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#51#121#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
