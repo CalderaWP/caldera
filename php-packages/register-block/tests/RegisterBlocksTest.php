@@ -29,11 +29,17 @@ class RegisterBlocksTest extends TestCase
 		$this->assertAttributeEquals('17seconds', 'namespace', $registerBlocks );
 	}
 
+	/**
+	 * @covers \calderawp\caldera\RegisterBlock\RegisterBlocks::blockFullName()
+	 * @covers \calderawp\caldera\RegisterBlock\RegisterBlocks::registerBlock()
+	 */
 	public function testRegisterBlock()
 	{
 
-		$registerBlocks = new RegisterBlocks('17seconds' );
-		$this->assertTrue( $registerBlocks->registerBlock('a-block', ['editor' => 'handle']) );
-
+		$registerBlocks = new RegisterBlocks('namespace' );
+		$this->assertTrue( $registerBlocks->registerBlock('slug', ['editor' => 'handle']) );
+		$this->assertAttributeEquals([
+			'namespace/slug'
+		],'blocks', '');
 	}
 }

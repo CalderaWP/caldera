@@ -2,8 +2,7 @@
 
 
 namespace calderawp\caldera\RegisterBlock;
-use calderawp\CalderaContainers\Service\Container as ServiceContainer;
-use calderawp\interop\Contracts\CalderaModule;
+
 use calderawp\caldera\RegisterBlock\Contracts\RegisterBlocksContract;
 class RegisterBlocks implements RegisterBlocksContract
 {
@@ -11,6 +10,15 @@ class RegisterBlocks implements RegisterBlocksContract
 	/** @var string */
 	protected $namespace;
 
+	/**
+	 * Collection of blocks being tracked
+	 *
+	 * @var array
+	 */
+	protected $blocks;
+
+
+	protected $printedBlocks;
 
 	public function __construct(string $namespace)
 	{
@@ -27,7 +35,8 @@ class RegisterBlocks implements RegisterBlocksContract
 	 */
 	public function registerBlock( $name, array $args = [] ) : bool
 	{
-		$registered  = \register_block_type($this->namespace . '/' .  $name, $args );
+		$this->blocks[] = $this->blockFullName($name);
+		$registered  = \register_block_type($this->blockFullName($name), $args );
 		return false !== $registered;
 	}
 
@@ -49,6 +58,16 @@ class RegisterBlocks implements RegisterBlocksContract
 		}
 
 		return $blockContent;
+	}
+
+	/**
+	 * @param $name
+	 *
+	 * @return string
+	 */
+	protected function blockFullName($name): string
+	{
+		return $this->namespace . '/' . $name;
 	}
 
 }
