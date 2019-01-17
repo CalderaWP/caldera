@@ -1,7 +1,36 @@
 import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 import {Processor} from "./Processor";
-import {Row} from '@calderawp/factory';
+import {Row, fieldAreaFactory} from '@calderawp/factory';
+import {processorTypesPropType} from './propTypes';
+
+const AddProcessor = ({
+						  setNewProcessorType,
+						  processorsTypes,
+						  onCreate,
+						  children,
+						  value
+					  }) => {
+	const processorTypesField = {
+		fieldType: 'select',
+		label: 'Processor Type',
+		fieldId: 'newProcessorType',
+		required: true,
+		options: [],
+		value,
+	};
+
+	return (
+		<Fragment>
+			{fieldAreaFactory(processorTypesField, setNewProcessorType)}
+			<button onClick={onCreate}>
+				{children}
+			</button>
+		</Fragment>
+	)
+}
+
+
 export class Processors extends Component {
 
 	state = {
@@ -67,7 +96,7 @@ export class Processors extends Component {
 	/** @inheritDoc **/
 	render() {
 		const {activeProcessor} = this.state;
-		const {processors} = this.props;
+		const {processors,processorsTypes} = this.props;
 		return (
 			<div>
 				<div>
@@ -80,7 +109,6 @@ export class Processors extends Component {
 							label
 						} = processor;
 						if (this.isActiveProcessor(id)) {
-
 							return (
 								<Fragment key={id}>
 									<Processor
@@ -109,6 +137,14 @@ export class Processors extends Component {
 						)
 					})}
 				</div>
+				<div>
+					<AddProcessor
+						setNewProcessorType={this.setNewProcessorType}
+						processorsTypes={processorsTypes}
+					>
+						Add Processor
+					</AddProcessor>
+				</div>
 			</div>
 		);
 	}
@@ -125,6 +161,7 @@ export const processorsCollectionPropType = PropTypes.arrayOf(
 );
 
 Processors.propTypes = {
+	processorTypes: processorTypesPropType,
 	processors: processorsCollectionPropType,
 	updateProcessors: PropTypes.func,
 	form: PropTypes.object,
@@ -132,5 +169,6 @@ Processors.propTypes = {
 };
 
 Processors.defaultProps = {
-	processors: []
+	processors: [],
+	processorTypes: []
 };

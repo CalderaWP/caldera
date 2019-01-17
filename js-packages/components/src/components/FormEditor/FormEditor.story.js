@@ -33,8 +33,18 @@ storiesOf('FormEditor', module).add('The processor', () => (
 	/>
 ));
 
+const processorTypes = [
+	{
+		type: 'apiRequest'
+	},
+	{
+		type: 'redirect'
+	}
+];
+
 storiesOf('FormEditor', module).add('The processors list', () => (
 	<Processors
+		processorTypes={processorTypes}
 		processors={processorsCollection}
 		onChange={values => console.log(values)}
 		onClose={values => console.log(values)}
@@ -49,14 +59,7 @@ const form = {
 	processors: processorsCollection,
 };
 
-const processorTypes = [
-	{
-		type: 'apiRequest'
-	},
-	{
-		type: 'redirect'
-	}
-];
+
 
 class MockFormApp extends Component {
 	state = {

@@ -1,13 +1,13 @@
-import React, {Component, Fragment,createElement} from 'react';
+import React, {Component, Fragment, createElement} from 'react';
 import PropTypes from 'prop-types';
-import {Processors,processorsCollectionPropType} from './Processors';
-import { TabPanel } from '@wordpress/components';
-import { Row, Column } from '@calderawp/factory';
+import {Processors, processorsCollectionPropType} from './Processors';
+import {TabPanel} from '@wordpress/components';
+import {Row, Column} from '@calderawp/factory';
 import {processorsCollection} from "./processors.fixtures";
 import {fieldAreaFactory} from '@calderawp/factory';
+import {processorTypesPropType} from './propTypes';
 
-
-const MainSection = ({title,className,children}) => (
+const MainSection = ({title, className, children}) => (
 	<div
 		className={className}
 	>
@@ -15,17 +15,20 @@ const MainSection = ({title,className,children}) => (
 		{children}
 	</div>
 );
+
+
 export class FormEditor extends Component {
 	state = {
 		activeTab: 'processors',
+		newProcessorType: 'mailer', //the next processor to be created will use this type
 	};
 
 	onSetTab = activeTab => {
-		this.setState({ activeTab });
+		this.setState({activeTab});
 	};
 
 	updateProcessors = processors => {
-		const {updateForm,form} = this.props;
+		const {updateForm, form} = this.props;
 		updateForm({
 			...form,
 			processors
@@ -72,8 +75,10 @@ export class FormEditor extends Component {
 	];
 
 
+	setNewProcessorType = (newProcessorType) => this.setState({newProcessorType});
+
 	render() {
-		const {form,processorTypes,updateForm} = this.props;
+		const {form, processorTypes, updateForm} = this.props;
 		return (
 			<div>
 				<Row>
@@ -89,7 +94,7 @@ export class FormEditor extends Component {
 					tabs={this.tabs}
 				>
 					{tab => {
-						const { name,classNameForComponent,title} = tab;
+						const {name, classNameForComponent, title} = tab;
 						if ('processors' === name) {
 							return (
 								<MainSection
@@ -97,6 +102,7 @@ export class FormEditor extends Component {
 									title={title}
 								>
 									<Processors
+										processorTypes={processorTypes}
 										processors={this.getFormProcessors()}
 										form={form}
 										formFields={this.getFormFields()}
@@ -105,7 +111,7 @@ export class FormEditor extends Component {
 								</MainSection>
 							);
 						}
-						if( 'settings' === name ) {
+						if ('settings' === name) {
 							const nameField = {
 								fieldType: 'text',
 								value: form.name,
@@ -145,10 +151,9 @@ export class FormEditor extends Component {
 	}
 }
 
+
 FormEditor.propTypes = {
-	processorsTypes: PropTypes.arrayOf(PropTypes.shape({
-		type: PropTypes.string,
-	})),
+	processorsTypes: processorTypesPropType,
 	updateForm: PropTypes.func,
 	form: PropTypes.shape({
 		id: PropTypes.string,
