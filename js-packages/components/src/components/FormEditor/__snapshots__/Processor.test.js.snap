@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HorizontalForm Matches snapshot 1`] = `
+exports[`Processor Matches snapshot 1`] = `
 Array [
   <div
     className="sc-bdVaJa caldera-row sc-bwzfXH pjOvZ"
@@ -276,6 +276,7 @@ Array [
         width="1/2"
     >
         <button
+            className="caldera-processor-close"
             onClick={[Function]}
         >
             Close
@@ -287,6 +288,7 @@ Array [
         width="1/2"
     >
         <button
+            className="caldera-processor-remove"
             onClick={undefined}
         >
             Remove

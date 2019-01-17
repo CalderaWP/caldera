@@ -2,35 +2,36 @@ import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 import {Processor} from "./Processor";
 
-
-export const mergeConfigFieldsAndValues = (config, fields) => {
-	let processorFields = {};
-	fields.forEach(field => {
-		const {fieldId} = field;
-		processorFields.push({
-			...field,
-			value: config.hasOwnProperty(fieldId)
-		})
-	});
-	return fields;
-};
-
-
 export class Processors extends Component {
 
 	state = {
 		activeProcessorId: ''
 	};
 
+	/**
+	 * Set which processor is active
+	 * @param activeProcessorId
+	 */
 	setActive = (activeProcessorId) => {
 		this.setState({activeProcessorId});
 	};
 
+	/**
+	 * Check if a processor is active by ID
+	 * @param processorId
+	 * @return {string|boolean}
+	 */
 	isActiveProcessor = (processorId) => {
 		const {activeProcessorId} = this.state;
 		return activeProcessorId && processorId === activeProcessorId;
 	};
 
+	/**
+	 * When a change in value for a processor is received, send all processors up.
+	 *
+	 * @param processorId
+	 * @param updatedProcessor
+	 */
 	handleProcessorChange = (processorId, updatedProcessor) => {
 		const {processors, updateProcessors} = this.props;
 		let processorIndex = processors.findIndex(processor => {
@@ -51,6 +52,11 @@ export class Processors extends Component {
 
 	};
 
+	/**
+	 * When a processor is removed, send updated list to change handler.
+	 *
+	 * @param processorId
+	 */
 	handleRemoveProcessor = (processorId) => {
 		const {processors, updateProcessors} = this.props;
 		updateProcessors([...processors.filter(processor => {
@@ -58,6 +64,7 @@ export class Processors extends Component {
 		})]);
 	};
 
+	/** @inheritDoc **/
 	render() {
 		const {activeProcessor} = this.state;
 		const {processors} = this.props;
@@ -65,24 +72,26 @@ export class Processors extends Component {
 			<div>
 				<div>
 					{processors.map(processor => {
-						if (this.isActiveProcessor(processor.id)) {
-							console.log(processor);
-							const {
-								id,
-								fields,
-								config,
-								type,
-								label
-							} = processor;
+						const {
+							id,
+							fields,
+							config,
+							type,
+							label
+						} = processor;
+						if (this.isActiveProcessor(id)) {
+
 							return (
 								<Fragment key={id}>
 									<Processor
+										className={`caldera-forms-active-processor-${id}`}
 										fields={fields}
 										initialValues={config}
 										label={label}
 										type={type}
 										onChange={(fieldValues) => this.handleProcessorChange(id, fieldValues)}
 										onRemove={() => this.handleRemoveProcessor(id)}
+										onClose={() => this.setActive('')}
 									/>
 								</Fragment>
 							)
@@ -90,9 +99,10 @@ export class Processors extends Component {
 						return (
 							<Fragment>
 								<button
-									onClick={() => this.setActive(processor.id)}
+									className={`caldera-forms-choose-processor caldera-forms-choose-processor-${id}`}
+									onClick={() => this.setActive(id)}
 								>
-									{processor.label ? processor.label : processor.type}
+									{label ? label : type}
 								</button>
 							</Fragment>
 

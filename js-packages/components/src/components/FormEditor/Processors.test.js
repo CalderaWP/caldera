@@ -4,6 +4,7 @@ import {Processor} from "./Processor";
 import {Processors} from "./Processors";
 import {mount} from 'enzyme';
 import renderer from 'react-test-renderer';
+import {processorsCollection} from './processors.fixtures';
 
 import {
 	checkboxFieldset,
@@ -85,14 +86,15 @@ describe('Processors', () => {
 		});
 		expect(values.find( p => 'p2' === p.id).label).toEqual('fLabel');
 		expect(values.find( p => 'p2' === p.id).type).toEqual('strident');
-
-
 	});
 
+	it( 'Does not call processor update if processor id is invalid', () => {
+		const processors = [
+			{id: 'p1', type: 'Redirect', fields: []},
+			{id: 'p2', type: 'Redirect', fields: [],label: 'fLabel'},
+		];
 
-	it( 'Renders with a list of processors', () => {
-		const processors = [{id: 'p1', type: 'Redirect', fields: [checkboxField,selectField]}];
-		const component = renderer.create(
+		const component = mount(
 			<Processors
 				processors={processors}
 				form={form}
@@ -100,7 +102,98 @@ describe('Processors', () => {
 				updateProcessors={updateProcessors}
 			/>
 		);
+
+		component.instance().handleProcessorChange('p166161111', {
+			type: 'strident'
+		});
+		expect(updateProcessors.mock.calls.length).toEqual(0);
+	});
+
+});
+
+describe( 'Processors collection in processors UI', () => {
+	const form = {};
+	const formFields = {};
+	let updateProcessors;
+	beforeEach(() => {
+		updateProcessors = jest.fn();
+	});
+
+	it( 'Renders with a list of processors', () => {
+		const component = renderer.create(
+			<Processors
+				processors={processorsCollection}
+				form={form}
+				formFields={formFields}
+				updateProcessors={updateProcessors}
+			/>
+		);
 		expect(component.toJSON()).toMatchSnapshot();
+	});
+
+	it('should open processor editor', () => {
+		const component = mount(
+			<Processors
+				processors={processorsCollection}
+				form={form}
+				formFields={formFields}
+				updateProcessors={updateProcessors}
+			/>
+		);
+
+		component.find( '.caldera-forms-choose-processor-p2' ).simulate( 'click');
+		expect(component.state( 'activeProcessorId') ).toEqual( 'p2');
+	});
+
+	it('Calls the processor update callback when a processor changes values', () => {
+		const component = mount(
+			<Processors
+				processors={processorsCollection}
+				form={form}
+				formFields={formFields}
+				updateProcessors={updateProcessors}
+			/>
+		);
+
+		const event = {target: {value: 'six'}};
+
+		component.find( '.caldera-forms-choose-processor-p2' ).simulate('click')
+		component.find( '.caldera-forms-active-processor-p2 input[type="text"]' ).simulate( 'change',event);
+		expect(updateProcessors.mock.calls.length ).toEqual( 1);
+	});
+
+	it('Calls the processor update callback when a processor is removed', () => {
+		const component = mount(
+			<Processors
+				processors={processorsCollection}
+				form={form}
+				formFields={formFields}
+				updateProcessors={updateProcessors}
+			/>
+		);
+
+		const event = {target: {value: 'six'}};
+
+		component.find( '.caldera-forms-choose-processor-p2' ).simulate('click')
+		component.find( '.caldera-processor-remove' ).simulate( 'click' );
+		expect(updateProcessors.mock.calls.length ).toEqual( 1);
+	});
+
+	it('Closes the processor', () => {
+		const component = mount(
+			<Processors
+				processors={processorsCollection}
+				form={form}
+				formFields={formFields}
+				updateProcessors={updateProcessors}
+			/>
+		);
+
+		const event = {target: {value: 'six'}};
+
+		component.find( '.caldera-forms-choose-processor-p2' ).simulate('click')
+		component.find( '.caldera-processor-close' ).simulate( 'click' );
+		expect(component.state('activeProcessorId') ).toEqual( '');
 	});
 
 

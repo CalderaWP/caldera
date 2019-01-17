@@ -60,10 +60,18 @@ export class Processor extends Component {
 				</Row>
 				<Row>
 					<Column width={'1/2'}>
-						<button onClick={onClose}>Close</button>
+						<button
+							className={'caldera-processor-close'}
+							onClick={onClose}>
+							Close
+						</button>
 					</Column>
 					<Column width={'1/2'}>
-						<button onClick={onRemove}>Remove</button>
+						<button
+							className={'caldera-processor-remove'}
+							onClick={onRemove}>
+							Remove
+						</button>
 					</Column>
 				</Row>
 			</Fragment>

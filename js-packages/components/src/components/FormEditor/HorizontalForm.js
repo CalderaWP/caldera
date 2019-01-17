@@ -2,6 +2,17 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { CalderaForm } from '@calderawp/forms';
 
+/**
+ * Displays a form, one field per row
+ *
+ * @param fields
+ * @param initialValues
+ * @param onClose
+ * @param onChange
+ * @param instanceId
+ * @return {*}
+ * @constructor
+ */
 export const HorizontalForm = ({
 	fields,
 	initialValues,
@@ -46,10 +57,7 @@ HorizontalForm.propTypes = {
 	initialValues: PropTypes.object
 };
 
-const _noop = () => {};
 HorizontalForm.defaultProps = {
 	fields: {},
-	onSubmit: _noop,
-	onChange: _noop,
 	initialValues: {}
 };

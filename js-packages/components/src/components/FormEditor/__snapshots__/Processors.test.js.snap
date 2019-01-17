@@ -1,12 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Processors Renders with a list of processors 1`] = `
+exports[`Processors collection in processors UI Renders with a list of processors 1`] = `
 <div>
   <div>
     <button
+      className="caldera-forms-choose-processor caldera-forms-choose-processor-season7Episode2"
       onClick={[Function]}
     >
-      Redirect
+      Test sending form data to test API
+    </button>
+    <button
+      className="caldera-forms-choose-processor caldera-forms-choose-processor-p2"
+      onClick={[Function]}
+    >
+      Main MailChimp
     </button>
   </div>
 </div>

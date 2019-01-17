@@ -14,7 +14,7 @@ import {
 	radioField
 } from '@calderawp/factory';
 
-describe('HorizontalForm', () => {
+describe('Processor', () => {
 	let onClose;
 	let onChange;
 	let onBlur;
@@ -70,6 +70,5 @@ describe('HorizontalForm', () => {
 		expect( component.find( '.caldera-processor-conditionals').length).toBe(0);
 		component.setState({activeTab:'conditionals'});
 		expect(component.state('activeTab')).toBe('conditionals');
-
 	});
 });
