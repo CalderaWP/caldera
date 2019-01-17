@@ -3,8 +3,20 @@ import PropTypes from 'prop-types';
 import {Processor} from "./Processor";
 
 
-export class Processors extends Component {
+export const mergeConfigFieldsAndValues = (config, fields) => {
+	let processorFields = {};
+	fields.forEach(field => {
+		const {fieldId} = field;
+		processorFields.push({
+			...field,
+			value: config.hasOwnProperty(fieldId)
+		})
+	});
+	return fields;
+};
 
+
+export class Processors extends Component {
 
 	state = {
 		activeProcessorId: ''
@@ -20,14 +32,14 @@ export class Processors extends Component {
 	};
 
 	handleProcessorChange = (processorId, updatedProcessor) => {
-		const {processors,updateProcessors} = this.props;
+		const {processors, updateProcessors} = this.props;
 		let processorIndex = processors.findIndex(processor => {
 			return processorId === processor.id
 		});
-		if( -1 !== processorIndex ){
+		if (-1 !== processorIndex) {
 			let processor = processors[processorIndex];
 			let update = [
-				...processors.splice(processorIndex-1,1),
+				...processors.splice(processorIndex - 1, 1),
 				{
 					...processor,
 					...updatedProcessor
@@ -40,8 +52,8 @@ export class Processors extends Component {
 	};
 
 	handleRemoveProcessor = (processorId) => {
-		const {processors,updateProcessors} = this.props;
-		updateProcessors( [...processors.filter(processor => {
+		const {processors, updateProcessors} = this.props;
+		updateProcessors([...processors.filter(processor => {
 			return processorId !== processor.id
 		})]);
 	};
@@ -54,6 +66,7 @@ export class Processors extends Component {
 				<div>
 					{processors.map(processor => {
 						if (this.isActiveProcessor(processor.id)) {
+							console.log(processor);
 							const {
 								id,
 								fields,
@@ -75,11 +88,14 @@ export class Processors extends Component {
 							)
 						}
 						return (
-							<button
-								onClick={() => this.setActive(processor.id)}
-							>
-								{processor.type}
-							</button>
+							<Fragment>
+								<button
+									onClick={() => this.setActive(processor.id)}
+								>
+									{processor.label ? processor.label : processor.type}
+								</button>
+							</Fragment>
+
 						)
 					})}
 				</div>
