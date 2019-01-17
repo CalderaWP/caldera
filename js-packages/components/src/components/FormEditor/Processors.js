@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 import {Processor} from "./Processor";
-
+import {Row} from '@calderawp/factory';
 export class Processors extends Component {
 
 	state = {
@@ -97,14 +97,14 @@ export class Processors extends Component {
 							)
 						}
 						return (
-							<Fragment>
+							<Row>
 								<button
 									className={`caldera-forms-choose-processor caldera-forms-choose-processor-${id}`}
 									onClick={() => this.setActive(id)}
 								>
 									{label ? label : type}
 								</button>
-							</Fragment>
+							</Row>
 
 						)
 					})}

@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/HorizontalForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/HorizontalForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +53,11 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1045" />
+          <entry key="js" value="1047" />
           <entry key="json" value="189" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
-          <entry key="md" value="246" />
+          <entry key="md" value="247" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="2" />
@@ -88,9 +84,9 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="195" />
-          <entry key="JavaScript" value="1046" />
+          <entry key="JavaScript" value="1048" />
           <entry key="Jest Snapshot" value="45" />
-          <entry key="Markdown" value="247" />
+          <entry key="Markdown" value="248" />
           <entry key="PHP" value="2063" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="SVG" value="4" />
@@ -111,7 +107,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="67799" />
+          <entry key="js" value="68572" />
           <entry key="json" value="4029" />
           <entry key="md" value="63787" />
           <entry key="php" value="112393" />
@@ -129,7 +125,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4036" />
-          <entry key="JavaScript" value="67895" />
+          <entry key="JavaScript" value="68668" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="63700" />
           <entry key="PHP" value="112487" />
@@ -164,14 +160,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.15013966">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="264">
-                  <caret line="58" column="31" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="58" selection-end-column="31" />
+                  <caret line="58" column="31" selection-start-line="21" selection-start-column="20" selection-end-line="58" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#51#0" expanded="true" />
                   </folding>
@@ -191,12 +187,12 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="698">
-                  <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+                <state relative-caret-position="720">
+                  <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
                   <folding>
-                    <element signature="e#0#49#0" expanded="true" />
+                    <element signature="e#0#39#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -254,16 +250,7 @@
             <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/FieldArea.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+                  <caret column="26" selection-start-column="26" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -293,8 +280,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="423">
-                  <caret line="183" column="19" selection-start-line="183" selection-start-column="19" selection-end-line="183" selection-end-column="19" />
+                <state relative-caret-position="144">
+                  <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -302,20 +289,32 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="332">
-                  <caret line="101" column="60" lean-forward="true" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+                <state relative-caret-position="785">
+                  <caret line="129" column="46" lean-forward="true" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="185">
+                  <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+                  <folding>
+                    <element signature="e#0#49#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+                <state relative-caret-position="519">
+                  <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -336,7 +335,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Install</find>
       <find>split</find>
       <find>calderawp/</find>
       <find>sub</find>
@@ -366,6 +364,7 @@
       <find>redirect</find>
       <find>apiReq</find>
       <find>Fact</find>
+      <find>caldera-forms-editor-settings-tab-btn</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -432,7 +431,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/app/src/Document.js" />
         <option value="$PROJECT_DIR$/js-packages/app/src/server.js" />
         <option value="$PROJECT_DIR$/boilerplate/js-package/README.md" />
         <option value="$PROJECT_DIR$/boilerplate/readmes/react-component/README.md" />
@@ -479,10 +477,11 @@
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/CalderaFormsTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/ProcessorTypeContract.php" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/README.md" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" />
       </list>
     </option>
   </component>
@@ -881,7 +880,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.CalderaFormsTest.testGetProcessorTypes">
+  <component name="RunManager" selected="Jest.FormEditor.should match snapshot">
+    <configuration name="FormEditor.should match snapshot" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js" />
+      <test-names>
+        <test-name value="FormEditor" />
+        <test-name value="should match snapshot" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Processors" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -891,19 +903,6 @@
       <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js" />
       <test-names>
         <test-name value="Processors" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Processors.Can remove a processor" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js" />
-      <test-names>
-        <test-name value="Processors" />
-        <test-name value="Can remove a processor" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -929,19 +928,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.Processors.Can remove a processor" />
       <item itemvalue="Jest.Processors.Can update a processor type" />
       <item itemvalue="Jest.Processors" />
       <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
       <item itemvalue="PHPUnit.CalderaFormsTest.testGetProcessorTypes" />
+      <item itemvalue="Jest.FormEditor.should match snapshot" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.FormEditor.should match snapshot" />
         <item itemvalue="PHPUnit.CalderaFormsTest.testGetProcessorTypes" />
         <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
         <item itemvalue="Jest.Processors" />
         <item itemvalue="Jest.Processors.Can update a processor type" />
-        <item itemvalue="Jest.Processors.Can remove a processor" />
       </list>
     </recent_temporary>
   </component>
@@ -984,14 +983,11 @@
       <workItem from="1547500071076" duration="3885000" />
       <workItem from="1547578980897" duration="364000" />
       <workItem from="1547579399801" duration="24917000" />
-      <workItem from="1547741624885" duration="14193000" />
+      <workItem from="1547741624885" duration="15951000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Processors - 2019.01.17 at 12h 55m 43s.xml">
-      <configuration name="Processors" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="Processors - 2019.01.17 at 12h 56m 07s.xml">
       <configuration name="Processors" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -1019,9 +1015,12 @@
     <history-entry file="CalderaFormsTest_testGetProcessorTypes - 2019.01.17 at 14h 29m 57s.xml">
       <configuration name="CalderaFormsTest.testGetProcessorTypes" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="FormEditor_should_match_snapshot - 2019.01.17 at 15h 44m 04s.xml">
+      <configuration name="FormEditor.should match snapshot" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="491374000" />
+    <option name="totallyTimeSpent" value="493132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1042,7 +1041,7 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.20645161" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.07373272" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.24239631" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.022797927" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1052,7 +1051,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.043523315" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39481866" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info anchor="bottom" x="2179" y="36" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info active="true" anchor="bottom" x="2179" y="36" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1421,14 +1420,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/JavaScript.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/forms/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1631,14 +1622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1690,27 +1673,10 @@
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="58" column="31" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="58" selection-end-column="31" />
+          <caret line="58" column="31" selection-start-line="21" selection-start-column="20" selection-end-line="58" selection-end-column="31" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="183" column="19" selection-start-line="183" selection-start-column="19" selection-end-line="183" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="101" column="60" lean-forward="true" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1733,7 +1699,7 @@
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/FieldArea.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1749,15 +1715,6 @@
         <state relative-caret-position="-5">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1793,23 +1750,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+        <state relative-caret-position="144">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+        <state relative-caret-position="519">
+          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="129" column="46" lean-forward="true" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
         </state>
       </provider>
     </entry>

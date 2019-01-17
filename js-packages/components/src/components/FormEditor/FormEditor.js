@@ -6,6 +6,15 @@ import { Row, Column } from '@calderawp/factory';
 import {processorsCollection} from "./processors.fixtures";
 import {fieldAreaFactory} from '@calderawp/factory';
 
+
+const MainSection = ({title,className,children}) => (
+	<div
+		className={className}
+	>
+		<h2>{title}</h2>
+		{children}
+	</div>
+);
 export class FormEditor extends Component {
 	state = {
 		activeTab: 'processors',
@@ -33,6 +42,36 @@ export class FormEditor extends Component {
 		return form.fields ? form.fields : [];
 	};
 
+	tabs = [
+		{
+			name: 'editor',
+			title: 'Layout',
+			className: 'caldera-forms-editor-layout-tab-btn',
+			classNameForComponent: 'caldera-forms-editor-layout'
+		},
+		{
+			name: 'processors',
+			title: 'Processors',
+			className: 'caldera-forms-editor-processors-tab-btn',
+			classNameForComponent: 'caldera-forms-editor-processors'
+
+		},
+		{
+			name: 'Mailer',
+			title: 'mailer',
+			className: 'caldera-forms-editor-mailer-tab-btn',
+			classNameForComponent: 'caldera-forms-editor-mailer'
+		},
+		{
+			name: 'settings',
+			title: 'Settings',
+			className: 'caldera-forms-editor-settings-tab-btn',
+			classNameForComponent: 'caldera-forms-editor-settings'
+
+		},
+	];
+
+
 	render() {
 		const {form,processorTypes,updateForm} = this.props;
 		return (
@@ -47,46 +86,23 @@ export class FormEditor extends Component {
 					activeClass="active-tab"
 					onSelect={this.onSetTab}
 					initialTabName={'processors'}
-					tabs={[
-						{
-							name: 'editor',
-							title: 'Layout',
-							className: 'caldera-forms-editor-layout-tab-btn',
-							classNameForComponent: 'caldera-forms-editor-layout'
-						},
-						{
-							name: 'processors',
-							title: 'Processors',
-							className: 'caldera-forms-editor-processors-tab-btn',
-							classNameForComponent: 'caldera-forms-editor-processors'
-
-						},
-						{
-							name: 'Mailer',
-							title: 'mailer',
-							className: 'caldera-forms-editor-mailer-tab-btn',
-							classNameForComponent: 'caldera-forms-editor-mailer'
-						},
-						{
-							name: 'settings',
-							title: 'Settings',
-							className: 'caldera-forms-editor-settings-tab-btn',
-							classNameForComponent: 'caldera-forms-editor-settings'
-
-						},
-					]}
+					tabs={this.tabs}
 				>
 					{tab => {
-						const { name,classNameForComponent} = tab;
+						const { name,classNameForComponent,title} = tab;
 						if ('processors' === name) {
 							return (
-								<Processors
-									processors={this.getFormProcessors()}
-									form={form}
-									formFields={this.getFormFields()}
-									updateProcessors={this.updateProcessors}
-								/>
-
+								<MainSection
+									className={classNameForComponent}
+									title={title}
+								>
+									<Processors
+										processors={this.getFormProcessors()}
+										form={form}
+										formFields={this.getFormFields()}
+										updateProcessors={this.updateProcessors}
+									/>
+								</MainSection>
 							);
 						}
 						if( 'settings' === name ) {
@@ -98,7 +114,10 @@ export class FormEditor extends Component {
 								required: true,
 							};
 							return (
-								<Fragment>
+								<MainSection
+									className={classNameForComponent}
+									title={title}
+								>
 									{fieldAreaFactory(
 										nameField,
 										(name) => {
@@ -108,15 +127,16 @@ export class FormEditor extends Component {
 											})
 										}
 									)}
-								</Fragment>
+								</MainSection>
 							)
 						}
 						return (
-							<div
+							<MainSection
 								className={classNameForComponent}
+								title={title}
 							>
 								{tab.title}
-							</div>
+							</MainSection>
 						);
 					}}
 				</TabPanel>

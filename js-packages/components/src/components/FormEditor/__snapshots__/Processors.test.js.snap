@@ -3,18 +3,28 @@
 exports[`Processors collection in processors UI Renders with a list of processors 1`] = `
 <div>
   <div>
-    <button
-      className="caldera-forms-choose-processor caldera-forms-choose-processor-season7Episode2"
-      onClick={[Function]}
+    <div
+      className="sc-bdVaJa caldera-row sc-bwzfXH pjOvZ"
+      id={undefined}
     >
-      Test sending form data to test API
-    </button>
-    <button
-      className="caldera-forms-choose-processor caldera-forms-choose-processor-p2"
-      onClick={[Function]}
+      <button
+        className="caldera-forms-choose-processor caldera-forms-choose-processor-season7Episode2"
+        onClick={[Function]}
+      >
+        Test sending form data to test API
+      </button>
+    </div>
+    <div
+      className="sc-bdVaJa caldera-row sc-bwzfXH pjOvZ"
+      id={undefined}
     >
-      Main MailChimp
-    </button>
+      <button
+        className="caldera-forms-choose-processor caldera-forms-choose-processor-p2"
+        onClick={[Function]}
+      >
+        Main MailChimp
+      </button>
+    </div>
   </div>
 </div>
 `;
