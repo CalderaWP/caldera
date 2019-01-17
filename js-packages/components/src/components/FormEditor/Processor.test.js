@@ -40,7 +40,7 @@ describe('HorizontalForm', () => {
 	});
 
 	it('Can show conditionals', () => {
-		const component = renderer.create(
+		const component = mount(
 			<Processor
 				fields={[checkboxFieldset, selectField, checkboxField]}
 				initialValues={{}}
@@ -51,7 +51,12 @@ describe('HorizontalForm', () => {
 				instanceId={'test-1'}
 			/>
 		);
-		expect(component.toJSON()).toMatchSnapshot();
+		expect(component.find( '.caldera-processor-settings' ).length ).toBe(1);
+		expect(component.find( '.caldera-processor-conditionals' ).length ).toBe(0);
+
+		component.instance().onSetTab('conditionals' );
+		expect(component.find( '.caldera-processor-conditionals' ).length ).toBe(1);
+		expect(component.find( '.caldera-processor-conditionals' ).length ).toBe(0);
 	});
 
 });

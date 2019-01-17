@@ -311,7 +311,7 @@ Array [
             <button
                 aria-controls="0-settings-view"
                 aria-selected={true}
-                className="caldera-processor-one active-tab"
+                className="caldera-processor-settings-tab-btn active-tab"
                 id="0-settings"
                 onClick={[Function]}
                 role="tab"
@@ -322,7 +322,7 @@ Array [
             <button
                 aria-controls="0-conditionals-view"
                 aria-selected={false}
-                className="caldera-processor-two "
+                className="caldera-processor-conditionals-tab-btn "
                 id="0-conditionals"
                 onClick={[Function]}
                 role="tab"

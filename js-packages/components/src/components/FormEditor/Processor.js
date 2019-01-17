@@ -30,24 +30,22 @@ export class Processor extends Component {
 							{
 								name: 'settings',
 								title: 'Settings',
-								className: 'caldera-processor-one',
+								className: 'caldera-processor-settings-tab-btn',
 							},
 							{
 								name: 'conditionals',
 								title: 'Conditionals',
-								className: 'caldera-processor-two',
+								className: 'caldera-processor-conditionals-tab-btn',
 							},
 						]}>
 						{
 							(tab) => {
 								const {name} = tab;
 								if( 'settings' === name ){
-									return <HorizontalForm {...this.props}/>
+									return <HorizontalForm {...this.props} className={'caldera-processor-settings'}/>
 								}
-								return <div>Conditionals</div>
+								return <div className={'caldera-processor-conditionals'}>Conditionals</div>
 							}
-
-
 						}
 					</TabPanel>
 				</Row>
