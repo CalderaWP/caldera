@@ -45,21 +45,21 @@ Specific benefits:
 #### How A Caldera Forms
 ```jsx
 <CalderaForm
-		formRows={formRows}
-		initialValues={initialValues}
-		onSubmit={(
-		    //current values of all fields
-            values, 
-            actions
-		) => {
-			setTimeout(() => {
-				alert(JSON.stringify(values, null, 2));
-				actions.setSubmitting(false);
-			}, 1000);
-		}}
-		onChange={(values) => {
-            console.log(values) //all field values
-        }}
+    formRows={formRows}
+    initialValues={initialValues}
+    onSubmit={(
+        //current values of all fields
+        values, 
+        actions
+    ) => {
+        setTimeout(() => {
+            alert(JSON.stringify(values, null, 2));
+            actions.setSubmitting(false);
+        }, 1000);
+    }}
+    onChange={(values) => {
+        console.log(values) //all field values
+    }}
 	/>
 ```
 
@@ -119,8 +119,7 @@ import React, {Component} from 'react';
 import {CalderaGrid} from '@calderawp/forms';
 
 class Something extends Component {
-	
-	 row = {
+	row = {
         rowId: 'notForm',
         columns: [
             {
@@ -149,14 +148,14 @@ class Something extends Component {
 	render(){
 		return (
 			<CalderaGrid
-                    rows={[this.row]}
-                    onAnyChange={(values) => { this.setState({values})}}
-                    onAnyBlur={(values) => { console.log(values)}}
-                    fieldValues={this.state.fieldValues}
-                    setFieldValue={this.setFieldValue}
-                    fieldErrors={{}}
-                    fieldTouched={{}}
-                />
+                rows={[this.row]}
+                onAnyChange={(values) => { this.setState({values})}}
+                onAnyBlur={(values) => { console.log(values)}}
+                fieldValues={this.state.fieldValues}
+                setFieldValue={this.setFieldValue}
+                fieldErrors={{}}
+                fieldTouched={{}}
+            />
 		)
 	}
 	

@@ -1,11 +1,11 @@
 # Caldera Grid
 
-## Grid Factory
 
 ## Grid Components
+These components that are used to create the grid. You can use them with an object describing the components you want to have the grid constructed of, beacuse you're like a database or something. Or you can use those components like a person would.
 
 ### Rows
-Outputs many rows. A row can be an object describing the row and its columns, or it can be a React component.
+A row can be an object describing the row and its columns, or it can be a React component.
 
 ```js
 const row = {
@@ -41,7 +41,7 @@ One row, possibly in a collection of rows. Outputs many columns.
 />
 ```
 
-## Column
+### Column
 One column, possibly inside of a row
     
 ```jsx
@@ -53,4 +53,30 @@ One column, possibly inside of a row
 >
    <p>Hi Roy</p>
 </Column>
+```
+
+
+### Using Row and Column Compoents
+
+```js
+<Row>
+    <Column
+        width={'1/2'}
+    >
+        <button
+            onClick={onClose}
+        >
+            Close
+        </button>
+    </Column>
+    <Column
+        width={'1/2'}
+    >
+        <button
+            onClick={onRemove}
+        >
+            Remove
+        </button>
+    </Column>
+</Row>
 ```
