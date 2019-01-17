@@ -110,7 +110,9 @@ var Processor = exports.Processor = function (_Component) {
 						{ width: '1/2' },
 						_react2.default.createElement(
 							'button',
-							{ onClick: onClose },
+							{
+								className: 'caldera-processor-close',
+								onClick: onClose },
 							'Close'
 						)
 					),
@@ -119,7 +121,9 @@ var Processor = exports.Processor = function (_Component) {
 						{ width: '1/2' },
 						_react2.default.createElement(
 							'button',
-							{ onClick: onRemove },
+							{
+								className: 'caldera-processor-remove',
+								onClick: onRemove },
 							'Remove'
 						)
 					)

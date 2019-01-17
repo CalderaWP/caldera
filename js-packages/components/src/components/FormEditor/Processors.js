@@ -114,16 +114,18 @@ export class Processors extends Component {
 	}
 }
 
+export const processorsCollectionPropType = PropTypes.arrayOf(
+	PropTypes.shape({
+		id: PropTypes.string,
+		label: PropTypes.string,
+		type: PropTypes.string,
+		fields: PropTypes.array,
+		config: PropTypes.object
+	})
+);
+
 Processors.propTypes = {
-	processors: PropTypes.arrayOf(
-		PropTypes.shape({
-			id: PropTypes.string,
-			label: PropTypes.string,
-			type: PropTypes.string,
-			fields: PropTypes.array,
-			config: PropTypes.object
-		})
-	),
+	processors: processorsCollectionPropType,
 	updateProcessors: PropTypes.func,
 	form: PropTypes.object,
 	formFields: PropTypes.object

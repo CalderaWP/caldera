@@ -56,16 +56,31 @@ import { collectFieldValues } from '@caldera-labs/collectFieldValues';
 Creates a field from an object.
 
 
+### Field Area Factory
+
+```js
+import { fieldAreaFactory } from '@caldera-labs/factory';
+const nameField = {
+    fieldType: 'text',
+    value: 'Infinite Vague',
+    label: 'Name',
+    fieldId: 'fromName',
+    required: true,
+};
+return (
+    <Fragment>
+        {fieldAreaFactory(
+            nameField,
+            (name) => {
+               console.log(name)
+            }
+        )}
+    </Fragment>
+)
+```
+
 
 ## Components
-
-### `Field`
-Let's you use `fieldFactory()` as a React component.
-
-### `Fields`
-Iterates through a collection of fields, passing each child to `Field`.
-
-
 ### Import With webpack
 ```js
 import { 
@@ -75,8 +90,35 @@ import {
 	Fields,
 	FieldArea
 } from '@caldera-labs/factory';
-
 ```
+### `Field`
+Let's you use `fieldFactory()` as a React component.
+
+### `Fields`
+Iterates through a collection of fields, passing each child to `Field`.
+
+#### `FieldArea`
+
+```js
+const field = {
+    fieldId: '',
+    type: 'input',
+    html5type: 'text',
+    required: false,
+    label: '',
+    description: ''
+};
+
+<FieldArea
+    field={field}
+    onChange={onChange}
+    onBlur={onBlur}
+    fieldErrors={fieldErrors}
+    fieldsTouch={fieldsTouched}
+/>
+```
+
+
 
 ### Fixtures
 This package also exports fixtures for testing columns and fields.

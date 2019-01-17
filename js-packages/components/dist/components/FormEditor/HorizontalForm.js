@@ -19,6 +19,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+/**
+ * Displays a form, one field per row
+ *
+ * @param fields
+ * @param initialValues
+ * @param onClose
+ * @param onChange
+ * @param instanceId
+ * @return {*}
+ * @constructor
+ */
 var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 	var fields = _ref.fields,
 	    initialValues = _ref.initialValues,
@@ -60,10 +71,7 @@ HorizontalForm.propTypes = _defineProperty({
 	onClose: _propTypes2.default.func
 }, 'initialValues', _propTypes2.default.object);
 
-var _noop = function _noop() {};
 HorizontalForm.defaultProps = {
 	fields: {},
-	onSubmit: _noop,
-	onChange: _noop,
 	initialValues: {}
 };

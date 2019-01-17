@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Processors = undefined;
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
@@ -49,17 +51,63 @@ var Processors = exports.Processors = function (_Component) {
 			var activeProcessorId = _this.state.activeProcessorId;
 
 			return activeProcessorId && processorId === activeProcessorId;
-		}, _this.handleConfigChange = function (processorId, config) {}, _this.handleRemoveProcessor = function (processorId) {
-			var processors = _this.props.processors;
+		}, _this.handleProcessorChange = function (processorId, updatedProcessor) {
+			var _this$props = _this.props,
+			    processors = _this$props.processors,
+			    updateProcessors = _this$props.updateProcessors;
 
-			return [].concat(_toConsumableArray(processors.filter(function (processor) {
+			var processorIndex = processors.findIndex(function (processor) {
+				return processorId === processor.id;
+			});
+			if (-1 !== processorIndex) {
+				var processor = processors[processorIndex];
+				var update = [].concat(_toConsumableArray(processors.splice(processorIndex - 1, 1)), [_extends({}, processor, updatedProcessor)]);
+				updateProcessors(update);
+			}
+		}, _this.handleRemoveProcessor = function (processorId) {
+			var _this$props2 = _this.props,
+			    processors = _this$props2.processors,
+			    updateProcessors = _this$props2.updateProcessors;
+
+			updateProcessors([].concat(_toConsumableArray(processors.filter(function (processor) {
 				return processorId !== processor.id;
-			})));
+			}))));
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
+	/**
+  * Set which processor is active
+  * @param activeProcessorId
+  */
+
+
+	/**
+  * Check if a processor is active by ID
+  * @param processorId
+  * @return {string|boolean}
+  */
+
+
+	/**
+  * When a change in value for a processor is received, send all processors up.
+  *
+  * @param processorId
+  * @param updatedProcessor
+  */
+
+
+	/**
+  * When a processor is removed, send updated list to change handler.
+  *
+  * @param processorId
+  */
+
+
 	_createClass(Processors, [{
 		key: 'render',
+
+
+		/** @inheritDoc **/
 		value: function render() {
 			var _this2 = this;
 
@@ -73,34 +121,48 @@ var Processors = exports.Processors = function (_Component) {
 					'div',
 					null,
 					processors.map(function (processor) {
-						if (_this2.isActiveProcessor(processor.id)) {
-							var id = processor.id,
-							    fields = processor.fields,
-							    config = processor.config,
-							    type = processor.type,
-							    label = processor.label;
+						var id = processor.id,
+						    fields = processor.fields,
+						    config = processor.config,
+						    type = processor.type,
+						    label = processor.label;
 
-							return _react2.default.createElement(_Processor.Processor, {
-								fields: fields,
-								initialValues: config,
-								label: label,
-								type: type,
-								onChange: function onChange(fieldValues) {
-									return _this2.handleProcessorChange(id, fieldValues);
-								},
-								onRemove: function onRemove() {
-									return _this2.handleRemoveProcessor(id);
-								}
-							});
+						if (_this2.isActiveProcessor(id)) {
+
+							return _react2.default.createElement(
+								_react.Fragment,
+								{ key: id },
+								_react2.default.createElement(_Processor.Processor, {
+									className: 'caldera-forms-active-processor-' + id,
+									fields: fields,
+									initialValues: config,
+									label: label,
+									type: type,
+									onChange: function onChange(fieldValues) {
+										return _this2.handleProcessorChange(id, fieldValues);
+									},
+									onRemove: function onRemove() {
+										return _this2.handleRemoveProcessor(id);
+									},
+									onClose: function onClose() {
+										return _this2.setActive('');
+									}
+								})
+							);
 						}
 						return _react2.default.createElement(
-							'button',
-							{
-								onClick: function onClick() {
-									return _this2.setActive(processor.id);
-								}
-							},
-							processor.type
+							_react.Fragment,
+							null,
+							_react2.default.createElement(
+								'button',
+								{
+									className: 'caldera-forms-choose-processor caldera-forms-choose-processor-' + id,
+									onClick: function onClick() {
+										return _this2.setActive(id);
+									}
+								},
+								label ? label : type
+							)
 						);
 					})
 				)

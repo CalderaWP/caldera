@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { storiesOf } from '@storybook/react';
 import { Processor } from './Processor';
 import { Processors } from './Processors';
 import { HorizontalForm } from './HorizontalForm';
+import { FormEditor } from './FormEditor';
 import {processorsCollection} from './processors.fixtures';
 import {
 	checkboxFieldset,
@@ -13,7 +14,7 @@ import {
 	emailField,
 	radioField
 } from '@calderawp/factory';
-storiesOf('Processors', module).add('The processor', () => (
+storiesOf('FormEditor', module).add('The processor', () => (
 	<Processor
 		fields={[
 			checkboxFieldset,
@@ -32,7 +33,7 @@ storiesOf('Processors', module).add('The processor', () => (
 	/>
 ));
 
-storiesOf('Processors', module).add('The processors list', () => (
+storiesOf('FormEditor', module).add('The processors list', () => (
 	<Processors
 		processors={processorsCollection}
 		onChange={values => console.log(values)}
@@ -43,6 +44,46 @@ storiesOf('Processors', module).add('The processors list', () => (
 	/>
 ));
 
+const form = {
+	id: 'a form',
+	processors: processorsCollection,
+};
+
+const processorTypes = [
+	{
+		type: 'apiRequest'
+	},
+	{
+		type: 'redirect'
+	}
+];
+
+class MockFormApp extends Component {
+	state = {
+		form: {
+			id: 'a-form',
+			name: 'Form Name',
+			processors: processorsCollection,
+		}
+	};
+
+	updateForm = (form) => this.setState({form});
+
+	render(){
+		const {form} = this.state;
+		return(
+			<FormEditor
+				processorTypes={processorTypes}
+				updateForm={this.updateForm}
+				form={ form }
+			/>
+		)
+	}
+}
+
+storiesOf('FormEditor', module).add('The form editor', () => (
+	<MockFormApp/>
+));
 
 storiesOf('HorizontalForm', module).add('Works with a bunch of fields', () => (
 	<HorizontalForm
