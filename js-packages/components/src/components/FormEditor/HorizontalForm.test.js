@@ -57,5 +57,4 @@ describe('HorizontalForm', () => {
 			.simulate('change', event);
 		expect(onChange.mock.calls.length).toBe(1);
 	});
-
 });

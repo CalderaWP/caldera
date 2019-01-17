@@ -51,12 +51,17 @@ describe('HorizontalForm', () => {
 				instanceId={'test-1'}
 			/>
 		);
-		expect(component.find( '.caldera-processor-settings' ).length ).toBe(1);
-		expect(component.find( '.caldera-processor-conditionals' ).length ).toBe(0);
+		expect(component.find('.caldera-processor-settings').length).toBe(1);
+		expect(component.find('.caldera-processor-conditionals').length).toBe(
+			0
+		);
 
-		component.instance().onSetTab('conditionals' );
-		expect(component.find( '.caldera-processor-conditionals' ).length ).toBe(1);
-		expect(component.find( '.caldera-processor-conditionals' ).length ).toBe(0);
+		component.instance().onSetTab('conditionals');
+		expect(component.find('.caldera-processor-conditionals').length).toBe(
+			1
+		);
+		expect(component.find('.caldera-processor-conditionals').length).toBe(
+			0
+		);
 	});
-
 });

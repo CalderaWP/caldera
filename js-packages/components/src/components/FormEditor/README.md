@@ -22,9 +22,33 @@ import {HorizontalForm} from '@calderawp/components';
 />
 ```
 
-
-
 ### Components
 There are components that wrap `<HorizontalForm />`. They generally add controls for the UI state -- open, close, minimize, expand.
 
-* `<Processor />`
+#### `<Processor />`
+This is the settings -- to be used in the Caldera Forms editor or similar situation for describe one process of a form.
+
+```js
+import {Processor} from '@calderawp/components';
+
+const processor = {
+    id: 'p1',
+    type: 'mailchimp',
+    label: 'Segment One',
+    fields: [
+    	
+    ],
+    conditionals: [
+    	
+    ]
+};
+
+<Processor
+    fields={processor.fields}
+    initialValues={{}}
+    onClose={onClose} //called when processor close button is clicked
+    onChange={onChange} //called when any field is changed
+    initialActiveTab={'conditionals'}//defaults to settings
+    instanceId={processor.id} //shou
+/>
+```

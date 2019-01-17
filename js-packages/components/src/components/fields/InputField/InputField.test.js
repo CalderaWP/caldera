@@ -76,6 +76,4 @@ describe('InputField ', () => {
 		component.find('input').simulate('change');
 		expect(onChange.mock.calls.length).toBe(1);
 	});
-
-
 });
