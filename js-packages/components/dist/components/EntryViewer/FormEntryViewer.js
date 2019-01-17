@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
@@ -9,11 +9,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDataGrid = require("react-data-grid");
+var _reactDataGrid = require('react-data-grid');
 
 var _reactDataGrid2 = _interopRequireDefault(_reactDataGrid);
 
@@ -26,7 +26,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 //import "./styles.css";
-
 
 var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 	_inherits(FormEntryViewer, _React$Component);
@@ -53,7 +52,11 @@ var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 				width: 120
 			};
 			Object.values(form.fields).forEach(function (field) {
-				columns.push(_extends({}, defaultColumnProperties, { key: field.id, name: field.label, editable: false }));
+				columns.push(_extends({}, defaultColumnProperties, {
+					key: field.id,
+					name: field.label,
+					editable: false
+				}));
 			});
 
 			function findEntryValue(entry, field) {
@@ -68,7 +71,6 @@ var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 					key: entryId
 				};
 				columns.forEach(function (field) {
-
 					var entryValue = findEntryValue(entry, field);
 					if (entryValue) {
 						row[field.key] = entryValue.value;
@@ -88,12 +90,12 @@ var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 	}
 
 	_createClass(FormEntryViewer, [{
-		key: "componentDidMount",
+		key: 'componentDidMount',
 		value: function componentDidMount() {
 			this.setColumnsAndRows();
 		}
 	}, {
-		key: "render",
+		key: 'render',
 		value: function render() {
 			var _this2 = this;
 
@@ -113,7 +115,7 @@ var FormEntryViewer = exports.FormEntryViewer = function (_React$Component) {
 				});
 			} else {
 				return _react2.default.createElement(
-					"div",
+					'div',
 					{ className: 'has-error' },
 					noItemsMessage
 				);

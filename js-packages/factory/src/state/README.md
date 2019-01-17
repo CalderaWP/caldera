@@ -33,10 +33,8 @@ processorState.enableField('firstName' );
 const values = processorState.setValue('firstName', 'General Leia' );
 //All visible values //does not include lastName
 console.log(values);
-
 //unhide lastName
 processorState.showField('lastName');
-
 //All visible values //does include lastName
 console.log(processorState.getCurrentState());
 

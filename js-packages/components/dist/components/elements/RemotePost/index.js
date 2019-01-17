@@ -1,12 +1,12 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _RemotePost = require("./RemotePost");
+var _RemotePost = require('./RemotePost');
 
-var _propTypes = require("./propTypes");
+var _propTypes = require('./propTypes');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 

@@ -44,7 +44,8 @@ var InputField = exports.InputField = function InputField(_ref) {
 			help: description
 		}, _attributes, {
 			onChange: onChange,
-			label: label
+			label: label,
+			onBlur: onBlur
 		}));
 	} else {
 		return _react2.default.createElement(_components.TextControl, _extends({

@@ -18,6 +18,7 @@ export { collectFieldValues } from './components/collectFieldValues';
  */
 export { fieldFactory } from './factories/fieldFactory';
 export { fieldAreaFactory } from './factories/fieldAreaFactory';
+export {ConditionalState} from './state/ConditionalState';
 
 /**
  * Test fixtures!

@@ -42,16 +42,16 @@ var FormsList = exports.FormsList = function FormsList(_ref) {
 		{ classname: (0, _classnames2.default)(classname) },
 		_react2.default.createElement(
 			_components.PanelBody,
-			{
-				title: panelTitle,
-				icon: 'feedback',
-				initialOpen: true
-			},
+			{ title: panelTitle, icon: 'feedback', initialOpen: true },
 			forms.map(function (form) {
 				return _react2.default.createElement(
 					_components.PanelRow,
 					{ key: form.id },
-					_react2.default.createElement(_FormListItem.FormListItem, { key: form.id, form: form, onFormAction: onFormAction })
+					_react2.default.createElement(_FormListItem.FormListItem, {
+						key: form.id,
+						form: form,
+						onFormAction: onFormAction
+					})
 				);
 			})
 		)

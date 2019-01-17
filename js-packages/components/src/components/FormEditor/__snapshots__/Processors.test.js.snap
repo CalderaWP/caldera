@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Processors Renders with a list of processors 1`] = `
+<div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Redirect
+    </button>
+  </div>
+</div>
+`;

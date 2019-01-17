@@ -49,7 +49,6 @@ var FormListItem = exports.FormListItem = function FormListItem(_ref) {
 				onClick: function onClick() {
 					onFormAction(form.id, 'edit');
 				}
-
 			}),
 			_react2.default.createElement(_components.IconButton, {
 				icon: 'list-view',

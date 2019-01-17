@@ -21,7 +21,6 @@ var EntryActions = exports.EntryActions = function EntryActions(_ref) {
 	    actions = _ref.actions,
 	    onAction = _ref.onAction;
 
-
 	return _react2.default.createElement(
 		_react.Fragment,
 		null,
@@ -45,7 +44,6 @@ EntryActions.propTypes = {
 	entryId: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]).isRequired,
 	actions: _propTypes2.default.arrayOf(_propTypes2.default.oneOfType([_propTypes2.default.arrayOf(_propTypes2.default.node), _propTypes2.default.node])),
 	onAction: _propTypes2.default.func
-
 };
 
 EntryActions.defaultProps = {

@@ -85,6 +85,15 @@ Object.defineProperty(exports, 'fieldAreaFactory', {
 	}
 });
 
+var _ConditionalState = require('./state/ConditionalState');
+
+Object.defineProperty(exports, 'ConditionalState', {
+	enumerable: true,
+	get: function get() {
+		return _ConditionalState.ConditionalState;
+	}
+});
+
 var _fieldsFixtures = require('./fields.fixtures.js');
 
 Object.defineProperty(exports, 'checkboxFieldset', {

@@ -41,9 +41,7 @@ var RemotePost = exports.RemotePost = function RemotePost(_ref) {
 
 	return _react2.default.createElement(
 		_reactOembedContainer2.default,
-		{
-			markup: post.content.rendered
-		},
+		{ markup: post.content.rendered },
 		_react2.default.createElement(
 			'article',
 			{
@@ -63,7 +61,17 @@ var RemotePost = exports.RemotePost = function RemotePost(_ref) {
 			_react2.default.createElement(
 				_react.Fragment,
 				null,
-				showFullContent ? _react2.default.createElement('div', { className: 'entry-content', dangerouslySetInnerHTML: { __html: post.content.rendered } }) : _react2.default.createElement('div', { className: 'entry-excerpt', dangerouslySetInnerHTML: { __html: post.excerpt.rendered } })
+				showFullContent ? _react2.default.createElement('div', {
+					className: 'entry-content',
+					dangerouslySetInnerHTML: {
+						__html: post.content.rendered
+					}
+				}) : _react2.default.createElement('div', {
+					className: 'entry-excerpt',
+					dangerouslySetInnerHTML: {
+						__html: post.excerpt.rendered
+					}
+				})
 			)
 		)
 	);

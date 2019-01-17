@@ -71,11 +71,15 @@ export class Processor extends Component {
 	}
 }
 
+//should have label!
 Processor.propTypes = {
 	...HorizontalForm.propTypes,
 	initialActiveTab: PropTypes.string,
-	onRemove: PropTypes.func
+	onRemove: PropTypes.func,
+	type: PropTypes.string,
+	id: PropTypes.string,
 };
+
 Processor.defaultProps = {
 	...HorizontalForm.defaultProps,
 	initialActiveTab: 'settings'

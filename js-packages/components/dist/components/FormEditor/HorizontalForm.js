@@ -24,7 +24,6 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 	    initialValues = _ref.initialValues,
 	    onClose = _ref.onClose,
 	    onChange = _ref.onChange,
-	    onBlur = _ref.onBlur,
 	    instanceId = _ref.instanceId;
 
 	var rows = [];
@@ -47,8 +46,7 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 			formRows: rows,
 			initialValues: initialValues,
 			onSubmit: onClose,
-			onChange: onChange,
-			onBlur: onBlur
+			onChange: onChange
 		})
 	);
 };
@@ -67,6 +65,5 @@ HorizontalForm.defaultProps = {
 	fields: {},
 	onSubmit: _noop,
 	onChange: _noop,
-	onBlur: _noop,
 	initialValues: {}
 };
