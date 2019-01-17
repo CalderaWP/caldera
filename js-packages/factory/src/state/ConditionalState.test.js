@@ -66,6 +66,28 @@ describe( 'ConditionalState Hiding fields', () => {
 		expect( currentState.hasOwnProperty('y')).toBe(true);
 		expect( currentState.hasOwnProperty('r')).toBe(true);
 	});
+
+	it( 'Can handle being asked to hide an invalid field', () => {
+		const state = new ConditionalState({
+			x:7,
+			y: 1,
+			r: null
+		});
+		state.hideField('zzz');
+		const currentState = state.getCurrentState();
+		expect( currentState.hasOwnProperty('x')).toBe(true);
+	});
+
+	it( 'Can handle being asked to show an invalid field', () => {
+		const state = new ConditionalState({
+			x:7,
+			y: 1,
+			r: null
+		});
+		state.showField('zzz');
+		const currentState = state.getCurrentState();
+		expect( currentState.hasOwnProperty('x')).toBe(true);
+	});
 });
 
 describe( 'ConditionalState enabling and disabling', () => {
@@ -108,5 +130,27 @@ describe( 'ConditionalState enabling and disabling', () => {
 		expect( currentState.hasOwnProperty('x')).toBe(true);
 		expect( currentState.hasOwnProperty('y')).toBe(true);
 		expect( currentState.hasOwnProperty('r')).toBe(true);
+	});
+
+	it( 'Can handle being asked to disable an invalid field', () => {
+		const state = new ConditionalState({
+			x:7,
+			y: 1,
+			r: null
+		});
+		state.disableField('zzz');
+		const currentState = state.getCurrentState();
+		expect( currentState.hasOwnProperty('x')).toBe(true);
+	});
+
+	it( 'Can handle being asked to enable an invalid field', () => {
+		const state = new ConditionalState({
+			x:7,
+			y: 1,
+			r: null
+		});
+		state.enableField('zzz');
+		const currentState = state.getCurrentState();
+		expect( currentState.hasOwnProperty('x')).toBe(true);
 	});
 });

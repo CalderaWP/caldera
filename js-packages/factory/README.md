@@ -40,7 +40,7 @@ or
 ```
 
 ### Grid Components
-[See ./src/components/Grid/README.md](./src/components/Grid/README.md)
+[See ./src/components/Grid/README.md](src/components/Grid/README.md)
 ##  Factories
 
 
