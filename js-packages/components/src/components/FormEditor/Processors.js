@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {Processor} from "./Processor";
 import {Row, fieldAreaFactory} from '@calderawp/factory';
 import {processorTypesPropType} from './propTypes';
+import processorFactory from './processorTypes/processorFactory';
 
 const AddProcessor = ({
 						  setNewProcessorType,
@@ -127,19 +128,23 @@ export class Processors extends Component {
 
 	/**
 	 * When a processor is added, create send update list to change handler
-	 *
-	 * @param processorType
+
 	 */
-	handleCreateProcessor = (processorType) => {
+	handleCreateProcessor = () => {
 		const {processors, updateProcessors} = this.props;
 		const {activeProcessor,newProcessorType} = this.state;
-		const shortid = require('shortid');
-		const id = shortid.generate();
-		updateProcessors([...processors, {type: processorType.type,id}]);
+		const newProcessor = processorFactory(newProcessorType);
+		const {id} = newProcessor;
+		updateProcessors([...processors, newProcessor]);
 		this.setState({activeProcessorId:id,newProcessorType: ''});
-	}
+	};
 
-
+	/**
+	 * Set the type of the next processor to be created
+	 *
+	 * @param newProcessorType
+	 * @return {*}
+	 */
 	setNewProcessorType = (newProcessorType) => this.setState({newProcessorType});
 
 	/** @inheritDoc **/
@@ -174,7 +179,7 @@ export class Processors extends Component {
 							)
 						}
 						return (
-							<Row>
+							<Row key={id}>
 								<button
 									className={`caldera-forms-choose-processor caldera-forms-choose-processor-${id}`}
 									onClick={() => this.setActive(id)}
@@ -216,7 +221,7 @@ Processors.propTypes = {
 	processors: processorsCollectionPropType,
 	updateProcessors: PropTypes.func,
 	form: PropTypes.object,
-	formFields: PropTypes.object
+	formFields: PropTypes.array
 };
 
 Processors.defaultProps = {
