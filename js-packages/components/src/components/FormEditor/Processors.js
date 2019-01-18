@@ -6,35 +6,67 @@ import {processorTypesPropType} from './propTypes';
 
 const AddProcessor = ({
 						  setNewProcessorType,
-						  processorsTypes,
+						  processorTypes,
 						  onCreate,
 						  children,
 						  value
 					  }) => {
+	const options = [
+		{
+			value: null,
+			label: '--'
+		}
+	];
+
+	processorTypes.map(processorType => {
+		options.push({
+			value: processorType.type,
+			label: processorType.type
+		});
+	});
+
+
 	const processorTypesField = {
 		fieldType: 'select',
 		label: 'Processor Type',
 		fieldId: 'newProcessorType',
 		required: true,
-		options: [],
+		options,
+		onChange: setNewProcessorType,
 		value,
 	};
+
 
 	return (
 		<Fragment>
 			{fieldAreaFactory(processorTypesField, setNewProcessorType)}
-			<button onClick={onCreate}>
+			<button onClick={onCreate}
+				disabled={! value  }
+			>
 				{children}
 			</button>
 		</Fragment>
 	)
+};
+
+AddProcessor.propTypes = {
+	processorTypes: PropTypes.array,
+	onCreate: PropTypes.func,
+	setNewProcessorType: PropTypes.func,
+	value: PropTypes.string
+}
+
+AddProcessor.defaultProps = {
+	processorTypes: [],
+	value: ''
 }
 
 
 export class Processors extends Component {
 
 	state = {
-		activeProcessorId: ''
+		activeProcessorId: '',
+		newProcessorType: ''
 	};
 
 	/**
@@ -93,10 +125,27 @@ export class Processors extends Component {
 		})]);
 	};
 
+	/**
+	 * When a processor is added, create send update list to change handler
+	 *
+	 * @param processorType
+	 */
+	handleCreateProcessor = (processorType) => {
+		const {processors, updateProcessors} = this.props;
+		const {activeProcessor,newProcessorType} = this.state;
+		const shortid = require('shortid');
+		const id = shortid.generate();
+		updateProcessors([...processors, {type: processorType.type,id}]);
+		this.setState({activeProcessorId:id,newProcessorType: ''});
+	}
+
+
+	setNewProcessorType = (newProcessorType) => this.setState({newProcessorType});
+
 	/** @inheritDoc **/
 	render() {
-		const {activeProcessor} = this.state;
-		const {processors,processorsTypes} = this.props;
+		const {activeProcessor,newProcessorType} = this.state;
+		const {processors,processorTypes} = this.props;
 		return (
 			<div>
 				<div>
@@ -140,9 +189,11 @@ export class Processors extends Component {
 				<div>
 					<AddProcessor
 						setNewProcessorType={this.setNewProcessorType}
-						processorsTypes={processorsTypes}
+						processorTypes={processorTypes}
+						value={newProcessorType}
+						onCreate={this.handleCreateProcessor}
 					>
-						Add Processor
+						Add {! newProcessorType ? '' : newProcessorType } Processor
 					</AddProcessor>
 				</div>
 			</div>
