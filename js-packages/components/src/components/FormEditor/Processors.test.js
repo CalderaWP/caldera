@@ -15,6 +15,7 @@ import {
 	emailField,
 	radioField
 } from '@calderawp/factory';
+import {FormEditor} from "./FormEditor";
 
 describe('Processors', () => {
 	const processors = [
@@ -24,7 +25,7 @@ describe('Processors', () => {
 	];
 
 	const form = {};
-	const formFields = {};
+	const formFields = [];
 	let updateProcessors;
 	beforeEach(() => {
 		updateProcessors = jest.fn();
@@ -113,7 +114,7 @@ describe('Processors', () => {
 
 describe( 'Processors collection in processors UI', () => {
 	const form = {};
-	const formFields = {};
+	const formFields = [];
 	let updateProcessors;
 	beforeEach(() => {
 		updateProcessors = jest.fn();
@@ -195,6 +196,37 @@ describe( 'Processors collection in processors UI', () => {
 		component.find( '.caldera-processor-close' ).simulate( 'click' );
 		expect(component.state('activeProcessorId') ).toEqual( '');
 	});
+
+	it( 'sets newProcessorType', () => {
+		const component =
+			mount(<Processors
+				processors={processorsCollection}
+				form={form}
+				formFields={formFields}
+				updateProcessors={updateProcessors}
+			/>);
+		component.instance().setNewProcessorType('redirect');
+		expect( component.state('newProcessorType')).toBe( 'redirect');
+
+	})
+
+
+	it('Adds new processor when created', () => {
+		const component =
+			mount(<Processors
+				processors={processorsCollection}
+				form={form}
+				formFields={formFields}
+				updateProcessors={updateProcessors}
+			/>);
+		component.setState({newProcessorType: 'redirect'});
+		component.instance().handleCreateProcessor();
+		expect(updateProcessors.mock.calls.length ).toEqual( 1);
+		expect(updateProcessors.mock.calls[0][0].find( p => p.type === 'redirect').type ).toEqual('redirect');
+
+
+	});
+
 
 
 });

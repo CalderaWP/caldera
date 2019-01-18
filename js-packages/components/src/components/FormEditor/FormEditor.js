@@ -6,21 +6,13 @@ import {Row, Column} from '@calderawp/factory';
 import {processorsCollection} from "./processors.fixtures";
 import {fieldAreaFactory} from '@calderawp/factory';
 import {processorTypesPropType} from './propTypes';
-
-const MainSection = ({title, className, children}) => (
-	<div
-		className={className}
-	>
-		<h2>{title}</h2>
-		{children}
-	</div>
-);
+import {MainSection} from './MainSection';
 
 
 export class FormEditor extends Component {
 	state = {
 		activeTab: 'processors',
-		newProcessorType: 'mailer', //the next processor to be created will use this type
+		newProcessorType: '', //the next processor to be created will use this type
 	};
 
 	onSetTab = activeTab => {

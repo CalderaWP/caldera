@@ -5,5 +5,6 @@ describe('processorFactory', () => {
 	});
 	it('should create apiRequest processor', () => {
 		expect( typeof processorFactory('apiRequest')).toBe('object');
+		expect(  processorFactory('apiRequest').type).toBe('apiRequest');
 	});
 });

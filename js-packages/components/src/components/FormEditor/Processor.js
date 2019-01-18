@@ -14,6 +14,19 @@ export class Processor extends Component {
 		this.setState({ activeTab });
 	};
 
+	tabs = [
+		{
+			name: 'settings',
+			title: 'Settings',
+			className: 'caldera-processor-settings-tab-btn'
+		},
+		{
+			name: 'conditionals',
+			title: 'Conditionals',
+			className:
+				'caldera-processor-conditionals-tab-btn'
+		}
+	];
 	render() {
 		const { onClose, onRemove } = this.props;
 		return (
@@ -24,21 +37,11 @@ export class Processor extends Component {
 						activeClass="active-tab"
 						onSelect={this.onSetTab}
 						initialTabName={'settings'}
-						tabs={[
-							{
-								name: 'settings',
-								title: 'Settings',
-								className: 'caldera-processor-settings-tab-btn'
-							},
-							{
-								name: 'conditionals',
-								title: 'Conditionals',
-								className:
-									'caldera-processor-conditionals-tab-btn'
-							}
-						]}
+						tabs={this.tabs}
 					>
-						{tab => {
+						{() => {
+							const {activeTab} = this.state;
+							const tab =  this.tabs.find( t => t.name === activeTab );
 							const { name } = tab;
 							if ('settings' === name) {
 								return (

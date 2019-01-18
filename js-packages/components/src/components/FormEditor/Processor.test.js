@@ -71,4 +71,6 @@ describe('Processor', () => {
 		component.setState({activeTab:'conditionals'});
 		expect(component.state('activeTab')).toBe('conditionals');
 	});
+
+
 });
