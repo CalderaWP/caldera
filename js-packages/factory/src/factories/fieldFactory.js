@@ -8,7 +8,8 @@ import {
 	SelectField,
 	InputField,
 	RichText,
-	MagicRichText
+	MagicRichText,
+	isValidHtml5type
 } from '@calderawp/components';
 import React from 'react';
 

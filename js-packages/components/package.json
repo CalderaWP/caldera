@@ -39,7 +39,12 @@
         "statements": 95
       }
     },
-    "collectCoverage": true
+    "collectCoverage": true,
+    "moduleDirectories": ["node_modules"],
+    "moduleNameMapper": {
+      "^react(.*)$": "<rootDir>/vendor/react-master$1",
+      "\\.(css|scss)$": "<rootDir>/config/jest/styleMock.js"
+    }
   },
   "dependencies": {
     "@storybook/addon-options": "^4.1.4",

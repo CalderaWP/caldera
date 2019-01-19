@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import {Processors, processorsCollectionPropType} from './Processors';
 import {TabPanel} from '@wordpress/components';
 import {Row, Column} from '@calderawp/factory';
-import {processorsCollection} from "./processors.fixtures";
 import {fieldAreaFactory} from '@calderawp/factory';
 import {processorTypesPropType} from './propTypes';
 import {MainSection} from './MainSection';
-
+import {defaultProcessorTypes} from './processorTypes/defaultProcessorTypes';
 
 export class FormEditor extends Component {
 	state = {
@@ -71,6 +70,10 @@ export class FormEditor extends Component {
 
 	render() {
 		const {form, processorTypes, updateForm} = this.props;
+		const theProcessorTypes = [
+			...processorTypes,
+			...defaultProcessorTypes
+		];
 		return (
 			<div>
 				<Row>
@@ -94,7 +97,7 @@ export class FormEditor extends Component {
 									title={title}
 								>
 									<Processors
-										processorTypes={processorTypes}
+										processorTypes={theProcessorTypes}
 										processors={this.getFormProcessors()}
 										form={form}
 										formFields={this.getFormFields()}
@@ -156,4 +159,8 @@ FormEditor.propTypes = {
 		processors: processorsCollectionPropType,
 	}),
 };
+
+FormEditor.defaultProps = {
+
+}
 
