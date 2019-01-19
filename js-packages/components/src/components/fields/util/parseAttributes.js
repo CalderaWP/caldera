@@ -36,7 +36,7 @@ const checkboxAttrs = ['checked', 'value'];
 const radioAttrs = ['checked'];
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#Attributes
-const textAreaAttrs = ['autocapitalize', 'autocomplete', 'autofocus', 'cols', 'disabled', 'form', 'maxlength', 'minlength', 'name', 'placeholder' ];
+const textAreaAttrs = ['rows','autocapitalize', 'autocomplete', 'autofocus', 'cols', 'disabled', 'form', 'maxlength', 'minlength', 'name', 'placeholder' ];
 
 /**
  *
@@ -66,7 +66,7 @@ export const parseAttributes = (attributes, allowed = null) => {
 			allowed = [...inputAttrs, ...checkboxAttrs];
 			break;
 		case 'textarea':
-			allowed = [ textAreaAttrs ];
+			allowed = textAreaAttrs;
 			break;
 		case 'text':
 		case 'default':
@@ -79,7 +79,8 @@ export const parseAttributes = (attributes, allowed = null) => {
 
 	const transforms = {
 		maxlength: 'maxLength',
-		spellcheck: 'spellCheck'
+		spellcheck: 'spellCheck',
+		disable: 'disable'//must be a string or React DOM will raise notice
 	};
 	Object.keys(transforms).forEach(attr => {
 		if (attributes.hasOwnProperty(attr)) {

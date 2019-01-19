@@ -19,18 +19,20 @@ export const TextAreaField = ({
 	onChange,
 	onBlur,
 	attributes,
-	children
 }) => {
 	const fieldType = isValidHtml5type(html5type) ? html5type : 'text';
 	const _attributes = parseAttributes(attributes, 'textarea');
+	const rows = _attributes.hasOwnProperty('rows') ? _attributes.rows : 6;
 	return(
 		<TextareaControl
-			rows={_attributes.hasOwnProperty('rows') ? _attributes.rows : null }
+			rows={rows }
 			label={label}
 			id={fieldId}
 			required={required}
 			value={value}
 			help={description}
+			onChange={onChange}
+			onBlur={onBlur}
 			{..._attributes}
 		/>
 	)

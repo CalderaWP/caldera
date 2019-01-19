@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/__snapshots__/InputField.test.js.snap" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" afterDir="false" />
     </list>
@@ -54,7 +54,7 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1093" />
+          <entry key="js" value="1102" />
           <entry key="json" value="190" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
@@ -66,7 +66,7 @@
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="51" />
-          <entry key="snap" value="46" />
+          <entry key="snap" value="47" />
           <entry key="svg" value="8" />
           <entry key="test" value="1" />
           <entry key="test-integration" value="1" />
@@ -85,8 +85,8 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="196" />
-          <entry key="JavaScript" value="1093" />
-          <entry key="Jest Snapshot" value="46" />
+          <entry key="JavaScript" value="1102" />
+          <entry key="Jest Snapshot" value="47" />
           <entry key="Markdown" value="249" />
           <entry key="PHP" value="2084" />
           <entry key="PLAIN_TEXT" value="29" />
@@ -108,7 +108,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="71978" />
+          <entry key="js" value="72437" />
           <entry key="json" value="4029" />
           <entry key="md" value="63816" />
           <entry key="php" value="112533" />
@@ -126,7 +126,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4036" />
-          <entry key="JavaScript" value="72074" />
+          <entry key="JavaScript" value="72533" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="63729" />
           <entry key="PHP" value="112627" />
@@ -161,61 +161,71 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="501">
-                  <caret line="58" selection-start-line="58" selection-end-line="58" />
-                  <folding>
-                    <element signature="e#0#92#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.story.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#0#179#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/textarea-control/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="448">
-                  <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/textarea-control/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.story.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/form-toggle/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -226,7 +236,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>RemotePost</find>
       <find>ResponseError</find>
       <find>load-styles</find>
       <find>header</find>
@@ -256,6 +265,7 @@
       <find>formFields</find>
       <find>instance</find>
       <find>instance(</find>
+      <find>maxl</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -322,10 +332,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/register-block/src/RegisterBlocks.php" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/tests/bootstrap.php" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/README.md" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.story.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/README.md" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/components/Grid/README.md" />
@@ -369,10 +375,14 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/MainSection.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/AddProcessor.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.story.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.story.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.test.js" />
       </list>
     </option>
   </component>
@@ -732,7 +742,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="InputField" type="462c0819:PsiDirectoryNode" />
+              <item name="FieldWrapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -742,17 +752,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="TextAreaField" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="fields" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="ToggleField" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -819,7 +819,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.parseAttributes util function.allows maxlength and  minlength for textarea">
+  <component name="RunManager" selected="Jest.parseAttributes util function.allows rows and cols for textarea">
     <configuration name="FormEditor.should match snapshot" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -833,15 +833,29 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Processors" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="TextAreaField .Passes rows and cols props" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$/js-packages/components" />
       <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.test.js" />
       <test-names>
-        <test-name value="Processors" />
+        <test-name value="TextAreaField " />
+        <test-name value="Passes rows and cols props" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="TextAreaField .matches snapshot with all props" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.test.js" />
+      <test-names>
+        <test-name value="TextAreaField " />
+        <test-name value="matches snapshot with all props" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -858,28 +872,33 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="CalderaFormsTest.testGetProcessorTypes" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\CalderaFormsTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/CalderaFormsTest.php" method="testGetProcessorTypes" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ProcessorCollectionTest.testFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Forms\Tests\Processing\ProcessorCollectionTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorCollectionTest.php" method="testFromArray" scope="Method" />
+    <configuration name="parseAttributes util function.allows rows and cols for textarea" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" />
+      <test-names>
+        <test-name value="parseAttributes util function" />
+        <test-name value="allows rows and cols for textarea" />
+      </test-names>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.Processors" />
-      <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
-      <item itemvalue="PHPUnit.CalderaFormsTest.testGetProcessorTypes" />
       <item itemvalue="Jest.FormEditor.should match snapshot" />
       <item itemvalue="Jest.parseAttributes util function.allows maxlength and  minlength for textarea" />
+      <item itemvalue="Jest.TextAreaField .matches snapshot with all props" />
+      <item itemvalue="Jest.TextAreaField .Passes rows and cols props" />
+      <item itemvalue="Jest.parseAttributes util function.allows rows and cols for textarea" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.parseAttributes util function.allows rows and cols for textarea" />
+        <item itemvalue="Jest.TextAreaField .Passes rows and cols props" />
+        <item itemvalue="Jest.TextAreaField .matches snapshot with all props" />
         <item itemvalue="Jest.parseAttributes util function.allows maxlength and  minlength for textarea" />
         <item itemvalue="Jest.FormEditor.should match snapshot" />
-        <item itemvalue="PHPUnit.CalderaFormsTest.testGetProcessorTypes" />
-        <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
-        <item itemvalue="Jest.Processors" />
       </list>
     </recent_temporary>
   </component>
@@ -923,44 +942,44 @@
       <workItem from="1547578980897" duration="364000" />
       <workItem from="1547579399801" duration="24917000" />
       <workItem from="1547741624885" duration="28862000" />
-      <workItem from="1547906014357" duration="850000" />
+      <workItem from="1547906014357" duration="2329000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Processors - 2019.01.17 at 12h 56m 55s.xml">
-      <configuration name="Processors" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Processors - 2019.01.17 at 12h 58m 03s.xml">
-      <configuration name="Processors" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="ProcessorCollectionTest_testFromArray - 2019.01.17 at 13h 23m 01s.xml">
-      <configuration name="ProcessorCollectionTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ProcessorCollectionTest_testFromArray - 2019.01.17 at 13h 23m 14s.xml">
-      <configuration name="ProcessorCollectionTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="CalderaFormsTest_testGetProcessorTypes - 2019.01.17 at 14h 28m 11s.xml">
-      <configuration name="CalderaFormsTest.testGetProcessorTypes" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="CalderaFormsTest_testGetProcessorTypes - 2019.01.17 at 14h 29m 48s.xml">
-      <configuration name="CalderaFormsTest.testGetProcessorTypes" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="CalderaFormsTest_testGetProcessorTypes - 2019.01.17 at 14h 29m 57s.xml">
-      <configuration name="CalderaFormsTest.testGetProcessorTypes" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="FormEditor_should_match_snapshot - 2019.01.17 at 15h 44m 04s.xml">
-      <configuration name="FormEditor.should match snapshot" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 02m 53s.xml">
-      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 03m 09s.xml">
       <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 11m 59s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 12m 32s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 12m 54s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 12m 59s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 13m 23s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 13m 36s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="TextAreaField__matches_snapshot_with_all_props - 2019.01.19 at 09h 19m 47s.xml">
+      <configuration name="TextAreaField .matches snapshot with all props" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_rows_and_cols_for_textarea - 2019.01.19 at 09h 21m 10s.xml">
+      <configuration name="parseAttributes util function.allows rows and cols for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_rows_and_cols_for_textarea - 2019.01.19 at 09h 21m 34s.xml">
+      <configuration name="parseAttributes util function.allows rows and cols for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="506893000" />
+    <option name="totallyTimeSpent" value="508372000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -981,8 +1000,8 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.20645161" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.24203822" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.42038217" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.12101911" />
@@ -1347,6 +1366,18 @@
           <line>7</line>
           <option name="timeStamp" value="329" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="332" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js</url>
+          <line>99</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="333" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1360,58 +1391,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/FieldArea.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Response.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestParams.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/http/src/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Arrayable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/ArrayLike.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/FieldsArrayLike.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1680,23 +1659,6 @@
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/icons/Icon-CalderaForms-DarkBG-Alt.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1708,27 +1670,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/textarea-control/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+        <state relative-caret-position="211">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="165">
+          <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
           <folding>
-            <element signature="e#0#92#0" expanded="true" />
+            <element signature="e#0#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/__snapshots__/TextAreaField.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.story.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/form-toggle/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/base-control/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

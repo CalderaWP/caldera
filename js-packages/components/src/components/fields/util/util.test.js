@@ -91,6 +91,18 @@ describe('parseAttributes util function', () => {
 			maxlength: 60
 		};
 		const result = parseAttributes(args, 'textarea');
+		expect(result).toEqual({
+			minlength: 7,
+			maxLength: 60
+		});
+	});
+
+	it('allows rows and cols for textarea', () => {
+		const args = {
+			rows: 7,
+			cols: 60
+		};
+		const result = parseAttributes(args, 'textarea');
 		expect(result).toEqual(args);
 	});
 });

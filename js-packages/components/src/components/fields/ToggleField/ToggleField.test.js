@@ -2,9 +2,9 @@ import * as React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
-import { TextAreaField } from './TextAreaField';
+import { ToggleField } from './ToggleField';
 
-describe('TextAreaField ', () => {
+describe('ToggleField ', () => {
 	let onChange;
 	let onBlur;
 
@@ -15,45 +15,20 @@ describe('TextAreaField ', () => {
 
 	it('matches snapshot with all props', () => {
 		const component = renderer.create(
-			<TextAreaField
+			<ToggleField
 				label={'Hi Roy'}
 				description={'Say Hi'}
 				value={'Roy'}
 				onChange={onChange}
 				onBlur={onBlur}
-				attributes={{
-					maxlength: 5, minlength: 1,cols:8,rows:5
-				}}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 
-	it('Passes rows and cols props', () => {
-		const component = mount(
-			<TextAreaField
-				label={'Hi Roy'}
-				description={'Say Hi'}
-				placeholder={'Hello'}
-				html5type={'email'}
-				value={'Roy'}
-				onChange={onChange}
-				onBlur={onBlur}
-				attributes={{
-					cols:8,rows:5
-				}}
-			/>
-		);
-
-		component.find('textarea').simulate('change');
-		expect(component.find('textarea').props().cols ).toBe(8);
-		expect(component.find('textarea').props().rows ).toBe(5);
-	});
-
-
 	it('Changes calls change handler', () => {
 		const component = mount(
-			<TextAreaField
+			<ToggleField
 				label={'Hi Roy'}
 				description={'Say Hi'}
 				placeholder={'Hello'}
@@ -64,7 +39,7 @@ describe('TextAreaField ', () => {
 			/>
 		);
 
-		component.find('textarea').simulate('change');
+		component.find('input').simulate('change');
 		expect(onChange.mock.calls.length).toBe(1);
 	});
 });
