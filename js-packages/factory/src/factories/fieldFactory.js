@@ -3,7 +3,9 @@ import {
 	SelectField,
 	RadioField,
 	isValidHtml5type,
-	FieldSet
+	FieldSet,
+	TextAreaField,
+	ToggleField,
 } from '@calderawp/components';
 import React from 'react';
 
@@ -66,6 +68,10 @@ export const fieldFactory = (field, onChange, onBlur) => {
 					})}
 				</FieldSet>
 			);
+		case 'textarea':
+			return <TextAreaField {...field} onChange={onChange} />;
+		case 'toggle':
+			return <ToggleField {...field} onChange={onChange} />;
 		case 'radio':
 			return <RadioField {...field} onChange={onChange} />;
 		case 'select':

@@ -93,31 +93,34 @@ exports[`fieldAreaFactory should create textarea 1`] = `
   className="caldera-field-wrapper caldera-field-wrapper-text"
 >
   <div
-    className="components-base-control caldera-field caldera-field-text"
+    className="components-base-control"
   >
     <div
       className="components-base-control__field"
     >
       <label
         className="components-base-control__label"
-        htmlFor="inspector-text-control-1"
+        htmlFor="inspector-textarea-control-0"
       >
         Your message
       </label>
-      <input
-        aria-describedby="inspector-text-control-1__help"
-        className="components-text-control__input"
+      <textarea
+        aria-describedby="inspector-textarea-control-0__help"
+        className="components-textarea-control__input"
+        cols={8}
         id="textArea1"
+        maxLength={500}
+        minlength={10}
         onBlur={[Function]}
         onChange={[Function]}
-        placeholder={undefined}
-        type="text"
+        required={true}
+        rows={5}
         value="The content of text area"
       />
     </div>
     <p
       className="components-base-control__help"
-      id="inspector-text-control-1__help"
+      id="inspector-textarea-control-0__help"
     >
       your first name
     </p>
@@ -130,31 +133,65 @@ exports[`fieldAreaFactory should create toggle 1`] = `
   className="caldera-field-wrapper caldera-field-wrapper-text"
 >
   <div
-    className="components-base-control caldera-field caldera-field-text"
+    className="components-base-control"
   >
     <div
       className="components-base-control__field"
     >
       <label
         className="components-base-control__label"
-        htmlFor="inspector-text-control-2"
+        htmlFor="toggleFieldLabel"
       >
         Toggle Label
       </label>
-      <input
-        aria-describedby="inspector-text-control-2__help"
-        className="components-text-control__input"
-        id="toggleFieldLabel"
-        onBlur={[Function]}
-        onChange={[Function]}
-        placeholder={undefined}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="components-base-control components-toggle-control"
+      >
+        <div
+          className="components-base-control__field"
+        >
+          <span
+            className="components-form-toggle is-checked"
+          >
+            <input
+              aria-describedby={undefined}
+              checked={true}
+              className="components-form-toggle__input"
+              id="inspector-toggle-control-0"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="components-form-toggle__track"
+            />
+            <span
+              className="components-form-toggle__thumb"
+            />
+            <svg
+              aria-hidden="true"
+              className="components-form-toggle__on"
+              focusable="false"
+              height="6"
+              role="img"
+              viewBox="0 0 2 6"
+              width="2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h2v6H0z"
+              />
+            </svg>
+          </span>
+          <label
+            className="components-toggle-control__label"
+            htmlFor="inspector-toggle-control-0"
+          />
+        </div>
+      </div>
     </div>
     <p
       className="components-base-control__help"
-      id="inspector-text-control-2__help"
+      id="toggleFieldLabel__help"
     >
       Toggle field description
     </p>

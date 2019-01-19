@@ -53,15 +53,35 @@ import { collectFieldValues } from '@caldera-labs/collectFieldValues';
 ```
 
 ### Field Factory
-Creates a field from an object.
+Creates a field from an object. Does not create the area around the field -- outer HTML wrapping element, section for error messages, etc.
 
+```js
 
+const toggleField = {
+	fieldType: 'toggle',
+	label: 'Enage',
+	fieldId: 'toggleFieldLabel',
+	checked:true,
+};
+return (
+    <Fragment>
+        {fieldAreaFactory(
+            toggleField,
+            (checked) => {
+               console.log(checked)
+            }
+        )}
+    </Fragment>
+)
+```
 ### Field Area Factory
+This creates the complete HTML area around a field. `<wrapper><label/><input /><messages/></wrapper>`
 
 ```js
 import { fieldAreaFactory } from '@caldera-labs/factory';
 const nameField = {
-    fieldType: 'text',
+    fieldType: 'input',
+    html5Type: 'text',
     value: 'Infinite Vague',
     label: 'Name',
     fieldId: 'fromName',
@@ -81,6 +101,8 @@ return (
 
 
 ## Components
+These are components that the factories use, that may be useful on their own.
+
 ### Import With webpack
 ```js
 import { 
@@ -131,7 +153,9 @@ import{
 	numberField,
 	textField,
 	emailField,
-	radioField
+	radioField,
+	toggleField,
+    	textAreaField,
 } from '@calderawp/factory';
 ```
 
