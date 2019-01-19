@@ -9,7 +9,9 @@ import {
 	numberField,
 	textField,
 	emailField,
-	radioField
+	radioField,
+	toggleField,
+	textAreaField,
 } from '../fields.fixtures';
 
 describe('fieldFactory', () => {
@@ -194,6 +196,20 @@ describe('fieldFactory', () => {
 			onBlur
 		);
 		expect(component.find('#selectFieldId').length).toEqual(1);
+	});
+
+	it('should create textarea', () => {
+		const component = renderer.create(
+			fieldFactory(textAreaField, onChange, onBlur)
+		);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
+	it('should create toggle', () => {
+		const component = renderer.create(
+			fieldFactory(toggleField, onChange, onBlur)
+		);
+		expect(component.toJSON()).toMatchSnapshot();
 	});
 });
 

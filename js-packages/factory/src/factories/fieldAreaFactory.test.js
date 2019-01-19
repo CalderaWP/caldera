@@ -9,13 +9,13 @@ import {
 	numberField,
 	textField,
 	emailField,
-	radioField
+	radioField, textAreaField, toggleField
 } from '../fields.fixtures';
 
 import { fieldWrapperClassNames } from '@calderawp/components';
 import { fieldFactory } from './fieldFactory';
 
-describe('fieldFactory', () => {
+describe('fieldAreaFactory', () => {
 	let onChange;
 	let onBlur;
 	beforeEach(() => {
@@ -32,6 +32,20 @@ describe('fieldFactory', () => {
 	it('Creates an select field', () => {
 		const component = renderer.create(
 			fieldAreaFactory(selectField, onChange, onBlur)
+		);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
+	it('should create textarea', () => {
+		const component = renderer.create(
+			fieldAreaFactory(textAreaField, onChange, onBlur)
+		);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
+	it('should create toggle', () => {
+		const component = renderer.create(
+			fieldAreaFactory(toggleField, onChange, onBlur)
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});

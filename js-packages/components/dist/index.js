@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.RemotePost = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.RadioField = exports.SelectField = exports.InputField = undefined;
+exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.RemotePost = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.TextAreaField = exports.ToggleField = exports.RadioField = exports.SelectField = exports.InputField = undefined;
 
 var _InputField = require('./components/fields/InputField/InputField');
 
@@ -29,6 +29,24 @@ Object.defineProperty(exports, 'RadioField', {
   enumerable: true,
   get: function get() {
     return _RadioField.RadioField;
+  }
+});
+
+var _ToggleField = require('./components/fields/ToggleField/ToggleField');
+
+Object.defineProperty(exports, 'ToggleField', {
+  enumerable: true,
+  get: function get() {
+    return _ToggleField.ToggleField;
+  }
+});
+
+var _TextAreaField = require('./components/fields/TextAreaField/TextAreaField');
+
+Object.defineProperty(exports, 'TextAreaField', {
+  enumerable: true,
+  get: function get() {
+    return _TextAreaField.TextAreaField;
   }
 });
 

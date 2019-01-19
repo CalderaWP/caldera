@@ -1,25 +1,36 @@
-Reusable Component Library
-==========================
+# Shared Components Library
 
-Testing
--------
-Note that `jest` and `babel-jest` dependency versions should match exactly as those of create-react-app in the `myapp` folder.
+## Fields
+These are thing wrappers around Gutenberg components.
 
-```bash
-$ yarn test
-$ yarn storybook
+### Import With webpack
+```js
+import {
+	RemotePost,
+	TextAreaField,
+	ToggleField,
+	RadioField,
+	FieldWrapper,
+	FieldSet,
+	SelectField,
+	InputField
+} from '@calderawp/components';
+
 ```
 
-Linting
--------
-```bash
-$ yarn lint
-```
 
-Building
---------
-```bash
-$ yarn build
-```
 
-The output is stored in the `dist` folder.
+## Testing
+
+* Run Unit Tests - Jest.
+    - `yarn tests`
+
+* Run Storybooks
+    - `yarn storybook`
+
+## Other Commands
+* Lint code
+    - `yarn lint`
+* Build Package
+    - `yarn package`
+    - The output is stored in the `dist` folder.

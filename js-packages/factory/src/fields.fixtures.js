@@ -72,6 +72,15 @@ const checkboxField = {
 	}
 };
 
+const toggleField = {
+	fieldType: 'toggle',
+	label: 'Toggle Label',
+	fieldId: 'toggleFieldLabel',
+	description: 'Toggle field description',
+	required: true,
+	checked:true,
+};
+
 const numberField = {
 	fieldType: 'number',
 	value: 3,
@@ -106,7 +115,22 @@ const emailField = {
 	}
 };
 
+const textAreaField = {
+	fieldType: 'textarea',
+	value: 'The content of text area',
+	label: 'Your message',
+	fieldId: 'textArea1',
+	description: 'your first name',
+	required: true,
+	attributes: {
+		maxlength: 500, minlength: 10,cols:8,rows:5
+	}
+};
+
+
 export {
+	toggleField,
+	textAreaField,
 	checkboxFieldset,
 	selectField,
 	checkboxField,

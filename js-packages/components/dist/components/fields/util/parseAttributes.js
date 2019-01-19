@@ -19,6 +19,10 @@ var checkboxAttrs = ['checked', 'value'];
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#Additional_attributes
 var radioAttrs = ['checked'];
+
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#Attributes
+var textAreaAttrs = ['rows', 'autocapitalize', 'autocomplete', 'autofocus', 'cols', 'disabled', 'form', 'maxlength', 'minlength', 'name', 'placeholder'];
+
 /**
  *
  * @param {Object} attributes
@@ -48,6 +52,9 @@ var parseAttributes = exports.parseAttributes = function parseAttributes(attribu
 		case 'checkbox':
 			allowed = [].concat(inputAttrs, checkboxAttrs);
 			break;
+		case 'textarea':
+			allowed = textAreaAttrs;
+			break;
 		case 'text':
 		case 'default':
 		case null:
@@ -59,7 +66,8 @@ var parseAttributes = exports.parseAttributes = function parseAttributes(attribu
 
 	var transforms = {
 		maxlength: 'maxLength',
-		spellcheck: 'spellCheck'
+		spellcheck: 'spellCheck',
+		disable: 'disable' //must be a string or React DOM will raise notice
 	};
 	Object.keys(transforms).forEach(function (attr) {
 		if (attributes.hasOwnProperty(attr)) {

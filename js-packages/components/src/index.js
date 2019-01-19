@@ -4,6 +4,8 @@
 export { InputField } from './components/fields/InputField/InputField';
 export { SelectField } from './components/fields/SelectField/SelectField';
 export { RadioField } from './components/fields/RadioField/RadioField';
+export { ToggleField } from './components/fields/ToggleField/ToggleField';
+export { TextAreaField } from './components/fields/TextAreaField/TextAreaField';
 
 /**
  * UI Elements

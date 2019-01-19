@@ -18,6 +18,7 @@ exports[`fieldFactory Creates a checkbox fieldset 1`] = `
         checked={true}
         className="components-checkbox-control__input"
         id="opt-1"
+        onBlur={[Function]}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -41,6 +42,7 @@ exports[`fieldFactory Creates a checkbox fieldset 1`] = `
         checked={true}
         className="components-checkbox-control__input"
         id="opt-2"
+        onBlur={[Function]}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -70,6 +72,7 @@ exports[`fieldFactory Creates a checkbox fieldset 1`] = `
         checked={true}
         className="components-checkbox-control__input"
         id="opt-3"
+        onBlur={[Function]}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -245,6 +248,7 @@ exports[`fieldFactory Creates an checkbox field field 1`] = `
       checked={true}
       className="components-checkbox-control__input"
       id="checkboxFieldLabel"
+      onBlur={[Function]}
       onChange={[Function]}
       type="checkbox"
       value="1"
@@ -283,6 +287,7 @@ exports[`fieldFactory Creates an checkbox field set 1`] = `
         checked={true}
         className="components-checkbox-control__input"
         id="opt-1"
+        onBlur={[Function]}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -306,6 +311,7 @@ exports[`fieldFactory Creates an checkbox field set 1`] = `
         checked={true}
         className="components-checkbox-control__input"
         id="opt-2"
+        onBlur={[Function]}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -335,6 +341,7 @@ exports[`fieldFactory Creates an checkbox field set 1`] = `
         checked={true}
         className="components-checkbox-control__input"
         id="opt-3"
+        onBlur={[Function]}
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -474,6 +481,72 @@ exports[`fieldFactory Creates an select field identified as dropdown 1`] = `
     id="inspector-select-control-1__help"
   >
     Select field description
+  </p>
+</div>
+`;
+
+exports[`fieldFactory should create textarea 1`] = `
+<div
+  className="components-base-control caldera-field caldera-field-text"
+>
+  <div
+    className="components-base-control__field"
+  >
+    <label
+      className="components-base-control__label"
+      htmlFor="inspector-text-control-5"
+    >
+      Your message
+    </label>
+    <input
+      aria-describedby="inspector-text-control-5__help"
+      className="components-text-control__input"
+      id="textArea1"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder={undefined}
+      type="text"
+      value="The content of text area"
+    />
+  </div>
+  <p
+    className="components-base-control__help"
+    id="inspector-text-control-5__help"
+  >
+    your first name
+  </p>
+</div>
+`;
+
+exports[`fieldFactory should create toggle 1`] = `
+<div
+  className="components-base-control caldera-field caldera-field-text"
+>
+  <div
+    className="components-base-control__field"
+  >
+    <label
+      className="components-base-control__label"
+      htmlFor="inspector-text-control-6"
+    >
+      Toggle Label
+    </label>
+    <input
+      aria-describedby="inspector-text-control-6__help"
+      className="components-text-control__input"
+      id="toggleFieldLabel"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder={undefined}
+      type="text"
+      value={undefined}
+    />
+  </div>
+  <p
+    className="components-base-control__help"
+    id="inspector-text-control-6__help"
+  >
+    Toggle field description
   </p>
 </div>
 `;

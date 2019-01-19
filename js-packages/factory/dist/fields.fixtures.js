@@ -65,6 +65,15 @@ var checkboxField = {
 	}
 };
 
+var toggleField = {
+	fieldType: 'toggle',
+	label: 'Toggle Label',
+	fieldId: 'toggleFieldLabel',
+	description: 'Toggle field description',
+	required: true,
+	checked: true
+};
+
 var numberField = {
 	fieldType: 'number',
 	value: 3,
@@ -99,6 +108,20 @@ var emailField = {
 	}
 };
 
+var textAreaField = {
+	fieldType: 'textarea',
+	value: 'The content of text area',
+	label: 'Your message',
+	fieldId: 'textArea1',
+	description: 'your first name',
+	required: true,
+	attributes: {
+		maxlength: 500, minlength: 10, cols: 8, rows: 5
+	}
+};
+
+exports.toggleField = toggleField;
+exports.textAreaField = textAreaField;
 exports.checkboxFieldset = checkboxFieldset;
 exports.selectField = selectField;
 exports.checkboxField = checkboxField;
