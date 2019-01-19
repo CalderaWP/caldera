@@ -49,7 +49,15 @@ var Processor = exports.Processor = function (_Component) {
 			activeTab: 'settings'
 		}, _this.onSetTab = function (activeTab) {
 			_this.setState({ activeTab: activeTab });
-		}, _temp), _possibleConstructorReturn(_this, _ret);
+		}, _this.tabs = [{
+			name: 'settings',
+			title: 'Settings',
+			className: 'caldera-processor-settings-tab-btn'
+		}, {
+			name: 'conditionals',
+			title: 'Conditionals',
+			className: 'caldera-processor-conditionals-tab-btn'
+		}], _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
 	_createClass(Processor, [{
@@ -74,17 +82,14 @@ var Processor = exports.Processor = function (_Component) {
 							activeClass: 'active-tab',
 							onSelect: this.onSetTab,
 							initialTabName: 'settings',
-							tabs: [{
-								name: 'settings',
-								title: 'Settings',
-								className: 'caldera-processor-settings-tab-btn'
-							}, {
-								name: 'conditionals',
-								title: 'Conditionals',
-								className: 'caldera-processor-conditionals-tab-btn'
-							}]
+							tabs: this.tabs
 						},
-						function (tab) {
+						function () {
+							var activeTab = _this2.state.activeTab;
+
+							var tab = _this2.tabs.find(function (t) {
+								return t.name === activeTab;
+							});
 							var name = tab.name;
 
 							if ('settings' === name) {

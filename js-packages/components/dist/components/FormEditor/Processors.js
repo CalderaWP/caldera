@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Processors = undefined;
+exports.processorsCollectionPropType = exports.Processors = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -18,6 +18,16 @@ var _propTypes = require('prop-types');
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _Processor = require('./Processor');
+
+var _factory = require('@calderawp/factory');
+
+var _propTypes3 = require('./propTypes');
+
+var _processorFactory = require('./processorTypes/processorFactory');
+
+var _processorFactory2 = _interopRequireDefault(_processorFactory);
+
+var _AddProcessor = require('./AddProcessor');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -44,7 +54,8 @@ var Processors = exports.Processors = function (_Component) {
 		}
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Processors.__proto__ || Object.getPrototypeOf(Processors)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-			activeProcessorId: ''
+			activeProcessorId: '',
+			newProcessorType: ''
 		}, _this.setActive = function (activeProcessorId) {
 			_this.setState({ activeProcessorId: activeProcessorId });
 		}, _this.isActiveProcessor = function (processorId) {
@@ -72,6 +83,21 @@ var Processors = exports.Processors = function (_Component) {
 			updateProcessors([].concat(_toConsumableArray(processors.filter(function (processor) {
 				return processorId !== processor.id;
 			}))));
+		}, _this.handleCreateProcessor = function () {
+			var _this$props3 = _this.props,
+			    processors = _this$props3.processors,
+			    updateProcessors = _this$props3.updateProcessors;
+			var _this$state = _this.state,
+			    activeProcessor = _this$state.activeProcessor,
+			    newProcessorType = _this$state.newProcessorType;
+
+			var newProcessor = (0, _processorFactory2.default)(newProcessorType);
+			var id = newProcessor.id;
+
+			updateProcessors([].concat(_toConsumableArray(processors), [newProcessor]));
+			_this.setState({ activeProcessorId: id, newProcessorType: '' });
+		}, _this.setNewProcessorType = function (newProcessorType) {
+			return _this.setState({ newProcessorType: newProcessorType });
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
@@ -103,6 +129,19 @@ var Processors = exports.Processors = function (_Component) {
   */
 
 
+	/**
+  * When a processor is added, create send update list to change handler
+ 	 */
+
+
+	/**
+  * Set the type of the next processor to be created
+  *
+  * @param newProcessorType
+  * @return {*}
+  */
+
+
 	_createClass(Processors, [{
 		key: 'render',
 
@@ -111,8 +150,12 @@ var Processors = exports.Processors = function (_Component) {
 		value: function render() {
 			var _this2 = this;
 
-			var activeProcessor = this.state.activeProcessor;
-			var processors = this.props.processors;
+			var _state = this.state,
+			    activeProcessor = _state.activeProcessor,
+			    newProcessorType = _state.newProcessorType;
+			var _props = this.props,
+			    processors = _props.processors,
+			    processorTypes = _props.processorTypes;
 
 			return _react2.default.createElement(
 				'div',
@@ -128,7 +171,6 @@ var Processors = exports.Processors = function (_Component) {
 						    label = processor.label;
 
 						if (_this2.isActiveProcessor(id)) {
-
 							return _react2.default.createElement(
 								_react.Fragment,
 								{ key: id },
@@ -151,8 +193,8 @@ var Processors = exports.Processors = function (_Component) {
 							);
 						}
 						return _react2.default.createElement(
-							_react.Fragment,
-							null,
+							_factory.Row,
+							{ key: id },
 							_react2.default.createElement(
 								'button',
 								{
@@ -165,6 +207,22 @@ var Processors = exports.Processors = function (_Component) {
 							)
 						);
 					})
+				),
+				_react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						_AddProcessor.AddProcessor,
+						{
+							setNewProcessorType: this.setNewProcessorType,
+							processorTypes: processorTypes,
+							value: newProcessorType,
+							onCreate: this.handleCreateProcessor
+						},
+						'Add ',
+						!newProcessorType ? '' : newProcessorType,
+						' Processor'
+					)
 				)
 			);
 		}
@@ -173,19 +231,23 @@ var Processors = exports.Processors = function (_Component) {
 	return Processors;
 }(_react.Component);
 
+var processorsCollectionPropType = exports.processorsCollectionPropType = _propTypes2.default.arrayOf(_propTypes2.default.shape({
+	id: _propTypes2.default.string,
+	label: _propTypes2.default.string,
+	type: _propTypes2.default.string,
+	fields: _propTypes2.default.array,
+	config: _propTypes2.default.object
+}));
+
 Processors.propTypes = {
-	processors: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-		id: _propTypes2.default.string,
-		label: _propTypes2.default.string,
-		type: _propTypes2.default.string,
-		fields: _propTypes2.default.array,
-		config: _propTypes2.default.object
-	})),
+	processorTypes: _propTypes3.processorTypesPropType,
+	processors: processorsCollectionPropType,
 	updateProcessors: _propTypes2.default.func,
 	form: _propTypes2.default.object,
-	formFields: _propTypes2.default.object
+	formFields: _propTypes2.default.array
 };
 
 Processors.defaultProps = {
-	processors: []
+	processors: [],
+	processorTypes: []
 };

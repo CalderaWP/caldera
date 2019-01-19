@@ -84,6 +84,15 @@ describe('parseAttributes util function', () => {
 			fieldSetAttrs
 		);
 	});
+
+	it('allows maxlength and  minlength for textarea', () => {
+		const args = {
+			minlength: 7,
+			maxlength: 60
+		};
+		const result = parseAttributes(args, 'textarea');
+		expect(result).toEqual(args);
+	});
 });
 
 describe('fieldWrapperClassNames util function', () => {

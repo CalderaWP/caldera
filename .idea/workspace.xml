@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/defaultProcessorTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorFactory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorTypes.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/__snapshots__/FormEditor.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/__snapshots__/FormEditor.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/__snapshots__/Processors.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/__snapshots__/Processors.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +24,8 @@
     <session id="-431066744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
-          <entry key="project.open.time.0" value="11" />
+          <entry key="project.closed" value="30" />
+          <entry key="project.open.time.0" value="12" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="1" />
@@ -38,7 +36,7 @@
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,7 +54,7 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1064" />
+          <entry key="js" value="1093" />
           <entry key="json" value="190" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
@@ -68,7 +66,7 @@
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="51" />
-          <entry key="snap" value="45" />
+          <entry key="snap" value="46" />
           <entry key="svg" value="8" />
           <entry key="test" value="1" />
           <entry key="test-integration" value="1" />
@@ -87,13 +85,13 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="196" />
-          <entry key="JavaScript" value="1065" />
-          <entry key="Jest Snapshot" value="45" />
+          <entry key="JavaScript" value="1093" />
+          <entry key="Jest Snapshot" value="46" />
           <entry key="Markdown" value="249" />
           <entry key="PHP" value="2084" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="SVG" value="8" />
-          <entry key="Scratch" value="1" />
+          <entry key="Scratch" value="2" />
           <entry key="TypeScript" value="6" />
           <entry key="XML" value="20" />
           <entry key="YAML" value="29" />
@@ -110,7 +108,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="70677" />
+          <entry key="js" value="71978" />
           <entry key="json" value="4029" />
           <entry key="md" value="63816" />
           <entry key="php" value="112533" />
@@ -128,7 +126,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4036" />
-          <entry key="JavaScript" value="70773" />
+          <entry key="JavaScript" value="72074" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="63729" />
           <entry key="PHP" value="112627" />
@@ -163,90 +161,41 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.67103237">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+                <state relative-caret-position="501">
+                  <caret line="58" selection-start-line="58" selection-end-line="58" />
                   <folding>
-                    <element signature="e#61#117#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#0#64#0" expanded="true" />
+                    <element signature="e#0#92#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.story.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+                <state relative-caret-position="210">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
                   <folding>
-                    <element signature="e#0#49#0" expanded="true" />
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/defaultProcessorTypes.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="25" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="509">
-                  <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
                   <folding>
-                    <element signature="e#0#51#0" expanded="true" />
+                    <element signature="e#0#179#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processors.fixtures.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="13" selection-start-column="13" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/icons/Icon-CalderaForms-DarkBG-Alt.svg">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/icons/Icon-CalderaForms-DarkBG.svg">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ProcessorType.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="50" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -256,49 +205,10 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
+            <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/textarea-control/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="77" column="15" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorFactory.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="40" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorTypes.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="657">
-                  <caret line="93" column="18" selection-start-line="88" selection-start-column="4" selection-end-line="93" selection-end-column="18" />
+                <state relative-caret-position="448">
+                  <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -316,9 +226,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wordpress/style</find>
-      <find>toBe</find>
-      <find>react-oembed-container</find>
       <find>RemotePost</find>
       <find>ResponseError</find>
       <find>load-styles</find>
@@ -346,6 +253,9 @@
       <find>This object is created by the submission processes.</find>
       <find>setNewProcessorType</find>
       <find>Request Metho</find>
+      <find>formFields</find>
+      <find>instance</find>
+      <find>instance(</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -412,14 +322,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/src/PackageName.php" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/src/Contracts/PackageNameContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/src/Contracts/RegisterBlockContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/src/Contracts/RegisterBlocksContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/phpunit.xml.dist" />
-        <option value="$PROJECT_DIR$/php-packages/register-block/composer.json" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/php-packages/register-block/src/RegisterBlocks.php" />
         <option value="$PROJECT_DIR$/php-packages/register-block/tests/RegisterBlocksTest.php" />
         <option value="$PROJECT_DIR$/php-packages/register-block/tests/bootstrap.php" />
@@ -441,17 +343,12 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processors.fixtures.json.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processors.fixtures.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/CalderaFormsTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Contracts/ProcessorTypeContract.php" />
         <option value="$PROJECT_DIR$/js-packages/factory/README.md" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/propTypes.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/src/Processing/Types/Callbacks/ApiRequestPre.php" />
@@ -461,8 +358,21 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorFactory.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/defaultProcessorTypes.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorFactory.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorTypes.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/AddProcessor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorTypes.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/MainSection.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/MainSection.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/AddProcessor.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.story.js" />
       </list>
     </option>
   </component>
@@ -502,6 +412,17 @@
       <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/addons/package.json" />
       <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/components/package.json" />
       <path value="$PROJECT_DIR$/js-packages/components/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/@storybook/addons/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/@storybook/components/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/eslint/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/style-loader/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/node_modules/table/package.json" />
+      <path value="$PROJECT_DIR$/js-packages/factory/package.json" />
       <path value="$PROJECT_DIR$/js-packages/forms/node_modules/@storybook/addons/package.json" />
       <path value="$PROJECT_DIR$/js-packages/forms/node_modules/@storybook/components/package.json" />
       <path value="$PROJECT_DIR$/js-packages/forms/node_modules/ajv-keywords/package.json" />
@@ -649,162 +570,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="cheetsheets-and-links" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="FormEditor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="FormEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="processorTypes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Processing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Processing" type="462c0819:PsiDirectoryNode" />
-              <item name="Types" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -895,11 +660,127 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="cheetsheets-and-links" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="InputField" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="TextAreaField" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript&#10;HTML" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit 6+" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -911,19 +792,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes" />
-      <recent name="$PROJECT_DIR$/js-packages" />
-      <recent name="$PROJECT_DIR$/js-packages/app/src/clients" />
-      <recent name="$PROJECT_DIR$/js-packages/components/src/components/elements" />
-      <recent name="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js-packages/components/src/components/FormEditor" />
       <recent name="$PROJECT_DIR$/js-packages/factory/src/factories" />
       <recent name="$PROJECT_DIR$/php-packages/register-block/src/Contracts" />
       <recent name="$PROJECT_DIR$/php-packages" />
       <recent name="$PROJECT_DIR$/js-packages/app/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes" />
+      <recent name="$PROJECT_DIR$/js-packages" />
+      <recent name="$PROJECT_DIR$/js-packages/app/src/clients" />
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components/elements" />
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -938,7 +819,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.FormEditor.should match snapshot">
+  <component name="RunManager" selected="Jest.parseAttributes util function.allows maxlength and  minlength for textarea">
     <configuration name="FormEditor.should match snapshot" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -964,16 +845,16 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Processors.Can update a processor type" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$/js-packages/components" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" />
       <test-names>
-        <test-name value="Processors" />
-        <test-name value="Can update a processor type" />
+        <test-name value="parseAttributes util function" />
+        <test-name value="allows maxlength and  minlength for textarea" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -986,19 +867,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.Processors.Can update a processor type" />
       <item itemvalue="Jest.Processors" />
       <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
       <item itemvalue="PHPUnit.CalderaFormsTest.testGetProcessorTypes" />
       <item itemvalue="Jest.FormEditor.should match snapshot" />
+      <item itemvalue="Jest.parseAttributes util function.allows maxlength and  minlength for textarea" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.parseAttributes util function.allows maxlength and  minlength for textarea" />
         <item itemvalue="Jest.FormEditor.should match snapshot" />
         <item itemvalue="PHPUnit.CalderaFormsTest.testGetProcessorTypes" />
         <item itemvalue="PHPUnit.ProcessorCollectionTest.testFromArray" />
         <item itemvalue="Jest.Processors" />
-        <item itemvalue="Jest.Processors.Can update a processor type" />
       </list>
     </recent_temporary>
   </component>
@@ -1041,17 +922,12 @@
       <workItem from="1547500071076" duration="3885000" />
       <workItem from="1547578980897" duration="364000" />
       <workItem from="1547579399801" duration="24917000" />
-      <workItem from="1547741624885" duration="25875000" />
+      <workItem from="1547741624885" duration="28862000" />
+      <workItem from="1547906014357" duration="850000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Processors - 2019.01.17 at 12h 56m 07s.xml">
-      <configuration name="Processors" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Processors - 2019.01.17 at 12h 56m 25s.xml">
-      <configuration name="Processors" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="Processors - 2019.01.17 at 12h 56m 55s.xml">
       <configuration name="Processors" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -1076,9 +952,15 @@
     <history-entry file="FormEditor_should_match_snapshot - 2019.01.17 at 15h 44m 04s.xml">
       <configuration name="FormEditor.should match snapshot" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 02m 53s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="parseAttributes_util_function_allows_maxlength_and__minlength_for_textarea - 2019.01.19 at 09h 03m 09s.xml">
+      <configuration name="parseAttributes util function.allows maxlength and  minlength for textarea" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="503056000" />
+    <option name="totallyTimeSpent" value="506893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1093,14 +975,14 @@
     <frame x="109" y="69" width="1811" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.26625213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.27303562" />
       <window_info id="Structure" order="1" sideWeight="0.6889849" side_tool="true" weight="0.21215531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.20645161" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.24239631" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.24203822" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.12101911" />
@@ -1109,7 +991,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.043523315" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39481866" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info active="true" anchor="bottom" x="34" y="80" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info anchor="bottom" x="51" y="79" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1478,149 +1360,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/CalderaForms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Contracts/ProcessorTypeContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/FieldArea.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/AppBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/EntryEndpoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/CalderaFormsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Routes/EntryRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoints/Entry/CreateEntry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-integration/ApiRequestPreTest.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/ProcessorTypeTest.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/propTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="723">
-            <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/FieldArea.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1694,9 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#71#109#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1734,21 +1470,202 @@
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/icons/Icon-CalderaForms-DarkBG.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/icons/Icon-CalderaForms-DarkBG-Alt.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/Logo-CalderaForms-DarkBG.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/Logo-CalderaForms-DarkBG-Alt.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorTypes.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/defaultProcessorTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/__snapshots__/AddProcessor.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="35" selection-start-line="35" selection-end-line="42" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#61#117#0#PHP" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/MainSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/AddProcessor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/MainSection.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="213" column="49" selection-start-line="213" selection-start-column="49" selection-end-line="213" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="93" column="18" selection-start-line="88" selection-start-column="4" selection-end-line="93" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-596">
+          <folding>
+            <element signature="e#0#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/AddProcessor.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1760,84 +1677,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/dist/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/logos/icons/Icon-CalderaForms-DarkBG-Alt.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="93" column="18" selection-start-line="88" selection-start-column="4" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+        <state relative-caret-position="330">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorFactory.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="40" />
+        <state relative-caret-position="430">
+          <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/processorTypes.test.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/defaultProcessorTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state>
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/textarea-control/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="77" column="15" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+        <state relative-caret-position="448">
+          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
+        <state relative-caret-position="501">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
+            <element signature="e#0#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.story.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

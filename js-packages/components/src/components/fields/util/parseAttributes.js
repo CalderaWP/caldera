@@ -34,6 +34,10 @@ const checkboxAttrs = ['checked', 'value'];
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#Additional_attributes
 const radioAttrs = ['checked'];
+
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#Attributes
+const textAreaAttrs = ['autocapitalize', 'autocomplete', 'autofocus', 'cols', 'disabled', 'form', 'maxlength', 'minlength', 'name', 'placeholder' ];
+
 /**
  *
  * @param {Object} attributes
@@ -60,6 +64,9 @@ export const parseAttributes = (attributes, allowed = null) => {
 			break;
 		case 'checkbox':
 			allowed = [...inputAttrs, ...checkboxAttrs];
+			break;
+		case 'textarea':
+			allowed = [ textAreaAttrs ];
 			break;
 		case 'text':
 		case 'default':
