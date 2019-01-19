@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.RemotePost = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.TextAreaField = exports.ToggleField = exports.RadioField = exports.SelectField = exports.InputField = undefined;
+exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.RemotePost = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.MagicRichText = exports.RichText = exports.TextAreaField = exports.ToggleField = exports.RadioField = exports.SelectField = exports.InputField = undefined;
 
 var _InputField = require('./components/fields/InputField/InputField');
 
@@ -47,6 +47,24 @@ Object.defineProperty(exports, 'TextAreaField', {
   enumerable: true,
   get: function get() {
     return _TextAreaField.TextAreaField;
+  }
+});
+
+var _RichText = require('./components/fields/RichText/RichText');
+
+Object.defineProperty(exports, 'RichText', {
+  enumerable: true,
+  get: function get() {
+    return _RichText.RichText;
+  }
+});
+
+var _MagicRichText = require('./components/fields/RichText/MagicRichText');
+
+Object.defineProperty(exports, 'MagicRichText', {
+  enumerable: true,
+  get: function get() {
+    return _MagicRichText.MagicRichText;
   }
 });
 

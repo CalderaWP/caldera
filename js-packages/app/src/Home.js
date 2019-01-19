@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import { StandardPage } from './components/StandardPage';
 import { NavLink } from 'react-router-dom';
+import {Example} from './components/Example';
 class Home extends Component {
 	static async getInitialProps({
 		req,
@@ -21,6 +22,7 @@ class Home extends Component {
 				pageKey={'home'}
 				onChangeActive={() => {}}
 			>
+				<Example />
 				<NavLink to="/about">About</NavLink>
 				<NavLink to="/admin">Admin</NavLink>
 				<NavLink to="/caldera-forms">Caldera Forms</NavLink>

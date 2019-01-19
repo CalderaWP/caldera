@@ -6,7 +6,9 @@ import {
 	FieldWrapper,
 	FieldSet,
 	SelectField,
-	InputField
+	InputField,
+	RichText,
+	MagicRichText
 } from '@calderawp/components';
 
 describe('exports', () => {
@@ -38,5 +40,11 @@ describe('exports', () => {
 	});
 	test('InputField', () => {
 		expect(typeof InputField).toBe('function');
+	});
+	test('RichText', () => {
+		expect(typeof RichText).toBe('function');
+	});
+	test('MagicRichText', () => {
+		expect(typeof MagicRichText).toBe('function');
 	});
 });

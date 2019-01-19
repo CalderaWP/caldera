@@ -52,7 +52,7 @@ export default function AppBody({ activeRoute, forms, getEntries }) {
 
 AppBody.propTypes = {
 	activeRoute: PropTypes.string.isRequired,
-	forms: PropTypes.object
+	forms: PropTypes.array
 };
 
 AppBody.defaultProps = {

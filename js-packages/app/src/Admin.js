@@ -51,7 +51,8 @@ async function adminGetInitialProps(req, res, match) {
 
 class Admin extends Component {
 	state = {
-		activeRoute: ''
+		activeRoute: '',
+		message: []
 	};
 
 	//on server, call api and pass results to props
@@ -64,6 +65,8 @@ class Admin extends Component {
 		}
 	}
 
+	onChangeMessage = (message) => this.setState({message});
+
 	getFormsFromProps = () => {
 		const { forms } = this.props;
 		if (undefined === forms || !Object.values(forms).length) {
@@ -74,7 +77,7 @@ class Admin extends Component {
 
 	render() {
 		const { pageTitle } = this.props;
-		const { activeRoute } = this.state;
+		const { activeRoute,message } = this.state;
 		const forms = this.getFormsFromProps();
 		return (
 			<StandardPage
@@ -87,6 +90,7 @@ class Admin extends Component {
 					forms={forms}
 					getEntries={getEntries}
 				/>
+
 			</StandardPage>
 		);
 	}

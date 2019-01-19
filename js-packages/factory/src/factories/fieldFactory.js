@@ -1,11 +1,14 @@
 import {
-	InputField,
-	SelectField,
-	RadioField,
-	isValidHtml5type,
-	FieldSet,
+	RemotePost,
 	TextAreaField,
 	ToggleField,
+	RadioField,
+	FieldWrapper,
+	FieldSet,
+	SelectField,
+	InputField,
+	RichText,
+	MagicRichText
 } from '@calderawp/components';
 import React from 'react';
 
@@ -68,6 +71,10 @@ export const fieldFactory = (field, onChange, onBlur) => {
 					})}
 				</FieldSet>
 			);
+		case 'magic-richtext' :
+			return <MagicRichText {...field} onChange={onChange} />;
+		case 'richtext' :
+			return <RichText {...field} onChange={onChange} />;
 		case 'textarea':
 			return <TextAreaField {...field} onChange={onChange} />;
 		case 'toggle':

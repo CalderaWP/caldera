@@ -57,6 +57,7 @@
     "lodash.pick": "^4.4.0",
     "moment": "^2.23.0",
     "prop-types": "^15.6.2",
+    "react": "^16.8.0-alpha.0",
     "react-data-grid": "^5.0.5",
     "react-oembed-container": "^0.3.0",
     "react-transition-group": "^2.5.2",

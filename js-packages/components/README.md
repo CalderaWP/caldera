@@ -13,7 +13,9 @@ import {
 	FieldWrapper,
 	FieldSet,
 	SelectField,
-	InputField
+	InputField,
+	RichText,
+	MagicRichText
 } from '@calderawp/components';
 
 ```
