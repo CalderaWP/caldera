@@ -31,6 +31,15 @@ var ConditionalState = exports.ConditionalState = function ConditionalState(init
 		return state;
 	};
 
+	this.setState = function (newState) {
+		Object.keys(function (stateKey) {
+			if (_this.isValidField(stateKey) && !_this.isFieldDisabled(stateKey)) {
+				_this.actualState[stateKey] = newState[newState[stateKey]];
+			}
+		});
+		return _this.getCurrentState();
+	};
+
 	this.getValue = function (fieldId) {
 		if (_this.isValidField(fieldId) && !_this.isFieldHidden(fieldId) && _this.actualState.hasOwnProperty(fieldId)) {
 			return _this.actualState[fieldId];
@@ -97,6 +106,13 @@ var ConditionalState = exports.ConditionalState = function ConditionalState(init
 
 /**
  * The values of all visible fields
+ */
+
+
+/**
+ * Reset state
+ *
+ * @param newState
  */
 
 

@@ -167,6 +167,16 @@ const field = {
 />
 ```
 
+#### `FieldArea` Render Prop
+
+```js
+<FieldArea
+    render={(
+    	<input />
+    )}
+   
+/>
+```
 
 
 ### Fixtures

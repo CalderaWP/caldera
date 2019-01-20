@@ -30,6 +30,23 @@ export class ConditionalState {
 	};
 
 	/**
+	 * Reset state
+	 *
+	 * @param newState
+	 */
+	setState = (newState) => {
+		Object.keys(newState).forEach(stateKey => {
+			if (
+				this.isValidField(stateKey)
+				&& !this.isFieldDisabled(stateKey)
+			) {
+				this.actualState[stateKey] = newState[stateKey];
+			}
+		});
+		return this.getCurrentState();
+	};
+
+	/**
 	 * Get the value of a visible field
 	 *
 	 * @param {string} fieldId

@@ -88,6 +88,26 @@ describe( 'ConditionalState Hiding fields', () => {
 		const currentState = state.getCurrentState();
 		expect( currentState.hasOwnProperty('x')).toBe(true);
 	});
+
+	it( 'Can reset state', () => {
+		const intitialState = {
+			x:'initalX',
+			y: 'initalY',
+			r: 'initialR'
+		};
+		const state = new ConditionalState(intitialState);
+		const nextState = {
+			x:'nextX',
+			y:'nextY',
+		};
+		state.setState(nextState);
+		const currentState = state.getCurrentState();
+		expect( state.getCurrentState()).toEqual({
+			x:'nextX',
+			y: 'nextY',
+			r: 'initialR'
+		})
+	});
 });
 
 describe( 'ConditionalState enabling and disabling', () => {
@@ -152,5 +172,25 @@ describe( 'ConditionalState enabling and disabling', () => {
 		state.enableField('zzz');
 		const currentState = state.getCurrentState();
 		expect( currentState.hasOwnProperty('x')).toBe(true);
+	});
+
+	it( 'Does not reset state of disabled field', () => {
+		const intitialState = {
+			x:'initialX',
+			y: 'initialY',
+			r: 'initialR'
+		};
+		const state = new ConditionalState(intitialState);
+		const nextState = {
+			x:'nextX',
+			y:'nextY',
+		};
+		state.disableField('x');
+		state.setState(nextState);
+		expect( state.getCurrentState()).toEqual({
+			x:'initialX',
+			y: 'nextY',
+			r: 'initialR'
+		})
 	});
 });

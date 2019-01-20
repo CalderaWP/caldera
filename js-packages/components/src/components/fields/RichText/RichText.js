@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactQuill from 'react-quill';
 import {fieldClassNames} from "../util";
-import 'react-quill/dist/quill.snow.css'; // ES6
-import 'react-quill/dist/quill.snow.css'; // ES6
+//import 'react-quill/dist/quill.snow.css'; // ES6
+//import 'react-quill/dist/quill.snow.css'; // ES6
 export const RichText = (
 	onChange,
 	value,

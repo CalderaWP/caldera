@@ -37,5 +37,9 @@ console.log(values);
 processorState.showField('lastName');
 //All visible values //does include lastName
 console.log(processorState.getCurrentState());
-
+//Set any values (fields must be enabled!)
+processorState.setState({
+    firstName: 'Luke',
+    lastName: 'Skywalker'
+})
 ```

@@ -19,11 +19,10 @@ var _reactQuill2 = _interopRequireDefault(_reactQuill);
 
 var _util = require('../util');
 
-require('react-quill/dist/quill.snow.css');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// ES6
+//import 'react-quill/dist/quill.snow.css'; // ES6
+//import 'react-quill/dist/quill.snow.css'; // ES6
 var RichText = exports.RichText = function RichText(onChange, value, modules, formats, placeholder) {
 	return _react2.default.createElement(
 		'div',
@@ -39,8 +38,7 @@ var RichText = exports.RichText = function RichText(onChange, value, modules, fo
 			placeholder: placeholder
 		})
 	);
-}; // ES6
-
+};
 
 RichText.propTypes = {
 	value: _propTypes2.default.string,
