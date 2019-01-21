@@ -1,5 +1,6 @@
-import React, {Fragment} from 'react';
-import {storiesOf} from '@storybook/react';
+import React, { Fragment } from 'react';
+import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 import {formRowOne} from './components/CalderaForm/columns.fixtures';
 import {Caldera} from './Caldera'
 import { getValuesFromFormLayout } from './components/CalderaForm/util/getValuesFromFormLayout';
@@ -40,9 +41,10 @@ const form = {
 };
 const initialValues = getValuesFromFormLayout(formRows);
 
-const TheForm = () => (
-	<Fragment>{Caldera(form,{apiRootUri:'http://localhost',initialValues})}</Fragment>
-)
-storiesOf('Caldera', module).add('Forms', () => (
-	<TheForm/>
-));
+
+describe('Caldera', () => {
+	it('should form with conditonals', () => {
+		const component = renderer.create(<Caldera form={form} apiRootUrl={'https://localhost'} initialValues={initialValues}/>);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+});

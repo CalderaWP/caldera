@@ -3,7 +3,8 @@ import {formClientFactory} from './components/Http/clientFactory'
 import {updateRows} from './util/updateRows';
 import { ConditionalState,collectFieldValues,applyRuleToState } from '@calderawp/factory';
 import {CalderaForm} from './components/CalderaForm/CalderaForm';
-export const formFactory = (form,{
+export const Caldera = ({
+	form,
 	apiRootUri,
 	initalValues,
 	fieldsHidden,
