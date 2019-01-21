@@ -39,7 +39,7 @@ exports[`Caldera should form with conditonals 1`] = `
                 onChange={[Function]}
                 placeholder={undefined}
                 type="email"
-                value={null}
+                value="emai@email.com"
               />
             </div>
             <p
@@ -79,7 +79,7 @@ exports[`Caldera should form with conditonals 1`] = `
                 onChange={[Function]}
                 placeholder={undefined}
                 type="text"
-                value={null}
+                value="roy"
               />
             </div>
             <p

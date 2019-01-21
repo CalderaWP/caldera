@@ -44,7 +44,7 @@ const initialValues = getValuesFromFormLayout(formRows);
 
 describe('Caldera', () => {
 	it('should form with conditonals', () => {
-		const component = renderer.create(<Caldera form={form} apiRootUrl={'https://localhost'} initialValues={initialValues}/>);
+		const component = renderer.create(<Caldera form={form} apiRootUrl={'https://localhost'} initalValues={initialValues}/>);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
 });

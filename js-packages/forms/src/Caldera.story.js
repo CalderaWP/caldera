@@ -40,9 +40,7 @@ const form = {
 };
 const initialValues = getValuesFromFormLayout(formRows);
 
-const TheForm = () => (
-	<Fragment>{Caldera(form,{apiRootUri:'http://localhost',initialValues})}</Fragment>
-)
+
 storiesOf('Caldera', module).add('Forms', () => (
-	<TheForm/>
+	<Caldera form={form} apiRootUrl={'https://localhost'} initalValues={initialValues}/>
 ));
