@@ -11,6 +11,10 @@ function loadStories() {
     require('glob-loader!./stories.pattern')
 }
 
-
+addDecorator(
+	withOptions({
+		name: 'Forms',
+	})
+);
 
 configure(loadStories, module);

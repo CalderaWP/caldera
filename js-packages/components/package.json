@@ -40,17 +40,15 @@
       }
     },
     "collectCoverage": true,
-    "moduleDirectories": [
-      "node_modules"
-    ],
+    "moduleDirectories": ["node_modules"],
     "moduleNameMapper": {
       "^react(.*)$": "<rootDir>/vendor/react-master$1",
       "\\.(css|scss)$": "<rootDir>/config/jest/styleMock.js"
     }
   },
   "dependencies": {
-    "@storybook/addon-options": "^4.1.7",
-    "@storybook/addons": "^4.1.7",
+    "@storybook/addon-options": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
     "@wordpress/components": "^7.0.4",
     "@wordpress/compose": "^3.0.0",
     "@wordpress/editor": "^9.0.6",
