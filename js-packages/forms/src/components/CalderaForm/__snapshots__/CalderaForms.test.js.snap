@@ -115,6 +115,7 @@ exports[`Caldera Forms Forms 1`] = `
                 checked={true}
                 className="components-checkbox-control__input"
                 id="checkboxFieldLabel"
+                onBlur={[Function]}
                 onChange={[Function]}
                 type="checkbox"
                 value="1"

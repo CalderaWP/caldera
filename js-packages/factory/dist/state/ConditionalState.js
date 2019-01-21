@@ -32,9 +32,9 @@ var ConditionalState = exports.ConditionalState = function ConditionalState(init
 	};
 
 	this.setState = function (newState) {
-		Object.keys(function (stateKey) {
+		Object.keys(newState).forEach(function (stateKey) {
 			if (_this.isValidField(stateKey) && !_this.isFieldDisabled(stateKey)) {
-				_this.actualState[stateKey] = newState[newState[stateKey]];
+				_this.actualState[stateKey] = newState[stateKey];
 			}
 		});
 		return _this.getCurrentState();

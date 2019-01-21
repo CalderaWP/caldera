@@ -94,6 +94,21 @@ Object.defineProperty(exports, 'ConditionalState', {
 	}
 });
 
+var _applyRule = require('./state/applyRule');
+
+Object.defineProperty(exports, 'applyRule', {
+	enumerable: true,
+	get: function get() {
+		return _applyRule.applyRule;
+	}
+});
+Object.defineProperty(exports, 'applyRuleToState', {
+	enumerable: true,
+	get: function get() {
+		return _applyRule.applyRuleToState;
+	}
+});
+
 var _fieldsFixtures = require('./fields.fixtures.js');
 
 Object.defineProperty(exports, 'checkboxFieldset', {

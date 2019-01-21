@@ -7,8 +7,13 @@ export const applyRule = (rule, fieldValues) => {
 
 /**
  *
- * @param rule
+ * @param {{
+ *     type: String,
+ *     fields: Array
+ * }} rule
  * @param {ConditionalState} conditionalState
+ *
+ * @return {ConditionalState}
  */
 export const applyRuleToState = (rule, conditionalState) => {
 	const {type, fields} = rule;
@@ -51,5 +56,6 @@ export const applyRuleToState = (rule, conditionalState) => {
 			});
 			break;
 	}
+	return conditionalState;
 
 };
