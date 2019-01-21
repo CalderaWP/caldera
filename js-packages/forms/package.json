@@ -21,13 +21,9 @@
     "react-dom": "^16.x"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.1",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^20.0.3",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
+    "@babel/core": "^7.2.2",
+    "@storybook/react": "^4.1.7",
+    "babel-loader": "^8.0.5",
     "css-loader": "^0.28.11",
     "deepmerge": "^3.0.0",
     "enzyme": "^3.3.0",
@@ -61,8 +57,10 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "@storybook/addon-options": "^4.1.4",
-    "@storybook/addons": "^4.1.4",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-options": "^4.1.7",
+    "@storybook/addons": "^4.1.7",
     "jest-fetch-mock": "^2.1.0",
     "moment": "^2.23.0",
     "react": "^16.8.0-alpha.0",

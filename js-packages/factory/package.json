@@ -22,7 +22,7 @@
     "react-dom": "^16.x"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.1",
+    "@storybook/react": "^4.1.7",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^20.0.3",
@@ -63,8 +63,8 @@
   },
   "dependencies": {
     "@rebass/grid": "^6.0.0-7",
-    "@storybook/addon-options": "^4.1.4",
-    "@storybook/addons": "^4.1.4",
+    "@storybook/addon-options": "^4.1.7",
+    "@storybook/addons": "^4.1.7",
     "dot-prop": "^4.2.0",
     "formik": "^1.4.1",
     "jest-fetch-mock": "^2.1.0",
