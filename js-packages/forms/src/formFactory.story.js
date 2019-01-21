@@ -17,7 +17,8 @@ const conditionals = [
 	{
 		type: 'hide',
 		rule: (fieldValues) => {
-			return fieldValues.emailFieldId === 'hide';
+
+			return true;
 		},
 		fields: [
 			textField.fieldId
@@ -41,7 +42,7 @@ const initialValues = getValuesFromFormLayout(formRows);
 
 const TheForm = () => (
 	<Fragment>{formFactory(form,{apiRootUri:'http://localhost',initialValues})}</Fragment>
-);
+)
 storiesOf('formFactory', module).add('Forms', () => (
 	<TheForm/>
 ));
