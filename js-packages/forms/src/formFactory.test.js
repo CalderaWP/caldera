@@ -1,6 +1,4 @@
 import React, {Fragment} from 'react';
-import {storiesOf} from '@storybook/react';
-import {formRowOne} from './components/CalderaForm/columns.fixtures';
 import {formFactory} from './formFactory'
 import { getValuesFromFormLayout } from './components/CalderaForm/util/getValuesFromFormLayout';
 import {
@@ -12,6 +10,11 @@ import {
 	emailField,
 	radioField
 } from './components/CalderaForm/fields.fixtures';
+
+import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
+
+
 const formRows = [formRowOne];
 const conditionals = [
 	{
@@ -39,9 +42,9 @@ const form = {
 };
 const initialValues = getValuesFromFormLayout(formRows);
 
-const TheForm = () => (
-	<Fragment>{formFactory(form,{apiRootUri:'http://localhost',initialValues})}</Fragment>
-);
-storiesOf('formFactory', module).add('Forms', () => (
-	<TheForm/>
-));
+describe('formFactory - conditional logic', () => {
+	it( 'Renders fields ', () =>{
+		const component = mount(	<Fragment>{formFactory(form,{apiRootUri:'http://localhost',initialValues})}</Fragment>);
+		expect( component.find( 'input' ).length ).toBe(2);
+	});
+});

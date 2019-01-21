@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {formClientFactory} from './components/Http/clientFactory'
 import {updateRows} from './util/updateRows';
 import { ConditionalState,collectFieldValues,applyRuleToState } from '@calderawp/factory';
@@ -21,8 +21,6 @@ export const formFactory = (form,{
 			initalValues[field.fieldId] = null;
 		}
 	});
-
-	let formRows = {...rows};
 	const client = formClientFactory(form, apiRootUri);
 
 	let conditionalState = new ConditionalState(
@@ -30,8 +28,7 @@ export const formFactory = (form,{
 		fieldsHidden || [],
 		fieldsDisabled || []
 	);
-	formRows = updateRows(conditionalState,rows);
-
+	const [formRows,setFormRows] = useState(updateRows(conditionalState,rows,fields));
 
 	const className = `${form.id} caldera-form caldera-form-${form.id}`;
 
@@ -43,7 +40,7 @@ export const formFactory = (form,{
 				applyRuleToState(conditionalRule,conditionalState)
 			});
 		}
-		formRows = updateRows(conditionalState,rows);
+		setFormRows(updateRows(conditionalState,rows,fields));
 		client.setFieldValues(conditionalState.getCurrentState());
 	};
 	return (
