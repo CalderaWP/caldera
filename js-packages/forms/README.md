@@ -45,8 +45,7 @@ Specific benefits:
 #### How A Caldera Forms
 ```jsx
 <CalderaForm
-    formRows={formRows}
-    initialValues={initialValues}
+    form={form}//form config
     onSubmit={(
         //current values of all fields
         values, 
@@ -64,9 +63,7 @@ Specific benefits:
 ```
 
 ##### Props
-* `formRows` - Array - The form layout. Passed to `CalderaGrid.rows`
-    * [See CalderaGrid docs]()
-    * [See Factory README](../factory/README.md)
+* `formRows` - Object - The form layout. 
 * `onSubmit` Function - Called when form is submitted by `Formik.onSubmit()`
     - Receives all field values and a [Formik Bag](https://jaredpalmer.com/formik/docs/api/withformik#the-formikbag)
     - [Formik Docs](https://jaredpalmer.com/formik/docs/api/formik#onsubmit-values-values-formikbag-formikbag-void)
@@ -74,6 +71,67 @@ Specific benefits:
     - Is passed all updated field values.
  * `initialValues` - Object. Initial values for all fields in form. Mapped `fieldId : fieldValue`
 
+##### Shape Of Form
+
+* `id` - string
+* `name` - string
+* `fields` - array
+* `conditionals` - array
+* `rows` - array
+
+```js
+import{createFieldRule} from '@calderawp/forms';
+const form = {
+	id: 'contact-form',
+	name: 'Contact Form',
+	rows : [
+	    {
+	    	rowId: 'r1',
+	    	columns: [
+	    		{
+	    			columnId: 'c1',
+	    			fields: ['sendEmail'],
+	    			width: '1/4'
+	    		},
+	    		{
+                    columnId: 'c2',
+                    fields: ['primaryEmail'],
+                    width: '3/4'
+                }
+	    	]
+	    }	
+	],
+	fields:[
+		{
+            type: 'select',
+            fieldId: 'sendEmail',
+            label: 'Would you like to provide an email?',
+            options: [
+            	{value: true, label: 'Yes' },
+            	{value: false, label: 'No' },
+            ]
+        },
+		{
+			type: 'input',
+			fieldId: 'primaryEmail',
+			html5type: 'email',
+			label: 'Your Email'
+		}
+	],
+	conditionals: [
+		{
+			//result of conditional
+			type: 'hide',
+			//Logic of conditional
+			rule: createFieldRule('is', 'sendEmail', true ),
+			//fields effected by conditional
+			fields: [
+				'primaryEmail'
+			]
+		}
+	]
+}
+```
 
 ### `<CalderaGrid />`
 > This component is supplied an array describing multi-row layouts with 1-12 responsive columns per row. 

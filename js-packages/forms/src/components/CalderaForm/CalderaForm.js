@@ -16,6 +16,9 @@ export class CalderaForm extends Component {
 		conditionalState: null
 	};
 
+	/**
+	 * Run conditional logic and update state
+	 */
 	applyConditionalRules = () => {
 		const {fields,rows,conditionals} = this.props.form;
 		if( conditionals && conditionals.length ){
@@ -32,14 +35,16 @@ export class CalderaForm extends Component {
 
 	};
 
+	/**
+	 * On mount, calculate initial state and rows
+	 */
 	componentDidMount =() =>{
 		const {fields,rows} = this.props.form;
 		const intialValues = collectFieldValues(fields );
 		const conditionalState = this.state.conditionalState ? this.state.conditionalState : new ConditionalState(intialValues);
 		const formRows = updateRows( conditionalState,rows,fields );
 		this.setState({intialValues,formRows,conditionalState})
-	}
-
+	};
 
 	render(){
 		const {onSubmit,onChange} = this.props;

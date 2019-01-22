@@ -26,12 +26,12 @@ exports[`Caldera Forms Forms 1`] = `
             >
               <label
                 className="components-base-control__label"
-                htmlFor="inspector-text-control-2"
+                htmlFor="inspector-text-control-0"
               >
                 Email Field Label
               </label>
               <input
-                aria-describedby="inspector-text-control-2__help"
+                aria-describedby="inspector-text-control-0__help"
                 className="components-text-control__input"
                 id="emailFieldId"
                 multiple={true}
@@ -44,7 +44,7 @@ exports[`Caldera Forms Forms 1`] = `
             </div>
             <p
               className="components-base-control__help"
-              id="inspector-text-control-2__help"
+              id="inspector-text-control-0__help"
             >
               Email field description
             </p>
@@ -67,12 +67,12 @@ exports[`Caldera Forms Forms 1`] = `
             >
               <label
                 className="components-base-control__label"
-                htmlFor="inspector-text-control-3"
+                htmlFor="inspector-text-control-1"
               >
                 First Name
               </label>
               <input
-                aria-describedby="inspector-text-control-3__help"
+                aria-describedby="inspector-text-control-1__help"
                 className="components-text-control__input"
                 id="firstName"
                 onBlur={[Function]}
@@ -84,7 +84,7 @@ exports[`Caldera Forms Forms 1`] = `
             </div>
             <p
               className="components-base-control__help"
-              id="inspector-text-control-3__help"
+              id="inspector-text-control-1__help"
             >
               your first name
             </p>

@@ -157,7 +157,7 @@ describe('Caldera Forms', () => {
 	});
 });
 
-describe('Updates field value', () => {
+describe('Updates ', () => {
 	let onSubmit = jest.fn();
 	beforeEach(() => {
 		onSubmit = jest.fn();
@@ -187,29 +187,8 @@ describe('Updates field value', () => {
 		]
 	}
 
-	it.skip('Updates field value when field is changed', () => {
-		const component = mount(
-			<CalderaForm
-				form={form}
-				onSubmit={onSubmit}
-			/>
-		);
-		const value = 'changed@email22.com';
-		const event = {target: {value}};
-		component
-			.find('#emailFieldId')
-			.find('input')
-			.simulate('change', event);
-		expect(
-			component
-				.find('#emailFieldId')
-				.find('input')
-				.prop('value')
-		).toEqual(value);
-	});
 
-
-	it( 'hides a field when it should ', () => {
+	it.skip( 'hides a field when it should ', () => {
 		const _form = {
 			...form,
 			conditionals :[
@@ -225,24 +204,25 @@ describe('Updates field value', () => {
 
 			]
 		}
-	})
 
-	const component = mount(
-		<CalderaForm
-			form={form}
-			onSubmit={onSubmit}
-		/>
-	);
-	const value = 'hide';
-	const event = {target: {value}};
-	component
-		.find('#emailFieldId')
-		.find('input')
-		.simulate('change', event);
-	expect(
+		const component = mount(
+			<CalderaForm
+				form={form}
+				onSubmit={onSubmit}
+			/>
+		);
+		const value = 'hide';
+		const event = {target: {value}};
 		component
-			.find('#firstName')
+			.find('#emailFieldId')
 			.find('input')
-			.length
-	).toEqual(0);
+			.simulate('change', event);
+		expect(
+			component
+				.find('#firstName')
+				.find('input')
+				.length
+		).toEqual(0);
+	});
+
 });
