@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.story.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/export.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/export.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormFieldsAutoComplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +51,7 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1332" />
+          <entry key="js" value="1333" />
           <entry key="json" value="194" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
@@ -87,7 +82,7 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="200" />
-          <entry key="JavaScript" value="1332" />
+          <entry key="JavaScript" value="1333" />
           <entry key="Jest Snapshot" value="50" />
           <entry key="Markdown" value="265" />
           <entry key="PHP" value="2085" />
@@ -110,7 +105,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="84425" />
+          <entry key="js" value="84998" />
           <entry key="json" value="4081" />
           <entry key="md" value="65648" />
           <entry key="php" value="112533" />
@@ -128,7 +123,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4088" />
-          <entry key="JavaScript" value="84566" />
+          <entry key="JavaScript" value="85139" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="65516" />
           <entry key="PHP" value="112627" />
@@ -169,10 +164,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+                <state relative-caret-position="525">
+                  <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#68#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormFieldsAutoComplete.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="675">
+                  <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#0#80#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -211,7 +218,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/export.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="793">
@@ -238,8 +245,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="21" selection-start-line="24" selection-end-line="25" />
+                <state relative-caret-position="540">
+                  <caret line="36" column="11" selection-start-line="36" selection-end-line="36" selection-end-column="11" />
                   <folding>
                     <element signature="e#0#35#0" expanded="true" />
                   </folding>
@@ -266,8 +273,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="24" selection-start-line="24" selection-end-line="44" selection-end-column="7" />
+                <state relative-caret-position="628">
+                  <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -385,7 +392,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/richtext.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/README.md" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/defaultProcessorTypes.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/propTypes.js" />
@@ -431,11 +437,12 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoComplete.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/index.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/export.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormFieldsAutoComplete.js" />
       </list>
     </option>
   </component>
@@ -742,6 +749,15 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="fields" type="462c0819:PsiDirectoryNode" />
               <item name="ToggleField" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FormEditor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -1187,7 +1203,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="540525000" />
+    <option name="totallyTimeSpent" value="541050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1202,13 +1218,13 @@
     <frame x="79" y="55" width="1811" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.2357264" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.2357264" />
       <window_info id="Structure" order="1" sideWeight="0.6889849" side_tool="true" weight="0.21215531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.3129689" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1646,16 +1662,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/components/AppBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -1986,42 +1992,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="21" selection-start-line="24" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.story.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="24" selection-start-line="24" selection-end-line="44" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2043,12 +2019,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/export.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="793">
           <caret line="63" column="39" selection-end-line="66" />
           <folding>
             <element signature="e#0#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="11" selection-start-line="36" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormFieldsAutoComplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,7 +2,7 @@ import {FormTokenField, SelectControl} from '@wordpress/components';
 import { BaseControl } from '@wordpress/components';
 import React from "react";
 import {fieldClassNames} from "../util";
-
+import {SelectField} from '../SelectField/SelectField';
 export const AutoCompleteField = (
 	label,
 	description,
@@ -30,4 +30,7 @@ export const AutoCompleteField = (
 			/>
 		</BaseControl>
 	);
-}
+};
+
+AutoCompleteField.propTypes = SelectField.propTypes;
+AutoCompleteField.defaultProps = SelectField.defaultProps;
