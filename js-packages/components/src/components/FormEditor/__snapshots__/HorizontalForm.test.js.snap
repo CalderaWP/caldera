@@ -11,9 +11,9 @@ exports[`HorizontalForm Matches snapshot 1`] = `
       id={undefined}
     >
       <div
-        className="caldera-column sc-bdVaJa jomEAJ"
-        id="c-test-1-0"
-        width="1"
+        className="caldera-column sc-bdVaJa iHZvIS"
+        id={undefined}
+        width={undefined}
       >
         <div
           className="caldera-field-wrapper caldera-field-wrapper-text"
@@ -111,9 +111,9 @@ exports[`HorizontalForm Matches snapshot 1`] = `
       id={undefined}
     >
       <div
-        className="caldera-column sc-bdVaJa jomEAJ"
-        id="c-test-1-1"
-        width="1"
+        className="caldera-column sc-bdVaJa iHZvIS"
+        id={undefined}
+        width={undefined}
       >
         <div
           className="caldera-field-wrapper caldera-field-wrapper-text"
@@ -170,9 +170,9 @@ exports[`HorizontalForm Matches snapshot 1`] = `
       id={undefined}
     >
       <div
-        className="caldera-column sc-bdVaJa jomEAJ"
-        id="c-test-1-2"
-        width="1"
+        className="caldera-column sc-bdVaJa iHZvIS"
+        id={undefined}
+        width={undefined}
       >
         <div
           className="caldera-field-wrapper caldera-field-wrapper-text"

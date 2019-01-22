@@ -23,6 +23,8 @@ var _updateRows = require('./util/updateRows');
 
 var _factory = require('@calderawp/factory');
 
+var _applyRule = require('./state/applyRule');
+
 var _CalderaGrid = require('./CalderaGrid');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -51,32 +53,46 @@ var CalderaForm = exports.CalderaForm = function (_Component) {
 			formRows: [],
 			initialValues: {},
 			conditionalState: null
-		}, _this.onChange = function (values) {
-			_this.props.onChange(handleChange);
+		}, _this.applyConditionalRules = function () {
+			var _this$props$form = _this.props.form,
+			    fields = _this$props$form.fields,
+			    rows = _this$props$form.rows,
+			    conditionals = _this$props$form.conditionals;
+
+			if (conditionals && conditionals.length) {
+				var conditionalState = _this.state.conditionalState ? _this.state.conditionalState : new _ConditionalState.ConditionalState((0, _factory.collectFieldValues)(fields));
+				conditionals.forEach(function (rule) {
+					(0, _applyRule.applyRuleToState)(rule, conditionalState);
+				});
+				_this.setState({
+					formRows: (0, _updateRows.updateRows)(conditionalState, rows, fields),
+					conditionalState: conditionalState
+				});
+			}
+		}, _this.componentDidMount = function () {
+			var _this$props$form2 = _this.props.form,
+			    fields = _this$props$form2.fields,
+			    rows = _this$props$form2.rows;
+
+			var intialValues = (0, _factory.collectFieldValues)(fields);
+			var conditionalState = _this.state.conditionalState ? _this.state.conditionalState : new _ConditionalState.ConditionalState(intialValues);
+			var formRows = (0, _updateRows.updateRows)(conditionalState, rows, fields);
+			_this.setState({ intialValues: intialValues, formRows: formRows, conditionalState: conditionalState });
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
 	_createClass(CalderaForm, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
-			var _props$form = this.props.form,
-			    fields = _props$form.fields,
-			    rows = _props$form.rows;
-
-			var intialValues = (0, _factory.collectFieldValues)(fields);
-			var conditionalState = this.state.conditionalState ? this.state.conditionalState : new _ConditionalState.ConditionalState(intialValues);
-			var formRows = (0, _updateRows.updateRows)(conditionalState, rows, fields);
-			this.setState({ intialValues: intialValues, formRows: formRows });
-		}
-	}, {
 		key: 'render',
 		value: function render() {
 			var _this2 = this;
 
-			var onSubmit = this.props.onSubmit;
+			var _props = this.props,
+			    onSubmit = _props.onSubmit,
+			    onChange = _props.onChange;
 			var _state = this.state,
 			    formRows = _state.formRows,
-			    initialValues = _state.initialValues;
+			    initialValues = _state.initialValues,
+			    conditionalState = _state.conditionalState;
 
 
 			return _react2.default.createElement(
@@ -98,8 +114,10 @@ var CalderaForm = exports.CalderaForm = function (_Component) {
 							_formik.Form,
 							null,
 							_react2.default.createElement(_CalderaGrid.CalderaGrid, {
+								applyConditionalRules: _this2.applyConditionalRules,
+								conditionalState: conditionalState,
 								rows: formRows,
-								onAnyChange: _this2.onChange,
+								onAnyChange: onChange,
 								onAnyBlur: handleBlur,
 								fieldValues: values,
 								setFieldValue: setFieldValue,
@@ -123,7 +141,6 @@ var CalderaForm = exports.CalderaForm = function (_Component) {
 }(_react.Component);
 
 CalderaForm.propTypes = {
-	ConditionalState: _propTypes2.default.instanceOf(_ConditionalState.ConditionalState),
 	form: _propTypes2.default.object,
 	onSubmit: _propTypes2.default.func,
 	onChange: _propTypes2.default.func,

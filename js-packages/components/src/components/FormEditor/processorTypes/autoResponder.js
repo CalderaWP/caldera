@@ -39,11 +39,15 @@ export const autoResponder = {
 			required: true
 		},
 		{
-			fieldType: 'toggle',
+			fieldType: 'select',
 			value: true,
 			label: 'HTML Mode',
 			fieldId: 'autoResponderHtmlMode',
 			description: 'HTML or Plain Text',
+			options: [
+				{value: true,label:'HTML'},
+				{value: false,label:'Plain Text'},
+			]
 		},
 		{
 			fieldType: 'magic-richtext',
@@ -62,16 +66,18 @@ export const autoResponder = {
 		{
 			type: 'hide',
 			rule: (fieldValues) => {
-				return fieldsValues.autoResponderHtmlMode;
+				const html = fieldValues.autoResponderHtmlMode;
+				return ! html;
 			},
 			fields: [
 				'messageHtml'
 			]
 		},
 		{
-			type: 'show',
+			type: 'hide',
 			rule: (fieldValues) => {
-				return !fieldsValues.autoResponderHtmlMode;
+				const html = fieldValues.autoResponderHtmlMode;
+				return html;
 			},
 			fields: [
 				'messagePlain'

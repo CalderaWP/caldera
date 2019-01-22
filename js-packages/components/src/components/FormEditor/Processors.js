@@ -104,7 +104,8 @@ export class Processors extends Component {
 							fields,
 							config,
 							type,
-							label
+							label,
+							conditionals
 						} = processor;
 						if (this.isActiveProcessor(id)) {
 							return (
@@ -112,6 +113,7 @@ export class Processors extends Component {
 									<Processor
 										className={`caldera-forms-active-processor-${id}`}
 										fields={fields}
+										conditionals={conditionals}
 										initialValues={config}
 										label={label}
 										type={type}

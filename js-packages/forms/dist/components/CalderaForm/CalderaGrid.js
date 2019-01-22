@@ -21,6 +21,8 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _ConditionalState = require('./state/ConditionalState');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
@@ -42,7 +44,9 @@ var CalderaGrid = exports.CalderaGrid = function CalderaGrid(_ref) {
 	    fieldValues = _ref.fieldValues,
 	    fieldErrors = _ref.fieldErrors,
 	    fieldTouched = _ref.fieldTouched,
-	    setFieldValue = _ref.setFieldValue;
+	    setFieldValue = _ref.setFieldValue,
+	    conditionalState = _ref.conditionalState,
+	    applyConditionalRules = _ref.applyConditionalRules;
 	return _react2.default.createElement(
 		_react.Fragment,
 		null,
@@ -102,7 +106,9 @@ var CalderaGrid = exports.CalderaGrid = function CalderaGrid(_ref) {
 								key: _key,
 								field: field,
 								onChange: function onChange(newValue) {
-									setFieldValue(fieldId, newValue, true);
+									conditionalState.setValue(fieldId, newValue);
+									applyConditionalRules();
+									setFieldValue(fieldId, conditionalState.getValue(fieldId), true);
 									onAnyChange(fieldValues);
 								},
 								onBlur: onAnyBlur,
@@ -118,6 +124,8 @@ var CalderaGrid = exports.CalderaGrid = function CalderaGrid(_ref) {
 };
 
 CalderaGrid.propTypes = {
+	applyConditionalRules: _propTypes2.default.func,
+	conditionalState: _propTypes2.default.instanceOf(_ConditionalState.ConditionalState),
 	rows: _propTypes2.default.array,
 	onAnyChange: _propTypes2.default.func,
 	onAnyBlur: _propTypes2.default.func,

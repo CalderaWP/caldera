@@ -42,7 +42,7 @@ export class CalderaForm extends Component {
 
 
 	render(){
-		const {onSubmit} = this.props;
+		const {onSubmit,onChange} = this.props;
 		const {formRows,initialValues,conditionalState} = this.state;
 
 
@@ -66,7 +66,7 @@ export class CalderaForm extends Component {
 								applyConditionalRules={this.applyConditionalRules}
 								conditionalState={conditionalState}
 								rows={formRows}
-								onAnyChange={handleChange}
+								onAnyChange={onChange}
 								onAnyBlur={handleBlur}
 								fieldValues={values}
 								setFieldValue={setFieldValue}

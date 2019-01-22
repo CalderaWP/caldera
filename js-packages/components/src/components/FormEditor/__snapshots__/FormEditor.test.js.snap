@@ -148,6 +148,16 @@ exports[`FormEditor should match snapshot 1`] = `
                     >
                       redirect
                     </option>
+                    <option
+                      value="autoResponder"
+                    >
+                      autoResponder
+                    </option>
+                    <option
+                      value="apiRequest"
+                    >
+                      apiRequest
+                    </option>
                   </select>
                 </div>
               </div>

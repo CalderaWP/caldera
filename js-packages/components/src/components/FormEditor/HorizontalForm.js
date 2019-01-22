@@ -18,7 +18,8 @@ export const HorizontalForm = ({
 	initialValues,
 	onClose,
 	onChange,
-	instanceId
+	instanceId,
+								   conditionals
 }) => {
 	const rows = [];
 	let i = 0;
@@ -35,11 +36,17 @@ export const HorizontalForm = ({
 		});
 		i++;
 	});
+	const form = {
+		id: `horizontal-form-${instanceId}`,
+		fields,
+		rows,
+		conditionals
+	}
+
 	return (
 		<Fragment>
 			<CalderaForm
-				fields={fields}
-				formRows={rows}
+				form={form}
 				initialValues={initialValues}
 				onSubmit={onClose}
 				onChange={onChange}
@@ -55,10 +62,12 @@ HorizontalForm.propTypes = {
 	onChange: PropTypes.func,
 	onBlur: PropTypes.func,
 	onClose: PropTypes.func,
-	initialValues: PropTypes.object
+	initialValues: PropTypes.object,
+	conditionals: PropTypes.array,
 };
 
 HorizontalForm.defaultProps = {
-	fields: {},
-	initialValues: {}
+	fields: [],
+	initialValues: {},
+	conditionals: [],
 };

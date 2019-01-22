@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.updateRows = undefined;
 
-var _factory = require('@calderawp/factory');
+var _ConditionalState = require('../state/ConditionalState');
 
 var findFieldById = function findFieldById(fieldId, fields) {
 	if (-1 !== fields.findIndex(function (f) {
@@ -42,14 +42,20 @@ var updateRows = exports.updateRows = function updateRows(newState, rows, fields
 						};
 						if (column.fields) {
 							column.fields.forEach(function (field) {
-								if ('string' === typeof field) {
-									var _field = findFieldById(field, fields);
-									if (_field) {
-										field = _field;
-									}
-								}
-								if (field.hasOwnProperty('fieldId')) {
-									if (!newState.isFieldHidden(field.fieldId)) {
+								if (field) {
+									if (!field.render) {
+										if ('string' === typeof field) {
+											var _field = findFieldById(field, fields);
+											if (_field) {
+												field = _field;
+											}
+										}
+										if (field.hasOwnProperty('fieldId')) {
+											if (!newState.isFieldHidden(field.fieldId)) {
+												outputColumn.fields.push(field);
+											}
+										}
+									} else {
 										outputColumn.fields.push(field);
 									}
 								}

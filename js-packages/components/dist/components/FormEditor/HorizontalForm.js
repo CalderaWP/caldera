@@ -50,12 +50,17 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 		});
 		i++;
 	});
+	var form = {
+		id: 'horizontal-form-' + instanceId,
+		fields: fields,
+		rows: rows
+	};
+
 	return _react2.default.createElement(
 		_react.Fragment,
 		null,
 		_react2.default.createElement(_forms.CalderaForm, {
-			fields: fields,
-			formRows: rows,
+			form: form,
 			initialValues: initialValues,
 			onSubmit: onClose,
 			onChange: onChange
