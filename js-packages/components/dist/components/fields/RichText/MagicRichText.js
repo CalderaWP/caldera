@@ -13,6 +13,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _RichText = require('./RichText');
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var MagicRichText = exports.MagicRichText = function MagicRichText(props) {
@@ -50,8 +54,8 @@ var MagicRichText = exports.MagicRichText = function MagicRichText(props) {
 };
 
 MagicRichText.propTypes = _extends({}, _RichText.RichText.propTypes, {
-	fieldCompletes: {},
-	otherCompletes: {}
+	fieldCompletes: _propTypes2.default.object,
+	otherCompletes: _propTypes2.default.object
 });
 
 MagicRichText.defaultProps = _RichText.RichText.defaultProps;

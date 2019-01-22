@@ -45,6 +45,7 @@ export const autoResponder = {
 			label: 'HTML Mode',
 			fieldId: 'autoResponderHtmlMode',
 			description: 'HTML or Plain Text',
+			value: 'html',
 			options: [
 				{value: 'html',label:'HTML'},
 				{value: 'plain',label:'Plain Text'},

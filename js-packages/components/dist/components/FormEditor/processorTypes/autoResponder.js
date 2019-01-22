@@ -3,6 +3,10 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.autoResponder = exports.AUTO_RESPONDER_PROCESSOR_TYPE = undefined;
+
+var _forms = require('@calderawp/forms');
+
 var AUTO_RESPONDER_PROCESSOR_TYPE = exports.AUTO_RESPONDER_PROCESSOR_TYPE = 'autoResponder';
 var autoResponder = exports.autoResponder = {
 	type: AUTO_RESPONDER_PROCESSOR_TYPE,
@@ -44,10 +48,12 @@ var autoResponder = exports.autoResponder = {
 		label: 'HTML Mode',
 		fieldId: 'autoResponderHtmlMode',
 		description: 'HTML or Plain Text',
-		options: [{ value: true, label: 'HTML' }, { value: false, label: 'Plain Text' }]
+		options: [{ value: 'html', label: 'HTML' }, { value: 'plain', label: 'Plain Text' }]
 	}, {
 		fieldType: 'magic-richtext',
 		value: '',
+		otherCompletes: {},
+		fieldCompletes: {},
 		label: 'Message',
 		fieldId: 'messageHtml'
 	}, {
@@ -57,18 +63,12 @@ var autoResponder = exports.autoResponder = {
 		fieldId: 'messagePlain'
 	}],
 	conditionals: [{
-		type: 'hide',
-		rule: function rule(fieldValues) {
-			var html = fieldValues.autoResponderHtmlMode;
-			return !html;
-		},
+		type: 'show',
+		rule: (0, _forms.createFieldRule)('is', 'autoResponderHtmlMode', 'html'),
 		fields: ['messageHtml']
 	}, {
-		type: 'hide',
-		rule: function rule(fieldValues) {
-			var html = fieldValues.autoResponderHtmlMode;
-			return html;
-		},
+		type: 'show',
+		rule: (0, _forms.createFieldRule)('is', 'autoResponderHtmlMode', 'plain'),
 		fields: ['messagePlain']
 	}]
 };

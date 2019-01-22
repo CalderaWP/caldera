@@ -43,7 +43,8 @@ export class CalderaForm extends Component {
 		const intialValues = collectFieldValues(fields );
 		const conditionalState = this.state.conditionalState ? this.state.conditionalState : new ConditionalState(intialValues);
 		const formRows = updateRows( conditionalState,rows,fields );
-		this.setState({intialValues,formRows,conditionalState})
+		this.setState({intialValues,formRows,conditionalState});
+		this.applyConditionalRules();//initial hide/show logic
 	};
 
 	render(){

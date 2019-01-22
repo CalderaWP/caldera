@@ -78,6 +78,7 @@ var CalderaForm = exports.CalderaForm = function (_Component) {
 			var conditionalState = _this.state.conditionalState ? _this.state.conditionalState : new _ConditionalState.ConditionalState(intialValues);
 			var formRows = (0, _updateRows.updateRows)(conditionalState, rows, fields);
 			_this.setState({ intialValues: intialValues, formRows: formRows, conditionalState: conditionalState });
+			_this.applyConditionalRules(); //initial hide/show logic
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
