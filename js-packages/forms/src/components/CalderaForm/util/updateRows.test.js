@@ -1,7 +1,8 @@
 import {updateRows} from './updateRows';
-import {ConditionalState} from '@calderawp/factory';
+import {ConditionalState} from '../state/ConditionalState';
 import {textField} from "../fields.fixtures";
 import React from "react";
+import {checkboxField} from "../columns.fixtures";
 
 describe('updateRows', () => {
 
@@ -152,4 +153,38 @@ describe('updateRows', () => {
 		];
 		expect( typeof updateRows(state,rows,[field])[0].columns[0].render).toEqual('function');
 	});
+
+	it( 'should allow fields to have render', () => {
+		const _Field = props => <input id={'test808'} type={'number'}/>;
+		const state = new ConditionalState( {
+			hideField: 'h',
+			showField: 's'
+		});
+		const field = {
+			...checkboxField,
+			render: _Field,
+			key: 800000
+		};
+
+		const rows = [
+			{
+				rowId: 'r1',
+				columns: [
+					{
+						fields: [field, checkboxField],
+						width: '1/2',
+						columnId: '1aaaaa'
+					},
+					{
+						fields: [textField],
+						width: '1/4',
+						columnId: '1b'
+					}
+				]
+			}
+		];
+		expect(  typeof  updateRows(state,rows,[field])[0].columns[0].fields[0].render).toEqual('function');
+
+
+	})
 });

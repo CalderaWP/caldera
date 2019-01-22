@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.formClientFactory = exports.FormClient = exports.CalderaForm = exports.CalderaGrid = undefined;
+exports.ConditionalState = exports.formClientFactory = exports.FormClient = exports.CalderaForm = exports.CalderaGrid = undefined;
 
 var _CalderaGrid = require('./components/CalderaForm/CalderaGrid');
 
@@ -29,6 +29,15 @@ Object.defineProperty(exports, 'formClientFactory', {
   enumerable: true,
   get: function get() {
     return _clientFactory.formClientFactory;
+  }
+});
+
+var _ConditionalState = require('./components/CalderaForm/state/ConditionalState');
+
+Object.defineProperty(exports, 'ConditionalState', {
+  enumerable: true,
+  get: function get() {
+    return _ConditionalState.ConditionalState;
   }
 });
 

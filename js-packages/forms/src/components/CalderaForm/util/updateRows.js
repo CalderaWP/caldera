@@ -1,4 +1,4 @@
-import {ConditionalState} from '@calderawp/factory';
+import {ConditionalState} from '../state/ConditionalState';
 
 
 const findFieldById = (fieldId, fields) => {
@@ -31,14 +31,20 @@ export const updateRows = (newState, rows, fields) => {
 						};
 						if (column.fields) {
 							column.fields.forEach(field => {
-								if ('string' === typeof field) {
-									const _field = findFieldById(field, fields);
-									if (_field) {
-										field = _field;
-									}
-								}
-								if (field.hasOwnProperty('fieldId')) {
-									if (!newState.isFieldHidden(field.fieldId)) {
+								if (field) {
+									if (!field.render) {
+										if ('string' === typeof field) {
+											const _field = findFieldById(field, fields);
+											if (_field) {
+												field = _field;
+											}
+										}
+										if (field.hasOwnProperty('fieldId')) {
+											if (!newState.isFieldHidden(field.fieldId)) {
+												outputColumn.fields.push(field);
+											}
+										}
+									} else {
 										outputColumn.fields.push(field);
 									}
 								}

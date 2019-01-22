@@ -163,11 +163,34 @@ describe('Updates field value', () => {
 		onSubmit = jest.fn();
 	});
 
-	it.skip('Updates field value when field is changed', () => {
+	const form = {
+		rows: [
+			{
+				rowId: 'r1',
+				columns: [
+					{
+						fields: [emailField.fieldId],
+						width: '1/2',
+						columnId: '1aaaaa'
+					},
+					{
+						fields: [textField.fieldId],
+						width: '1/4',
+						columnId: '1b'
+					}
+				]
+			}
+		],
+		fields: [
+			emailField,
+			textField
+		]
+	}
+
+	it('Updates field value when field is changed', () => {
 		const component = mount(
 			<CalderaForm
-				formRows={formRows}
-				initialValues={initialValues}
+				form={form}
 				onSubmit={onSubmit}
 			/>
 		);
@@ -185,12 +208,12 @@ describe('Updates field value', () => {
 		).toEqual(value);
 	});
 
-	it.skip('Recives values update when any field changes', () => {
+	it('Recives values update when any field changes', () => {
 		const _onChange = jest.fn();
 		const component = mount(
 			<CalderaForm
-				formRows={formRows}
-				initialValues={initialValues}
+				form={form}
+
 				onSubmit={onSubmit}
 				onChange={_onChange}
 			/>
@@ -202,5 +225,6 @@ describe('Updates field value', () => {
 			.find('input')
 			.simulate('change', event);
 		expect(_onChange.mock.calls.length).toEqual(1);
+
 	});
 });

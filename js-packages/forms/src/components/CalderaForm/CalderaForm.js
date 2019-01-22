@@ -4,7 +4,7 @@ import React, { isValidElement, createElement, Fragment, Component} from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import {updateRows} from './util/updateRows';
 import { collectFieldValues } from '@calderawp/factory';
-
+import {applyRuleToState} from './state/applyRule';
 
 import { CalderaGrid } from './CalderaGrid';
 
@@ -17,7 +17,21 @@ export class CalderaForm extends Component {
 	};
 
 	onChange = (values) => {
-		this.props.onChange(handleChange);
+		console.log(values);
+		const {fields,rows,conditionals} = this.props.form;
+		if( conditionals && conditionals.length ){
+			const {conditionalState} = this.state;
+			conditionalState.setState(value);
+			conditionals.forEach( rule => {
+				applyRuleToState(rule,conditionalState)
+			});
+			this.setState({
+				formRows: updateRows(conditionalState,rows,fields)
+			});
+			this.props.onChange(conditionalState.getState());
+		}else{
+			this.props.onChange(values);
+		}
 
 	};
 
