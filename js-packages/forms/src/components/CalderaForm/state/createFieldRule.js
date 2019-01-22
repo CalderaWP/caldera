@@ -1,20 +1,19 @@
 /**
  * Create a conditional rule
  *
- * @param type
- * @param fieldId
- * @param testValue
+ * @param {string} test
+ * @param {string} fieldId
+ * @param {string|int|array} testValue
  * @return {function(*=): boolean}
  */
-export const createFieldRule = (type,fieldId,testValue) => {
+export const createFieldRule = (test,fieldId,testValue) => {
 	const findFieldValue= (fieldId,fieldValues) => {
 		return fieldValues.hasOwnProperty(fieldId)
 			?fieldValues[fieldId]
 			: null;
 	};
 
-
-	switch(type){
+	switch(test){
 		case 'is':
 			return (fieldValues) => {
 				const value = findFieldValue(fieldId,fieldValues);

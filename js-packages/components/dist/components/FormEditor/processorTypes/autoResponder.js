@@ -39,11 +39,12 @@ var autoResponder = exports.autoResponder = {
 		description: 'Email Of Who The Email Is From',
 		required: true
 	}, {
-		fieldType: 'toggle',
+		fieldType: 'select',
 		value: true,
 		label: 'HTML Mode',
 		fieldId: 'autoResponderHtmlMode',
-		description: 'HTML or Plain Text'
+		description: 'HTML or Plain Text',
+		options: [{ value: true, label: 'HTML' }, { value: false, label: 'Plain Text' }]
 	}, {
 		fieldType: 'magic-richtext',
 		value: '',
@@ -58,13 +59,15 @@ var autoResponder = exports.autoResponder = {
 	conditionals: [{
 		type: 'hide',
 		rule: function rule(fieldValues) {
-			return fieldsValues.autoResponderHtmlMode;
+			var html = fieldValues.autoResponderHtmlMode;
+			return !html;
 		},
 		fields: ['messageHtml']
 	}, {
-		type: 'show',
+		type: 'hide',
 		rule: function rule(fieldValues) {
-			return !fieldsValues.autoResponderHtmlMode;
+			var html = fieldValues.autoResponderHtmlMode;
+			return html;
 		},
 		fields: ['messagePlain']
 	}]

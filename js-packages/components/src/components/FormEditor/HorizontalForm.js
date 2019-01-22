@@ -41,7 +41,7 @@ export const HorizontalForm = ({
 		fields,
 		rows,
 		conditionals
-	}
+	};
 
 	return (
 		<Fragment>

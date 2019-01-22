@@ -2,7 +2,7 @@ import {CalderaForm} from './CalderaForm';
 import React, {Fragment} from 'react';
 import renderer from 'react-test-renderer';
 import {mount} from 'enzyme';
-
+import {createFieldRule} from './state/createFieldRule';
 import {formRows, formRowOne, checkboxField} from './columns.fixtures';
 import {getValuesFromFormLayout} from './util/getValuesFromFormLayout';
 import {emailField, textField} from './fields.fixtures';
@@ -185,7 +185,7 @@ describe('Updates ', () => {
 			emailField,
 			textField
 		]
-	}
+	};
 
 
 	it.skip( 'hides a field when it should ', () => {
@@ -194,16 +194,14 @@ describe('Updates ', () => {
 			conditionals :[
 				{
 					type: 'hide',
-					rule: (fieldValues) => {
-						return fieldValues[emailField.fieldId] === 'hide'
-					},
+					rule: createFieldRule( 'is', emailField.fieldId, 'hide' ),
 					fields: [
 						textField.fieldId
 					]
 				},
 
 			]
-		}
+		};
 
 		const component = mount(
 			<CalderaForm

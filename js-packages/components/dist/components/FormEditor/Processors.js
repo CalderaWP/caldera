@@ -168,7 +168,8 @@ var Processors = exports.Processors = function (_Component) {
 						    fields = processor.fields,
 						    config = processor.config,
 						    type = processor.type,
-						    label = processor.label;
+						    label = processor.label,
+						    conditionals = processor.conditionals;
 
 						if (_this2.isActiveProcessor(id)) {
 							return _react2.default.createElement(
@@ -177,6 +178,7 @@ var Processors = exports.Processors = function (_Component) {
 								_react2.default.createElement(_Processor.Processor, {
 									className: 'caldera-forms-active-processor-' + id,
 									fields: fields,
+									conditionals: conditionals,
 									initialValues: config,
 									label: label,
 									type: type,

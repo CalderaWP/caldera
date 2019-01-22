@@ -1,6 +1,6 @@
 import React from 'react';
 import {RichText} from './RichText';
-
+import PropTypes from 'prop-types';
 
 export const MagicRichText = (props) => {
 	let {modules,fieldCompletes,otherCompletes} = props;
@@ -40,8 +40,8 @@ export const MagicRichText = (props) => {
 
 MagicRichText.propTypes = {
 	...RichText.propTypes,
-	fieldCompletes: {},
-	otherCompletes: {}
+	fieldCompletes: PropTypes.object,
+	otherCompletes: PropTypes.object
 };
 
 MagicRichText.defaultProps = RichText.defaultProps;

@@ -53,11 +53,11 @@ describe('createFieldRule', () => {
 		expect( rule(fieldValues)).toBe(false);
 	});
 
-	it('Is conditional is false when no value for that field', () => {
+	it('Not conditional is false when no value for that field', () => {
 		const fieldValues = {
 			f2: 'sfdsdfsdf'
 		};
-		const rule = createFieldRule('is', 'f1', 'pa' );
+		const rule = createFieldRule('not', 'f1', 'pa' );
 		expect( rule(fieldValues)).toBe(false);
 	});
 });

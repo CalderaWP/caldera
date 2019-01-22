@@ -1,3 +1,4 @@
+import{createFieldRule} from '@calderawp/forms';
 export const AUTO_RESPONDER_PROCESSOR_TYPE = 'autoResponder';
 export const autoResponder = {
 	type: AUTO_RESPONDER_PROCESSOR_TYPE,
@@ -45,13 +46,15 @@ export const autoResponder = {
 			fieldId: 'autoResponderHtmlMode',
 			description: 'HTML or Plain Text',
 			options: [
-				{value: true,label:'HTML'},
-				{value: false,label:'Plain Text'},
+				{value: 'html',label:'HTML'},
+				{value: 'plain',label:'Plain Text'},
 			]
 		},
 		{
 			fieldType: 'magic-richtext',
 			value: '',
+			otherCompletes: {},
+			fieldCompletes: {},
 			label: 'Message',
 			fieldId: 'messageHtml',
 		},
@@ -64,21 +67,15 @@ export const autoResponder = {
 	],
 	conditionals: [
 		{
-			type: 'hide',
-			rule: (fieldValues) => {
-				const html = fieldValues.autoResponderHtmlMode;
-				return ! html;
-			},
+			type: 'show',
+			rule: createFieldRule('is', 'autoResponderHtmlMode', 'html' ),
 			fields: [
 				'messageHtml'
 			]
 		},
 		{
-			type: 'hide',
-			rule: (fieldValues) => {
-				const html = fieldValues.autoResponderHtmlMode;
-				return html;
-			},
+			type: 'show',
+			rule: createFieldRule('is', 'autoResponderHtmlMode', 'plain' ),
 			fields: [
 				'messagePlain'
 			]

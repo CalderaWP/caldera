@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/HorizontalForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/HorizontalForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processorTypes/autoResponder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processorTypes/autoResponder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/MagicRichText.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/MagicRichText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/dist/components/CalderaForm/CalderaForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/dist/components/CalderaForm/CalderaForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/__snapshots__/CalderaForms.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/__snapshots__/CalderaForms.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +62,7 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1311" />
+          <entry key="js" value="1318" />
           <entry key="json" value="194" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
@@ -88,7 +93,7 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="200" />
-          <entry key="JavaScript" value="1311" />
+          <entry key="JavaScript" value="1318" />
           <entry key="Jest Snapshot" value="50" />
           <entry key="Markdown" value="265" />
           <entry key="PHP" value="2085" />
@@ -111,7 +116,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="83462" />
+          <entry key="js" value="83986" />
           <entry key="json" value="4081" />
           <entry key="md" value="65648" />
           <entry key="php" value="112533" />
@@ -129,7 +134,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4088" />
-          <entry key="JavaScript" value="83603" />
+          <entry key="JavaScript" value="84127" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="65516" />
           <entry key="PHP" value="112627" />
@@ -164,17 +169,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.48002958">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/app/src/forms/ContactForm.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="628">
+                  <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
@@ -182,8 +184,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="455">
-                  <caret line="65" column="16" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="16" />
+                <state relative-caret-position="343">
+                  <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -192,41 +194,32 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="113" column="64" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="64" />
+                <state relative-caret-position="328">
+                  <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
                   <folding>
-                    <element signature="e#0#49#0" expanded="true" />
+                    <element signature="e#0#31#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="143">
-                  <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="735">
+                  <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/forms/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="802">
-                    <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+                  <first_editor relative-caret-position="99">
+                    <caret line="82" column="23" selection-start-line="82" selection-end-line="83" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -234,10 +227,13 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/index.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="23" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="23" />
+                <state relative-caret-position="135">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -245,8 +241,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+                <state relative-caret-position="307">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
                   <folding>
                     <element signature="e#0#58#0" expanded="true" />
                   </folding>
@@ -255,18 +251,21 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/Http/FormClient.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
-                </state>
+                <state relative-caret-position="-511" />
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/Http/FormClient.test.js">
+            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-554" />
+                <state relative-caret-position="433">
+                  <caret line="200" column="18" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#0#42#0" expanded="true" />
+                  </folding>
+                </state>
               </provider>
             </entry>
           </file>
@@ -274,11 +273,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="19" selection-start-line="10" selection-start-column="15" selection-end-line="12" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="733">
+                  <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -400,7 +408,6 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/richtext.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/index.js" />
         <option value="$PROJECT_DIR$/js-packages/components/README.md" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/MagicRichText.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/defaultProcessorTypes.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/propTypes.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" />
@@ -432,18 +439,19 @@
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.test.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaGrid.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createRule.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/index.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/README.md" />
+        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js" />
+        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js" />
+        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/MagicRichText.js" />
+        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js" />
       </list>
     </option>
   </component>
@@ -1068,7 +1076,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.createFieldRule">
+  <component name="RunManager" selected="Jest.createFieldRule.Not conditional is false when no value for that field">
     <configuration name="Caldera Forms.A field can have a render prop" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -1082,19 +1090,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Caldera Forms.A row can have a render prop" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/forms" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" />
-      <test-names>
-        <test-name value="Caldera Forms" />
-        <test-name value="A row can have a render prop" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="createFieldRule" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -1104,6 +1099,19 @@
       <test-file value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" />
       <test-names>
         <test-name value="createFieldRule" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="createFieldRule.Not conditional is false when no value for that field" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/forms" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" />
+      <test-names>
+        <test-name value="createFieldRule" />
+        <test-name value="Not conditional is false when no value for that field" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -1134,19 +1142,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.Caldera Forms.A row can have a render prop" />
       <item itemvalue="Jest.updateRows.should allow rows to have render" />
       <item itemvalue="Jest.Caldera Forms.A field can have a render prop" />
       <item itemvalue="Jest.updateRows.should allow fields to have render" />
       <item itemvalue="Jest.createFieldRule" />
+      <item itemvalue="Jest.createFieldRule.Not conditional is false when no value for that field" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.createFieldRule.Not conditional is false when no value for that field" />
         <item itemvalue="Jest.createFieldRule" />
         <item itemvalue="Jest.updateRows.should allow fields to have render" />
         <item itemvalue="Jest.Caldera Forms.A field can have a render prop" />
         <item itemvalue="Jest.updateRows.should allow rows to have render" />
-        <item itemvalue="Jest.Caldera Forms.A row can have a render prop" />
       </list>
     </recent_temporary>
   </component>
@@ -1196,9 +1204,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="updateRows_should_allow_rows_to_have_render - 2019.01.21 at 20h 13m 08s.xml">
-      <configuration name="updateRows.should allow rows to have render" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="updateRows_should_allow_rows_to_have_render - 2019.01.21 at 20h 13m 24s.xml">
       <configuration name="updateRows.should allow rows to have render" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -1226,9 +1231,12 @@
     <history-entry file="createFieldRule - 2019.01.22 at 07h 06m 10s.xml">
       <configuration name="createFieldRule" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="createFieldRule_Not_conditional_is_false_when_no_value_for_that_field - 2019.01.22 at 07h 37m 16s.xml">
+      <configuration name="createFieldRule.Not conditional is false when no value for that field" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="538039000" />
+    <option name="totallyTimeSpent" value="539269000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1243,13 +1251,13 @@
     <frame x="79" y="55" width="1811" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.2357264" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.2357264" />
       <window_info id="Structure" order="1" sideWeight="0.6889849" side_tool="true" weight="0.21215531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.3129689" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1607,7 +1615,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js</url>
-          <line>42</line>
+          <line>43</line>
           <option name="timeStamp" value="334" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1668,6 +1676,12 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="357" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="358" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1681,7 +1695,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/state/ruleFactory.js" />
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -1888,13 +1901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="5" selection-start-line="31" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/fields.fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -1908,16 +1914,6 @@
           <caret line="89" column="73" selection-start-line="89" selection-start-column="73" selection-end-line="89" selection-end-column="73" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1951,21 +1947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/Http/FormClient.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-554" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -1986,51 +1967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/forms/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2038,13 +1974,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/Http/FormClient.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="200" column="18" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/forms/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="802">
-            <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+          <first_editor relative-caret-position="99">
+            <caret line="82" column="23" selection-start-line="82" selection-end-line="83" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/HorizontalForm.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/MagicRichText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" selection-start-line="10" selection-start-column="15" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/processorTypes/autoResponder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
         </state>
       </provider>
     </entry>

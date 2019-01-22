@@ -81,6 +81,16 @@ var CalderaForm = exports.CalderaForm = function (_Component) {
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
+	/**
+  * Run conditional logic and update state
+  */
+
+
+	/**
+  * On mount, calculate initial state and rows
+  */
+
+
 	_createClass(CalderaForm, [{
 		key: 'render',
 		value: function render() {

@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.HorizontalForm = undefined;
 
+var _HorizontalForm$propT;
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -35,7 +37,8 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 	    initialValues = _ref.initialValues,
 	    onClose = _ref.onClose,
 	    onChange = _ref.onChange,
-	    instanceId = _ref.instanceId;
+	    instanceId = _ref.instanceId,
+	    conditionals = _ref.conditionals;
 
 	var rows = [];
 	var i = 0;
@@ -53,7 +56,8 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 	var form = {
 		id: 'horizontal-form-' + instanceId,
 		fields: fields,
-		rows: rows
+		rows: rows,
+		conditionals: conditionals
 	};
 
 	return _react2.default.createElement(
@@ -68,16 +72,17 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 	);
 };
 
-HorizontalForm.propTypes = _defineProperty({
+HorizontalForm.propTypes = (_HorizontalForm$propT = {
 	fields: _propTypes2.default.array,
 	initialValues: _propTypes2.default.object,
 	onSubmit: _propTypes2.default.func,
 	onChange: _propTypes2.default.func,
 	onBlur: _propTypes2.default.func,
 	onClose: _propTypes2.default.func
-}, 'initialValues', _propTypes2.default.object);
+}, _defineProperty(_HorizontalForm$propT, 'initialValues', _propTypes2.default.object), _defineProperty(_HorizontalForm$propT, 'conditionals', _propTypes2.default.array), _HorizontalForm$propT);
 
 HorizontalForm.defaultProps = {
-	fields: {},
-	initialValues: {}
+	fields: [],
+	initialValues: {},
+	conditionals: []
 };

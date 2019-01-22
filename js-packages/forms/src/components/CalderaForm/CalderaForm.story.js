@@ -4,9 +4,10 @@ import { CalderaForm } from './CalderaForm';
 import { formRows } from './columns.fixtures';
 
 import { collectFieldValues } from '@calderawp/factory';
-
+import {createFieldRule} from './state/createFieldRule';
 import { getValuesFromFormLayout } from './util/getValuesFromFormLayout';
 import {emailField, textField} from "./fields.fixtures";
+
 const form = {
 	rows: [
 		{
@@ -32,9 +33,7 @@ const form = {
 	conditionals :[
 		{
 			type: 'hide',
-			rule: (fieldValues) => {
-				return fieldValues[emailField.fieldId] === 'hide'
-			},
+			rule: createFieldRule('is', emailField.fieldId, 'hide' ),
 			fields: [
 				textField.fieldId
 			]
