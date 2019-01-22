@@ -7,6 +7,8 @@ import { collectFieldValues } from '@calderawp/factory';
 import {createFieldRule} from './state/createFieldRule';
 import { getValuesFromFormLayout } from './util/getValuesFromFormLayout';
 import {emailField, textField} from "./fields.fixtures";
+import { FormTokenField } from '@wordpress/components';
+import { withState } from '@wordpress/compose';
 
 const form = {
 	rows: [

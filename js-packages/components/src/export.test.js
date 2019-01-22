@@ -11,7 +11,8 @@ import {
 	MagicRichText,
 	addOrRemoveFromArray,
 	toBoolean,
-	isValidHtml5type
+	isValidHtml5type,
+	AutoCompleteField
 } from '@calderawp/components';
 
 describe('exports', () => {
@@ -52,9 +53,14 @@ describe('exports', () => {
 	});
 	test('addOrRemoveFromArray', () => {
 		expect(typeof addOrRemoveFromArray).toBe('function');
-	});test('toBoolean', () => {
+	});
+	test('toBoolean', () => {
 		expect(typeof toBoolean).toBe('function');
-	});test('isValidHtml5type', () => {
+	});
+	test('isValidHtml5type', () => {
 		expect(typeof isValidHtml5type).toBe('function');
+	});
+	test('AutoCompleteField', () => {
+		expect(typeof AutoCompleteField).toBe('function');
 	});
 });
