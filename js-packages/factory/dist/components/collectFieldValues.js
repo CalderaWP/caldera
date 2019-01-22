@@ -10,7 +10,9 @@ Object.defineProperty(exports, "__esModule", {
 var collectFieldValues = exports.collectFieldValues = function collectFieldValues(fields) {
 	var values = {};
 	fields.forEach(function (field) {
-		values[field.fieldId] = field.value ? field.value : null;
+		if (field) {
+			values[field.fieldId] = field.value ? field.value : null;
+		}
 	});
 	return values;
 };

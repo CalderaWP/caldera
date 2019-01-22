@@ -6,12 +6,33 @@ import { formRows } from './columns.fixtures';
 import { collectFieldValues } from '@calderawp/factory';
 
 import { getValuesFromFormLayout } from './util/getValuesFromFormLayout';
-
-const initialValues = getValuesFromFormLayout(formRows);
+import {emailField, textField} from "./fields.fixtures";
+const form = {
+	rows: [
+		{
+			rowId: 'r1',
+			columns: [
+				{
+					fields: [emailField.fieldId],
+					width: '1/2',
+					columnId: '1aaaaa'
+				},
+				{
+					fields: [textField.fieldId],
+					width: '1/4',
+					columnId: '1b'
+				}
+			]
+		}
+	],
+	fields: [
+		emailField,
+		textField
+	]
+}
 storiesOf('CalderaForm', module).add('Forms', () => (
 	<CalderaForm
-		formRows={formRows}
-		initialValues={initialValues}
+		form={form}
 		onSubmit={(values, actions) => {
 			setTimeout(() => {
 				alert(JSON.stringify(values, null, 2));

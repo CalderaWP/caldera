@@ -11,9 +11,9 @@ exports[`Caldera Forms Forms 1`] = `
       id={undefined}
     >
       <div
-        className="caldera-column sc-bdVaJa gfmZBt"
-        id="1a"
-        width="1/2"
+        className="caldera-column sc-bdVaJa iHZvIS"
+        id={undefined}
+        width={undefined}
       >
         <div
           className="caldera-field-wrapper caldera-field-wrapper-text"
@@ -39,7 +39,7 @@ exports[`Caldera Forms Forms 1`] = `
                 onChange={[Function]}
                 placeholder={undefined}
                 type="email"
-                value="emai@email.com"
+                value={undefined}
               />
             </div>
             <p
@@ -52,9 +52,9 @@ exports[`Caldera Forms Forms 1`] = `
         </div>
       </div>
       <div
-        className="caldera-column sc-bdVaJa jlBFAP"
-        id="1b"
-        width="1/4"
+        className="caldera-column sc-bdVaJa iHZvIS"
+        id={undefined}
+        width={undefined}
       >
         <div
           className="caldera-field-wrapper caldera-field-wrapper-text"
@@ -79,7 +79,7 @@ exports[`Caldera Forms Forms 1`] = `
                 onChange={[Function]}
                 placeholder={undefined}
                 type="text"
-                value="roy"
+                value={undefined}
               />
             </div>
             <p
@@ -87,186 +87,6 @@ exports[`Caldera Forms Forms 1`] = `
               id="inspector-text-control-1__help"
             >
               your first name
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-bdVaJa caldera-row caldera-form-row sc-bwzfXH pjOvZ"
-      id={undefined}
-    >
-      <div
-        className="caldera-column sc-bdVaJa gfmZBt"
-        id={1}
-        width="1/2"
-      >
-        <div
-          className="caldera-field-wrapper caldera-field-wrapper-text"
-        >
-          <div
-            className="components-base-control"
-          >
-            <div
-              className="components-base-control__field"
-            >
-              <input
-                aria-describedby="inspector-checkbox-control-0__help"
-                checked={true}
-                className="components-checkbox-control__input"
-                id="checkboxFieldLabel"
-                onBlur={[Function]}
-                onChange={[Function]}
-                type="checkbox"
-                value="1"
-              />
-              <label
-                className="components-checkbox-control__label"
-                htmlFor="inspector-checkbox-control-0"
-              >
-                Checkbox Labe
-              </label>
-            </div>
-            <p
-              className="components-base-control__help"
-              id="inspector-checkbox-control-0__help"
-            >
-              Checkbox field description
-            </p>
-          </div>
-        </div>
-        <div
-          className="caldera-field-wrapper caldera-field-wrapper-text"
-        >
-          <div
-            className="components-base-control caldera-field caldera-field-select"
-          >
-            <div
-              className="components-base-control__field"
-            >
-              <label
-                className="components-base-control__label"
-                htmlFor="inspector-select-control-0"
-              >
-                Select Field Label
-              </label>
-              <select
-                aria-describedby="inspector-select-control-0__help"
-                className="components-select-control__input"
-                id="selectFieldId"
-                multiple={false}
-                onChange={[Function]}
-                value={1}
-              >
-                <option
-                  value={0}
-                >
-                  Zero
-                </option>
-                <option
-                  value={1}
-                >
-                  One
-                </option>
-                <option
-                  value={2}
-                >
-                  Two
-                </option>
-              </select>
-            </div>
-            <p
-              className="components-base-control__help"
-              id="inspector-select-control-0__help"
-            >
-              Select field description
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="caldera-column sc-bdVaJa jlBFAP"
-        id={2}
-        width="1/4"
-      >
-        <div
-          className="caldera-field-wrapper caldera-field-wrapper-text"
-        >
-          <div
-            className="components-base-control caldera-field caldera-field-radio components-radio-control"
-          >
-            <div
-              className="components-base-control__field"
-            >
-              <label
-                className="components-base-control__label"
-                htmlFor="inspector-radio-control-0"
-              >
-                Radio Field Label
-              </label>
-              <div
-                className="components-radio-control__option"
-              >
-                <input
-                  aria-describedby="inspector-radio-control-0__help"
-                  checked={false}
-                  className="components-radio-control__input"
-                  id="inspector-radio-control-0-0"
-                  name="inspector-radio-control-0"
-                  onChange={[Function]}
-                  type="radio"
-                  value={0}
-                />
-                <label
-                  htmlFor="inspector-radio-control-0-0"
-                >
-                  Zero
-                </label>
-              </div>
-              <div
-                className="components-radio-control__option"
-              >
-                <input
-                  aria-describedby="inspector-radio-control-0__help"
-                  checked={true}
-                  className="components-radio-control__input"
-                  id="inspector-radio-control-0-1"
-                  name="inspector-radio-control-0"
-                  onChange={[Function]}
-                  type="radio"
-                  value={1}
-                />
-                <label
-                  htmlFor="inspector-radio-control-0-1"
-                >
-                  One
-                </label>
-              </div>
-              <div
-                className="components-radio-control__option"
-              >
-                <input
-                  aria-describedby="inspector-radio-control-0__help"
-                  checked={false}
-                  className="components-radio-control__input"
-                  id="inspector-radio-control-0-2"
-                  name="inspector-radio-control-0"
-                  onChange={[Function]}
-                  type="radio"
-                  value={2}
-                />
-                <label
-                  htmlFor="inspector-radio-control-0-2"
-                >
-                  Two
-                </label>
-              </div>
-            </div>
-            <p
-              className="components-base-control__help"
-              id="inspector-radio-control-0__help"
-            >
-              Radio field description
             </p>
           </div>
         </div>

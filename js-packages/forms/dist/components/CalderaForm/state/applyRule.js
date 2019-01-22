@@ -13,8 +13,13 @@ var applyRule = exports.applyRule = function applyRule(rule, fieldValues) {
 
 /**
  *
- * @param rule
+ * @param {{
+ *     type: String,
+ *     fields: Array
+ * }} rule
  * @param {ConditionalState} conditionalState
+ *
+ * @return {ConditionalState}
  */
 var applyRuleToState = exports.applyRuleToState = function applyRuleToState(rule, conditionalState) {
 	var type = rule.type,
@@ -59,4 +64,5 @@ var applyRuleToState = exports.applyRuleToState = function applyRuleToState(rule
 			});
 			break;
 	}
+	return conditionalState;
 };

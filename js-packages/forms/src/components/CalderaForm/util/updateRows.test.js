@@ -1,5 +1,7 @@
 import {updateRows} from './updateRows';
 import {ConditionalState} from '@calderawp/factory';
+import {textField} from "../fields.fixtures";
+import React from "react";
 
 describe('updateRows', () => {
 
@@ -93,5 +95,61 @@ describe('updateRows', () => {
 			}
 		];
 		expect( updateRows(state,rows,[field])[0].columns[0].fields.length).toEqual(1);
+	});
+
+	it( 'should allow rows to have render', () => {
+		const field = {
+			fieldType: 'input',
+			html5Type: 'number',
+			fieldId: 'showField',
+		};
+
+		const state = new ConditionalState( {
+			hideField: 'h',
+			showField: 's'
+		});
+
+		const rows = [
+			{
+				rowId: 'r45',
+				render: () =>  <div>1</div>
+			}
+		];
+		expect( typeof updateRows(state,rows,[field])[0].render).toEqual('function');
+	});
+
+	it( 'should allow columns to have render', () => {
+		const field = {
+			fieldType: 'input',
+			html5Type: 'number',
+			fieldId: 'showField',
+		};
+
+		const state = new ConditionalState( {
+			hideField: 'h',
+			showField: 's'
+		});
+		const _Field = props => (
+			<input id={'test243'} type={'number'} key={808}/>
+		);
+
+		const rows = [
+			{
+				rowId: 'r1',
+				columns: [
+					{
+						render: _Field,
+						width: '1/2',
+						columnId: '1aaaaa'
+					},
+					{
+						fields: [textField],
+						width: '1/4',
+						columnId: '1b'
+					}
+				]
+			}
+		];
+		expect( typeof updateRows(state,rows,[field])[0].columns[0].render).toEqual('function');
 	});
 });

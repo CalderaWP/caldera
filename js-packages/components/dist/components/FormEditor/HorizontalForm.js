@@ -54,6 +54,7 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 		_react.Fragment,
 		null,
 		_react2.default.createElement(_forms.CalderaForm, {
+			fields: fields,
 			formRows: rows,
 			initialValues: initialValues,
 			onSubmit: onClose,

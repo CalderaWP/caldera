@@ -38,6 +38,7 @@ export const HorizontalForm = ({
 	return (
 		<Fragment>
 			<CalderaForm
+				fields={fields}
 				formRows={rows}
 				initialValues={initialValues}
 				onSubmit={onClose}
