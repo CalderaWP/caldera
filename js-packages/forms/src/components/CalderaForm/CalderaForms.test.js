@@ -187,7 +187,7 @@ describe('Updates field value', () => {
 		]
 	}
 
-	it('Updates field value when field is changed', () => {
+	it.skip('Updates field value when field is changed', () => {
 		const component = mount(
 			<CalderaForm
 				form={form}
@@ -208,23 +208,41 @@ describe('Updates field value', () => {
 		).toEqual(value);
 	});
 
-	it('Recives values update when any field changes', () => {
-		const _onChange = jest.fn();
-		const component = mount(
-			<CalderaForm
-				form={form}
 
-				onSubmit={onSubmit}
-				onChange={_onChange}
-			/>
-		);
-		const value = 'changed@email22.com';
-		const event = {target: {value}};
+	it( 'hides a field when it should ', () => {
+		const _form = {
+			...form,
+			conditionals :[
+				{
+					type: 'hide',
+					rule: (fieldValues) => {
+						return fieldValues[emailField.fieldId] === 'hide'
+					},
+					fields: [
+						textField.fieldId
+					]
+				},
+
+			]
+		}
+	})
+
+	const component = mount(
+		<CalderaForm
+			form={form}
+			onSubmit={onSubmit}
+		/>
+	);
+	const value = 'hide';
+	const event = {target: {value}};
+	component
+		.find('#emailFieldId')
+		.find('input')
+		.simulate('change', event);
+	expect(
 		component
-			.find('#emailFieldId')
+			.find('#firstName')
 			.find('input')
-			.simulate('change', event);
-		expect(_onChange.mock.calls.length).toEqual(1);
-
-	});
+			.length
+	).toEqual(0);
 });

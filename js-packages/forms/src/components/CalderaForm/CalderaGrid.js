@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import React, { createElement, Fragment } from 'react';
-import { Column, Row, FieldArea } from '@calderawp/factory';
+import React, {createElement, Fragment} from 'react';
+import {Column, Row, FieldArea} from '@calderawp/factory';
 import classNames from 'classnames';
+import {ConditionalState} from "./state/ConditionalState";
 
 /**
  *
@@ -16,17 +17,19 @@ import classNames from 'classnames';
  * @constructor
  */
 export const CalderaGrid = ({
-	rows,
-	onAnyChange,
-	onAnyBlur,
-	fieldValues,
-	fieldErrors,
-	fieldTouched,
-	setFieldValue
-}) => (
+								rows,
+								onAnyChange,
+								onAnyBlur,
+								fieldValues,
+								fieldErrors,
+								fieldTouched,
+								setFieldValue,
+								conditionalState,
+								applyConditionalRules
+							}) => (
 	<Fragment>
 		{rows.map(row => {
-			const { rowId, columns, render } = row;
+			const {rowId, columns, render} = row;
 
 			if (render) {
 				return createElement(render, {
@@ -67,7 +70,7 @@ export const CalderaGrid = ({
 									if (!field) {
 										return;
 									}
-									const { fieldId, render, key } = field;
+									const {fieldId, render, key} = field;
 									field.value = fieldValues[fieldId];
 
 									const _key = render ? key : fieldId;
@@ -77,9 +80,11 @@ export const CalderaGrid = ({
 											key={_key}
 											field={field}
 											onChange={newValue => {
+												conditionalState.setValue(fieldId, newValue);
+												applyConditionalRules();
 												setFieldValue(
 													fieldId,
-													newValue,
+													conditionalState.getValue(fieldId),
 													true
 												);
 												onAnyChange(fieldValues);
@@ -100,6 +105,8 @@ export const CalderaGrid = ({
 );
 
 CalderaGrid.propTypes = {
+	applyConditionalRules: PropTypes.func,
+	conditionalState: PropTypes.instanceOf(ConditionalState),
 	rows: PropTypes.array,
 	onAnyChange: PropTypes.func,
 	onAnyBlur: PropTypes.func,
@@ -109,7 +116,8 @@ CalderaGrid.propTypes = {
 	setFieldValue: PropTypes.func
 };
 
-const _noop = () => {};
+const _noop = () => {
+};
 CalderaGrid.defaultProps = {
 	onAnyChange: _noop,
 	onAnyBlur: _noop,

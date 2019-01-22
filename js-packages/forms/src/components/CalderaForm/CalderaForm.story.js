@@ -28,8 +28,21 @@ const form = {
 	fields: [
 		emailField,
 		textField
+	],
+	conditionals :[
+		{
+			type: 'hide',
+			rule: (fieldValues) => {
+				return fieldValues[emailField.fieldId] === 'hide'
+			},
+			fields: [
+				textField.fieldId
+			]
+		},
+
 	]
-}
+};
+
 storiesOf('CalderaForm', module).add('Forms', () => (
 	<CalderaForm
 		form={form}

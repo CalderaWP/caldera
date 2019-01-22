@@ -16,37 +16,34 @@ export class CalderaForm extends Component {
 		conditionalState: null
 	};
 
-	onChange = (values) => {
-		console.log(values);
+	applyConditionalRules = () => {
 		const {fields,rows,conditionals} = this.props.form;
 		if( conditionals && conditionals.length ){
-			const {conditionalState} = this.state;
-			conditionalState.setState(value);
+			const conditionalState = this.state.conditionalState ? this.state.conditionalState : new ConditionalState(collectFieldValues(fields ));
 			conditionals.forEach( rule => {
 				applyRuleToState(rule,conditionalState)
 			});
 			this.setState({
-				formRows: updateRows(conditionalState,rows,fields)
+				formRows: updateRows(conditionalState,rows,fields),
+				conditionalState
 			});
-			this.props.onChange(conditionalState.getState());
-		}else{
-			this.props.onChange(values);
+
 		}
 
 	};
 
-	componentDidMount(){
+	componentDidMount =() =>{
 		const {fields,rows} = this.props.form;
 		const intialValues = collectFieldValues(fields );
 		const conditionalState = this.state.conditionalState ? this.state.conditionalState : new ConditionalState(intialValues);
 		const formRows = updateRows( conditionalState,rows,fields );
-		this.setState({intialValues,formRows})
+		this.setState({intialValues,formRows,conditionalState})
 	}
 
 
 	render(){
 		const {onSubmit} = this.props;
-		const {formRows,initialValues} = this.state;
+		const {formRows,initialValues,conditionalState} = this.state;
 
 
 		return (
@@ -66,8 +63,10 @@ export class CalderaForm extends Component {
 							 }) => (
 						<Form>
 							<CalderaGrid
+								applyConditionalRules={this.applyConditionalRules}
+								conditionalState={conditionalState}
 								rows={formRows}
-								onAnyChange={this.onChange}
+								onAnyChange={handleChange}
 								onAnyBlur={handleBlur}
 								fieldValues={values}
 								setFieldValue={setFieldValue}
@@ -90,7 +89,6 @@ export class CalderaForm extends Component {
 }
 
 CalderaForm.propTypes = {
-	ConditionalState: PropTypes.instanceOf(ConditionalState),
 	form: PropTypes.object,
 	onSubmit: PropTypes.func,
 	onChange: PropTypes.func,
