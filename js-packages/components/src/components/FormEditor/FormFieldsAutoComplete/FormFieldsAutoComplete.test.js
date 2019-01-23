@@ -47,10 +47,25 @@ describe('FormFieldsAutoComplete', () => {
 				form={form}
 			/>
 		);
+
+		expect(component.toJSON()).toMatchSnapshot();
+
+	});
+
+	it( 'Additional options merged in', () => {
+		const component = renderer.create(
+			<FormFieldsAutoComplete
+				label={label}
+				fieldId={fieldId}
+				description={description}
+				value={value}
+				form={form}
+				additionalOptions={['f', 'y']}
+			/>
+		);
+
 		expect(component.toJSON()).toMatchSnapshot();
 
 	})
-
-
 
 });

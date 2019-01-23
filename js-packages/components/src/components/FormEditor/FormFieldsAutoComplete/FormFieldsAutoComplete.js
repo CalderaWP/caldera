@@ -1,4 +1,4 @@
-import {AutoCompleteField} from '../fields/AutoCompleteField/AutoCompleteField';
+import {AutoCompleteField} from '../../fields/AutoCompleteField/AutoCompleteField';
 
 import React from 'react';
 import PropTypes from "prop-types";

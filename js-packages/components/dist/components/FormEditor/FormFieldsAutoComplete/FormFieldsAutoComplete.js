@@ -7,7 +7,7 @@ exports.FormFieldsAutoComplete = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _AutoCompleteField = require('../fields/AutoCompleteField/AutoCompleteField');
+var _AutoCompleteField = require('../../fields/AutoCompleteField/AutoCompleteField');
 
 var _react = require('react');
 
@@ -33,15 +33,8 @@ var FormFieldsAutoComplete = exports.FormFieldsAutoComplete = function FormField
 	var fields = form.fields;
 
 	fields.forEach(function (field) {
-		var value = '%' + field.fieldId + '%';
-		options.push({
-			value: value,
-			label: value
-		});
-		options.push({
-			value: value,
-			label: field.label
-		});
+		options.push('%' + field.fieldId + '%');
+		options.push(field.label);
 	});
 
 	return _react2.default.createElement(_AutoCompleteField.AutoCompleteField, {

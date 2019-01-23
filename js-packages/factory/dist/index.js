@@ -87,6 +87,24 @@ Object.defineProperty(exports, 'fieldAreaFactory', {
 
 var _fieldsFixtures = require('./fields.fixtures.js');
 
+Object.defineProperty(exports, 'autoCompleteField', {
+	enumerable: true,
+	get: function get() {
+		return _fieldsFixtures.autoCompleteField;
+	}
+});
+Object.defineProperty(exports, 'toggleField', {
+	enumerable: true,
+	get: function get() {
+		return _fieldsFixtures.toggleField;
+	}
+});
+Object.defineProperty(exports, 'textAreaField', {
+	enumerable: true,
+	get: function get() {
+		return _fieldsFixtures.textAreaField;
+	}
+});
 Object.defineProperty(exports, 'checkboxFieldset', {
 	enumerable: true,
 	get: function get() {

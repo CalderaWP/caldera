@@ -120,6 +120,16 @@ var textAreaField = {
 	}
 };
 
+var autoCompleteField = {
+	fieldType: 'autocomplete',
+	value: ['One', 'Three'],
+	label: 'Options',
+	fieldId: 'autoComplete1',
+	description: 'Help text',
+	options: ['One', 'Two', 'Three']
+};
+
+exports.autoCompleteField = autoCompleteField;
 exports.toggleField = toggleField;
 exports.textAreaField = textAreaField;
 exports.checkboxFieldset = checkboxFieldset;

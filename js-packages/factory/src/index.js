@@ -24,6 +24,9 @@ export { fieldAreaFactory } from './factories/fieldAreaFactory';
  * Test fixtures!
  */
 export {
+	autoCompleteField,
+	toggleField,
+	textAreaField,
 	checkboxFieldset,
 	selectField,
 	checkboxField,

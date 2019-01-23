@@ -71,6 +71,8 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 			);
 		case 'magic-richtext':
 			return _react2.default.createElement(_components.MagicRichText, _extends({}, field, { onChange: onChange }));
+		case 'autocomplete':
+			return _react2.default.createElement(_components.AutoCompleteField, _extends({}, field, { onChange: onChange }));
 		case 'richtext':
 			return _react2.default.createElement(_components.RichText, _extends({}, field, { onChange: onChange }));
 		case 'textarea':
