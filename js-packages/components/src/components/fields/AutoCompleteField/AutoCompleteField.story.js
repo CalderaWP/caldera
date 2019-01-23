@@ -1,20 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { AutoCompleteField } from './AutoCompleteField';
-import { FormTokenField } from '@wordpress/components';
-import { withState } from '@wordpress/compose';
 
-const MyFormTokenField = withState( {
-	tokens: [],
-	suggestions: [ 'Africa', 'America', 'Antarctica', 'Asia', 'Europe', 'Oceania' ],
-} )( ( { tokens, suggestions, setState } ) => (
-	<FormTokenField
-		value={ tokens }
-		suggestions={ suggestions }
-		onChange={ tokens => setState( { tokens } ) }
-		placeholder="Type a continent"
-	/>
-) );
 const onChange = newValue => {
 	console.log(newValue);
 };
