@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processorTypes/autoResponder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processorTypes/autoResponder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/SelectField/SelectField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/fields/SelectField/SelectField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/__snapshots__/fieldFactory.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/__snapshots__/fieldFactory.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +52,7 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1356" />
+          <entry key="js" value="1358" />
           <entry key="json" value="194" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
@@ -90,7 +83,7 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="200" />
-          <entry key="JavaScript" value="1356" />
+          <entry key="JavaScript" value="1358" />
           <entry key="Jest Snapshot" value="50" />
           <entry key="Markdown" value="266" />
           <entry key="PHP" value="2085" />
@@ -113,7 +106,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="85498" />
+          <entry key="js" value="85630" />
           <entry key="json" value="4081" />
           <entry key="md" value="65650" />
           <entry key="php" value="112533" />
@@ -131,7 +124,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4088" />
-          <entry key="JavaScript" value="85640" />
+          <entry key="JavaScript" value="85772" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="65517" />
           <entry key="PHP" value="112627" />
@@ -185,7 +178,7 @@
             <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="477">
-                  <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+                  <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#54#0" expanded="true" />
                   </folding>
@@ -196,8 +189,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="463">
-                  <caret line="129" column="6" selection-start-line="129" selection-start-column="6" selection-end-line="129" selection-end-column="6" />
+                <state relative-caret-position="418">
+                  <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -272,11 +265,32 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="344">
-                  <caret line="77" column="26" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="26" />
+                <state relative-caret-position="629">
+                  <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="495">
+                  <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#74#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -400,7 +414,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/factory/config/jest/styleMock.js" />
         <option value="$PROJECT_DIR$/js-packages/components/package.json" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/state/ruleFactory.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/RichText.js" />
@@ -419,7 +432,6 @@
         <option value="$PROJECT_DIR$/js-packages/forms/src/caldera.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/formFactory.story.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/Caldera.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.test.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaGrid.js" />
@@ -451,6 +463,8 @@
         <option value="$PROJECT_DIR$/js-packages/factory/README.md" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.js" />
+        <option value="$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.test.js" />
       </list>
     </option>
   </component>
@@ -789,6 +803,14 @@
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="factory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="factories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -990,7 +1012,7 @@
       <workItem from="1547906014357" duration="14705000" />
       <workItem from="1548071368704" duration="1325000" />
       <workItem from="1548245882824" duration="25000" />
-      <workItem from="1548272746423" duration="2031000" />
+      <workItem from="1548272746423" duration="2264000" />
     </task>
     <servers />
   </component>
@@ -1027,7 +1049,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="543781000" />
+    <option name="totallyTimeSpent" value="544014000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1042,7 +1064,7 @@
     <frame x="79" y="55" width="1811" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.24024872" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.24024872" />
       <window_info id="Structure" order="1" sideWeight="0.6889849" side_tool="true" weight="0.21215531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -1058,7 +1080,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2454448" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39481866" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info anchor="bottom" x="27" y="284" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info active="true" anchor="bottom" x="27" y="284" width="942" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1484,20 +1506,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/fields.fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -1816,13 +1824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="77" column="26" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1873,17 +1874,41 @@
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
-          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="129" column="6" selection-start-line="129" selection-start-column="6" selection-end-line="129" selection-end-column="6" />
+        <state relative-caret-position="418">
+          <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/components/collectFieldValues.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -27,4 +27,14 @@ describe('collects field values', () => {
 		expect(values[testField.fieldId]).toEqual(null);
 		expect(values[numberField.fieldId]).toEqual(numberValue);
 	});
+
+	it('Deals with field value for field not an object', () => {
+		let testField = [];
+		const values = collectFieldValues([
+			'words sandwiches',
+			{ ...numberField, value: numberValue },
+			testField
+		]);
+		expect(values[numberField.fieldId]).toEqual(numberValue);
+	});
 });

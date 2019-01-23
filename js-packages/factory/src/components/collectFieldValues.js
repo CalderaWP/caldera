@@ -5,8 +5,10 @@
 export const collectFieldValues = fields => {
 	const values = {};
 	fields.forEach(field => {
-		if (field) {
-			values[field.fieldId] = field.value ? field.value : null;
+		if ('object' === typeof field) {
+			values[field.fieldId] = field.value
+				? field.value
+				: null;
 		}
 	});
 	return values;
