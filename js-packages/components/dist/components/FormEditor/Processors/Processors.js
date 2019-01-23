@@ -21,7 +21,7 @@ var _Processor = require('./Processor');
 
 var _factory = require('@calderawp/factory');
 
-var _propTypes3 = require('./propTypes');
+var _processorTypesPropType = require('./processorTypesPropType');
 
 var _processorFactory = require('./processorTypes/processorFactory');
 
@@ -242,7 +242,7 @@ var processorsCollectionPropType = exports.processorsCollectionPropType = _propT
 }));
 
 Processors.propTypes = {
-	processorTypes: _propTypes3.processorTypesPropType,
+	processorTypes: _processorTypesPropType.processorTypesPropType,
 	processors: processorsCollectionPropType,
 	updateProcessors: _propTypes2.default.func,
 	form: _propTypes2.default.object,

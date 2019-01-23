@@ -17,7 +17,7 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Processors = require('./Processors');
+var _Processors = require('./Processors/Processors');
 
 var _components = require('@wordpress/components');
 
@@ -27,7 +27,7 @@ var _propTypes3 = require('./propTypes');
 
 var _MainSection = require('./MainSection');
 
-var _defaultProcessorTypes = require('./processorTypes/defaultProcessorTypes');
+var _defaultProcessorTypes = require('./Processors/processorTypes/defaultProcessorTypes');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

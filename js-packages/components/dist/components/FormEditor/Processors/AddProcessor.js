@@ -13,15 +13,7 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Processor = require('./Processor');
-
 var _factory = require('@calderawp/factory');
-
-var _propTypes3 = require('./propTypes');
-
-var _processorFactory = require('./processorTypes/processorFactory');
-
-var _processorFactory2 = _interopRequireDefault(_processorFactory);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

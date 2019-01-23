@@ -13,7 +13,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _HorizontalForm = require('./HorizontalForm');
+var _HorizontalForm = require('../../HorizontalForm/HorizontalForm');
 
 var _components = require('@wordpress/components');
 

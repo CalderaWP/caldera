@@ -10,7 +10,8 @@ import {
 	RichText,
 	MagicRichText,
 	isValidHtml5type,
-	AutoCompleteField
+	AutoCompleteField,
+	FormFieldsAutoComplete
 } from '@calderawp/components';
 import React from 'react';
 
@@ -77,9 +78,10 @@ export const fieldFactory = (field, onChange, onBlur) => {
 			return <MagicRichText {...field} onChange={onChange}/>;
 		case 'autocomplete' :
 			return <AutoCompleteField {...field} onChange={onChange}/>;
-		case
-		'richtext' :
+		case'richtext' :
 			return <RichText {...field} onChange={onChange}/>;
+			case'fields-autocomplete' :
+			return <FormFieldsAutoComplete {...field} onChange={onChange}/>;
 		case 'textarea':
 			return <TextAreaField {...field} onChange={onChange}/>;
 		case 'toggle':

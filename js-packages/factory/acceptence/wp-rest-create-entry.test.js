@@ -8,7 +8,7 @@ describe('Tests run', () => {
 });
 
 describe('Creating entries via REST API of WordPress', () => {
-	test('create contact form entry', async (done) => {
+	test.skip('create contact form entry', async (done) => {
 		fetch("http://localhost:3000/wp-json/caldera-api/v1/entries?formId=contact-form", {
 			"credentials": "include",
 			"headers": {

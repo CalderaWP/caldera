@@ -12,7 +12,8 @@ import {
 	addOrRemoveFromArray,
 	toBoolean,
 	isValidHtml5type,
-	AutoCompleteField
+	AutoCompleteField,
+	FormFieldsAutoComplete
 } from '@calderawp/components';
 
 describe('exports', () => {
@@ -62,5 +63,7 @@ describe('exports', () => {
 	});
 	test('AutoCompleteField', () => {
 		expect(typeof AutoCompleteField).toBe('function');
+	});test('FormFieldsAutoComplete', () => {
+		expect(typeof FormFieldsAutoComplete).toBe('function');
 	});
 });
