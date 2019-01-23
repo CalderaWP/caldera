@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors/processorTypes/autoResponder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors/processorTypes/autoResponder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/dist/factories/fieldFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/dist/factories/fieldFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/HorizontalForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/HorizontalForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +54,7 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1408" />
+          <entry key="js" value="1414" />
           <entry key="json" value="195" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
@@ -89,7 +85,7 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="201" />
-          <entry key="JavaScript" value="1408" />
+          <entry key="JavaScript" value="1414" />
           <entry key="Jest Snapshot" value="51" />
           <entry key="Markdown" value="267" />
           <entry key="PHP" value="2085" />
@@ -112,7 +108,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="87337" />
+          <entry key="js" value="88035" />
           <entry key="json" value="4083" />
           <entry key="md" value="65650" />
           <entry key="php" value="112533" />
@@ -130,7 +126,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4090" />
-          <entry key="JavaScript" value="87479" />
+          <entry key="JavaScript" value="88177" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="65517" />
           <entry key="PHP" value="112627" />
@@ -178,11 +174,68 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="391">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="9" selection-start-line="7" selection-start-column="8" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/HorizontalForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -216,7 +269,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>call</find>
       <find>apiReq</find>
       <find>caldera-forms-editor-settings-tab-btn</find>
       <find>Fact</find>
@@ -246,6 +298,7 @@
       <find>Autio</find>
       <find>HorizontalForm</find>
       <find>fields-autocomplete</find>
+      <find>processorsTypes</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -313,7 +366,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.test.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaGrid.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processor.js" />
@@ -343,14 +395,11 @@
         <option value="$PROJECT_DIR$/js-packages/factory/src/index.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormFieldsAutoComplete/FormFieldsAutoComplete.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypesPropType.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/HorizontalForm.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/AddProcessor.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/package.json" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.story.js" />
@@ -364,6 +413,10 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/HorizontalForm.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js" />
       </list>
     </option>
   </component>
@@ -1060,7 +1113,7 @@
       <workItem from="1547906014357" duration="14705000" />
       <workItem from="1548071368704" duration="1325000" />
       <workItem from="1548245882824" duration="25000" />
-      <workItem from="1548272746423" duration="7822000" />
+      <workItem from="1548272746423" duration="8821000" />
     </task>
     <servers />
   </component>
@@ -1097,7 +1150,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="549572000" />
+    <option name="totallyTimeSpent" value="550571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1112,14 +1165,14 @@
     <frame x="79" y="55" width="1811" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.24024872" />
-      <window_info id="Structure" order="1" sideWeight="0.6889849" side_tool="true" weight="0.21215531" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31008717" visible="true" weight="0.24024872" />
+      <window_info id="Structure" order="1" sideWeight="0.68991286" side_tool="true" visible="true" weight="0.24024872" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.44587353" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.39871383" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.13933548" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.12101911" />
@@ -1128,7 +1181,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2454448" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39481866" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info active="true" anchor="bottom" x="27" y="284" width="860" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info active="true" anchor="bottom" x="-18" y="69" width="1062" height="928" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1554,34 +1607,10 @@
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
-          <line>22</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="370" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
-          <line>27</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="372" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
-          <line>29</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="373" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js</url>
           <line>34</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="374" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="375" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1596,16 +1625,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@wordpress/components/build-module/form-token-field/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1097">
@@ -1779,30 +1798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/HorizontalForm.story.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1940,26 +1939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -1987,16 +1966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -2016,8 +1985,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="391">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="44" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" selection-start-line="7" selection-start-column="8" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/HorizontalForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

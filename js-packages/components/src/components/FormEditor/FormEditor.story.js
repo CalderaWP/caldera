@@ -61,14 +61,17 @@ const form = {
 	processors: processorsCollection,
 };
 
-
-
 class MockFormApp extends Component {
 	state = {
 		form: {
 			id: 'a-form',
 			name: 'Form Name',
 			processors: processorsCollection,
+			fields: [
+				checkboxField,
+				radioField,
+				textField
+			]
 		}
 	};
 

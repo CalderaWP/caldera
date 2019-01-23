@@ -2,8 +2,8 @@ import React, { Fragment, Component } from 'react';
 import { HorizontalForm } from '../../HorizontalForm/HorizontalForm';
 import { TabPanel } from '@wordpress/components';
 import { Row, Column } from '@calderawp/factory';
-
 import PropTypes from 'prop-types';
+import {FormFieldsAutoComplete} from "../../..";
 
 export class Processor extends Component {
 	state = {
@@ -27,6 +27,28 @@ export class Processor extends Component {
 				'caldera-processor-conditionals-tab-btn'
 		}
 	];
+
+	/**
+	 * Prepare props for the processor editing form
+	 *
+	 * @return {Processor.props}
+	 */
+	formProps = () => {
+		let {props} = this;
+		const {fields,form} = this.props;
+		const formFields = form.fields;
+		fields.forEach( (field,i) => {
+			const {fieldType} = field;
+			if( FormFieldsAutoComplete.IDENTIFIER === fieldType ){
+				props.fields[i] = {
+					...field,
+					form
+				}
+			}
+		});
+		return props;
+	};
+
 	render() {
 		const { onClose, onRemove } = this.props;
 		return (
@@ -46,7 +68,7 @@ export class Processor extends Component {
 							if ('settings' === name) {
 								return (
 									<HorizontalForm
-										{...this.props}
+										{...this.formProps()}
 										className={'caldera-processor-settings'}
 									/>
 								);

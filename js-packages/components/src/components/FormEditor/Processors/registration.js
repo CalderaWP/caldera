@@ -18,6 +18,13 @@ export const registerProcessorType = (processorType,registry = defaultRegistry )
 
 };
 
+/**
+ * Get a processor type
+ *
+ * @param {string} processorType
+ * @param {Array} registry
+ * @return {*}
+ */
 export const unregisterProcessorType = (processorType,registry = defaultRegistry ) => {
 	if( 'object' === typeof  processorType && processorType.hasOwnProperty('type' ) ) {
 		processorType = processorType.type;
@@ -27,5 +34,15 @@ export const unregisterProcessorType = (processorType,registry = defaultRegistry
 		registry.splice(index,1);
 		return [ ...registry];
 	}
+	return registry;
+};
+
+/**
+ * Get all processors from collection
+ *
+ * @param registry
+ * @return {Array}
+ */
+export const getProcessors = (registry = defaultRegistry) => {
 	return registry;
 };

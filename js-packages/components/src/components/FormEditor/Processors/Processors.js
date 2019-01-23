@@ -94,7 +94,7 @@ export class Processors extends Component {
 	/** @inheritDoc **/
 	render() {
 		const {activeProcessor,newProcessorType} = this.state;
-		const {processors,processorTypes} = this.props;
+		const {processors,processorTypes,form} = this.props;
 		return (
 			<div>
 				<div>
@@ -111,6 +111,7 @@ export class Processors extends Component {
 							return (
 								<Fragment key={id}>
 									<Processor
+										form={form}
 										className={`caldera-forms-active-processor-${id}`}
 										fields={fields}
 										conditionals={conditionals}
