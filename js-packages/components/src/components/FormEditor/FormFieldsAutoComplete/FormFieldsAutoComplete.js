@@ -14,15 +14,8 @@ export const FormFieldsAutoComplete = ({
 	const options = [...additionalOptions];
 	const {fields} = form;
 	fields.forEach(field => {
-		const value = `%${field.fieldId}%`;
-		options.push({
-			value,
-			label: value
-		});
-		options.push({
-			value,
-			label: field.label
-		});
+		options.push(`%${field.fieldId}%`);
+		options.push(field.label);
 	});
 
 	return (
