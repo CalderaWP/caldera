@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import {mount} from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import {Processors} from "./Processors";
+import {Processors} from "./Processors/Processors";
 import {FormEditor} from "./FormEditor";
-import {processorsCollection} from './processors.fixtures';
+import {processorsCollection} from './Processors/processors.fixtures';
 const form = {
 	id: 'a-form',
 	name: 'Form Name',

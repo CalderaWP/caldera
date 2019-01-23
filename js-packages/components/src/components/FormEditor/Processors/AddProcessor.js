@@ -1,17 +1,14 @@
 import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
-import {Processor} from "./Processor";
 import {Row, fieldAreaFactory} from '@calderawp/factory';
-import {processorTypesPropType} from './propTypes';
-import processorFactory from './processorTypes/processorFactory';
 
 export const AddProcessor = ({
-						  setNewProcessorType,
-						  processorTypes,
-						  onCreate,
-						  children,
-						  value
-					  }) => {
+								 setNewProcessorType,
+								 processorTypes,
+								 onCreate,
+								 children,
+								 value
+							 }) => {
 	const options = [
 		{
 			value: null,
@@ -42,7 +39,7 @@ export const AddProcessor = ({
 		<Fragment>
 			{fieldAreaFactory(processorTypesField, setNewProcessorType)}
 			<button onClick={onCreate}
-					disabled={! value  }
+					disabled={!value}
 			>
 				{children}
 			</button>

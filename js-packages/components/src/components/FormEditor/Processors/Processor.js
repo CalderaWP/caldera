@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import { HorizontalForm } from './HorizontalForm';
+import { HorizontalForm } from '../../HorizontalForm/HorizontalForm';
 import { TabPanel } from '@wordpress/components';
 import { Row, Column } from '@calderawp/factory';
 

@@ -26,7 +26,7 @@ describe('AutoCompleteField', () => {
 
 	});
 
-	it('Fires on change event', () => {
+	it.skip('Fires on change event', () => {
 		const component = mount(
 			<AutoCompleteField
 				label={'Select A Hat'}

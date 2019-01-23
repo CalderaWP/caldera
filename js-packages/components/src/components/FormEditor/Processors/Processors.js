@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 import {Processor} from "./Processor";
 import {Row, fieldAreaFactory} from '@calderawp/factory';
-import {processorTypesPropType} from './propTypes';
+import {processorTypesPropType} from './processorTypesPropType';
 import processorFactory from './processorTypes/processorFactory';
 import {AddProcessor} from './AddProcessor';
 

@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import { storiesOf } from '@storybook/react';
-import { Processor } from './Processor';
-import { Processors } from './Processors';
-import { HorizontalForm } from './HorizontalForm';
+import { Processor } from './Processors/Processor';
+import { Processors } from './Processors/Processors';
+import {processorsCollection} from './Processors/processors.fixtures';
+
 import { FormEditor } from './FormEditor';
-import {processorsCollection} from './processors.fixtures';
+
+
 import {
 	checkboxFieldset,
 	selectField,
@@ -88,20 +90,4 @@ storiesOf('FormEditor', module).add('The form editor', () => (
 	<MockFormApp/>
 ));
 
-storiesOf('HorizontalForm', module).add('Works with a bunch of fields', () => (
-	<HorizontalForm
-		fields={[
-			checkboxFieldset,
-			selectField,
-			checkboxField,
-			numberField,
-			textField,
-			emailField,
-			radioField
-		]}
-		onChange={values => console.log(values)}
-		onBlur={values => console.log(values)}
-		onClose={values => console.log(values)}
-	/>
-));
 

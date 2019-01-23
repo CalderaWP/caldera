@@ -15,7 +15,7 @@ import {
 	emailField,
 	radioField
 } from '@calderawp/factory';
-import {FormEditor} from "./FormEditor";
+import {FormEditor} from "../FormEditor";
 
 describe('Processors', () => {
 	const processors = [
@@ -219,10 +219,10 @@ describe( 'Processors collection in processors UI', () => {
 				formFields={formFields}
 				updateProcessors={updateProcessors}
 			/>);
-		component.setState({newProcessorType: 'redirect'});
+		component.setState({newProcessorType: 'autoResponder'});
 		component.instance().handleCreateProcessor();
 		expect(updateProcessors.mock.calls.length ).toEqual( 1);
-		expect(updateProcessors.mock.calls[0][0].find( p => p.type === 'redirect').type ).toEqual('redirect');
+		expect(updateProcessors.mock.calls[0][0].find( p => p.type === 'autoResponder').type ).toEqual('autoResponder');
 
 
 	});
