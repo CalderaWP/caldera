@@ -1,7 +1,20 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { AutoCompleteField } from './AutoCompleteField';
+import { FormTokenField } from '@wordpress/components';
+import { withState } from '@wordpress/compose';
 
+const MyFormTokenField = withState( {
+	tokens: [],
+	suggestions: [ 'Africa', 'America', 'Antarctica', 'Asia', 'Europe', 'Oceania' ],
+} )( ( { tokens, suggestions, setState } ) => (
+	<FormTokenField
+		value={ tokens }
+		suggestions={ suggestions }
+		onChange={ tokens => setState( { tokens } ) }
+		placeholder="Type a continent"
+	/>
+) );
 const onChange = newValue => {
 	console.log(newValue);
 };
@@ -16,14 +29,14 @@ storiesOf(STORY_NAME_AUTOCOMPLETE, module).add(
 			onChange={onChange}
 			description={'selection of hats'}
 			fieldId={'selection-hats'}
-			placeholder={'---'}
 			required={true}
-			options={[{ value: 1, label: 'One' }, { value: 2, label: 'Two' }]}
+			options={['a', 'b', 'c']}
+			value={[]}
 		/>
 	)
 );
 storiesOf(STORY_NAME_AUTOCOMPLETE, module).add(
-	'With no value selected and no placeholder',
+	'With no value selected ',
 	() => (
 		<AutoCompleteField
 			label={'Select A Hat'}
@@ -31,18 +44,19 @@ storiesOf(STORY_NAME_AUTOCOMPLETE, module).add(
 			description={'selection of hats'}
 			fieldId={'selection-hats'}
 			required={true}
-			options={[{ value: 1, label: 'One' }, { value: 2, label: 'Two' }]}
+			options={['a', 'b', 'c']}
+			value={['b']}
 		/>
 	)
 );
-storiesOf(STORY_NAME_AUTOCOMPLETE, module).add('With value selected', () => (
+storiesOf(STORY_NAME_AUTOCOMPLETE, module).add('With two values selects', () => (
 	<AutoCompleteField
 		label={'Select A Hat'}
-		onChange={onChange}
+		onChange={(change) => console.log(change)}
 		description={'selection of hats'}
 		fieldId={'selection-hats'}
 		required={true}
-		value={2}
-		options={[{ value: 1, label: 'One' }, { value: 2, label: 'Two' }]}
+		value={['One', 'Three']}
+		options={['One', 'Two', 'Three']}
 	/>
 ));

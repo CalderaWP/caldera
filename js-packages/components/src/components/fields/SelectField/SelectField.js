@@ -44,5 +44,6 @@ SelectField.propTypes = {
 
 SelectField.defaultProps = {
 	required: false,
-	multiple: false
+	multiple: false,
+	description: ''
 };

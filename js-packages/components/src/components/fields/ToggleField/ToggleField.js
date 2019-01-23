@@ -26,7 +26,7 @@ export const ToggleField = ({
 			id={fieldId}
 			label={label}
 			help={description}
-			>
+		>
 			<ToggleControl
 				onBlur={onBlur}
 				checked={ checked }
