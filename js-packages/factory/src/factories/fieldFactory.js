@@ -9,7 +9,8 @@ import {
 	InputField,
 	RichText,
 	MagicRichText,
-	isValidHtml5type
+	isValidHtml5type,
+	AutoCompleteField
 } from '@calderawp/components';
 import React from 'react';
 
@@ -73,18 +74,21 @@ export const fieldFactory = (field, onChange, onBlur) => {
 				</FieldSet>
 			);
 		case 'magic-richtext' :
-			return <MagicRichText {...field} onChange={onChange} />;
-		case 'richtext' :
-			return <RichText {...field} onChange={onChange} />;
+			return <MagicRichText {...field} onChange={onChange}/>;
+		case 'autocomplete' :
+			return <AutoCompleteField {...field} onChange={onChange}/>;
+		case
+		'richtext' :
+			return <RichText {...field} onChange={onChange}/>;
 		case 'textarea':
-			return <TextAreaField {...field} onChange={onChange} />;
+			return <TextAreaField {...field} onChange={onChange}/>;
 		case 'toggle':
-			return <ToggleField {...field} onChange={onChange} />;
+			return <ToggleField {...field} onChange={onChange}/>;
 		case 'radio':
-			return <RadioField {...field} onChange={onChange} />;
+			return <RadioField {...field} onChange={onChange}/>;
 		case 'select':
 		case 'dropdown':
-			return <SelectField {...field} onChange={onChange} />;
+			return <SelectField {...field} onChange={onChange}/>;
 		case 'text':
 		case 'email':
 		case 'number':
@@ -92,11 +96,11 @@ export const fieldFactory = (field, onChange, onBlur) => {
 		default:
 			if (isValidHtml5type(fieldType)) {
 				if (field.html5type !== fieldType) {
-					field = { ...field, html5type: fieldType };
+					field = {...field, html5type: fieldType};
 				}
 			} else {
 				field.html5type = 'text';
 			}
-			return <InputField {...field} onChange={onChange} />;
+			return <InputField {...field} onChange={onChange}/>;
 	}
 };

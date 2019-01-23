@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.RemotePost = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.MagicRichText = exports.RichText = exports.TextAreaField = exports.ToggleField = exports.RadioField = exports.SelectField = exports.InputField = undefined;
+exports.FormEntryViewer = exports.isValidHtml5type = exports.toBoolean = exports.addOrRemoveFromArray = exports.fieldWrapperClassNames = exports.fieldSetClassNames = exports.fieldClassNames = exports.RemotePost = exports.FieldWrapper = exports.FieldSet = exports.messageObjectFactory = exports.Message = exports.AutoCompleteField = exports.MagicRichText = exports.RichText = exports.TextAreaField = exports.ToggleField = exports.RadioField = exports.SelectField = exports.InputField = undefined;
 
 var _InputField = require('./components/fields/InputField/InputField');
 
@@ -65,6 +65,15 @@ Object.defineProperty(exports, 'MagicRichText', {
   enumerable: true,
   get: function get() {
     return _MagicRichText.MagicRichText;
+  }
+});
+
+var _AutoCompleteField = require('./components/fields/AutoCompleteField/AutoCompleteField');
+
+Object.defineProperty(exports, 'AutoCompleteField', {
+  enumerable: true,
+  get: function get() {
+    return _AutoCompleteField.AutoCompleteField;
   }
 });
 

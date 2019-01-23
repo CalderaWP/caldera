@@ -1,7 +1,7 @@
-import { fieldFactory } from './fieldFactory';
+import {fieldFactory} from './fieldFactory';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import {mount} from 'enzyme';
 import {
 	checkboxFieldset,
 	selectField,
@@ -12,6 +12,7 @@ import {
 	radioField,
 	toggleField,
 	textAreaField,
+	autoCompleteField
 } from '../fields.fixtures';
 
 describe('fieldFactory', () => {
@@ -31,7 +32,7 @@ describe('fieldFactory', () => {
 	it('Creates a text field when field type is bogus', () => {
 		const component = mount(
 			fieldFactory(
-				{ ...textField, fieldType: 'travels-in-space' },
+				{...textField, fieldType: 'travels-in-space'},
 				onChange,
 				onBlur
 			)
@@ -40,7 +41,7 @@ describe('fieldFactory', () => {
 	});
 	it('Creates a text field when field type is input', () => {
 		const component = mount(
-			fieldFactory({ ...textField, fieldType: 'input' }, onChange, onBlur)
+			fieldFactory({...textField, fieldType: 'input'}, onChange, onBlur)
 		);
 		expect(component.find('input').prop('type')).toBe('text');
 	});
@@ -90,6 +91,12 @@ describe('fieldFactory', () => {
 	it('Creates a checkbox fieldset', () => {
 		const component = renderer.create(
 			fieldFactory(checkboxFieldset, onChange, onBlur)
+		);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+	it('Creates an autocomplete field', () => {
+		const component = renderer.create(
+			fieldFactory(autoCompleteField, onChange, onBlur)
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});
@@ -162,15 +169,15 @@ describe('fieldFactory', () => {
 	});
 
 	test('Render props pattern', () => {
-		const _Field = props => <input type={'number'} key={88} />;
-		const _Rp = ({ render }) => ({ render });
+		const _Field = props => <input type={'number'} key={88}/>;
+		const _Rp = ({render}) => ({render});
 
-		const component = mount(<_Rp render={_Field} />);
+		const component = mount(<_Rp render={_Field}/>);
 		expect(component.find('input').prop('type')).toEqual('number');
 	});
 
 	test('Field can supply a component', () => {
-		const _Field = props => <input type={'number'} key={88} />;
+		const _Field = props => <input type={'number'} key={88}/>;
 
 		const component = mount(
 			fieldFactory({
@@ -183,8 +190,8 @@ describe('fieldFactory', () => {
 	});
 
 	test('Field can supply a component and will be provided with field config as props', () => {
-		const _Field = ({ fieldId }) => (
-			<input id={fieldId} type={'number'} key={88} />
+		const _Field = ({fieldId}) => (
+			<input id={fieldId} type={'number'} key={88}/>
 		);
 
 		const component = mount(

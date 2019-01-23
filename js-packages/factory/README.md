@@ -192,7 +192,8 @@ import{
 	emailField,
 	radioField,
 	toggleField,
-    	textAreaField,
+    textAreaField,
+    autoCompleteField
 } from '@calderawp/factory';
 ```
 

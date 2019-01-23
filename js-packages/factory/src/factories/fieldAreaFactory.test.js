@@ -9,7 +9,7 @@ import {
 	numberField,
 	textField,
 	emailField,
-	radioField, textAreaField, toggleField
+	radioField, textAreaField, toggleField, autoCompleteField
 } from '../fields.fixtures';
 
 import { fieldWrapperClassNames } from '@calderawp/components';
@@ -46,6 +46,13 @@ describe('fieldAreaFactory', () => {
 	it('should create toggle', () => {
 		const component = renderer.create(
 			fieldAreaFactory(toggleField, onChange, onBlur)
+		);
+		expect(component.toJSON()).toMatchSnapshot();
+	});
+
+	it('Should create an autocomplete field', () => {
+		const component = renderer.create(
+			fieldAreaFactory(autoCompleteField, onChange, onBlur)
 		);
 		expect(component.toJSON()).toMatchSnapshot();
 	});

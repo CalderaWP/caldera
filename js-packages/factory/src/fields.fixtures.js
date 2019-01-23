@@ -127,8 +127,18 @@ const textAreaField = {
 	}
 };
 
+const autoCompleteField = {
+	fieldType: 'autocomplete',
+	value: ['One', 'Three'],
+	label: 'Options',
+	fieldId: 'autoComplete1',
+	description: 'Help text',
+	options: [ 'One', 'Two', 'Three' ]
+}
+
 
 export {
+	autoCompleteField,
 	toggleField,
 	textAreaField,
 	checkboxFieldset,
