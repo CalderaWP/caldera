@@ -29,6 +29,9 @@ export const FormFieldsAutoComplete = ({
 	);
 };
 
+FormFieldsAutoComplete.IDENTIFIER  = 'fields-autocomplete';
+
+
 FormFieldsAutoComplete.propTypes = {
 	...AutoCompleteField.propTypes,
 	additionalOptions: PropTypes.array,

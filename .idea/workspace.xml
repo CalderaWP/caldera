@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/AddProcessor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/FormEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/FormEditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/FormFieldsAutoComplete/FormFieldsAutoComplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/HorizontalForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processorTypes/autoResponder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processorTypes/defaultProcessorTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processorTypes/processorFactory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/processors.fixtures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/export.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/export.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/acceptence/wp-rest-create-entry.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/acceptence/wp-rest-create-entry.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/__snapshots__/fieldFactory.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/__snapshots__/fieldFactory.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors/processorTypes/autoResponder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/FormEditor/Processors/processorTypes/autoResponder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/dist/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/factory/dist/factories/fieldFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-packages/factory/dist/factories/fieldFactory.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +58,7 @@
           <entry key="html" value="7" />
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
-          <entry key="js" value="1397" />
+          <entry key="js" value="1408" />
           <entry key="json" value="195" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
@@ -84,7 +75,7 @@
           <entry key="test" value="1" />
           <entry key="test-integration" value="1" />
           <entry key="test-packages" value="1" />
-          <entry key="ts" value="6" />
+          <entry key="ts" value="7" />
           <entry key="www" value="1" />
           <entry key="yml" value="29" />
         </counts>
@@ -98,14 +89,14 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="201" />
-          <entry key="JavaScript" value="1397" />
+          <entry key="JavaScript" value="1408" />
           <entry key="Jest Snapshot" value="51" />
           <entry key="Markdown" value="267" />
           <entry key="PHP" value="2085" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
-          <entry key="TypeScript" value="6" />
+          <entry key="TypeScript" value="7" />
           <entry key="XML" value="20" />
           <entry key="YAML" value="29" />
           <entry key="yarn.lock" value="1" />
@@ -121,7 +112,7 @@
           <entry key="env" value="49" />
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
-          <entry key="js" value="86217" />
+          <entry key="js" value="87337" />
           <entry key="json" value="4083" />
           <entry key="md" value="65650" />
           <entry key="php" value="112533" />
@@ -139,7 +130,7 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
           <entry key="JSON" value="4090" />
-          <entry key="JavaScript" value="86359" />
+          <entry key="JavaScript" value="87479" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="65517" />
           <entry key="PHP" value="112627" />
@@ -176,49 +167,40 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="256">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
-                <element signature="e#0#83#0" expanded="true" />
+                <element signature="e#0#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/acceptence/wp-rest-create-entry.test.js">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="151">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="410">
+              <caret line="1195" column="10" selection-start-line="1195" selection-start-column="4" selection-end-line="1195" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-packages/components/package.json">
+        <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processors.fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            <state relative-caret-position="60">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -331,10 +313,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/forms/src/Caldera.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/caldera.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/formFactory.story.js" />
-        <option value="$PROJECT_DIR$/js-packages/forms/src/Caldera.story.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/util/updateRows.test.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaGrid.js" />
@@ -354,7 +332,6 @@
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoComplete.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/README.md" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js" />
@@ -382,6 +359,11 @@
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.test.js" />
         <option value="$PROJECT_DIR$/js-packages/factory/acceptence/wp-rest-create-entry.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" />
+        <option value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js" />
       </list>
     </option>
   </component>
@@ -782,6 +764,87 @@
               <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="AutoCompleteField" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="fields" type="462c0819:PsiDirectoryNode" />
+              <item name="FormFieldsAutoComplete" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FormEditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FormEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="Processors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FormEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="Processors" type="462c0819:PsiDirectoryNode" />
+              <item name="processorTypes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -872,46 +935,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Processors collection in processors UI.Adds new processor when created">
-    <configuration name="AutoCompleteField.Fires on change event" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.test.js" />
-      <test-names>
-        <test-name value="AutoCompleteField" />
-        <test-name value="Fires on change event" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="FormFieldsAutoComplete.Additional options merged in" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormFieldsAutoComplete/FormFieldsAutoComplete.test.js" />
-      <test-names>
-        <test-name value="FormFieldsAutoComplete" />
-        <test-name value="Additional options merged in" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="FormFieldsAutoComplete.Matches snapshot" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/components" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/FormFieldsAutoComplete/FormFieldsAutoComplete.test.js" />
-      <test-names>
-        <test-name value="FormFieldsAutoComplete" />
-        <test-name value="Matches snapshot" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.unregisterProcessorType.can remove a valid type">
     <configuration name="Processors collection in processors UI.Adds new processor when created" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -925,33 +949,71 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="createFieldRule.Not conditional is false when no value for that field" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="registerProcessorType.can handle a non-valid type" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
-      <working-dir value="$PROJECT_DIR$/js-packages/forms" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/state/createFieldRule.test.js" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" />
       <test-names>
-        <test-name value="createFieldRule" />
-        <test-name value="Not conditional is false when no value for that field" />
+        <test-name value="registerProcessorType" />
+        <test-name value="can handle a non-valid type" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="unregisterProcessorType" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" />
+      <test-names>
+        <test-name value="unregisterProcessorType" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="unregisterProcessorType.can handle a non-valid type" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" />
+      <test-names>
+        <test-name value="unregisterProcessorType" />
+        <test-name value="can handle a non-valid type" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="unregisterProcessorType.can remove a valid type" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$/js-packages/components" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js" />
+      <test-names>
+        <test-name value="unregisterProcessorType" />
+        <test-name value="can remove a valid type" />
       </test-names>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.createFieldRule.Not conditional is false when no value for that field" />
-      <item itemvalue="Jest.AutoCompleteField.Fires on change event" />
-      <item itemvalue="Jest.FormFieldsAutoComplete.Matches snapshot" />
-      <item itemvalue="Jest.FormFieldsAutoComplete.Additional options merged in" />
       <item itemvalue="Jest.Processors collection in processors UI.Adds new processor when created" />
+      <item itemvalue="Jest.registerProcessorType.can handle a non-valid type" />
+      <item itemvalue="Jest.unregisterProcessorType.can handle a non-valid type" />
+      <item itemvalue="Jest.unregisterProcessorType" />
+      <item itemvalue="Jest.unregisterProcessorType.can remove a valid type" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.unregisterProcessorType.can remove a valid type" />
+        <item itemvalue="Jest.unregisterProcessorType.can handle a non-valid type" />
+        <item itemvalue="Jest.unregisterProcessorType" />
+        <item itemvalue="Jest.registerProcessorType.can handle a non-valid type" />
         <item itemvalue="Jest.Processors collection in processors UI.Adds new processor when created" />
-        <item itemvalue="Jest.FormFieldsAutoComplete.Matches snapshot" />
-        <item itemvalue="Jest.FormFieldsAutoComplete.Additional options merged in" />
-        <item itemvalue="Jest.AutoCompleteField.Fires on change event" />
-        <item itemvalue="Jest.createFieldRule.Not conditional is false when no value for that field" />
       </list>
     </recent_temporary>
   </component>
@@ -998,44 +1060,44 @@
       <workItem from="1547906014357" duration="14705000" />
       <workItem from="1548071368704" duration="1325000" />
       <workItem from="1548245882824" duration="25000" />
-      <workItem from="1548272746423" duration="5661000" />
+      <workItem from="1548272746423" duration="7822000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AutoCompleteField_Fires_on_change_event - 2019.01.23 at 14h 46m 58s.xml">
-      <configuration name="AutoCompleteField.Fires on change event" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="registerProcessorType_can_handle_a_non-valid_type - 2019.01.23 at 18h 24m 59s.xml">
+      <configuration name="registerProcessorType.can handle a non-valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="AutoCompleteField_Fires_on_change_event - 2019.01.23 at 15h 09m 17s.xml">
-      <configuration name="AutoCompleteField.Fires on change event" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_handle_a_non-valid_type - 2019.01.23 at 18h 29m 03s.xml">
+      <configuration name="unregisterProcessorType.can handle a non-valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="AutoCompleteField_Fires_on_change_event - 2019.01.23 at 15h 10m 08s.xml">
-      <configuration name="AutoCompleteField.Fires on change event" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_handle_a_non-valid_type - 2019.01.23 at 18h 29m 40s.xml">
+      <configuration name="unregisterProcessorType.can handle a non-valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="AutoCompleteField_Fires_on_change_event - 2019.01.23 at 15h 11m 55s.xml">
-      <configuration name="AutoCompleteField.Fires on change event" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType - 2019.01.23 at 18h 30m 01s.xml">
+      <configuration name="unregisterProcessorType" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormFieldsAutoComplete_Matches_snapshot - 2019.01.23 at 15h 40m 11s.xml">
-      <configuration name="FormFieldsAutoComplete.Matches snapshot" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_handle_a_non-valid_type - 2019.01.23 at 18h 30m 24s.xml">
+      <configuration name="unregisterProcessorType.can handle a non-valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormFieldsAutoComplete_Additional_options_merged_in - 2019.01.23 at 15h 40m 25s.xml">
-      <configuration name="FormFieldsAutoComplete.Additional options merged in" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_handle_a_non-valid_type - 2019.01.23 at 18h 30m 26s.xml">
+      <configuration name="unregisterProcessorType.can handle a non-valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormFieldsAutoComplete_Matches_snapshot - 2019.01.23 at 15h 41m 00s.xml">
-      <configuration name="FormFieldsAutoComplete.Matches snapshot" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_remove_a_valid_type - 2019.01.23 at 18h 30m 32s.xml">
+      <configuration name="unregisterProcessorType.can remove a valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="FormFieldsAutoComplete_Matches_snapshot - 2019.01.23 at 15h 41m 26s.xml">
-      <configuration name="FormFieldsAutoComplete.Matches snapshot" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_remove_a_valid_type - 2019.01.23 at 18h 31m 58s.xml">
+      <configuration name="unregisterProcessorType.can remove a valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Processors_collection_in_processors_UI_Adds_new_processor_when_created - 2019.01.23 at 16h 39m 14s.xml">
-      <configuration name="Processors collection in processors UI.Adds new processor when created" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_remove_a_valid_type - 2019.01.23 at 18h 32m 06s.xml">
+      <configuration name="unregisterProcessorType.can remove a valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Processors_collection_in_processors_UI_Adds_new_processor_when_created - 2019.01.23 at 16h 40m 15s.xml">
-      <configuration name="Processors collection in processors UI.Adds new processor when created" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="unregisterProcessorType_can_remove_a_valid_type - 2019.01.23 at 18h 32m 52s.xml">
+      <configuration name="unregisterProcessorType.can remove a valid type" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="547411000" />
+    <option name="totallyTimeSpent" value="549572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1050,14 +1112,14 @@
     <frame x="79" y="55" width="1811" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.24024872" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31135136" visible="true" weight="0.24024872" />
       <window_info id="Structure" order="1" sideWeight="0.6889849" side_tool="true" weight="0.21215531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.12433012" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.11039657" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.44587353" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.12101911" />
@@ -1066,7 +1128,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2454448" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39481866" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info anchor="bottom" x="27" y="284" width="860" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info active="true" anchor="bottom" x="27" y="284" width="860" height="726" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1491,6 +1553,36 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="367" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
+          <line>29</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="374" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js</url>
+          <line>26</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="375" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1504,34 +1596,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="200" column="18" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForm.story.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/util/fieldClassNames.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1606,16 +1670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="60" column="35" lean-forward="true" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/RichText.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1677,13 +1731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1708,16 +1755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/propTypes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1729,16 +1766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1813,16 +1840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/components/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="613">
@@ -1850,16 +1867,6 @@
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#214#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1898,20 +1905,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/factory/src/fields.fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/acceptence/wp-rest-create-entry.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1922,10 +1926,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/factory/acceptence/wp-rest-create-entry.test.js">
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processors.fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="33" selection-start-line="31" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/processorTypes/autoResponder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldAreaFactory.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/factory/src/factories/fieldFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/Processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="1195" column="10" selection-start-line="1195" selection-start-column="4" selection-end-line="1195" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/components/src/components/FormEditor/Processors/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

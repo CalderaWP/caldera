@@ -75,6 +75,8 @@ var fieldFactory = exports.fieldFactory = function fieldFactory(field, onChange,
 			return _react2.default.createElement(_components.AutoCompleteField, _extends({}, field, { onChange: onChange }));
 		case 'richtext':
 			return _react2.default.createElement(_components.RichText, _extends({}, field, { onChange: onChange }));
+		case 'fields-autocomplete':
+			return _react2.default.createElement(_components.FormFieldsAutoComplete, _extends({}, field, { onChange: onChange }));
 		case 'textarea':
 			return _react2.default.createElement(_components.TextAreaField, _extends({}, field, { onChange: onChange }));
 		case 'toggle':

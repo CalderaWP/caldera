@@ -1,10 +1,12 @@
 import{createFieldRule} from '@calderawp/forms';
+import {FormFieldsAutoComplete} from "../../../..";
+
 export const AUTO_RESPONDER_PROCESSOR_TYPE = 'autoResponder';
 export const autoResponder = {
 	type: AUTO_RESPONDER_PROCESSOR_TYPE,
 	fields: [
 		{
-			fieldType: 'input',
+			fieldType: FormFieldsAutoComplete.IDENTIFIER,
 			html5type: 'string',
 			value: '',
 			label: 'From Name',

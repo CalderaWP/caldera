@@ -9,13 +9,15 @@ var _ref;
 
 var _forms = require('@calderawp/forms');
 
+var _ = require('../../../..');
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var AUTO_RESPONDER_PROCESSOR_TYPE = exports.AUTO_RESPONDER_PROCESSOR_TYPE = 'autoResponder';
 var autoResponder = exports.autoResponder = {
 	type: AUTO_RESPONDER_PROCESSOR_TYPE,
 	fields: [{
-		fieldType: 'input',
+		fieldType: _.FormFieldsAutoComplete.IDENTIFIER,
 		html5type: 'string',
 		value: '',
 		label: 'From Name',

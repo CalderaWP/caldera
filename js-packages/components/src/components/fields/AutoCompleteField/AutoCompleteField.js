@@ -33,8 +33,5 @@ export const AutoCompleteField = (props) => {
 	);
 }
 
-
-
-
 AutoCompleteField.propTypes = SelectField.propTypes;
 AutoCompleteField.defaultProps = SelectField.defaultProps;

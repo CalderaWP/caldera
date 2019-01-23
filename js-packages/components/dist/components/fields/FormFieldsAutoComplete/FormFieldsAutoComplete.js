@@ -46,6 +46,8 @@ var FormFieldsAutoComplete = exports.FormFieldsAutoComplete = function FormField
 	});
 };
 
+FormFieldsAutoComplete.IDENTIFIER = 'fields-autocomplete';
+
 FormFieldsAutoComplete.propTypes = _extends({}, _AutoCompleteField.AutoCompleteField.propTypes, {
 	additionalOptions: _propTypes2.default.array
 });
