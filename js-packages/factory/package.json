@@ -66,6 +66,7 @@
     "@storybook/addon-options": "^4.1.4",
     "@storybook/addons": "^4.1.4",
     "dot-prop": "^4.2.0",
+    "email-validator": "^2.0.4",
     "formik": "^1.4.1",
     "jest-fetch-mock": "^2.1.0",
     "lodash.flatmap": "^4.5.0",
@@ -73,8 +74,10 @@
     "react": "^16.8.0-alpha.0",
     "react-oembed-container": "^0.3.0",
     "react-transition-group": "^2.5.2",
+    "server": "^0.0.0",
     "shortid": "^2.2.14",
     "styled-components": "^4.1.3",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "yup": "^0.26.10"
   }
 }

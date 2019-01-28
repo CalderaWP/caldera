@@ -40,7 +40,9 @@
       }
     },
     "collectCoverage": true,
-    "moduleDirectories": ["node_modules"],
+    "moduleDirectories": [
+      "node_modules"
+    ],
     "moduleNameMapper": {
       "^react(.*)$": "<rootDir>/vendor/react-master$1",
       "\\.(css|scss)$": "<rootDir>/config/jest/styleMock.js"
@@ -56,6 +58,7 @@
     "classnames": "^2.2.6",
     "deepmerge": "^3.0.0",
     "dot-prop": "^4.2.0",
+    "email-validator": "^2.0.4",
     "formik": "^1.4.1",
     "lodash": "^4.17.11",
     "lodash.flatmap": "^4.5.0",
@@ -66,8 +69,10 @@
     "react-data-grid": "^5.0.5",
     "react-oembed-container": "^0.3.0",
     "react-transition-group": "^2.5.2",
+    "server": "^0.0.0",
     "shortid": "^2.2.14",
     "styled-components": "^4.1.3",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "yup": "^0.26.10"
   }
 }
