@@ -1,0 +1,46 @@
+{
+    "name": "calderawp/wordpress-plugin-boilerplate",
+    "type": "wordpress-plugin",
+    "description": "A boilerplate for WordPress plugins by Caldera",
+    "license": "GPL-2.0",
+    "require": {
+        "php": "^7.2",
+        "calderawp/wordpress-framework": "dev-master",
+        "firebase/php-jwt": "dev-master"
+    },
+    "minimum-stability" : "dev",
+    "require-dev": {
+        "php": "^7.2",
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^7.3",
+        "squizlabs/php_codesniffer": "3.*",
+        "antecedent/patchwork": "^2.0",
+        "brain/monkey": "^2.0.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "calderawp\\RestApiAuth\\": "php"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "calderawp\\RestApiAuth\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "composer test:unit",
+        "tests": "composer fixes && composer test:unit && composer test:integration && composer test:acceptance",
+        "test:unit": "phpunit --testsuite=Unit",
+        "test:integration": "phpunit --testsuite=Integration",
+        "test:acceptance": "phpunit --testsuite=Acceptance",
+        "tests-now": "phpunit tests --group=now",
+        "sniffs": "phpcs php/ && phpcs tests/",
+        "fixes": "phpcbf php/ && phpcbf tests/"
+    }
+}
