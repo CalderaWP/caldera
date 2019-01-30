@@ -36,5 +36,40 @@
     <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/recursion-context" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/resource-operations" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/squizlabs/php_codesniffer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/brain/monkey" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/caldera-db" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/caldera-interop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/data-source" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/events" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/forms" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/http" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/rest-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/doctrine/instantiator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/firebase/php-jwt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/guzzlehttp/psr7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/hamcrest/hamcrest-php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/inpsyde/wpsr7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/myclabs/deep-copy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/phar-io/manifest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/phpspec/prophecy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/phpunit/php-code-coverage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/phpunit/php-file-iterator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/phpunit/php-timer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/phpunit/php-token-stream" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/phpunit/phpunit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/pimple/pimple" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/psr/container" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/psr/http-message" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/code-unit-reverse-lookup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/comparator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/diff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/environment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/exporter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/object-enumerator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/object-reflector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/recursion-context" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/sebastian/resource-operations" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/squizlabs/php_codesniffer" vcs="Git" />
   </component>
 </project>

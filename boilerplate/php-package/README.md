@@ -10,15 +10,7 @@ A WordPress Plugins API (hooks)-like event dispatcher.
     - `composer install`
 ### Examples
 
-### Adding A Filter (Subscribe)
 
-### Applying A Filter (Dispatch)
-
-### Adding An Action (Subscribe)
-Not yet implemented.
-
-### Doing An Action (Dispatch)
-Not yet implemented.
 
 ## Testing
 * Run unit tests
@@ -29,4 +21,4 @@ Not yet implemented.
     - `composer test:acceptance`
     
 ## License, Copyright, etc.
-Copyright 2018+ CalderaWP LLC and licensed under the terms of the GNU GPL license. Please share with your neighbor.
+Copyright 2019+ CalderaWP LLC and licensed under the terms of the GNU GPL license. Please share with your neighbor.

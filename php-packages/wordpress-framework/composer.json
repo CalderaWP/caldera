@@ -14,11 +14,5 @@
     "calderawp/http": "*",
     "calderawp/rest-api": "*",
     "calderawp/caldera-containers": "^0.2"
-  },
-  "require-dev": {
-    "mockery/mockery": "^1.2",
-    "phpunit/phpunit": "^7.3",
-    "friendsofphp/php-cs-fixer": "^2.0",
-    "squizlabs/php_codesniffer": "3.*"
   }
 }

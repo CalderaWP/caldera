@@ -32,7 +32,15 @@ add_action('plugins_loaded', function () {
 
 
 
+add_filter( 'rest_pre_serve_request', function( $served, $result, $request) {
+	return $served;
+}, 10, 3 );
 
+
+add_filter( 'determine_current_user', function($user ){
+	//'HTTP_AUTHORIZATION';
+	return $user;
+} );
 add_action( '-rest_api_init', function () {
 	register_rest_field( ['page'], 'wpStylesLoaderUrl', array(
 		'get_callback' => function(  ) {

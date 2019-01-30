@@ -23,6 +23,8 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _ = require('../../..');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -57,13 +59,38 @@ var Processor = exports.Processor = function (_Component) {
 			name: 'conditionals',
 			title: 'Conditionals',
 			className: 'caldera-processor-conditionals-tab-btn'
-		}], _temp), _possibleConstructorReturn(_this, _ret);
+		}], _this.formProps = function () {
+			var _this2 = _this,
+			    props = _this2.props;
+			var _this$props = _this.props,
+			    fields = _this$props.fields,
+			    form = _this$props.form;
+
+			var formFields = form.fields;
+			fields.forEach(function (field, i) {
+				var fieldType = field.fieldType;
+
+				if (_.FormFieldsAutoComplete.IDENTIFIER === fieldType) {
+					props.fields[i] = _extends({}, field, {
+						form: form
+					});
+				}
+			});
+			return props;
+		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
+
+	/**
+  * Prepare props for the processor editing form
+  *
+  * @return {Processor.props}
+  */
+
 
 	_createClass(Processor, [{
 		key: 'render',
 		value: function render() {
-			var _this2 = this;
+			var _this3 = this;
 
 			var _props = this.props,
 			    onClose = _props.onClose,
@@ -85,15 +112,15 @@ var Processor = exports.Processor = function (_Component) {
 							tabs: this.tabs
 						},
 						function () {
-							var activeTab = _this2.state.activeTab;
+							var activeTab = _this3.state.activeTab;
 
-							var tab = _this2.tabs.find(function (t) {
+							var tab = _this3.tabs.find(function (t) {
 								return t.name === activeTab;
 							});
 							var name = tab.name;
 
 							if ('settings' === name) {
-								return _react2.default.createElement(_HorizontalForm.HorizontalForm, _extends({}, _this2.props, {
+								return _react2.default.createElement(_HorizontalForm.HorizontalForm, _extends({}, _this3.formProps(), {
 									className: 'caldera-processor-settings'
 								}));
 							}

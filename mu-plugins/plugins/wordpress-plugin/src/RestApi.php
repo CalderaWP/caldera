@@ -8,7 +8,7 @@ use calderawp\caldera\restApi\Endpoints\Form\GetForms;
 use calderawp\caldera\restApi\Request;
 use calderawp\caldera\restApi\Routes\EntryRoute;
 use calderawp\caldera\restApi\Routes\FormRoute;
-use calderawp\caldera\WordPressPlugin\Traits\CreatesWordPressEndpoints;
+use calderawp\caldera\restApi\Traits\CreatesWordPressEndpoints;
 use calderawp\interop\Contracts\Rest\Endpoint;
 
 /**
@@ -18,7 +18,6 @@ use calderawp\interop\Contracts\Rest\Endpoint;
  */
 class RestApi
 {
-
 	use
 		//Most of the Caldera -> WordPress logic is in this trait
 		CreatesWordPressEndpoints;
@@ -40,8 +39,6 @@ class RestApi
 
 		$this->registerFunction = $registerFunction;
 		$this->module = $module;
-
-
 
 
 	}

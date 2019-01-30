@@ -155,7 +155,8 @@ var Processors = exports.Processors = function (_Component) {
 			    newProcessorType = _state.newProcessorType;
 			var _props = this.props,
 			    processors = _props.processors,
-			    processorTypes = _props.processorTypes;
+			    processorTypes = _props.processorTypes,
+			    form = _props.form;
 
 			return _react2.default.createElement(
 				'div',
@@ -176,6 +177,7 @@ var Processors = exports.Processors = function (_Component) {
 								_react.Fragment,
 								{ key: id },
 								_react2.default.createElement(_Processor.Processor, {
+									form: form,
 									className: 'caldera-forms-active-processor-' + id,
 									fields: fields,
 									conditionals: conditionals,

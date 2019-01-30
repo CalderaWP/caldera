@@ -4,6 +4,7 @@
     "require": {
         "php": "^7.2",
         "calderawp/caldera-containers": "^0.2",
+        "firebase/php-jwt": "^5.0",
         "inpsyde/wp-db-tools": "^0.2",
         "inpsyde/wpsr7": "^1.0",
         "johnpbloch/wordpress": ">=5.0",
@@ -32,7 +33,6 @@
             "calderawp\\caldera\\Events\\": "php-packages/events/src",
             "calderawp\\caldera\\Forms\\": "php-packages/forms/src",
             "calderawp\\caldera\\Http\\": "php-packages/http/src",
-            "calderawp\\caldera\\RegisterBlock\\": "php-packages/register-block/src",
             "calderawp\\caldera\\WordPressPlugin\\": "mu-plugins/plugins/wordpress-plugin/src",
             "calderawp\\caldera\\restApi\\": "php-packages/rest-api/src",
             "calderawp\\interop\\": "php-packages/interop/src"
@@ -56,7 +56,6 @@
             "calderawp\\caldera\\Forms\\Tests\\": "php-packages/forms/tests-unit",
             "calderawp\\caldera\\Forms\\Tests\\Integration\\": "php-packages/forms/tests-integration",
             "calderawp\\caldera\\Http\\Tests\\": "php-packages/http/tests",
-            "calderawp\\caldera\\RegisterBlock\\Tests\\": "php-packages/register-block/tests",
             "calderawp\\caldera\\WordPressPlugin\\Tests\\": "mu-plugins/plugins/wordpress-plugin/tests",
             "calderawp\\caldera\\restApi\\Tests\\": "php-packages/rest-api/tests",
             "calderawp\\interop\\Tests\\": "php-packages/interop/tests"
