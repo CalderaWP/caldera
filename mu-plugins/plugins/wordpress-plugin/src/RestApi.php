@@ -10,6 +10,8 @@ use calderawp\caldera\restApi\Routes\EntryRoute;
 use calderawp\caldera\restApi\Routes\FormRoute;
 use calderawp\caldera\restApi\Traits\CreatesWordPressEndpoints;
 use calderawp\interop\Contracts\Rest\Endpoint;
+use calderawp\caldera\restApi\Contracts\CalderaRestApiContract;
+
 
 /**
  * Class RestApi
@@ -46,18 +48,14 @@ class RestApi
 	/**
 	 * Serve the forms/form entry API via wp-json
 	 */
-	public function initFormsApi()
+	public function initFormsApi() : RestApi
 	{
 		$route = $this
-			->module
-			->getCore()
-			->getRestApi()
+			->getRestApiModule()
 			->getRoute(FormRoute::class);
 		$this->registerRoute($route);
 		$route = $this
-			->module
-			->getCore()
-			->getRestApi()
+			->getRestApiModule()
 			->getRoute(EntryRoute::class);
 		$this->registerRoute($route);
 
@@ -70,12 +68,19 @@ class RestApi
 			],
 			'callback' => [$this,'serveStyle']
 		]);
+
+		return $this;
 	}
 
 
-	public function initAuth()
+	public function initAuth(string $siteUrl = '' ) : RestApi
 	{
-
+		$auth = $this->getRestApiModule()->getWpRestApiAuth();
+		if( filter_var($siteUrl,FILTER_VALIDATE_URL)){
+			$auth->setSiteUrl($siteUrl);
+		}
+		$auth->initTokenRoutes();
+		return $this;
 	}
 
 
@@ -124,6 +129,16 @@ class RestApi
 		};
 
 	}
+
+	/**
+	 * @return  CalderaRestApiContract
+	 */
+	public function getRestApiModule(): CalderaRestApiContract
+	{
+		return $this
+			->module
+			->getRestApiModule();
+}
 
 
 }

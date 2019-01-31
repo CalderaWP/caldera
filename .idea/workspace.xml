@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/CalderaWordPressPlugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/CalderaWordPressPlugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Contracts/CalderaWordPressPluginContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Contracts/CalderaWordPressPluginContract.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/RestApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/RestApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/CalderaRestApiContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/CalderaRestApiContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/WordPressUserContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/WordPressUserContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Mocks/RegisterEndpointsWithWordPressMock.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Mocks/RegisterEndpointsWithWordPressMock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/RegisterEndpointsWithWordPressMockTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/RegisterEndpointsWithWordPressMockTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +74,7 @@
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="2243" />
+          <entry key="php" value="2253" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="51" />
@@ -96,7 +100,7 @@
           <entry key="JavaScript" value="1443" />
           <entry key="Jest Snapshot" value="51" />
           <entry key="Markdown" value="280" />
-          <entry key="PHP" value="2244" />
+          <entry key="PHP" value="2254" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -119,7 +123,7 @@
           <entry key="js" value="91949" />
           <entry key="json" value="4214" />
           <entry key="md" value="65962" />
-          <entry key="php" value="121278" />
+          <entry key="php" value="121868" />
           <entry key="sh" value="1575" />
           <entry key="snap" value="12" />
           <entry key="txt" value="1404" />
@@ -137,7 +141,7 @@
           <entry key="JavaScript" value="92093" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="65827" />
-          <entry key="PHP" value="121372" />
+          <entry key="PHP" value="121962" />
           <entry key="PLAIN_TEXT" value="1544" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="171" />
@@ -169,7 +173,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48946986">
+    <splitter split-orientation="horizontal" split-proportion="0.42338416">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -181,11 +185,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+                <state relative-caret-position="407">
+                  <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
                   <folding>
                     <element signature="e#8#63#0#PHP" expanded="true" />
                   </folding>
@@ -193,53 +197,14 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="62" />
+                <state relative-caret-position="178">
+                  <caret line="67" column="5" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="67" selection-end-column="5" />
                   <folding>
-                    <element signature="e#60#135#0#PHP" expanded="true" />
+                    <element signature="e#61#130#0#PHP" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1059">
-                  <caret line="112" column="69" lean-forward="true" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="69" />
-                  <folding>
-                    <element signature="e#46#102#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.env">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/CalderaRestApiContract.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
                 </state>
               </provider>
             </entry>
@@ -247,29 +212,23 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="366">
-                  <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+                <state relative-caret-position="140">
+                  <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
                   <folding>
-                    <element signature="e#70#139#0#PHP" expanded="true" />
+                    <element signature="e#71#140#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/composer.json">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/AuthenticationException.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="203">
+                  <caret line="31" column="21" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#8#77#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -281,8 +240,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/RestApi.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="649">
-                  <caret line="77" selection-start-line="77" selection-end-line="77" />
+                <state relative-caret-position="489">
+                  <caret line="139" column="32" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
                   <folding>
                     <element signature="e#54#117#0#PHP" expanded="true" />
                   </folding>
@@ -290,92 +249,32 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#8#77#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#63#132#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/WordPressUserContract.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#56#125#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="186">
-                  <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#51#90#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/TestCase.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php">
+            <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#66#115#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="216">
+                  <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/Endpoint.php">
+            <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/CalderaWordPressPlugin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#72#134#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="135">
+                  <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php">
+            <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Contracts/CalderaWordPressPluginContract.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="36" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#64#110#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -393,8 +292,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setNewProcessorType</find>
-      <find>Request Metho</find>
       <find>formFields</find>
       <find>instance</find>
       <find>instance(</find>
@@ -423,6 +320,8 @@
       <find>ModuleName</find>
       <find>email</find>
       <find>antecedent/patchwork</find>
+      <find>de</find>
+      <find>CalderaRestApiContract</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -492,8 +391,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/tests/Unit/ExampleTest.php" />
-        <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/php/Contracts/CalderaRestApiAuthContract.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/php/Api/Init.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/README.md" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/php/Contracts/AuthenticatesUser.php" />
@@ -503,7 +400,6 @@
         <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/php/Api/TokenRoute.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/php/Api/JwtLogin.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/php/CalderaRestApiAuth.php" />
-        <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/composer.json" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/LogsInUser.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/composer.json" />
@@ -524,15 +420,10 @@
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/UserFactoryContract.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AutheticateRestApiContract.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestAdiContract.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPress.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" />
-        <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/RestApi.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/CalderaRestApiContract.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/WordPressUserContract.php" />
@@ -543,6 +434,14 @@
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" />
         <option value="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/CalderaWordPressPlugin.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/RestApi.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Contracts/CalderaWordPressPluginContract.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" />
       </list>
     </option>
   </component>
@@ -813,7 +712,31 @@
               <item name="php-packages" type="462c0819:PsiDirectoryNode" />
               <item name="rest-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="Endpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Contracts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -1062,7 +985,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ApiRequestTest.testGetProcessorType">
+  <component name="RunManager" selected="PHPUnit.GenerateTokenTest.testGetMethod">
     <configuration name="ApiRequestTest.testGetProcessorType" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="calderawp\caldera\Forms\Tests\Processing\Types\ApiRequestTest" file="$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php" method="testGetProcessorType" scope="Method" />
       <method v="2" />
@@ -1071,12 +994,12 @@
       <TestRunner class="calderawp\caldera\restApi\Tests\CalderaRestApiTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php" method="testRegisterServices" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="GenerateTokenTest.testHandleInvalidUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="GenerateTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" method="testHandleInvalidUser" scope="Method" />
+    <configuration name="GenerateTokenTest.testGetMethod" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="GenerateTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" method="testGetMethod" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="WordPressTest.testAddHooks" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="WordPressTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" method="testAddHooks" scope="Method" />
+    <configuration name="GenerateTokenTest.testHandleInvalidUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="GenerateTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" method="testHandleInvalidUser" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="WordPressTest.testDetermineUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -1084,19 +1007,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.WordPressTest.testAddHooks" />
       <item itemvalue="PHPUnit.WordPressTest.testDetermineUser" />
       <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidUser" />
       <item itemvalue="PHPUnit.CalderaRestApiTest.testRegisterServices" />
       <item itemvalue="PHPUnit.ApiRequestTest.testGetProcessorType" />
+      <item itemvalue="PHPUnit.GenerateTokenTest.testGetMethod" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.GenerateTokenTest.testGetMethod" />
         <item itemvalue="PHPUnit.ApiRequestTest.testGetProcessorType" />
         <item itemvalue="PHPUnit.CalderaRestApiTest.testRegisterServices" />
         <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidUser" />
         <item itemvalue="PHPUnit.WordPressTest.testDetermineUser" />
-        <item itemvalue="PHPUnit.WordPressTest.testAddHooks" />
       </list>
     </recent_temporary>
   </component>
@@ -1150,14 +1073,11 @@
       <workItem from="1548705293231" duration="3344000" />
       <workItem from="1548710031968" duration="5639000" />
       <workItem from="1548762534430" duration="5701000" />
-      <workItem from="1548848499588" duration="14928000" />
+      <workItem from="1548848499588" duration="15898000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GenerateTokenTest_testHandleInvalidUser - 2019.01.31 at 08h 14m 51s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidUser" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="GenerateTokenTest_testHandleInvalidUser - 2019.01.31 at 08h 15m 29s.xml">
       <configuration name="GenerateTokenTest.testHandleInvalidUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -1185,9 +1105,12 @@
     <history-entry file="ApiRequestTest_testGetProcessorType - 2019.01.31 at 08h 36m 32s.xml">
       <configuration name="ApiRequestTest.testGetProcessorType" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="GenerateTokenTest_testGetMethod - 2019.01.31 at 08h 50m 57s.xml">
+      <configuration name="GenerateTokenTest.testGetMethod" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="589720000" />
+    <option name="totallyTimeSpent" value="590690000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1202,13 +1125,13 @@
     <frame x="105" y="23" width="1811" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8975818" visible="true" weight="0.22159413" />
-      <window_info id="Structure" order="1" sideWeight="0.10241821" side_tool="true" visible="true" weight="0.22159413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.89772725" visible="true" weight="0.22159413" />
+      <window_info id="Structure" order="1" sideWeight="0.10227273" side_tool="true" visible="true" weight="0.22159413" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.15957446" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.25212765" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.25106382" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.15851064" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1218,7 +1141,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2454448" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39468086" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info active="true" anchor="bottom" x="0" y="72" width="1450" height="928" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info anchor="bottom" x="0" y="72" width="1450" height="928" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1347,7 +1270,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php</url>
-          <line>87</line>
+          <line>82</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1467,13 +1390,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php</url>
-          <line>55</line>
+          <line>47</line>
           <option name="timeStamp" value="381" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php</url>
-          <line>100</line>
+          <line>93</line>
           <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php</url>
+          <line>66</line>
+          <option name="timeStamp" value="383" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js</url>
@@ -1673,37 +1601,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Mocks/RegisterEndpointsWithWordPressMock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/RegisterEndpointsWithWordPressMockTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="36" column="82" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
-          <folding>
-            <element signature="e#51#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Endpoint.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1720,16 +1617,6 @@
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="e#61#104#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Traits/CreatesWordPressEndpoints.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="e#55#118#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1771,8 +1658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/AuthenticationException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -1923,43 +1810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/Endpoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-          <folding>
-            <element signature="e#72#134#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-          <folding>
-            <element signature="e#8#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-          <folding>
-            <element signature="e#70#139#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1967,47 +1817,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/Endpoint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#66#115#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="e#51#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/WordPressUserContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="e#56#125#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Traits/CreatesWordPressEndpoints.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-admin/includes/noop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="e#71#140#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/RestApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="489">
+          <caret line="139" column="32" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
           <folding>
             <element signature="e#54#117#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/Contracts/CalderaWordPressPluginContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="e#64#110#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/src/CalderaWordPressPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#8#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/CalderaRestApiContract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#63#132#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="62" />
-          <folding>
-            <element signature="e#60#135#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -2025,67 +1964,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/WordPressUserContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="e#56#125#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/CalderaRestApiTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#51#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1059">
-          <caret line="112" column="69" lean-forward="true" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="69" />
+        <state relative-caret-position="288">
+          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
           <folding>
             <element signature="e#46#102#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#61#136#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="407">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#8#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/TestCase.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Processing/Types/ApiRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/forms/tests-unit/Processing/Types/ApiRequestTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="178">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="67" selection-end-column="5" />
           <folding>
-            <element signature="e#66#115#0#PHP" expanded="true" />
+            <element signature="e#61#130#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
         </state>
       </provider>
     </entry>

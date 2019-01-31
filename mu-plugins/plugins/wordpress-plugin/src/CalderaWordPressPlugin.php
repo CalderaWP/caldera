@@ -7,6 +7,7 @@ use calderawp\interop\Contracts\CalderaModule;
 use calderawp\CalderaContainers\Service\Container as ServiceContainer;
 use calderawp\interop\Module;
 use calderawp\caldera\WordPressPlugin\Contracts\CalderaWordPressPluginContract;
+use calderawp\caldera\restApi\Contracts\CalderaRestApiContract;
 
 class CalderaWordPressPlugin extends Module implements CalderaWordPressPluginContract
 {
@@ -25,4 +26,13 @@ class CalderaWordPressPlugin extends Module implements CalderaWordPressPluginCon
 		return $this;
 	}
 
+	/**
+	 * @return  CalderaRestApiContract
+	 */
+	public function getRestApiModule(): CalderaRestApiContract
+	{
+		return $this
+			->getCore()
+			->getRestApi();
+	}
 }

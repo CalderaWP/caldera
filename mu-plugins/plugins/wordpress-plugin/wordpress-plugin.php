@@ -7,8 +7,16 @@ use \calderawp\caldera\Forms\Entry\Entry;
 
 add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin $module) {
 	add_action('rest_api_init', function () use ($module) {
-		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route'))->initFormsApi();
+		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route'))
+			->initFormsApi()
+			->initAuth( );//need to update
+
 	});
+
+
+
+	add_filter('determine_current_user', [$module->getRestApiModule()->getWpRestApiAuth(),'determineUser' ]);
+
 	add_action('init', function () use ($module){
 		$dataBase = new \calderawp\caldera\WordPressPlugin\Database(
 			(new \calderawp\DB\Tables())
