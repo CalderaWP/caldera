@@ -61,7 +61,7 @@ class RestApi
 			->getRoute(EntryRoute::class);
 		$this->registerRoute($route);
 
-		//Use the correct abstraction
+		//Please Use the correct abstraction!!!
 		register_rest_route($this->namespace, '/wordpress/style', [
 			'args' => [
 				'handle' => [
@@ -70,6 +70,12 @@ class RestApi
 			],
 			'callback' => [$this,'serveStyle']
 		]);
+	}
+
+
+	public function initAuth()
+	{
+
 	}
 
 
