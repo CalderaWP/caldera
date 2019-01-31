@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mu-plugins/nonce.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/acceptance/WpApiAuthTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/acceptance/WpApiAuthTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test-acceptance.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test-acceptance.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +55,7 @@
           <entry key="json" value="220" />
           <entry key="lock" value="2" />
           <entry key="log" value="4" />
-          <entry key="md" value="282" />
+          <entry key="md" value="283" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
@@ -93,7 +84,7 @@
           <entry key="JSON" value="226" />
           <entry key="JavaScript" value="1443" />
           <entry key="Jest Snapshot" value="51" />
-          <entry key="Markdown" value="283" />
+          <entry key="Markdown" value="284" />
           <entry key="PHP" value="2278" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="SVG" value="8" />
@@ -116,7 +107,7 @@
           <entry key="html" value="2" />
           <entry key="js" value="91949" />
           <entry key="json" value="4312" />
-          <entry key="md" value="66363" />
+          <entry key="md" value="66532" />
           <entry key="php" value="123774" />
           <entry key="sh" value="1644" />
           <entry key="snap" value="12" />
@@ -134,7 +125,7 @@
           <entry key="JSON" value="4319" />
           <entry key="JavaScript" value="92093" />
           <entry key="Jest Snapshot" value="12" />
-          <entry key="Markdown" value="66225" />
+          <entry key="Markdown" value="66394" />
           <entry key="PHP" value="123871" />
           <entry key="PLAIN_TEXT" value="1562" />
           <entry key="Scratch" value="1" />
@@ -167,7 +158,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.2707775">
+    <splitter split-orientation="horizontal" split-proportion="0.49798927">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -185,8 +176,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/rest-api.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="789" selection-start-line="789" selection-end-line="789" />
+                <state relative-caret-position="245">
+                  <caret line="777" column="33" selection-start-line="777" selection-start-column="9" selection-end-line="777" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -234,11 +225,23 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/acceptance/WpApiAuthTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+                <state relative-caret-position="334">
+                  <caret line="78" column="11" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="78" selection-end-column="11" />
                   <folding>
                     <element signature="e#57#77#0#PHP" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="499">
+                    <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -255,11 +258,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/test-acceptance.sh">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -417,8 +420,8 @@
       <dir>$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth</dir>
       <dir>$PROJECT_DIR$/php-packages/rest-api/src/Authentication</dir>
       <dir>$PROJECT_DIR$/php-packages/rest-api</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/wordpress</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -467,7 +470,6 @@
         <option value="$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/acceptance/TestCase.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/README.md" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/README.md" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/VerifyToken.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/composer.json" />
@@ -478,6 +480,7 @@
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/acceptance/WpApiAuthTest.php" />
         <option value="$PROJECT_DIR$/scripts/test-acceptance.sh" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/README.md" />
       </list>
     </option>
   </component>
@@ -993,7 +996,7 @@
       <workItem from="1548705293231" duration="3344000" />
       <workItem from="1548710031968" duration="5639000" />
       <workItem from="1548762534430" duration="5701000" />
-      <workItem from="1548848499588" duration="23558000" />
+      <workItem from="1548848499588" duration="23714000" />
     </task>
     <servers />
   </component>
@@ -1030,7 +1033,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="598350000" />
+    <option name="totallyTimeSpent" value="598506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1045,14 +1048,14 @@
     <frame x="105" y="23" width="1811" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8577075" visible="true" weight="0.15658565" />
-      <window_info id="Structure" order="1" sideWeight="0.14229248" side_tool="true" visible="true" weight="0.15658565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8972896" visible="true" weight="0.15658565" />
+      <window_info id="Structure" order="1" sideWeight="0.10271041" side_tool="true" visible="true" weight="0.15658565" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.15957446" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.2925532" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.46170214" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.25425532" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.12101911" />
@@ -1061,7 +1064,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2454448" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39468086" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
-      <window_info active="true" anchor="bottom" x="0" y="72" width="1450" height="928" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info anchor="bottom" x="0" y="72" width="1450" height="928" id="Terminal" order="13" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1796,16 +1799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1837,13 +1830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="2047" column="37" lean-forward="true" selection-start-line="2047" selection-start-column="25" selection-end-line="2047" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/rest-api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="789" selection-start-line="789" selection-end-line="789" />
         </state>
       </provider>
     </entry>
@@ -1908,16 +1894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/acceptance/WpApiAuthTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
-          <folding>
-            <element signature="e#57#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1930,8 +1906,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test-acceptance.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="225">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/rest-api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="777" column="33" selection-start-line="777" selection-start-column="9" selection-end-line="777" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/acceptance/WpApiAuthTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="78" column="11" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="78" selection-end-column="11" />
+          <folding>
+            <element signature="e#57#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="499">
+            <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
