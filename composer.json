@@ -57,6 +57,7 @@
             "calderawp\\caldera\\Forms\\Tests\\Integration\\": "php-packages/forms/tests-integration",
             "calderawp\\caldera\\Http\\Tests\\": "php-packages/http/tests",
             "calderawp\\caldera\\WordPressPlugin\\Tests\\": "mu-plugins/plugins/wordpress-plugin/tests",
+            "calderawp\\caldera\\restApi\\Acceptance\\": "php-packages/rest-api/acceptance",
             "calderawp\\caldera\\restApi\\Tests\\": "php-packages/rest-api/tests",
             "calderawp\\interop\\Tests\\": "php-packages/interop/tests"
         }

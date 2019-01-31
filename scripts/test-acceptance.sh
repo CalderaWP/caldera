@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 cd php-packages;
 pwd
+
+cd rest-api
+pwd
+composer test:acceptance || { echo 'calderawp/rest-api acceptance tests failed' ; exit 1; }
+cd ../../
+
 cd http
-composer test:acceptance || { echo 'calderawp/http integration tests failed' ; exit 1; }
+pwd
+composer test:acceptance || { echo 'calderawp/http acceptance tests failed' ; exit 1; }
 cd ../../
 
 cd mu-plugins/plugins/wordpress-plugin/
