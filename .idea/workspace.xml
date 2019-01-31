@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/UserFactoryContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caldera.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caldera.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPress.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +63,7 @@
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="2227" />
+          <entry key="php" value="2233" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="51" />
@@ -98,7 +89,7 @@
           <entry key="JavaScript" value="1443" />
           <entry key="Jest Snapshot" value="51" />
           <entry key="Markdown" value="280" />
-          <entry key="PHP" value="2228" />
+          <entry key="PHP" value="2234" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -121,10 +112,10 @@
           <entry key="js" value="91949" />
           <entry key="json" value="4214" />
           <entry key="md" value="65962" />
-          <entry key="php" value="119822" />
+          <entry key="php" value="120588" />
           <entry key="sh" value="1575" />
           <entry key="snap" value="12" />
-          <entry key="txt" value="1394" />
+          <entry key="txt" value="1404" />
           <entry key="www" value="1" />
           <entry key="yml" value="500" />
         </counts>
@@ -139,8 +130,8 @@
           <entry key="JavaScript" value="92093" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="65827" />
-          <entry key="PHP" value="119916" />
-          <entry key="PLAIN_TEXT" value="1534" />
+          <entry key="PHP" value="120682" />
+          <entry key="PLAIN_TEXT" value="1544" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="171" />
           <entry key="YAML" value="500" />
@@ -149,18 +140,18 @@
       <usages-collector id="statistics.php.new.class">
         <counts>
           <entry key="PHP Class.type" value="137" />
-          <entry key="PHP Interface.type" value="43" />
+          <entry key="PHP Interface.type" value="44" />
           <entry key="PHP Trait.type" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test">
         <counts>
-          <entry key="source.empty" value="75" />
+          <entry key="source.empty" value="76" />
           <entry key="with.framework.PHPUnit" value="14" />
-          <entry key="with.framework.PHPUnit 6+" value="57" />
+          <entry key="with.framework.PHPUnit 6+" value="58" />
           <entry key="with.framework.PHPUnit 6+.without.selected.methods" value="3" />
           <entry key="with.framework.PHPUnit.without.selected.methods" value="1" />
-          <entry key="without.target.element" value="75" />
+          <entry key="without.target.element" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -171,26 +162,35 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43137255">
+    <splitter split-orientation="horizontal" split-proportion="0.4945534">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
+                <state relative-caret-position="64">
                   <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPress.php">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="226">
-                  <caret line="44" column="72" lean-forward="true" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="72" />
+                <state relative-caret-position="480">
+                  <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
                   <folding>
-                    <element signature="e#63#132#0#PHP" expanded="true" />
+                    <element signature="e#8#63#0#PHP" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="42">
+                  <caret line="7" column="22" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -198,17 +198,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-118">
+                <state relative-caret-position="60">
                   <caret line="4" column="35" selection-start-line="4" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
-                  <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+                <state relative-caret-position="236">
+                  <caret line="49" column="48" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="48" />
                   <folding>
                     <element signature="e#70#139#0#PHP" expanded="true" />
                   </folding>
@@ -247,11 +247,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="426">
-                  <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+                <state relative-caret-position="356">
+                  <caret line="93" column="97" selection-start-line="93" selection-start-column="97" selection-end-line="93" selection-end-column="97" />
                   <folding>
                     <element signature="e#8#77#0#PHP" expanded="true" />
                   </folding>
@@ -259,11 +259,44 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+                <state relative-caret-position="224">
+                  <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="497">
+                  <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#63#132#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/Endpoint.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#72#134#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -380,11 +413,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/server/routers/sendgrid/README.md" />
-        <option value="$PROJECT_DIR$/js-packages/server/routers/sendgrid/Personalizations.js" />
-        <option value="$PROJECT_DIR$/js-packages/server/__TESTS__/sendGridUtil.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/server/routers/sendgrid/Message.js" />
-        <option value="$PROJECT_DIR$/js-packages/server/routers/sendgrid.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/.storybook/stories.pattern" />
         <option value="$PROJECT_DIR$/boilerplate/php-package/README.md" />
         <option value="$PROJECT_DIR$/php-packages/jwt/README.md" />
@@ -420,7 +448,6 @@
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/AuthenticationException.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/php/Jwt.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/VerifyToken.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPress.php" />
         <option value="$PROJECT_DIR$/docs/cheetsheets-and-links/REACT-testing.md" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/composer.json" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" />
@@ -429,8 +456,14 @@
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AutheticateRestApiContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestAdiContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPress.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" />
       </list>
     </option>
   </component>
@@ -907,41 +940,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.VerifyTokenTest.testHandleInvalidRequest">
-    <configuration name="GenerateTokenTest.testHandleInvalidRequest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="GenerateTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" method="testHandleInvalidRequest" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.GenerateTokenTest.testHandleInvalidUser">
+    <configuration name="GenerateTokenTest.testHandleInvalidUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="GenerateTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" method="testHandleInvalidUser" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="GenerateTokenTest.testHandleInvalidUserOrPass" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="GenerateTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" method="testHandleInvalidUserOrPass" scope="Method" />
+    <configuration name="WordPressTest.testAddHooks" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="WordPressTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" method="testAddHooks" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="GenerateTokenTest.testHandleRequest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="GenerateTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php" method="testHandleRequest" scope="Method" />
+    <configuration name="WordPressTest.testDetermineUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="WordPressTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" method="testDetermineUser" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="VerifyTokenTest.testHandleInvalidRequest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="VerifyTokenTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" method="testHandleInvalidRequest" scope="Method" />
+    <configuration name="WordPressTest.testInitTokenRoutes" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="WordPressTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" method="testInitTokenRoutes" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="WordPressUserJwtTest.testTokenFromUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="WordPressUserJwtTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php" method="testTokenFromUser" scope="Method" />
+    <configuration name="WordPressTest.testSetTokenFromHeaders" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="WordPressTest" file="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" method="testSetTokenFromHeaders" scope="Method" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.WordPressUserJwtTest.testTokenFromUser" />
-      <item itemvalue="PHPUnit.GenerateTokenTest.testHandleRequest" />
-      <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidRequest" />
-      <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidUserOrPass" />
-      <item itemvalue="PHPUnit.VerifyTokenTest.testHandleInvalidRequest" />
+      <item itemvalue="PHPUnit.WordPressTest.testSetTokenFromHeaders" />
+      <item itemvalue="PHPUnit.WordPressTest.testAddHooks" />
+      <item itemvalue="PHPUnit.WordPressTest.testInitTokenRoutes" />
+      <item itemvalue="PHPUnit.WordPressTest.testDetermineUser" />
+      <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.VerifyTokenTest.testHandleInvalidRequest" />
-        <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidUserOrPass" />
-        <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidRequest" />
-        <item itemvalue="PHPUnit.GenerateTokenTest.testHandleRequest" />
-        <item itemvalue="PHPUnit.WordPressUserJwtTest.testTokenFromUser" />
+        <item itemvalue="PHPUnit.GenerateTokenTest.testHandleInvalidUser" />
+        <item itemvalue="PHPUnit.WordPressTest.testDetermineUser" />
+        <item itemvalue="PHPUnit.WordPressTest.testAddHooks" />
+        <item itemvalue="PHPUnit.WordPressTest.testInitTokenRoutes" />
+        <item itemvalue="PHPUnit.WordPressTest.testSetTokenFromHeaders" />
       </list>
     </recent_temporary>
   </component>
@@ -995,44 +1028,44 @@
       <workItem from="1548705293231" duration="3344000" />
       <workItem from="1548710031968" duration="5639000" />
       <workItem from="1548762534430" duration="5701000" />
-      <workItem from="1548848499588" duration="12222000" />
+      <workItem from="1548848499588" duration="13671000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GenerateTokenTest_testHandleRequest - 2019.01.31 at 07h 44m 33s.xml">
-      <configuration name="GenerateTokenTest.testHandleRequest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="WordPressTest_testInitTokenRoutes - 2019.01.31 at 08h 08m 03s.xml">
+      <configuration name="WordPressTest.testInitTokenRoutes" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidRequest - 2019.01.31 at 07h 44m 55s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidRequest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="WordPressTest_testInitTokenRoutes - 2019.01.31 at 08h 08m 12s.xml">
+      <configuration name="WordPressTest.testInitTokenRoutes" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidRequest - 2019.01.31 at 07h 45m 45s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidRequest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="WordPressTest_testAddHooks - 2019.01.31 at 08h 08m 14s.xml">
+      <configuration name="WordPressTest.testAddHooks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidUserOrPass - 2019.01.31 at 07h 48m 37s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidUserOrPass" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="WordPressTest_testDetermineUser - 2019.01.31 at 08h 09m 05s.xml">
+      <configuration name="WordPressTest.testDetermineUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidUserOrPass - 2019.01.31 at 07h 49m 05s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidUserOrPass" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="WordPressTest_testDetermineUser - 2019.01.31 at 08h 11m 29s.xml">
+      <configuration name="WordPressTest.testDetermineUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidUserOrPass - 2019.01.31 at 07h 49m 23s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidUserOrPass" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="WordPressTest_testDetermineUser - 2019.01.31 at 08h 11m 36s.xml">
+      <configuration name="WordPressTest.testDetermineUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidUserOrPass - 2019.01.31 at 07h 49m 49s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidUserOrPass" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="GenerateTokenTest_testHandleInvalidUser - 2019.01.31 at 08h 13m 04s.xml">
+      <configuration name="GenerateTokenTest.testHandleInvalidUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidUserOrPass - 2019.01.31 at 07h 50m 41s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidUserOrPass" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="GenerateTokenTest_testHandleInvalidUser - 2019.01.31 at 08h 14m 51s.xml">
+      <configuration name="GenerateTokenTest.testHandleInvalidUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="GenerateTokenTest_testHandleInvalidUserOrPass - 2019.01.31 at 07h 50m 49s.xml">
-      <configuration name="GenerateTokenTest.testHandleInvalidUserOrPass" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="GenerateTokenTest_testHandleInvalidUser - 2019.01.31 at 08h 15m 29s.xml">
+      <configuration name="GenerateTokenTest.testHandleInvalidUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="VerifyTokenTest_testHandleInvalidRequest - 2019.01.31 at 07h 51m 46s.xml">
-      <configuration name="VerifyTokenTest.testHandleInvalidRequest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="GenerateTokenTest_testHandleInvalidUser - 2019.01.31 at 08h 16m 16s.xml">
+      <configuration name="GenerateTokenTest.testHandleInvalidUser" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="587014000" />
+    <option name="totallyTimeSpent" value="588463000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1052,7 +1085,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.19255319" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.15957446" />
       <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.15851064" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -1518,20 +1551,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/wordpress-plugin/wordpress-plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="34" selection-start-line="34" selection-end-line="42" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Contracts/Rest/RestResponseContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/Rest/ProvidesRestResponse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1844,71 +1863,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="224">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserJwtTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
+        <state relative-caret-position="60">
           <caret line="4" column="35" selection-start-line="4" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding>
-            <element signature="e#70#139#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="44" column="72" lean-forward="true" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="72" />
-          <folding>
-            <element signature="e#63#132#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
-          <folding>
-            <element signature="e#8#77#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/Endpoint.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="540">
+          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
           <folding>
             <element signature="e#72#134#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Contracts/AuthenticateRestApiContract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+          <folding>
+            <element signature="e#63#132#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+          <folding>
+            <element signature="e#8#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/GenerateToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="48" />
+          <folding>
+            <element signature="e#70#139#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/GenerateTokenTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="93" column="97" selection-start-line="93" selection-start-column="97" selection-end-line="93" selection-end-column="97" />
+          <folding>
+            <element signature="e#8#77#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
