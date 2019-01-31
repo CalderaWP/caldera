@@ -1,7 +1,7 @@
 
 # Testing With React
 
-
+* [Jest Cheatsheat](https://devhints.io/jest)
 * https://reactjs.org/docs/test-renderer.html
 
 
