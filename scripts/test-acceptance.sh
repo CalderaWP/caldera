@@ -5,12 +5,13 @@ pwd
 cd rest-api
 pwd
 composer test:acceptance || { echo 'calderawp/rest-api acceptance tests failed' ; exit 1; }
-cd ../../
+cd ../
 
 cd http
 pwd
 composer test:acceptance || { echo 'calderawp/http acceptance tests failed' ; exit 1; }
 cd ../../
+
 
 cd mu-plugins/plugins/wordpress-plugin/
 pwd
