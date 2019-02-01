@@ -9,7 +9,9 @@
         "inpsyde/wpsr7": "^1.0",
         "johnpbloch/wordpress": ">=5.0",
         "mockery/mockery": "^1.2",
+        "moment/moment": ">=2.9.0",
         "psr/container": "^1.0",
+        "robloach/component-installer": "*",
         "vlucas/phpdotenv": "^2.2"
     },
     "require-dev": {
@@ -27,8 +29,8 @@
     },
     "autoload": {
         "psr-4": {
-            "calderawp\\CalderaPluginBoilerPlate\\": "mu-plugins/plugins/layout-builder/php",
             "calderawp\\DB\\": "php-packages/caldera-db/src",
+            "calderawp\\LayoutBuilder\\": "mu-plugins/plugins/layout-builder/php",
             "calderawp\\caldera\\Core\\": "php-packages/core/src",
             "calderawp\\caldera\\DataSource\\": "php-packages/data-source/src",
             "calderawp\\caldera\\Events\\": "php-packages/events/src",
@@ -46,11 +48,11 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "calderawp\\CalderaPluginBoilerPlate\\Tests\\": "mu-plugins/plugins/layout-builder/tests",
             "calderawp\\DB\\Tests\\": "php-packages/caldera-db/tests/",
             "calderawp\\DB\\Tests\\Integration\\": "php-packages/caldera-db/tests/Integration/",
             "calderawp\\DB\\Tests\\Traits\\": "php-packages/caldera-db/tests/Traits/",
             "calderawp\\DB\\Tests\\Unit\\": "php-packages/caldera-db/tests/Unit/",
+            "calderawp\\LayoutBuilder\\Tests\\": "mu-plugins/plugins/layout-builder/tests",
             "calderawp\\caldera\\Core\\Tests\\": "php-packages/core/tests",
             "calderawp\\caldera\\Core\\Tests\\Integration\\": "php-packages/core/tests/Integration",
             "calderawp\\caldera\\Core\\Tests\\Traits\\": "php-packages/core/tests/Traits",

@@ -4,7 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/php-packages/forms/tests-unit/FormModelTest.php" line="185" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="" />
+    <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caldera.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caldera.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +56,14 @@
           <entry key="inc" value="1" />
           <entry key="index" value="1" />
           <entry key="js" value="1503" />
-          <entry key="json" value="224" />
-          <entry key="lock" value="2" />
+          <entry key="json" value="226" />
+          <entry key="lock" value="3" />
           <entry key="log" value="5" />
           <entry key="md" value="285" />
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="2368" />
+          <entry key="php" value="2384" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="53" />
@@ -79,11 +85,11 @@
           <entry key="CSS" value="10" />
           <entry key="HTML" value="6" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="230" />
+          <entry key="JSON" value="233" />
           <entry key="JavaScript" value="1503" />
           <entry key="Jest Snapshot" value="51" />
           <entry key="Markdown" value="286" />
-          <entry key="PHP" value="2369" />
+          <entry key="PHP" value="2385" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -104,12 +110,12 @@
           <entry key="gitignore" value="76" />
           <entry key="html" value="2" />
           <entry key="js" value="95061" />
-          <entry key="json" value="4380" />
+          <entry key="json" value="4393" />
           <entry key="md" value="66610" />
-          <entry key="php" value="128035" />
+          <entry key="php" value="128449" />
           <entry key="sh" value="1644" />
           <entry key="snap" value="12" />
-          <entry key="txt" value="1502" />
+          <entry key="txt" value="1522" />
           <entry key="www" value="1" />
           <entry key="yml" value="635" />
         </counts>
@@ -120,12 +126,12 @@
           <entry key="Bash" value="1644" />
           <entry key="CSS" value="27" />
           <entry key="HTML" value="5" />
-          <entry key="JSON" value="4387" />
+          <entry key="JSON" value="4400" />
           <entry key="JavaScript" value="95205" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="66472" />
-          <entry key="PHP" value="128132" />
-          <entry key="PLAIN_TEXT" value="1642" />
+          <entry key="PHP" value="128546" />
+          <entry key="PLAIN_TEXT" value="1662" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="241" />
           <entry key="YAML" value="635" />
@@ -133,7 +139,7 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="147" />
+          <entry key="PHP Class.type" value="150" />
           <entry key="PHP Interface.type" value="44" />
           <entry key="PHP Trait.type" value="18" />
         </counts>
@@ -158,48 +164,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-              <folding>
-                <element signature="e#6#228#0#PHP" expanded="true" />
-                <element signature="e#1400#2024#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/components/controls/ChooseForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/store/entryStore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="132" column="22" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="22" />
-              <folding>
-                <element signature="e#1#71#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="470">
+              <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/blocks/entryValue/index.js">
+        <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="101" column="14" lean-forward="true" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#150#0" expanded="true" />
-                <element signature="e#445#504#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="561">
+              <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Block/EntryValueRenderCallback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="73" column="6" lean-forward="true" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/caldera-dev/calderawp-wordpress-plugin/caldera-wordpress-plugin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="243" column="16" selection-start-line="193" selection-start-column="8" selection-end-line="243" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -215,9 +210,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HorizontalForm</find>
-      <find>fields-autocomplete</find>
-      <find>processorsTypes</find>
       <find>CalderaPluginBoilerPlate</find>
       <find>ModuleName</find>
       <find>email</find>
@@ -245,6 +237,9 @@
       <find>object_subtype</find>
       <find>FormC</find>
       <find>BE</find>
+      <find>enqueu</find>
+      <find>/block-library</find>
+      <find>templ</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -303,10 +298,10 @@
       <dir>$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth</dir>
       <dir>$PROJECT_DIR$/php-packages/rest-api/src/Authentication</dir>
       <dir>$PROJECT_DIR$/php-packages/rest-api</dir>
-      <dir>$PROJECT_DIR$/wordpress</dir>
       <dir>$PROJECT_DIR$/php-packages/caldera-db/tests/Unit</dir>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/mu-plugins/plugins/layout-builder</dir>
+      <dir>$PROJECT_DIR$/wordpress</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -315,10 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php-packages/rest-api/composer.json" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/bootstrap.php" />
-        <option value="$PROJECT_DIR$/mu-plugins/nonce.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressTest.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WpRestApi.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/acceptance/WpApiAuthTest.php" />
@@ -345,7 +336,6 @@
         <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/VerifyTokenTest.php" />
         <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php" />
         <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" />
-        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/composer.json" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/README.md" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/components/EntryViewer/EntryRows.js" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/components/Entry/Display.js" />
@@ -362,10 +352,15 @@
         <option value="$PROJECT_DIR$/wordpress/wp-content/debug.log" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/.config/externals.js" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/inc/scripts.php" />
-        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/plugins/plugin-b/index.js" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/blocks/entry/index.js" />
         <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/blocks/entryValue/index.js" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/composer.json" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Plugin.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Contracts/PluginContract.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Contracts/RenderCallbackContract.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Block/EntryValueRenderCallback.php" />
+        <option value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php" />
       </list>
     </option>
   </component>
@@ -2079,11 +2074,14 @@
       <path value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/node_modules/yarn/package.json" />
       <path value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic/package.json" />
+      <path value="$PROJECT_DIR$/vendor/moment/moment/package.json" />
       <path value="$PROJECT_DIR$/wordpress/wp-content/plugins/caldera-forms/vendor/calderawp/caldera-forms-query/package.json" />
       <path value="$PROJECT_DIR$/wordpress/wp-content/plugins/stackable-ultimate-gutenberg-blocks/freemius/package.json" />
       <path value="$PROJECT_DIR$/wordpress/wp-content/themes/twentynineteen/package.json" />
     </packageJsonPaths>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="appserver" id="68e82d1e-aec2-4fab-a97f-1196c06aebf2" name="appserver" use_path_mappings="true">
@@ -2179,7 +2177,6 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
@@ -2192,6 +2189,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/robloach/component-installer" />
+      <path value="$PROJECT_DIR$/vendor/moment/moment" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -2332,7 +2333,7 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name=".config" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2340,7 +2341,8 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="Contracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2348,7 +2350,8 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2356,8 +2359,7 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2365,9 +2367,8 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="entry" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Acceptance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2375,56 +2376,8 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="entryValue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Entry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin-b" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2433,17 +2386,6 @@
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="wordpress" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="wordpress" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
             <path>
@@ -2489,7 +2431,7 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name=".config" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2499,8 +2441,8 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name=".config" type="462c0819:PsiDirectoryNode" />
-              <item name="jest" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="Block" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2510,74 +2452,8 @@
               <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="entry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin-b" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="mu-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="Contracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2729,7 +2605,7 @@
       <workItem from="1548762534430" duration="5701000" />
       <workItem from="1548848499588" duration="32558000" />
       <workItem from="1549036617934" duration="1086000" />
-      <workItem from="1549038514056" duration="12583000" />
+      <workItem from="1549038514056" duration="14745000" />
     </task>
     <servers />
   </component>
@@ -2766,7 +2642,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="621028000" />
+    <option name="totallyTimeSpent" value="623190000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2781,14 +2657,14 @@
     <frame x="105" y="23" width="1811" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9234043" visible="true" weight="0.24590164" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9234043" visible="true" weight="0.24590164" />
       <window_info id="Structure" order="1" sideWeight="0.076595746" side_tool="true" visible="true" weight="0.24590164" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.0" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.32978722" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.12101911" />
@@ -3094,6 +2970,16 @@
           <line>100</line>
           <option name="timeStamp" value="433" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php</url>
+          <line>157</line>
+          <option name="timeStamp" value="436" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php</url>
+          <line>148</line>
+          <option name="timeStamp" value="444" />
+        </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js</url>
           <line>32</line>
@@ -3322,73 +3208,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/wordpress-framework/tests/Acceptance/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/wordpress-framework/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.lando.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/components/EntryViewer/EntryRows.js" />
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/components/EntryViewer/EntryFieldView.js" />
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="660">
-            <caret line="44" selection-start-line="44" selection-end-line="44" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monorepo-builder.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/components/Entry/Display.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/components/Entry/Edit/Inline.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/.config/jest/test-setup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -3419,24 +3238,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/formcalderas/wp-content/plugins/caldera-entry-blocks/plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/plugins/caldera-forms/classes/admin/assets.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="303" column="31" lean-forward="true" selection-start-line="303" selection-start-column="31" selection-end-line="303" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -3632,17 +3437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="e#6#228#0#PHP" expanded="true" />
-            <element signature="e#1400#2024#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/blocks/entry/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
@@ -3696,12 +3490,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/src/blocks/entryValue/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="101" column="14" lean-forward="true" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+        <state relative-caret-position="363">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="e#0#150#0" expanded="true" />
             <element signature="e#445#504#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/caldera-dev/calderawp-wordpress-plugin/caldera-wordpress-plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="243" column="16" selection-start-line="193" selection-start-column="8" selection-end-line="243" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/link-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="2989" column="9" selection-start-line="2989" selection-start-column="9" selection-end-line="2989" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Contracts/RenderCallbackContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Block/RenderCallback.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/formcalderas/wp-content/plugins/caldera-entry-blocks/plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/formcalderas/wp-content/plugins/caldera-entry-blocks/php-classes/Blocks/RenderCallback/EntryValue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="97" lean-forward="true" selection-start-line="5" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/formcalderas/wp-content/plugins/caldera-entry-blocks/php-classes/Blocks/RenderCallback/RenderCallbackContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Contracts/PluginContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/php/Block/EntryValueRenderCallback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="73" column="6" lean-forward="true" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mu-plugins/plugins/layout-builder/layout-builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
         </state>
       </provider>
     </entry>
