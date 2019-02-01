@@ -27,6 +27,7 @@
     },
     "autoload": {
         "psr-4": {
+            "calderawp\\CalderaPluginBoilerPlate\\": "mu-plugins/plugins/layout-builder/php",
             "calderawp\\DB\\": "php-packages/caldera-db/src",
             "calderawp\\caldera\\Core\\": "php-packages/core/src",
             "calderawp\\caldera\\DataSource\\": "php-packages/data-source/src",
@@ -38,11 +39,14 @@
             "calderawp\\interop\\": "php-packages/interop/src"
         },
         "files": [
+            "mu-plugins/plugins/layout-builder/inc/asset-loader.php",
+            "mu-plugins/plugins/layout-builder/inc/scripts.php",
             "php-packages/core/Caldera.php"
         ]
     },
     "autoload-dev": {
         "psr-4": {
+            "calderawp\\CalderaPluginBoilerPlate\\Tests\\": "mu-plugins/plugins/layout-builder/tests",
             "calderawp\\DB\\Tests\\": "php-packages/caldera-db/tests/",
             "calderawp\\DB\\Tests\\Integration\\": "php-packages/caldera-db/tests/Integration/",
             "calderawp\\DB\\Tests\\Traits\\": "php-packages/caldera-db/tests/Traits/",

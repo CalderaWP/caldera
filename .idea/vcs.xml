@@ -36,6 +36,8 @@
     <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/recursion-context" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/sebastian/resource-operations" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/vendor/squizlabs/php_codesniffer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/layout-builder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/layout-builder" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/brain/monkey" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/caldera-db" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mu-plugins/plugins/rest-api-auth/vendor/calderawp/caldera-interop" vcs="Git" />
