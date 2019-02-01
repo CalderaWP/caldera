@@ -69,6 +69,7 @@ class RestApi
 			'callback' => [$this,'serveStyle']
 		]);
 
+
 		return $this;
 	}
 
