@@ -1,7 +1,7 @@
 # Caldera 
 
 This repository is the [Caldera Framework](https://github.com/CalderaWP/caldera). the [Caldera Framework](https://github.com/CalderaWP/caldera) is one standard set of tools that we -- CalderWP -- use for developing our WordPress plugins and WordPress-powered applications. It is not [Caldera Forms](https://calderaforms.com), it is the framework we are using to build the next version of Caldera Forms, Caldera Forms Pro and other Caldera products.
-This is a monorepo. Code is organized into packages that will be installable separately via npm or Composer.
+This is a monorepo. Code is organized into packages that will be installable separately via Composer.
 
 ## Documentation
 A proper documentation site with generated code reference will be created soon. This part of the documentation will be generated from phpdoc blocks and jsdocs blocks that exist in the code and you can read now.
@@ -160,110 +160,7 @@ See [local WordPress development docs for install instructions](./docs/WordPress
 * https://joshpress.net/create-a-wordpres-site-with-lando/
 
 ## JavaScript
-Monorepo management is handled by Lerna. 
-
-__Do NOT use npm, use Yarn.__
-
-Approach to implementing CRA + shared component libraries came from [this post](https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875) and [this repo](https://github.com/nareshbhatia/lerna-workspaces-react-es6)
-
-* Start storybooks
-    - `yarn storybook`
-* Run unit tests for all packages
-    - `yarn test`
-* Start development server
-    - `yarn build && yarn start`
-    
-### Managing Dependencies
-
-* Add dependency
-    - `yarn lerna add classnames`  
-    
-* Remove Dependency
-    - `yarn lerna exec -- yarn remove fetch-mock`
-#### See
-* https://medium.com/@jsilvax/a-workflow-guide-for-lerna-with-yarn-workspaces-60f97481149d
-* https://github.com/lerna/lerna/tree/master/commands/add
- 
-### Components
-Components should be developed in `/js-packages/components`. Storybooks is provided for testing/ previewing components. Jest is also used for testing.
-
-* Transpile components
-    - `yarn build`
- * Test components
-     - `yarn test:components`   
-### React App + With SSR - Port 3000
-React app for decoupled, server-side rendered WordPress front-end that we can reuse in WordPress. The app was scaffold with [Razzle](https://github.com/jaredpalmer/razzle) and uses After.js and react-dom-router for routing.
-
-#### Location 
-`js-packages/app`
-
-#### Using
-
-* Start app server
-    - `yarn start`
-* Test app
-    - `yarn test:app`
-
-   
-###  Express Server - Port 5000
-This server is used for two purposes:
-
-* Fake APIs to run tests against.
-* API endpoints when we want to use Node instead of PHP.
-
-#### Location 
-`js-packages/server`
-
-#### Uses
-* Express
-
-#### Using
-
-* Start app server
-    - `yarn start:server`
-* Test app
-    - `yarn test:server`
-    
-### Acceptance tests
-
-Acceptance tests, for now, are testing the REST API by making requests. They are in `js-packages/factory/acceptence/wp-rest-create-entry.test.js` for now.
-
-Before Running Tests:
-    - `bash start.sh`
-Run Tests: 
-    - `yarn test:acceptence`
-    
-### Add a package
-* Copy `boilerplate/js-package` to `js-packages` and rename directory for package name.
-* Change package name and description in package's package.json.
-* In root directory add package to monorepo.
-    - `yarn lerna bootstrap`
-* Change storybook port to a unique port to avoid collisions with other libraries.
-    - In package.json, scripts -> storybook, argument is `-p`
-* Add build and test commands to main package.json (monorepo)
-    - ` "build:<package-name>": "lerna exec --scope @caldera-labs/<package-name> -- babel src -d dist --ignore test.js,story.js,fixtures.js",`
-    - `"test:<package-name>": "cd js-packages/<package-name> && yarn test"`
-#### See
-* https://github.com/lerna/lerna/blob/master/commands/bootstrap/README.md
-
-### Sharing Packages
-When you import a module from one package to another, the IDE may try and autocomplete, the full path. That imports the module __without__ babelifification. These packages are designed to be used separately, so being forced to use the correct name is good.
- 
-```js
-//Works!
-import {FieldArea,} from '@caldera-labs/factory';
-
-//Does not work. Makes errors about imports.
-// Do not try to fix.
-import {FieldArea} from "@caldera-labs/factory/src/components/FieldArea";
-```
-### Also See
-https://github.com/nareshbhatia/lerna-workspaces-react-es6
-https://www.nearform.com/blog/sharing-react-components-with-lerna/
-https://medium.com/@luisvieira_gmr/building-large-scale-react-applications-in-a-monorepo-91cd4637c131
-https://itnext.io/guide-react-app-monorepo-with-lerna-d932afb2e875
-https://www.robinwieruch.de/visual-regression-testing-react-storybook/
-
+[caldera-js](https://github.com/calderawp/caldera-js)
 
 ## License, Copyright, etc.
 Copyright 2018+ CalderaWP LLC and licensed under the terms of the GNU GPL license. Please share with your neighbor.
