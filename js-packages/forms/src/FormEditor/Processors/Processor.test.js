@@ -11,8 +11,9 @@ import {
 	numberField,
 	textField,
 	emailField,
-	radioField
-} from '../../../factory/fields.fixtures';
+	radioField,
+	FormFieldsAutoComplete
+} from "@calderawp/components";
 
 describe('Processor', () => {
 	let onClose;
@@ -28,6 +29,10 @@ describe('Processor', () => {
 		onClose = jest.fn();
 		onChange = jest.fn();
 		onBlur = jest.fn();
+	});
+
+	it( 'imports FormFieldsAutoComplete from components', () => {
+		expect( typeof  FormFieldsAutoComplete ).toBe('function')
 	});
 
 	it('Matches snapshot', () => {

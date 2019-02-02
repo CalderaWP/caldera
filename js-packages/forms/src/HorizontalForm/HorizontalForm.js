@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { CalderaForm } from '@calderawp/forms';
+import { CalderaForm } from '../CalderaForm/CalderaForm';
 
 /**
  * Displays a form, one field per row

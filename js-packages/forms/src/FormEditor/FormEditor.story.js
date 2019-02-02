@@ -15,7 +15,7 @@ import {
 	textField,
 	emailField,
 	radioField
-} from '../../factory';
+} from "@calderawp/components";
 storiesOf('FormEditor', module).add('The processor', () => (
 	<Processor
 		fields={[

@@ -1,6 +1,6 @@
-export { CalderaGrid } from './components/CalderaForm/CalderaGrid';
-export { CalderaForm } from './components/CalderaForm/CalderaForm';
-export FormClient from './components/Http/FormClient';
-export { formClientFactory } from './components/Http/clientFactory';
-export {ConditionalState} from './components/CalderaForm/state/ConditionalState';
-export {createFieldRule} from './components/CalderaForm/state/createFieldRule';
+export { CalderaGrid } from './CalderaForm/CalderaGrid';
+export { CalderaForm } from './CalderaForm/CalderaForm';
+export FormClient from './Http/FormClient';
+export { formClientFactory } from './Http/clientFactory';
+export {ConditionalState} from './CalderaForm/state/ConditionalState';
+export {createFieldRule} from './CalderaForm/state/createFieldRule';

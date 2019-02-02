@@ -1,9 +1,8 @@
 import React, { Fragment, Component } from 'react';
 import { HorizontalForm } from '../../HorizontalForm/HorizontalForm';
 import { TabPanel } from '@wordpress/components';
-import { Row, Column } from '../../../factory';
+import { Row, Column,FormFieldsAutoComplete } from"@calderawp/components";
 import PropTypes from 'prop-types';
-import {FormFieldsAutoComplete} from "../../..";
 
 export class Processor extends Component {
 	state = {

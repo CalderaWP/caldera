@@ -14,7 +14,7 @@ import {
 	textField,
 	emailField,
 	radioField
-} from '../../../factory';
+} from "@calderawp/components";
 import {FormEditor} from "../FormEditor";
 
 describe('Processors', () => {

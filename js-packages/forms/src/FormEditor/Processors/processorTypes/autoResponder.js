@@ -1,5 +1,5 @@
-import{createFieldRule} from '@calderawp/forms';
-import {FormFieldsAutoComplete} from "../../../..";
+import{createFieldRule} from '../../../CalderaForm/state/createFieldRule';
+import {FormFieldsAutoComplete} from "@calderawp/components";
 
 export const AUTO_RESPONDER_PROCESSOR_TYPE = 'autoResponder';
 export const autoResponder = {
