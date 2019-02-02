@@ -6,156 +6,136 @@
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryAction.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryActions/EntryActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/EntryViewer.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/FormEntryViewer.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/EntryViewer/forms.fixtures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/Messages/Message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/Messages/Messages.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/Messages/__snapshots__/Messages.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/Messages/messageObjectFactory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/Messages/messagePropTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/AppBody.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/AppBody.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/PageBody.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/PageBody.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/StandardPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/TopBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/Topbar.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/__snapshots__/PageBody.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/__snapshots__/Topbar.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaForms-DarkBG-Alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaForms-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaForms.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaPay-DarkBG-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaPay-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaPay.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaSocial-DarkBG-Alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaSocial-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaSocial.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaWP-DarkBG-Alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaWP-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/Logo-CalderaWP.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaForms-DarkBG-Alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaForms-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaForms.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaPay-DarkBG-Alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaPay-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaPay.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaWP-DarkBG-Alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaWP-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-CalderaWP.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-Social-DarkBG-Alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-Social-DarkBG.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/app/logos/icons/Icon-Social.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/CalderaNotice.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/CalderaNotice/__snapshots__/CalderaNotice.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/FormListItem.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormListItem/__snapshots__/FormListItem.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/FormsList.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/Icon-CalderaForms.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/FormsList/__snapshots__/FormsList.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/RemotePost.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/__snapshots__/RemotePost.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/elements/RemotePost/propTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/AutoCompleteField.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/AutoCompleteField/__snapshots__/AutoCompleteField.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/FieldSet.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldSet/__snapshots__/FieldSet.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/FieldWrapper.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FieldWrapper/__snapshots__/FieldWrapper.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/FormFieldsAutoComplete/__snapshots__/FormFieldsAutoComplete.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputFieldAsCheckbox.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputFieldAsEmail.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputFieldAsNumber.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/__snapshots__/InputField.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/RadioField.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RadioField/__snapshots__/RadioField.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/MagicRichText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/RichText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/RichText.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/RichText/richtext.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/SelectField.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/SelectField/__snapshots__/SelectField.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/TextAreaField.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/TextAreaField/__snapshots__/TextAreaField.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.story.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/ToggleField.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/ToggleField/__snapshots__/ToggleField.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/controls/Select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/fieldClassNames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/fieldSetClassNames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/fieldWrapperClassNames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/labelClassNames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/parseAttributes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/components/fields/util/util.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/export.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/columns.fixtures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Field.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Field.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/FieldArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/FieldArea.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Fields.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Fields.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/Column.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/Row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/Row.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/Rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/Rows.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/__snapshots__/Row.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/__snapshots__/Rows.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/Grid/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/__snapshots__/Field.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/__snapshots__/FieldArea.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/__snapshots__/Fields.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/collectFieldValues.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/collectFieldValues.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/exports.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/factories/__snapshots__/fieldAreaFactory.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/factories/__snapshots__/fieldFactory.test.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/factories/fieldAreaFactory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/factories/fieldAreaFactory.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/factories/fieldFactory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/factories/fieldFactory.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/fields.fixtures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/factory/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-packages/components/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/.storybook/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/.storybook/preview-head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/.storybook/stories.pattern" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/config/jest/test-setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/config/jest/test-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/EntryViewer/EntryActions/EntryActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/EntryViewer/FormEntryViewer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/EntryViewer/forms.fixtures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/Messages/Message.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/Messages/messageObjectFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/Messages/messagePropTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/app/AppBody.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/app/PageBody.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/app/StandardPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/app/TopBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/elements/CalderaNotice/CalderaNotice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/elements/FormListItem/FormListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/elements/FormsList/FormsList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/elements/RemotePost/RemotePost.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/elements/RemotePost/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/elements/RemotePost/propTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/AutoCompleteField/AutoCompleteField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/FieldSet/FieldSet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/FieldWrapper/FieldWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/InputField/InputField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/RadioField/RadioField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/RichText/MagicRichText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/RichText/RichText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/SelectField/SelectField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/TextAreaField/TextAreaField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/ToggleField/ToggleField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/controls/Select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/util/fieldClassNames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/util/fieldSetClassNames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/util/fieldWrapperClassNames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/util/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/util/labelClassNames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/components/fields/util/parseAttributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/columns.fixtures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/Field.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/FieldArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/Fields.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/Grid/Column.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/Grid/Row.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/Grid/Rows.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/Grid/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/collectFieldValues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/factories/fieldAreaFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/factories/fieldFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/fields.fixtures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/factory/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/components/yarn-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/.storybook/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/.storybook/preview-head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/.storybook/stories.pattern" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/config/jest/test-setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/config/jest/test-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/CalderaForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/CalderaForm.story.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/CalderaForms.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/CalderaGrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/__snapshots__/CalderaForms.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/columns.fixtures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/fields.fixtures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/state/ConditionalState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/state/ConditionalState.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/state/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/state/applyRule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/state/createFieldRule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/state/createFieldRule.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/util/getValuesFromFormLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/util/updateRows.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/CalderaForm/util/updateRows.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/FormEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/FormEditor.story.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/FormEditor.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/MainSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/MainSection.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/AddProcessor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/AddProcessor.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/Processor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/Processor.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/Processors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/Processors.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/__snapshots__/AddProcessor.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/__snapshots__/Processor.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/__snapshots__/Processors.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/processorTypes/autoResponder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/processorTypes/defaultProcessorTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/processorTypes/processorFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/processorTypes/processorTypes.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/processorTypesPropType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/processors.fixtures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/registration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/registration.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/__snapshots__/FormEditor.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/__snapshots__/MainSection.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/FormEditor/propTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/HorizontalForm/HorizontalForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/HorizontalForm/HorizontalForm.story.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/HorizontalForm/HorizontalForm.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/HorizontalForm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/HorizontalForm/__snapshots__/HorizontalForm.test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/FormClient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/FormClient.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/clientFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/clientFactory.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/decoratorFactory/DELETE-THIS.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/decoratorFactory/decoratorFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/decoratorFactory/decoratorFactory.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/handlers/handlers.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/handlers/submitForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/Http/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/export.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/forms/ContactForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-packages/forms/src/index.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -313,15 +293,6 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/forms/ContactForm.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js-packages/app/src/Page.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="62">
@@ -365,89 +336,18 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/export.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" />
-                  <folding>
-                    <element signature="e#0#126#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/src/forms/ContactForm.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/.babelrc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" selection-start-line="3" selection-end-line="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="203">
-                    <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js-packages/forms/package.json">
+            <entry file="file://$PROJECT_DIR$/js-packages/app/src/Page.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/config/jest/test-setup.js">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/config/jest/test-shim.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js-packages/components/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+                <state relative-caret-position="62">
+                  <caret line="39" selection-start-line="39" selection-end-line="39" />
+                  <folding>
+                    <element signature="e#0#51#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -629,20 +529,6 @@
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/boilerplate/js-package/package.json" />
       <path value="$PROJECT_DIR$/boilerplate/wordpress-plugin-boilerplate/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/addons/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/node_modules/@storybook/components/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/components/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/@storybook/addons/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/@storybook/components/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/ajv-keywords/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/eslint/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/style-loader/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/node_modules/table/package.json" />
-      <path value="$PROJECT_DIR$/js-packages/forms/package.json" />
       <path value="$PROJECT_DIR$/js-packages/server/package.json" />
       <path value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/node_modules/@babel/code-frame/package.json" />
       <path value="$PROJECT_DIR$/mu-plugins/plugins/layout-builder/node_modules/@babel/core/node_modules/debug/package.json" />
@@ -2570,40 +2456,6 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="jest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="coverage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2644,41 +2496,6 @@
               <item name="js-packages" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="js-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="HorizontalForm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
@@ -2882,7 +2699,7 @@
       <workItem from="1549036617934" duration="1086000" />
       <workItem from="1549038514056" duration="26906000" />
       <workItem from="1549117759327" duration="5951000" />
-      <workItem from="1549124395634" duration="6593000" />
+      <workItem from="1549124395634" duration="7613000" />
     </task>
     <servers />
   </component>
@@ -2919,7 +2736,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="647895000" />
+    <option name="totallyTimeSpent" value="648915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2932,9 +2749,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="180" y="23" width="1730" height="1032" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9206349" visible="true" weight="0.3021327" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9206349" visible="true" weight="0.3021327" />
       <window_info id="Structure" order="1" sideWeight="0.07936508" side_tool="true" visible="true" weight="0.3021327" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -2951,7 +2767,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39468086" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="bottom" x="84" y="96" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
+      <window_info active="true" anchor="bottom" x="84" y="96" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" type="WINDOWED" visible="true" weight="0.36373058" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -3778,16 +3594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js-packages/app/src/Page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/app/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -3880,14 +3686,24 @@
     <entry file="file://$PROJECT_DIR$/js-packages/components/config/jest/test-shim.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-packages/forms/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="88">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-packages/app/src/Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
