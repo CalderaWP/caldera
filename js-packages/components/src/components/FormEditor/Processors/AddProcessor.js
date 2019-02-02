@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
-import {Row, fieldAreaFactory} from '@calderawp/factory';
+import {Row, fieldAreaFactory} from '../../../factory';
 
 export const AddProcessor = ({
 								 setNewProcessorType,

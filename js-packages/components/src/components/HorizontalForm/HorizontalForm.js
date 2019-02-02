@@ -21,7 +21,6 @@ export const HorizontalForm = ({
 	instanceId,
 								   conditionals
 }) => {
-	console.log(fields);
 	const rows = [];
 	let i = 0;
 	fields.forEach(field => {

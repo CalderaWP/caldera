@@ -12,12 +12,17 @@ import {
 	textField,
 	emailField,
 	radioField
-} from '@calderawp/factory';
+} from '../../../factory/fields.fixtures';
 
 describe('Processor', () => {
 	let onClose;
 	let onChange;
 	let onBlur;
+
+	const form = {
+		ID: 'cf1',
+		fields: [checkboxFieldset, selectField, checkboxField]
+	}
 
 	beforeEach(() => {
 		onClose = jest.fn();
@@ -34,6 +39,7 @@ describe('Processor', () => {
 				onChange={onChange}
 				onBlur={onBlur}
 				instanceId={'test-1'}
+				form={form}
 			/>
 		);
 		expect(component.toJSON()).toMatchSnapshot();
@@ -49,6 +55,8 @@ describe('Processor', () => {
 				onBlur={onBlur}
 				initialActiveTab={'conditionals'}
 				instanceId={'test-1'}
+				form={form}
+
 			/>
 		);
 		component.instance().onSetTab('conditionals');
@@ -65,6 +73,7 @@ describe('Processor', () => {
 				onBlur={onBlur}
 				initialActiveTab={'conditionals'}
 				instanceId={'test-1'}
+				form={form}
 			/>
 		);
 		expect( component.find( '.caldera-processor-conditionals').length).toBe(0);

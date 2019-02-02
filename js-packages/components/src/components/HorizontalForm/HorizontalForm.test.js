@@ -12,7 +12,7 @@ import {
 	textField,
 	emailField,
 	radioField
-} from '@calderawp/factory';
+} from '../../factory';
 
 describe('HorizontalForm', () => {
 	let onClose;
