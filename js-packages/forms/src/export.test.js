@@ -1,7 +1,13 @@
-import { CalderaGrid } from './';
-import { CalderaForm } from './';
-import { FormClient } from './';
-import { formClientFactory } from './';
+import {
+	CalderaForm,
+	CalderaGrid,
+	FormClient,
+	formClientFactory,
+	HorizontalForm,
+	FormEditor
+
+} from '@calderawp/forms';
+
 
 describe('Exports', () => {
 	it('exports CalderaForm', () => {
@@ -18,5 +24,11 @@ describe('Exports', () => {
 
 	it('exports FormClient', () => {
 		expect(typeof FormClient).toBe('function');
+	});
+	it('exports HorizontalForm', () => {
+		expect(typeof HorizontalForm).toBe('function');
+	});
+	it('exports FormEditor', () => {
+		expect(typeof FormEditor).toBe('function');
 	});
 });

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageBody Matches snapshot 1`] = `
+<div
+  className="caldera-page-body caldera-page-body-about"
+>
+  <div>
+    a
+  </div>
+</div>
+`;
