@@ -21,7 +21,7 @@ var _formik = require('formik');
 
 var _updateRows = require('./util/updateRows');
 
-var _factory = require('@calderawp/factory');
+var _components = require('@calderawp/components');
 
 var _applyRule = require('./state/applyRule');
 
@@ -60,7 +60,7 @@ var CalderaForm = exports.CalderaForm = function (_Component) {
 			    conditionals = _this$props$form.conditionals;
 
 			if (conditionals && conditionals.length) {
-				var conditionalState = _this.state.conditionalState ? _this.state.conditionalState : new _ConditionalState.ConditionalState((0, _factory.collectFieldValues)(fields));
+				var conditionalState = _this.state.conditionalState ? _this.state.conditionalState : new _ConditionalState.ConditionalState((0, _components.collectFieldValues)(fields));
 				conditionals.forEach(function (rule) {
 					(0, _applyRule.applyRuleToState)(rule, conditionalState);
 				});
@@ -74,7 +74,7 @@ var CalderaForm = exports.CalderaForm = function (_Component) {
 			    fields = _this$props$form2.fields,
 			    rows = _this$props$form2.rows;
 
-			var intialValues = (0, _factory.collectFieldValues)(fields);
+			var intialValues = (0, _components.collectFieldValues)(fields);
 			var conditionalState = _this.state.conditionalState ? _this.state.conditionalState : new _ConditionalState.ConditionalState(intialValues);
 			var formRows = (0, _updateRows.updateRows)(conditionalState, rows, fields);
 			_this.setState({ intialValues: intialValues, formRows: formRows, conditionalState: conditionalState });

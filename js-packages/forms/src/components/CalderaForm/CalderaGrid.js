@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import React, {createElement, Fragment} from 'react';
-import {Column, Row, FieldArea} from '@calderawp/factory';
 import classNames from 'classnames';
 import {ConditionalState} from "./state/ConditionalState";
-
+import {Column, Row, FieldArea} from '@calderawp/components';
 /**
  *
  * @param rows

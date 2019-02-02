@@ -7,7 +7,7 @@ exports.getValuesFromFormLayout = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _factory = require('@calderawp/factory');
+var _components = require('@calderawp/components');
 
 /**
  * Given a Caldera Layout for a form, grab all field values
@@ -24,7 +24,7 @@ var getValuesFromFormLayout = exports.getValuesFromFormLayout = function getValu
 		columns.map(function (column) {
 			var fields = column.fields;
 
-			values = _extends({}, values, (0, _factory.collectFieldValues)(fields));
+			values = _extends({}, values, (0, _components.collectFieldValues)(fields));
 		});
 	});
 	return values;

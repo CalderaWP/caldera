@@ -12,8 +12,19 @@ export { AutoCompleteField } from './components/fields/AutoCompleteField/AutoCom
 export { FormFieldsAutoComplete } from './components/fields/FormFieldsAutoComplete/FormFieldsAutoComplete';
 
 /**
+ * Grid Components
+ */
+export { Field } from './factory/components/Field';
+export { FieldArea } from './factory/components/FieldArea';
+export { Fields } from './factory/components/Fields';
+export { Row } from './factory/components/Grid/Row';
+export { Rows } from './factory/components/Grid/Rows';
+export { Column } from './factory/components/Grid/Column';
+
+/**
  * UI Elements
  */
+export FormEntryViewer from './components/EntryViewer/FormEntryViewer';
 export { Message } from './components/Messages/Message';
 export {
 	messageObjectFactory
@@ -40,5 +51,35 @@ export {
 	toBoolean,
 	isValidHtml5type
 } from './components/fields/util';
+export { collectFieldValues } from './factory/components/collectFieldValues';
 
-export FormEntryViewer from './components/EntryViewer/FormEntryViewer';
+/**
+ * Field Factories
+ */
+export { fieldFactory } from './factory/factories/fieldFactory';
+export { fieldAreaFactory } from './factory/factories/fieldAreaFactory';
+
+
+/**
+ * Test fixtures
+ */
+export {
+	autoCompleteField,
+	toggleField,
+	textAreaField,
+	checkboxFieldset,
+	selectField,
+	checkboxField,
+	numberField,
+	textField,
+	emailField,
+	radioField
+} from './factory/fields.fixtures.js';
+
+export {
+	formRowOne,
+	formRowTwo,
+	formRows,
+	notFormRow,
+	notFormRows
+} from './factory/columns.fixtures.js';

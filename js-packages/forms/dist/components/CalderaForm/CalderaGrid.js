@@ -15,13 +15,13 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _factory = require('@calderawp/factory');
-
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
 var _ConditionalState = require('./state/ConditionalState');
+
+var _components = require('@calderawp/components');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -63,7 +63,7 @@ var CalderaGrid = exports.CalderaGrid = function CalderaGrid(_ref) {
 			}
 
 			return _react2.default.createElement(
-				_factory.Row,
+				_components.Row,
 				{
 					className: (0, _classnames2.default)('caldera-form-row'),
 					key: rowId,
@@ -83,7 +83,7 @@ var CalderaGrid = exports.CalderaGrid = function CalderaGrid(_ref) {
 						}));
 					}
 					return _react2.default.createElement(
-						_factory.Column,
+						_components.Column,
 						{
 							key: columnId,
 							columnId: columnId,
@@ -101,7 +101,7 @@ var CalderaGrid = exports.CalderaGrid = function CalderaGrid(_ref) {
 							field.value = fieldValues[fieldId];
 
 							var _key = render ? key : fieldId;
-							return _react2.default.createElement(_factory.FieldArea, {
+							return _react2.default.createElement(_components.FieldArea, {
 								render: render,
 								key: _key,
 								field: field,

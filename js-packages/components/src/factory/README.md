@@ -1,54 +1,17 @@
-# Caldera Package name
+# Caldera Component Factory
 
-Provides some sort of functionality.
+This package creates forms, form elements and layout elements via objects describing them, that can be encoded as JSON, say what a REST API responds with.
 
-## Overview 
 
-This package creates form elements and layout elements via objects describing them, that can be encoded as JSON, say what a REST API responds with.
 
-* Field - The 
-```html
-<label/>
-<input />
-```
-
-or 
-
-```html
-<label/>
-<input />
-<p>Description</p>
-
-```
-
-* Field Area - 
-```html
-<div>
-    <label/>
-    <input />
-</div>
-```
-
-or
-
-```html
-<div>
-    <label/>
-    <input />
-    <p>Errors Have Happened</p>
-</div>
-```
-
-### Grid Components
-[See ./src/components/Grid/README.md](src/components/Grid/README.md)
 ##  Factories
 
 
 ### Import With webpack
 ```js
-import { fieldFactory, fieldAreaFactory } from '@caldera-labs/factory';
+import{fieldFactory, fieldAreaFactory} from "@calderawp/components";
 
-import { collectFieldValues } from '@caldera-labs/collectFieldValues';
+import { collectFieldValues } from "@calderawp/components";
 
 ```
 
@@ -79,7 +42,7 @@ return (
 This creates the complete HTML area around a field. `<wrapper><label/><input /><messages/></wrapper>`
 
 ```js
-import { fieldAreaFactory } from '@caldera-labs/factory';
+
 const nameField = {
     fieldType: 'input',
     html5Type: 'text',
@@ -102,7 +65,6 @@ return (
 
 ### Magic Tag Autocomplete Rich Text
 ```js
-import { fieldAreaFactory } from '@caldera-labs/factory';
 const magicField = {
     fieldType: 'magic-richtext',
     value: 'Infinite Vague',
@@ -132,13 +94,14 @@ These are components that the factories use, that may be useful on their own.
 
 ### Import With webpack
 ```js
-import { 
+import{factory} from "@calderawp/components";
+const { 
 	Rows,
 	Row, 
 	Field,
 	Fields,
 	FieldArea
-} from '@caldera-labs/factory';
+} = factory;
 ```
 ### `Field`
 Let's you use `fieldFactory()` as a React component.
@@ -179,37 +142,6 @@ const field = {
 ```
 
 
-### Fixtures
-This package also exports fixtures for testing columns and fields.
-
-```js
-import{
-	checkboxFieldset,
-	selectField,
-	checkboxField,
-	numberField,
-	textField,
-	emailField,
-	radioField,
-	toggleField,
-    textAreaField,
-    autoCompleteField
-} from '@calderawp/factory';
-```
 
 
-## Testing
-
-* Run Unit Tests - Jest.
-    - `yarn tests`
-
-* Run Storybooks
-    - `yarn storybook`
-
-## Other Commands
-* Lint code
-    - `yarn lint`
-* Build Package
-    - `yarn package`
-    - The output is stored in the `dist` folder.
 

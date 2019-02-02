@@ -40,7 +40,6 @@ var HorizontalForm = exports.HorizontalForm = function HorizontalForm(_ref) {
 	    instanceId = _ref.instanceId,
 	    conditionals = _ref.conditionals;
 
-	console.log(fields);
 	var rows = [];
 	var i = 0;
 	fields.forEach(function (field) {

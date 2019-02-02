@@ -7,6 +7,22 @@ import {formRows, formRowOne, checkboxField} from './columns.fixtures';
 import {getValuesFromFormLayout} from './util/getValuesFromFormLayout';
 import {emailField, textField} from './fields.fixtures';
 
+import {Column,fieldAreaFactory,collectFieldValues} from '@calderawp/components';
+
+describe( 'Factory import', () => {
+	it( 'imports factory', () => {
+		expect( typeof  fieldAreaFactory ).toBe( 'function' );
+	});
+
+	it( 'imports component', () => {
+		expect( typeof Column ).toBe('function')
+	});
+
+	it( 'imports util function', () => {
+		expect( typeof collectFieldValues ).toBe( 'function');
+	})
+});
+
 describe('Caldera Forms', () => {
 	let onChange = jest.fn();
 	let onBlur = jest.fn();

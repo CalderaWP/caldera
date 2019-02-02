@@ -4,7 +4,21 @@
 ## Grid Components
 These components that are used to create the grid. You can use them with an object describing the components you want to have the grid constructed of, beacuse you're like a database or something. Or you can use those components like a person would.
 
-### Rows
+### Import With webpack
+```js
+import {
+	Column,
+	Columns
+	Row, 
+	Rows,
+	FieldArea,
+	Fields,
+} from '@calderawp/components';
+
+```
+
+### Examples
+#### Rows
 A row can be an object describing the row and its columns, or it can be a React component.
 
 ```js
@@ -30,7 +44,7 @@ const row = {
 }
 ```
 
-### Row
+#### Row
 One row, possibly in a collection of rows. Outputs many columns.
 
 ```jsx
@@ -41,7 +55,7 @@ One row, possibly in a collection of rows. Outputs many columns.
 />
 ```
 
-### Column
+#### Column
 One column, possibly inside of a row
     
 ```jsx
@@ -56,7 +70,7 @@ One column, possibly inside of a row
 ```
 
 
-### Using Row and Column Compoents
+#### Using Row and Column Compoents
 
 ```js
 <Row>

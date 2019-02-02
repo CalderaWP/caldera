@@ -13,7 +13,12 @@ import {
 	toBoolean,
 	isValidHtml5type,
 	AutoCompleteField,
-	FormFieldsAutoComplete
+	FormFieldsAutoComplete,
+	textField,
+	Row,
+	fieldAreaFactory,
+	collectFieldValues
+
 } from '@calderawp/components';
 
 describe('exports', () => {
@@ -67,3 +72,19 @@ describe('exports', () => {
 		expect(typeof FormFieldsAutoComplete).toBe('function');
 	});
 });
+
+describe( 'exports factory', () => {
+
+	it( 'exports util function', () => {
+		expect( typeof  collectFieldValues ).toBe('function')
+	})
+	it( 'exports component', () => {
+		expect( typeof fieldAreaFactory ).toBe('function');
+	});
+	it( 'exports component', () => {
+		expect( typeof Row ).toBe('function');
+	});
+	it( 'exports component', () => {
+		expect( typeof textField ).toBe('object');
+	});
+})

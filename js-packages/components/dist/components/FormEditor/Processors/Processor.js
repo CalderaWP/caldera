@@ -17,7 +17,7 @@ var _HorizontalForm = require('../../HorizontalForm/HorizontalForm');
 
 var _components = require('@wordpress/components');
 
-var _factory = require('@calderawp/factory');
+var _factory = require('../../../factory');
 
 var _propTypes = require('prop-types');
 

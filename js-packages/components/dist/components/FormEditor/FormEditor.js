@@ -21,7 +21,7 @@ var _Processors = require('./Processors/Processors');
 
 var _components = require('@wordpress/components');
 
-var _factory = require('@calderawp/factory');
+var _factory = require('../../factory');
 
 var _propTypes3 = require('./propTypes');
 

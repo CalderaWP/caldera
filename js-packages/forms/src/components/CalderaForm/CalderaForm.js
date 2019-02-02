@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import React, { isValidElement, createElement, Fragment, Component} from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import {updateRows} from './util/updateRows';
-import { collectFieldValues } from '@calderawp/factory';
+import { collectFieldValues } from '@calderawp/components';
 import {applyRuleToState} from './state/applyRule';
 
 import { CalderaGrid } from './CalderaGrid';
+
 
 
 export class CalderaForm extends Component {

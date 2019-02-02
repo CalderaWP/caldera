@@ -19,7 +19,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _Processor = require('./Processor');
 
-var _factory = require('@calderawp/factory');
+var _factory = require('../../../factory');
 
 var _processorTypesPropType = require('./processorTypesPropType');
 
