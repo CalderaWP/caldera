@@ -24,6 +24,10 @@ This is a React component library for forms. It is designed to be used in Calder
 >This component is used for all forms in the Caldera Framework. The Caldera Forms front-end (Caldera Forms 2.0+) and all UI sections.
 
 This component uses [Formik](https://jaredpalmer.com/formik/) for managing state and validation. The layout uses the `CalderaGrid` component of this package and uses the fieldAreaFactory from the `calderawp/@factory` package.
+#### `<HorizontalForm`>
+🌋👀[Documentation](./src/HorizontalForm/README.md)
+#### Form Editor 
+🌋👀[Documentation](./src/FormEditor/README.md)
 
 #### Why Formik?
 I originally wanted to use redux-forms. I didn't love the API or the validation. Also, I had a less articulate version of [these conncerns](https://jaredpalmer.com/formik/docs/overview#why-not-redux-form). We're using more of Formik's features than you need to create a working form. Formik feels like it does the basics really well and everything is extensible.
