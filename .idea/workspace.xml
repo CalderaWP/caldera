@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php-packages/caldera-db/src/Time.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TimeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +62,7 @@
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="2503" />
+          <entry key="php" value="2506" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="55" />
@@ -94,7 +88,7 @@
           <entry key="JavaScript" value="1616" />
           <entry key="Jest Snapshot" value="53" />
           <entry key="Markdown" value="303" />
-          <entry key="PHP" value="2504" />
+          <entry key="PHP" value="2507" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -117,10 +111,10 @@
           <entry key="js" value="96998" />
           <entry key="json" value="4416" />
           <entry key="md" value="67592" />
-          <entry key="php" value="138464" />
+          <entry key="php" value="139014" />
           <entry key="sh" value="1664" />
           <entry key="snap" value="12" />
-          <entry key="txt" value="1688" />
+          <entry key="txt" value="1695" />
           <entry key="www" value="1" />
           <entry key="yml" value="635" />
         </counts>
@@ -135,8 +129,8 @@
           <entry key="JavaScript" value="97153" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="67443" />
-          <entry key="PHP" value="138561" />
-          <entry key="PLAIN_TEXT" value="1846" />
+          <entry key="PHP" value="139111" />
+          <entry key="PLAIN_TEXT" value="1853" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="241" />
           <entry key="YAML" value="635" />
@@ -151,12 +145,12 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.test">
         <counts>
-          <entry key="source.empty" value="88" />
+          <entry key="source.empty" value="89" />
           <entry key="with.framework.PHPUnit" value="14" />
-          <entry key="with.framework.PHPUnit 6+" value="70" />
+          <entry key="with.framework.PHPUnit 6+" value="71" />
           <entry key="with.framework.PHPUnit 6+.without.selected.methods" value="3" />
           <entry key="with.framework.PHPUnit.without.selected.methods" value="1" />
-          <entry key="without.target.element" value="88" />
+          <entry key="without.target.element" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -167,59 +161,88 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="283" column="104" selection-start-line="283" selection-start-column="104" selection-end-line="283" selection-end-column="104" />
-              <folding>
-                <element signature="e#8#55#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="83" column="59" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="59" />
-              <folding>
-                <element signature="e#55#111#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/Table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="382" column="37" lean-forward="true" selection-start-line="382" selection-start-column="37" selection-end-line="382" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5331412">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="481">
+                  <caret line="286" column="74" lean-forward="true" selection-start-line="286" selection-start-column="74" selection-end-line="286" selection-end-column="74" />
+                  <folding>
+                    <element signature="e#8#55#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="870">
+                  <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+                  <folding>
+                    <element signature="e#8#55#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="421">
+                  <caret line="83" column="59" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#55#111#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/php-packages/caldera-db/src/Table.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="427">
+                  <caret line="382" column="37" lean-forward="true" selection-start-line="382" selection-start-column="37" selection-end-line="382" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="250">
+                  <caret line="140" column="12" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -258,8 +281,8 @@
       <find>toArra</find>
       <find>DateTime</find>
       <find>toAt</find>
-      <find>fromA</find>
       <find>toArr</find>
+      <find>fromA</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -331,7 +354,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/AddProcessor.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/Processors.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/Processors.test.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/FormEditor/Processors/Processor.test.js" />
@@ -375,13 +397,14 @@
         <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AttachmentTest.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Attachment.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/src/Time.php" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TimeTest.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php" />
       </list>
     </option>
   </component>
@@ -2219,34 +2242,6 @@
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
               <item name="messaging" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2582,13 +2577,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.MessageTest.testCreateAtToFromArray">
-    <configuration name="MessageTest.testCreateAtToFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="MessageTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" method="testCreateAtToFromArray" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.AccountTest">
+    <configuration name="AccountTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="AccountTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="MessageTest.testToArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="MessageTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" method="testToArray" scope="Method" />
+    <configuration name="AccountTest.testGetPrivateKey" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="AccountTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php" method="testGetPrivateKey" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MessageTest.testCreateAtToFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="MessageTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" method="testCreateAtToFromArray" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="TimeTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -2599,24 +2598,20 @@
       <TestRunner class="calderawp\DB\Tests\Unit\TimeTest" file="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TimeTest.php" method="testDateTimeFromMysql" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TimeTest.testNormalizeMysql" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\DB\Tests\Unit\TimeTest" file="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TimeTest.php" method="testNormalizeMysql" scope="Method" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="PHPUnit.MessageTest.testToArray" />
       <item itemvalue="PHPUnit.MessageTest.testCreateAtToFromArray" />
       <item itemvalue="PHPUnit.TimeTest.testDateTimeFromMysql" />
-      <item itemvalue="PHPUnit.TimeTest.testNormalizeMysql" />
       <item itemvalue="PHPUnit.TimeTest" />
+      <item itemvalue="PHPUnit.AccountTest.testGetPrivateKey" />
+      <item itemvalue="PHPUnit.AccountTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AccountTest" />
+        <item itemvalue="PHPUnit.AccountTest.testGetPrivateKey" />
         <item itemvalue="PHPUnit.MessageTest.testCreateAtToFromArray" />
         <item itemvalue="PHPUnit.TimeTest" />
         <item itemvalue="PHPUnit.TimeTest.testDateTimeFromMysql" />
-        <item itemvalue="PHPUnit.TimeTest.testNormalizeMysql" />
-        <item itemvalue="PHPUnit.MessageTest.testToArray" />
       </list>
     </recent_temporary>
   </component>
@@ -2678,26 +2673,11 @@
       <workItem from="1549150228688" duration="730000" />
       <workItem from="1549282375534" duration="916000" />
       <workItem from="1549397008682" duration="360000" />
-      <workItem from="1549661365539" duration="12347000" />
+      <workItem from="1549661365539" duration="12940000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TimeTest_testNormalizeMysql - 2019.02.09 at 15h 06m 17s.xml">
-      <configuration name="TimeTest.testNormalizeMysql" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="TimeTest_testDateTimeFromMysql - 2019.02.09 at 15h 06m 26s.xml">
-      <configuration name="TimeTest.testDateTimeFromMysql" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="TimeTest_testDateTimeFromMysql - 2019.02.09 at 15h 07m 01s.xml">
-      <configuration name="TimeTest.testDateTimeFromMysql" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="TimeTest_testDateTimeFromMysql - 2019.02.09 at 15h 07m 51s.xml">
-      <configuration name="TimeTest.testDateTimeFromMysql" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="TimeTest_testDateTimeFromMysql - 2019.02.09 at 15h 09m 19s.xml">
-      <configuration name="TimeTest.testDateTimeFromMysql" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="TimeTest - 2019.02.09 at 15h 09m 22s.xml">
       <configuration name="TimeTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -2713,9 +2693,24 @@
     <history-entry file="MessageTest_testCreateAtToFromArray - 2019.02.09 at 15h 28m 20s.xml">
       <configuration name="MessageTest.testCreateAtToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="MessageTest_testCreateAtToFromArray - 2019.02.09 at 15h 28m 34s.xml">
+      <configuration name="MessageTest.testCreateAtToFromArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AccountTest_testGetPrivateKey - 2019.02.09 at 15h 31m 20s.xml">
+      <configuration name="AccountTest.testGetPrivateKey" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AccountTest - 2019.02.09 at 15h 33m 22s.xml">
+      <configuration name="AccountTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AccountTest - 2019.02.09 at 15h 35m 23s.xml">
+      <configuration name="AccountTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="AccountTest - 2019.02.09 at 15h 37m 58s.xml">
+      <configuration name="AccountTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="666235000" />
+    <option name="totallyTimeSpent" value="666828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2730,7 +2725,7 @@
     <frame x="365" y="23" width="1545" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9180851" visible="true" weight="0.18429807" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9180851" visible="true" weight="0.07651364" />
       <window_info id="Structure" order="1" sideWeight="0.081914894" side_tool="true" weight="0.31669992" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -3321,13 +3316,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="614">
@@ -3586,13 +3574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Layout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
@@ -3678,11 +3659,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="283" column="104" selection-start-line="283" selection-start-column="104" selection-end-line="283" selection-end-column="104" />
+        <state relative-caret-position="481">
+          <caret line="286" column="74" lean-forward="true" selection-start-line="286" selection-start-column="74" selection-end-line="286" selection-end-column="74" />
           <folding>
             <element signature="e#8#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+          <folding>
+            <element signature="e#8#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="140" column="12" lean-forward="true" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
         </state>
       </provider>
     </entry>

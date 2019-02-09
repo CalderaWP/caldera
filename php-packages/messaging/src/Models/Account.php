@@ -52,7 +52,15 @@ class Account extends Model
 	 */
 	public function getPublicKey(): string
 	{
-		return $this->publicKey;
+		return is_string($this->publicKey ) ? $this->publicKey : '';
+	}
+
+	public function getToken() : ?string
+	{
+		if( empty($this->getPublicKey())|| empty($this->getPrivateKey())){
+			return null;
+		}
+		return sha1($this->getPublicKey() . $this->getPrivateKey());
 	}
 
 	/**
@@ -71,7 +79,7 @@ class Account extends Model
 	 */
 	public function getPrivateKey(): string
 	{
-		return $this->privateKey;
+		return is_string($this->privateKey ) ? $this->privateKey : '';
 	}
 
 	/**
@@ -128,7 +136,9 @@ class Account extends Model
 	 */
 	public function isActive(): bool
 	{
-		return $this->active;
+		return isset($this->active) ?
+			(bool) $this->active : true;
+
 	}
 
 	/**
@@ -147,7 +157,8 @@ class Account extends Model
 	 */
 	public function getUses(): int
 	{
-		return $this->uses;
+		return ! empty($this->uses) ?
+			(int) $this->uses : 0;
 	}
 
 	/**
@@ -166,7 +177,8 @@ class Account extends Model
 	 */
 	public function getMaxUses(): int
 	{
-		return $this->maxUses;
+		return ! empty($this->maxUses) ?
+			(int) $this->maxUses : 500;
 	}
 
 	/**
