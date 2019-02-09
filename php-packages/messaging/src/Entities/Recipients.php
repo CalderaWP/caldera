@@ -3,8 +3,10 @@
 
 namespace calderawp\caldera\Messaging\Entities;
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientContract;
+use calderawp\caldera\Messaging\Entities\Contracts\RecipientsContracts;
 
-class Recipients extends IteratableCollection {
+class Recipients extends IteratableCollection implements RecipientsContracts
+{
 
 	/**
 	 * @var array
@@ -17,6 +19,7 @@ class Recipients extends IteratableCollection {
 		return 'recipients';
 	}
 
+	/** @inheritdoc */
 	public function addRecipient( RecipientContract $recipient ) : Recipients
 	{
 		$this->recipients[] = $recipient;
