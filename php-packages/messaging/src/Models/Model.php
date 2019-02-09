@@ -1,24 +1,45 @@
 <?php
 
 
-namespace calderawp\caldera\Messaging\Traits;
+namespace calderawp\caldera\Messaging\Models;
 
+use calderawp\caldera\Messaging\Traits\SimpleRepository;
 
-trait SimpleRepository
+/**
+ * Class Model
+ *
+ * Should be using calderaw/interop Model. This is a temporary bridge while migrating in Laravel models
+ */
+abstract class Model
 {
 
-	/**
-	 * Stores values of allowed properties
-	 *
-	 * @var
-	 */
-	protected $attributes;
+	use SimpleRepository;
+
+
+	public static function fromArray(array $items ): Model
+	{
+		$obj = new static();
+		foreach ( $obj->getAllowedProperties() as $property ){
+			if( isset($items[$property])){
+				$obj->$property = $items[$property];
+			}
+		}
+		return $obj;
+	}
+
+	/** @inheritdoc */
+	public function getAllowedProperties(): array
+	{
+		$vars = get_object_vars($this);
+		unset( $vars['attributes']);
+		return array_keys($vars);
+	}
 
 	/** @inheritdoc */
 	public function __get($name)
 	{
 		if ($this->has($name)) {
-			return $this->attributes[ $name ];
+			return $this->$name;
 		}
 
 		return null;
@@ -29,7 +50,7 @@ trait SimpleRepository
 	public function __set($name, $value)
 	{
 		if ($this->allowed($name)) {
-			$this->attributes[ $name ] = $value;
+			$this->$name = $value;
 		}
 
 		return $this;
@@ -44,7 +65,7 @@ trait SimpleRepository
 	 */
 	public function has($name)
 	{
-		return isset($this->attributes[ $name ]);
+		return isset($this->$name);
 	}
 
 	/**
@@ -70,37 +91,10 @@ trait SimpleRepository
 	public function get($name, $default = null)
 	{
 		if ($this->has($name)) {
-			return $this->attributes[ $name ];
+			return $this->$name;
 		}
 
 		return $default;
-	}
-
-	/**
-	 * Get the allowed properites
-	 *
-	 * @return array
-	 */
-	abstract public function getAllowedProperties() : array;
-
-	/**
-	 * Convert to array
-	 *
-	 * @return array
-	 */
-	public function toArray(): array
-	{
-		$array = [];
-		foreach ($this->getAllowedProperties() as $property) {
-			$array[ $property ] = $this->get($property);
-		}
-
-		return $array;
-	}
-
-	public function jsonSerialize()
-	{
-		return $this->toArray();
 	}
 
 }

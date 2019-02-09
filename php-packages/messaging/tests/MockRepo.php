@@ -12,6 +12,12 @@ class MockRepo
 
 	protected $properties = [
 		'a1',
-		'b2'
+		'b2',
 	];
+
+
+	public function getAllowedProperties(): array
+	{
+		return $this->properties;
+	}
 }
