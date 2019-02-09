@@ -9,19 +9,21 @@ class MessageEntryFields extends IteratableCollection
 
 	protected $entryFields;
 
-	public static function fromArray( array  $items ): MessageEntryFields
+	public static function fromArray(array $items): MessageEntryFields
 	{
 		$collection = new static();
-		foreach ( $items as $item ){
-			if( is_a( $item, MessageEntryField::class)){
+		foreach ($items as $item) {
+			if (is_a($item, MessageEntryField::class)) {
 				$collection->addMessageEntryField($item);
 			}
-			if( is_array($item)){
+			if (is_array($item)) {
+
 				$collection->addMessageEntryField(MessageEntryField::fromArray($item));
 			}
 		}
 		return $collection;
 	}
+
 	/**
 	 * @inheritDoc
 	 */
@@ -37,7 +39,7 @@ class MessageEntryFields extends IteratableCollection
 	}
 
 
-	public function addMessageEntryField( MessageEntryField $messageEntryField ): MessageEntryFields
+	public function addMessageEntryField(MessageEntryField $messageEntryField): MessageEntryFields
 	{
 		$this->entryFields[] = $messageEntryField;
 		return $this;

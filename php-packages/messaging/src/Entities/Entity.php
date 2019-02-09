@@ -13,6 +13,9 @@ abstract class Entity implements Arrayable
 		$vars = get_object_vars(  $this );
 		$array = [];
 		foreach( $vars as $property => $value ){
+			if( is_object( $value) && is_callable([$value,'toArray'])){
+				$value = $value->toArray();
+			}
 			$array[ $property ] = $value;
 		}
 
@@ -45,15 +48,16 @@ abstract class Entity implements Arrayable
 		}
 	}
 
-	public function __set($name, $value)
+	public function __set($name, $value): Entity
 	{
 		$setter = 'set' . ucfirst($name);
 		if( method_exists($this,$setter)){
-			return call_user_func([$this, $setter]);
+			return call_user_func([$this, $setter],$value);
 		}
 		if( property_exists($this,$name)){
 			$this->$name = $value;
 			return $this;
 		}
+		return $this;
 	}
 }

@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldsTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Entities/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/Entity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Entities/IteratableCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/IteratableCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipient.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipients.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/messaging/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +27,8 @@
     <session id="-431066744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="47" />
-          <entry key="project.open.time.0" value="22" />
+          <entry key="project.closed" value="48" />
+          <entry key="project.open.time.0" value="23" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="3" />
@@ -44,7 +41,7 @@
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="50" />
+          <entry key="project.opened" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -70,7 +67,7 @@
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="2522" />
+          <entry key="php" value="2530" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="55" />
@@ -96,7 +93,7 @@
           <entry key="JavaScript" value="1616" />
           <entry key="Jest Snapshot" value="53" />
           <entry key="Markdown" value="303" />
-          <entry key="PHP" value="2523" />
+          <entry key="PHP" value="2531" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -119,7 +116,7 @@
           <entry key="js" value="96998" />
           <entry key="json" value="4416" />
           <entry key="md" value="67592" />
-          <entry key="php" value="140847" />
+          <entry key="php" value="141781" />
           <entry key="sh" value="1664" />
           <entry key="snap" value="12" />
           <entry key="txt" value="1718" />
@@ -137,7 +134,7 @@
           <entry key="JavaScript" value="97153" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="67443" />
-          <entry key="PHP" value="140944" />
+          <entry key="PHP" value="141878" />
           <entry key="PLAIN_TEXT" value="1876" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="241" />
@@ -169,77 +166,26 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43547225">
+    <splitter split-orientation="horizontal" split-proportion="0.5639913">
       <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="481">
-                  <caret line="286" column="74" selection-start-line="286" selection-start-column="74" selection-end-line="286" selection-end-column="74" />
-                  <folding>
-                    <element signature="e#8#55#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#8#55#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipient.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipients.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+                <state relative-caret-position="262">
+                  <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
                   <folding>
-                    <element signature="e#56#125#0#PHP" expanded="true" />
+                    <element signature="e#58#109#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/IteratableCollection.php">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Entity.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="33" selection-start-line="33" selection-end-line="33" />
+                <state relative-caret-position="-248">
+                  <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -247,7 +193,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wordpress/wp-content/plugins/caldera-forms/includes/functions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
+                <state relative-caret-position="4215">
                   <caret line="281" column="3" selection-start-line="281" selection-start-column="3" selection-end-line="287" selection-end-column="5" />
                 </state>
               </provider>
@@ -256,7 +202,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
+                <state relative-caret-position="1245">
                   <caret line="83" column="59" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="59" />
                   <folding>
                     <element signature="e#55#111#0#PHP" expanded="true" />
@@ -268,7 +214,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
+                <state relative-caret-position="1545">
                   <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
                 </state>
               </provider>
@@ -277,42 +223,30 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+                <state relative-caret-position="435">
+                  <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/TestCase.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+                <state relative-caret-position="352">
+                  <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldsTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="526">
-                  <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#58#117#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+                <state relative-caret-position="412">
+                  <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
                 </state>
               </provider>
             </entry>
@@ -431,7 +365,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/components/src/components/app/README.md" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/index.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/export.test.js" />
         <option value="$PROJECT_DIR$/js-packages/server/package.json" />
@@ -472,16 +405,17 @@
         <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php" />
-        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php" />
-        <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/Entity.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipients.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipient.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/IteratableCollection.php" />
-        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php" />
-        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php" />
-        <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldsTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/Entity.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/tests/TestCase.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" />
       </list>
     </option>
   </component>
@@ -2298,212 +2232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-db" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="calderawp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="calderawp" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="calderawp" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-containers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="caldera" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="calderawp" type="462c0819:PsiDirectoryNode" />
-              <item name="caldera-containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -2594,6 +2322,56 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="boilerplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2610,19 +2388,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js-packages/forms/src" />
-      <recent name="$PROJECT_DIR$/mu-plugins/plugins" />
-      <recent name="$PROJECT_DIR$/php-packages/data-source/src/WordPressData" />
-      <recent name="$PROJECT_DIR$/php-packages/data-source/tests/Unit" />
-      <recent name="$PROJECT_DIR$/js-packages/components/src/components/fields" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/php-packages/messaging/src/Contracts" />
       <recent name="$PROJECT_DIR$/php-packages" />
       <recent name="$PROJECT_DIR$/js-packages/forms/src/forms" />
       <recent name="$PROJECT_DIR$/js-packages/components/src/components/app" />
       <recent name="$PROJECT_DIR$/js-packages/server/clients" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js-packages/forms/src" />
+      <recent name="$PROJECT_DIR$/mu-plugins/plugins" />
+      <recent name="$PROJECT_DIR$/php-packages/data-source/src/WordPressData" />
+      <recent name="$PROJECT_DIR$/php-packages/data-source/tests/Unit" />
+      <recent name="$PROJECT_DIR$/js-packages/components/src/components/fields" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2637,21 +2415,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.EntryDataTest">
-    <configuration name="AccountTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="AccountTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AccountTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.EntryDataTest.testToFromArray">
     <configuration name="EntryDataTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="calderawp\caldera\Messaging\Tests\Unit\EntryDataTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EntryDataTest.testToFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Messaging\Tests\Unit\EntryDataTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php" method="testToFromArray" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="MessageEntryFieldTest.testFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="calderawp\caldera\Messaging\Tests\Unit\MessageEntryFieldTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" method="testFromArray" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="MessageEntryFieldTest.testToArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\Messaging\Tests\Unit\MessageEntryFieldTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" method="testToArray" scope="Method" />
+    <configuration name="MessageEntryFieldTest.testFromArrayCamelCasing" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\Messaging\Tests\Unit\MessageEntryFieldTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php" method="testFromArrayCamelCasing" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="MessageEntryFieldsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -2659,19 +2437,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.AccountTest" />
-      <item itemvalue="PHPUnit.MessageEntryFieldTest.testToArray" />
       <item itemvalue="PHPUnit.MessageEntryFieldTest.testFromArray" />
       <item itemvalue="PHPUnit.MessageEntryFieldsTest" />
       <item itemvalue="PHPUnit.EntryDataTest" />
+      <item itemvalue="PHPUnit.EntryDataTest.testToFromArray" />
+      <item itemvalue="PHPUnit.MessageEntryFieldTest.testFromArrayCamelCasing" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.EntryDataTest.testToFromArray" />
+        <item itemvalue="PHPUnit.MessageEntryFieldTest.testFromArrayCamelCasing" />
         <item itemvalue="PHPUnit.EntryDataTest" />
         <item itemvalue="PHPUnit.MessageEntryFieldsTest" />
         <item itemvalue="PHPUnit.MessageEntryFieldTest.testFromArray" />
-        <item itemvalue="PHPUnit.MessageEntryFieldTest.testToArray" />
-        <item itemvalue="PHPUnit.AccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -2733,44 +2511,45 @@
       <workItem from="1549150228688" duration="730000" />
       <workItem from="1549282375534" duration="916000" />
       <workItem from="1549397008682" duration="360000" />
-      <workItem from="1549661365539" duration="15666000" />
+      <workItem from="1549661365539" duration="15975000" />
+      <workItem from="1549749699151" duration="1405000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountTest - 2019.02.09 at 15h 38m 26s.xml">
-      <configuration name="AccountTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataTest_testToFromArray - 2019.02.09 at 17h 09m 47s.xml">
+      <configuration name="EntryDataTest.testToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MessageEntryFieldTest_testToArray - 2019.02.09 at 15h 45m 27s.xml">
-      <configuration name="MessageEntryFieldTest.testToArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataTest_testToFromArray - 2019.02.09 at 17h 10m 45s.xml">
+      <configuration name="EntryDataTest.testToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MessageEntryFieldTest_testToArray - 2019.02.09 at 15h 47m 51s.xml">
-      <configuration name="MessageEntryFieldTest.testToArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataTest_testToFromArray - 2019.02.09 at 17h 10m 59s.xml">
+      <configuration name="EntryDataTest.testToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MessageEntryFieldTest_testToArray - 2019.02.09 at 15h 48m 58s.xml">
-      <configuration name="MessageEntryFieldTest.testToArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataTest_testToFromArray - 2019.02.09 at 17h 12m 10s.xml">
+      <configuration name="EntryDataTest.testToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MessageEntryFieldTest_testFromArray - 2019.02.09 at 15h 49m 50s.xml">
-      <configuration name="MessageEntryFieldTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataTest_testToFromArray - 2019.02.09 at 17h 13m 08s.xml">
+      <configuration name="EntryDataTest.testToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MessageEntryFieldTest_testFromArray - 2019.02.09 at 15h 52m 01s.xml">
-      <configuration name="MessageEntryFieldTest.testFromArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="MessageEntryFieldTest_testFromArrayCamelCasing - 2019.02.09 at 17h 20m 28s.xml">
+      <configuration name="MessageEntryFieldTest.testFromArrayCamelCasing" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MessageEntryFieldsTest - 2019.02.09 at 16h 06m 08s.xml">
-      <configuration name="MessageEntryFieldsTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="MessageEntryFieldTest_testFromArrayCamelCasing - 2019.02.09 at 17h 20m 42s.xml">
+      <configuration name="MessageEntryFieldTest.testFromArrayCamelCasing" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="MessageEntryFieldsTest - 2019.02.09 at 16h 11m 14s.xml">
-      <configuration name="MessageEntryFieldsTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="MessageEntryFieldTest_testFromArrayCamelCasing - 2019.02.09 at 17h 21m 00s.xml">
+      <configuration name="MessageEntryFieldTest.testFromArrayCamelCasing" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryDataTest - 2019.02.09 at 16h 13m 27s.xml">
-      <configuration name="EntryDataTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataTest_testToFromArray - 2019.02.09 at 17h 23m 36s.xml">
+      <configuration name="EntryDataTest.testToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="EntryDataTest - 2019.02.09 at 16h 13m 36s.xml">
-      <configuration name="EntryDataTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="EntryDataTest_testToFromArray - 2019.02.09 at 17h 24m 05s.xml">
+      <configuration name="EntryDataTest.testToFromArray" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="669554000" />
+    <option name="totallyTimeSpent" value="671268000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2785,13 +2564,13 @@
     <frame x="128" y="23" width="1782" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9180851" visible="true" weight="0.20287356" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9180851" visible="true" weight="0.20517242" />
       <window_info id="Structure" order="1" sideWeight="0.081914894" side_tool="true" weight="0.31669992" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.36489362" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.12340426" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -3113,6 +2892,11 @@
           <line>270</line>
           <option name="timeStamp" value="475" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="476" />
+        </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js-packages/components/src/components/fields/InputField/InputField.test.js</url>
           <line>32</line>
@@ -3376,37 +3160,8 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesName.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_9.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="668" column="9" selection-start-line="668" selection-start-column="9" selection-end-line="668" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Recipients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Contracts/RecipientsContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Contracts/RecipientContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Contracts/RecipientsContract.php" />
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Contracts/RecipientContract.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -3460,20 +3215,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MaxUses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageStats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MaxUses.php" />
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageStats.php" />
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/SimpleRespositoryTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -3511,13 +3254,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/calderawp/caldera/Messaging/Tests/Unit/Models/MessageTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/calderawp/caldera/Messaging/Tests/Unit/Models/MessageTest.php" />
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/MockRepo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -3532,20 +3269,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AttachmentTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Attachment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="92" column="4" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/AttachmentTest.php" />
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Attachment.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date_c.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -3619,9 +3344,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="150" column="32" lean-forward="true" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Contracts/RecipientContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4290">
+          <caret line="286" column="74" selection-start-line="286" selection-start-column="74" selection-end-line="286" selection-end-column="74" />
+          <folding>
+            <element signature="e#8#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/plugins/caldera-forms/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4215">
+          <caret line="281" column="3" selection-start-line="281" selection-start-column="3" selection-end-line="287" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="1245">
           <caret line="83" column="59" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="59" />
           <folding>
             <element signature="e#55#111#0#PHP" expanded="true" />
@@ -3631,25 +3387,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="1545">
           <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="286" column="74" selection-start-line="286" selection-start-column="74" selection-end-line="286" selection-end-column="74" />
-          <folding>
-            <element signature="e#8#55#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Account.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="150" column="32" lean-forward="true" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
+        <state relative-caret-position="90">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -3663,10 +3416,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="e#58#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/forms/src/Entry/EntryValue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/IteratableCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -3680,76 +3464,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Contracts/RecipientContract.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="262">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="e#58#109#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Recipient.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/plugins/caldera-forms/includes/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="281" column="3" selection-start-line="281" selection-start-column="3" selection-end-line="287" selection-end-column="5" />
+        <state relative-caret-position="352">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryFields.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/IteratableCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/EntryData.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/EntryDataTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Entities/MessageEntryField.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="435">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldsTest.php">
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/MessageEntryFieldTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding>
-            <element signature="e#58#117#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="412">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
         </state>
       </provider>
     </entry>

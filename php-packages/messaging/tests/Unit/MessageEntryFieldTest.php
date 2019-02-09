@@ -27,4 +27,16 @@ class MessageEntryFieldTest extends TestCase
 		$this->assertEquals($value, $messageEntryField->toArray()['value']);
 		$this->assertEquals($slug, $messageEntryField->toArray()['slug']);
 	}
+
+	public function testFromArrayCamelCasing()
+	{
+		$array = [
+			'field_id' => 'cf1',
+			'entry_id'=> 11
+		];
+		$messageEntryField = MessageEntryField::fromArray($array);
+		$this->assertEquals('cf1', $messageEntryField->fieldId );
+		$this->assertEquals(11, $messageEntryField->entryId );
+
+	}
 }
