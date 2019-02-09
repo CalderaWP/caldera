@@ -36,6 +36,7 @@
             "calderawp\\caldera\\Events\\": "php-packages/events/src",
             "calderawp\\caldera\\Forms\\": "php-packages/forms/src",
             "calderawp\\caldera\\Http\\": "php-packages/http/src",
+            "calderawp\\caldera\\Messaging\\": "php-packages/messaging/src",
             "calderawp\\caldera\\WordPressPlugin\\": "mu-plugins/plugins/wordpress-plugin/src",
             "calderawp\\caldera\\restApi\\": "php-packages/rest-api/src",
             "calderawp\\interop\\": "php-packages/interop/src"
@@ -62,6 +63,7 @@
             "calderawp\\caldera\\Forms\\Tests\\": "php-packages/forms/tests-unit",
             "calderawp\\caldera\\Forms\\Tests\\Integration\\": "php-packages/forms/tests-integration",
             "calderawp\\caldera\\Http\\Tests\\": "php-packages/http/tests",
+            "calderawp\\caldera\\Messaging\\Tests\\": "php-packages/messaging/tests",
             "calderawp\\caldera\\WordPressPlugin\\Tests\\": "mu-plugins/plugins/wordpress-plugin/tests",
             "calderawp\\caldera\\restApi\\Acceptance\\": "php-packages/rest-api/acceptance",
             "calderawp\\caldera\\restApi\\Tests\\": "php-packages/rest-api/tests",
@@ -94,6 +96,7 @@
         "test:packages-events": "cd php-packages/events && composer test ",
         "test:packages-data": "cd php-packages/data-source && composer test ",
         "test:packages-db": "cd php-packages/caldera-db && composer test ",
+        "test:packages-messaging": "cd php-packages/messaging && composer test ",
         "test:blocks": "cd php-packages/register-block && composer test ",
         "test:integration-forms": "cd php-packages/forms && composer test:integration",
         "test:integration-core": "cd php-packages/core && composer test:integration",

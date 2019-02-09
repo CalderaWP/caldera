@@ -12,6 +12,8 @@ composer test:packages-http || { echo 'HTTP unit tests failed' ; exit 1; }
 composer test:packages-rest || { echo 'REST unit tests failed' ; exit 1; }
 composer test:packages-forms || { echo 'Forms unit tests failed' ; exit 1; }
 
+composer test:packages-messaging || { echo 'Messaging unit tests failed' ; exit 1; }
+
 
 
 
