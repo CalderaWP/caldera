@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/MockModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MockModelTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/messaging/src/Models/Layout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/messaging/tests/MockRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/messaging/tests/MockRepo.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +62,7 @@
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="2486" />
+          <entry key="php" value="2488" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="55" />
@@ -93,7 +88,7 @@
           <entry key="JavaScript" value="1616" />
           <entry key="Jest Snapshot" value="53" />
           <entry key="Markdown" value="303" />
-          <entry key="PHP" value="2487" />
+          <entry key="PHP" value="2489" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -116,10 +111,10 @@
           <entry key="js" value="96998" />
           <entry key="json" value="4416" />
           <entry key="md" value="67592" />
-          <entry key="php" value="135946" />
+          <entry key="php" value="136131" />
           <entry key="sh" value="1664" />
           <entry key="snap" value="12" />
-          <entry key="txt" value="1673" />
+          <entry key="txt" value="1676" />
           <entry key="www" value="1" />
           <entry key="yml" value="635" />
         </counts>
@@ -134,8 +129,8 @@
           <entry key="JavaScript" value="97153" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="67443" />
-          <entry key="PHP" value="136043" />
-          <entry key="PLAIN_TEXT" value="1831" />
+          <entry key="PHP" value="136228" />
+          <entry key="PLAIN_TEXT" value="1834" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="241" />
           <entry key="YAML" value="635" />
@@ -143,19 +138,19 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="167" />
+          <entry key="PHP Class.type" value="168" />
           <entry key="PHP Interface.type" value="45" />
           <entry key="PHP Trait.type" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test">
         <counts>
-          <entry key="source.empty" value="85" />
+          <entry key="source.empty" value="86" />
           <entry key="with.framework.PHPUnit" value="14" />
-          <entry key="with.framework.PHPUnit 6+" value="67" />
+          <entry key="with.framework.PHPUnit 6+" value="68" />
           <entry key="with.framework.PHPUnit 6+.without.selected.methods" value="3" />
           <entry key="with.framework.PHPUnit.without.selected.methods" value="1" />
-          <entry key="without.target.element" value="85" />
+          <entry key="without.target.element" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -166,7 +161,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.502447">
+    <splitter split-orientation="horizontal" split-proportion="0.61256117">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -178,14 +173,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="295">
+                <state relative-caret-position="487">
                   <caret line="228" column="31" selection-start-line="228" selection-start-column="31" selection-end-line="228" selection-end-column="31" />
                   <folding>
                     <element signature="e#8#55#0#PHP" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -256,14 +260,23 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="275" column="61" selection-start-line="275" selection-start-column="61" selection-end-line="275" selection-end-column="61" />
+                <state relative-caret-position="293">
+                  <caret line="278" column="7" lean-forward="true" selection-start-line="278" selection-start-column="7" selection-end-line="278" selection-end-column="7" />
                   <folding>
                     <element signature="e#54#136#0#PHP" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Layout.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1026">
+                  <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
                 </state>
               </provider>
             </entry>
@@ -281,8 +294,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hmr-demo</find>
-      <find>hmr-</find>
       <find>TEMPLATE</find>
       <find>plu</find>
       <find>setEntryPreviewFormId</find>
@@ -311,6 +322,8 @@
       <find>cc</find>
       <find>getC</find>
       <find>updateDat</find>
+      <find>isS</find>
+      <find>setSp</find>
     </findStrings>
     <replaceStrings>
       <replace>Forms</replace>
@@ -382,8 +395,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js-packages/forms/src/components/CalderaForm/CalderaForms.test.js" />
-        <option value="$PROJECT_DIR$/js-packages/components/package.json" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/HorizontalForm/HorizontalForm.test.js" />
         <option value="$PROJECT_DIR$/js-packages/forms/src/HorizontalForm/HorizontalForm.story.js" />
         <option value="$PROJECT_DIR$/js-packages/components/src/components/HorizontalForm/README.md" />
@@ -433,6 +444,8 @@
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Model.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/src/Models/Layout.php" />
+        <option value="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php" />
       </list>
     </option>
   </component>
@@ -2569,7 +2582,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.MessageTest">
+  <component name="RunManager" selected="PHPUnit.LayoutTest">
+    <configuration name="LayoutTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="LayoutTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="MessageTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="MessageTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" scope="Class" />
       <method v="2" />
@@ -2586,24 +2603,20 @@
       <TestRunner class="MessageTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php" method="testSetTo" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="MockModelTest.testSet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="MockModelTest" file="$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MockModelTest.php" method="testSet" scope="Method" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="PHPUnit.MockModelTest.testSet" />
       <item itemvalue="PHPUnit.MessageTest.testSetTo" />
       <item itemvalue="PHPUnit.MessageTest.testSetBcc" />
       <item itemvalue="PHPUnit.MessageTest" />
       <item itemvalue="PHPUnit.MessageTest.testGetPdf" />
+      <item itemvalue="PHPUnit.LayoutTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.LayoutTest" />
         <item itemvalue="PHPUnit.MessageTest" />
         <item itemvalue="PHPUnit.MessageTest.testGetPdf" />
         <item itemvalue="PHPUnit.MessageTest.testSetBcc" />
         <item itemvalue="PHPUnit.MessageTest.testSetTo" />
-        <item itemvalue="PHPUnit.MockModelTest.testSet" />
       </list>
     </recent_temporary>
   </component>
@@ -2665,17 +2678,11 @@
       <workItem from="1549150228688" duration="730000" />
       <workItem from="1549282375534" duration="916000" />
       <workItem from="1549397008682" duration="360000" />
-      <workItem from="1549661365539" duration="7714000" />
+      <workItem from="1549661365539" duration="7966000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MessageTest - 2019.02.09 at 13h 56m 25s.xml">
-      <configuration name="MessageTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="MessageTest - 2019.02.09 at 13h 56m 46s.xml">
-      <configuration name="MessageTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="MessageTest - 2019.02.09 at 14h 06m 10s.xml">
       <configuration name="MessageTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -2700,9 +2707,15 @@
     <history-entry file="MessageTest - 2019.02.09 at 14h 08m 49s.xml">
       <configuration name="MessageTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="MessageTest - 2019.02.09 at 14h 09m 01s.xml">
+      <configuration name="MessageTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="LayoutTest - 2019.02.09 at 14h 12m 59s.xml">
+      <configuration name="LayoutTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="661602000" />
+    <option name="totallyTimeSpent" value="661854000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3303,20 +3316,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/pluggable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="536" column="36" lean-forward="true" selection-start-line="536" selection-start-column="36" selection-end-line="536" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -3647,21 +3646,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="275" column="61" selection-start-line="275" selection-start-column="61" selection-end-line="275" selection-end-column="61" />
+        <state relative-caret-position="293">
+          <caret line="278" column="7" lean-forward="true" selection-start-line="278" selection-start-column="7" selection-end-line="278" selection-end-column="7" />
           <folding>
             <element signature="e#54#136#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Models/Layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/MessageTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="487">
           <caret line="228" column="31" selection-start-line="228" selection-start-column="31" selection-end-line="228" selection-end-column="31" />
           <folding>
             <element signature="e#8#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/messaging/tests/Unit/Models/LayoutTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
     </entry>
