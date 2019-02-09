@@ -39,9 +39,19 @@ abstract class IteratableCollection implements Arrayable, \Iterator
 	public function count(): int
 	{
 		$key = $this->storeKey();
+		if( ! $this->isCountable($this->$key)){
+			return 0;
+		}
 		return count($this->$key);
 	}
 
+	protected function isCountable( $var ) :bool {
+		return ( is_array( $var )
+			|| $var instanceof \Countable
+			|| $var instanceof \SimpleXMLElement
+			|| $var instanceof \ResourceBundle
+		);
+	}
 	/**
 	 * Check if collection is empty
 	 *
@@ -55,12 +65,6 @@ abstract class IteratableCollection implements Arrayable, \Iterator
 		return false;
 	}
 
-	/**
-	 * Add an empty item to collection
-	 *
-	 * @return static
-	 */
-	abstract public function addEmpty();
 
 	/**
 	 * Increase size of collection
@@ -134,6 +138,21 @@ abstract class IteratableCollection implements Arrayable, \Iterator
 	public function jsonSerialize()
 	{
 		return $this->toArray();
+	}
+
+	abstract protected function getItems(): array;
+
+	/** @inheritdoc */
+	public function toArray(): array
+	{
+		$array = [];
+		if (!$this->empty()) {
+			foreach ($this->getItems() as $item) {
+				$array[] = $item->toArray();
+			}
+		}
+
+		return $array;
 	}
 
 

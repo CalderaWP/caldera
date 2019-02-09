@@ -59,6 +59,10 @@ class Recipients extends IteratableCollection implements RecipientsContracts
 		return parent::current();
 	}
 
+	protected function getItems(): array
+	{
+		return $this->recipients ? $this->recipients : [];
+	}
 
 
 }

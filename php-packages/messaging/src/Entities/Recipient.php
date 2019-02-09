@@ -25,21 +25,14 @@ class Recipient extends Entity implements RecipientContract
 		$this->name = $name;
 	}
 
-	/**
-	 * Factory from array with email index required and name key recommended.
-	 *
-	 * @param $array
-	 *
-	 * @return RecipientContract
-	 */
-	public static function fromArray( array  $array )
+
+	public static function fromArray(array $items): Entity
 	{
-		$obj = new static( $array[ 'email' ] );
-		if( isset( $array[ 'name' ] ) ){
-			return $obj->setName( $array[ 'name' ] );
+		$obj = new static( $items[ 'email' ] );
+		if( isset( $items[ 'name' ] ) ){
+			return $obj->setName( $items[ 'name' ] );
 		}
 		return $obj;
-
 	}
 
 	/** @inheritdoc */
