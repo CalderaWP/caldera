@@ -109,7 +109,7 @@ class MessageTest extends \calderawp\caldera\Http\Tests\Unit\UnitTestCase
 	public function testGetEntryData()
 	{
 		$message = new Message();
-		$data = [];
+		$data = Mockery::mock(\calderawp\caldera\Messaging\Entities\EntryData::class);
 		$message->setEntryData($data);
 		$this->assertEquals($data, $message->getEntryData());
 	}
@@ -117,9 +117,10 @@ class MessageTest extends \calderawp\caldera\Http\Tests\Unit\UnitTestCase
 	public function testSetEntryData()
 	{
 		$message = new Message();
+		$data = Mockery::mock(\calderawp\caldera\Messaging\Entities\EntryData::class);
 
-		$message->setEntryData([]);
-		$this->assertAttributeEquals([], 'entryData', $message);
+		$message->setEntryData($data);
+		$this->assertAttributeEquals($data, 'entryData', $message);
 	}
 
 	public function testGetAttachments()
@@ -288,5 +289,32 @@ class MessageTest extends \calderawp\caldera\Http\Tests\Unit\UnitTestCase
 		$this->assertEquals($updatedAt, $message->get( 'updatedAt' ) );
 		$this->assertEquals($timestampUpdated, $message->toArray()['updatedAt']);
 
+	}
+
+	public function testAddRecipient(){
+		$message = new Message();
+		$message->addRecipient( 'to', 'foo@name.com', 'name' );
+		$this->assertEquals('foo@name.com', $message->getTo()->toArray()[0]['email']);
+		$message->addRecipient( 'to', 'foo2@name.com', 'name' );
+		$this->assertEquals('foo@name.com', $message->getTo()->toArray()[0]['email']);
+		$this->assertEquals('foo2@name.com', $message->getTo()->toArray()[1]['email']);
+
+		$message = new Message();
+		$message->addRecipient( 'reply', 'foo@name.com', 'name' );
+		$this->assertEquals('foo@name.com', $message->getReply()->toArray()['email']);
+
+		$message = new Message();
+		$message->addRecipient( 'cc', 'foo@name.com', 'name' );
+		$this->assertEquals('foo@name.com', $message->getCc()->toArray()[0]['email']);
+		$message->addRecipient( 'cc', 'foo2@name.com', 'name' );
+		$this->assertEquals('foo@name.com', $message->getCc()->toArray()[0]['email']);
+		$this->assertEquals('foo2@name.com', $message->getCc()->toArray()[1]['email']);
+
+		$message = new Message();
+		$message->addRecipient( 'bcc', 'foo@name.com', 'name' );
+		$this->assertEquals('foo@name.com', $message->getBcc()->toArray()[0]['email']);
+		$message->addRecipient( 'bcc', 'foo2@name.com', 'name' );
+		$this->assertEquals('foo@name.com', $message->getBcc()->toArray()[0]['email']);
+		$this->assertEquals('foo2@name.com', $message->getBcc()->toArray()[1]['email']);
 	}
 }

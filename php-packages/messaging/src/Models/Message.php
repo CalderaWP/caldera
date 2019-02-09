@@ -5,9 +5,11 @@ namespace calderawp\caldera\Messaging\Models;
 
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientContract as Recipient;
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientsContracts as Recipients;
+use calderawp\caldera\Messaging\Entities\EntryData;
 
 class Message extends Model
 {
+
 	/** @var @int */
 	protected $id;
 	/** @var \DateTime */
@@ -36,7 +38,7 @@ class Message extends Model
 	protected $subject;
 	/** @var bool */
 	protected $spammed;
-	/** @var array */
+	/** @var EntryData */
 	protected $entryData;
 	/** @var array */
 	protected $attachments;
@@ -61,6 +63,39 @@ class Message extends Model
 	public function getId()
 	{
 		return $this->id;
+	}
+
+	public function addRecipient(string$type, string$email, string $name = null): Message
+	{
+
+		$array = [
+			'email' => $email
+		];
+		if( $name){
+			$array['name']= $name;
+		}
+		$recipient = \calderawp\caldera\Messaging\Entities\Recipient::fromArray($array);
+		switch ($type){
+			case 'to':
+				$recipients = $this->getTo();
+				$recipients->addRecipient($recipient);
+				$this->setTo($recipients);
+				break;
+			case 'reply':
+				$this->setReply($recipient);
+				break;
+			case 'cc':
+				$this->setCc($this->getCc()->addRecipient($recipient));
+				break;
+			case 'bcc':
+				$this->setBcc($this->getBcc()->addRecipient($recipient));
+				break;
+			default:
+				return $this;
+
+		}
+
+		return $this;
 	}
 
 	/**
@@ -212,7 +247,7 @@ class Message extends Model
 	 */
 	public function getTo(): Recipients
 	{
-		return $this->to;
+		return isset($this->to) ? $this->to : new \calderawp\caldera\Messaging\Entities\Recipients();
 	}
 
 	/**
@@ -231,7 +266,7 @@ class Message extends Model
 	 */
 	public function getReply(): Recipient
 	{
-		return $this->reply;
+		return isset($this->reply) ? $this->reply : new \calderawp\caldera\Messaging\Entities\Recipient('');
 	}
 
 	/**
@@ -250,7 +285,7 @@ class Message extends Model
 	 */
 	public function getCc(): Recipients
 	{
-		return $this->cc;
+		return  ($this->cc) ? $this->cc : new \calderawp\caldera\Messaging\Entities\Recipients();
 	}
 
 	/**
@@ -269,7 +304,7 @@ class Message extends Model
 	 */
 	public function getBcc(): Recipients
 	{
-		return $this->bcc;
+		return  ($this->bcc) ? $this->bcc : new \calderawp\caldera\Messaging\Entities\Recipients();
 	}
 
 	/**
@@ -322,19 +357,19 @@ class Message extends Model
 	}
 
 	/**
-	 * @return array
+	 * @return EntryData
 	 */
-	public function getEntryData(): array
+	public function getEntryData(): EntryData
 	{
 		return $this->entryData;
 	}
 
 	/**
-	 * @param array $entryData
+	 * @param EntryData $entryData
 	 *
 	 * @return Message
 	 */
-	public function setEntryData(array $entryData): Message
+	public function setEntryData(EntryData $entryData): Message
 	{
 		$this->entryData = $entryData;
 		return $this;
