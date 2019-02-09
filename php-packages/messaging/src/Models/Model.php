@@ -4,6 +4,7 @@
 namespace calderawp\caldera\Messaging\Models;
 
 use calderawp\caldera\Messaging\Traits\SimpleRepository;
+use calderawp\DB\Time;
 
 /**
  * Class Model
@@ -21,7 +22,7 @@ abstract class Model
 		$obj = new static();
 		foreach ( $obj->getAllowedProperties() as $property ){
 			if( isset($items[$property])){
-				$obj->$property = $items[$property];
+				$obj->set($property, $items[$property]);
 			}
 		}
 		return $obj;
@@ -35,26 +36,6 @@ abstract class Model
 		return array_keys($vars);
 	}
 
-	/** @inheritdoc */
-	public function __get($name)
-	{
-		if ($this->has($name)) {
-			return $this->$name;
-		}
-
-		return null;
-	}
-
-	/** @inheritdoc */
-
-	public function __set($name, $value)
-	{
-		if ($this->allowed($name)) {
-			$this->$name = $value;
-		}
-
-		return $this;
-	}
 
 	/**
 	 * Check if has a stored value
@@ -96,5 +77,17 @@ abstract class Model
 
 		return $default;
 	}
+
+	public function set(string $name, $value)
+	{
+		if( $this->allowed($name)){
+			if( in_array($name, ['createdAt', 'updatedAt']) && is_string($value)){
+				$value = Time::dateTimeFromMysql($value);
+			}
+			$this->$name = $value;
+		}
+		return $this;
+	}
+
 
 }

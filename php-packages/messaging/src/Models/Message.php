@@ -2,6 +2,7 @@
 
 
 namespace calderawp\caldera\Messaging\Models;
+
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientContract as Recipient;
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientsContracts as Recipients;
 
@@ -15,13 +16,13 @@ class Message extends Model
 	protected $updatedAt;
 	/** @var @int */
 	protected $account;
-	/** @var @int */
+	/** @var Layout */
 	protected $layout;
 	/** @var @string */
 	protected $content;
 	/** @var @bool */
 	protected $pdf;
-	/** @var @int */
+	/** @var Layout */
 	protected $pdfLayout;
 	/** @var Recipients */
 	protected $to;
@@ -39,6 +40,20 @@ class Message extends Model
 	protected $entryData;
 	/** @var array */
 	protected $attachments;
+
+
+	public static function fromArray(array $items): Model
+	{
+		$create = function( $key, $items ){
+			if( isset($items[ $key]) && is_array( $items[$key])){
+				$items[ $key ] = Layout::fromArray($items[$key]);
+			}
+			return $items;
+		};
+		$items = $create('layout', $items );
+		$items = $create('pdfLayout', $items );
+		return parent::fromArray($items);
+	}
 
 	/**
 	 * @return mixed
@@ -100,7 +115,7 @@ class Message extends Model
 	/**
 	 * @return int
 	 */
-	public function getAccount() : int
+	public function getAccount(): int
 	{
 		return $this->account;
 	}
@@ -110,16 +125,16 @@ class Message extends Model
 	 *
 	 * @return Message
 	 */
-	public function setAccount(int $account) : Message
+	public function setAccount(int $account): Message
 	{
 		$this->account = $account;
 		return $this;
 	}
 
 	/**
-	 * @return int
+	 * @return Layout
 	 */
-	public function getLayout() : int
+	public function getLayout(): Layout
 	{
 		return $this->layout;
 	}
@@ -138,7 +153,7 @@ class Message extends Model
 	/**
 	 * @return string
 	 */
-	public function getContent() : string
+	public function getContent(): string
 	{
 		return is_string($this->content) ? $this->content : '';
 	}
@@ -157,9 +172,9 @@ class Message extends Model
 	/**
 	 * @return bool
 	 */
-	public function getPdf() : bool
+	public function getPdf(): bool
 	{
-		return ! is_null($this->pdf) ? (bool) $this->pdf : false;
+		return !is_null($this->pdf) ? (bool)$this->pdf : false;
 	}
 
 	/**
@@ -174,19 +189,19 @@ class Message extends Model
 	}
 
 	/**
-	 * @return int
+	 * @return Layout
 	 */
-	public function getPdfLayout() : int
+	public function getPdfLayout(): Layout
 	{
 		return $this->pdfLayout;
 	}
 
 	/**
-	 * @param int $pdfLayout
+	 * @param Layout $pdfLayout
 	 *
 	 * @return Message
 	 */
-	public function setPdfLayout($pdfLayout)
+	public function setPdfLayout(Layout $pdfLayout)
 	{
 		$this->pdfLayout = $pdfLayout;
 		return $this;
@@ -292,7 +307,7 @@ class Message extends Model
 	 */
 	public function isSpammed(): bool
 	{
-		return ! is_null($this->spammed) ? (bool) $this->spammed : false;
+		return !is_null($this->spammed) ? (bool)$this->spammed : false;
 	}
 
 	/**
@@ -343,7 +358,6 @@ class Message extends Model
 		$this->attachments = $attachments;
 		return $this;
 	}
-
 
 
 }

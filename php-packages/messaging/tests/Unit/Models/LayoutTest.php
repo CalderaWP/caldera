@@ -33,8 +33,10 @@ class LayoutTest extends TestCase
 	public function testGetAccount()
 	{
 		$layout = new Layout();
-		$layout->setAccount(7);
-		$this->assertEquals(7, $layout->getAccount());
+
+		$account = 7;
+		$layout->setAccount($account);
+		$this->assertEquals($account, $layout->getAccount());
 	}
 
 	public function testGetConfig()
@@ -49,7 +51,41 @@ class LayoutTest extends TestCase
 	public function testSetId()
 	{
 		$layout = new Layout();
-		$layout->setId(7);
-		$this->assertEquals(7, $layout->getId());
+		$id = 7;
+
+		$layout->setId($id);
+		$this->assertEquals($id, $layout->getId());
+	}
+
+	public function testToArray()
+	{
+		$layout = new Layout();
+		$id = 7;
+		$config = [];
+		$account = 1;
+		$layout->setId($id)->setConfig($config)->setAccount($account);
+
+		$this->assertEquals($id, $layout->getId());
+		$this->assertEquals($config, $layout->getConfig());
+		$this->assertEquals($account, $layout->getAccount());
+
+
+	}
+
+	public function testFromArray()
+	{
+
+		$id = 7;
+		$config = [];
+		$account = 1;
+		$layout = Layout::fromArray([
+			'id' => $id,
+			'config' => $config,
+			'account' => $account
+		]);
+
+		$this->assertEquals($id, $layout->getId());
+		$this->assertEquals($config, $layout->getConfig());
+		$this->assertEquals($account, $layout->getAccount());
 	}
 }

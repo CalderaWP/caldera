@@ -4,6 +4,8 @@
 namespace calderawp\caldera\Messaging\Traits;
 
 
+use calderawp\DB\Time;
+
 trait SimpleRepository
 {
 
@@ -17,22 +19,14 @@ trait SimpleRepository
 	/** @inheritdoc */
 	public function __get($name)
 	{
-		if ($this->has($name)) {
-			return $this->attributes[ $name ];
-		}
-
-		return null;
+		return $this->get($name,null);
 	}
 
 	/** @inheritdoc */
 
 	public function __set($name, $value)
 	{
-		if ($this->allowed($name)) {
-			$this->attributes[ $name ] = $value;
-		}
-
-		return $this;
+		return $this->set($name,$value);
 	}
 
 	/**
@@ -76,6 +70,15 @@ trait SimpleRepository
 		return $default;
 	}
 
+	public function set(string $name, $value )
+	{
+		if ($this->allowed($name)) {
+			$this->attributes[ $name ] = $value;
+		}
+		return$this;
+
+	}
+
 	/**
 	 * Get the allowed properites
 	 *
@@ -92,7 +95,14 @@ trait SimpleRepository
 	{
 		$array = [];
 		foreach ($this->getAllowedProperties() as $property) {
-			$array[ $property ] = $this->get($property);
+			$value = $this->get($property);
+			if( is_object( $value ) && method_exists( $value, 'toArray')){
+				$value = $value->toArray();
+			}
+			if( in_array($property, ['createdAt', 'updatedAt']) && is_object($value) ){
+				$value = $value->format( Time::FORMAT );
+			}
+			$array[ $property ] = $value;
 		}
 
 		return $array;
