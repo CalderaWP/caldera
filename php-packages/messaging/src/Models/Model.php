@@ -34,6 +34,7 @@ abstract class Model
 	{
 		$vars = get_object_vars($this);
 		unset( $vars['attributes']);
+		unset( $vars['schema']);
 		return array_keys($vars);
 	}
 

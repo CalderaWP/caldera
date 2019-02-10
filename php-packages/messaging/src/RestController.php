@@ -2,11 +2,11 @@
 
 
 namespace calderawp\caldera\Messaging;
-use calderawp\caldera\Messaging\Contracts\ControllerContract;
+use calderawp\caldera\Messaging\Contracts\RestControllerContract;
 use calderawp\interop\Contracts\HttpRequestContract as Request;
 
 
-abstract class Controller implements ControllerContract
+abstract class RestController implements RestControllerContract
 {
 
 

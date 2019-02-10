@@ -6,14 +6,14 @@ namespace calderawp\caldera\Messaging\Models\Transformers;
 
 use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\Messaging\Models\Message as MessageModel;
+use calderawp\caldera\Messaging\Models\Rest\Endpoint;
+use calderawp\caldera\restApi\Route;
 use calderawp\interop\Contracts\HttpRequestContract as Request;
 use calderawp\interop\Contracts\HttpResponseContract as Response;
-use calderawp\interop\Contracts\Rest\Endpoint;
-use calderawp\interop\Contracts\Rest\Route;
 use calderawp\interop\Contracts\Rest\RestRequestContract;
 use calderawp\interop\Contracts\Rest\RestResponseContract;
 use calderawp\interop\Traits\Rest\ProvidesRestEndpoint;
-use calderawp\caldera\Messaging\Contracts\ControllerContract as Controller;
+use calderawp\caldera\Messaging\Contracts\RestControllerContract as Controller;
 
 abstract class Transformer
 {
@@ -48,15 +48,14 @@ abstract class Transformer
 		return $this->factory($response->getData());
 	}
 
-	public function createRoute(Model $model): Endpoint
+	public function createRoute(Model $model): Route
 	{
 
-
-		$route = new class implements Route
+		$route = new class extends Route
 		{
 			private $endpoints;
 
-			/**
+			/**z
 			 * @inheritDoc
 			 */
 			public function addEndpoint(Endpoint $endpoint): Route
@@ -84,6 +83,7 @@ abstract class Transformer
 				 ] as $httpMethod) {
 
 			$route->addEndpoint($this->endpointFactory($model, $this->getController(), $httpMethod));
+
 		}
 
 		return $route;
@@ -97,24 +97,9 @@ abstract class Transformer
 	 */
 	protected function endpointFactory(Model $model, $controller, string $httpMethod)
 	{
-		$endpoint = new class($model, $controller, $httpMethod) implements Endpoint
+		$endpoint = new class($model, $controller, $httpMethod) extends Endpoint
 		{
 			use ProvidesRestEndpoint;
-
-			/**
-			 * @var Model
-			 */
-			private $model;
-			/** @var Controller */
-			private $controller;
-			private $httpMethod;
-
-			public function __construct(Model $model, Controller $controller, string $httpMethod)
-			{
-				$this->model = $model;
-				$this->controller = $controller;
-				$this->httpMethod = $httpMethod;
-			}
 
 			public function getHttpMethod(): string
 			{
@@ -124,64 +109,7 @@ abstract class Transformer
 				return $this->httpMethod;
 			}
 
-			public function getUri(): string
-			{
-				if( in_array( $this->httpMethod, [ 'GET', 'POST', 'DELETE'])){
-					$uri = $this->uri;
-					return "$uri/<(?P<id>\d+)>";
-				}
-				return $this->getUri();
-			}
 
-			public function getArgs(): array
-			{
-				return $this->model->getSchema();
-			}
-
-
-			public function handleRequest(RestRequestContract $request): RestResponseContract
-			{
-				switch ($this->httpMethod) {
-					case 'LIST':
-						$response = $this->controller->list($request);
-						break;
-					case 'GET':
-						$response = $this->controller->get($request);
-						break;
-					case 'POST':
-						$response = $this->controller->update($request);
-						break;
-					case 'PUT':
-						$response = $this->controller->create($request);
-						break;
-					case 'DELETE':
-						$response = $this->controller->delete($request);
-						break;
-
-					default:
-						$response = new \calderawp\caldera\restApi\Response();
-				}
-				return $response;
-
-			}
-
-			public function authorizeRequest(RestRequestContract $request): bool
-			{
-				try {
-					$this->controller->authorizeRequest($request);
-				} catch (\Exception $e) {
-					return (new \calderawp\caldera\restApi\Response())
-						->setStatus($e->getCode())
-						->setData(['message' => $e->getMessage()])
-						->setHttpMethod($this->getHttpMethod());
-				}
-				return true;
-			}
-
-			public function getToken(RestRequestContract $request): string
-			{
-				return '';
-			}
 
 		};
 		return $endpoint;

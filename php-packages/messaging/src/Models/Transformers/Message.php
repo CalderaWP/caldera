@@ -4,7 +4,7 @@
 namespace calderawp\caldera\Messaging\Models\Transformers;
 
 
-use calderawp\caldera\Messaging\Contracts\ControllerContract as Controller;
+use calderawp\caldera\Messaging\Contracts\RestControllerContract as Controller;
 use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\Messaging\Models\Message as MessageModel;
 

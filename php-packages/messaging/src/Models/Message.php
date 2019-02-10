@@ -43,17 +43,91 @@ class Message extends Model
 	/** @var array */
 	protected $attachments;
 
+	public function getSchema(): array
+	{
+
+		$schema = parent::getSchema();
+		$reqInt = function (string $description) {
+			return [
+				'type' => 'integer',
+				'required' => true,
+				'description' => $description
+			];
+		};
+		$defaultInt = function (int $default,string $description) use($reqInt) {
+			return
+				[
+					'type' => 'integer',
+					'required' => false,
+					'description' => $description,
+					'default' => $default
+				];
+
+		};
+		$recipients = function (string $description,bool$required){
+			return [
+				'type' => 'array',
+				'description' => $description,
+				'required' => $required,
+			];
+		};
+		$requiredString = function (string $description){
+			return [
+				'type' => 'array',
+				'description' => $description,
+				'required' => true,
+			];
+		};
+		$schema[ 'id' ] = $reqInt('Unique Identifier');
+		$schema[ 'layout' ] = $defaultInt(0, 'Layout for email message');
+		$schema[ 'pdfLayout' ] = $defaultInt(0, 'Layout for pdf');
+		$schema[ 'createdAt' ] = [
+			'type' => 'datetime',
+			'required' => false,
+			'description' => 'Time message created at',
+			'default' => new \DateTimeImmutable()
+		];
+		$schema[ 'updatedAt' ] = [
+			'type' => 'datetime',
+			'required' => false,
+			'description' => 'Time message updated at',
+			'default' => new \DateTimeImmutable()
+		];
+		$schema[ 'to' ] = $recipients('Primary Recipients of message', true );
+		$schema[ 'reply'] = [
+			'type' => 'string',
+			'required' => true,
+			'description' => 'The message reply to',
+		];
+		$schema[ 'cc' ] = $recipients('CC Recipients of message', true );
+		$schema[ 'bcc' ] = $recipients('BCC Recipients of message', true );
+		$schema[ 'spammed' ] = [
+			'type' => 'boolean',
+			'description' => 'Has message been marked spam?'
+		];
+		$schema[ 'content' ] = $requiredString( 'Message Content' );
+		$schema[ 'subject' ] = $requiredString( 'Message Subject' );
+		$schema[ 'entryData' ]= [
+			'type' => 'array',
+			'description' => 'Entry data',
+			'required' => true,
+		];
+
+		return $schema;
+
+	}
+
 
 	public static function fromArray(array $items): Model
 	{
-		$create = function( $key, $items ){
-			if( isset($items[ $key]) && is_array( $items[$key])){
-				$items[ $key ] = Layout::fromArray($items[$key]);
+		$create = function ($key, $items) {
+			if (isset($items[ $key ]) && is_array($items[ $key ])) {
+				$items[ $key ] = Layout::fromArray($items[ $key ]);
 			}
 			return $items;
 		};
-		$items = $create('layout', $items );
-		$items = $create('pdfLayout', $items );
+		$items = $create('layout', $items);
+		$items = $create('pdfLayout', $items);
 		return parent::fromArray($items);
 	}
 
@@ -65,17 +139,17 @@ class Message extends Model
 		return $this->id;
 	}
 
-	public function addRecipient(string$type, string$email, string $name = null): Message
+	public function addRecipient(string $type, string $email, string $name = null): Message
 	{
 
 		$array = [
-			'email' => $email
+			'email' => $email,
 		];
-		if( $name){
-			$array['name']= $name;
+		if ($name) {
+			$array[ 'name' ] = $name;
 		}
 		$recipient = \calderawp\caldera\Messaging\Entities\Recipient::fromArray($array);
-		switch ($type){
+		switch ($type) {
 			case 'to':
 				$recipients = $this->getTo();
 				$recipients->addRecipient($recipient);
@@ -285,7 +359,7 @@ class Message extends Model
 	 */
 	public function getCc(): Recipients
 	{
-		return  ($this->cc) ? $this->cc : new \calderawp\caldera\Messaging\Entities\Recipients();
+		return ($this->cc) ? $this->cc : new \calderawp\caldera\Messaging\Entities\Recipients();
 	}
 
 	/**
@@ -304,7 +378,7 @@ class Message extends Model
 	 */
 	public function getBcc(): Recipients
 	{
-		return  ($this->bcc) ? $this->bcc : new \calderawp\caldera\Messaging\Entities\Recipients();
+		return ($this->bcc) ? $this->bcc : new \calderawp\caldera\Messaging\Entities\Recipients();
 	}
 
 	/**
