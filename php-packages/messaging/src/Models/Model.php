@@ -15,7 +15,8 @@ abstract class Model
 {
 
 	use SimpleRepository;
-
+	/** @var array */
+	private $schema;
 
 	public static function fromArray(array $items ): Model
 	{
@@ -35,6 +36,31 @@ abstract class Model
 		unset( $vars['attributes']);
 		return array_keys($vars);
 	}
+
+	/** @inheritdoc */
+	public function getSchema():array {
+		if( is_array($this->schema)){
+			return $this->schema;
+		}
+		$schema = [];
+		foreach ($this->getAllowedProperties()as $allowedProperty ){
+			$schema[$allowedProperty] = [];
+		}
+		return $schema;
+
+	}
+
+	/**
+	 * @param array $schema
+	 *
+	 * @return Model
+	 */
+	public function setSchema(array $schema): Model
+	{
+		$this->schema = $schema;
+		return $this;
+	}
+
 
 
 	/**
