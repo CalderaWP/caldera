@@ -73,6 +73,11 @@ class RestApi
 		return $this;
 	}
 
+	public function initProApi() : RestApi
+	{
+		$route =$this->getRestApiModule()->getRoute(\calderawp\caldera\Messaging\Models\Rest\MessageRoute::class);
+		$this->registerRouteWithWordPress($route);
+	}
 
 	public function initAuth(string $siteUrl = '' ) : RestApi
 	{

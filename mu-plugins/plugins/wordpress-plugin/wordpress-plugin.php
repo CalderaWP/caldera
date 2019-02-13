@@ -16,9 +16,12 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
 	add_action('rest_api_init', function () use ($module) {
 		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route'))
 			->initFormsApi()
+			//initProApi() //@TODO finish this
 			->initAuth( );//need to update
 
 	});
+
+
 
 	//Allow our JWT-authentication to set WordPress user -> BTW This is not correct yet.
 	add_filter('determine_current_user', [$module->getRestApiModule()->getWpRestApiAuth(),'determineUser' ]);
@@ -38,6 +41,8 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
 			$module->getCore()->getEvents()->getHooks(),
 			$dataBase->getDataSources()
 		))->addHooks($module->getCore()->getEvents()->getHooks());
+
+
 	});
 
 });

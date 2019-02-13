@@ -27,7 +27,15 @@ class CalderaCalderaMessagingTest extends UnitTestCase
 	{
 		$container = \Mockery::mock(ServiceContainer::class );
 		$core = $this->core();
-		new CalderaCalderaMessaging($core,$container );
+		$module = new CalderaCalderaMessaging($core,$container );
 		$this->assertIsObject($core->getRestApi()->getRoute(MessageRoute::class));
+		$this->assertEquals($module,$core->getModule(CalderaCalderaMessaging::IDENTIFIER));
+	}
+
+	public function testGetRouter(){
+		$container = \Mockery::mock(ServiceContainer::class );
+		$core = $this->core();
+		$module = new CalderaCalderaMessaging($core,$container );
+		$this->assertIsObject($module->getMessageRoute());
 	}
 }

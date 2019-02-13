@@ -4,6 +4,7 @@
 namespace calderawp\caldera\Messaging;
 use calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable;
 use calderawp\caldera\Messaging\Models\Message;
+use calderawp\caldera\Messaging\Models\Rest\MessageRoute;
 use calderawp\CalderaContainers\Service\Container as ServiceContainer;
 use calderawp\interop\Contracts\CalderaModule;
 use calderawp\interop\Module;
@@ -33,7 +34,14 @@ class CalderaCalderaMessaging extends Module implements CalderaMessagingContract
 		$transformer->setController(new class($dataSource,$handleAuth) extends RestController{});
 		$route = $transformer->createRoute( new Message(),$this );
 		$this->getCore()->getRestApi()->addRoute($route );
+		$this->core->addModule($this);
+
 		return $this;
+	}
+
+	public function getMessageRoute(): MessageRoute
+	{
+		return $this->core->getRestApi()->getRoute(MessageRoute::class);
 	}
 
 
