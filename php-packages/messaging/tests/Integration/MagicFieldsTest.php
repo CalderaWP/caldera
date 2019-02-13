@@ -1,5 +1,6 @@
 <?php
 
+namespace calderawp\caldera\Messaging\Tests\Integration;
 
 use calderawp\caldera\Messaging\Message\MagicFields;
 
@@ -10,7 +11,7 @@ class MagicFieldsTest extends \calderawp\caldera\Messaging\Tests\Unit\UnitTestCa
 	{
 		$mockData = $this->entryData();
 		$entryData = \calderawp\caldera\Messaging\Entities\EntryData::fromArray($mockData);
-		$message = Mockery::mock(\calderawp\caldera\Messaging\Models\Message::class);
+		$message = \Mockery::mock(\calderawp\caldera\Messaging\Models\Message::class);
 		$message->shouldReceive( 'getEntryData')->andReturn($entryData);
 		$content = 'Hello %first_name%';
 		$magic = new MagicFields($message);

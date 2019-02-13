@@ -5,7 +5,14 @@
 use \calderawp\caldera\Forms\Entry\Entry;
 
 
+/**
+ * Do stuff after plugin loads
+ */
 add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin $module) {
+
+	/**
+	 * Attach our REST API endpoint to WordPress REST API
+	 */
 	add_action('rest_api_init', function () use ($module) {
 		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route'))
 			->initFormsApi()
@@ -13,24 +20,31 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
 
 	});
 
-
-
+	//Allow our JWT-authentication to set WordPress user -> BTW This is not correct yet.
 	add_filter('determine_current_user', [$module->getRestApiModule()->getWpRestApiAuth(),'determineUser' ]);
 
+	/**
+	 * Attach to other WordPress APIs
+	 */
 	add_action('init', function () use ($module){
+		//Setup our Database API
 		$dataBase = new \calderawp\caldera\WordPressPlugin\Database(
 			(new \calderawp\DB\Tables())
 		);
 		$dataBase->formsDatabase();
+
+		//Allow our event system to trigger/ be triggered by apply_filters()
 		(new \calderawp\caldera\WordPressPlugin\Filters\EntryDataFilters(
 			$module->getCore()->getEvents()->getHooks(),
 			$dataBase->getDataSources()
 		))->addHooks($module->getCore()->getEvents()->getHooks());
 	});
 
-	//include_once  __DIR__ . '/test.php';
 });
 
+/**
+ * When plugins are done loading, start this plugin's module and register with Caldera app.
+ */
 add_action('plugins_loaded', function () {
 	$module = new \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin(\caldera(),
 		new \calderawp\CalderaContainers\Service\Container());
@@ -39,35 +53,17 @@ add_action('plugins_loaded', function () {
 });
 
 
-
+/**
+ * Set a breakpoint here when debugging REST API
+ */
 add_filter( 'rest_pre_serve_request', function( $served, $result, $request) {
 	return $served;
-}, 10, 3 );
+}, 11, 3 );
 
-
+/**
+ * Set a breakpoint here when debugging authentication
+ */
 add_filter( 'determine_current_user', function($user ){
-	//'HTTP_AUTHORIZATION';
+	$token = isset( $_SERVER['HTTP_AUTHORIZATION' ] ) ? $_SERVER['HTTP_AUTHORIZATION' ] : null;
 	return $user;
-} );
-add_action( '-rest_api_init', function () {
-	register_rest_field( ['page'], 'wpStylesLoaderUrl', array(
-		'get_callback' => function(  ) {
-			//Find the CSS
-			do_action('wp_enqueue_scripts' );
-
-			$loaderUrl = admin_url('load-styles.php' );
-			ob_start();
-			$header = wp_styles()->do_items(false, 0);
-			$html = ob_get_clean(); //html for style tags. Do we need this?
-			$loaderUrl .= '?c=1&load=&dir=ltr&load=' . implode($header, ',');
-			//Can we prime cache with this?
-			return $loaderUrl;
-
-		},
-		'update_callback' => null,
-		'schema' => array(
-			'description' => __( 'WordPress style dependency loader URL.' ),
-			'type'        => 'array'
-		),
-	) );
-} );
+},25 );

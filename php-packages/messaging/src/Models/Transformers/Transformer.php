@@ -14,8 +14,9 @@ use calderawp\interop\Contracts\Rest\RestRequestContract;
 use calderawp\interop\Contracts\Rest\RestResponseContract;
 use calderawp\interop\Traits\Rest\ProvidesRestEndpoint;
 use calderawp\caldera\Messaging\Contracts\RestControllerContract as Controller;
+use calderawp\caldera\Messaging\Contracts\ModelTransformerContract;
 
-abstract class Transformer
+abstract class Transformer implements ModelTransformerContract
 {
 
 	abstract protected function getUri(): string;
@@ -24,8 +25,20 @@ abstract class Transformer
 
 	abstract protected function getHttpType(): string;
 
-	abstract protected function getController(): Controller;
+	/**
+	 * Get Controller class used to route request/responses
+	 *
+	 * @return Controller
+	 */
+	abstract public function getController(): Controller;
 
+	/**
+	 * Create a model from a REST API request
+	 *
+	 * @param Request $request Request to transform
+	 *
+	 * @return Model
+	 */
 	public function fromRequest(Request $request): Model
 	{
 		return $this->factory($request->getParams());
@@ -33,6 +46,13 @@ abstract class Transformer
 
 	}
 
+	/**
+	 * Create a request API response from current values of model
+	 *
+	 * @param Model $model Message to transform
+	 *
+	 * @return Request
+	 */
 	public function toRequest(Model $model): Request
 	{
 		$array = ['params' => $model->toArray()];
@@ -43,11 +63,25 @@ abstract class Transformer
 
 	}
 
+	/**
+	 * Create a model from a REST API response
+	 *
+	 * @param Response $response
+	 *
+	 * @return Model
+	 */
 	public function fromResponse(Response $response): Model
 	{
 		return $this->factory($response->getData());
 	}
 
+	/**
+	 * Create a REST API route for the model, using its schema
+	 *
+	 * @param Model $model
+	 *
+	 * @return Route
+	 */
 	public function createRoute(Model $model): Route
 	{
 

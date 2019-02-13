@@ -317,4 +317,10 @@ class MessageTest extends \calderawp\caldera\Http\Tests\Unit\UnitTestCase
 		$this->assertEquals('foo@name.com', $message->getBcc()->toArray()[0]['email']);
 		$this->assertEquals('foo2@name.com', $message->getBcc()->toArray()[1]['email']);
 	}
+
+	public function testGetSchema(){
+		$message = new Message();
+		$this->assertIsArray($message->getSchema());
+		$this->assertCount(count($message->getAllowedProperties()),$message->getSchema());
+	}
 }

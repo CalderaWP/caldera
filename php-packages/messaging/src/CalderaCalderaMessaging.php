@@ -5,8 +5,9 @@ namespace calderawp\caldera\Messaging;
 use calderawp\CalderaContainers\Service\Container as ServiceContainer;
 use calderawp\interop\Contracts\CalderaModule;
 use calderawp\interop\Module;
-use calderawp\caldera\Messaging\Contracts\MessagingContract;
-class Messaging extends Module implements MessagingContract
+use calderawp\caldera\Messaging\Contracts\CalderaMessagingContract;
+use calderawp\caldera\Messaging\Contracts\ModelTransformerContract;
+class CalderaCalderaMessaging extends Module implements CalderaMessagingContract
 {
 	const IDENTIFIER  = 'Messaging';
 	/**
@@ -19,7 +20,6 @@ class Messaging extends Module implements MessagingContract
 
 	public function registerServices(ServiceContainer $container): CalderaModule
 	{
-
 		return $this;
 	}
 

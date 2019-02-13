@@ -15,7 +15,7 @@ class Message extends Transformer
 		return '/messages';
 	}
 
-	protected function getController(): Controller
+	public function getController(): Controller
 	{
 		// TODO: Implement getController() method.
 	}

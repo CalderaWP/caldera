@@ -82,16 +82,16 @@ class Message extends Model
 		$schema[ 'layout' ] = $defaultInt(0, 'Layout for email message');
 		$schema[ 'pdfLayout' ] = $defaultInt(0, 'Layout for pdf');
 		$schema[ 'createdAt' ] = [
-			'type' => 'datetime',
+			'type' => 'date-time',
 			'required' => false,
 			'description' => 'Time message created at',
 			'default' => new \DateTimeImmutable()
 		];
 		$schema[ 'updatedAt' ] = [
-			'type' => 'datetime',
+			'type' => 'date-time',
 			'required' => false,
 			'description' => 'Time message updated at',
-			'default' => new \DateTimeImmutable()
+			'default' => new \DateTimeImmutable(),
 		];
 		$schema[ 'to' ] = $recipients('Primary Recipients of message', true );
 		$schema[ 'reply'] = [
