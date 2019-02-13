@@ -3,6 +3,7 @@
 
 namespace calderawp\caldera\Messaging\Models;
 
+use calderawp\caldera\Messaging\Contracts\ModelContract;
 use calderawp\caldera\Messaging\Traits\SimpleRepository;
 use calderawp\DB\Time;
 
@@ -11,14 +12,14 @@ use calderawp\DB\Time;
  *
  * Should be using calderaw/interop Model. This is a temporary bridge while migrating in Laravel models
  */
-abstract class Model
+abstract class Model implements ModelContract
 {
 
 	use SimpleRepository;
 	/** @var array */
 	private $schema;
 
-	public static function fromArray(array $items ): Model
+	public static function fromArray(array $items ): ModelContract
 	{
 		$obj = new static();
 		foreach ( $obj->getAllowedProperties() as $property ){
@@ -54,9 +55,9 @@ abstract class Model
 	/**
 	 * @param array $schema
 	 *
-	 * @return Model
+	 * @return ModelContract
 	 */
-	public function setSchema(array $schema): Model
+	public function setSchema(array $schema): ModelContract
 	{
 		$this->schema = $schema;
 		return $this;

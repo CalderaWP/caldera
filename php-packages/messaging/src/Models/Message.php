@@ -3,6 +3,7 @@
 
 namespace calderawp\caldera\Messaging\Models;
 
+use calderawp\caldera\Messaging\Contracts\ModelContract;
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientContract as Recipient;
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientsContracts as Recipients;
 use calderawp\caldera\Messaging\Entities\EntryData;
@@ -118,7 +119,7 @@ class Message extends Model
 	}
 
 
-	public static function fromArray(array $items): Model
+	public static function fromArray(array $items): ModelContract
 	{
 		$create = function ($key, $items) {
 			if (isset($items[ $key ]) && is_array($items[ $key ])) {

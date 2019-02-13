@@ -4,6 +4,7 @@
 namespace calderawp\caldera\Messaging\Models\Rest;
 
 
+use calderawp\caldera\Messaging\Contracts\ModelContract;
 use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\Messaging\RestController;
 use calderawp\interop\Contracts\Rest\RestRequestContract as Request;
@@ -15,14 +16,13 @@ abstract class Endpoint implements \calderawp\interop\Contracts\Rest\Endpoint
 	use ProvidesRestEndpoint;
 
 	/**
-	 * @var Model
+	 * @var ModelContract
 	 */
 	private $model;
 	/** @var RestController */
 	private $controller;
-	private $httpMethod;
 
-	public function __construct(Model $model, RestController $controller, string $httpMethod)
+	public function __construct(ModelContract $model, RestController $controller, string $httpMethod)
 	{
 		$this->model = $model;
 		$this->controller = $controller;
@@ -69,6 +69,9 @@ abstract class Endpoint implements \calderawp\interop\Contracts\Rest\Endpoint
 				break;
 			case 'DELETE':
 				$response = $this->controller->delete($request);
+				break;
+			case 'ANONYMIZE':
+				$response = $this->controller->anonymize($request);
 				break;
 
 			default:

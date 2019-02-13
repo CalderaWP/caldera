@@ -4,6 +4,7 @@
 namespace calderawp\caldera\Messaging\Models\Transformers;
 
 
+use calderawp\caldera\Messaging\Contracts\ModelContract;
 use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\Messaging\Models\Message as MessageModel;
 use calderawp\caldera\Messaging\Models\Rest\Endpoint;
@@ -21,7 +22,7 @@ abstract class Transformer implements ModelTransformerContract
 
 	abstract protected function getUri(): string;
 
-	abstract protected function factory(array $items = []): Model;
+	abstract protected function factory(array $items = []): ModelContract;
 
 	abstract protected function getHttpType(): string;
 
@@ -37,9 +38,9 @@ abstract class Transformer implements ModelTransformerContract
 	 *
 	 * @param Request $request Request to transform
 	 *
-	 * @return Model
+	 * @return ModelContract
 	 */
-	public function fromRequest(Request $request): Model
+	public function fromRequest(Request $request): ModelContract
 	{
 		return $this->factory($request->getParams());
 
@@ -49,11 +50,11 @@ abstract class Transformer implements ModelTransformerContract
 	/**
 	 * Create a request API response from current values of model
 	 *
-	 * @param Model $model Message to transform
+	 * @param ModelContract $model Message to transform
 	 *
 	 * @return Request
 	 */
-	public function toRequest(Model $model): Request
+	public function toRequest(ModelContract $model): Request
 	{
 		$array = ['params' => $model->toArray()];
 		if ('rest' === $this->getHttpType()) {
@@ -68,9 +69,9 @@ abstract class Transformer implements ModelTransformerContract
 	 *
 	 * @param Response $response
 	 *
-	 * @return Model
+	 * @return ModelContract
 	 */
-	public function fromResponse(Response $response): Model
+	public function fromResponse(Response $response): ModelContract
 	{
 		return $this->factory($response->getData());
 	}
@@ -78,11 +79,11 @@ abstract class Transformer implements ModelTransformerContract
 	/**
 	 * Create a REST API route for the model, using its schema
 	 *
-	 * @param Model $model
+	 * @param ModelContract $model
 	 *
 	 * @return Route
 	 */
-	public function createRoute(Model $model): Route
+	public function createRoute(ModelContract $model): Route
 	{
 
 		$route = new class extends Route
@@ -124,12 +125,12 @@ abstract class Transformer implements ModelTransformerContract
 	}
 
 	/**
-	 * @param Model $model
+	 * @param ModelContract $model
 	 * @param $controller
 	 *
 	 * @return Endpoint
 	 */
-	protected function endpointFactory(Model $model, $controller, string $httpMethod)
+	protected function endpointFactory(ModelContract $model, $controller, string $httpMethod)
 	{
 		$endpoint = new class($model, $controller, $httpMethod) extends Endpoint
 		{

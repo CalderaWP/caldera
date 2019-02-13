@@ -22,34 +22,34 @@ interface ModelTransformerContract
 	 *
 	 * @param Request $request Request to transform
 	 *
-	 * @return Model
+	 * @return ModelContract
 	 */
-	public function fromRequest(Request $request): Model;
+	public function fromRequest(Request $request): ModelContract;
 
 	/**
 	 * Create a request API response from current values of model
 	 *
-	 * @param Model $model Message to transform
+	 * @param ModelContract $model Message to transform
 	 *
 	 * @return Request
 	 */
-	public function toRequest(Model $model): Request;
+	public function toRequest(ModelContract $model): Request;
 
 	/**
 	 * Create a model from a REST API response
 	 *
 	 * @param Response $response
 	 *
-	 * @return Model
+	 * @return ModelContract
 	 */
-	public function fromResponse(Response $response): Model;
+	public function fromResponse(Response $response): ModelContract;
 
 	/**
 	 * Create a REST API route for the model, using its schema
 	 *
-	 * @param Model $model
+	 * @param ModelContract $model
 	 *
 	 * @return Route
 	 */
-	public function createRoute(Model $model): Route;
+	public function createRoute(ModelContract $model): Route;
 }
