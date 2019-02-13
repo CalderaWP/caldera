@@ -7,6 +7,7 @@ use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\restApi\Route;
 use calderawp\interop\Contracts\HttpRequestContract as Request;
 use calderawp\interop\Contracts\HttpResponseContract as Response;
+use calderawp\caldera\Messaging\Contracts\CalderaMessagingContract as Module;
 
 interface ModelTransformerContract
 {
@@ -51,5 +52,5 @@ interface ModelTransformerContract
 	 *
 	 * @return Route
 	 */
-	public function createRoute(ModelContract $model): Route;
+	public function createRoute(ModelContract $model,Module $module): Route;
 }

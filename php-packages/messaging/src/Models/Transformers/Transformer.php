@@ -8,6 +8,7 @@ use calderawp\caldera\Messaging\Contracts\ModelContract;
 use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\Messaging\Models\Message as MessageModel;
 use calderawp\caldera\Messaging\Models\Rest\Endpoint;
+use calderawp\caldera\Messaging\Models\Rest\MessageRoute;
 use calderawp\caldera\restApi\Route;
 use calderawp\interop\Contracts\HttpRequestContract as Request;
 use calderawp\interop\Contracts\HttpResponseContract as Response;
@@ -16,7 +17,7 @@ use calderawp\interop\Contracts\Rest\RestResponseContract;
 use calderawp\interop\Traits\Rest\ProvidesRestEndpoint;
 use calderawp\caldera\Messaging\Contracts\RestControllerContract as Controller;
 use calderawp\caldera\Messaging\Contracts\ModelTransformerContract;
-
+use calderawp\caldera\Messaging\Contracts\CalderaMessagingContract as Module;
 abstract class Transformer implements ModelTransformerContract
 {
 
@@ -83,43 +84,10 @@ abstract class Transformer implements ModelTransformerContract
 	 *
 	 * @return Route
 	 */
-	public function createRoute(ModelContract $model): Route
+	public function createRoute(ModelContract $model, Module $module ): Route
 	{
 
-		$route = new class extends Route
-		{
-			private $endpoints;
-
-			/**z
-			 * @inheritDoc
-			 */
-			public function addEndpoint(Endpoint $endpoint): Route
-			{
-				$this->endpoints = $endpoint;
-				return $this;
-			}
-
-			/**
-			 * @inheritDoc
-			 */
-			public function getEndpoints(): array
-			{
-				return !empty($this->endpoints) ? $this->endpoints : [];
-			}
-
-
-		};
-		foreach ([
-					 'GET',
-					 'POST',
-					 'PUT',
-					 'DELETE',
-					 'LIST',
-				 ] as $httpMethod) {
-
-			$route->addEndpoint($this->endpointFactory($model, $this->getController(), $httpMethod));
-
-		}
+		$route = new MessageRoute($module->getCore()->getRestApi());
 
 		return $route;
 	}

@@ -3,10 +3,11 @@
 
 namespace calderawp\caldera\Messaging;
 use calderawp\caldera\Messaging\Contracts\RestControllerContract;
+use calderawp\caldera\restApi\Controller;
 use calderawp\interop\Contracts\HttpRequestContract as Request;
 
 
-abstract class RestController implements RestControllerContract
+abstract class RestController extends Controller implements RestControllerContract
 {
 
 
