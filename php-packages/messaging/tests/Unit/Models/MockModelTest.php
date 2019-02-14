@@ -23,18 +23,18 @@ class MockModelTest extends TestCase
 		$model->foo = 1;
 		$model->bar = 'hat';
 		$array = $model->toArray();
-		$this->assertSame(['foo' => 1, 'bar' => 'hat'], $array );
+		$this->assertSame(['foo' => 1, 'bar' => 'hat', 'id' => null ], $array );
 	}
 
 	public function testFromArray(){
-		$array = ['foo' => 1, 'bar' => 'hat'];
-		$model = MockModel::fromArray(['foo' => 1, 'bar' => 'hat']);
+		$array = ['foo' => 1, 'bar' => 'hat', 'id' => 7];
+		$model = MockModel::fromArray($array);
 		$this->assertSame($array, $model->toArray());
 	}
 
 	public function testGetAllowedProperties()
 	{
 		$model = new MockModel();
-		$this->assertCount(2, $model->getAllowedProperties() );
+		$this->assertCount(3, $model->getAllowedProperties() );
 	}
 }

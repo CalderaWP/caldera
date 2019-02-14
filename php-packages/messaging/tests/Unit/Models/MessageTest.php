@@ -250,14 +250,19 @@ class MessageTest extends \calderawp\caldera\Http\Tests\Unit\UnitTestCase
 
 	public function testFromArray()
 	{
-		$id = 1;
-		$layout = [ 'id' => 5, 'config' => [], 'name' => 'fsjd' ];
-		$pdfLayout = [ 'id' => 6, 'config' => [], 'name' => 'fsjd' ];
-		$message = Message::fromArray(['id' => $id, 'layout' => $layout, 'pdfLayout' => $pdfLayout ]);
+		$id = 21;
+		$accountId = 12;
+		$layout = [ 'id' => 5, 'config' => [], 'name' => 'fsjd', 'account' => $accountId ];
+		$pdfLayout = [ 'id' => 6, 'config' => [], 'name' => 'fsjd', 'account' => $accountId ];
+		$message = Message::fromArray(['id' => $id, 'layout' => $layout, 'pdfLayout' => $pdfLayout,'account' => $accountId ]);
 		$this->assertIsObject($message->getPdfLayout() );
 		$this->assertIsObject($message->getLayout() );
 		$this->assertEquals(5, $message->getLayout()->getId() );
 		$this->assertEquals(6, $message->getPdfLayout()->getId() );
+		$this->assertEquals(6, $message->getPdfLayout()->getId() );
+		$this->assertEquals($accountId, $message->getAccount() );
+		$this->assertEquals($accountId, $message->getLayout()->getAccount() );
+		$this->assertEquals($accountId, $message->getPdfLayout()->getAccount() );
 	}
 
 	public function testToArray()
@@ -322,5 +327,23 @@ class MessageTest extends \calderawp\caldera\Http\Tests\Unit\UnitTestCase
 		$message = new Message();
 		$this->assertIsArray($message->getSchema());
 		$this->assertCount(count($message->getAllowedProperties()),$message->getSchema());
+	}
+
+	public function testHasCc()
+	{
+		$message = new Message();
+		$message->addRecipient( 'to', 'foo@name.com', 'name' );
+		$this->assertFalse($message->hasCc());
+		$message->addRecipient( 'cc', 'cc@name.com', 'cc');
+		$this->assertTrue($message->hasCc());
+	}
+
+	public function testHasBcc()
+	{
+		$message = new Message();
+		$message->addRecipient( 'to', 'foo@name.com', 'name' );
+		$this->assertFalse($message->hasBcc());
+		$message->addRecipient( 'bcc', 'ccc@name.com', 'ccc');
+		$this->assertTrue($message->hasBcc());
 	}
 }

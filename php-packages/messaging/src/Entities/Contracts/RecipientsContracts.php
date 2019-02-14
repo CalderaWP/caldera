@@ -14,4 +14,5 @@ interface RecipientsContracts
 	 * @return Recipients
 	 */
 	public function addRecipient(RecipientContract $recipient): Recipients;
+	public function empty() : bool;
 }

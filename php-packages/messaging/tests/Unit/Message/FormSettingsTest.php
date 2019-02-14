@@ -14,8 +14,10 @@ class FormSettingsTest extends TestCase
 		$formSettings->layout = 1;
 		$this->assertEquals(1, $formSettings->getLayout());
 	}
+
 	public function testGetPdfLayout()
-	{$formSettings = new FormSettings();
+	{
+		$formSettings = new FormSettings();
 		$formSettings->pdfLayout = 1;
 		$this->assertEquals(1, $formSettings->getPdfLayout());
 

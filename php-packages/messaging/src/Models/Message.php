@@ -44,6 +44,30 @@ class Message extends Model
 	/** @var array */
 	protected $attachments;
 
+	/**
+	 * Message has cc
+	 *
+	 * @return bool
+	 */
+	public function hasCc()  : bool
+	{
+		return !empty($this->cc) && ! $this->cc->empty();
+	}
+
+	/**
+	 * Message has bcc
+	 *
+	 * @return bool
+	 */
+	public function hasBcc() : bool
+	{
+		return !empty($this->bcc) && ! $this->bcc->empty();
+	}
+
+	/**
+	 * @return array
+	 * @throws \Exception
+	 */
 	public function getSchema(): array
 	{
 
@@ -130,14 +154,6 @@ class Message extends Model
 		$items = $create('layout', $items);
 		$items = $create('pdfLayout', $items);
 		return parent::fromArray($items);
-	}
-
-	/**
-	 * @return mixed
-	 */
-	public function getId()
-	{
-		return $this->id;
 	}
 
 	public function addRecipient(string $type, string $email, string $name = null): Message

@@ -40,8 +40,7 @@ class Database
 			$this->dataSources = new FormsDataSources(
 				(new Table( $this->tables->getDatabaseAdapter(),$this->formSchema() )),
 				(new Table( $this->tables->getDatabaseAdapter(),$this->entrySchema() )),
-				(new Table( $this->tables->getDatabaseAdapter(),$this->entryValuesSchema() )),
-				new ResultHandlers()
+				(new Table( $this->tables->getDatabaseAdapter(),$this->entryValuesSchema() ))
 			);
 		}
 		return $this->dataSources;

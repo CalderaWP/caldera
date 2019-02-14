@@ -19,6 +19,17 @@ abstract class Model implements ModelContract
 	/** @var array */
 	private $schema;
 
+	protected $id;
+
+	/**
+	 * @return int
+	 */
+	public function getId() : int
+	{
+		return $this->id;
+	}
+
+
 	public static function fromArray(array $items ): ModelContract
 	{
 		$obj = new static();
@@ -40,7 +51,8 @@ abstract class Model implements ModelContract
 	}
 
 	/** @inheritdoc */
-	public function getSchema():array {
+	public function getSchema():array
+	{
 		if( is_array($this->schema)){
 			return $this->schema;
 		}
