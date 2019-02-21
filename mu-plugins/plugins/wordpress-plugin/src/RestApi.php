@@ -75,7 +75,8 @@ class RestApi
 
 	public function initProApi() : RestApi
 	{
-		$route =$this->getRestApiModule()->getRoute(\calderawp\caldera\Messaging\Models\Rest\MessageRoute::class);
+		$route =$this->module->getMessagingModule()->getMessageRoute();
+		$x=1;
 		$this->registerRouteWithWordPress($route);
 	}
 

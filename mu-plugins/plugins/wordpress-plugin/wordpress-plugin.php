@@ -16,7 +16,7 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
 	add_action('rest_api_init', function () use ($module) {
 		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route'))
 			->initFormsApi()
-			//initProApi() //@TODO finish this
+			->initProApi() //@TODO finish this
 			->initAuth( );//need to update
 
 	});

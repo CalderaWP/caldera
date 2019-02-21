@@ -85,6 +85,7 @@
         "php:v": "php -v",
         "test:integration": "bash scripts/test-integration.sh",
         "test:acceptance": "bash scripts/test-acceptance.sh",
+        "test:acceptance-wp": "cd mu-plugins/plugins/wordpress-plugin/ && composer test:acceptance",
         "snapshot:accept": "phpunit php-packages/core/tests -d --update-snapshots",
         "fixes": "composer fixes:packages",
         "test:core": "cd php-packages/core && composer test ",

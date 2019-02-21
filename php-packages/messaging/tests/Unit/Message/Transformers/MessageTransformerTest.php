@@ -2,11 +2,15 @@
 
 namespace calderawp\caldera\Messaging\Tests\Unit\Message\Transformers;
 
+use calderawp\caldera\Core\CalderaCore;
 use calderawp\caldera\Http\Request;
 use calderawp\caldera\Http\Response;
+use calderawp\caldera\Messaging\CalderaCalderaMessaging;
 use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\Messaging\Models\Transformers\Message as MessageTransformer;
+use calderawp\caldera\Messaging\Models\Transformers\Message;
 use calderawp\caldera\Messaging\Tests\Unit\UnitTestCase;
+use calderawp\CalderaContainers\Service\Container;
 
 class MessageTransformerTest extends UnitTestCase
 {
@@ -44,6 +48,15 @@ class MessageTransformerTest extends UnitTestCase
 			'pdf' => false,
 		], $transformer->toRequest($model)->getParams());
 
+	}
+
+	public function testCreateRoute(){
+		$this->markTestSkipped( 'Need Message Controller, first message data source' );
+		$transformer = new MessageTransformer();
+		$model = new \calderawp\caldera\Messaging\Models\Message();
+		$container = new Container();
+		$route = $transformer->createRoute($model,new CalderaCalderaMessaging(new CalderaCore($container),$container));
+		$this->assertCount(6,$route->getEndpoints());
 	}
 
 	/**
