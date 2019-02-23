@@ -8,15 +8,16 @@ use \calderawp\caldera\Forms\Entry\Entry;
 /**
  * Do stuff after plugin loads
  */
-add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin $module) {
-
+add_action('caldera_wordpress_plugin', function (
+	\calderawp\caldera\WordPressPlugin\Contracts\CalderaWordPressPluginContract $module) {
+update_post_meta(119, 'post_id', 119 );
 	/**
 	 * Attach our REST API endpoint to WordPress REST API
 	 */
 	add_action('rest_api_init', function () use ($module) {
 		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route'))
 			->initFormsApi()
-			->initProApi() //@TODO finish this
+			//->initProApi() //@TODO finish this
 			->initAuth( );//need to update
 
 	});
@@ -35,6 +36,9 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
 			(new \calderawp\DB\Tables())
 		);
 		$dataBase->formsDatabase();
+		$dataBase->getTables()->createTable(
+			$module->getMessageTableSchema()
+		);
 
 		//Allow our event system to trigger/ be triggered by apply_filters()
 		(new \calderawp\caldera\WordPressPlugin\Filters\EntryDataFilters(

@@ -9,6 +9,7 @@ use calderawp\caldera\restApi\Request;
 use calderawp\caldera\restApi\Routes\EntryRoute;
 use calderawp\caldera\restApi\Routes\FormRoute;
 use calderawp\caldera\restApi\Traits\CreatesWordPressEndpoints;
+use calderawp\caldera\WordPressPlugin\Contracts\CalderaWordPressPluginContract;
 use calderawp\interop\Contracts\Rest\Endpoint;
 use calderawp\caldera\restApi\Contracts\CalderaRestApiContract;
 
@@ -24,7 +25,7 @@ class RestApi
 		//Most of the Caldera -> WordPress logic is in this trait
 		CreatesWordPressEndpoints;
 	/**
-	 * @var CalderaWordPressPlugin
+	 * @var CalderaWordPressPluginContract
 	 */
 	protected $module;
 	protected $namespace = 'caldera-api/v1';
@@ -33,10 +34,10 @@ class RestApi
 	/**
 	 * RestApi constructor.
 	 *
-	 * @param CalderaWordPressPlugin $module
+	 * @param CalderaWordPressPluginContract $module
 	 * @param callable $registerFunction Function to register endpoint. Should be `register_rest_route()`
 	 */
-	public function __construct(CalderaWordPressPlugin $module, callable $registerFunction )
+	public function __construct(CalderaWordPressPluginContract $module, callable $registerFunction )
 	{
 
 		$this->registerFunction = $registerFunction;
@@ -76,7 +77,6 @@ class RestApi
 	public function initProApi() : RestApi
 	{
 		$route =$this->module->getMessagingModule()->getMessageRoute();
-		$x=1;
 		$this->registerRouteWithWordPress($route);
 	}
 

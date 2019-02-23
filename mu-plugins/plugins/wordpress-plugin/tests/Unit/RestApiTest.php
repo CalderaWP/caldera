@@ -6,6 +6,7 @@ use calderawp\caldera\Core\CalderaCore;
 use calderawp\caldera\restApi\Endpoints\Form\GetForms;
 use calderawp\caldera\restApi\Response;
 use calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin;
+use calderawp\caldera\WordPressPlugin\Contracts\CalderaWordPressPluginContract;
 use calderawp\caldera\WordPressPlugin\RestApi;
 use calderawp\CalderaContainers\Service\Container;
 use calderawp\interop\Contracts\Rest\Endpoint as EndpointContract;
@@ -69,7 +70,7 @@ class RestApiTest extends UnitTestCase
 
 
 
-	protected function module(): CalderaWordPressPlugin
+	protected function module(): CalderaWordPressPluginContract
 	{
 		return new CalderaWordPressPlugin(new CalderaCore(new Container()), new Container());
 	}

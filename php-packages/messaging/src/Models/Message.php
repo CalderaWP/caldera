@@ -49,14 +49,15 @@ class Message extends Model
 	 * @var Attributes
 	 */
 	protected $attributes;
+
 	/**
 	 * Message has cc
 	 *
 	 * @return bool
 	 */
-	public function hasCc()  : bool
+	public function hasCc(): bool
 	{
-		return !empty($this->cc) && ! $this->cc->empty();
+		return !empty($this->cc) && !$this->cc->empty();
 	}
 
 	/**
@@ -64,9 +65,9 @@ class Message extends Model
 	 *
 	 * @return bool
 	 */
-	public function hasBcc() : bool
+	public function hasBcc(): bool
 	{
-		return !empty($this->bcc) && ! $this->bcc->empty();
+		return !empty($this->bcc) && !$this->bcc->empty();
 	}
 
 	/**
@@ -75,9 +76,7 @@ class Message extends Model
 	 */
 	public function getSchema(): array
 	{
-
-	return (new Attributes())->toArray();
-
+		return (new Attributes())->toArray();
 	}
 
 

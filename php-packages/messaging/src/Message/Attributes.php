@@ -22,7 +22,7 @@ class Attributes extends \calderawp\interop\Collections\Attributes
 				'type' => 'integer',
 				'required' => true,
 				'description' => $description,
-				'sqlDescriptor' => 'int(11) unsigned NOT NULL AUTO_INCREMENT',
+				'sqlDescriptor' => 'int(11) unsigned NOT NULL',
 			];
 		};
 		$defaultInt = function (int $default,string $description) use($reqInt) {
@@ -32,7 +32,7 @@ class Attributes extends \calderawp\interop\Collections\Attributes
 					'required' => false,
 					'description' => $description,
 					'default' => $default,
-					'sqlDescriptor' => 'int(11) unsigned NOT NULL AUTO_INCREMENT',
+					'sqlDescriptor' => 'int(11) unsigned DEFAULT NULL',
 				];
 
 		};

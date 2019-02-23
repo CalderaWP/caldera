@@ -34,6 +34,15 @@ class Database
 
 	}
 
+	/**
+	 * @return Tables
+	 */
+	public function getTables(): Tables
+	{
+		return $this->tables;
+	}
+
+
 	public function getDataSources()
 	{
 		if( ! $this->dataSources ){
@@ -63,6 +72,10 @@ class Database
 			$this->entryValuesSchema()
 		);
 	}
+
+
+
+
 
 	/**
 	 * @return null|\WpDbTools\Type\TableSchema
