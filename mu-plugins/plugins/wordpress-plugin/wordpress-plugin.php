@@ -51,8 +51,10 @@ add_action('caldera_wordpress_plugin', function (\calderawp\caldera\WordPressPlu
  * When plugins are done loading, start this plugin's module and register with Caldera app.
  */
 add_action('plugins_loaded', function () {
-	$module = new \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin(\caldera(),
-		new \calderawp\CalderaContainers\Service\Container());
+	global  $wpdb;
+	$container = new \calderawp\CalderaContainers\Service\Container();
+	$container->bind('\wpdb',$wpdb);
+	$module = new \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin(\caldera(),$container);
 	\caldera()->addModule($module);
 	do_action('caldera_wordpress_plugin', $module);
 });
