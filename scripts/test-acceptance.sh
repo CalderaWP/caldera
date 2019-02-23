@@ -2,6 +2,11 @@
 cd php-packages;
 pwd
 
+cd caldera-db
+pwd
+composer test:acceptance || { echo 'calderawp/db acceptance tests failed' ; exit 1; }
+cd ../../
+
 cd rest-api
 pwd
 composer test:acceptance || { echo 'calderawp/rest-api acceptance tests failed' ; exit 1; }

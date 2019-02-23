@@ -31,6 +31,17 @@ services:
     hosts:
     - database
     - database.caldera.internal
+  wptest:
+    type: compose
+    services:
+      image: chriszarate/wordpress-phpunit
+      command: docker-php-entrypoint apache2-foreground
+      ports:
+      - '80'
+    volumes:
+      my-volume:
+    networks:
+      my-network:
 tooling:
   app:
     description: "Start app front-end"
