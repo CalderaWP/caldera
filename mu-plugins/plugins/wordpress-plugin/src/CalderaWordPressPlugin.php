@@ -43,12 +43,12 @@ class CalderaWordPressPlugin extends Module implements CalderaWordPressPluginCon
 	{
 		try{
 			$this->getCore()->getModule( CalderaCalderaMessaging::IDENTIFIER );
-			$x=  1;
 		}catch (\Exception $e ){
 			$this->core->addModule(new CalderaCalderaMessaging($this->getCore(),new Container() ));
+
 		}
+		$module = $this->getCore()->getModule( CalderaCalderaMessaging::IDENTIFIER );
 
-
-		return $this->getCore()->getModule( CalderaCalderaMessaging::IDENTIFIER );
+		return $module;
 	}
 }
