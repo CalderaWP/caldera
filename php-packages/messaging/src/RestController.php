@@ -11,8 +11,10 @@ abstract class RestController extends Controller implements RestControllerContra
 {
 
 
+
 	public function authorizeRequest(Request $request): bool
 	{
+		return true;
 		// TODO: Implement authorizeRequest() method.
 	}
 

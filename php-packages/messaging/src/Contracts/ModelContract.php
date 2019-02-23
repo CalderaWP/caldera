@@ -24,4 +24,7 @@ interface ModelContract
 	public function setSchema(array $schema): ModelContract;
 
 	public function getId(): int;
+
+
+
 }

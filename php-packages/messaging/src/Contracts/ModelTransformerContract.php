@@ -45,12 +45,4 @@ interface ModelTransformerContract
 	 */
 	public function fromResponse(Response $response): ModelContract;
 
-	/**
-	 * Create a REST API route for the model, using its schema
-	 *
-	 * @param ModelContract $model
-	 *
-	 * @return Route
-	 */
-	public function createRoute(ModelContract $model,Module $module): Route;
 }

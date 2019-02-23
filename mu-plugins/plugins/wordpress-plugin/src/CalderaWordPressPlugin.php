@@ -7,6 +7,7 @@ use calderawp\caldera\DataSource\WordPressData\PostTypeFactory;
 use calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable;
 use calderawp\caldera\Messaging\CalderaCalderaMessaging;
 use calderawp\caldera\Messaging\Message\Attributes;
+use calderawp\caldera\Messaging\Models\Rest\MessageController;
 use calderawp\caldera\WordPressPlugin\Contracts\CalderaWordPressPluginContract;
 use calderawp\CalderaContainers\Service\Container;
 use calderawp\DB\Factory;
@@ -20,6 +21,7 @@ use calderawp\caldera\Messaging\Contracts\CalderaMessagingContract;
 use calderawp\caldera\DataSource\WordPressData\Contracts\PostTypeFactoryContract;
 use calderawp\caldera\DataSource\Contracts\SourceContract as Source;
 use WpDbTools\Type\TableSchema;
+use calderawp\caldera\Messaging\Contracts\MessageControllerContract;
 
 class CalderaWordPressPlugin extends Module implements CalderaWordPressPluginContract
 {
@@ -84,7 +86,14 @@ class CalderaWordPressPlugin extends Module implements CalderaWordPressPluginCon
 		try {
 			$this->getCore()->getModule(CalderaCalderaMessaging::IDENTIFIER);
 		} catch (\Exception $e) {
-			$this->core->addModule(new CalderaCalderaMessaging($this->getCore(), new Container()));
+			$container = $this->getServiceContainer();
+			$container->bind(MessageControllerContract::class, function(){
+				return new MessageController($this->getMessageDataSource(), function (){
+					return true;
+				});
+			});
+			$this->core->addModule(new CalderaCalderaMessaging($this->getCore(),$container ));
+
 
 		}
 		$module = $this->getCore()->getModule(CalderaCalderaMessaging::IDENTIFIER);

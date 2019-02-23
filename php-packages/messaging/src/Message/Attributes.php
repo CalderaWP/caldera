@@ -47,13 +47,16 @@ class Attributes extends \calderawp\interop\Collections\Attributes
 		};
 		$requiredString = function (string $description){
 			return [
-				'type' => 'array',
+				'type' => 'string',
 				'description' => $description,
 				'required' => true,
 				'sqlDescriptor' => 'varchar(255) NOT NULL',
 			];
 		};
 		$schema[ 'id' ] = $reqInt('Unique Identifier');
+		$schema[ 'id' ]['sqlDescriptor'] =  'int(11) unsigned NOT NULL AUTO_INCREMENT';
+
+		$schema[ 'accountId' ] = $reqInt('ID of account that message belongs to.');
 		$schema[ 'layout' ] = $defaultInt(0, 'Layout for email message');
 		$schema[ 'pdfLayout' ] = $defaultInt(0, 'Layout for pdf');
 		$schema[ 'createdAt' ] = [
@@ -104,6 +107,22 @@ class Attributes extends \calderawp\interop\Collections\Attributes
 			$array['name'] = $key;
 			$this->addAttribute( Attribute::fromArray($array));
 		}
+	}
+
+	public function toRestApiArgs()
+	{
+		$args = [];
+		foreach ( $this->attributes as $name => $attribute ){
+			$args[$name] = [
+				'description' => $attribute->getDescription(),
+				'type'        => $attribute->getDataType(),
+				'required'    => $attribute->isRequired(),
+				'validate_callback' => $attribute->getValidateCallback(),
+				'sanitize_callback' => $attribute->getSanitizeCallback(),
+				'default' => $attribute->getDefault()
+			];
+		}
+		return $args;
 	}
 
 

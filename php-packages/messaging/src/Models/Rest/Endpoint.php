@@ -15,18 +15,15 @@ abstract class Endpoint implements \calderawp\interop\Contracts\Rest\Endpoint
 {
 	use ProvidesRestEndpoint;
 
-	/**
-	 * @var ModelContract
-	 */
-	private $model;
+
 	/** @var RestController */
 	private $controller;
 
-	public function __construct(ModelContract $model, RestController $controller, string $httpMethod)
+	public function __construct( RestController $controller, string $httpMethod,$uri)
 	{
-		$this->model = $model;
 		$this->controller = $controller;
 		$this->httpMethod = $httpMethod;
+		$this->uri = $uri;
 	}
 
 	public function getHttpMethod(): string
@@ -98,5 +95,15 @@ abstract class Endpoint implements \calderawp\interop\Contracts\Rest\Endpoint
 	{
 		return '';
 	}
+
+	/**
+	 * @return MessageController
+	 */
+	protected function getController(): RestController
+	{
+		return $this->controller;
+	}
+
+
 
 }

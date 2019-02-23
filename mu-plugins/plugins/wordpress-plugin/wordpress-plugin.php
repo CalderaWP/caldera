@@ -10,14 +10,21 @@ use \calderawp\caldera\Forms\Entry\Entry;
  */
 add_action('caldera_wordpress_plugin', function (
 	\calderawp\caldera\WordPressPlugin\Contracts\CalderaWordPressPluginContract $module) {
-update_post_meta(119, 'post_id', 119 );
 	/**
 	 * Attach our REST API endpoint to WordPress REST API
 	 */
 	add_action('rest_api_init', function () use ($module) {
+
+		$dataSource = $module->getMessageDataSource();
+
+		$handleAuth = '__return_true';
+		$route = new \calderawp\caldera\Messaging\Models\Rest\MessageRoute(\caldera()->getRestApi());
+		$route->setController(
+			new \calderawp\caldera\Messaging\Models\Rest\MessageController($dataSource,$handleAuth) );
+
 		(new \calderawp\caldera\WordPressPlugin\RestApi($module, 'register_rest_route'))
 			->initFormsApi()
-			//->initProApi() //@TODO finish this
+			->initProApi($route) //@TODO finish this
 			->initAuth( );//need to update
 
 	});

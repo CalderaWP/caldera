@@ -129,5 +129,4 @@ abstract class Model implements ModelContract
 		return $this;
 	}
 
-
 }

@@ -6,6 +6,7 @@ use calderawp\caldera\DataSource\Tests\Unit\DataSourceTest;
 use calderawp\caldera\DataSource\WordPressData\PostTypeFactory;
 use calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable;
 use calderawp\caldera\Messaging\Models\Message;
+use calderawp\caldera\Messaging\Models\Rest\MessageController;
 use calderawp\caldera\Messaging\Models\Rest\MessageRoute;
 use calderawp\CalderaContainers\Service\Container as ServiceContainer;
 use calderawp\DB\Factory;
@@ -20,6 +21,8 @@ use calderawp\caldera\DataSource\Contracts\SourceContract as DataSource;
 class CalderaCalderaMessaging extends Module implements CalderaMessagingContract
 {
 	const IDENTIFIER  = 'Messaging';
+
+	const MESSAGE_DATA_SOURCE_IDENTIFIER = 'cfp_messageDataSource';
 	/**
 	 * @inheritDoc
 	 */
@@ -31,18 +34,12 @@ class CalderaCalderaMessaging extends Module implements CalderaMessagingContract
 	public function registerServices(ServiceContainer $container): CalderaModule
 	{
 
-		$dataSource = new PostTypeWithCustomMetaTable('cf-pro-message');
-		//@TODO register post type and test PostTypeWithCustomMetaTable
-
+		$dataSource = $container->make(self::MESSAGE_DATA_SOURCE_IDENTIFIER );
 		$this->getServiceContainer()->singleton(FactoryContract::class, function (){
 			return new Factory();
 		});
 
 		$handleAuth = function (){};//@todo figure out auth next
-		$transformer = new \calderawp\caldera\Messaging\Models\Transformers\Message();
-		$transformer->setController(new class($dataSource,$handleAuth) extends RestController{});
-		$route = $transformer->createRoute( new Message(),$this );
-		$this->getCore()->getRestApi()->addRoute($route );
 		$this->core->addModule($this);
 
 		return $this;

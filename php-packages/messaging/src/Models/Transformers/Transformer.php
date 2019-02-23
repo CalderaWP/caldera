@@ -8,6 +8,7 @@ use calderawp\caldera\Messaging\Contracts\ModelContract;
 use calderawp\caldera\Messaging\Models\Model;
 use calderawp\caldera\Messaging\Models\Message as MessageModel;
 use calderawp\caldera\Messaging\Models\Rest\Endpoint;
+use calderawp\caldera\Messaging\Models\Rest\MessageController;
 use calderawp\caldera\Messaging\Models\Rest\MessageRoute;
 use calderawp\caldera\restApi\Route;
 use calderawp\interop\Contracts\HttpRequestContract as Request;
@@ -77,45 +78,8 @@ abstract class Transformer implements ModelTransformerContract
 		return $this->factory($response->getData());
 	}
 
-	/**
-	 * Create a REST API route for the model, using its schema
-	 *
-	 * @param ModelContract $model
-	 *
-	 * @return Route
-	 */
-	public function createRoute(ModelContract $model, Module $module ): Route
-	{
-
-		$route = new MessageRoute($module->getCore()->getRestApi());
-
-		return $route;
-	}
-
-	/**
-	 * @param ModelContract $model
-	 * @param $controller
-	 *
-	 * @return Endpoint
-	 */
-	protected function endpointFactory(ModelContract $model, $controller, string $httpMethod)
-	{
-		$endpoint = new class($model, $controller, $httpMethod) extends Endpoint
-		{
-			use ProvidesRestEndpoint;
-
-			public function getHttpMethod(): string
-			{
-				if ('LIST' === $this->httpMethod) {
-					return 'GET';
-				}
-				return $this->httpMethod;
-			}
 
 
 
-		};
-		return $endpoint;
-	}
 
 }

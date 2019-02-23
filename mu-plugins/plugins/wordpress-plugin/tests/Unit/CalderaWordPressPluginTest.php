@@ -1,6 +1,7 @@
 <?php
 
 namespace calderawp\caldera\WordPressPlugin\Tests\Unit;
+use calderawp\caldera\DataSource\Contracts\SourceContract;
 
 use calderawp\caldera\DataSource\WordPressData\PostTypeFactory;
 use calderawp\caldera\Messaging\CalderaCalderaMessaging;
@@ -66,7 +67,11 @@ class CalderaWordPressPluginTest extends UnitTestCase
 
 	public function testGetMessagingModule()
 	{
-		$module = new CalderaWordPressPlugin($this->core(), new Container());
+		$container = new \calderawp\CalderaContainers\Service\Container();
+		$container->bind(CalderaCalderaMessaging::MESSAGE_DATA_SOURCE_IDENTIFIER, function () {
+			return \Mockery::mock('Source', SourceContract::class);
+		});
+		$module = new CalderaWordPressPlugin($this->core(),$container);
 		$this->assertInstanceOf(CalderaCalderaMessaging::class, $module->getMessagingModule());
 	}
 

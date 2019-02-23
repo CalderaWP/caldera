@@ -50,6 +50,8 @@ class Message extends Model
 	 */
 	protected $attributes;
 
+
+
 	/**
 	 * Message has cc
 	 *
