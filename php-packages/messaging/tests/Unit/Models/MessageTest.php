@@ -326,7 +326,7 @@ class MessageTest extends \calderawp\caldera\Http\Tests\Unit\UnitTestCase
 	public function testGetSchema(){
 		$message = new Message();
 		$this->assertIsArray($message->getSchema());
-		$this->assertCount(count($message->getAllowedProperties()),$message->getSchema());
+		$this->assertCount(count((new \calderawp\caldera\Messaging\Message\Attributes())->toArray()),$message->getSchema());
 	}
 
 	public function testHasCc()

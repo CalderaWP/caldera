@@ -7,6 +7,7 @@ use calderawp\caldera\Messaging\Contracts\ModelContract;
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientContract as Recipient;
 use calderawp\caldera\Messaging\Entities\Contracts\RecipientsContracts as Recipients;
 use calderawp\caldera\Messaging\Entities\EntryData;
+use calderawp\caldera\Messaging\Message\Attributes;
 
 class Message extends Model
 {
@@ -45,6 +46,10 @@ class Message extends Model
 	protected $attachments;
 
 	/**
+	 * @var Attributes
+	 */
+	protected $attributes;
+	/**
 	 * Message has cc
 	 *
 	 * @return bool
@@ -71,74 +76,7 @@ class Message extends Model
 	public function getSchema(): array
 	{
 
-		$schema = parent::getSchema();
-		$reqInt = function (string $description) {
-			return [
-				'type' => 'integer',
-				'required' => true,
-				'description' => $description
-			];
-		};
-		$defaultInt = function (int $default,string $description) use($reqInt) {
-			return
-				[
-					'type' => 'integer',
-					'required' => false,
-					'description' => $description,
-					'default' => $default
-				];
-
-		};
-		$recipients = function (string $description,bool$required){
-			return [
-				'type' => 'array',
-				'description' => $description,
-				'required' => $required,
-			];
-		};
-		$requiredString = function (string $description){
-			return [
-				'type' => 'array',
-				'description' => $description,
-				'required' => true,
-			];
-		};
-		$schema[ 'id' ] = $reqInt('Unique Identifier');
-		$schema[ 'layout' ] = $defaultInt(0, 'Layout for email message');
-		$schema[ 'pdfLayout' ] = $defaultInt(0, 'Layout for pdf');
-		$schema[ 'createdAt' ] = [
-			'type' => 'date-time',
-			'required' => false,
-			'description' => 'Time message created at',
-			'default' => new \DateTimeImmutable()
-		];
-		$schema[ 'updatedAt' ] = [
-			'type' => 'date-time',
-			'required' => false,
-			'description' => 'Time message updated at',
-			'default' => new \DateTimeImmutable(),
-		];
-		$schema[ 'to' ] = $recipients('Primary Recipients of message', true );
-		$schema[ 'reply'] = [
-			'type' => 'string',
-			'required' => true,
-			'description' => 'The message reply to',
-		];
-		$schema[ 'cc' ] = $recipients('CC Recipients of message', true );
-		$schema[ 'bcc' ] = $recipients('BCC Recipients of message', true );
-		$schema[ 'spammed' ] = [
-			'type' => 'boolean',
-			'description' => 'Has message been marked spam?'
-		];
-		$schema[ 'content' ] = $requiredString( 'Message Content' );
-		$schema[ 'subject' ] = $requiredString( 'Message Subject' );
-		$schema[ 'entryData' ]= [
-			'type' => 'array',
-			'description' => 'Entry data',
-			'required' => true,
-		];
-
-		return $schema;
+	return (new Attributes())->toArray();
 
 	}
 
