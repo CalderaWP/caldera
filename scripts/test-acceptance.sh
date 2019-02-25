@@ -4,7 +4,7 @@ pwd
 
 cd caldera-db
 pwd
-composer test:acceptance || { echo 'calderawp/db acceptance tests failed' ; exit 1; }
+#composer test:acceptance || { echo 'calderawp/db acceptance tests failed' ; exit 1; }
 cd ../../
 
 cd rest-api

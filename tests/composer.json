@@ -66,6 +66,12 @@
         "calderawp/caldera-interop": "dev-master",
         "calderawp/messaging": "dev-master",
         "calderawp/rest-api": "dev-master",
-        "calderawp/wordpress-plugin": "dev-master"
+        "calderawp/wordpress-plugin": "dev-master",
+        "symfony/yaml": "^4.2"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "calderawp\\Tests\\": "tests"
+        }
     }
 }
