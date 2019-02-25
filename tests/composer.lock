@@ -1,0 +1,1201 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e8ebe4dea9fa1bce9f22c5810b279ada",
+    "packages": [
+        {
+            "name": "calderawp/caldera-containers",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CalderaWP/caldera-containers.git",
+                "reference": "32ba0d0e851cbdaaf733f78902bfcba17de7e4b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CalderaWP/caldera-containers/zipball/32ba0d0e851cbdaaf733f78902bfcba17de7e4b2",
+                "reference": "32ba0d0e851cbdaaf733f78902bfcba17de7e4b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6|^7.0",
+                "pimple/pimple": "^3.2",
+                "psr/container": "^1.0@dev"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "^1.0",
+                "phpunit/phpunit": "5.0.*",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "libary",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\CalderaContainers\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "josh",
+                    "email": "josh@calderawp.com"
+                }
+            ],
+            "time": "2018-05-05T22:43:14+00:00"
+        },
+        {
+            "name": "calderawp/caldera-db",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/caldera-db",
+                "reference": "da9a1c363893cb7f2d81521187ad06fba794d79b",
+                "shasum": null
+            },
+            "require": {
+                "calderawp/caldera-containers": "^0.2",
+                "inpsyde/wp-db-tools": "^0.2",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.2",
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\DB\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\DB\\Tests\\": "tests/",
+                    "calderawp\\DB\\Tests\\Unit\\": "tests/Unit/",
+                    "calderawp\\DB\\Tests\\Integration\\": "tests/Integration/",
+                    "calderawp\\DB\\Tests\\Acceptance\\": "tests/Acceptance/",
+                    "calderawp\\DB\\Tests\\Traits\\": "tests/Traits/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit tests/Unit && phpunit tests/Integration"
+                ],
+                "test:unit": [
+                    "phpunit tests/Unit"
+                ],
+                "test:integration": [
+                    " phpunit tests/Integration"
+                ],
+                "test:acceptance": [
+                    " phpunit tests/acceptance"
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Pollock",
+                    "email": "josh@calderawp.com"
+                }
+            ],
+            "description": "WordPress custom table abstractions"
+        },
+        {
+            "name": "calderawp/caldera-interop",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/interop",
+                "reference": "cbac63764b2d8360f290b34809d7802039212af3",
+                "shasum": null
+            },
+            "require": {
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "calderawp/caldera-containers": "^0.2",
+                "guzzlehttp/guzzle": "^6.3",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\interop\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\interop\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "tests": [
+                    "composer lints && composer fixes && composer test"
+                ],
+                "test": [
+                    "composer test:unit"
+                ],
+                "test:unit": [
+                    "phpunit Tests"
+                ],
+                "tests-now": [
+                    "phpunit Tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/"
+                ],
+                "lints": [
+                    "parallel-lint ./src  --blame --exclude vendor && parallel-lint ./Tests  --blame --exclude vendor"
+                ]
+            }
+        },
+        {
+            "name": "calderawp/core",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/core",
+                "reference": "6345315fa9e000fd7c18fa5d83a38a75084f0e5d",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "spatie/phpunit-snapshot-assertions": "^1.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\Core\\": "src"
+                },
+                "files": [
+                    "Caldera.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\Core\\Tests\\": "tests",
+                    "calderawp\\caldera\\Core\\Tests\\Traits\\": "tests/Traits",
+                    "calderawp\\caldera\\Core\\Tests\\Integration\\": "tests/Integration",
+                    "calderawp\\caldera\\Core\\Tests\\Unit\\": "tests/Unit"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "composer test:unit"
+                ],
+                "tests": [
+                    "composer test:unit && && composer test:integration"
+                ],
+                "test:unit": [
+                    "phpunit --testsuite=Unit"
+                ],
+                "test:integration": [
+                    "phpunit --testsuite=Integration"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "Forms"
+        },
+        {
+            "name": "calderawp/data-source",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/data-source",
+                "reference": "ca29c1ca674a31c0061f5742d60e6ffb69bfbd5d",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "antecedent/patchwork": "^2.0",
+                "brain/monkey": "^2.2",
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\DataSource\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\DataSource\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "composer test:unit"
+                ],
+                "test:unit": [
+                    "phpunit tests --testsuite=Unit"
+                ],
+                "test:integration": [
+                    "phpunit tests --testsuite=Integration"
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "Caldera data sourcing"
+        },
+        {
+            "name": "calderawp/events",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/events",
+                "reference": "208b49d801c3d4a54247fc2883b0bd6a7b277c89",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\Events\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\Events\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit tests"
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "A boilerplate for new composer based PHP projects."
+        },
+        {
+            "name": "calderawp/forms",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/forms",
+                "reference": "a33ffff9646b4011ae2ef5946939405ae5c34ef1",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\Forms\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\Forms\\Tests\\": "tests-unit",
+                    "calderawp\\caldera\\Forms\\Tests\\Integration\\": "tests-integration"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "composer tests"
+                ],
+                "tests": [
+                    "composer test:unit && composer test:integration && composer test:acceptance"
+                ],
+                "test:unit": [
+                    "phpunit --testsuite=Unit"
+                ],
+                "test:integration": [
+                    "phpunit --testsuite=Integration"
+                ],
+                "test:acceptance": [
+                    "phpunit --testsuite=Acceptance"
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "Forms"
+        },
+        {
+            "name": "calderawp/http",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/http",
+                "reference": "04f8ef79ae1b5db46d3df00834c0e44590d8c35e",
+                "shasum": null
+            },
+            "require": {
+                "inpsyde/wpsr7": "^1.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3",
+                "inpsyde/wpsr7": "^1.0",
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\Http\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\Http\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "composer test:unit"
+                ],
+                "test:unit": [
+                    "phpunit --testsuite=Unit"
+                ],
+                "test:acceptance": [
+                    "phpunit  --testsuite=Acceptance"
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "A boilerplate for new composer based PHP projects."
+        },
+        {
+            "name": "calderawp/messaging",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/messaging",
+                "reference": "6f14b5a9e903ffc5a9fd696fe3d43df304c6a56c",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\Messaging\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\Messaging\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit tests"
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "A boilerplate for new composer based PHP projects."
+        },
+        {
+            "name": "calderawp/rest-api",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/rest-api",
+                "reference": "dc374824c467d4bc1afaf3f501765bbacd2c0bdb",
+                "shasum": null
+            },
+            "require": {
+                "firebase/php-jwt": "^5.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "antecedent/patchwork": "^2.0",
+                "brain/monkey": "^2.2",
+                "guzzlehttp/guzzle": "^6.3",
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\restApi\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\restApi\\Acceptance\\": "acceptance",
+                    "calderawp\\caldera\\restApi\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "composer test:unit"
+                ],
+                "test:unit": [
+                    "phpunit tests --testsuite=Unit"
+                ],
+                "test:acceptance": [
+                    "phpunit --testsuite=Acceptance --bootstrap=tests/bootstrap.php"
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "A boilerplate for new composer based PHP projects."
+        },
+        {
+            "name": "calderawp/wordpress-framework",
+            "version": "0.0.3",
+            "dist": {
+                "type": "path",
+                "url": "../php-packages/wordpress-framework",
+                "reference": "110c12cbe0ca35ab09547878586586004f3d45d5",
+                "shasum": null
+            },
+            "require": {
+                "calderawp/caldera-containers": "^0.2",
+                "calderawp/caldera-db": "*",
+                "calderawp/caldera-interop": "*",
+                "calderawp/core": "*",
+                "calderawp/data-source": "*",
+                "calderawp/events": "*",
+                "calderawp/forms": "*",
+                "calderawp/http": "*",
+                "calderawp/rest-api": "*",
+                "php": "^7.2"
+            },
+            "type": "metapackage",
+            "description": "The Caldera framework implemented for WordPress"
+        },
+        {
+            "name": "calderawp/wordpress-plugin",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../mu-plugins/plugins/wordpress-plugin",
+                "reference": "b5fa369fc756ddcbcac4527b84da6df6f722321b",
+                "shasum": null
+            },
+            "require": {
+                "calderawp/wordpress-framework": "*",
+                "php": "^7.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "php": "^7.2",
+                "phpunit/phpunit": "^7.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "calderawp\\caldera\\WordPressPlugin\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "calderawp\\caldera\\WordPressPlugin\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "composer test:unit"
+                ],
+                "tests": [
+                    "composer test:unit && composer test:acceptance"
+                ],
+                "test:unit": [
+                    "phpunit --testsuite=Unit"
+                ],
+                "test:acceptance": [
+                    "phpunit --testsuite=Acceptance "
+                ],
+                "tests-now": [
+                    "phpunit tests --group=now"
+                ],
+                "sniffs": [
+                    "phpcs src/ && phpcs src/"
+                ],
+                "fixes": [
+                    "phpcbf src/ && phpcbf tests/"
+                ]
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "A boilerplate for new composer based PHP projects."
+        },
+        {
+            "name": "firebase/php-jwt",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": " 4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "time": "2017-06-27T22:17:23+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "9f83dded91781a01c63574e387eaa769be769115"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
+                "reference": "9f83dded91781a01c63574e387eaa769be769115",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0",
+                "ralouphie/getallheaders": "^2.0.5"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2018-12-04T20:46:45+00:00"
+        },
+        {
+            "name": "hamcrest/hamcrest-php",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hamcrest/hamcrest-php.git",
+                "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/776503d3a8e85d4f9a1148614f95b7a608b046ad",
+                "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3|^7.0"
+            },
+            "replace": {
+                "cordoval/hamcrest-php": "*",
+                "davedevelopment/hamcrest-php": "*",
+                "kodova/hamcrest-php": "*"
+            },
+            "require-dev": {
+                "phpunit/php-file-iterator": "1.3.3",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "hamcrest"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "description": "This is the PHP port of Hamcrest Matchers",
+            "keywords": [
+                "test"
+            ],
+            "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "inpsyde/wp-db-tools",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inpsyde/wp-db-tools.git",
+                "reference": "7334aa675f9379852d246098f1f802cf625941ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inpsyde/wp-db-tools/zipball/7334aa675f9379852d246098f1f802cf625941ab",
+                "reference": "7334aa675f9379852d246098f1f802cf625941ab",
+                "shasum": ""
+            },
+            "require-dev": {
+                "inpsyde/monkery-test-case": "^3.0",
+                "inpsyde/wordpress-dev": "^4.4",
+                "inpsyde/wp-tests-starter": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WpDbTools\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Naber",
+                    "email": "kontakt@dnaber.de",
+                    "homepage": "https://dnaber.de/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Inpsyde GmbH",
+                    "homepage": "http://inpsyde.com",
+                    "role": "Company"
+                }
+            ],
+            "description": "Provides an engine-independent, simplified interface to MySQL databases.",
+            "time": "2017-05-03T16:22:27+00:00"
+        },
+        {
+            "name": "inpsyde/wpsr7",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inpsyde/WPSR7.git",
+                "reference": "fae25f1a1d90444a15ab34c3ed1d926b68253bab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inpsyde/WPSR7/zipball/fae25f1a1d90444a15ab34c3ed1d926b68253bab",
+                "reference": "fae25f1a1d90444a15ab34c3ed1d926b68253bab",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/psr7": "~1.0",
+                "php": "^7.0",
+                "psr/http-message": "~1.0"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.0.0",
+                "johnpbloch/wordpress-core": "^4.7.0",
+                "mockery/mockery": "~0.9.0",
+                "phpunit/phpunit": "^6.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Inpsyde\\WPSR7\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thorsten Frommen",
+                    "email": "t.frommen@inpsyde.com",
+                    "homepage": "https://twitter.com/thorstenfrommen",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Inpsyde GmbH",
+                    "email": "hello@inpsyde.com",
+                    "homepage": "https://inpsyde.com",
+                    "role": "Company"
+                }
+            ],
+            "description": "PSR-7-compliant HTTP messages for WordPress.",
+            "keywords": [
+                "http",
+                "interop",
+                "middleware",
+                "psr",
+                "psr7",
+                "rest",
+                "standard",
+                "wordpress",
+                "wp"
+            ],
+            "time": "2017-08-28T09:19:58+00:00"
+        },
+        {
+            "name": "mockery/mockery",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
+                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
+                "shasum": ""
+            },
+            "require": {
+                "hamcrest/hamcrest-php": "~2.0",
+                "lib-pcre": ">=7.0",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7.10|~6.5|~7.0|~8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mockery": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pádraic Brady",
+                    "email": "padraic.brady@gmail.com",
+                    "homepage": "http://blog.astrumfutura.com"
+                },
+                {
+                    "name": "Dave Marshall",
+                    "email": "dave.marshall@atstsolutions.co.uk",
+                    "homepage": "http://davedevelopment.co.uk"
+                }
+            ],
+            "description": "Mockery is a simple yet flexible PHP mock object framework",
+            "homepage": "https://github.com/mockery/mockery",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "library",
+                "mock",
+                "mock objects",
+                "mockery",
+                "stub",
+                "test",
+                "test double",
+                "testing"
+            ],
+            "time": "2019-02-13T09:37:52+00:00"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2018-01-21T07:42:36+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "ralouphie/getallheaders",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7.0",
+                "satooshi/php-coveralls": ">=1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "time": "2016-02-11T07:05:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "calderawp/caldera-db": 20,
+        "calderawp/core": 20,
+        "calderawp/data-source": 20,
+        "calderawp/events": 20,
+        "calderawp/forms": 20,
+        "calderawp/http": 20,
+        "calderawp/caldera-interop": 20,
+        "calderawp/messaging": 20,
+        "calderawp/rest-api": 20,
+        "calderawp/wordpress-plugin": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

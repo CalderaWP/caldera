@@ -1,0 +1,71 @@
+{
+    "name": "calderawp/caldera-tests",
+    "authors": [
+        {
+            "name": "Josh Pollock",
+            "email": "josh@calderawp.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../php-packages/caldera-db"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/core"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/data-source"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/events"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/forms"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/http"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/interop"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/messaging"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/meta"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/rest-api"
+        },
+        {
+            "type": "path",
+            "url": "../php-packages/wordpress-framework"
+        },
+        {
+            "type": "path",
+            "url": "../mu-plugins/plugins/wordpress-plugin"
+        }
+    ],
+    "require": {
+        "calderawp/caldera-db": "dev-master",
+        "calderawp/core": "dev-master",
+        "calderawp/data-source": "dev-master",
+        "calderawp/events": "dev-master",
+        "calderawp/forms": "dev-master",
+        "calderawp/http": "dev-master",
+        "calderawp/caldera-interop": "dev-master",
+        "calderawp/messaging": "dev-master",
+        "calderawp/rest-api": "dev-master",
+        "calderawp/wordpress-plugin": "dev-master"
+    }
+}

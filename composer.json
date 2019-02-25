@@ -50,6 +50,7 @@
     "autoload-dev": {
         "psr-4": {
             "calderawp\\DB\\Tests\\": "php-packages/caldera-db/tests/",
+            "calderawp\\DB\\Tests\\Acceptance\\": "php-packages/caldera-db/tests/Acceptance/",
             "calderawp\\DB\\Tests\\Integration\\": "php-packages/caldera-db/tests/Integration/",
             "calderawp\\DB\\Tests\\Traits\\": "php-packages/caldera-db/tests/Traits/",
             "calderawp\\DB\\Tests\\Unit\\": "php-packages/caldera-db/tests/Unit/",
