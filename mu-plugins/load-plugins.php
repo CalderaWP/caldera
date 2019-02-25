@@ -42,6 +42,8 @@ add_filter( 'caldera_forms_view_field_email', function ($value){
 
 
 add_action( 'rest_api_init', function (){
+
+
 	register_rest_route( 'caldera-api/v1', 'message', [
 
 	]);
