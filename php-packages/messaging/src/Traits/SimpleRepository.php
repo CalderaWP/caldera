@@ -100,7 +100,7 @@ trait SimpleRepository
 				$value = $value->toArray();
 			}
 			if( in_array($property, ['createdAt', 'updatedAt']) && is_object($value) ){
-				$value = $value->format( Time::FORMAT );
+				$value = $this->timeToString($value);
 			}
 			$array[ $property ] = $value;
 		}
@@ -111,6 +111,16 @@ trait SimpleRepository
 	public function jsonSerialize()
 	{
 		return $this->toArray();
+	}
+
+	/**
+	 * @param $value
+	 *
+	 * @return string
+	 */
+	protected function timeToString($value)
+	{
+		return $value->format(Time::FORMAT);
 	}
 
 }
