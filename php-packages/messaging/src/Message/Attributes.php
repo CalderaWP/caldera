@@ -81,8 +81,8 @@ class Attributes extends \calderawp\interop\Collections\Attributes
 			'description' => 'The message reply to',
 			'sqlDescriptor' => 'longtext NOT NULL',
 		];
-		$schema[ 'cc' ] = $recipients('CC Recipients of message', true );
-		$schema[ 'bcc' ] = $recipients('BCC Recipients of message', true );
+		$schema[ 'cc' ] = $recipients('CC Recipients of message', false );
+		$schema[ 'bcc' ] = $recipients('BCC Recipients of message', false );
 		$schema[ 'spammed' ] = [
 			'type' => 'boolean',
 			'description' => 'Has message been marked spam?',

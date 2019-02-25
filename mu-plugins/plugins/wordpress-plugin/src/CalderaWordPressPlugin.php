@@ -12,6 +12,7 @@ use calderawp\caldera\WordPressPlugin\Contracts\CalderaWordPressPluginContract;
 use calderawp\CalderaContainers\Service\Container;
 use calderawp\DB\Factory;
 use calderawp\DB\Contracts\FactoryContract;
+use calderawp\DB\Tables;
 use calderawp\interop\Attribute;
 use calderawp\interop\Contracts\CalderaModule;
 use calderawp\CalderaContainers\Service\Container as ServiceContainer;

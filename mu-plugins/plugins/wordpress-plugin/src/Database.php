@@ -10,8 +10,9 @@ use calderawp\DB\CalderaForms\Loader;
 use calderawp\DB\Table;
 use calderawp\DB\Tables;
 use calderawp\interop\Contracts\WordPress\Wpdb;
+use calderawp\caldera\WordPressPlugin\Contracts\DatabaseContract;
 
-class Database
+class Database implements DatabaseContract
 {
 
 	/**

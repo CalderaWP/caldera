@@ -39,17 +39,21 @@ class CalderaWordPressPluginTest extends UnitTestCase
 
 		$container = new Container();
 		$wpdb = \Mockery::mock('\wpdb');
+		$wpdb->prefix = 'cf_1';
+
 		$container->bind('\wpdb',$wpdb );
 		$module = new CalderaWordPressPlugin($this->core(),$container );
 		$this->assertSame($wpdb, $container->make('\wpdb'));
 		$module->registerServices($module->getServiceContainer());
 		$this->assertInstanceOf(Factory::class,$module->getServiceContainer()->make(Factory::class));
+
 	}
 
 	public function testGetMessageDataSource()
 	{
 		$container = new Container();
 		$wpdb = \Mockery::mock('\wpdb');
+		$wpdb->prefix = 'cf_1';
 		$container->bind('\wpdb',$wpdb );
 		$container->bind('\wpdb',$wpdb );
 		$module = new CalderaWordPressPlugin($this->core(),$container );

@@ -15,9 +15,7 @@ use calderawp\interop\Module;
 use calderawp\DB\Contracts\FactoryContract;
 use calderawp\caldera\DataSource\WordPressData\Contracts\PostTypeFactoryContract;
 use calderawp\caldera\Messaging\Contracts\CalderaMessagingContract;
-use calderawp\caldera\Messaging\Contracts\MessageTransformerContract;
-use calderawp\caldera\Messaging\Contracts\RestControllerContract as Controller;
-use calderawp\caldera\DataSource\Contracts\SourceContract as DataSource;
+use calderawp\caldera\Messaging\Contracts\CalderaMessagingDatabaseContract;
 class CalderaCalderaMessaging extends Module implements CalderaMessagingContract
 {
 	const IDENTIFIER  = 'Messaging';
@@ -38,6 +36,7 @@ class CalderaCalderaMessaging extends Module implements CalderaMessagingContract
 		$this->getServiceContainer()->singleton(FactoryContract::class, function (){
 			return new Factory();
 		});
+
 
 		$handleAuth = function (){};//@todo figure out auth next
 		$this->core->addModule($this);
