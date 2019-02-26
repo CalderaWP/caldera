@@ -105,6 +105,7 @@ trait SimpleRepository
 			$array[ $property ] = $value;
 		}
 
+
 		return $array;
 	}
 
