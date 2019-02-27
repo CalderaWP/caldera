@@ -56,6 +56,7 @@ class MessageDbTest extends \WP_UnitTestCase
 		$module->getMessageDataSource()->update($id, $model->toArray() );
 		$data = $module->getMessageDataSource()->read($id);
 		$this->assertTrue( is_array($data));
+		$this->assertArrayHasKey('meta', $data );
 		$this->assertTrue( is_array($data['meta']));
 		$this->assertSame( $id, $data['ID']);
 		$this->assertSame( $model->getContent(), $data['meta']['content']);
@@ -99,6 +100,8 @@ class MessageDbTest extends \WP_UnitTestCase
 		$data = $module->getMessageDataSource()->findWhere( 'subject', 'subject-two' );
 		$this->assertCount(1, $data );
 		$this->assertEquals( 'subject-two', $data[0]['subject']);
+		$this->assertArrayHasKey('meta', $data[0] );
+
 	}
 
 	/**
@@ -115,6 +118,8 @@ class MessageDbTest extends \WP_UnitTestCase
 		$this->assertCount(2, $data );
 		$this->assertSame( $id2,$data[0]['ID'] );
 		$this->assertSame( $id3,$data[1]['ID'] );
+		$this->assertArrayHasKey('meta', $data[0]);
+		$this->assertArrayHasKey( 'meta',$data[1]);
 	}
 
 	/**
@@ -124,8 +129,21 @@ class MessageDbTest extends \WP_UnitTestCase
 		$module = $this->getModule();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
+		$model2 = new Message();
+		$model2->setContent('no the same as the other model');
+		$model2->addRecipient('to', 't2o@nom.com', 'to ');
+		$model2->addRecipient('cc', 'cc@nom.com', 'cc ');
+		$model2->addRecipient('reply', 'reply@nom.com', 'to ');
+		$model2->setSubject('subject');
+		$model2->setEntryData(new EntryData());
+
+
+
 		$data = $module->getMessageDataSource()->findByMetaColumn('content', $model->getContent());
+		$this->assertCount(1, $data);
+
 		$data = $data[0];
+		$this->assertArrayHasKey( 'meta', $data);
 		$this->assertTrue( is_array($data));
 		$this->assertTrue( is_array($data['meta']));
 		$this->assertSame( $id, $data['ID']);
@@ -134,6 +152,7 @@ class MessageDbTest extends \WP_UnitTestCase
 		$data = $module->getMessageDataSource()->findByMetaColumn('subject', $model->getSubject());
 		$data = $data[0];
 		$this->assertTrue( is_array($data));
+		$this->assertArrayHasKey('meta', $data );
 		$this->assertTrue( is_array($data['meta']));
 		$this->assertSame( $id, $data['ID']);
 		$this->assertSame( $model->getContent(), $data['meta']['content']);
@@ -148,6 +167,7 @@ class MessageDbTest extends \WP_UnitTestCase
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$data = $module->getMessageDataSource()->findById($id);
 		$this->assertTrue( is_array($data));
+		$this->assertArrayHasKey('meta', $data );
 		$this->assertTrue( is_array($data['meta']));
 		$this->assertSame( $id, $data['ID']);
 		$this->assertSame( $model->getContent(), $data['meta']['content']);
