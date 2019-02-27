@@ -84,7 +84,21 @@ class MessageDbTest extends \WP_UnitTestCase
 	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::findWhere()
 	 */
 	public function testFindWhere(){
-
+		$module = $this->getModule();
+		$model = $this->getMessageModel();
+		$model->setSubject('food' );
+		$id = $module->getMessageDataSource()->create($model->toArray() );
+		$model2 = new Message();
+		$model2->setContent('Content');
+		$model2->addRecipient('to', 't2o@nom.com', 'to ');
+		$model2->addRecipient('cc', 'cc@nom.com', 'cc ');
+		$model2->addRecipient('reply', 'reply@nom.com', 'to ');
+		$model2->setSubject('subject-two');
+		$model2->setEntryData(new EntryData());
+		$id2 = $module->getMessageDataSource()->create($model->toArray() );
+		$data = $module->getMessageDataSource()->findWhere( 'subject', 'subject-two' );
+		$this->assertCount(1, $data );
+		$this->assertEquals( 'subject-two', $data[0]['subject']);
 	}
 
 	/**
@@ -97,8 +111,10 @@ class MessageDbTest extends \WP_UnitTestCase
 		$id3 = $module->getMessageDataSource()->create($model->toArray() );
 		$id2 = $module->getMessageDataSource()->create($model->toArray() );
 
-		$data = $module->getMessageDataSource()->findIn( [$id2,$id3 ] );
+		$data = $module->getMessageDataSource()->findIn( [$id2,$id3 ], 'ID' );
 		$this->assertCount(2, $data );
+		$this->assertSame( $id2,$data[0]['ID'] );
+		$this->assertSame( $id3,$data[1]['ID'] );
 	}
 
 	/**
