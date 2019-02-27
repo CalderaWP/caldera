@@ -13,12 +13,21 @@ use calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin;
 class MessageDbTest extends \WP_UnitTestCase
 {
 
+
+	public function tearDown(){
+		global $wpdb;
+		$module = $this->getModule();
+		$table_name = $module->getMessageDataSource()->getMetaTable()->getTableName();
+		$sql = "DROP TABLE IF EXISTS $table_name";
+		$wpdb->query($sql);
+		parent::tearDown();
+	}
 	/**
 	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::create()
 	 * @covers \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin::getMessageDataSource()
 	 */
 	public function testCreate(){
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$this->assertTrue( is_numeric($id));
@@ -30,7 +39,7 @@ class MessageDbTest extends \WP_UnitTestCase
 	 * @covers \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin::getMessageDataSource()
 	 */
 	public function testRead(){
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$data = $module->getMessageDataSource()->read($id);
@@ -48,7 +57,7 @@ class MessageDbTest extends \WP_UnitTestCase
 	 */
 	public function testUpdate(){
 		$this->markTestSkipped( ':(');
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 
@@ -70,7 +79,7 @@ class MessageDbTest extends \WP_UnitTestCase
 	 * @covers \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin::getMessageDataSource()
 	 */
 	public function testAnnonymize(){
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$module->getMessageDataSource()->anonymize($id, 'content' );
@@ -85,7 +94,7 @@ class MessageDbTest extends \WP_UnitTestCase
 	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::findWhere()
 	 */
 	public function testFindWhere(){
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$model->setSubject('food' );
 		$id = $module->getMessageDataSource()->create($model->toArray() );
@@ -107,8 +116,8 @@ class MessageDbTest extends \WP_UnitTestCase
 	/**
 	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::findIn()
 	 */
-	public function testFindIn(){
-		$module = $this->getModule();
+	public function testFindInPostColumn(){
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$id3 = $module->getMessageDataSource()->create($model->toArray() );
@@ -123,10 +132,36 @@ class MessageDbTest extends \WP_UnitTestCase
 	}
 
 	/**
+	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::findIn()
+	 */
+	public function testFindInMetaColumn(){
+		$module = $this->getModuleCreatingTableIfNeeded();
+		$model = $this->getMessageModel();
+		$model->setSubject( 'search' );
+		$id = $module->getMessageDataSource()->create($model->toArray() );
+		$model->setSubject( 'other');
+		$id3 = $module->getMessageDataSource()->create($model->toArray() );
+		$model->setSubject('not the same' );
+		$id2 = $module->getMessageDataSource()->create($model->toArray() );
+
+		$model1Data = $module->getMessageDataSource()->read($id);
+		$this->assertEquals( 'search', $model1Data['meta']['subject']);
+
+		$model3data = $module->getMessageDataSource()->read( $id3);
+		$this->assertEquals( 'other', $model3data['meta']['subject']);
+		$data = $module->getMessageDataSource()->findIn( ['search', 'other' ], 'subject' );
+		$this->assertCount(2, $data );
+		$this->assertSame( $id2,$data[0]['ID'] );
+		$this->assertSame( $id3,$data[1]['ID'] );
+		$this->assertArrayHasKey('meta', $data[0]);
+		$this->assertArrayHasKey( 'meta',$data[1]);
+	}
+
+	/**
 	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::findByMetaColumn()
 	 */
 	public function testFindByMetaColumn(){
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$model2 = new Message();
@@ -162,15 +197,18 @@ class MessageDbTest extends \WP_UnitTestCase
 	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::findById()
 	 */
 	public function testFindById(){
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$data = $module->getMessageDataSource()->findById($id);
 		$this->assertTrue( is_array($data));
+		$post = get_post($id);
 		$this->assertArrayHasKey('meta', $data );
 		$this->assertTrue( is_array($data['meta']));
 		$this->assertSame( $id, $data['ID']);
 		$this->assertSame( $model->getContent(), $data['meta']['content']);
+		$this->assertSame($post->post_title, $data['post_title' ]);
+
 	}
 	/**
 	 * @covers \calderawp\caldera\DataSource\WordPressData\PostTypeWithCustomMetaTable::delete()
@@ -179,7 +217,7 @@ class MessageDbTest extends \WP_UnitTestCase
 	 * @covers \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin::getMessageDataSource()
 	 */
 	public function testDelete(){
-		$module = $this->getModule();
+		$module = $this->getModuleCreatingTableIfNeeded();
 		$model = $this->getMessageModel();
 		$id = $module->getMessageDataSource()->create($model->toArray() );
 		$module->getMessageDataSource()->delete($id );
@@ -189,12 +227,8 @@ class MessageDbTest extends \WP_UnitTestCase
 	}
 
 
-	protected function getModule(): \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin{
-		global  $wpdb;
-		$container = new \calderawp\CalderaContainers\Service\Container();
-		$container->bind('\wpdb',$wpdb);
-		$module = new \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin(\caldera(),$container);
-		\caldera()->addModule($module);
+	protected function getModuleCreatingTableIfNeeded(): \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin{
+		$module = $this->getModule();
 		$tables = new \calderawp\DB\Tables();
 		$dataBase = new \calderawp\caldera\WordPressPlugin\Database(
 			(new \calderawp\DB\Tables())
@@ -204,6 +238,16 @@ class MessageDbTest extends \WP_UnitTestCase
 		);
 
 		return \caldera()->getModule(\calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin::IDENTIFIER);
+	}
+
+	protected function getModule() :CalderaWordPressPlugin
+	{
+		global  $wpdb;
+		$container = new \calderawp\CalderaContainers\Service\Container();
+		$container->bind('\wpdb',$wpdb);
+		$module = new \calderawp\caldera\WordPressPlugin\CalderaWordPressPlugin(\caldera(),$container);
+		\caldera()->addModule($module);
+		return $module;
 	}
 
 	/**

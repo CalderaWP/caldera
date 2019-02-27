@@ -271,6 +271,50 @@ class TableTest extends \WP_UnitTestCase
 				$table->findWhere('form_id', 'CF3')
 			)
 		);
+
+		$this->assertSame(
+			1, count(
+				$table->findWhere('type', 'revision')
+			)
+		);
+	}
+
+	public function testFindIn()
+	{
+		$table = $this->formsTableFactory();
+		$data = [
+			'form_id' => 'CF1',
+			'type' => 'revision'
+		];
+		$id = $table->create($data);
+		$data = [
+			'form_id' => 'CF2',
+			'type' => 'primary'
+		];
+		$id2 = $table->create($data);
+
+		$data = [
+			'form_id' => 'CF3',
+			'type' => 'primary'
+		];
+		$id3 = $table->create($data);
+
+
+		$this->assertSame(
+			1, count(
+				$table->findWhere('type', 'revision')
+			)
+		);
+
+		$this->assertSame(
+			2, count(
+				$table->findWhere('type', 'primary')
+			)
+		);
+
+		$byId = $table->findIn( [$id2,$id3], 'ID' );
+		$this->assertCount(2, $byId);
+
 	}
 
 	/**
