@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/MessageDbTest.test.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MessageDbTest.test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/Contracts/PostContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/Contracts/PostContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/WordPressPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/WordPressPost.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +66,7 @@
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="3427" />
+          <entry key="php" value="3436" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="68" />
@@ -88,7 +92,7 @@
           <entry key="JavaScript" value="1616" />
           <entry key="Jest Snapshot" value="53" />
           <entry key="Markdown" value="313" />
-          <entry key="PHP" value="3428" />
+          <entry key="PHP" value="3437" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -112,7 +116,7 @@
           <entry key="js" value="96998" />
           <entry key="json" value="4809" />
           <entry key="md" value="68049" />
-          <entry key="php" value="180959" />
+          <entry key="php" value="181440" />
           <entry key="sh" value="1688" />
           <entry key="snap" value="12" />
           <entry key="txt" value="2180" />
@@ -130,7 +134,7 @@
           <entry key="JavaScript" value="97154" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="67885" />
-          <entry key="PHP" value="181070" />
+          <entry key="PHP" value="181551" />
           <entry key="PLAIN_TEXT" value="2361" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="309" />
@@ -166,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="195">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
               <folding>
                 <element signature="e#63#132#0#PHP" expanded="true" />
               </folding>
@@ -176,43 +180,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php">
+        <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/WordPressPostTypeContract.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/MessageDbTest.test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="116" column="39" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
+            <state relative-caret-position="165">
+              <caret line="11" column="39" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="11" selection-end-column="39" />
               <folding>
-                <element signature="e#37#80#0#PHP" expanded="true" />
+                <element signature="e#58#136#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="3150">
-                <caret line="210" column="57" selection-start-line="210" selection-end-line="211" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php">
+        <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2835">
-              <caret line="190" column="43" selection-start-line="190" selection-start-column="43" selection-end-line="190" selection-end-column="43" />
+            <state relative-caret-position="188">
+              <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
+              <folding>
+                <element signature="e#59#110#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,8 +206,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/caldera-db/src/Table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1920">
+            <state relative-caret-position="109">
               <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostMeta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/PostMetaContract.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -229,8 +233,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+            <state relative-caret-position="337">
+              <caret line="225" column="15" selection-start-line="225" selection-start-column="15" selection-end-line="225" selection-end-column="15" />
               <folding>
                 <element signature="e#63#114#0#PHP" expanded="true" />
               </folding>
@@ -238,32 +242,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3300">
-              <caret line="220" column="22" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="22" />
-              <folding>
-                <element signature="e#63#135#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/WordPressPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="316">
+              <caret line="222" column="47" selection-start-line="222" selection-start-column="47" selection-end-line="222" selection-end-column="47" />
               <folding>
                 <element signature="e#63#135#0#PHP" expanded="true" />
               </folding>
@@ -282,9 +265,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cfp_messageDataSource</find>
-      <find>spammed</find>
-      <find>LOL</find>
       <find>content</find>
       <find>toColumn</find>
       <find>cr</find>
@@ -308,10 +288,13 @@
       <find>get_item</find>
       <find>get_item(</find>
       <find>12345</find>
-      <find>toArr</find>
       <find>crrea</find>
       <find>var</find>
       <find>exce</find>
+      <find>toArr</find>
+      <find>from</find>
+      <find>toAr</find>
+      <find>setMEt</find>
     </findStrings>
     <replaceStrings>
       <replace>Cli</replace>
@@ -395,7 +378,6 @@
         <option value="$PROJECT_DIR$/php-packages/caldera-db/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/src/Contracts/CreatesTablesContract.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/caldera-db/src/Tables.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" />
         <option value="$PROJECT_DIR$/php-packages/data-source/tests/Unit/PostTypeFactoryTest.php" />
         <option value="$PROJECT_DIR$/php-packages/core/Caldera.php" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/tests/Unit/TableTest.php" />
@@ -419,22 +401,23 @@
         <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/Post.php" />
         <option value="$PROJECT_DIR$/mu-plugins/load-plugins.php" />
         <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/RenderedPortionOfPost.php" />
-        <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/Contracts/PostContract.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/WordPressPostTypeContract.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/PostMetaContract.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostType.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/tests/Unit/PostTypeTest.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostMeta.php" />
-        <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/WordPressPost.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/tests/Unit/WpPostTest.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/messaging/src/Traits/SimpleRepository.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php" />
         <option value="$PROJECT_DIR$/php-packages/messaging/src/Traits/SimpleRepository.php" />
-        <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/caldera-db/src/Table.php" />
         <option value="$PROJECT_DIR$/tests/MessageDbTest.test.php" />
+        <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/Contracts/PostContract.php" />
+        <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php" />
+        <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" />
+        <option value="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php" />
+        <option value="$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php" />
+        <option value="$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/WordPressPost.php" />
       </list>
     </option>
   </component>
@@ -4844,6 +4827,21 @@
             <path>
               <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="data-source" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="data-source" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -4991,9 +4989,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.WpPostTest.testResultToPost (1)">
-    <configuration name="PostTypeTest.testresultToPost" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="calderawp\caldera\DataSource\Tests\Unit\PostTypeTest" file="$PROJECT_DIR$/tests/vendor/calderawp/data-source/tests/Unit/PostTypeTest.php" method="testresultToPost" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.WpPostTest.testMetaFromArray (1)">
+    <configuration name="WpPostTest.testMetaFromArray (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="calderawp\caldera\DataSource\Tests\Unit\WpPostTest" file="$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php" method="testMetaFromArray" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="WpPostTest.testMetaFromArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -5013,19 +5011,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.PostTypeTest.testresultToPost" />
       <item itemvalue="PHPUnit.WpPostTest.testResultToPost" />
       <item itemvalue="PHPUnit.WpPostTest.testMetaToArray" />
       <item itemvalue="PHPUnit.WpPostTest.testMetaFromArray" />
       <item itemvalue="PHPUnit.WpPostTest.testResultToPost (1)" />
+      <item itemvalue="PHPUnit.WpPostTest.testMetaFromArray (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.WpPostTest.testMetaFromArray (1)" />
         <item itemvalue="PHPUnit.WpPostTest.testResultToPost (1)" />
         <item itemvalue="PHPUnit.WpPostTest.testMetaFromArray" />
         <item itemvalue="PHPUnit.WpPostTest.testMetaToArray" />
         <item itemvalue="PHPUnit.WpPostTest.testResultToPost" />
-        <item itemvalue="PHPUnit.PostTypeTest.testresultToPost" />
       </list>
     </recent_temporary>
   </component>
@@ -5099,7 +5097,7 @@
       <workItem from="1550950985181" duration="16289000" />
       <workItem from="1551096021857" duration="275000" />
       <workItem from="1551111335012" duration="23193000" />
-      <workItem from="1551269962409" duration="251000" />
+      <workItem from="1551269962409" duration="1268000" />
     </task>
     <servers />
   </component>
@@ -5136,7 +5134,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="766508000" />
+    <option name="totallyTimeSpent" value="767525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -5168,7 +5166,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39468086" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info active="true" anchor="bottom" x="839" y="71" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" visible="true" weight="0.45619658" />
+      <window_info active="true" anchor="bottom" x="839" y="71" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" visible="true" weight="0.41025642" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -6064,49 +6062,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/Unit/PostTypeWithCustomMetaTableTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/tests/Unit/WordPressPostTest.php" />
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostMeta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/PostMetaContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/Contracts/PostContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/Unit/PostTypeTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/WordPressPostTypeContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="e#58#136#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -6145,6 +6105,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="141" column="27" lean-forward="true" selection-start-line="141" selection-start-column="27" selection-end-line="141" selection-end-column="27" />
+          <folding>
+            <element signature="e#59#110#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -6155,27 +6118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1202">
-          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/wordpress-plugin/src/CalderaWordPressPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="e#63#132#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -6186,34 +6132,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3150">
-            <caret line="210" column="57" selection-start-line="210" selection-end-line="211" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/tests/MessageDbTest.test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="116" column="39" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
+          <folding>
+            <element signature="e#37#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/Contracts/PostContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <element signature="e#72#133#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/Unit/PostTypeWithCustomMetaTableTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2835">
+        <state relative-caret-position="238">
           <caret line="190" column="43" selection-start-line="190" selection-start-column="43" selection-end-line="190" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/caldera-db/src/Table.php">
+    <entry file="file://$PROJECT_DIR$/docs/cheetsheets-and-links/cheatsheat-phpunit.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="118">
+            <caret line="176" column="1" lean-forward="true" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/PostType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+        <state relative-caret-position="195">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="e#63#132#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/WordPressPostTypeContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="e#58#136#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/Contracts/PostMetaContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostMeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+        <state relative-caret-position="337">
+          <caret line="225" column="15" selection-start-line="225" selection-start-column="15" selection-end-line="225" selection-end-column="15" />
           <folding>
             <element signature="e#63#114#0#PHP" expanded="true" />
           </folding>
@@ -6222,37 +6222,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="691">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="e#63#132#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="220" column="22" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="22" />
+        <state relative-caret-position="145">
+          <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
           <folding>
             <element signature="e#63#135#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/caldera-db/src/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/data-source/tests/Unit/WpPostTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
+          <folding>
+            <element signature="e#59#110#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/data-source/src/WordPressData/WordPressPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="316">
+          <caret line="222" column="47" selection-start-line="222" selection-start-column="47" selection-end-line="222" selection-end-column="47" />
           <folding>
             <element signature="e#63#135#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/MessageDbTest.test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="116" column="39" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
-          <folding>
-            <element signature="e#37#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
