@@ -54,6 +54,11 @@ tooling:
     description: Runs WordPress tests
     cmd: "phpunit"
     user:  root
+  wptests-now:
+    service: wptest
+    description: Runs WordPress tests
+    cmd: "phpunit --group=now"
+    user:  root
   wptests-i:
     service: wptest
     description: Installs WordPress tests

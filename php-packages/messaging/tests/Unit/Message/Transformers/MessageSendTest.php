@@ -12,6 +12,7 @@ class MessageSendTest extends UnitTestCase
 	{
 
 		$message = new \calderawp\caldera\Messaging\Models\Message();
+
 	}
 
 	public function testToHtml()

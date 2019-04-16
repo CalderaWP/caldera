@@ -206,7 +206,7 @@ class TableTest extends \WP_UnitTestCase
 	}
 
 	/**
-	 * @group  now
+	 *
 	 * @covers \calderawp\DB\Table::update()
 	 * @covers \calderawp\DB\Table::whereStatement()
 	 * @covers \calderawp\DB\Table::getPrimaryKey()
@@ -279,6 +279,9 @@ class TableTest extends \WP_UnitTestCase
 		);
 	}
 
+	/**
+	 * @group  now
+	 */
 	public function testFindIn()
 	{
 		$table = $this->formsTableFactory();
