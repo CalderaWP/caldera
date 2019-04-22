@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f3fa2d-747f-46fd-9f81-1167b50c0ce6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/caldera-db/src/Contracts/CreatesTablesContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/caldera-db/src/Contracts/CreatesTablesContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/caldera-db/src/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/caldera-db/src/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/caldera-db/src/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/caldera-db/src/Table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/WordPressPostTypeContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/Contracts/WordPressPostTypeContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostMeta.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostMeta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/PostTypeWithCustomMetaTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/data-source/src/WordPressData/WordPressPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/interop/src/SimpleEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/interop/src/SimpleEntity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/UserFactoryContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Contracts/UserFactoryContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/src/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/src/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +63,7 @@
           <entry key="neon" value="2" />
           <entry key="package-fixes" value="1" />
           <entry key="pattern" value="3" />
-          <entry key="php" value="3566" />
+          <entry key="php" value="3571" />
           <entry key="php_cs" value="1" />
           <entry key="png" value="2" />
           <entry key="sh" value="73" />
@@ -102,7 +89,7 @@
           <entry key="JavaScript" value="1616" />
           <entry key="Jest Snapshot" value="53" />
           <entry key="Markdown" value="318" />
-          <entry key="PHP" value="3567" />
+          <entry key="PHP" value="3572" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="2" />
@@ -126,7 +113,7 @@
           <entry key="js" value="96998" />
           <entry key="json" value="4809" />
           <entry key="md" value="68124" />
-          <entry key="php" value="184362" />
+          <entry key="php" value="184581" />
           <entry key="sh" value="1688" />
           <entry key="snap" value="12" />
           <entry key="txt" value="2222" />
@@ -144,7 +131,7 @@
           <entry key="JavaScript" value="97154" />
           <entry key="Jest Snapshot" value="12" />
           <entry key="Markdown" value="67960" />
-          <entry key="PHP" value="184473" />
+          <entry key="PHP" value="184692" />
           <entry key="PLAIN_TEXT" value="2405" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="309" />
@@ -177,11 +164,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
               <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="22" lean-forward="true" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/rest-api/src/Contracts/UserFactoryContract.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/VerifyToken.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-312" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96">
+              <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -356,9 +377,9 @@
         <option value="$PROJECT_DIR$/php-packages/interop/src/Traits/ProvidesFieldConfig.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/composer.json" />
         <option value="$PROJECT_DIR$/php-packages/caldera-db/src/Table.php" />
+        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" />
         <option value="$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php" />
         <option value="$PROJECT_DIR$/tests/vendor/calderawp/rest-api/src/Contracts/UserFactoryContract.php" />
-        <option value="$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php" />
       </list>
     </option>
   </component>
@@ -4771,6 +4792,15 @@
               <item name="php-packages" type="462c0819:PsiDirectoryNode" />
               <item name="rest-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="Endpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="caldera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="caldera" type="462c0819:PsiDirectoryNode" />
+              <item name="php-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Traits" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -5060,7 +5090,7 @@
       <workItem from="1555536905034" duration="259000" />
       <workItem from="1555701515035" duration="724000" />
       <workItem from="1555706862185" duration="2348000" />
-      <workItem from="1555950588682" duration="3917000" />
+      <workItem from="1555950588682" duration="4405000" />
     </task>
     <servers />
   </component>
@@ -5097,7 +5127,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="792270000" />
+    <option name="totallyTimeSpent" value="792758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -5129,20 +5159,20 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39468086" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="bottom" x="839" y="71" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" visible="true" weight="0.307772" />
+      <window_info anchor="bottom" x="839" y="71" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" weight="0.21761657" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.875" visible="true" weight="0.2011208" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.875" visible="true" weight="0.28381255" />
       <window_info id="Structure" order="1" sideWeight="0.125" side_tool="true" weight="0.11038575" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.33226496" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.62247074" visible="true" weight="0.025641026" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49972236" weight="0.3316062" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.62247074" weight="0.42200854" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49893504" weight="0.32905984" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -5153,7 +5183,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50505733" side_tool="true" weight="0.39468086" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.0" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="bottom" x="839" y="71" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" x="839" y="71" width="1081" height="809" id="Terminal" order="14" sideWeight="0.4949427" visible="true" weight="0.21761657" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -5849,16 +5879,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Exception.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/messaging/tests/Unit/Message/AttributesTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/messaging/src/Message/Attributes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1815">
@@ -6092,27 +6112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/rest-api/src/Contracts/UserFactoryContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/CalderaRestApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -6155,10 +6154,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/Endpoints/VerifyToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserJwt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-packages/rest-api/tests/Authentication/WordPressUserFactoryTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-includes/class-wp-user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="404" column="20" selection-start-line="404" selection-start-column="20" selection-end-line="404" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/vendor/calderawp/rest-api/src/Contracts/UserFactoryContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-packages/rest-api/src/Authentication/WordPressUserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="22" lean-forward="true" selection-end-line="90" />
         </state>
       </provider>
     </entry>
